@@ -31,6 +31,6 @@ jobs:
           username: ${{ secrets.INSTITUTIONAL_USERNAME }}
           password: ${{ secrets.INSTITUTIONAL_PASSWORD }}
           port: ${{ secrets.INSTITUTIONAL_PORT }}
-          protocol: ${{ secrets.INSTITUTIONAL_PROTOCOL }}
+          protocol: ftp
           local-dir: ./dist/
           server-dir: public_html/
