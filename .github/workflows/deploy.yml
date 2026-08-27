@@ -1,0 +1,35 @@
+name: Deploy Build via FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
+
+      - name: Install dependencies and build
+        run: |
+          yarn install
+          yarn build
+
+      - name: Deploy build
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.INSTITUTIONAL_SERVER }}
+          username: ${{ secrets.INSTITUTIONAL_USERNAME }}
+          password: ${{ secrets.INSTITUTIONAL_PASSWORD }}
+          port: ${{ secrets.INSTITUTIONAL_PORT || 21 }}
+          protocol: ${{ secrets.INSTITUTIONAL_PROTOCOL || 'ftp' }}
+          local-dir: ./dist/
+          server-dir: public_html/
