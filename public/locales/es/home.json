@@ -1,0 +1,908 @@
+{
+  "modal": {
+    "badge": "Acceso Institucional Cualificado",
+    "title": "Solicitar Acceso a Elleva",
+    "description": "La infraestructura de Elleva está provisionada para instituciones financieras cualificadas, gestores de activos y family offices. Proporcione los detalles de la institución.",
+    "nameLabel": "Nombre del Ejecutivo",
+    "namePlaceholder": "Dr. Edward Silva",
+    "institutionLabel": "Institución / Fondo",
+    "institutionPlaceholder": "Alpha Capital Asset",
+    "emailLabel": "Correo Corporativo",
+    "emailPlaceholder": "management@alphacapital.com",
+    "typeLabel": "Tipo de Institución",
+    "types": {
+      "assetManager": "Gestor de Activos / Fondo",
+      "multiFamilyOffice": "Multi-Family Office",
+      "singleFamilyOffice": "Single Family Office",
+      "advisor": "Asesor de Inversiones / RIA",
+      "treasury": "Tesorería Institucional / Dotación"
+    },
+    "scopeLabel": "Alcance Operativo / Mandato",
+    "scopePlaceholder": "Describa brevemente el volumen gestionado o el alcance de automatización deseado...",
+    "submitButton": "Enviar Solicitud de Acceso",
+    "successTitle": "Solicitud Recibida",
+    "successDescPrefix": "Hemos recibido datos de",
+    "successDescSuffix": "Nuestro equipo de alianzas institucionales se comunicará para programar una sesión técnica y entregar la documentación de integración."
+  },
+  "common": {
+    "done": "Hecho",
+    "footer": {
+      "copyright": "Elleva © 2026. Todos los derechos reservados.",
+      "terms": "Términos Institucionales",
+      "security": "Seguridad y Cumplimiento",
+      "regulatory": "Divulgación Regulatoria"
+    },
+    "close": "CERRAR",
+    "year": "Año"
+  },
+  "architecture": {
+    "flow": {
+      "coreSubtitle": "CAPA DE INTELIGENCIA Y ORQUESTACIÓN",
+      "coreCaption": "Investigación autónoma, verificación de mandato y ejecución",
+      "marketDataLabel": "Datos de Mercado",
+      "marketDataSub": "Feeds en tiempo real y alternativos",
+      "portfoliosLabel": "Mandatos y Carteras",
+      "portfoliosSub": "Parámetros de política fiduciaria",
+      "banksLabel": "Custodia Cualificada",
+      "banksSub": "Repositorios bancarios segregados",
+      "custodyLabel": "Verificación Custodial",
+      "custodySub": "Liquidación de saldos en tiempo real",
+      "brokersLabel": "Corredores y Entornos",
+      "brokersSub": "Enrutamiento inteligente de órdenes (FIX/DMA)",
+      "complianceLabel": "Motor de Cumplimiento",
+      "complianceSub": "Verificaciones pre-negociación deterministas",
+      "reportsLabel": "Auditoría y Telemetría",
+      "reportsSub": "Registros criptográficos inmutables",
+      "familyOfficesLabel": "Family Offices y Wealth",
+      "familyOfficesSub": "Vista consolidada de asignación"
+    },
+    "modules": {
+      "marketData": {
+        "title": "Datos de Mercado",
+        "item1": "APIs de Mercado",
+        "item2": "Datos en Tiempo Real",
+        "item3": "Conjuntos de Datos Alternativos",
+        "item4": "Feeds Macroeconómicos y de Sentimiento"
+      },
+      "portfolios": {
+        "title": "Mandatos y Carteras",
+        "item1": "Políticas de Inversión",
+        "item2": "Límites de Riesgo",
+        "item3": "Reglas de Asignación",
+        "item4": "Restricciones de Mandato"
+      },
+      "banks": {
+        "title": "Bancos y Custodios",
+        "item1": "APIs de Custodia",
+        "item2": "Control de Posiciones",
+        "item3": "Segregación de Activos",
+        "item4": "Vías de Liquidación"
+      },
+      "custody": {
+        "title": "Integración de Custodia",
+        "item1": "Agregación Multi-Custodia",
+        "item2": "Control de Posiciones",
+        "item3": "Titularidad Directa de Cuenta",
+        "item4": "Conciliación Continua"
+      },
+      "brokers": {
+        "title": "Corredores y Ejecución",
+        "item1": "Rutas de Ejecución",
+        "item2": "Enrutador Inteligente de Órdenes",
+        "item3": "Protocolo FIX y APIs",
+        "item4": "Agregación de Liquidez"
+      },
+      "compliance": {
+        "title": "Cumplimiento y Gobernanza",
+        "item1": "Validación Pre-Negociación",
+        "item2": "Guardianes de Drawdown",
+        "item3": "Límites Estatutarios",
+        "item4": "Reportes Regulatorios"
+      },
+      "reporting": {
+        "title": "Auditoría y Reportes",
+        "item1": "Pistas de Auditoría",
+        "item2": "Telemetría y Registros",
+        "item3": "Reportes de Cumplimiento",
+        "item4": "Administración de Mandatos"
+      },
+      "wealth": {
+        "title": "Wealth y Family Offices",
+        "item1": "Consolidación de Carteras",
+        "item2": "Visión 360° del Cliente",
+        "item3": "Personalización de Mandatos",
+        "item4": "Gobernanza Multigeneracional"
+      }
+    },
+    "title": "Arquitectura de Infraestructura Autónoma de Capital",
+    "description": "Elleva opera como la capa de inteligencia y orquestación que conecta datos de mercado, investigación, política de inversión, custodia cualificada y ejecución multi-corredor en un bucle operativo continuo, auditado y determinista.",
+    "flowBadge": "FLUJO",
+    "pillars": {
+      "custodyTitle": "Custodia Directa Segregada",
+      "custodyDesc": "Segregación fiduciaria completa con activos mantenidos directamente en custodios cualificados bajo propiedad del inversor.",
+      "institutionsTitle": "Conectividad Empresarial",
+      "institutionsDesc": "Integración directa mediante protocolo FIX institucional y API con bancos globales de primera línea, prime brokers y depositarios.",
+      "capacityTitle": "Escalabilidad Multi-Activo",
+      "capacityDesc": "Capacita a gestores de activos y family offices para escalar mandatos con precisión matemática y crecimiento cero de personal."
+    }
+  },
+  "businessModel": {
+    "streams": {
+      "platform": {
+        "title": "Comisión de Plataforma SaaS",
+        "desc": "licenciamiento para gestores de activos y estructuras de wealth",
+        "subtext": "Acceso continuo al núcleo de Elleva OS, gobernanza de mandatos, controles de riesgo deterministas y cumplimiento automatizado."
+      },
+      "usage": {
+        "title": "Comisión de Uso / Capacidad",
+        "desc": "computación, volumen de telemetría y feeds institucionales de API",
+        "subtext": "Precios basados en volumen de telemetría, feeds ingeridos, ejecuciones de simulaciones estocásticas y monitoreo activo de carteras."
+      },
+      "value": {
+        "title": "Comisión de Alineación Basada en Valor",
+        "desc": "comisión sobre eficiencia operativa, inteligencia o rendimiento asociado",
+        "subtext": "Alineación fiduciaria vinculada a la reducción de deslizamiento, ahorro operativo y optimización de ejecución."
+      }
+    },
+    "title": "Modelo de Ingresos Institucional",
+    "description": "Tres capas de monetización complementarias construidas sobre infraestructura de software recurrente y alineación de capacidad operativa.",
+    "chart": {
+      "eyebrow": "APALANCAMIENTO OPERATIVO",
+      "heading": "Crecimiento de AUM vs. Expansión de Costos Operativos",
+      "legendTraditionalShort": "Tradicional (Lineal)",
+      "legendEllevaShort": "Elleva (Autónomo)",
+      "tooltipElleva": "Costo Operativo Elleva",
+      "tooltipTraditional": "Costo Operativo Tradicional",
+      "seriesElleva": "Infraestructura Autónoma Elleva",
+      "seriesTraditional": "Gestión de Activos Tradicional"
+    }
+  },
+  "defensibility": {
+    "layer4": {
+      "title": "Ecosistema e Integración de Custodia",
+      "quote": "Integración institucional expandiendo acceso y confianza.",
+      "detail": "Conexiones bidireccionales propietarias con custodios, prime brokers e instituciones financieras crean costos de cambio estructurales y altas barreras de entrada.",
+      "level": "NIVEL 4"
+    },
+    "layer3": {
+      "title": "Profundidad del Dominio Operativo",
+      "quote": "Profundidad operativa generando eficiencia compuesta.",
+      "detail": "Modelado completo del proceso de inversión sin fragmentación — desde la ingesta macro hasta el riesgo pre-negociación y la auditoría post-ejecución.",
+      "level": "NIVEL 3"
+    },
+    "layer2": {
+      "title": "Motor de Inteligencia Contextual",
+      "quote": "Inteligencia sobre resultados en diversos regímenes macroeconómicos.",
+      "detail": "Atribución de rendimiento multi-factor separando señal sistemática del ruido de mercado, calibrando continuamente escenarios estocásticos.",
+      "level": "NIVEL 2"
+    },
+    "layer1": {
+      "title": "Historial Determinista de Decisiones",
+      "quote": "Pista de auditoría propietaria de decisiones y condiciones base.",
+      "detail": "Registro inmutable de hipótesis, parámetros calibrados, rutas ejecutadas y resultados post-negociación reales bajo diversas condiciones de mercado.",
+      "level": "NIVEL 1"
+    },
+    "title": "Defensibilidad Compuesta",
+    "description": "Con cada decisión ejecutada, la profundidad estructural de Elleva se compone en registros de decisión propietarios, integraciones institucionales y experiencia de dominio.",
+    "footer": {
+      "scaleLabel": "Apalancamiento Operativo",
+      "scaleValue": "Delta de 14,2x",
+      "retentionLabel": "Retención Institucional",
+      "retentionValue": "99,4%",
+      "barrierLabel": "Barrera de Cambio",
+      "barrierValue": "Alto Foso Estructural"
+    }
+  },
+  "ecosystem": {
+    "categories": {
+      "custodians": {
+        "title": "Bancos y Custodios"
+      },
+      "brokers": {
+        "title": "Corredores y Entornos de Liquidez"
+      },
+      "marketData": {
+        "title": "Datos de Mercado y Feeds"
+      },
+      "compliance": {
+        "title": "Organismos Reguladores y de Auditoría"
+      }
+    },
+    "complianceItems": {
+      "soc2": "Arquitectura Certificada SOC 2 Tipo II",
+      "iso27001": "Alineado con ISO 27001 / 27701",
+      "anbima": "Alineación con Buenas Prácticas ANBIMA",
+      "cvm175": "Marco de Gobernanza Regulatoria CVM 175",
+      "preTrade": "Guardianes de Riesgo Pre-Negociación Deterministas",
+      "auditTrail": "Pistas de Auditoría Criptográficas Inmutables"
+    },
+    "title": "Ecosistema Institucional Conectado",
+    "description": "Elleva actúa como la capa neutral de inteligencia y ejecución que conecta custodios de primera línea, entornos de ejecución y propietarios de activos institucionales.",
+    "tags": {
+      "wealthManagers": "Gestores de Activos y Family Offices",
+      "custody": "Custodia Segregada de Primera Línea",
+      "reporting": "Reportes Regulatorios Automatizados"
+    }
+  },
+  "ellevaLoop": {
+    "nodes": {
+      "center": {
+        "title": "Motor Elleva",
+        "subtitle": "NÚCLEO CONTINUO",
+        "caption": "Operaciones fiduciarias autónomas"
+      },
+      "stage1": {
+        "label": "1. Investigación",
+        "desc": "Inteligencia de mercado"
+      },
+      "stage2": {
+        "label": "2. Decidir",
+        "desc": "Optimización de mandato"
+      },
+      "stage3": {
+        "label": "3. Verificación de Riesgo",
+        "desc": "Límites deterministas"
+      },
+      "stage4": {
+        "label": "4. Ejecutar",
+        "desc": "Enrutamiento inteligente de órdenes"
+      },
+      "stage5": {
+        "label": "5. Liquidar",
+        "desc": "Custodia directa"
+      },
+      "stage6": {
+        "label": "6. Monitorear",
+        "desc": "Registros de auditoría inmutables"
+      }
+    },
+    "steps": {
+      "s1": "Motor de inteligencia autónomo multi-fuente que recopila, limpia y estructura datos financieros globales no estructurados 24/7.",
+      "s2": "Evaluación determinista de propuestas de negociación ajustadas al riesgo verificadas contra declaraciones de política de inversión estatutarias.",
+      "s3": "Restricciones matemáticas que no pueden ser violadas — imponiendo drawdown máximo, concentración sectorial y límites de liquidez.",
+      "s4": "Ejecución algorítmica de órdenes mediante Enrutamiento Inteligente de Órdenes en endpoints directos de corredores y custodios con deslizamiento mínimo.",
+      "s5": "Liquidación continua de saldos pre y post-negociación directamente en cuentas institucionales segregadas de propiedad del cliente.",
+      "s6": "Conciliación de posiciones en tiempo real, verificación de guardianes de riesgo y registro de auditoría inmutable para cumplimiento regulatorio."
+    },
+    "title": "El Flywheel Operativo de Elleva",
+    "description": "Un ciclo operativo autónomo auto-reforzador que compone inteligencia institucional, calidad de ejecución y gobernanza de riesgo.",
+    "badge": "FLYWHEEL OPERATIVO",
+    "flywheelTitle": "Mecanismo de Retroalimentación Autónomo"
+  },
+  "faq": {
+    "items": {
+      "custody": {
+        "q": "¿Cómo garantiza Elleva la seguridad y segregación de los activos?",
+        "a": "Elleva opera con custodia cero de activos. El capital permanece en bancos custodios regulados de primera línea bajo el ID fiscal y nombre legal del inversor. Elleva interactúa exclusivamente a través de protocolos API/FIX seguros y tokenizados con permisos de lectura/negociación estrictamente regidos por restricciones deterministas de mandato."
+      },
+      "replacement": {
+        "q": "¿Elleva reemplaza a los gestores de activos y comités fiduciarios?",
+        "a": "No. Elleva es una capa de infraestructura autónoma que potencia a gestores de activos y comités de inversión. Automatiza investigación repetitiva, modelado de escenarios, verificaciones de riesgo y ejecución, permitiendo a los gestores escalar AUM con precisión superior."
+      },
+      "compliance": {
+        "q": "¿Cómo mantiene Elleva la explicabilidad y las pistas de auditoría?",
+        "a": "Cada decisión generada por el sistema tiene marca de tiempo y está vinculada criptográficamente a la hipótesis exacta, entradas de mercado, simulaciones estocásticas y verificaciones de mandato que la produjeron, proporcionando transparencia auditable de extremo a extremo."
+      },
+      "assets": {
+        "q": "¿Qué clases de activos e instrumentos financieros están soportados?",
+        "a": "Elleva soporta acciones globales, instrumentos de renta fija, divisas (FX), derivados negociados en bolsa y activos alternativos tokenizados en más de 48 entornos institucionales."
+      },
+      "integration": {
+        "q": "¿Cuál es el plazo de implementación para clientes institucionales?",
+        "a": "La incorporación institucional estándar generalmente toma de 2 a 4 semanas, abarcando parametrización de mandato, acreditación de API del custodio, configuración de límites de riesgo y ejecuciones simuladas en sandbox."
+      }
+    },
+    "title": "Preguntas Frecuentes",
+    "description": "Detalles técnicos, regulatorios y operativos clave sobre la Infraestructura Autónoma de Capital de Elleva."
+  },
+  "finalCTA": {
+    "title": "Transforme Su Infraestructura de Inversión",
+    "description": "Implemente inteligencia autónoma en investigación, toma de decisiones, ejecución y monitoreo con gobernanza empresarial y segregación directa de custodia.",
+    "credentials": {
+      "segregation": "100% Custodia Directa Segregada",
+      "noCustody": "Riesgo Cero de Custodia de Activos",
+      "connectivity": "Conectividad Institucional Directa FIX/API"
+    },
+    "modal": {
+      "submittedTitle": "Solicitud de Acceso Recibida",
+      "submittedDesc": "Nuestro equipo de alianzas institucionales se comunicará en 24 horas con credenciales de sandbox.",
+      "badge": "CLIENTES CUALIFICADOS",
+      "title": "Solicitar Acceso Institucional",
+      "desc": "La infraestructura de Elleva está provisionada para instituciones financieras cualificadas, gestores de activos y family offices.",
+      "institutionLabel": "Institución / Fondo",
+      "institutionPlaceholder": "Alpha Capital Asset",
+      "emailLabel": "Correo Corporativo",
+      "emailPlaceholder": "management@alphacapital.com",
+      "submitButton": "Enviar Solicitud de Acceso"
+    }
+  },
+  "globalMarkets": {
+    "modules": {
+      "marketData": {
+        "name": "Datos de Mercado y Feeds",
+        "desc": "Feeds de datos multi-activo en tiempo real e indicadores macroeconómicos."
+      },
+      "banks": {
+        "name": "Pasarelas Bancarias de Primera Línea",
+        "desc": "Liquidez directa, gestión de efectivo y vías de tesorería institucional."
+      },
+      "brokers": {
+        "name": "Corredores y Entornos de Ejecución",
+        "desc": "Rutas directas de ejecución DMA/FIX en más de 48 bolsas institucionales."
+      },
+      "custody": {
+        "name": "Custodios Cualificados",
+        "desc": "Enlaces directos de API a custodios globales que mantienen activos segregados."
+      },
+      "compliance": {
+        "name": "Vías de Cumplimiento y Auditoría",
+        "desc": "Guardianes de riesgo pre-negociación deterministas y reportes regulatorios automatizados."
+      },
+      "portfolios": {
+        "name": "Mandatos y Carteras",
+        "desc": "Optimización continua de cartera estocástica y gestión de políticas."
+      }
+    },
+    "title": "Conectividad Global de Mercado",
+    "description": "Acceso institucional directo a bolsas globales, prime brokers, entornos de liquidez y redes custodiales en todas las principales jurisdicciones financieras.",
+    "telemetry": {
+      "mesh": "TOPOLOGÍA DE MALLA GLOBAL",
+      "hubsCount": "6 Nodos Primarios Activos",
+      "routingLabel": "Enrutamiento Inteligente de Órdenes (SOR)",
+      "routingValue": "Multi-Entorno Activo",
+      "statusLabel": "Estado de la Red",
+      "statusValue": "Nominal / Segregado"
+    },
+    "footerNote": "Rutas de ejecución multijurisdiccionales auditadas bajo estándares SOC 2 Tipo II e ISO 27001.",
+    "inspector": {
+      "badge": "INSPECTOR DE PASARELA",
+      "primaryRole": "Función Principal:",
+      "layer": "Capa de Infraestructura:",
+      "latency": "Latencia Objetivo:",
+      "connection": "Estándar de Conexión:",
+      "connectionStatus": "Estado de Conexión:",
+      "switchHub": "CAMBIAR NODO"
+    }
+  },
+  "hero": {
+    "nodes": {
+      "coreSubtitle": "CAPA DE INTELIGENCIA Y ORQUESTACIÓN",
+      "coreCaption": "Investigación autónoma, verificación de mandato y ejecución",
+      "marketData": "Datos de Mercado",
+      "marketDataSub": "Feeds en tiempo real y alternativos",
+      "banks": "Custodia Cualificada",
+      "banksSub": "Repositorios bancarios segregados",
+      "brokers": "Corredores y Entornos",
+      "brokersSub": "Enrutamiento inteligente de órdenes (FIX/DMA)",
+      "custody": "Verificación Custodial",
+      "custodySub": "Liquidación de saldos en tiempo real",
+      "compliance": "Motor de Cumplimiento",
+      "complianceSub": "Verificaciones pre-negociación deterministas",
+      "portfolios": "Mandatos y Carteras",
+      "portfoliosSub": "Parámetros de política fiduciaria"
+    },
+    "title": "Infraestructura Autónoma de IA para Operaciones de Inversión",
+    "description": "Elleva es la capa de inteligencia y orquestación que conecta datos de mercado, investigación, política de inversión, custodia cualificada y ejecución multi-corredor en un bucle operativo continuo, auditado y determinista.",
+    "stats": {
+      "operationalLeverage": "14,2x",
+      "operationalLeverageSub": "Delta de Apalancamiento Operativo",
+      "globalConnectivity": "48+",
+      "globalConnectivitySub": "Entornos Institucionales Conectados"
+    },
+    "getStarted": "Solicitar Acceso",
+    "architecture": "Ver Arquitectura",
+    "topologyBadge": "ARQUITECTURA AUTÓNOMA",
+    "loopTitle": "Bucle Operativo Continuo",
+    "operationalAdvantage": "Apalancamiento Operativo",
+    "efficiencyDelta": "Delta de Eficiencia +14,2x",
+    "continuousFiduciary": "Gobernanza Fiduciaria Continua"
+  },
+  "operatingLoop": {
+    "steps": {
+      "research": {
+        "name": "INVESTIGACIÓN",
+        "role": "Agentes de Investigación Autónomos"
+      },
+      "decide": {
+        "name": "DECIDIR",
+        "role": "Núcleo Determinista de Mandato"
+      },
+      "execute": {
+        "name": "EJECUTAR",
+        "role": "Enrutador Inteligente de Órdenes (FIX/DMA)"
+      },
+      "monitor": {
+        "name": "MONITOREAR",
+        "role": "Auditoría y Telemetría Continuas"
+      }
+    }
+  },
+  "investmentExperience": {
+    "allocation": {
+      "fixedIncome": "Renta Fija",
+      "globalEquities": "Acciones Globales",
+      "realAssets": "Activos Reales e Infraestructura",
+      "strategicCash": "Efectivo Estratégico y Reservas",
+      "eyebrow": "ASIGNACIÓN DE MANDATO",
+      "heading": "Pesos Activos de la Cartera",
+      "tooltipLabel": "Peso Asignado"
+    },
+    "tabs": {
+      "overview": "Visión General de la Cartera",
+      "positions": "Posiciones",
+      "allocation": "Vista de Asignación",
+      "performance": "Atribución de Rendimiento",
+      "risk": "Riesgo y Límites",
+      "liquidity": "Gestión de Liquidez",
+      "marketIntelligence": "Inteligencia de Mercado",
+      "attribution": "Atribución y Factores",
+      "alerts": "Alertas de Telemetría",
+      "compliance": "Cumplimiento de Mandato"
+    },
+    "title": "Experiencia de Inversión Institucional de Precisión",
+    "description": "Una interfaz ejecutiva diseñada para asignadores de activos institucionales, family offices y comités fiduciarios que exigen transparencia absoluta y control determinista.",
+    "stats": {
+      "monitoredAum": {
+        "label": "AUM de Mandato Monitoreado",
+        "status": "Nominal / Segregado"
+      },
+      "adherence": {
+        "label": "Cumplimiento de Política de Mandato",
+        "deviation": "0,00% de Desviación"
+      },
+      "var": {
+        "label": "VaR Paramétrico 99% 10D",
+        "policyLimit": "Límite: 4,50% (Cumple)"
+      },
+      "custody": {
+        "label": "Estado de Custodia",
+        "status": "Primera Línea Segregada",
+        "subtext": "100% Título Legal del Cliente"
+      }
+    },
+    "chart": {
+      "eyebrow": "FRONTERA EFICIENTE DINÁMICA",
+      "heading": "Simulación Estocástica en Tiempo Real",
+      "badge": "SIMULACIÓN DE 10.000 CAMINOS",
+      "seriesExecution": "Frontera Estocástica Óptima",
+      "seriesTarget": "Límite de Política de Mandato"
+    }
+  },
+  "intelligence": {
+    "scenarios": {
+      "low": "Estrés Estanflacionario (15%)",
+      "base": "Escenario Base de Expansión (65%)",
+      "high": "Aceleración Tecnológica (20%)"
+    },
+    "title": "Motor Autónomo de Investigación y Decisión",
+    "description": "Transformando datos globales no estructurados en decisiones de asignación deterministas y verificadas por mandato, con rigor matemático y auditabilidad.",
+    "caseTitle": "Generación Autónoma de Tesis",
+    "confidenceLabel": "Confianza de la Hipótesis",
+    "confidenceValue": "94,2% Alta Convicción",
+    "thesis": {
+      "label": "Tesis de Inversión:",
+      "question": "Cuál es la oportunidad y por qué ahora.",
+      "content": "Expansión acelerada en semiconductores especializados creando cuellos de botella en refrigeración líquida y energía limpia. Ventana de entrada asimétrica antes del ciclo de re-precio global de capex."
+    },
+    "risk": {
+      "label": "Guardianes de Riesgo:",
+      "question": "Principales riesgos e impacto estimado.",
+      "content": "Riesgo de endurecimiento monetario prolongado que restrinja el financiamiento de infraestructura (VaR 99% proyectado en -4,2% en la cartera) y posibles restricciones geopolíticas en la cadena de suministro."
+    },
+    "triggers": {
+      "label": "Gatillos de Entrada:",
+      "question": "Eventos que pueden catalizar retornos.",
+      "content": "Actualizaciones de guía de capex de hyperscalers en el 3T, aprobación regulatoria para instalaciones dedicadas de energía renovable y anuncios de contratos take-or-pay a largo plazo."
+    },
+    "invalidation": {
+      "label": "Criterios de Invalidación:",
+      "question": "Qué invalidaría la tesis y activaría una salida.",
+      "content": "Revisión a la baja de los presupuestos de chips que supere el 15% interanual o compresión de margen operativo en los primeros 90 días de asignación."
+    },
+    "probability": {
+      "label": "Distribución de Probabilidad",
+      "subtitle": "Distribución de Escenarios",
+      "question": "Probabilidad estimada de realización de la tesis.",
+      "occurrence": "Probabilidad"
+    },
+    "action": {
+      "badge": "Acción Recomendada",
+      "status": "EJECUCIÓN SUGERIDA",
+      "headline": "Asignación sugerida, horizonte y próximos pasos operativos.",
+      "allocationLabel": "Asignación de Mandato:",
+      "allocationValue": "3,5% del AUM",
+      "horizonLabel": "Horizonte de la Tesis:",
+      "horizonValue": "18 a 24 meses",
+      "routingLabel": "Enrutamiento de Ejecución:",
+      "routingValue": "TWAP 4h (Deslizamiento máx. 0,02%)",
+      "readyCta": "Listo para envío vía Enrutador Inteligente de Órdenes"
+    }
+  },
+  "marketOpportunity": {
+    "title": "Transformando las Operaciones de Wealth y Activos",
+    "description": "La gestión de inversiones tradicional está limitada por el crecimiento lineal de personal y herramientas fragmentadas. Elleva proporciona la base computacional escalable para la próxima era de la asignación de capital.",
+    "cards": {
+      "globalAum2025": {
+        "label": "AUM Global 2025",
+        "desc": "Activos globales bajo gestión actualmente"
+      },
+      "globalProjection2030": {
+        "label": "Proyección Global 2030",
+        "desc": "AUM global proyectado para 2030"
+      },
+      "familyOfficesToday": {
+        "label": "Family Offices Hoy",
+        "desc": "AUM actual de family offices"
+      },
+      "familyOffices2030": {
+        "label": "Family Offices 2030",
+        "desc": "Expansión proyectada hasta 2030"
+      }
+    },
+    "chart": {
+      "eyebrow": "TRANSFORMACIÓN DE MERCADO",
+      "heading": "AUM por FTE vs. Activos Totales Gestionados",
+      "scale": "Escala: Billones de Dólares (USD)",
+      "tooltipAum": "AUM Global",
+      "seriesGlobalAum": "AUM Global (US$ Billones)",
+      "footnote": "* Datos de referencia: US$ 147B en 2025 y US$ 200B proyectados en 2030 para AUM global; US$ 3,1B hoy y US$ 5,4B proyectados en 2030 para family offices. Los puntos de 2026 a 2029 representan interpolación geométrica visual."
+    }
+  },
+  "infrastructure": {
+    "tier1Badge": "CAPA DE DATOS",
+    "tier1LeftTitle": "Proveedores de Datos de Mercado",
+    "tier1LeftDesc": "Integración directa con Bloomberg, Refinitiv y feeds de datos cuantitativos especializados.",
+    "tier1RightTitle": "Señales Macroeconómicas y Alternativas",
+    "tier1RightDesc": "Señales macro no estructuradas, archivos regulatorios (SEC/CVM) y feeds de sentimiento.",
+    "middleSubtitle": "NÚCLEO AUTÓNOMO DE ORQUESTACIÓN",
+    "middleCaption": "Simulaciones estocásticas continuas, validación determinista de mandatos y enrutamiento algorítmico.",
+    "tier3Badge": "EJECUCIÓN Y CUSTODIA",
+    "tier3CustodyTitle": "Custodios Cualificados",
+    "tier3CustodyDesc": "Enlaces directos de API a custodios globales que mantienen activos segregados de clientes.",
+    "tier3BanksTitle": "Pasarelas Bancarias de Primera Línea",
+    "tier3BanksDesc": "Gestión automatizada de efectivo y vías de liquidación con cuentas institucionales verificadas.",
+    "tier3BrokersTitle": "Prime Brokers de Ejecución",
+    "tier3BrokersDesc": "Rutas de ejecución DMA/FIX con enrutamiento inteligente de órdenes para mínimo impacto en el mercado.",
+    "title": "Topología Moderna de Infraestructura Financiera",
+    "description": "Elleva se sitúa entre fuentes de datos institucionales e infraestructura financiera regulada, actuando como la capa de orquestación inteligente.",
+    "flowBadge": "ARQUITECTURA DEL SISTEMA",
+    "tier1BadgeLabel": "NIVEL 1",
+    "tier1Heading": "Inteligencia de Mercado e Ingesta",
+    "tier1Summary": "Datos de mercado multi-activo en tiempo real y entradas cuantitativas alternativas.",
+    "tier2BadgeLabel": "NIVEL 2",
+    "tier2Heading": "Núcleo de Decisión y Gobernanza Elleva",
+    "tier2Summary": "Investigación autónoma, verificación de mandato y simulación de riesgo.",
+    "tier3BadgeLabel": "NIVEL 3",
+    "tier3Heading": "Ejecución y Custodia Regulada",
+    "tier3Summary": "Conectividad FIX directa y custodia institucional segregada.",
+    "tags": {
+      "banks": "Bancos",
+      "brokers": "Corredores",
+      "settlement": "Liquidación",
+      "liquidity": "Liquidez",
+      "marketData": "Datos de Mercado"
+    }
+  },
+  "newCategory": {
+    "flow": {
+      "capitalStage": "ENTRADA",
+      "capitalLabel": "CAPITAL",
+      "capitalDesc": "Mandatos, Family Offices, Wealth y Gestores de Activos",
+      "ellevaSubtitle": "INTELIGENCIA + ORQUESTACIÓN",
+      "ellevaCaption": "La capa autónoma entre capital e infraestructura financiera global",
+      "systemStage": "EJECUCIÓN",
+      "systemLabel": "SISTEMA FINANCIERO GLOBAL",
+      "systemDesc": "Custodios, Bolsas, Liquidación y Prime Brokers"
+    },
+    "modules": {
+      "data": "DATOS",
+      "dataSub": "Feeds de mercado y noticias",
+      "banks": "BANCOS",
+      "banksSub": "Liquidación y efectivo",
+      "brokers": "CORREDORES",
+      "brokersSub": "Ejecución y rutas",
+      "custody": "CUSTODIA",
+      "custodySub": "Activos segregados",
+      "compliance": "CUMPLIMIENTO",
+      "complianceSub": "Guardianes y límites",
+      "portfolios": "CARTERAS",
+      "portfoliosSub": "Asignación y riesgo",
+      "dataDesc": "Señales y feeds de mercado",
+      "banksDesc": "Liquidación y cuentas",
+      "brokersDesc": "Enrutamiento de órdenes",
+      "custodyDesc": "Segregación de custodia",
+      "complianceDesc": "Mandatos y KYC",
+      "portfoliosDesc": "Atribución y riesgo"
+    },
+    "title": "Una Nueva Categoría en Tecnología Financiera",
+    "description": "Estamos definiendo Infraestructura Autónoma de Capital — software que no solo muestra números, sino que ejecuta procesos de inversión complejos con precisión fiduciaria.",
+    "topologyBadge": "CREACIÓN DE CATEGORÍA"
+  },
+  "operational": {
+    "metrics": {
+      "monitoredAssets": {
+        "name": "Activos Monitoreados"
+      },
+      "responseSpeed": {
+        "name": "Velocidad de Respuesta"
+      },
+      "costPerAnalysis": {
+        "name": "Costo por Análisis"
+      },
+      "analystCapacity": {
+        "name": "Capacidad por Analista"
+      }
+    },
+    "title": "Ventaja Operativa Medible",
+    "description": "Compare el rendimiento operativo de la infraestructura autónoma frente a las operaciones tradicionales lineales de gestión de activos.",
+    "cards": {
+      "monitoredAssets": {
+        "title": "Activos Monitoreados Simultáneamente",
+        "desc": "Vigilancia continua de mercado e ingesta sin cuellos de botella de muestreo."
+      },
+      "responseSpeed": {
+        "title": "Respuesta Más Rápida a Eventos de Mercado",
+        "desc": "Identificación en submilisegundos de shocks macroeconómicos y rápida re-precio de tesis."
+      },
+      "costPerAnalysis": {
+        "title": "Costo por Tesis Estructurada",
+        "desc": "Reducción drástica de costos operativos manuales en investigación y conciliación."
+      },
+      "analystCapacity": {
+        "title": "Capacidad Operativa por Analista",
+        "desc": "Apalancamiento cognitivo multiplicando la cobertura de mandatos individuales."
+      }
+    },
+    "chart": {
+      "eyebrow": "BENCHMARK OPERATIVO",
+      "heading": "Capacidad por FTE Operativo: Tradicional vs. Elleva",
+      "badge": "DELTA DE APALANCAMIENTO DE 14,2X",
+      "legendTraditional": "Modelo Tradicional",
+      "legendElleva": "Infraestructura Elleva",
+      "legendTraditionalBase": "Modelo Tradicional (Base 1,0)",
+      "footnote": "* Métricas operativas normalizadas en investigación, monitoreo continuo y ejecución. No representa una promesa de retorno de inversión."
+    }
+  },
+  "pillars": {
+    "pillar1": {
+      "title": "Inteligencia Autónoma",
+      "quote": "Síntesis continua de mercado y generación de hipótesis sin fatiga humana."
+    },
+    "pillar2": {
+      "title": "Mandatos Deterministas",
+      "quote": "Fronteras matemáticas de riesgo que no pueden ser violadas o eludidas."
+    },
+    "pillar3": {
+      "title": "Custodia Directa Segregada",
+      "quote": "Riesgo cero de custodia: el capital nunca abandona el custodio cualificado del cliente."
+    },
+    "pillar4": {
+      "title": "Pistas de Auditoría Explicables",
+      "quote": "Trazabilidad causal completa para cada señal, operación y reequilibrio."
+    },
+    "badges": {
+      "segregation": "Segregación de Datos",
+      "encryption": "Cifrado Punto a Punto",
+      "auditability": "Auditabilidad Total",
+      "compliance": "Cumplimiento Regulatorio"
+    },
+    "title": "Pilares Arquitectónicos Estratégicos",
+    "description": "Cuatro principios fundamentales de ingeniería que garantizan confiabilidad empresarial, seguridad regulatoria y rendimiento institucional.",
+    "pillarPrefix": "PILAR",
+    "governanceTitle": "Estándar Fiduciario Institucional",
+    "governanceDescription": "Diseñado específicamente para satisfacer estrictos estándares de cumplimiento institucional, comités de auditoría y supervisión regulatoria."
+  },
+  "technology": {
+    "components": {
+      "data": {
+        "title": "Ingesta y Procesamiento",
+        "quote": "Canalización distribuida para ingesta de datos de mercado en tiempo real."
+      },
+      "intelligence": {
+        "title": "Modelos e Inferencia",
+        "quote": "Conjunto de modelos especializados enfocados en interpretabilidad y calibración."
+      },
+      "orchestration": {
+        "title": "Orquestación y Ejecución",
+        "quote": "Motor determinista para validación de mandato y enrutamiento inteligente de órdenes."
+      },
+      "storage": {
+        "title": "Almacenamiento y Auditoría",
+        "quote": "Capa inmutable para registro de decisiones, telemetría y pistas de auditoría."
+      }
+    },
+    "specs": {
+      "uptime": "99,99% de tiempo activo",
+      "latency": "Latencia < 50ms",
+      "encryption": "Cifrado AES-256",
+      "compliance": "Cumple con SOC 2 Tipo II"
+    },
+    "title": "Stack Tecnológico de Nivel Institucional",
+    "description": "Construido sobre una arquitectura de microservicios de alto rendimiento y baja latencia, diseñada para operaciones de capital de alto riesgo.",
+    "componentLabel": "COMPONENTE CENTRAL",
+    "specsPanel": {
+      "title": "Especificaciones Técnicas",
+      "description": "Métricas de infraestructura que garantizan disponibilidad continua y precisión operativa."
+    }
+  },
+  "theNewSoftware": {
+    "sequence": {
+      "software": {
+        "title": "SOFTWARE",
+        "subtitle": "plataforma, datos, gobernanza",
+        "desc": "Infraestructura computacional resiliente, normalización de datos y barreras matemáticas de mandato."
+      },
+      "work": {
+        "title": "TRABAJO",
+        "subtitle": "investigación, monitoreo, operaciones",
+        "desc": "Agentes de IA realizando ingesta continua de archivos regulatorios, noticias y conciliación de custodia."
+      },
+      "decision": {
+        "title": "DECISIÓN",
+        "subtitle": "asignación, reequilibrio, ejecución",
+        "desc": "Generación probabilística de tesis y envío algorítmico minimizando impacto en el mercado y riesgo."
+      }
+    },
+    "benefits": {
+      "margin": {
+        "title": "Mayor Margen Operativo",
+        "desc": "Eliminación del escalado lineal de costos operativos a medida que AUM y volumen de mandatos se expanden."
+      },
+      "scale": {
+        "title": "Escalabilidad Ilimitada de Mandatos",
+        "desc": "Administre miles de mandatos de inversión distintos simultáneamente con calidad institucional uniforme."
+      },
+      "quality": {
+        "title": "Calidad Disciplinada de Decisión",
+        "desc": "Elimine sesgos emocionales, ventas de pánico y desviación de mandato mediante ejecución algorítmica disciplinada."
+      }
+    },
+    "title": "Software que Ejecuta Decisiones",
+    "description": "El software tradicional registra transacciones históricas. La infraestructura autónoma de Elleva realiza activamente tareas analíticas y operativas para ofrecer un apalancamiento superior.",
+    "stepLabel": "ETAPA",
+    "closingQuote": "No solo una herramienta fintech. Una verdadera infraestructura operativa para el capital."
+  },
+  "problem": {
+    "metrics": {
+      "assetsFollowed": "Activos Monitoreados",
+      "responseTime": "Tiempo de Respuesta",
+      "costPerAnalysis": "Costo por Análisis",
+      "capacityPerAnalyst": "Capacidad por Analista",
+      "assetsFollowedSub": "Escaneo continuo del mercado global",
+      "responseTimeSub": "Reacción instantánea a shocks de mercado",
+      "costPerAnalysisSub": "Costo operativo incremental mínimo",
+      "capacityPerAnalystSub": "Alto apalancamiento cognitivo y computacional"
+    },
+    "traditional": {
+      "point1": "Cobertura limitada por analistas manuales",
+      "point2": "Toma de decisiones episódica y retrasada",
+      "point3": "Herramientas de software fragmentadas y desconectadas",
+      "point4": "Altos costos lineales de personal",
+      "point5": "Falta de transparencia causal en las decisiones",
+      "title": "Modelo Tradicional",
+      "badge": "Lineal y Manual"
+    },
+    "elleva": {
+      "point1": "Escaneo continuo 24/7 de mercado multi-activo",
+      "point2": "Investigación y toma de decisiones asistidas por IA en tiempo real",
+      "point3": "Núcleo operativo unificado de extremo a extremo",
+      "point4": "AUM escalable sin contrataciones lineales",
+      "point5": "Razonamiento causal y verificaciones de riesgo totalmente auditables",
+      "title": "Modelo Elleva",
+      "badge": "Autónomo y Continuo"
+    },
+    "title": "La Gestión de Activos Tradicional No Está Construida para Mercados en Tiempo Real",
+    "chart": {
+      "eyebrow": "Benchmark Operativo Normalizado",
+      "title": "Eficiencia Relativa: Tradicional (1,0x) vs. Elleva",
+      "traditional": "Modelo Tradicional",
+      "elleva": "Elleva Autónomo",
+      "traditionalNormalized": "Modelo Tradicional (Normalizado 1,0)",
+      "ellevaAutonomous": "Elleva Autónomo"
+    },
+    "quote": "El alfa institucional futuro vendrá menos de la opinión subjetiva y más de la capacidad computacional aplicada al proceso de inversión."
+  },
+  "theProduct": {
+    "phases": {
+      "research": {
+        "title": "INVESTIGACIÓN",
+        "scope": "mercados, financieros, noticias, señales macro",
+        "moduleName": "Agentes de Investigación",
+        "moduleDescription": "IA especializada en recopilar, interpretar y estructurar datos globales relevantes.",
+        "process1": "Ingesta continua de estados financieros (10-K, 10-Q, archivos regulatorios)",
+        "process2": "Procesamiento semántico de noticias macro y transcripciones de llamadas de resultados",
+        "process3": "Extracción en tiempo real de señales de flujo de órdenes institucionales y liquidez",
+        "metric1": "Feeds Activos",
+        "metric2": "Latencia de Análisis",
+        "metric3": "Cobertura de Activos"
+      },
+      "decide": {
+        "title": "DECIDIR",
+        "scope": "tesis, escenarios, riesgo, asignación",
+        "moduleName": "Mandatos y Políticas",
+        "moduleDescription": "Reglas, límites y controles deterministas que rigen cada cartera.",
+        "process1": "Validación continua contra restricciones estatutarias y políticas de inversión",
+        "process2": "Pruebas de estrés estocásticas y simulaciones de drawdown en más de 10.000 caminos",
+        "process3": "Optimización dinámica riesgo-retorno a lo largo de la frontera eficiente",
+        "metric1": "Escenarios Simulados",
+        "metric2": "Cumplimiento de Mandato",
+        "metric3": "Cobertura de Riesgo"
+      },
+      "execute": {
+        "title": "EJECUTAR",
+        "scope": "órdenes, reequilibrio, flujo de liquidez",
+        "moduleName": "Ejecución Institucional",
+        "moduleDescription": "Conectividad segura con custodios y mesas de negociación para enrutamiento eficiente.",
+        "process1": "Enrutamiento inteligente de órdenes mediante protocolo FIX y APIs institucionales",
+        "process2": "Ejecución algorítmica TWAP/VWAP minimizando impacto en el mercado y deslizamiento",
+        "process3": "Reequilibrio automatizado con verificaciones pre-negociación de efectivo y margen",
+        "metric1": "Deslizamiento Promedio",
+        "metric2": "Protocolos Activos",
+        "metric3": "Custodia Directa",
+        "segregated": "100% Segregado"
+      },
+      "monitor": {
+        "title": "MONITOREAR",
+        "scope": "rendimiento, alertas, cumplimiento",
+        "moduleName": "Auditoría y Explicabilidad",
+        "moduleDescription": "Trazabilidad de extremo a extremo y explicaciones causales claras para cada acción.",
+        "process1": "Registros inmutables con árbol de decisión causal completo para cada asignación",
+        "process2": "Alertas predictivas en tiempo real para violaciones de riesgo o desviación de política",
+        "process3": "Reportes instantáneos de atribución de rendimiento multi-factor Brinson-Fachler",
+        "metric1": "Auditabilidad",
+        "metric2": "Latencia de Alerta",
+        "metric3": "Pista Regulatoria",
+        "immutable": "Inmutable"
+      }
+    },
+    "realTime": "Tiempo Real",
+    "title": "Elleva Transforma la Inversión en un Sistema Operativo",
+    "description": "Cada cartera opera en una capa de IA autónoma que investiga, decide, ejecuta y monitorea continuamente dentro de controles fiduciarios definidos.",
+    "osHeader": {
+      "systemActive": "SISTEMA ACTIVO",
+      "circuitsClosed": "TODOS LOS CIRCUITOS CERRADOS"
+    },
+    "moduleHeader": "Módulo Operativo",
+    "activeProcessesHeader": "Procesos de Ejecución Activos",
+    "telemetryHeader": "Telemetría del Sistema",
+    "footerStatus": "Controles Deterministas Activos",
+    "footerInviolable": "100% Inviolable"
+  },
+  "trust": {
+    "guarantees": {
+      "segregation": {
+        "title": "Segregación Fiduciaria de Activos",
+        "quote": "Elleva nunca toma custodia de activos. El capital permanece en custodios cualificados bajo el nombre legal del cliente."
+      },
+      "determinism": {
+        "title": "Controles de Riesgo Deterministas",
+        "quote": "Ninguna orden de negociación se envía sin validación pre-negociación contra límites de mandato y reglas de cumplimiento."
+      },
+      "explicability": {
+        "title": "Explicabilidad Causal Completa",
+        "quote": "Cada señal, asignación y operación incluye una pista de auditoría criptográfica completa con lógica causal transparente."
+      }
+    },
+    "certifications": {
+      "cvm": {
+        "label": "Alineación con Marco CVM y ANBIMA",
+        "desc": "Arquitectura tecnológica compatible con marcos fiduciarios regulatorios locales y globales."
+      },
+      "soc2": {
+        "label": "Estándar de Seguridad SOC 2 Tipo II",
+        "desc": "Protección rigurosa de datos, controles de acceso y confidencialidad institucional."
+      },
+      "iso": {
+        "label": "Alineación ISO 27001 / 27701",
+        "desc": "Prácticas de gobernanza de primer nivel para seguridad de la información y gestión de privacidad."
+      },
+      "auditable": {
+        "label": "Pistas de Auditoría Inmutables",
+        "desc": "Registros de telemetría a prueba de manipulaciones y validación continua de riesgo determinista."
+      }
+    },
+    "title": "Gobernanza y Seguridad de Nivel Institucional",
+    "description": "Elleva opera puramente como una capa de inteligencia y orquestación. El capital permanece seguro en custodia segregada en instituciones reguladas.",
+    "guaranteeLabel": "GARANTÍA"
+  }
+}

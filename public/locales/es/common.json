@@ -1,0 +1,81 @@
+{
+  "brand": {
+    "name": "Elleva",
+    "tagline": "Infraestructura Autónoma de Capital",
+    "description": "Infraestructura autónoma de IA para operaciones de inversión."
+  },
+  "flow": {
+    "activeExploration": "Exploración Activa",
+    "recenterTitle": "Restaurar encuadre original",
+    "recenter": "Re-centrar"
+  },
+  "actions": {
+    "getStarted": "Solicitar Acceso",
+    "requestAccess": "Solicitar Acceso Institucional",
+    "architecture": "Ver Arquitectura",
+    "learnMore": "Más Información",
+    "close": "Cerrar",
+    "submit": "Enviar Solicitud",
+    "completed": "Completado",
+    "viewDetails": "Ver Detalles"
+  },
+  "status": {
+    "nominal": "Nominal / Segregado",
+    "active": "Activo",
+    "connected": "Conectado",
+    "audited": "Auditado"
+  },
+  "modal": {
+    "badge": "Acceso Institucional Cualificado",
+    "title": "Solicitar Acceso a Elleva",
+    "description": "La infraestructura de Elleva está provisionada para instituciones financieras cualificadas, gestores de activos y family offices. Proporcione los detalles de la institución.",
+    "nameLabel": "Nombre del Ejecutivo",
+    "namePlaceholder": "Dr. Edward Silva",
+    "institutionLabel": "Institución / Fondo",
+    "institutionPlaceholder": "Alpha Capital Asset",
+    "emailLabel": "Correo Corporativo",
+    "emailPlaceholder": "management@alphacapital.com",
+    "typeLabel": "Tipo de Institución",
+    "types": {
+      "assetManager": "Gestor de Activos",
+      "multiFamilyOffice": "Multi-Family Office",
+      "singleFamilyOffice": "Single Family Office",
+      "advisor": "Asesor de Inversiones / RIA",
+      "treasury": "Tesorería Institucional / Dotación"
+    },
+    "scopeLabel": "Alcance Operativo / Mandato",
+    "scopePlaceholder": "Describa brevemente el volumen gestionado o el alcance de automatización deseado...",
+    "submitButton": "Enviar Solicitud de Acceso",
+    "successTitle": "Solicitud Recibida",
+    "successDescPrefix": "Hemos recibido datos de",
+    "successDescSuffix": "Nuestro equipo de alianzas institucionales se comunicará para programar una sesión técnica y entregar la documentación de integración."
+  },
+  "done": "Hecho",
+  "close": "Cerrar",
+  "footer": {
+    "copyright": "Elleva © 2026. Todos los derechos reservados.",
+    "terms": "Términos Institucionales",
+    "security": "Seguridad y Cumplimiento",
+    "regulatory": "Divulgación Regulatoria",
+    "aboutElleva": "Sobre Elleva",
+    "apiData": "API y Datos",
+    "bottomTagline": "Infraestructura autónoma de capital para operaciones de inversión.",
+    "brandDesc": "Infraestructura autónoma de IA para operaciones de inversión.",
+    "contact": "Contacto",
+    "documentation": "Documentación",
+    "executionEngine": "Motor de Ejecución",
+    "journey": "Trayectoria",
+    "privacyPolicy": "Política de Privacidad",
+    "riskDisclosures": "Divulgaciones de Riesgo",
+    "termsOfService": "Términos de Servicio"
+  },
+  "theme": {
+    "label": "Tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema",
+    "toggle": "Alternar tema"
+  },
+  "year": "Año",
+  "allRightsReserved": "Todos los derechos reservados."
+}

@@ -1,0 +1,908 @@
+{
+  "modal": {
+    "badge": "適格機関投資家アクセス",
+    "title": "Elleva アクセスリクエスト",
+    "description": "Elleva インフラストラクチャは、適格金融機関、資産運用会社、ファミリーオフィス向けにプロビジョニングされています。機関の詳細を入力してください。",
+    "nameLabel": "役職員名",
+    "namePlaceholder": "Dr. Edward Silva",
+    "institutionLabel": "機関 / ファンド",
+    "institutionPlaceholder": "Alpha Capital Asset",
+    "emailLabel": "企業メールアドレス",
+    "emailPlaceholder": "management@alphacapital.com",
+    "typeLabel": "機関タイプ",
+    "types": {
+      "assetManager": "資産運用会社 / ファンド",
+      "multiFamilyOffice": "マルチファミリーオフィス",
+      "singleFamilyOffice": "シングルファミリーオフィス",
+      "advisor": "投資顧問 / RIA",
+      "treasury": "機関財務 / 基金"
+    },
+    "scopeLabel": "運用範囲 / マンデート",
+    "scopePlaceholder": "管理規模または目標とする自動化範囲を簡単に説明してください...",
+    "submitButton": "アクセスリクエストを送信",
+    "successTitle": "リクエストを受信しました",
+    "successDescPrefix": "以下のデータを受信しました：",
+    "successDescSuffix": "弊社機関パートナーシップチームが技術セッションのスケジュール調整と統合ドキュメントの提供のためにご連絡いたします。"
+  },
+  "common": {
+    "done": "完了",
+    "footer": {
+      "copyright": "Elleva © 2026。All rights reserved.",
+      "terms": "機関向け利用規約",
+      "security": "セキュリティとコンプライアンス",
+      "regulatory": "規制開示"
+    },
+    "close": "閉じる",
+    "year": "年"
+  },
+  "architecture": {
+    "flow": {
+      "coreSubtitle": "インテリジェンス＆オーケストレーションレイヤー",
+      "coreCaption": "自律型リサーチ、マンデート検証および実行",
+      "marketDataLabel": "市場データ",
+      "marketDataSub": "リアルタイム＆代替フィード",
+      "portfoliosLabel": "マンデート＆ポートフォリオ",
+      "portfoliosSub": "受託者責任ポリシーパラメータ",
+      "banksLabel": "適格カストディ",
+      "banksSub": "分離された銀行リポジトリ",
+      "custodyLabel": "カストディ検証",
+      "custodySub": "リアルタイム残高決済",
+      "brokersLabel": "ブローカー＆取引所",
+      "brokersSub": "スマートオーダールーティング（FIX/DMA）",
+      "complianceLabel": "コンプライアンスエンジン",
+      "complianceSub": "確定的な取引前チェック",
+      "reportsLabel": "監査＆テレメトリ",
+      "reportsSub": "不変の暗号ログ",
+      "familyOfficesLabel": "ファミリーオフィス＆ウェルスマネジメント",
+      "familyOfficesSub": "統合アロケーション表示"
+    },
+    "modules": {
+      "marketData": {
+        "title": "市場データ",
+        "item1": "市場API",
+        "item2": "リアルタイムデータ",
+        "item3": "代替データセット",
+        "item4": "マクロ＆センチメントフィード"
+      },
+      "portfolios": {
+        "title": "マンデート＆ポートフォリオ",
+        "item1": "投資方針",
+        "item2": "リスク制限",
+        "item3": "アロケーションルール",
+        "item4": "マンデート制約"
+      },
+      "banks": {
+        "title": "銀行＆カストディアン",
+        "item1": "カストディAPI",
+        "item2": "ポジション管理",
+        "item3": "資産分離",
+        "item4": "決済レール"
+      },
+      "custody": {
+        "title": "カストディ統合",
+        "item1": "マルチカストディアグリゲーション",
+        "item2": "ポジション管理",
+        "item3": "直接口座名義",
+        "item4": "継続的照合"
+      },
+      "brokers": {
+        "title": "ブローカー＆執行",
+        "item1": "執行ルート",
+        "item2": "スマートオーダールーター",
+        "item3": "FIXプロトコル＆API",
+        "item4": "流動性アグリゲーション"
+      },
+      "compliance": {
+        "title": "コンプライアンス＆ガバナンス",
+        "item1": "取引前検証",
+        "item2": "ドローダウンガードレール",
+        "item3": "法定制限",
+        "item4": "規制報告"
+      },
+      "reporting": {
+        "title": "監査＆レポーティング",
+        "item1": "監査証跡",
+        "item2": "テレメトリ＆ログ",
+        "item3": "コンプライアンスレポート",
+        "item4": "マンデート管理"
+      },
+      "wealth": {
+        "title": "ウェルス＆ファミリーオフィス",
+        "item1": "ポートフォリオ統合",
+        "item2": "360°クライアントビュー",
+        "item3": "マンデートカスタマイズ",
+        "item4": "多世代ガバナンス"
+      }
+    },
+    "title": "自律型資本インフラストラクチャのアーキテクチャ",
+    "description": "Elleva は、市場データ、リサーチ、投資方針、適格カストディ、マルチブローカー執行を接続するインテリジェンスおよびオーケストレーションレイヤーとして機能し、継続的で監査可能な確定的運用ループを実現します。",
+    "flowBadge": "フロー",
+    "pillars": {
+      "custodyTitle": "直接分離カストディ",
+      "custodyDesc": "投資家所有権のもと、適格カストディアンに資産を直接保管する完全な受託者分離。",
+      "institutionsTitle": "エンタープライズ接続性",
+      "institutionsDesc": "ティア1グローバル銀行、プライムブローカー、預託機関との直接的な機関FIXプロトコルおよびAPI統合。",
+      "capacityTitle": "マルチアセットスケーラビリティ",
+      "capacityDesc": "資産運用会社およびファミリーオフィスが、数学的精度と人員増加ゼロでマンデートを拡張することを可能にします。"
+    }
+  },
+  "businessModel": {
+    "streams": {
+      "platform": {
+        "title": "SaaSプラットフォーム料金",
+        "desc": "資産運用会社およびウェルス構造向けライセンス",
+        "subtext": "Elleva OSカーネル、マンデートガバナンス、確定的リスク管理、自動化コンプライアンスへの継続的アクセス。"
+      },
+      "usage": {
+        "title": "使用量／容量料金",
+        "desc": "コンピューティング、テレメトリ量、機関APIフィード",
+        "subtext": "テレメトリ量、取り込まれたフィード、確率論的シミュレーション実行、アクティブポートフォリオ監視に基づく価格設定。"
+      },
+      "value": {
+        "title": "バリューベースアライメント料金",
+        "desc": "運用効率、インテリジェンス、または関連利回りに対する手数料",
+        "subtext": "スリッページ削減、運用コスト削減、執行最適化に連動した受託者アライメント。"
+      }
+    },
+    "title": "機関収益モデル",
+    "description": "定期ソフトウェアインフラストラクチャと運用能力のアライメントに基づいて構築された3つの補完的収益化レイヤー。",
+    "chart": {
+      "eyebrow": "オペレーティングレバレッジ",
+      "heading": "AUM成長 vs 運用コスト拡大",
+      "legendTraditionalShort": "従来型（線形）",
+      "legendEllevaShort": "Elleva（自律型）",
+      "tooltipElleva": "Elleva運用コスト",
+      "tooltipTraditional": "従来型運用コスト",
+      "seriesElleva": "Elleva自律型インフラストラクチャ",
+      "seriesTraditional": "従来型資産運用"
+    }
+  },
+  "defensibility": {
+    "layer4": {
+      "title": "エコシステムとカストディ統合",
+      "quote": "アクセスと信頼を拡大する機関統合。",
+      "detail": "カストディアン、プライムブローカー、金融機関との独自の双方向接続は、構造的スイッチングコストと高い参入障壁を生み出します。",
+      "level": "レベル4"
+    },
+    "layer3": {
+      "title": "運用ドメインの深さ",
+      "quote": "複利効果を生む運用の深さ。",
+      "detail": "マクロ取り込みから取引前リスク、取引後執行監査まで、断片化のないエンドツーエンドの投資プロセスモデリング。",
+      "level": "レベル3"
+    },
+    "layer2": {
+      "title": "文脈的インテリジェンスエンジン",
+      "quote": "多様なマクロ経済体制にわたる結果へのインテリジェンス。",
+      "detail": "系統的シグナルを市場ノイズから分離するマルチファクター・パフォーマンス帰属分析を実行し、確率論的シナリオを継続的に調整します。",
+      "level": "レベル2"
+    },
+    "layer1": {
+      "title": "確定的意思決定履歴",
+      "quote": "意思決定とベースライン条件の独自監査証跡。",
+      "detail": "仮説、調整済みパラメータ、実行ルート、様々な市場条件下での実際の取引後結果の不変ログ。",
+      "level": "レベル1"
+    },
+    "title": "複合防御性",
+    "description": "実行される意思決定ごとに、Ellevaの構造的深さは、独自の意思決定ログ、機関統合、ドメイン専門知識全体で複合的に蓄積されます。",
+    "footer": {
+      "scaleLabel": "オペレーティングレバレッジ",
+      "scaleValue": "14.2倍デルタ",
+      "retentionLabel": "機関リテンション",
+      "retentionValue": "99.4%",
+      "barrierLabel": "スイッチング障壁",
+      "barrierValue": "高い構造的堀"
+    }
+  },
+  "ecosystem": {
+    "categories": {
+      "custodians": {
+        "title": "銀行＆カストディアン"
+      },
+      "brokers": {
+        "title": "ブローカー＆流動性提供先"
+      },
+      "marketData": {
+        "title": "市場データ＆フィード"
+      },
+      "compliance": {
+        "title": "規制機関＆監査機関"
+      }
+    },
+    "complianceItems": {
+      "soc2": "SOC 2 Type II 認証アーキテクチャ",
+      "iso27001": "ISO 27001 / 27701 準拠",
+      "anbima": "ANBIMA ベストプラクティス準拠",
+      "cvm175": "CVM 175 規制ガバナンスフレームワーク",
+      "preTrade": "確定的取引前リスクガードレール",
+      "auditTrail": "不変暗号監査証跡"
+    },
+    "title": "接続された機関エコシステム",
+    "description": "Elleva は、ティア1カストディアン、執行取引所、機関資産所有者を接続する中立的なインテリジェンスおよび実行レイヤーとして機能します。",
+    "tags": {
+      "wealthManagers": "資産運用会社＆ファミリーオフィス",
+      "custody": "分離されたティア1カストディ",
+      "reporting": "自動化された規制報告"
+    }
+  },
+  "ellevaLoop": {
+    "nodes": {
+      "center": {
+        "title": "Elleva エンジン",
+        "subtitle": "コンティニュアスカーネル",
+        "caption": "自律型受託者業務"
+      },
+      "stage1": {
+        "label": "1. リサーチ",
+        "desc": "市場インテリジェンス"
+      },
+      "stage2": {
+        "label": "2. 意思決定",
+        "desc": "マンデート最適化"
+      },
+      "stage3": {
+        "label": "3. リスクチェック",
+        "desc": "確定的境界"
+      },
+      "stage4": {
+        "label": "4. 執行",
+        "desc": "スマートオーダールーティング"
+      },
+      "stage5": {
+        "label": "5. 決済",
+        "desc": "直接カストディ"
+      },
+      "stage6": {
+        "label": "6. 監視",
+        "desc": "不変監査ログ"
+      }
+    },
+    "steps": {
+      "s1": "複数ソースからの自律型インテリジェンスエンジンが、非構造化グローバル金融データを24時間365日収集、クリーニング、構造化します。",
+      "s2": "法定投資方針声明に照らして検証されたリスク調整後取引提案の確定的評価。",
+      "s3": "侵害不可能な数学的制約 — 最大ドローダウン、セクター集中度、流動性境界を強制します。",
+      "s4": "直接ブローカーおよびカストディアンエンドポイント間でのスマートオーダールーティングによるアルゴリズム注文執行、最小スリッページを実現。",
+      "s5": "クライアント所有の分離機関口座内での取引前および取引後残高の継続的決済。",
+      "s6": "リアルタイムポジション照合、リスクガードレール検証、規制コンプライアンスのための不変監査ログ記録。"
+    },
+    "title": "Elleva オペレーティングフライホイール",
+    "description": "機関インテリジェンス、執行品質、リスクガバナンスを複合的に強化する自己強化型の自律運用サイクル。",
+    "badge": "オペレーティングフライホイール",
+    "flywheelTitle": "自律フィードバックメカニズム"
+  },
+  "faq": {
+    "items": {
+      "custody": {
+        "q": "Elleva は資産のセキュリティと分離をどのように保証しますか？",
+        "a": "Elleva はゼロ資産カストディで運用されます。資本は、投資家の法的税務IDおよび名義のもと、規制されたティア1カストディ銀行に留まります。Elleva は、確定的マンデート制約によって厳格に管理された読み取り/取引権限を持つ、安全なトークン化API/FIXプロトコルを介してのみ対話します。"
+      },
+      "replacement": {
+        "q": "Elleva は資産運用会社や受託者委員会を置き換えますか？",
+        "a": "いいえ。Elleva は資産運用会社や投資委員会を強化する自律型インフラストラクチャレイヤーです。反復的なリサーチ、シナリオモデリング、リスクチェック、執行を自動化し、運用者が優れた精度でAUMを拡大できるようにします。"
+      },
+      "compliance": {
+        "q": "Elleva は説明可能性と監査証跡をどのように維持しますか？",
+        "a": "システムによって生成されたすべての決定にはタイムスタンプが付与され、それを生成した正確な仮説、市場入力、確率論的シミュレーション、マンデートチェックに暗号的にリンクされ、エンドツーエンドの監査可能な透明性を提供します。"
+      },
+      "assets": {
+        "q": "どのような資産クラスと金融商品がサポートされていますか？",
+        "a": "Elleva は、48以上の機関取引所にわたるグローバル公開株式、固定収入商品、通貨（FX）、取引所取引デリバティブ、トークン化された代替資産をサポートしています。"
+      },
+      "integration": {
+        "q": "機関クライアントの実装スケジュールはどのようになっていますか？",
+        "a": "標準的な機関オンボーディングは通常2〜4週間で、マンデートパラメータ化、カストディアンAPI認証情報設定、リスク制限設定、シミュレーションサンドボックステスト実行を含みます。"
+      }
+    },
+    "title": "よくある質問",
+    "description": "Elleva 自律型資本インフラストラクチャに関する主要な技術的、規制的、運用的詳細。"
+  },
+  "finalCTA": {
+    "title": "投資インフラストラクチャを変革する",
+    "description": "エンタープライズガバナンスと直接カストディ分離を備えた、リサーチ、意思決定、執行、監視全体にわたる自律型インテリジェンスを導入します。",
+    "credentials": {
+      "segregation": "100% 分離直接カストディ",
+      "noCustody": "ゼロ資産カストディリスク",
+      "connectivity": "直接機関FIX/API接続"
+    },
+    "modal": {
+      "submittedTitle": "アクセスリクエストを受信しました",
+      "submittedDesc": "弊社機関パートナーシップチームが24時間以内にサンドボックス認証情報を添えてご連絡いたします。",
+      "badge": "適格クライアント",
+      "title": "機関アクセスをリクエスト",
+      "desc": "Elleva インフラストラクチャは、適格金融機関、資産運用会社、ファミリーオフィス向けにプロビジョニングされています。",
+      "institutionLabel": "機関 / ファンド",
+      "institutionPlaceholder": "Alpha Capital Asset",
+      "emailLabel": "企業メールアドレス",
+      "emailPlaceholder": "management@alphacapital.com",
+      "submitButton": "アクセスリクエストを送信"
+    }
+  },
+  "globalMarkets": {
+    "modules": {
+      "marketData": {
+        "name": "市場データ＆フィード",
+        "desc": "リアルタイムのマルチアセットデータフィードとマクロ経済指標。"
+      },
+      "banks": {
+        "name": "ティア1バンキングゲートウェイ",
+        "desc": "直接流動性、キャッシュマネジメント、機関財務レール。"
+      },
+      "brokers": {
+        "name": "ブローカー＆執行取引所",
+        "desc": "48以上の機関取引所にわたる直接DMA/FIX実行ルート。"
+      },
+      "custody": {
+        "name": "適格カストディアン",
+        "desc": "分離資産を維持するグローバルカストディアンへの直接APIリンク。"
+      },
+      "compliance": {
+        "name": "コンプライアンス＆監査レール",
+        "desc": "確定的取引前リスクガードレールと自動規制レポート。"
+      },
+      "portfolios": {
+        "name": "マンデート＆ポートフォリオ",
+        "desc": "継続的な確率論的ポートフォリオ最適化とポリシー管理。"
+      }
+    },
+    "title": "グローバル市場接続性",
+    "description": "すべての主要な金融管轄区域にわたるグローバル取引所、プライムブローカー、流動性提供先、カストディネットワークへの直接機関アクセス。",
+    "telemetry": {
+      "mesh": "グローバルメッシュトポロジ",
+      "hubsCount": "6つのプライマリノードがアクティブ",
+      "routingLabel": "スマートオーダールーティング（SOR）",
+      "routingValue": "アクティブマルチベニュー",
+      "statusLabel": "ネットワークステータス",
+      "statusValue": "正常 / 分離済み"
+    },
+    "footerNote": "SOC 2 Type II および ISO 27001 標準に基づいて監査された多管轄区執行ルート。",
+    "inspector": {
+      "badge": "ゲートウェイインスペクター",
+      "primaryRole": "主な役割：",
+      "layer": "インフラストラクチャレイヤー：",
+      "latency": "ターゲットレイテンシ：",
+      "connection": "接続標準：",
+      "connectionStatus": "接続ステータス：",
+      "switchHub": "ノード切替"
+    }
+  },
+  "hero": {
+    "nodes": {
+      "coreSubtitle": "インテリジェンス＆オーケストレーションレイヤー",
+      "coreCaption": "自律型リサーチ、マンデート検証および実行",
+      "marketData": "市場データ",
+      "marketDataSub": "リアルタイム＆代替フィード",
+      "banks": "適格カストディ",
+      "banksSub": "分離された銀行リポジトリ",
+      "brokers": "ブローカー＆取引所",
+      "brokersSub": "スマートオーダールーティング（FIX/DMA）",
+      "custody": "カストディ検証",
+      "custodySub": "リアルタイム残高決済",
+      "compliance": "コンプライアンスエンジン",
+      "complianceSub": "確定的取引前チェック",
+      "portfolios": "マンデート＆ポートフォリオ",
+      "portfoliosSub": "受託者責任ポリシーパラメータ"
+    },
+    "title": "投資運用のための自律型AIインフラストラクチャ",
+    "description": "Elleva は、市場データ、リサーチ、投資方針、適格カストディ、マルチブローカー執行を接続するインテリジェンスおよびオーケストレーションレイヤーであり、継続的で監査可能な確定的運用ループを実現します。",
+    "stats": {
+      "operationalLeverage": "14.2倍",
+      "operationalLeverageSub": "オペレーティングレバレッジデルタ",
+      "globalConnectivity": "48+",
+      "globalConnectivitySub": "接続された機関取引所"
+    },
+    "getStarted": "アクセスをリクエスト",
+    "architecture": "アーキテクチャを見る",
+    "topologyBadge": "自律型アーキテクチャ",
+    "loopTitle": "継続的運用ループ",
+    "operationalAdvantage": "オペレーティングレバレッジ",
+    "efficiencyDelta": "+14.2倍 効率デルタ",
+    "continuousFiduciary": "継続的受託者ガバナンス"
+  },
+  "operatingLoop": {
+    "steps": {
+      "research": {
+        "name": "リサーチ",
+        "role": "自律型リサーチエージェント"
+      },
+      "decide": {
+        "name": "意思決定",
+        "role": "確定的マンデートカーネル"
+      },
+      "execute": {
+        "name": "執行",
+        "role": "スマートオーダールーター（FIX/DMA）"
+      },
+      "monitor": {
+        "name": "監視",
+        "role": "継続的監査とテレメトリ"
+      }
+    }
+  },
+  "investmentExperience": {
+    "allocation": {
+      "fixedIncome": "固定収入",
+      "globalEquities": "グローバル株式",
+      "realAssets": "実物資産とインフラ",
+      "strategicCash": "戦略的キャッシュと準備金",
+      "eyebrow": "マンデートアロケーション",
+      "heading": "アクティブポートフォリオウェイト",
+      "tooltipLabel": "アロケーションウェイト"
+    },
+    "tabs": {
+      "overview": "ポートフォリオ概要",
+      "positions": "ポジション",
+      "allocation": "アロケーションビュー",
+      "performance": "パフォーマンス帰属",
+      "risk": "リスクと制限",
+      "liquidity": "流動性管理",
+      "marketIntelligence": "市場インテリジェンス",
+      "attribution": "帰属と要因",
+      "alerts": "テレメトリアラート",
+      "compliance": "マンデートコンプライアンス"
+    },
+    "title": "精密機関投資体験",
+    "description": "絶対的な透明性と確定的制御を必要とする機関資産アロケーター、ファミリーオフィス、受託者委員会向けに設計されたエグゼクティブインターフェース。",
+    "stats": {
+      "monitoredAum": {
+        "label": "監視対象マンデートAUM",
+        "status": "正常 / 分離済み"
+      },
+      "adherence": {
+        "label": "マンデートポリシー遵守率",
+        "deviation": "0.00% ドリフト逸脱"
+      },
+      "var": {
+        "label": "パラメトリック 99% 10日 VaR",
+        "policyLimit": "制限：4.50%（準拠）"
+      },
+      "custody": {
+        "label": "カストディステータス",
+        "status": "分離ティア1",
+        "subtext": "100% クライアント法定名義"
+      }
+    },
+    "chart": {
+      "eyebrow": "ダイナミック効率的フロンティア",
+      "heading": "リアルタイム確率論的シミュレーション",
+      "badge": "10,000パスシミュレーション",
+      "seriesExecution": "最適確率論的フロンティア",
+      "seriesTarget": "マンデートポリシー境界"
+    }
+  },
+  "intelligence": {
+    "scenarios": {
+      "low": "スタグフレーション圧力（15%）",
+      "base": "ベースケース拡大（65%）",
+      "high": "技術加速（20%）"
+    },
+    "title": "自律型リサーチ＆意思決定エンジン",
+    "description": "非構造化グローバルデータを、数学的厳密性と監査可能性を備えた確定的でマンデート検証済みのアロケーション決定に変換します。",
+    "caseTitle": "自律型テーゼ生成",
+    "confidenceLabel": "仮説確信度",
+    "confidenceValue": "94.2% 高確信度",
+    "thesis": {
+      "label": "投資テーゼ：",
+      "question": "機会は何か、なぜ今なのか。",
+      "content": "特殊半導体分野での加速的拡大により、液冷およびクリーンエネルギーにボトルネックが発生。グローバル設備投資再価格設定サイクル前の非対称的な参入ウィンドウ。"
+    },
+    "risk": {
+      "label": "リスクガードレール：",
+      "question": "主要リスクと推定影響。",
+      "content": "インフラファイナンスを制限する長期金融引き締めのリスク（ポートフォリオで99% VaR -4.2%と予測）および地政学的サプライチェーン制限の可能性。"
+    },
+    "triggers": {
+      "label": "参入トリガー：",
+      "question": "リターンを触媒する可能性のあるイベント。",
+      "content": "第3四半期ハイパースケーラー設備投資ガイダンス更新、専用再生可能エネルギー施設の規制承認、長期テイク・オア・ペイ契約の発表。"
+    },
+    "invalidation": {
+      "label": "無効化基準：",
+      "question": "テーゼを無効にし、出口をトリガーするもの。",
+      "content": "前年比15%を超えるチップ予算の下方修正、またはアロケーション後最初の90日間での営業マージン圧縮。"
+    },
+    "probability": {
+      "label": "確率分布",
+      "subtitle": "シナリオ分布",
+      "question": "テーゼ実現の推定確率。",
+      "occurrence": "確率"
+    },
+    "action": {
+      "badge": "推奨アクション",
+      "status": "提案された執行",
+      "headline": "提案されたアロケーション、期間、次の運用ステップ。",
+      "allocationLabel": "マンデートアロケーション：",
+      "allocationValue": "AUMの3.5%",
+      "horizonLabel": "テーゼ期間：",
+      "horizonValue": "18〜24ヶ月",
+      "routingLabel": "執行ルーティング：",
+      "routingValue": "TWAP 4時間（最大スリッページ0.02%）",
+      "readyCta": "スマートオーダールーター経由で派遣準備完了"
+    }
+  },
+  "marketOpportunity": {
+    "title": "ウェルス＆資産運用の変革",
+    "description": "従来の投資管理は、線形な人的リソースと断片化されたツールによって制約されています。Elleva は、次なる資本配分の時代に向けたスケーラブルな計算基盤を提供します。",
+    "cards": {
+      "globalAum2025": {
+        "label": "2025年グローバルAUM",
+        "desc": "現在のグローバル資産運用規模"
+      },
+      "globalProjection2030": {
+        "label": "2030年グローバル予測",
+        "desc": "2030年の予測グローバルAUM"
+      },
+      "familyOfficesToday": {
+        "label": "現在のファミリーオフィス",
+        "desc": "現在のファミリーオフィスAUM"
+      },
+      "familyOffices2030": {
+        "label": "2030年ファミリーオフィス",
+        "desc": "2030年までの予測拡大"
+      }
+    },
+    "chart": {
+      "eyebrow": "市場変革",
+      "heading": "FTEあたりのAUM vs 総管理資産",
+      "scale": "スケール：兆ドル（USD）",
+      "tooltipAum": "グローバルAUM",
+      "seriesGlobalAum": "グローバルAUM（兆ドル）",
+      "footnote": "* データアンカー：2025年のグローバルAUM 147兆ドル、2030年予測200兆ドル。現在のファミリーオフィス3.1兆ドル、2030年予測5.4兆ドル。2026年から2029年のポイントは視覚的幾何補間を表します。"
+    }
+  },
+  "infrastructure": {
+    "tier1Badge": "データレイヤー",
+    "tier1LeftTitle": "市場データプロバイダー",
+    "tier1LeftDesc": "Bloomberg、Refinitiv、専門的定量データフィードとの直接統合。",
+    "tier1RightTitle": "マクロ＆代替シグナル",
+    "tier1RightDesc": "非構造化マクロシグナル、規制提出書類（SEC/CVM）、センチメントフィード。",
+    "middleSubtitle": "自律型オーケストレーションカーネル",
+    "middleCaption": "継続的確率論的シミュレーション、確定的マンデート検証、アルゴリズムルーティング。",
+    "tier3Badge": "執行＆カストディ",
+    "tier3CustodyTitle": "適格カストディアン",
+    "tier3CustodyDesc": "分離されたクライアント資産を維持するグローバルカストディアンへの直接APIリンク。",
+    "tier3BanksTitle": "ティア1バンキングゲートウェイ",
+    "tier3BanksDesc": "検証済み機関口座による自動キャッシュマネジメントおよび決済レール。",
+    "tier3BrokersTitle": "執行プライムブローカー",
+    "tier3BrokersDesc": "市場影響を最小化するスマートオーダールーティングを備えたDMA/FIX実行ルート。",
+    "title": "モダン金融インフラストラクチャトポロジ",
+    "description": "Elleva は機関データソースと規制された金融インフラストラクチャの間に位置し、インテリジェントなオーケストレーションレイヤーとして機能します。",
+    "flowBadge": "システムアーキテクチャ",
+    "tier1BadgeLabel": "ティア1",
+    "tier1Heading": "市場インテリジェンスと取り込み",
+    "tier1Summary": "リアルタイムマルチアセット市場データと代替定量的入力。",
+    "tier2BadgeLabel": "ティア2",
+    "tier2Heading": "Elleva 意思決定＆ガバナンスカーネル",
+    "tier2Summary": "自律型リサーチ、マンデート検証、リスクシミュレーション。",
+    "tier3BadgeLabel": "ティア3",
+    "tier3Heading": "執行と規制カストディ",
+    "tier3Summary": "直接FIX接続と分離された機関カストディ保管。",
+    "tags": {
+      "banks": "銀行",
+      "brokers": "ブローカー",
+      "settlement": "決済",
+      "liquidity": "流動性",
+      "marketData": "市場データ"
+    }
+  },
+  "newCategory": {
+    "flow": {
+      "capitalStage": "入力",
+      "capitalLabel": "資本",
+      "capitalDesc": "マンデート、ファミリーオフィス、ウェルス＆資産運用会社",
+      "ellevaSubtitle": "インテリジェンス＋オーケストレーション",
+      "ellevaCaption": "資本とグローバル金融インフラストラクチャの間の自律レイヤー",
+      "systemStage": "執行",
+      "systemLabel": "グローバル金融システム",
+      "systemDesc": "カストディアン、取引所、決済、プライムブローカー"
+    },
+    "modules": {
+      "data": "データ",
+      "dataSub": "市場フィードとニュース",
+      "banks": "銀行",
+      "banksSub": "決済とキャッシュ",
+      "brokers": "ブローカー",
+      "brokersSub": "執行とルート",
+      "custody": "カストディ",
+      "custodySub": "分離資産",
+      "compliance": "コンプライアンス",
+      "complianceSub": "ガードレールと制限",
+      "portfolios": "ポートフォリオ",
+      "portfoliosSub": "アロケーションとリスク",
+      "dataDesc": "シグナルと市場フィード",
+      "banksDesc": "決済と口座",
+      "brokersDesc": "オーダールーティング",
+      "custodyDesc": "カストディ分離",
+      "complianceDesc": "マンデートとKYC",
+      "portfoliosDesc": "帰属とリスク"
+    },
+    "title": "金融テクノロジーの新カテゴリー",
+    "description": "我々は自律型資本インフラストラクチャを定義しています — 単に数値を表示するだけでなく、複雑な投資プロセスを受託者精度で実行するソフトウェアです。",
+    "topologyBadge": "カテゴリー創造"
+  },
+  "operational": {
+    "metrics": {
+      "monitoredAssets": {
+        "name": "監視資産"
+      },
+      "responseSpeed": {
+        "name": "応答速度"
+      },
+      "costPerAnalysis": {
+        "name": "分析コスト"
+      },
+      "analystCapacity": {
+        "name": "アナリストあたりの能力"
+      }
+    },
+    "title": "測定可能な運用アドバンテージ",
+    "description": "自律型インフラストラクチャと従来の線形資産運用オペレーションの運用パフォーマンスを比較します。",
+    "cards": {
+      "monitoredAssets": {
+        "title": "同時監視資産",
+        "desc": "サンプリングボトルネックのない継続的な市場監視と取り込み。"
+      },
+      "responseSpeed": {
+        "title": "より速い市場イベント対応",
+        "desc": "マクロ経済ショックのサブ秒単位での識別と迅速なテーゼ再価格設定。"
+      },
+      "costPerAnalysis": {
+        "title": "構造化テーゼあたりのコスト",
+        "desc": "リサーチと照合における手動運用オーバーヘッドの劇的な削減。"
+      },
+      "analystCapacity": {
+        "title": "アナリストあたりの運用能力",
+        "desc": "個別ポートフォリオマンデートのカバレッジを倍増させる認知的レバレッジ。"
+      }
+    },
+    "chart": {
+      "eyebrow": "運用ベンチマーク",
+      "heading": "運用FTEあたりの能力：従来型 vs Elleva",
+      "badge": "14.2倍レバレッジデルタ",
+      "legendTraditional": "従来型モデル",
+      "legendElleva": "Ellevaインフラストラクチャ",
+      "legendTraditionalBase": "従来型モデル（ベース1.0）",
+      "footnote": "* リサーチ、継続的監視、執行にわたる正規化された運用指標。投資リターンの約束を表すものではありません。"
+    }
+  },
+  "pillars": {
+    "pillar1": {
+      "title": "自律型インテリジェンス",
+      "quote": "人間の疲労なしの継続的な市場統合と仮説生成。"
+    },
+    "pillar2": {
+      "title": "確定的マンデート",
+      "quote": "侵害または迂回が不可能な数学的リスク境界。"
+    },
+    "pillar3": {
+      "title": "分離直接カストディ",
+      "quote": "ゼロカストディリスク：資本がクライアントの適格カストディアンから離れることはありません。"
+    },
+    "pillar4": {
+      "title": "説明可能な監査証跡",
+      "quote": "すべてのシグナル、取引、リバランスに対する完全な因果トレーサビリティ。"
+    },
+    "badges": {
+      "segregation": "データ分離",
+      "encryption": "エンドツーエンド暗号化",
+      "auditability": "完全監査可能性",
+      "compliance": "規制コンプライアンス"
+    },
+    "title": "戦略的アーキテクチャの柱",
+    "description": "エンタープライズ信頼性、規制安全性、機関パフォーマンスを保証する4つの基本工学原則。",
+    "pillarPrefix": "ピラー",
+    "governanceTitle": "機関受託者基準",
+    "governanceDescription": "厳格な機関コンプライアンス、監査委員会基準、規制監督を満たすように特別に設計されています。"
+  },
+  "technology": {
+    "components": {
+      "data": {
+        "title": "取り込みと処理",
+        "quote": "リアルタイム市場データ取り込みのための分散パイプライン。"
+      },
+      "intelligence": {
+        "title": "モデルと推論",
+        "quote": "解釈可能性とキャリブレーションに焦点を当てた専門アンサンブルモデル。"
+      },
+      "orchestration": {
+        "title": "オーケストレーションと執行",
+        "quote": "マンデート検証とスマートオーダールーティングのための確定的エンジン。"
+      },
+      "storage": {
+        "title": "ストレージと監査",
+        "quote": "決定、テレメトリ、監査証跡を登録するための不変レイヤー。"
+      }
+    },
+    "specs": {
+      "uptime": "99.99% アップタイム",
+      "latency": "レイテンシ < 50ms",
+      "encryption": "AES-256 暗号化",
+      "compliance": "SOC 2 Type II 準拠"
+    },
+    "title": "機関グレードのテクノロジースタック",
+    "description": "ハイリスクな資本運用向けに設計された、高スループット・低レイテンシのマイクロサービスアーキテクチャ上に構築されています。",
+    "componentLabel": "コアコンポーネント",
+    "specsPanel": {
+      "title": "技術仕様",
+      "description": "継続的な可用性と運用精度を保証するインフラストラクチャメトリクス。"
+    }
+  },
+  "theNewSoftware": {
+    "sequence": {
+      "software": {
+        "title": "ソフトウェア",
+        "subtitle": "プラットフォーム、データ、ガバナンス",
+        "desc": "回復力のある計算インフラストラクチャ、データ正規化、数学的マンデートバリア。"
+      },
+      "work": {
+        "title": "ワーク",
+        "subtitle": "リサーチ、監視、運用",
+        "desc": "規制提出書類、ニュース、カストディ照合を継続的に取り込むAIエージェント。"
+      },
+      "decision": {
+        "title": "意思決定",
+        "subtitle": "アロケーション、リバランス、執行",
+        "desc": "市場影響とリスクを最小化する確率論的テーゼ生成とアルゴリズム派遣。"
+      }
+    },
+    "benefits": {
+      "margin": {
+        "title": "より高い営業利益率",
+        "desc": "AUMとマンデートボリュームの拡大に伴う線形運用コストのスケーリングを排除。"
+      },
+      "scale": {
+        "title": "無制限マンデートスケーラビリティ",
+        "desc": "何千もの異なる投資マンデートを同時に、均一な機関品質で管理。"
+      },
+      "quality": {
+        "title": "規律ある意思決定品質",
+        "desc": "規律あるアルゴリズム実行を通じて、感情的バイアス、パニック売り、マンデートドリフトを排除。"
+      }
+    },
+    "title": "意思決定を実行するソフトウェア",
+    "description": "従来のソフトウェアは過去の取引を記録します。Ellevaの自律型インフラストラクチャは、分析および運用タスクを積極的に実行し、優れたレバレッジを提供します。",
+    "stepLabel": "ステージ",
+    "closingQuote": "単なるフィンテックツールではない。資本のための真の運用インフラストラクチャ。"
+  },
+  "problem": {
+    "metrics": {
+      "assetsFollowed": "監視資産",
+      "responseTime": "応答時間",
+      "costPerAnalysis": "分析コスト",
+      "capacityPerAnalyst": "アナリストあたりの能力",
+      "assetsFollowedSub": "継続的グローバル市場スキャン",
+      "responseTimeSub": "市場ショックへの即時反応",
+      "costPerAnalysisSub": "最小限の増分運用オーバーヘッド",
+      "capacityPerAnalystSub": "高い認知的および計算的レバレッジ"
+    },
+    "traditional": {
+      "point1": "限られた手動アナリストカバレッジ",
+      "point2": "エピソード的で遅延した意思決定",
+      "point3": "断片化された非接続のソフトウェアツール",
+      "point4": "高い線形人員コスト",
+      "point5": "意思決定における因果的透明性の欠如",
+      "title": "従来型モデル",
+      "badge": "線形＆手動"
+    },
+    "elleva": {
+      "point1": "24時間365日の継続的マルチアセット市場スキャン",
+      "point2": "リアルタイムAI支援リサーチと意思決定",
+      "point3": "統合エンドツーエンド運用カーネル",
+      "point4": "線形採用なしでスケーラブルなAUM",
+      "point5": "完全に監査可能な因果推論とリスクチェック",
+      "title": "Elleva モデル",
+      "badge": "自律型＆継続的"
+    },
+    "title": "従来の資産運用はリアルタイム市場向けに構築されていない",
+    "chart": {
+      "eyebrow": "正規化運用ベンチマーク",
+      "title": "相対効率：従来型（1.0倍） vs Elleva",
+      "traditional": "従来型モデル",
+      "elleva": "自律型 Elleva",
+      "traditionalNormalized": "従来型モデル（正規化1.0）",
+      "ellevaAutonomous": "自律型 Elleva"
+    },
+    "quote": "将来の機関アルファは、主観的な意見よりも、投資プロセスに適用される計算能力からもたらされるでしょう。"
+  },
+  "theProduct": {
+    "phases": {
+      "research": {
+        "title": "リサーチ",
+        "scope": "市場、財務、ニュース、マクロシグナル",
+        "moduleName": "リサーチエージェント",
+        "moduleDescription": "関連するグローバルデータの収集、解釈、構造化を専門とするAI。",
+        "process1": "財務諸表（10-K、10-Q、規制提出書類）の継続的取り込み",
+        "process2": "マクロニュースと決算説明会議事録のセマンティック処理",
+        "process3": "流動性と機関オーダーフローシグナルのリアルタイム抽出",
+        "metric1": "アクティブフィード",
+        "metric2": "分析レイテンシ",
+        "metric3": "資産カバレッジ"
+      },
+      "decide": {
+        "title": "意思決定",
+        "scope": "テーゼ、シナリオ、リスク、アロケーション",
+        "moduleName": "マンデート＆ポリシー",
+        "moduleDescription": "各ポートフォリオを統治する確定的ルール、制限、コントロール。",
+        "process1": "法定制約および投資方針に対する継続的検証",
+        "process2": "10,000以上のパスにわたる確率論的ストレステストとドローダウンシミュレーション",
+        "process3": "効率的フロンティアに沿った動的リスクリターン最適化",
+        "metric1": "シミュレーションシナリオ",
+        "metric2": "マンデート遵守率",
+        "metric3": "リスクカバレッジ"
+      },
+      "execute": {
+        "title": "執行",
+        "scope": "注文、リバランス、流動性フロー",
+        "moduleName": "機関執行",
+        "moduleDescription": "効率的なルーティングのためのカストディアンおよびトレーディングデスクとの安全な接続。",
+        "process1": "FIXプロトコルおよび機関APIによるスマートオーダールーティング",
+        "process2": "市場影響とスリッページを最小化するアルゴリズムTWAP/VWAP執行",
+        "process3": "取引前キャッシュおよびマージンチェックを伴う自動リバランス",
+        "metric1": "平均スリッページ",
+        "metric2": "アクティブプロトコル",
+        "metric3": "直接カストディ",
+        "segregated": "100% 分離"
+      },
+      "monitor": {
+        "title": "監視",
+        "scope": "パフォーマンス、アラート、コンプライアンス",
+        "moduleName": "監査と説明可能性",
+        "moduleDescription": "すべてのアクションに対するエンドツーエンドのトレーサビリティと明確な因果説明。",
+        "process1": "各アロケーションに対する完全な因果決定木を持つ不変ログ",
+        "process2": "リスク違反またはポリシードリフトに対するリアルタイム予測アラート",
+        "process3": "即時 Brinson-Fachler マルチファクターパフォーマンス帰属レポート",
+        "metric1": "監査可能性",
+        "metric2": "アラートレイテンシ",
+        "metric3": "規制証跡",
+        "immutable": "不変"
+      }
+    },
+    "realTime": "リアルタイム",
+    "title": "Elleva は投資をオペレーティングシステムに変える",
+    "description": "すべてのポートフォリオは、定義された受託者管理の範囲内で継続的にリサーチ、意思決定、執行、監視を行う自律型AIレイヤー上で運用されます。",
+    "osHeader": {
+      "systemActive": "システムアクティブ",
+      "circuitsClosed": "全回路閉鎖"
+    },
+    "moduleHeader": "運用モジュール",
+    "activeProcessesHeader": "アクティブ執行プロセス",
+    "telemetryHeader": "システムテレメトリ",
+    "footerStatus": "確定的制御アクティブ",
+    "footerInviolable": "100% 不可侵"
+  },
+  "trust": {
+    "guarantees": {
+      "segregation": {
+        "title": "受託者資産分離",
+        "quote": "Elleva は資産のカストディを決して引き受けません。資本はクライアントの法定名義で適格カストディアンに留まります。"
+      },
+      "determinism": {
+        "title": "確定的リスク管理",
+        "quote": "マンデート制限およびコンプライアンスルールに対する取引前検証なしには、取引注文は派遣されません。"
+      },
+      "explicability": {
+        "title": "完全な因果説明可能性",
+        "quote": "すべてのシグナル、アロケーション、取引には、透明な因果ロジックを備えた完全な暗号監査証跡が含まれます。"
+      }
+    },
+    "certifications": {
+      "cvm": {
+        "label": "CVM & ANBIMA フレームワーク準拠",
+        "desc": "地域およびグローバルの規制受託者フレームワークに準拠した技術アーキテクチャ。"
+      },
+      "soc2": {
+        "label": "SOC 2 Type II セキュリティ標準",
+        "desc": "厳格なデータ保護、アクセス制御、機関機密性。"
+      },
+      "iso": {
+        "label": "ISO 27001 / 27701 準拠",
+        "desc": "情報セキュリティとプライバシー管理における最高水準のガバナンス慣行。"
+      },
+      "auditable": {
+        "label": "不変監査証跡",
+        "desc": "改ざん防止テレメトリログと継続的確定的リスク検証。"
+      }
+    },
+    "title": "機関グレードのガバナンスとセキュリティ",
+    "description": "Elleva は純粋にインテリジェンスおよびオーケストレーションレイヤーとして運用されます。資本は規制された機関での分離カストディに安全に留まります。",
+    "guaranteeLabel": "保証"
+  }
+}

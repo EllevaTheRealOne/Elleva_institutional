@@ -1,0 +1,908 @@
+{
+  "modal": {
+    "badge": "合格机构访问",
+    "title": "申请 Elleva 访问权限",
+    "description": "Elleva 基础设施专为合格金融机构、资产管理公司和家族办公室提供。请提供机构详细信息。",
+    "nameLabel": "高管姓名",
+    "namePlaceholder": "Edward Silva 博士",
+    "institutionLabel": "机构 / 基金",
+    "institutionPlaceholder": "Alpha Capital Asset",
+    "emailLabel": "企业邮箱",
+    "emailPlaceholder": "management@alphacapital.com",
+    "typeLabel": "机构类型",
+    "types": {
+      "assetManager": "资产管理公司 / 基金",
+      "multiFamilyOffice": "多家族办公室",
+      "singleFamilyOffice": "单一家族办公室",
+      "advisor": "投资顾问 / RIA",
+      "treasury": "机构财资 / 捐赠基金"
+    },
+    "scopeLabel": "运营范围 / 委托",
+    "scopePlaceholder": "简要描述管理规模或目标自动化范围...",
+    "submitButton": "提交访问申请",
+    "successTitle": "申请已收到",
+    "successDescPrefix": "我们已收到以下机构的数据：",
+    "successDescSuffix": "我们的机构合作团队将联系您安排技术会议并提供集成文档。"
+  },
+  "common": {
+    "done": "完成",
+    "footer": {
+      "copyright": "Elleva © 2026。保留所有权利。",
+      "terms": "机构条款",
+      "security": "安全与合规",
+      "regulatory": "监管披露"
+    },
+    "close": "关闭",
+    "year": "年份"
+  },
+  "architecture": {
+    "flow": {
+      "coreSubtitle": "智能与编排层",
+      "coreCaption": "自主研究、委托验证与执行",
+      "marketDataLabel": "市场数据",
+      "marketDataSub": "实时与另类数据源",
+      "portfoliosLabel": "委托与投资组合",
+      "portfoliosSub": "信托政策参数",
+      "banksLabel": "合格托管",
+      "banksSub": "隔离银行账户",
+      "custodyLabel": "托管验证",
+      "custodySub": "实时余额结算",
+      "brokersLabel": "经纪商与交易场所",
+      "brokersSub": "智能订单路由（FIX/DMA）",
+      "complianceLabel": "合规引擎",
+      "complianceSub": "确定性交易前检查",
+      "reportsLabel": "审计与遥测",
+      "reportsSub": "不可变加密日志",
+      "familyOfficesLabel": "家族办公室与财富管理",
+      "familyOfficesSub": "统一配置视图"
+    },
+    "modules": {
+      "marketData": {
+        "title": "市场数据",
+        "item1": "市场API",
+        "item2": "实时数据",
+        "item3": "另类数据集",
+        "item4": "宏观与情绪数据源"
+      },
+      "portfolios": {
+        "title": "委托与投资组合",
+        "item1": "投资政策",
+        "item2": "风险限额",
+        "item3": "配置规则",
+        "item4": "委托约束"
+      },
+      "banks": {
+        "title": "银行与托管机构",
+        "item1": "托管API",
+        "item2": "持仓控制",
+        "item3": "资产隔离",
+        "item4": "结算通道"
+      },
+      "custody": {
+        "title": "托管集成",
+        "item1": "多托管聚合",
+        "item2": "持仓控制",
+        "item3": "直接账户所有权",
+        "item4": "持续对账"
+      },
+      "brokers": {
+        "title": "经纪商与执行",
+        "item1": "执行路径",
+        "item2": "智能订单路由器",
+        "item3": "FIX协议与API",
+        "item4": "流动性聚合"
+      },
+      "compliance": {
+        "title": "合规与治理",
+        "item1": "交易前验证",
+        "item2": "回撤防护",
+        "item3": "法定限额",
+        "item4": "监管报告"
+      },
+      "reporting": {
+        "title": "审计与报告",
+        "item1": "审计跟踪",
+        "item2": "遥测与日志",
+        "item3": "合规报告",
+        "item4": "委托管理"
+      },
+      "wealth": {
+        "title": "财富管理与家族办公室",
+        "item1": "投资组合整合",
+        "item2": "360°客户全景",
+        "item3": "委托定制",
+        "item4": "跨代治理"
+      }
+    },
+    "title": "自主资本基础设施架构",
+    "description": "Elleva 作为智能与编排层，连接市场数据、研究、投资政策、合格托管和多经纪商执行，形成一个持续、可审计、确定性的运营闭环。",
+    "flowBadge": "流程",
+    "pillars": {
+      "custodyTitle": "直接隔离托管",
+      "custodyDesc": "完整的信托隔离，资产直接由合格托管机构保管，所有权归属于投资者。",
+      "institutionsTitle": "企业级连接",
+      "institutionsDesc": "与全球一级银行、主经纪商和存管机构直接集成，支持机构级FIX协议和API。",
+      "capacityTitle": "多资产可扩展性",
+      "capacityDesc": "赋能资产管理公司和家族办公室以数学精度和零人员增长扩展委托规模。"
+    }
+  },
+  "businessModel": {
+    "streams": {
+      "platform": {
+        "title": "SaaS平台费用",
+        "desc": "为资产管理公司和财富管理机构提供许可",
+        "subtext": "持续访问 Elleva OS 内核、委托治理、确定性风险控制和自动化合规。"
+      },
+      "usage": {
+        "title": "使用量/容量费用",
+        "desc": "计算、遥测量和机构API数据源",
+        "subtext": "定价基于遥测量、摄入数据源、随机模拟运行和主动投资组合监控。"
+      },
+      "value": {
+        "title": "基于价值的对齐费用",
+        "desc": "基于运营效率、智能或相关收益的费用",
+        "subtext": "信托对齐与滑点降低、运营节约和执行优化相关联。"
+      }
+    },
+    "title": "机构收入模型",
+    "description": "基于经常性软件基础设施和运营能力对齐构建的三个互补货币化层。",
+    "chart": {
+      "eyebrow": "运营杠杆",
+      "heading": "AUM增长 vs 运营成本扩张",
+      "legendTraditionalShort": "传统（线性）",
+      "legendEllevaShort": "Elleva（自主）",
+      "tooltipElleva": "Elleva运营成本",
+      "tooltipTraditional": "传统运营成本",
+      "seriesElleva": "Elleva自主基础设施",
+      "seriesTraditional": "传统资产管理"
+    }
+  },
+  "defensibility": {
+    "layer4": {
+      "title": "生态系统与托管集成",
+      "quote": "机构集成扩展了访问范围和信任。",
+      "detail": "与托管机构、主经纪商和金融机构的专有双向连接创造了结构性转换成本和高进入壁垒。",
+      "level": "第4层"
+    },
+    "layer3": {
+      "title": "运营领域深度",
+      "quote": "运营深度产生复合效率。",
+      "detail": "端到端的投资流程建模，无碎片化——从宏观数据摄入到交易前风险管理和交易后执行审计。",
+      "level": "第3层"
+    },
+    "layer2": {
+      "title": "情境智能引擎",
+      "quote": "跨不同宏观经济体制的结果智能。",
+      "detail": "多因子绩效归因，将系统性信号与市场噪音分离，持续校准随机情景。",
+      "level": "第2层"
+    },
+    "layer1": {
+      "title": "确定性决策历史",
+      "quote": "决策和基线条件的专有审计跟踪。",
+      "detail": "假设、校准参数、执行路径和实际交易后结果在不同市场条件下的不可变日志。",
+      "level": "第1层"
+    },
+    "title": "复合防御性",
+    "description": "每执行一个决策，Elleva的结构深度就在专有决策日志、机构集成和领域专业知识中复合积累。",
+    "footer": {
+      "scaleLabel": "运营杠杆",
+      "scaleValue": "14.2倍增量",
+      "retentionLabel": "机构留存率",
+      "retentionValue": "99.4%",
+      "barrierLabel": "转换壁垒",
+      "barrierValue": "高结构性护城河"
+    }
+  },
+  "ecosystem": {
+    "categories": {
+      "custodians": {
+        "title": "银行与托管机构"
+      },
+      "brokers": {
+        "title": "经纪商与流动性场所"
+      },
+      "marketData": {
+        "title": "市场数据与数据源"
+      },
+      "compliance": {
+        "title": "监管与审计机构"
+      }
+    },
+    "complianceItems": {
+      "soc2": "SOC 2 Type II 认证架构",
+      "iso27001": "ISO 27001 / 27701 对齐",
+      "anbima": "ANBIMA 最佳实践对齐",
+      "cvm175": "CVM 175 监管治理框架",
+      "preTrade": "确定性交易前风险防护",
+      "auditTrail": "不可变加密审计跟踪"
+    },
+    "title": "互联机构生态系统",
+    "description": "Elleva 作为中性智能和执行层，连接一级托管机构、执行场所和机构资产所有者。",
+    "tags": {
+      "wealthManagers": "资产管理公司与家族办公室",
+      "custody": "隔离一级托管",
+      "reporting": "自动化监管报告"
+    }
+  },
+  "ellevaLoop": {
+    "nodes": {
+      "center": {
+        "title": "Elleva 引擎",
+        "subtitle": "持续内核",
+        "caption": "自主信托运营"
+      },
+      "stage1": {
+        "label": "1. 研究",
+        "desc": "市场智能"
+      },
+      "stage2": {
+        "label": "2. 决策",
+        "desc": "委托优化"
+      },
+      "stage3": {
+        "label": "3. 风险检查",
+        "desc": "确定性边界"
+      },
+      "stage4": {
+        "label": "4. 执行",
+        "desc": "智能订单路由"
+      },
+      "stage5": {
+        "label": "5. 结算",
+        "desc": "直接托管"
+      },
+      "stage6": {
+        "label": "6. 监控",
+        "desc": "不可变审计日志"
+      }
+    },
+    "steps": {
+      "s1": "自主多源智能引擎全天候收集、清洗和结构化非结构化全球金融数据。",
+      "s2": "对风险调整后的交易提案进行确定性评估，并根据法定投资政策声明进行验证。",
+      "s3": "不可违背的数学约束——强制执行最大回撤、行业集中度和流动性边界。",
+      "s4": "通过智能订单路由在直接经纪商和托管机构端点进行算法订单执行，最小化滑点。",
+      "s5": "在客户拥有的隔离机构账户中持续进行交易前后余额结算。",
+      "s6": "实时持仓对账、风险防护验证和不可变审计日志记录，以满足监管合规要求。"
+    },
+    "title": "Elleva 运营飞轮",
+    "description": "自我强化的自主运营周期，复合机构智能、执行质量和风险治理。",
+    "badge": "运营飞轮",
+    "flywheelTitle": "自主反馈机制"
+  },
+  "faq": {
+    "items": {
+      "custody": {
+        "q": "Elleva 如何保证资产安全和隔离？",
+        "a": "Elleva 以零资产托管模式运营。资本保留在受监管的一级托管银行中，以投资者的法定税号和名义持有。Elleva 仅通过安全的、代币化的 API/FIX 协议进行交互，读取/交易权限严格受确定性委托约束管控。"
+      },
+      "replacement": {
+        "q": "Elleva 会取代资产管理公司和信托委员会吗？",
+        "a": "不会。Elleva 是一个自主基础设施层，赋能资产管理公司和投资委员会。它自动化重复性研究、情景建模、风险检查和执行，使管理者能够以更高的精度扩展 AUM。"
+      },
+      "compliance": {
+        "q": "Elleva 如何保持可解释性和审计跟踪？",
+        "a": "系统生成的每个决策都带有时间戳，并与产生它的确切假设、市场输入、随机模拟和委托检查进行加密链接，提供端到端的可审计透明度。"
+      },
+      "assets": {
+        "q": "支持哪些资产类别和金融工具？",
+        "a": "Elleva 支持全球公开股票、固定收益工具、货币（外汇）、交易所交易衍生品和代币化另类资产，覆盖 48 个以上机构交易场所。"
+      },
+      "integration": {
+        "q": "机构客户的实施时间表是怎样的？",
+        "a": "标准机构入驻通常需要 2 到 4 周，包括委托参数化、托管 API 凭据配置、风险限额设置和模拟沙盒测试运行。"
+      }
+    },
+    "title": "常见问题",
+    "description": "关于 Elleva 自主资本基础设施的关键技术、监管和运营细节。"
+  },
+  "finalCTA": {
+    "title": "变革您的投资基础设施",
+    "description": "在研究、决策、执行和监控中部署自主智能，具备企业级治理和直接托管隔离。",
+    "credentials": {
+      "segregation": "100% 隔离直接托管",
+      "noCustody": "零资产托管风险",
+      "connectivity": "直接机构 FIX/API 连接"
+    },
+    "modal": {
+      "submittedTitle": "访问申请已收到",
+      "submittedDesc": "我们的机构合作团队将在 24 小时内与您联系并提供沙盒凭证。",
+      "badge": "合格客户",
+      "title": "申请机构访问权限",
+      "desc": "Elleva 基础设施专为合格金融机构、资产管理公司和家族办公室提供。",
+      "institutionLabel": "机构 / 基金",
+      "institutionPlaceholder": "Alpha Capital Asset",
+      "emailLabel": "企业邮箱",
+      "emailPlaceholder": "management@alphacapital.com",
+      "submitButton": "提交访问申请"
+    }
+  },
+  "globalMarkets": {
+    "modules": {
+      "marketData": {
+        "name": "市场数据与数据源",
+        "desc": "实时多资产数据源和宏观经济指标。"
+      },
+      "banks": {
+        "name": "一级银行网关",
+        "desc": "直接流动性、现金管理和机构财资通道。"
+      },
+      "brokers": {
+        "name": "经纪商与执行场所",
+        "desc": "覆盖 48+ 机构交易所的直接 DMA/FIX 执行路径。"
+      },
+      "custody": {
+        "name": "合格托管机构",
+        "desc": "与全球托管机构的直接 API 链接，维护隔离资产。"
+      },
+      "compliance": {
+        "name": "合规与审计通道",
+        "desc": "确定性交易前风险防护和自动化监管报告。"
+      },
+      "portfolios": {
+        "name": "委托与投资组合",
+        "desc": "持续随机投资组合优化和政策管理。"
+      }
+    },
+    "title": "全球市场连接",
+    "description": "直接机构级接入全球交易所、主经纪商、流动性场所和托管网络，覆盖所有主要金融司法管辖区。",
+    "telemetry": {
+      "mesh": "全球网状拓扑",
+      "hubsCount": "6 个主要节点活跃",
+      "routingLabel": "智能订单路由（SOR）",
+      "routingValue": "多场所活跃",
+      "statusLabel": "网络状态",
+      "statusValue": "正常 / 隔离"
+    },
+    "footerNote": "跨司法管辖区执行路径按 SOC 2 Type II 和 ISO 27001 标准进行审计。",
+    "inspector": {
+      "badge": "网关检查器",
+      "primaryRole": "主要角色：",
+      "layer": "基础设施层：",
+      "latency": "目标延迟：",
+      "connection": "连接标准：",
+      "connectionStatus": "连接状态：",
+      "switchHub": "切换节点"
+    }
+  },
+  "hero": {
+    "nodes": {
+      "coreSubtitle": "智能与编排层",
+      "coreCaption": "自主研究、委托验证与执行",
+      "marketData": "市场数据",
+      "marketDataSub": "实时与另类数据源",
+      "banks": "合格托管",
+      "banksSub": "隔离银行账户",
+      "brokers": "经纪商与交易场所",
+      "brokersSub": "智能订单路由（FIX/DMA）",
+      "custody": "托管验证",
+      "custodySub": "实时余额结算",
+      "compliance": "合规引擎",
+      "complianceSub": "确定性交易前检查",
+      "portfolios": "委托与投资组合",
+      "portfoliosSub": "信托政策参数"
+    },
+    "title": "面向投资运营的自主 AI 基础设施",
+    "description": "Elleva 是智能与编排层，连接市场数据、研究、投资政策、合格托管和多经纪商执行，形成一个持续、可审计、确定性的运营闭环。",
+    "stats": {
+      "operationalLeverage": "14.2倍",
+      "operationalLeverageSub": "运营杠杆增量",
+      "globalConnectivity": "48+",
+      "globalConnectivitySub": "已连接机构交易场所"
+    },
+    "getStarted": "申请访问",
+    "architecture": "查看架构",
+    "topologyBadge": "自主架构",
+    "loopTitle": "持续运营闭环",
+    "operationalAdvantage": "运营杠杆",
+    "efficiencyDelta": "+14.2倍效率增量",
+    "continuousFiduciary": "持续信托治理"
+  },
+  "operatingLoop": {
+    "steps": {
+      "research": {
+        "name": "研究",
+        "role": "自主研究代理"
+      },
+      "decide": {
+        "name": "决策",
+        "role": "确定性委托内核"
+      },
+      "execute": {
+        "name": "执行",
+        "role": "智能订单路由器（FIX/DMA）"
+      },
+      "monitor": {
+        "name": "监控",
+        "role": "持续审计与遥测"
+      }
+    }
+  },
+  "investmentExperience": {
+    "allocation": {
+      "fixedIncome": "固定收益",
+      "globalEquities": "全球股票",
+      "realAssets": "实物资产与基础设施",
+      "strategicCash": "战略现金与储备",
+      "eyebrow": "委托配置",
+      "heading": "主动投资组合权重",
+      "tooltipLabel": "配置权重"
+    },
+    "tabs": {
+      "overview": "投资组合概览",
+      "positions": "持仓",
+      "allocation": "配置视图",
+      "performance": "绩效归因",
+      "risk": "风险与限额",
+      "liquidity": "流动性管理",
+      "marketIntelligence": "市场智能",
+      "attribution": "归因与因子",
+      "alerts": "遥测警报",
+      "compliance": "委托合规"
+    },
+    "title": "精准机构投资体验",
+    "description": "为机构资产配置者、家族办公室和信托委员会设计的执行级界面，要求绝对透明度和确定性控制。",
+    "stats": {
+      "monitoredAum": {
+        "label": "受监控委托 AUM",
+        "status": "正常 / 隔离"
+      },
+      "adherence": {
+        "label": "委托政策合规率",
+        "deviation": "0.00% 偏离"
+      },
+      "var": {
+        "label": "参数化 99% 10日 VaR",
+        "policyLimit": "限额：4.50%（合规）"
+      },
+      "custody": {
+        "label": "托管状态",
+        "status": "隔离一级托管",
+        "subtext": "100% 客户法定所有权"
+      }
+    },
+    "chart": {
+      "eyebrow": "动态有效边界",
+      "heading": "实时随机模拟",
+      "badge": "10,000 路径模拟",
+      "seriesExecution": "最优随机边界",
+      "seriesTarget": "委托政策边界"
+    }
+  },
+  "intelligence": {
+    "scenarios": {
+      "low": "滞胀压力（15%）",
+      "base": "基准扩张情景（65%）",
+      "high": "技术加速（20%）"
+    },
+    "title": "自主研究与决策引擎",
+    "description": "将非结构化全球数据转化为确定性、经委托验证的配置决策，具备数学严谨性和可审计性。",
+    "caseTitle": "自主论文生成",
+    "confidenceLabel": "假设置信度",
+    "confidenceValue": "94.2% 高确信度",
+    "thesis": {
+      "label": "投资论文：",
+      "question": "机会是什么，为什么是现在。",
+      "content": "专业半导体领域加速扩张，在液冷和清洁能源方面形成瓶颈。在全球资本支出重新定价周期之前存在不对称的进入窗口。"
+    },
+    "risk": {
+      "label": "风险防护：",
+      "question": "主要风险及预估影响。",
+      "content": "长期货币紧缩可能限制基础设施融资（项目 99% VaR 为 -4.2%）以及潜在的地缘政治供应链限制风险。"
+    },
+    "triggers": {
+      "label": "入场触发器：",
+      "question": "可能催化回报的事件。",
+      "content": "Q3 超大规模企业资本支出指引更新、专用可再生能源设施的监管批准，以及长期照付不议合同的公告。"
+    },
+    "invalidation": {
+      "label": "失效标准：",
+      "question": "什么会使论文失效并触发退出。",
+      "content": "芯片预算下调超过 15% 同比，或配置后前 90 天内运营利润率压缩。"
+    },
+    "probability": {
+      "label": "概率分布",
+      "subtitle": "情景分布",
+      "question": "论文实现的估计概率。",
+      "occurrence": "概率"
+    },
+    "action": {
+      "badge": "建议操作",
+      "status": "建议执行",
+      "headline": "建议的配置、期限和下一步运营步骤。",
+      "allocationLabel": "委托配置：",
+      "allocationValue": "AUM 的 3.5%",
+      "horizonLabel": "论文期限：",
+      "horizonValue": "18 至 24 个月",
+      "routingLabel": "执行路由：",
+      "routingValue": "TWAP 4小时（最大滑点 0.02%）",
+      "readyCta": "已准备好通过智能订单路由器派送"
+    }
+  },
+  "marketOpportunity": {
+    "title": "变革财富与资产管理运营",
+    "description": "传统投资管理受限于线性人力增长和碎片化工具。Elleva 为下一个资本配置时代提供可扩展的计算基础。",
+    "cards": {
+      "globalAum2025": {
+        "label": "2025年全球 AUM",
+        "desc": "当前全球资产管理规模"
+      },
+      "globalProjection2030": {
+        "label": "2030年全球预测",
+        "desc": "2030年预计全球 AUM"
+      },
+      "familyOfficesToday": {
+        "label": "当前家族办公室",
+        "desc": "当前家族办公室 AUM"
+      },
+      "familyOffices2030": {
+        "label": "2030年家族办公室",
+        "desc": "预计到 2030 年的扩张"
+      }
+    },
+    "chart": {
+      "eyebrow": "市场转型",
+      "heading": "每 FTE 的 AUM 与总管理资产",
+      "scale": "规模：万亿美元（USD）",
+      "tooltipAum": "全球 AUM",
+      "seriesGlobalAum": "全球 AUM（万亿美元）",
+      "footnote": "* 数据锚点：2025 年全球 AUM 为 147 万亿美元，2030 年预计为 200 万亿美元；当前家族办公室为 3.1 万亿美元，2030 年预计为 5.4 万亿美元。2026 年至 2029 年的数据点为视觉几何插值。"
+    }
+  },
+  "infrastructure": {
+    "tier1Badge": "数据层",
+    "tier1LeftTitle": "市场数据提供商",
+    "tier1LeftDesc": "与 Bloomberg、Refinitiv 和专业量化数据源直接集成。",
+    "tier1RightTitle": "宏观与另类信号",
+    "tier1RightDesc": "非结构化宏观信号、监管申报文件（SEC/CVM）和情绪数据源。",
+    "middleSubtitle": "自主编排内核",
+    "middleCaption": "持续随机模拟、确定性委托验证和算法路由。",
+    "tier3Badge": "执行与托管",
+    "tier3CustodyTitle": "合格托管机构",
+    "tier3CustodyDesc": "与全球托管机构的直接 API 链接，维护隔离客户资产。",
+    "tier3BanksTitle": "一级银行网关",
+    "tier3BanksDesc": "自动化现金管理和结算通道，连接经过验证的机构账户。",
+    "tier3BrokersTitle": "执行主经纪商",
+    "tier3BrokersDesc": "DMA/FIX 执行路径，通过智能订单路由最小化市场影响。",
+    "title": "现代金融基础设施拓扑",
+    "description": "Elleva 位于机构数据源和受监管金融基础设施之间，充当智能编排层。",
+    "flowBadge": "系统架构",
+    "tier1BadgeLabel": "第1层",
+    "tier1Heading": "市场智能与数据摄入",
+    "tier1Summary": "实时多资产市场数据和另类量化输入。",
+    "tier2BadgeLabel": "第2层",
+    "tier2Heading": "Elleva 决策与治理内核",
+    "tier2Summary": "自主研究、委托验证和风险模拟。",
+    "tier3BadgeLabel": "第3层",
+    "tier3Heading": "执行与受监管托管",
+    "tier3Summary": "直接 FIX 连接和隔离机构托管保管。",
+    "tags": {
+      "banks": "银行",
+      "brokers": "经纪商",
+      "settlement": "结算",
+      "liquidity": "流动性",
+      "marketData": "市场数据"
+    }
+  },
+  "newCategory": {
+    "flow": {
+      "capitalStage": "输入",
+      "capitalLabel": "资本",
+      "capitalDesc": "委托、家族办公室、财富管理与资产管理公司",
+      "ellevaSubtitle": "智能 + 编排",
+      "ellevaCaption": "资本与全球金融基础设施之间的自主层",
+      "systemStage": "执行",
+      "systemLabel": "全球金融系统",
+      "systemDesc": "托管机构、交易所、结算与主经纪商"
+    },
+    "modules": {
+      "data": "数据",
+      "dataSub": "市场数据源与新闻",
+      "banks": "银行",
+      "banksSub": "结算与现金",
+      "brokers": "经纪商",
+      "brokersSub": "执行与路径",
+      "custody": "托管",
+      "custodySub": "隔离资产",
+      "compliance": "合规",
+      "complianceSub": "防护与限额",
+      "portfolios": "投资组合",
+      "portfoliosSub": "配置与风险",
+      "dataDesc": "信号与市场数据源",
+      "banksDesc": "结算与账户",
+      "brokersDesc": "订单路由",
+      "custodyDesc": "托管隔离",
+      "complianceDesc": "委托与 KYC",
+      "portfoliosDesc": "归因与风险"
+    },
+    "title": "金融科技新类别",
+    "description": "我们正在定义自主资本基础设施——一种不仅显示数字，而且以信托精度执行复杂投资流程的软件。",
+    "topologyBadge": "类别创建"
+  },
+  "operational": {
+    "metrics": {
+      "monitoredAssets": {
+        "name": "监控资产"
+      },
+      "responseSpeed": {
+        "name": "响应速度"
+      },
+      "costPerAnalysis": {
+        "name": "单次分析成本"
+      },
+      "analystCapacity": {
+        "name": "每位分析师产能"
+      }
+    },
+    "title": "可量化的运营优势",
+    "description": "比较自主基础设施与传统线性资产管理运营的运营绩效。",
+    "cards": {
+      "monitoredAssets": {
+        "title": "同时监控的资产",
+        "desc": "持续市场监控和数据摄入，无采样瓶颈。"
+      },
+      "responseSpeed": {
+        "title": "更快的市场事件响应",
+        "desc": "亚秒级识别宏观经济冲击并快速重新定价论文。"
+      },
+      "costPerAnalysis": {
+        "title": "每篇结构化论文的成本",
+        "desc": "大幅降低研究和对账中的人工运营开销。"
+      },
+      "analystCapacity": {
+        "title": "每位分析师的运营产能",
+        "desc": "认知杠杆倍增单个投资组合委托的覆盖范围。"
+      }
+    },
+    "chart": {
+      "eyebrow": "运营基准",
+      "heading": "每位运营 FTE 的产能：传统 vs. Elleva",
+      "badge": "14.2倍杠杆增量",
+      "legendTraditional": "传统模式",
+      "legendElleva": "Elleva 基础设施",
+      "legendTraditionalBase": "传统模式（基准 1.0）",
+      "footnote": "* 研究、持续监控和执行方面的标准化运营指标。不构成投资回报承诺。"
+    }
+  },
+  "pillars": {
+    "pillar1": {
+      "title": "自主智能",
+      "quote": "持续市场综合和假设生成，无人类疲劳。"
+    },
+    "pillar2": {
+      "title": "确定性委托",
+      "quote": "不可违背或绕过的数学风险边界。"
+    },
+    "pillar3": {
+      "title": "隔离直接托管",
+      "quote": "零托管风险：资本从不离开客户的合格托管机构。"
+    },
+    "pillar4": {
+      "title": "可解释审计跟踪",
+      "quote": "每个信号、交易和再平衡的完整因果可追溯性。"
+    },
+    "badges": {
+      "segregation": "数据隔离",
+      "encryption": "端到端加密",
+      "auditability": "完全可审计性",
+      "compliance": "监管合规"
+    },
+    "title": "战略架构支柱",
+    "description": "四个基础工程原则，确保企业级可靠性、监管安全性和机构绩效。",
+    "pillarPrefix": "支柱",
+    "governanceTitle": "机构信托标准",
+    "governanceDescription": "专门设计以满足严格的机构合规、审计委员会标准和监管监督。"
+  },
+  "technology": {
+    "components": {
+      "data": {
+        "title": "数据摄入与处理",
+        "quote": "用于实时市场数据摄入的分布式管道。"
+      },
+      "intelligence": {
+        "title": "模型与推理",
+        "quote": "专注于可解释性和校准的专用集成模型。"
+      },
+      "orchestration": {
+        "title": "编排与执行",
+        "quote": "用于委托验证和智能订单路由的确定性引擎。"
+      },
+      "storage": {
+        "title": "存储与审计",
+        "quote": "用于注册决策、遥测和审计跟踪的不可变层。"
+      }
+    },
+    "specs": {
+      "uptime": "99.99% 正常运行时间",
+      "latency": "延迟 < 50ms",
+      "encryption": "AES-256 加密",
+      "compliance": "符合 SOC 2 Type II"
+    },
+    "title": "机构级技术栈",
+    "description": "构建于高吞吐量、低延迟微服务架构之上，专为高风险的资本运营而设计。",
+    "componentLabel": "核心组件",
+    "specsPanel": {
+      "title": "技术规格",
+      "description": "确保持续可用性和运营精度的基础设施指标。"
+    }
+  },
+  "theNewSoftware": {
+    "sequence": {
+      "software": {
+        "title": "软件",
+        "subtitle": "平台、数据、治理",
+        "desc": "弹性计算基础设施、数据规范化和数学委托屏障。"
+      },
+      "work": {
+        "title": "工作",
+        "subtitle": "研究、监控、运营",
+        "desc": "AI 代理持续摄入监管申报文件、新闻和托管对账。"
+      },
+      "decision": {
+        "title": "决策",
+        "subtitle": "配置、再平衡、执行",
+        "desc": "概率性论文生成和算法派送，最小化市场影响和风险。"
+      }
+    },
+    "benefits": {
+      "margin": {
+        "title": "更高运营利润率",
+        "desc": "随着 AUM 和委托规模扩大，消除线性运营成本增长。"
+      },
+      "scale": {
+        "title": "无限委托可扩展性",
+        "desc": "同时管理数千个不同的投资委托，保持统一的机构质量。"
+      },
+      "quality": {
+        "title": "纪律性决策质量",
+        "desc": "通过纪律性算法执行消除情绪偏见、恐慌性抛售和委托漂移。"
+      }
+    },
+    "title": "执行决策的软件",
+    "description": "传统软件记录历史交易。Elleva 的自主基础设施主动执行分析和运营任务，提供卓越的杠杆效应。",
+    "stepLabel": "阶段",
+    "closingQuote": "不仅仅是金融科技工具。真正的资本运营基础设施。"
+  },
+  "problem": {
+    "metrics": {
+      "assetsFollowed": "监控资产",
+      "responseTime": "响应时间",
+      "costPerAnalysis": "单次分析成本",
+      "capacityPerAnalyst": "每位分析师产能",
+      "assetsFollowedSub": "持续全球市场扫描",
+      "responseTimeSub": "对市场冲击的即时反应",
+      "costPerAnalysisSub": "最小的增量运营开销",
+      "capacityPerAnalystSub": "高认知和计算杠杆"
+    },
+    "traditional": {
+      "point1": "有限的人工分析师覆盖",
+      "point2": "零散且延迟的决策",
+      "point3": "碎片化、断连的软件工具",
+      "point4": "高线性人力成本",
+      "point5": "决策缺乏因果透明度",
+      "title": "传统模式",
+      "badge": "线性与人工"
+    },
+    "elleva": {
+      "point1": "全天候持续多资产市场扫描",
+      "point2": "实时 AI 辅助研究和决策",
+      "point3": "统一端到端运营内核",
+      "point4": "可扩展 AUM，无需线性招聘",
+      "point5": "完全可审计的因果推理和风险检查",
+      "title": "Elleva 模式",
+      "badge": "自主与持续"
+    },
+    "title": "传统资产管理并非为实时市场而构建",
+    "chart": {
+      "eyebrow": "标准化运营基准",
+      "title": "相对效率：传统（1.0倍） vs. Elleva",
+      "traditional": "传统模式",
+      "elleva": "自主 Elleva",
+      "traditionalNormalized": "传统模式（标准化 1.0）",
+      "ellevaAutonomous": "自主 Elleva"
+    },
+    "quote": "未来机构阿尔法将更少来自主观意见，更多来自应用于投资流程的计算能力。"
+  },
+  "theProduct": {
+    "phases": {
+      "research": {
+        "title": "研究",
+        "scope": "市场、财务、新闻、宏观信号",
+        "moduleName": "研究代理",
+        "moduleDescription": "专门收集、解释和结构化相关全球数据的 AI。",
+        "process1": "持续摄入财务报表（10-K、10-Q、监管申报文件）",
+        "process2": "宏观新闻和财报电话会议记录的语义处理",
+        "process3": "实时提取流动性和机构订单流信号",
+        "metric1": "活跃数据源",
+        "metric2": "分析延迟",
+        "metric3": "资产覆盖率"
+      },
+      "decide": {
+        "title": "决策",
+        "scope": "论文、情景、风险、配置",
+        "moduleName": "委托与政策",
+        "moduleDescription": "管控每个投资组合的确定性规则、限额和控制。",
+        "process1": "持续验证是否符合法定约束和投资政策",
+        "process2": "10,000+ 路径的随机压力测试和回撤模拟",
+        "process3": "沿有效边界的动态风险收益优化",
+        "metric1": "模拟情景",
+        "metric2": "委托合规率",
+        "metric3": "风险覆盖率"
+      },
+      "execute": {
+        "title": "执行",
+        "scope": "订单、再平衡、流动性流",
+        "moduleName": "机构执行",
+        "moduleDescription": "与托管机构和交易柜台的安全连接，实现高效路由。",
+        "process1": "通过 FIX 协议和机构 API 进行智能订单路由",
+        "process2": "算法 TWAP/VWAP 执行，最小化市场影响和滑点",
+        "process3": "自动化再平衡，带交易前现金和保证金检查",
+        "metric1": "平均滑点",
+        "metric2": "活跃协议",
+        "metric3": "直接托管",
+        "segregated": "100% 隔离"
+      },
+      "monitor": {
+        "title": "监控",
+        "scope": "绩效、警报、合规",
+        "moduleName": "审计与可解释性",
+        "moduleDescription": "每个操作的端到端可追溯性和清晰因果解释。",
+        "process1": "不可变日志，包含每次配置的完整因果决策树",
+        "process2": "风险违规或政策漂移的实时预测性警报",
+        "process3": "即时 Brinson-Fachler 多因子绩效归因报告",
+        "metric1": "可审计性",
+        "metric2": "警报延迟",
+        "metric3": "监管跟踪",
+        "immutable": "不可变"
+      }
+    },
+    "realTime": "实时",
+    "title": "Elleva 将投资转变为操作系统",
+    "description": "每个投资组合都在自主 AI 层上运行，在定义的信托控制范围内持续进行研究、决策、执行和监控。",
+    "osHeader": {
+      "systemActive": "系统活跃",
+      "circuitsClosed": "所有电路已闭合"
+    },
+    "moduleHeader": "运营模块",
+    "activeProcessesHeader": "活跃执行流程",
+    "telemetryHeader": "系统遥测",
+    "footerStatus": "确定性控制活跃",
+    "footerInviolable": "100% 不可侵犯"
+  },
+  "trust": {
+    "guarantees": {
+      "segregation": {
+        "title": "信托资产隔离",
+        "quote": "Elleva 从不持有资产托管权。资本以客户法定名义保留在合格托管机构。"
+      },
+      "determinism": {
+        "title": "确定性风险控制",
+        "quote": "没有交易订单在未经委托限额和合规规则的交易前验证之前被派送。"
+      },
+      "explicability": {
+        "title": "完整因果可解释性",
+        "quote": "每个信号、配置和交易都包含完整的加密审计跟踪和透明的因果逻辑。"
+      }
+    },
+    "certifications": {
+      "cvm": {
+        "label": "CVM 和 ANBIMA 框架对齐",
+        "desc": "技术架构符合本地和全球监管信托框架。"
+      },
+      "soc2": {
+        "label": "SOC 2 Type II 安全标准",
+        "desc": "严格的数据保护、访问控制和机构保密性。"
+      },
+      "iso": {
+        "label": "ISO 27001 / 27701 对齐",
+        "desc": "信息安全与隐私管理的最佳治理实践。"
+      },
+      "auditable": {
+        "label": "不可变审计跟踪",
+        "desc": "防篡改遥测日志和持续确定性风险验证。"
+      }
+    },
+    "title": "机构级治理与安全",
+    "description": "Elleva 纯粹作为智能和编排层运营。资本安全地保留在受监管机构的隔离托管中。",
+    "guaranteeLabel": "保证"
+  }
+}

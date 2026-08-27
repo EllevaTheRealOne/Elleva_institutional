@@ -1,0 +1,908 @@
+{
+  "modal": {
+    "badge": "Truy cập Tổ chức Đủ điều kiện",
+    "title": "Yêu cầu Truy cập Elleva",
+    "description": "Cơ sở hạ tầng Elleva được cung cấp cho các tổ chức tài chính đủ điều kiện, công ty quản lý tài sản và văn phòng gia đình. Vui lòng cung cấp thông tin tổ chức.",
+    "nameLabel": "Tên Giám đốc",
+    "namePlaceholder": "Tiến sĩ Edward Silva",
+    "institutionLabel": "Tổ chức / Quỹ",
+    "institutionPlaceholder": "Alpha Capital Asset",
+    "emailLabel": "Email Doanh nghiệp",
+    "emailPlaceholder": "management@alphacapital.com",
+    "typeLabel": "Loại Tổ chức",
+    "types": {
+      "assetManager": "Công ty Quản lý Tài sản / Quỹ",
+      "multiFamilyOffice": "Văn phòng Gia đình Đa thế hệ",
+      "singleFamilyOffice": "Văn phòng Gia đình Đơn thế hệ",
+      "advisor": "Cố vấn Đầu tư / RIA",
+      "treasury": "Kho bạc Tổ chức / Quỹ Tài trợ"
+    },
+    "scopeLabel": "Phạm vi Hoạt động / Ủy thác",
+    "scopePlaceholder": "Mô tả ngắn gọn về khối lượng quản lý hoặc phạm vi tự động hóa mục tiêu...",
+    "submitButton": "Gửi Yêu cầu Truy cập",
+    "successTitle": "Đã nhận Yêu cầu",
+    "successDescPrefix": "Chúng tôi đã nhận dữ liệu cho",
+    "successDescSuffix": "Nhóm đối tác tổ chức của chúng tôi sẽ liên hệ để sắp xếp một buổi kỹ thuật và cung cấp tài liệu tích hợp."
+  },
+  "common": {
+    "done": "Hoàn tất",
+    "footer": {
+      "copyright": "Elleva © 2026. Bảo lưu mọi quyền.",
+      "terms": "Điều khoản Tổ chức",
+      "security": "Bảo mật và Tuân thủ",
+      "regulatory": "Công bố Quy định"
+    },
+    "close": "ĐÓNG",
+    "year": "Năm"
+  },
+  "architecture": {
+    "flow": {
+      "coreSubtitle": "LỚP THÔNG MINH VÀ ĐIỀU PHỐI",
+      "coreCaption": "Nghiên cứu tự động, xác minh ủy thác và thực thi",
+      "marketDataLabel": "Dữ liệu Thị trường",
+      "marketDataSub": "Nguồn cấp dữ liệu thời gian thực và thay thế",
+      "portfoliosLabel": "Ủy thác và Danh mục Đầu tư",
+      "portfoliosSub": "Tham số chính sách ủy thác",
+      "banksLabel": "Lưu ký Đủ điều kiện",
+      "banksSub": "Kho lưu trữ ngân hàng tách biệt",
+      "custodyLabel": "Xác minh Lưu ký",
+      "custodySub": "Thanh toán số dư thời gian thực",
+      "brokersLabel": "Môi giới và Sàn giao dịch",
+      "brokersSub": "Định tuyến lệnh thông minh (FIX/DMA)",
+      "complianceLabel": "Công cụ Tuân thủ",
+      "complianceSub": "Kiểm tra trước giao dịch xác định",
+      "reportsLabel": "Kiểm toán và Đo từ xa",
+      "reportsSub": "Nhật ký mật mã bất biến",
+      "familyOfficesLabel": "Văn phòng Gia đình và Quản lý Tài sản",
+      "familyOfficesSub": "Chế độ xem phân bổ hợp nhất"
+    },
+    "modules": {
+      "marketData": {
+        "title": "Dữ liệu Thị trường",
+        "item1": "API Thị trường",
+        "item2": "Dữ liệu Thời gian thực",
+        "item3": "Bộ dữ liệu Thay thế",
+        "item4": "Nguồn cấp dữ liệu Vĩ mô và Tâm lý"
+      },
+      "portfolios": {
+        "title": "Ủy thác và Danh mục Đầu tư",
+        "item1": "Chính sách Đầu tư",
+        "item2": "Giới hạn Rủi ro",
+        "item3": "Quy tắc Phân bổ",
+        "item4": "Ràng buộc Ủy thác"
+      },
+      "banks": {
+        "title": "Ngân hàng và Tổ chức Lưu ký",
+        "item1": "API Lưu ký",
+        "item2": "Kiểm soát Vị thế",
+        "item3": "Phân tách Tài sản",
+        "item4": "Đường ray Thanh toán"
+      },
+      "custody": {
+        "title": "Tích hợp Lưu ký",
+        "item1": "Tổng hợp Đa Lưu ký",
+        "item2": "Kiểm soát Vị thế",
+        "item3": "Quyền sở hữu Tài khoản Trực tiếp",
+        "item4": "Đối chiếu Liên tục"
+      },
+      "brokers": {
+        "title": "Môi giới và Thực thi",
+        "item1": "Tuyến Thực thi",
+        "item2": "Bộ định tuyến Lệnh Thông minh",
+        "item3": "Giao thức FIX và API",
+        "item4": "Tổng hợp Thanh khoản"
+      },
+      "compliance": {
+        "title": "Tuân thủ và Quản trị",
+        "item1": "Xác thực Trước Giao dịch",
+        "item2": "Rào chắn Suy giảm",
+        "item3": "Giới hạn Luật định",
+        "item4": "Báo cáo Quy định"
+      },
+      "reporting": {
+        "title": "Kiểm toán và Báo cáo",
+        "item1": "Dấu vết Kiểm toán",
+        "item2": "Đo từ xa và Nhật ký",
+        "item3": "Báo cáo Tuân thủ",
+        "item4": "Quản trị Ủy thác"
+      },
+      "wealth": {
+        "title": "Quản lý Tài sản và Văn phòng Gia đình",
+        "item1": "Hợp nhất Danh mục Đầu tư",
+        "item2": "Tổng quan Khách hàng 360°",
+        "item3": "Tùy chỉnh Ủy thác",
+        "item4": "Quản trị Đa thế hệ"
+      }
+    },
+    "title": "Kiến trúc Cơ sở hạ tầng Vốn Tự động",
+    "description": "Elleva hoạt động như lớp thông minh và điều phối, kết nối dữ liệu thị trường, nghiên cứu, chính sách đầu tư, lưu ký đủ điều kiện và thực thi đa môi giới thành một vòng lặp vận hành liên tục, có thể kiểm toán và xác định.",
+    "flowBadge": "LUỒNG",
+    "pillars": {
+      "custodyTitle": "Lưu ký Trực tiếp Tách biệt",
+      "custodyDesc": "Tách biệt ủy thác hoàn toàn với tài sản được duy trì trực tiếp tại các tổ chức lưu ký đủ điều kiện dưới quyền sở hữu của nhà đầu tư.",
+      "institutionsTitle": "Kết nối Doanh nghiệp",
+      "institutionsDesc": "Tích hợp trực tiếp giao thức FIX và API cấp tổ chức với các ngân hàng toàn cầu hạng nhất, môi giới chính và tổ chức lưu ký.",
+      "capacityTitle": "Khả năng Mở rộng Đa Tài sản",
+      "capacityDesc": "Trao quyền cho các công ty quản lý tài sản và văn phòng gia đình mở rộng quy mô ủy thác với độ chính xác toán học và tăng trưởng nhân sự bằng không."
+    }
+  },
+  "businessModel": {
+    "streams": {
+      "platform": {
+        "title": "Phí Nền tảng SaaS",
+        "desc": "cấp phép cho các công ty quản lý tài sản và cấu trúc quản lý tài sản",
+        "subtext": "Truy cập liên tục vào nhân Elleva OS, quản trị ủy thác, kiểm soát rủi ro xác định và tuân thủ tự động."
+      },
+      "usage": {
+        "title": "Phí Sử dụng / Công suất",
+        "desc": "tính toán, khối lượng đo từ xa và nguồn cấp dữ liệu API tổ chức",
+        "subtext": "Định giá dựa trên khối lượng đo từ xa, nguồn cấp dữ liệu được nạp, số lần chạy mô phỏng ngẫu nhiên và giám sát danh mục đầu tư chủ động."
+      },
+      "value": {
+        "title": "Phí Căn chỉnh Dựa trên Giá trị",
+        "desc": "phí dựa trên hiệu quả hoạt động, thông minh hoặc lợi suất liên quan",
+        "subtext": "Căn chỉnh ủy thác liên kết với giảm trượt giá, tiết kiệm vận hành và tối ưu hóa thực thi."
+      }
+    },
+    "title": "Mô hình Doanh thu Tổ chức",
+    "description": "Ba lớp kiếm tiền bổ sung được xây dựng trên cơ sở hạ tầng phần mềm định kỳ và căn chỉnh năng lực vận hành.",
+    "chart": {
+      "eyebrow": "ĐÒN BẨY VẬN HÀNH",
+      "heading": "Tăng trưởng AUM so với Mở rộng Chi phí Vận hành",
+      "legendTraditionalShort": "Truyền thống (Tuyến tính)",
+      "legendEllevaShort": "Elleva (Tự động)",
+      "tooltipElleva": "Chi phí Vận hành Elleva",
+      "tooltipTraditional": "Chi phí Vận hành Truyền thống",
+      "seriesElleva": "Cơ sở hạ tầng Tự động Elleva",
+      "seriesTraditional": "Quản lý Tài sản Truyền thống"
+    }
+  },
+  "defensibility": {
+    "layer4": {
+      "title": "Hệ sinh thái và Tích hợp Lưu ký",
+      "quote": "Tích hợp tổ chức mở rộng khả năng tiếp cận và lòng tin.",
+      "detail": "Các kết nối hai chiều độc quyền với tổ chức lưu ký, môi giới chính và tổ chức tài chính tạo ra chi phí chuyển đổi cấu trúc và rào cản gia nhập cao.",
+      "level": "CẤP ĐỘ 4"
+    },
+    "layer3": {
+      "title": "Chiều sâu Lĩnh vực Vận hành",
+      "quote": "Chiều sâu vận hành tạo ra hiệu quả tổng hợp.",
+      "detail": "Mô hình hóa quy trình đầu tư đầu-cuối không bị phân mảnh — từ tiếp nhận vĩ mô đến rủi ro trước giao dịch và kiểm toán thực thi sau giao dịch.",
+      "level": "CẤP ĐỘ 3"
+    },
+    "layer2": {
+      "title": "Công cụ Thông minh Theo Ngữ cảnh",
+      "quote": "Thông minh về kết quả trên các chế độ kinh tế vĩ mô đa dạng.",
+      "detail": "Phân bổ hiệu suất đa yếu tố tách tín hiệu hệ thống khỏi nhiễu thị trường, liên tục hiệu chỉnh các kịch bản ngẫu nhiên.",
+      "level": "CẤP ĐỘ 2"
+    },
+    "layer1": {
+      "title": "Lịch sử Quyết định Xác định",
+      "quote": "Dấu vết kiểm toán độc quyền về các quyết định và điều kiện cơ sở.",
+      "detail": "Nhật ký bất biến về giả thuyết, tham số đã hiệu chỉnh, tuyến đường đã thực thi và kết quả sau giao dịch thực tế trong các điều kiện thị trường khác nhau.",
+      "level": "CẤP ĐỘ 1"
+    },
+    "title": "Khả năng Phòng thủ Tổng hợp",
+    "description": "Với mỗi quyết định được thực thi, chiều sâu cấu trúc của Elleva được tích lũy qua các nhật ký quyết định độc quyền, tích hợp tổ chức và chuyên môn lĩnh vực.",
+    "footer": {
+      "scaleLabel": "Đòn bẩy Vận hành",
+      "scaleValue": "Chênh lệch 14,2x",
+      "retentionLabel": "Tỷ lệ Duy trì Tổ chức",
+      "retentionValue": "99,4%",
+      "barrierLabel": "Rào cản Chuyển đổi",
+      "barrierValue": "Hào cấu trúc Cao"
+    }
+  },
+  "ecosystem": {
+    "categories": {
+      "custodians": {
+        "title": "Ngân hàng và Tổ chức Lưu ký"
+      },
+      "brokers": {
+        "title": "Môi giới và Sàn Thanh khoản"
+      },
+      "marketData": {
+        "title": "Dữ liệu Thị trường và Nguồn cấp dữ liệu"
+      },
+      "compliance": {
+        "title": "Cơ quan Quản lý và Kiểm toán"
+      }
+    },
+    "complianceItems": {
+      "soc2": "Kiến trúc Chứng nhận SOC 2 Loại II",
+      "iso27001": "Căn chỉnh ISO 27001 / 27701",
+      "anbima": "Căn chỉnh Thực hành Tốt nhất ANBIMA",
+      "cvm175": "Khung Quản trị Quy định CVM 175",
+      "preTrade": "Rào chắn Rủi ro Trước Giao dịch Xác định",
+      "auditTrail": "Dấu vết Kiểm toán Mật mã Bất biến"
+    },
+    "title": "Hệ sinh thái Tổ chức Kết nối",
+    "description": "Elleva đóng vai trò là lớp thông minh và thực thi trung lập kết nối các tổ chức lưu ký hạng nhất, sàn giao dịch và chủ sở hữu tài sản tổ chức.",
+    "tags": {
+      "wealthManagers": "Công ty Quản lý Tài sản và Văn phòng Gia đình",
+      "custody": "Lưu ký Hạng nhất Tách biệt",
+      "reporting": "Báo cáo Quy định Tự động"
+    }
+  },
+  "ellevaLoop": {
+    "nodes": {
+      "center": {
+        "title": "Công cụ Elleva",
+        "subtitle": "NHÂN LIÊN TỤC",
+        "caption": "Hoạt động ủy thác tự động"
+      },
+      "stage1": {
+        "label": "1. Nghiên cứu",
+        "desc": "Thông minh thị trường"
+      },
+      "stage2": {
+        "label": "2. Quyết định",
+        "desc": "Tối ưu hóa ủy thác"
+      },
+      "stage3": {
+        "label": "3. Kiểm tra Rủi ro",
+        "desc": "Ranh giới xác định"
+      },
+      "stage4": {
+        "label": "4. Thực thi",
+        "desc": "Định tuyến lệnh thông minh"
+      },
+      "stage5": {
+        "label": "5. Thanh toán",
+        "desc": "Lưu ký trực tiếp"
+      },
+      "stage6": {
+        "label": "6. Giám sát",
+        "desc": "Nhật ký kiểm toán bất biến"
+      }
+    },
+    "steps": {
+      "s1": "Công cụ thông minh đa nguồn tự động thu thập, làm sạch và cấu trúc dữ liệu tài chính toàn cầu phi cấu trúc 24/7.",
+      "s2": "Đánh giá xác định các đề xuất giao dịch đã điều chỉnh rủi ro được xác minh theo tuyên bố chính sách đầu tư theo luật định.",
+      "s3": "Các ràng buộc toán học không thể bị vi phạm — thực thi mức suy giảm tối đa, tập trung ngành và ranh giới thanh khoản.",
+      "s4": "Thực thi lệnh theo thuật toán qua Định tuyến Lệnh Thông minh trên các điểm cuối môi giới và lưu ký trực tiếp với độ trượt giá tối thiểu.",
+      "s5": "Thanh toán số dư trước và sau giao dịch liên tục trực tiếp trong các tài khoản tổ chức tách biệt thuộc sở hữu của khách hàng.",
+      "s6": "Đối chiếu vị thế thời gian thực, xác minh rào chắn rủi ro và ghi nhật ký kiểm toán bất biến để tuân thủ quy định."
+    },
+    "title": "Bánh đà Vận hành Elleva",
+    "description": "Một chu kỳ vận hành tự động tự củng cố, tích lũy thông minh tổ chức, chất lượng thực thi và quản trị rủi ro.",
+    "badge": "BÁNH ĐÀ VẬN HÀNH",
+    "flywheelTitle": "Cơ chế Phản hồi Tự động"
+  },
+  "faq": {
+    "items": {
+      "custody": {
+        "q": "Elleva đảm bảo an ninh và phân tách tài sản như thế nào?",
+        "a": "Elleva hoạt động với mô hình không nắm giữ tài sản. Vốn vẫn nằm tại các ngân hàng lưu ký hạng nhất được quản lý dưới mã số thuế và tên pháp lý của nhà đầu tư. Elleva chỉ tương tác thông qua các giao thức API/FIX an toàn, được mã hóa token với quyền đọc/giao dịch được quản lý chặt chẽ bởi các ràng buộc ủy thác xác định."
+      },
+      "replacement": {
+        "q": "Elleva có thay thế các công ty quản lý tài sản và ủy ban ủy thác không?",
+        "a": "Không. Elleva là một lớp cơ sở hạ tầng tự động trao quyền cho các công ty quản lý tài sản và ủy ban đầu tư. Nó tự động hóa nghiên cứu lặp lại, mô hình hóa kịch bản, kiểm tra rủi ro và thực thi, cho phép các nhà quản lý mở rộng quy mô AUM với độ chính xác vượt trội."
+      },
+      "compliance": {
+        "q": "Elleva duy trì khả năng giải thích và dấu vết kiểm toán như thế nào?",
+        "a": "Mọi quyết định do hệ thống tạo ra đều được đóng dấu thời gian và liên kết mật mã với giả thuyết chính xác, dữ liệu đầu vào thị trường, mô phỏng ngẫu nhiên và kiểm tra ủy thác đã tạo ra nó, cung cấp tính minh bạch có thể kiểm toán đầu-cuối."
+      },
+      "assets": {
+        "q": "Những loại tài sản và công cụ tài chính nào được hỗ trợ?",
+        "a": "Elleva hỗ trợ cổ phiếu đại chúng toàn cầu, công cụ thu nhập cố định, tiền tệ (FX), phái sinh giao dịch trên sàn và tài sản thay thế được mã hóa token trên hơn 48 sàn giao dịch tổ chức."
+      },
+      "integration": {
+        "q": "Lộ trình triển khai cho khách hàng tổ chức là gì?",
+        "a": "Quá trình gia nhập tổ chức tiêu chuẩn thường kéo dài 2 đến 4 tuần, bao gồm tham số hóa ủy thác, cấp thông tin xác thực API lưu ký, cấu hình giới hạn rủi ro và chạy thử nghiệm trong môi trường sandbox mô phỏng."
+      }
+    },
+    "title": "Các Câu hỏi Thường gặp",
+    "description": "Các chi tiết kỹ thuật, quy định và vận hành chính về Cơ sở hạ tầng Vốn Tự động Elleva."
+  },
+  "finalCTA": {
+    "title": "Chuyển đổi Cơ sở hạ tầng Đầu tư của Bạn",
+    "description": "Triển khai trí tuệ tự động trên toàn bộ nghiên cứu, ra quyết định, thực thi và giám sát với quản trị doanh nghiệp và phân tách lưu ký trực tiếp.",
+    "credentials": {
+      "segregation": "100% Lưu ký Trực tiếp Tách biệt",
+      "noCustody": "Không Rủi ro Nắm giữ Tài sản",
+      "connectivity": "Kết nối FIX/API Tổ chức Trực tiếp"
+    },
+    "modal": {
+      "submittedTitle": "Đã nhận Yêu cầu Truy cập",
+      "submittedDesc": "Nhóm đối tác tổ chức của chúng tôi sẽ liên hệ trong vòng 24 giờ với thông tin xác thực sandbox.",
+      "badge": "KHÁCH HÀNG ĐỦ ĐIỀU KIỆN",
+      "title": "Yêu cầu Truy cập Tổ chức",
+      "desc": "Cơ sở hạ tầng Elleva được cung cấp cho các tổ chức tài chính đủ điều kiện, công ty quản lý tài sản và văn phòng gia đình.",
+      "institutionLabel": "Tổ chức / Quỹ",
+      "institutionPlaceholder": "Alpha Capital Asset",
+      "emailLabel": "Email Doanh nghiệp",
+      "emailPlaceholder": "management@alphacapital.com",
+      "submitButton": "Gửi Yêu cầu Truy cập"
+    }
+  },
+  "globalMarkets": {
+    "modules": {
+      "marketData": {
+        "name": "Dữ liệu Thị trường và Nguồn cấp dữ liệu",
+        "desc": "Nguồn cấp dữ liệu đa tài sản thời gian thực và các chỉ số kinh tế vĩ mô."
+      },
+      "banks": {
+        "name": "Cổng Ngân hàng Hạng nhất",
+        "desc": "Thanh khoản trực tiếp, quản lý tiền mặt và đường ray kho bạc tổ chức."
+      },
+      "brokers": {
+        "name": "Môi giới và Sàn Giao dịch",
+        "desc": "Tuyến thực thi DMA/FIX trực tiếp trên hơn 48 sàn giao dịch tổ chức."
+      },
+      "custody": {
+        "name": "Tổ chức Lưu ký Đủ điều kiện",
+        "desc": "Liên kết API trực tiếp đến các tổ chức lưu ký toàn cầu duy trì tài sản tách biệt."
+      },
+      "compliance": {
+        "name": "Đường ray Tuân thủ và Kiểm toán",
+        "desc": "Rào chắn rủi ro trước giao dịch xác định và báo cáo quy định tự động."
+      },
+      "portfolios": {
+        "name": "Ủy thác và Danh mục Đầu tư",
+        "desc": "Tối ưu hóa danh mục đầu tư ngẫu nhiên liên tục và quản lý chính sách."
+      }
+    },
+    "title": "Kết nối Thị trường Toàn cầu",
+    "description": "Truy cập tổ chức trực tiếp đến các sàn giao dịch toàn cầu, môi giới chính, sàn thanh khoản và mạng lưới lưu ký trên tất cả các khu vực tài phán tài chính lớn.",
+    "telemetry": {
+      "mesh": "CẤU TRÚC LƯỚI TOÀN CẦU",
+      "hubsCount": "6 Nút Chính Đang Hoạt động",
+      "routingLabel": "Định tuyến Lệnh Thông minh (SOR)",
+      "routingValue": "Đa Sàn Hoạt động",
+      "statusLabel": "Trạng thái Mạng",
+      "statusValue": "Bình thường / Tách biệt"
+    },
+    "footerNote": "Các tuyến thực thi đa khu vực tài phán được kiểm toán theo tiêu chuẩn SOC 2 Loại II và ISO 27001.",
+    "inspector": {
+      "badge": "TRÌNH KIỂM TRA CỔNG",
+      "primaryRole": "Vai trò Chính:",
+      "layer": "Lớp Cơ sở hạ tầng:",
+      "latency": "Độ trễ Mục tiêu:",
+      "connection": "Tiêu chuẩn Kết nối:",
+      "connectionStatus": "Trạng thái Kết nối:",
+      "switchHub": "CHUYỂN NÚT"
+    }
+  },
+  "hero": {
+    "nodes": {
+      "coreSubtitle": "LỚP THÔNG MINH VÀ ĐIỀU PHỐI",
+      "coreCaption": "Nghiên cứu tự động, xác minh ủy thác và thực thi",
+      "marketData": "Dữ liệu Thị trường",
+      "marketDataSub": "Nguồn cấp dữ liệu thời gian thực và thay thế",
+      "banks": "Lưu ký Đủ điều kiện",
+      "banksSub": "Kho lưu trữ ngân hàng tách biệt",
+      "brokers": "Môi giới và Sàn giao dịch",
+      "brokersSub": "Định tuyến lệnh thông minh (FIX/DMA)",
+      "custody": "Xác minh Lưu ký",
+      "custodySub": "Thanh toán số dư thời gian thực",
+      "compliance": "Công cụ Tuân thủ",
+      "complianceSub": "Kiểm tra trước giao dịch xác định",
+      "portfolios": "Ủy thác và Danh mục Đầu tư",
+      "portfoliosSub": "Tham số chính sách ủy thác"
+    },
+    "title": "Cơ sở hạ tầng AI Tự động cho Hoạt động Đầu tư",
+    "description": "Elleva là lớp thông minh và điều phối kết nối dữ liệu thị trường, nghiên cứu, chính sách đầu tư, lưu ký đủ điều kiện và thực thi đa môi giới thành một vòng lặp vận hành liên tục, có thể kiểm toán và xác định.",
+    "stats": {
+      "operationalLeverage": "14,2x",
+      "operationalLeverageSub": "Chênh lệch Đòn bẩy Vận hành",
+      "globalConnectivity": "48+",
+      "globalConnectivitySub": "Sàn Giao dịch Tổ chức Đã Kết nối"
+    },
+    "getStarted": "Yêu cầu Truy cập",
+    "architecture": "Xem Kiến trúc",
+    "topologyBadge": "KIẾN TRÚC TỰ ĐỘNG",
+    "loopTitle": "Vòng lặp Vận hành Liên tục",
+    "operationalAdvantage": "Đòn bẩy Vận hành",
+    "efficiencyDelta": "Chênh lệch Hiệu quả +14,2x",
+    "continuousFiduciary": "Quản trị Ủy thác Liên tục"
+  },
+  "operatingLoop": {
+    "steps": {
+      "research": {
+        "name": "NGHIÊN CỨU",
+        "role": "Tác nhân Nghiên cứu Tự động"
+      },
+      "decide": {
+        "name": "QUYẾT ĐỊNH",
+        "role": "Nhân Ủy thác Xác định"
+      },
+      "execute": {
+        "name": "THỰC THI",
+        "role": "Bộ định tuyến Lệnh Thông minh (FIX/DMA)"
+      },
+      "monitor": {
+        "name": "GIÁM SÁT",
+        "role": "Kiểm toán và Đo từ xa Liên tục"
+      }
+    }
+  },
+  "investmentExperience": {
+    "allocation": {
+      "fixedIncome": "Thu nhập Cố định",
+      "globalEquities": "Cổ phiếu Toàn cầu",
+      "realAssets": "Tài sản Thực và Cơ sở hạ tầng",
+      "strategicCash": "Tiền mặt Chiến lược và Dự trữ",
+      "eyebrow": "PHÂN BỔ ỦY THÁC",
+      "heading": "Trọng số Danh mục Đầu tư Chủ động",
+      "tooltipLabel": "Trọng số Phân bổ"
+    },
+    "tabs": {
+      "overview": "Tổng quan Danh mục Đầu tư",
+      "positions": "Vị thế",
+      "allocation": "Chế độ xem Phân bổ",
+      "performance": "Phân bổ Hiệu suất",
+      "risk": "Rủi ro và Giới hạn",
+      "liquidity": "Quản lý Thanh khoản",
+      "marketIntelligence": "Thông minh Thị trường",
+      "attribution": "Phân bổ và Yếu tố",
+      "alerts": "Cảnh báo Đo từ xa",
+      "compliance": "Tuân thủ Ủy thác"
+    },
+    "title": "Trải nghiệm Đầu tư Tổ chức Chính xác",
+    "description": "Một giao diện điều hành được thiết kế cho các nhà phân bổ tài sản tổ chức, văn phòng gia đình và ủy ban ủy thác yêu cầu tính minh bạch tuyệt đối và kiểm soát xác định.",
+    "stats": {
+      "monitoredAum": {
+        "label": "AUM Ủy thác Được Giám sát",
+        "status": "Bình thường / Tách biệt"
+      },
+      "adherence": {
+        "label": "Tuân thủ Chính sách Ủy thác",
+        "deviation": "0,00% Độ lệch"
+      },
+      "var": {
+        "label": "VaR Tham số 99% 10 ngày",
+        "policyLimit": "Giới hạn: 4,50% (Tuân thủ)"
+      },
+      "custody": {
+        "label": "Trạng thái Lưu ký",
+        "status": "Hạng nhất Tách biệt",
+        "subtext": "100% Quyền sở hữu Hợp pháp của Khách hàng"
+      }
+    },
+    "chart": {
+      "eyebrow": "BIÊN GIỚI HIỆU QUẢ ĐỘNG",
+      "heading": "Mô phỏng Ngẫu nhiên Thời gian Thực",
+      "badge": "MÔ PHỎNG 10.000 ĐƯỜNG DẪN",
+      "seriesExecution": "Biên giới Ngẫu nhiên Tối ưu",
+      "seriesTarget": "Ranh giới Chính sách Ủy thác"
+    }
+  },
+  "intelligence": {
+    "scenarios": {
+      "low": "Áp lực Lạm phát Đình trệ (15%)",
+      "base": "Kịch bản Mở rộng Cơ sở (65%)",
+      "high": "Gia tốc Công nghệ (20%)"
+    },
+    "title": "Công cụ Nghiên cứu và Quyết định Tự động",
+    "description": "Chuyển đổi dữ liệu toàn cầu phi cấu trúc thành các quyết định phân bổ xác định, được xác minh bởi ủy thác với tính chặt chẽ toán học và khả năng kiểm toán.",
+    "caseTitle": "Tạo Luận điểm Tự động",
+    "confidenceLabel": "Mức độ Tin cậy Giả thuyết",
+    "confidenceValue": "94,2% Mức độ Tin cậy Cao",
+    "thesis": {
+      "label": "Luận điểm Đầu tư:",
+      "question": "Cơ hội là gì và tại sao là bây giờ.",
+      "content": "Mở rộng nhanh chóng trong lĩnh vực bán dẫn chuyên dụng tạo ra nút thắt trong làm mát bằng chất lỏng và năng lượng sạch. Cửa sổ tham gia không đối xứng trước chu kỳ định giá lại chi phí vốn toàn cầu."
+    },
+    "risk": {
+      "label": "Rào chắn Rủi ro:",
+      "question": "Rủi ro chính và tác động ước tính.",
+      "content": "Rủi ro thắt chặt tiền tệ kéo dài hạn chế tài trợ cơ sở hạ tầng (VaR 99% dự kiến ở mức -4,2% trong danh mục) và các hạn chế tiềm ẩn về chuỗi cung ứng địa chính trị."
+    },
+    "triggers": {
+      "label": "Yếu tố Kích hoạt Tham gia:",
+      "question": "Các sự kiện có thể thúc đẩy lợi nhuận.",
+      "content": "Cập nhật hướng dẫn chi phí vốn của hyperscaler quý 3, phê duyệt quy định cho các cơ sở năng lượng tái tạo chuyên dụng và thông báo hợp đồng take-or-pay dài hạn."
+    },
+    "invalidation": {
+      "label": "Tiêu chí Vô hiệu hóa:",
+      "question": "Điều gì sẽ làm luận điểm trở nên vô hiệu và kích hoạt thoát.",
+      "content": "Điều chỉnh giảm ngân sách chip vượt quá 15% so với cùng kỳ năm trước hoặc nén biên lợi nhuận hoạt động trong vòng 90 ngày đầu tiên sau phân bổ."
+    },
+    "probability": {
+      "label": "Phân phối Xác suất",
+      "subtitle": "Phân phối Kịch bản",
+      "question": "Xác suất ước tính thực hiện luận điểm.",
+      "occurrence": "Xác suất"
+    },
+    "action": {
+      "badge": "Hành động Được Khuyến nghị",
+      "status": "THỰC THI ĐỀ XUẤT",
+      "headline": "Phân bổ được đề xuất, tầm nhìn và các bước vận hành tiếp theo.",
+      "allocationLabel": "Phân bổ Ủy thác:",
+      "allocationValue": "3,5% AUM",
+      "horizonLabel": "Tầm nhìn Luận điểm:",
+      "horizonValue": "18 đến 24 tháng",
+      "routingLabel": "Định tuyến Thực thi:",
+      "routingValue": "TWAP 4h (Độ trượt tối đa 0,02%)",
+      "readyCta": "Sẵn sàng để gửi qua Bộ định tuyến Lệnh Thông minh"
+    }
+  },
+  "marketOpportunity": {
+    "title": "Chuyển đổi Hoạt động Quản lý Tài sản và Vốn",
+    "description": "Quản lý đầu tư truyền thống bị giới hạn bởi số lượng nhân sự tuyến tính và công cụ phân mảnh. Elleva cung cấp nền tảng tính toán có thể mở rộng cho kỷ nguyên tiếp theo của phân bổ vốn.",
+    "cards": {
+      "globalAum2025": {
+        "label": "AUM Toàn cầu 2025",
+        "desc": "Tài sản toàn cầu đang được quản lý hiện nay"
+      },
+      "globalProjection2030": {
+        "label": "Dự báo Toàn cầu 2030",
+        "desc": "AUM toàn cầu dự kiến vào năm 2030"
+      },
+      "familyOfficesToday": {
+        "label": "Văn phòng Gia đình Hiện nay",
+        "desc": "AUM văn phòng gia đình hiện tại"
+      },
+      "familyOffices2030": {
+        "label": "Văn phòng Gia đình 2030",
+        "desc": "Mở rộng dự kiến đến năm 2030"
+      }
+    },
+    "chart": {
+      "eyebrow": "CHUYỂN ĐỔI THỊ TRƯỜNG",
+      "heading": "AUM trên mỗi FTE so với Tổng Tài sản được Quản lý",
+      "scale": "Quy mô: Nghìn tỷ Đô la (USD)",
+      "tooltipAum": "AUM Toàn cầu",
+      "seriesGlobalAum": "AUM Toàn cầu (Nghìn tỷ USD)",
+      "footnote": "* Mốc dữ liệu: 147 nghìn tỷ USD vào năm 2025 và 200 nghìn tỷ USD dự kiến vào năm 2030 cho AUM toàn cầu; 3,1 nghìn tỷ USD hiện nay và 5,4 nghìn tỷ USD dự kiến vào năm 2030 cho văn phòng gia đình. Các điểm từ 2026 đến 2029 thể hiện phép nội suy hình học trực quan."
+    }
+  },
+  "infrastructure": {
+    "tier1Badge": "LỚP DỮ LIỆU",
+    "tier1LeftTitle": "Nhà cung cấp Dữ liệu Thị trường",
+    "tier1LeftDesc": "Tích hợp trực tiếp với Bloomberg, Refinitiv và các nguồn cấp dữ liệu định lượng chuyên biệt.",
+    "tier1RightTitle": "Tín hiệu Vĩ mô và Thay thế",
+    "tier1RightDesc": "Tín hiệu vĩ mô phi cấu trúc, hồ sơ quản lý (SEC/CVM) và nguồn cấp dữ liệu tâm lý.",
+    "middleSubtitle": "NHÂN ĐIỀU PHỐI TỰ ĐỘNG",
+    "middleCaption": "Mô phỏng ngẫu nhiên liên tục, xác thực ủy thác xác định và định tuyến thuật toán.",
+    "tier3Badge": "THỰC THI VÀ LƯU KÝ",
+    "tier3CustodyTitle": "Tổ chức Lưu ký Đủ điều kiện",
+    "tier3CustodyDesc": "Liên kết API trực tiếp đến các tổ chức lưu ký toàn cầu duy trì tài sản khách hàng tách biệt.",
+    "tier3BanksTitle": "Cổng Ngân hàng Hạng nhất",
+    "tier3BanksDesc": "Quản lý tiền mặt tự động và đường ray thanh toán với các tài khoản tổ chức đã được xác minh.",
+    "tier3BrokersTitle": "Môi giới Chính Thực thi",
+    "tier3BrokersDesc": "Các tuyến thực thi DMA/FIX với định tuyến lệnh thông minh để giảm thiểu tác động thị trường.",
+    "title": "Cấu trúc Cơ sở hạ tầng Tài chính Hiện đại",
+    "description": "Elleva nằm giữa các nguồn dữ liệu tổ chức và cơ sở hạ tầng tài chính được quản lý, đóng vai trò là lớp điều phối thông minh.",
+    "flowBadge": "KIẾN TRÚC HỆ THỐNG",
+    "tier1BadgeLabel": "CẤP 1",
+    "tier1Heading": "Thông minh Thị trường và Tiếp nhận",
+    "tier1Summary": "Dữ liệu thị trường đa tài sản thời gian thực và đầu vào định lượng thay thế.",
+    "tier2BadgeLabel": "CẤP 2",
+    "tier2Heading": "Nhân Quyết định và Quản trị Elleva",
+    "tier2Summary": "Nghiên cứu tự động, xác minh ủy thác và mô phỏng rủi ro.",
+    "tier3BadgeLabel": "CẤP 3",
+    "tier3Heading": "Thực thi và Lưu ký được Quản lý",
+    "tier3Summary": "Kết nối FIX trực tiếp và lưu giữ lưu ký tổ chức tách biệt.",
+    "tags": {
+      "banks": "Ngân hàng",
+      "brokers": "Môi giới",
+      "settlement": "Thanh toán",
+      "liquidity": "Thanh khoản",
+      "marketData": "Dữ liệu Thị trường"
+    }
+  },
+  "newCategory": {
+    "flow": {
+      "capitalStage": "ĐẦU VÀO",
+      "capitalLabel": "VỐN",
+      "capitalDesc": "Ủy thác, Văn phòng Gia đình, Quản lý Tài sản và Công ty Quản lý Tài sản",
+      "ellevaSubtitle": "THÔNG MINH + ĐIỀU PHỐI",
+      "ellevaCaption": "Lớp tự động giữa vốn và cơ sở hạ tầng tài chính toàn cầu",
+      "systemStage": "THỰC THI",
+      "systemLabel": "HỆ THỐNG TÀI CHÍNH TOÀN CẦU",
+      "systemDesc": "Tổ chức Lưu ký, Sàn giao dịch, Thanh toán và Môi giới Chính"
+    },
+    "modules": {
+      "data": "DỮ LIỆU",
+      "dataSub": "Nguồn cấp thị trường và tin tức",
+      "banks": "NGÂN HÀNG",
+      "banksSub": "Thanh toán và tiền mặt",
+      "brokers": "MÔI GIỚI",
+      "brokersSub": "Thực thi và tuyến đường",
+      "custody": "LƯU KÝ",
+      "custodySub": "Tài sản tách biệt",
+      "compliance": "TUÂN THỦ",
+      "complianceSub": "Rào chắn và giới hạn",
+      "portfolios": "DANH MỤC ĐẦU TƯ",
+      "portfoliosSub": "Phân bổ và rủi ro",
+      "dataDesc": "Tín hiệu và nguồn cấp thị trường",
+      "banksDesc": "Thanh toán và tài khoản",
+      "brokersDesc": "Định tuyến lệnh",
+      "custodyDesc": "Phân tách lưu ký",
+      "complianceDesc": "Ủy thác và KYC",
+      "portfoliosDesc": "Phân bổ và rủi ro"
+    },
+    "title": "Một Danh mục Mới trong Công nghệ Tài chính",
+    "description": "Chúng tôi đang định nghĩa Cơ sở hạ tầng Vốn Tự động — phần mềm không chỉ hiển thị các con số mà còn thực thi các quy trình đầu tư phức tạp với độ chính xác ủy thác.",
+    "topologyBadge": "TẠO DANH MỤC MỚI"
+  },
+  "operational": {
+    "metrics": {
+      "monitoredAssets": {
+        "name": "Tài sản được Giám sát"
+      },
+      "responseSpeed": {
+        "name": "Tốc độ Phản hồi"
+      },
+      "costPerAnalysis": {
+        "name": "Chi phí cho mỗi Phân tích"
+      },
+      "analystCapacity": {
+        "name": "Năng lực cho mỗi Nhà phân tích"
+      }
+    },
+    "title": "Lợi thế Vận hành Có thể Đo lường",
+    "description": "So sánh hiệu suất vận hành của cơ sở hạ tầng tự động so với hoạt động quản lý tài sản tuyến tính truyền thống.",
+    "cards": {
+      "monitoredAssets": {
+        "title": "Tài sản được Giám sát Đồng thời",
+        "desc": "Giám sát thị trường liên tục và tiếp nhận mà không có nút thắt lấy mẫu."
+      },
+      "responseSpeed": {
+        "title": "Phản hồi Sự kiện Thị trường Nhanh hơn",
+        "desc": "Xác định các cú sốc kinh tế vĩ mô dưới giây và định giá lại luận điểm nhanh chóng."
+      },
+      "costPerAnalysis": {
+        "title": "Chi phí cho mỗi Luận điểm Có cấu trúc",
+        "desc": "Giảm mạnh chi phí vận hành thủ công trong nghiên cứu và đối chiếu."
+      },
+      "analystCapacity": {
+        "title": "Năng lực Vận hành cho mỗi Nhà phân tích",
+        "desc": "Đòn bẩy nhận thức nhân lên phạm vi bao phủ ủy thác danh mục cá nhân."
+      }
+    },
+    "chart": {
+      "eyebrow": "ĐIỂM CHUẨN VẬN HÀNH",
+      "heading": "Năng lực cho mỗi FTE Vận hành: Truyền thống so với Elleva",
+      "badge": "CHÊNH LỆCH ĐÒN BẨY 14,2X",
+      "legendTraditional": "Mô hình Truyền thống",
+      "legendElleva": "Cơ sở hạ tầng Elleva",
+      "legendTraditionalBase": "Mô hình Truyền thống (Cơ sở 1,0)",
+      "footnote": "* Các chỉ số vận hành được chuẩn hóa trong nghiên cứu, giám sát liên tục và thực thi. Không đại diện cho lời hứa về lợi nhuận đầu tư."
+    }
+  },
+  "pillars": {
+    "pillar1": {
+      "title": "Trí tuệ Tự động",
+      "quote": "Tổng hợp thị trường liên tục và tạo giả thuyết mà không có sự mệt mỏi của con người."
+    },
+    "pillar2": {
+      "title": "Ủy thác Xác định",
+      "quote": "Ranh giới rủi ro toán học không thể bị vi phạm hoặc vượt qua."
+    },
+    "pillar3": {
+      "title": "Lưu ký Trực tiếp Tách biệt",
+      "quote": "Rủi ro lưu ký bằng không: vốn không bao giờ rời khỏi tổ chức lưu ký đủ điều kiện của khách hàng."
+    },
+    "pillar4": {
+      "title": "Dấu vết Kiểm toán Giải thích được",
+      "quote": "Khả năng truy xuất nhân quả đầy đủ cho mọi tín hiệu, giao dịch và tái cân bằng."
+    },
+    "badges": {
+      "segregation": "Phân tách Dữ liệu",
+      "encryption": "Mã hóa Đầu-cuối",
+      "auditability": "Khả năng Kiểm toán Toàn diện",
+      "compliance": "Tuân thủ Quy định"
+    },
+    "title": "Các Trụ cột Kiến trúc Chiến lược",
+    "description": "Bốn nguyên tắc kỹ thuật nền tảng đảm bảo độ tin cậy doanh nghiệp, an toàn quy định và hiệu suất tổ chức.",
+    "pillarPrefix": "TRỤ CỘT",
+    "governanceTitle": "Tiêu chuẩn Ủy thác Tổ chức",
+    "governanceDescription": "Được thiết kế đặc biệt để đáp ứng các yêu cầu tuân thủ tổ chức nghiêm ngặt, tiêu chuẩn ủy ban kiểm toán và giám sát quy định."
+  },
+  "technology": {
+    "components": {
+      "data": {
+        "title": "Tiếp nhận và Xử lý",
+        "quote": "Đường ống phân tán để tiếp nhận dữ liệu thị trường thời gian thực."
+      },
+      "intelligence": {
+        "title": "Mô hình và Suy luận",
+        "quote": "Các mô hình tổ hợp chuyên biệt tập trung vào khả năng giải thích và hiệu chỉnh."
+      },
+      "orchestration": {
+        "title": "Điều phối và Thực thi",
+        "quote": "Công cụ xác định để xác thực ủy thác và định tuyến lệnh thông minh."
+      },
+      "storage": {
+        "title": "Lưu trữ và Kiểm toán",
+        "quote": "Lớp bất biến để ghi lại các quyết định, đo từ xa và dấu vết kiểm toán."
+      }
+    },
+    "specs": {
+      "uptime": "99,99% thời gian hoạt động",
+      "latency": "Độ trễ < 50ms",
+      "encryption": "Mã hóa AES-256",
+      "compliance": "Tuân thủ SOC 2 Loại II"
+    },
+    "title": "Ngăn xếp Công nghệ Cấp Tổ chức",
+    "description": "Được xây dựng trên kiến trúc vi dịch vụ thông lượng cao, độ trễ thấp được thiết kế cho các hoạt động vốn rủi ro cao.",
+    "componentLabel": "THÀNH PHẦN CỐT LÕI",
+    "specsPanel": {
+      "title": "Thông số Kỹ thuật",
+      "description": "Các chỉ số cơ sở hạ tầng đảm bảo tính sẵn sàng liên tục và độ chính xác vận hành."
+    }
+  },
+  "theNewSoftware": {
+    "sequence": {
+      "software": {
+        "title": "PHẦN MỀM",
+        "subtitle": "nền tảng, dữ liệu, quản trị",
+        "desc": "Cơ sở hạ tầng tính toán linh hoạt, chuẩn hóa dữ liệu và rào cản ủy thác toán học."
+      },
+      "work": {
+        "title": "CÔNG VIỆC",
+        "subtitle": "nghiên cứu, giám sát, vận hành",
+        "desc": "Các tác nhân AI thực hiện tiếp nhận liên tục hồ sơ quản lý, tin tức và đối chiếu lưu ký."
+      },
+      "decision": {
+        "title": "QUYẾT ĐỊNH",
+        "subtitle": "phân bổ, tái cân bằng, thực thi",
+        "desc": "Tạo luận điểm xác suất và gửi theo thuật toán giảm thiểu tác động thị trường và rủi ro."
+      }
+    },
+    "benefits": {
+      "margin": {
+        "title": "Biên lợi nhuận Vận hành Cao hơn",
+        "desc": "Loại bỏ chi phí vận hành tuyến tính khi AUM và khối lượng ủy thác mở rộng."
+      },
+      "scale": {
+        "title": "Khả năng Mở rộng Ủy thác Không giới hạn",
+        "desc": "Quản lý hàng ngàn ủy thác đầu tư khác biệt đồng thời với chất lượng tổ chức đồng đều."
+      },
+      "quality": {
+        "title": "Chất lượng Quyết định Có Kỷ luật",
+        "desc": "Loại bỏ thiên kiến cảm xúc, bán tháo hoảng loạn và sai lệch ủy thác thông qua thực thi thuật toán có kỷ luật."
+      }
+    },
+    "title": "Phần mềm Thực thi Quyết định",
+    "description": "Phần mềm truyền thống ghi lại các giao dịch lịch sử. Cơ sở hạ tầng tự động của Elleva chủ động thực hiện các nhiệm vụ phân tích và vận hành để cung cấp đòn bẩy vượt trội.",
+    "stepLabel": "GIAI ĐOẠN",
+    "closingQuote": "Không chỉ là một công cụ fintech. Một cơ sở hạ tầng vận hành thực sự cho vốn."
+  },
+  "problem": {
+    "metrics": {
+      "assetsFollowed": "Tài sản được Giám sát",
+      "responseTime": "Thời gian Phản hồi",
+      "costPerAnalysis": "Chi phí cho mỗi Phân tích",
+      "capacityPerAnalyst": "Năng lực cho mỗi Nhà phân tích",
+      "assetsFollowedSub": "Quét thị trường toàn cầu liên tục",
+      "responseTimeSub": "Phản ứng tức thì với các cú sốc thị trường",
+      "costPerAnalysisSub": "Chi phí vận hành bổ sung tối thiểu",
+      "capacityPerAnalystSub": "Đòn bẩy nhận thức và tính toán cao"
+    },
+    "traditional": {
+      "point1": "Phạm vi bao phủ của nhà phân tích thủ công hạn chế",
+      "point2": "Ra quyết định rời rạc và chậm trễ",
+      "point3": "Các công cụ phần mềm phân mảnh và không kết nối",
+      "point4": "Chi phí nhân sự tuyến tính cao",
+      "point5": "Thiếu tính minh bạch nhân quả trong quyết định",
+      "title": "Mô hình Truyền thống",
+      "badge": "Tuyến tính và Thủ công"
+    },
+    "elleva": {
+      "point1": "Quét thị trường đa tài sản 24/7 liên tục",
+      "point2": "Nghiên cứu và ra quyết định với AI thời gian thực",
+      "point3": "Nhân vận hành đầu-cuối thống nhất",
+      "point4": "AUM có thể mở rộng mà không cần tuyển dụng tuyến tính",
+      "point5": "Lập luận nhân quả và kiểm tra rủi ro có thể kiểm toán đầy đủ",
+      "title": "Mô hình Elleva",
+      "badge": "Tự động và Liên tục"
+    },
+    "title": "Quản lý Tài sản Truyền thống Không được Xây dựng cho Thị trường Thời gian Thực",
+    "chart": {
+      "eyebrow": "Điểm chuẩn Vận hành Chuẩn hóa",
+      "title": "Hiệu quả Tương đối: Truyền thống (1,0x) so với Elleva",
+      "traditional": "Mô hình Truyền thống",
+      "elleva": "Elleva Tự động",
+      "traditionalNormalized": "Mô hình Truyền thống (Chuẩn hóa 1,0)",
+      "ellevaAutonomous": "Elleva Tự động"
+    },
+    "quote": "Alpha tổ chức trong tương lai sẽ đến ít hơn từ ý kiến chủ quan và nhiều hơn từ năng lực tính toán áp dụng vào quy trình đầu tư."
+  },
+  "theProduct": {
+    "phases": {
+      "research": {
+        "title": "NGHIÊN CỨU",
+        "scope": "thị trường, tài chính, tin tức, tín hiệu vĩ mô",
+        "moduleName": "Tác nhân Nghiên cứu",
+        "moduleDescription": "AI chuyên thu thập, diễn giải và cấu trúc dữ liệu toàn cầu liên quan.",
+        "process1": "Tiếp nhận liên tục báo cáo tài chính (10-K, 10-Q, hồ sơ quản lý)",
+        "process2": "Xử lý ngữ nghĩa tin tức vĩ mô và bản ghi cuộc gọi báo cáo lợi nhuận",
+        "process3": "Trích xuất thời gian thực tín hiệu thanh khoản và dòng lệnh tổ chức",
+        "metric1": "Nguồn cấp Hoạt động",
+        "metric2": "Độ trễ Phân tích",
+        "metric3": "Phạm vi bao phủ Tài sản"
+      },
+      "decide": {
+        "title": "QUYẾT ĐỊNH",
+        "scope": "luận điểm, kịch bản, rủi ro, phân bổ",
+        "moduleName": "Ủy thác và Chính sách",
+        "moduleDescription": "Các quy tắc, giới hạn và kiểm soát xác định quản lý từng danh mục đầu tư.",
+        "process1": "Xác thực liên tục với các ràng buộc luật định và chính sách đầu tư",
+        "process2": "Kiểm tra căng thẳng ngẫu nhiên và mô phỏng suy giảm trên 10.000+ đường dẫn",
+        "process3": "Tối ưu hóa rủi ro-lợi nhuận động theo biên giới hiệu quả",
+        "metric1": "Kịch bản Mô phỏng",
+        "metric2": "Tuân thủ Ủy thác",
+        "metric3": "Phạm vi bao phủ Rủi ro"
+      },
+      "execute": {
+        "title": "THỰC THI",
+        "scope": "lệnh, tái cân bằng, dòng thanh khoản",
+        "moduleName": "Thực thi Tổ chức",
+        "moduleDescription": "Kết nối an toàn với tổ chức lưu ký và phòng giao dịch để định tuyến hiệu quả.",
+        "process1": "Định tuyến lệnh thông minh qua giao thức FIX và API tổ chức",
+        "process2": "Thực thi TWAP/VWAP theo thuật toán giảm thiểu tác động thị trường và trượt giá",
+        "process3": "Tái cân bằng tự động với kiểm tra tiền mặt và ký quỹ trước giao dịch",
+        "metric1": "Trượt giá Trung bình",
+        "metric2": "Giao thức Hoạt động",
+        "metric3": "Lưu ký Trực tiếp",
+        "segregated": "100% Tách biệt"
+      },
+      "monitor": {
+        "title": "GIÁM SÁT",
+        "scope": "hiệu suất, cảnh báo, tuân thủ",
+        "moduleName": "Kiểm toán và Giải thích",
+        "moduleDescription": "Khả năng truy xuất đầu-cuối và giải thích nhân quả rõ ràng cho mọi hành động.",
+        "process1": "Nhật ký bất biến với cây quyết định nhân quả đầy đủ cho mỗi phân bổ",
+        "process2": "Cảnh báo dự đoán thời gian thực cho các vi phạm rủi ro hoặc sai lệch chính sách",
+        "process3": "Báo cáo phân bổ hiệu suất đa yếu tố Brinson-Fachler tức thì",
+        "metric1": "Khả năng Kiểm toán",
+        "metric2": "Độ trễ Cảnh báo",
+        "metric3": "Dấu vết Quy định",
+        "immutable": "Bất biến"
+      }
+    },
+    "realTime": "Thời gian Thực",
+    "title": "Elleva Biến Đầu tư thành Hệ điều hành",
+    "description": "Mỗi danh mục đầu tư hoạt động trên một lớp AI tự động, liên tục nghiên cứu, quyết định, thực thi và giám sát trong phạm vi các kiểm soát ủy thác đã xác định.",
+    "osHeader": {
+      "systemActive": "HỆ THỐNG HOẠT ĐỘNG",
+      "circuitsClosed": "TẤT CẢ MẠCH ĐÃ ĐÓNG"
+    },
+    "moduleHeader": "Mô-đun Vận hành",
+    "activeProcessesHeader": "Quy trình Thực thi Đang Hoạt động",
+    "telemetryHeader": "Đo từ xa Hệ thống",
+    "footerStatus": "Kiểm soát Xác định Đang Hoạt động",
+    "footerInviolable": "100% Bất khả xâm phạm"
+  },
+  "trust": {
+    "guarantees": {
+      "segregation": {
+        "title": "Phân tách Tài sản Ủy thác",
+        "quote": "Elleva không bao giờ nhận lưu ký tài sản. Vốn vẫn nằm tại các tổ chức lưu ký đủ điều kiện dưới tên pháp lý của khách hàng."
+      },
+      "determinism": {
+        "title": "Kiểm soát Rủi ro Xác định",
+        "quote": "Không có lệnh giao dịch nào được gửi đi mà không có xác thực trước giao dịch đối với giới hạn ủy thác và quy tắc tuân thủ."
+      },
+      "explicability": {
+        "title": "Khả năng Giải thích Nhân quả Hoàn toàn",
+        "quote": "Mọi tín hiệu, phân bổ và giao dịch đều bao gồm một dấu vết kiểm toán mật mã đầy đủ với logic nhân quả minh bạch."
+      }
+    },
+    "certifications": {
+      "cvm": {
+        "label": "Căn chỉnh Khung CVM và ANBIMA",
+        "desc": "Kiến trúc công nghệ tuân thủ các khung ủy thác quy định địa phương và toàn cầu."
+      },
+      "soc2": {
+        "label": "Tiêu chuẩn Bảo mật SOC 2 Loại II",
+        "desc": "Bảo vệ dữ liệu nghiêm ngặt, kiểm soát truy cập và bảo mật tổ chức."
+      },
+      "iso": {
+        "label": "Căn chỉnh ISO 27001 / 27701",
+        "desc": "Các thực hành quản trị tốt nhất cho bảo mật thông tin và quản lý quyền riêng tư."
+      },
+      "auditable": {
+        "label": "Dấu vết Kiểm toán Bất biến",
+        "desc": "Nhật ký đo từ xa chống giả mạo và xác thực rủi ro xác định liên tục."
+      }
+    },
+    "title": "Quản trị và Bảo mật Cấp Tổ chức",
+    "description": "Elleva hoạt động hoàn toàn như một lớp thông minh và điều phối. Vốn được giữ an toàn trong lưu ký tách biệt tại các tổ chức được quản lý.",
+    "guaranteeLabel": "BẢO ĐẢM"
+  }
+}

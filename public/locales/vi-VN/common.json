@@ -1,0 +1,81 @@
+{
+  "brand": {
+    "name": "Elleva",
+    "tagline": "Cơ sở hạ tầng Vốn Tự động",
+    "description": "Cơ sở hạ tầng AI tự động cho hoạt động đầu tư."
+  },
+  "flow": {
+    "activeExploration": "Khám phá Chủ động",
+    "recenterTitle": "Khôi phục khung ban đầu",
+    "recenter": "Tái tập trung"
+  },
+  "actions": {
+    "getStarted": "Yêu cầu Truy cập",
+    "requestAccess": "Yêu cầu Truy cập Tổ chức",
+    "architecture": "Xem Kiến trúc",
+    "learnMore": "Tìm hiểu thêm",
+    "close": "Đóng",
+    "submit": "Gửi Yêu cầu",
+    "completed": "Hoàn tất",
+    "viewDetails": "Xem Chi tiết"
+  },
+  "status": {
+    "nominal": "Bình thường / Tách biệt",
+    "active": "Đang hoạt động",
+    "connected": "Đã kết nối",
+    "audited": "Đã kiểm toán"
+  },
+  "modal": {
+    "badge": "Truy cập Tổ chức Đủ điều kiện",
+    "title": "Yêu cầu Truy cập Elleva",
+    "description": "Cơ sở hạ tầng Elleva được cung cấp cho các tổ chức tài chính đủ điều kiện, công ty quản lý tài sản và văn phòng gia đình. Vui lòng cung cấp thông tin tổ chức.",
+    "nameLabel": "Tên Giám đốc",
+    "namePlaceholder": "Tiến sĩ Edward Silva",
+    "institutionLabel": "Tổ chức / Quỹ",
+    "institutionPlaceholder": "Alpha Capital Asset",
+    "emailLabel": "Email Doanh nghiệp",
+    "emailPlaceholder": "management@alphacapital.com",
+    "typeLabel": "Loại Tổ chức",
+    "types": {
+      "assetManager": "Công ty Quản lý Tài sản",
+      "multiFamilyOffice": "Văn phòng Gia đình Đa thế hệ",
+      "singleFamilyOffice": "Văn phòng Gia đình Đơn thế hệ",
+      "advisor": "Cố vấn Đầu tư / RIA",
+      "treasury": "Kho bạc Tổ chức / Quỹ Tài trợ"
+    },
+    "scopeLabel": "Phạm vi Hoạt động / Ủy thác",
+    "scopePlaceholder": "Mô tả ngắn gọn về khối lượng quản lý hoặc phạm vi tự động hóa mục tiêu...",
+    "submitButton": "Gửi Yêu cầu Truy cập",
+    "successTitle": "Đã nhận Yêu cầu",
+    "successDescPrefix": "Chúng tôi đã nhận dữ liệu cho",
+    "successDescSuffix": "Nhóm đối tác tổ chức của chúng tôi sẽ liên hệ để sắp xếp một buổi kỹ thuật và cung cấp tài liệu tích hợp."
+  },
+  "done": "Hoàn tất",
+  "close": "Đóng",
+  "footer": {
+    "copyright": "Elleva © 2026. Bảo lưu mọi quyền.",
+    "terms": "Điều khoản Tổ chức",
+    "security": "Bảo mật và Tuân thủ",
+    "regulatory": "Công bố Quy định",
+    "aboutElleva": "Về Elleva",
+    "apiData": "API và Dữ liệu",
+    "bottomTagline": "Cơ sở hạ tầng vốn tự chủ cho hoạt động đầu tư.",
+    "brandDesc": "Cơ sở hạ tầng AI tự chủ cho hoạt động đầu tư.",
+    "contact": "Liên hệ",
+    "documentation": "Tài liệu",
+    "executionEngine": "Công cụ Thực thi",
+    "journey": "Hành trình",
+    "privacyPolicy": "Chính sách Riêng tư",
+    "riskDisclosures": "Công bố Rủi ro",
+    "termsOfService": "Điều khoản Dịch vụ"
+  },
+  "theme": {
+    "label": "Chủ đề",
+    "light": "Sáng",
+    "dark": "Tối",
+    "system": "Hệ thống",
+    "toggle": "Chuyển chủ đề"
+  },
+  "year": "Năm",
+  "allRightsReserved": "Bảo lưu mọi quyền."
+}

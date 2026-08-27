@@ -1,0 +1,100 @@
+{
+  "languageSelector": "Chọn ngôn ngữ",
+  "languageSelectorPopover": "Ngôn ngữ",
+  "calculator": "Trình mô phỏng",
+  "governance": "Quản trị",
+  "legal": "Pháp lý",
+  "operatingSystem": "Hệ điều hành",
+  "researchIntelligence": "Nghiên cứu và Trí tuệ",
+  "resources": "Tài nguyên",
+  "tutorials": "Hướng dẫn",
+  "themeToggle": "Chuyển đổi chủ đề hiển thị",
+  "getStarted": "Bắt đầu",
+  "institutionalNav": "Điều hướng Tổ chức",
+  "openMenu": "Mở menu",
+  "closeMenu": "Đóng menu",
+  "footer": {
+    "brandDescription": "Vốn, được vận hành bằng trí tuệ. Lớp tự động kết nối dữ liệu, ủy thác, tổ chức tài chính và thực thi ở quy mô tổ chức.",
+    "statusActive": "Cơ sở hạ tầng Vận hành Đang hoạt động",
+    "architectureTitle": "Kiến trúc",
+    "governanceTitle": "Quản trị",
+    "accessTitle": "Truy cập Tổ chức",
+    "accessDesc": "Có sẵn cho Văn phòng Gia đình, Công ty Quản lý Tài sản, Cố vấn Tài sản và Kho bạc Tổ chức.",
+    "requestCredentials": "Yêu cầu thông tin xác thực",
+    "copyrightCompany": "ELLEVA Technologies. Bảo lưu mọi quyền.",
+    "backToTop": "Quay lên đầu",
+    "links": {
+      "layerTopology": "Cấu trúc phân lớp",
+      "operatingCycle": "Chu kỳ Vận hành",
+      "globalGateways": "Cổng kết nối Toàn cầu",
+      "operatingLeverage": "Đòn bẩy Vận hành",
+      "riskGuardrails": "Rào chắn Rủi ro",
+      "segregatedCustody": "Lưu ký Tách biệt",
+      "auditTrails": "Dấu vết Kiểm toán",
+      "standards": "Tiêu chuẩn SOC 2 / ISO"
+    },
+    "disclaimer": {
+      "title": "Tuyên bố Miễn trách Tổ chức và Quy định:",
+      "part1": "Elleva là nhà cung cấp công nghệ phần mềm và cơ sở hạ tầng tự động cho việc điều phối hoạt động vốn. Elleva không phải là tổ chức tài chính, không hoạt động với tư cách là nhà môi giới-đại lý hoặc nhà phân phối chứng khoán và không nắm giữ tài sản của bên thứ ba hoặc quỹ của khách hàng.",
+      "part2": "Tất cả các quyết định đầu tư và tham số thực thi thực hiện thông qua phần mềm thuộc độc quyền của các nhà quản lý, cố vấn và nhà đầu tư được ủy quyền, được quản lý bởi ủy thác của họ và được thanh toán với các tổ chức lưu ký đủ điều kiện được quản lý đúng cách."
+    }
+  },
+  "categories": {
+    "platform": {
+      "label": "Nền tảng",
+      "items": {
+        "overview": "Tổng quan",
+        "theProduct": "Sản phẩm",
+        "investmentExperience": "Trải nghiệm Đầu tư",
+        "investmentIntelligence": "Thông minh Đầu tư",
+        "operatingLoop": "Nghiên cứu → Quyết định → Thực thi → Giám sát",
+        "architecture": "Kiến trúc"
+      }
+    },
+    "markets": {
+      "label": "Thị trường",
+      "items": {
+        "globalMarkets": "Thị trường Toàn cầu",
+        "marketOpportunity": "Cơ hội Thị trường",
+        "marketData": "Dữ liệu Thị trường",
+        "portfolioIntelligence": "Thông minh Danh mục Đầu tư",
+        "liquidity": "Thanh khoản"
+      }
+    },
+    "technology": {
+      "label": "Công nghệ",
+      "items": {
+        "aiInfrastructure": "Cơ sở hạ tầng AI",
+        "financialInfrastructure": "Cơ sở hạ tầng Tài chính",
+        "intelligenceOrchestration": "Thông minh và Điều phối",
+        "securityGovernance": "Bảo mật và Quản trị",
+        "web3Infrastructure": "Cơ sở hạ tầng Web3",
+        "transparency": "Minh bạch"
+      }
+    },
+    "ecosystem": {
+      "label": "Hệ sinh thái",
+      "items": {
+        "ecosystemOverview": "Tổng quan Hệ sinh thái",
+        "banks": "Ngân hàng",
+        "brokersExecution": "Môi giới và Thực thi",
+        "custody": "Lưu ký",
+        "familyOfficesWealth": "Văn phòng Gia đình và Nhà Quản lý Tài sản",
+        "compliance": "Tuân thủ"
+      }
+    },
+    "company": {
+      "label": "Công ty",
+      "items": {
+        "ourVision": "Tầm nhìn của Chúng tôi",
+        "theNewSoftware": "Phần mềm Mới",
+        "businessModel": "Mô hình Kinh doanh",
+        "ellevaLoop": "Vòng lặp Elleva",
+        "competitiveAdvantage": "Lợi thế Cạnh tranh",
+        "operationalAdvantage": "Lợi thế Vận hành",
+        "faq": "Câu hỏi Thường gặp"
+      }
+    }
+  },
+  "menuToggle": "Chuyển đổi Menu Điều hướng"
+}

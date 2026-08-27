@@ -1,0 +1,100 @@
+{
+  "languageSelector": "选择语言",
+  "languageSelectorPopover": "语言",
+  "calculator": "模拟器",
+  "governance": "治理",
+  "legal": "法律信息",
+  "operatingSystem": "操作系统",
+  "researchIntelligence": "研究与智能",
+  "resources": "资源",
+  "tutorials": "教程",
+  "themeToggle": "切换显示主题",
+  "getStarted": "开始使用",
+  "institutionalNav": "机构导航",
+  "openMenu": "打开菜单",
+  "closeMenu": "关闭菜单",
+  "footer": {
+    "brandDescription": "资本，由智能驱动。连接数据、委托、金融机构和机构级执行的自主层。",
+    "statusActive": "运营基础设施已激活",
+    "architectureTitle": "架构",
+    "governanceTitle": "治理",
+    "accessTitle": "机构访问",
+    "accessDesc": "适用于家族办公室、资产管理公司、财富顾问和机构财资部门。",
+    "requestCredentials": "申请凭证",
+    "copyrightCompany": "ELLEVA Technologies。保留所有权利。",
+    "backToTop": "返回顶部",
+    "links": {
+      "layerTopology": "层拓扑",
+      "operatingCycle": "运营周期",
+      "globalGateways": "全球网关",
+      "operatingLeverage": "运营杠杆",
+      "riskGuardrails": "风险防护栏",
+      "segregatedCustody": "隔离托管",
+      "auditTrails": "审计跟踪",
+      "standards": "SOC 2 / ISO 标准"
+    },
+    "disclaimer": {
+      "title": "机构与监管声明：",
+      "part1": "Elleva 是一家资本运营编排的软件技术和自主基础设施提供商。Elleva 不是金融机构，不担任经纪交易商或证券分销商，也不持有第三方资产或客户资金的托管权。",
+      "part2": "通过该软件执行的所有投资决策和执行参数，均专属授权经理、顾问和投资者，受其信托委托管辖，并由经过适当监管的合格托管机构结算。"
+    }
+  },
+  "categories": {
+    "platform": {
+      "label": "平台",
+      "items": {
+        "overview": "概览",
+        "theProduct": "产品",
+        "investmentExperience": "投资体验",
+        "investmentIntelligence": "投资智能",
+        "operatingLoop": "研究 → 决策 → 执行 → 监控",
+        "architecture": "架构"
+      }
+    },
+    "markets": {
+      "label": "市场",
+      "items": {
+        "globalMarkets": "全球市场",
+        "marketOpportunity": "市场机会",
+        "marketData": "市场数据",
+        "portfolioIntelligence": "投资组合智能",
+        "liquidity": "流动性"
+      }
+    },
+    "technology": {
+      "label": "技术",
+      "items": {
+        "aiInfrastructure": "AI 基础设施",
+        "financialInfrastructure": "金融基础设施",
+        "intelligenceOrchestration": "智能与编排",
+        "securityGovernance": "安全与治理",
+        "web3Infrastructure": "Web3 基础设施",
+        "transparency": "透明度"
+      }
+    },
+    "ecosystem": {
+      "label": "生态系统",
+      "items": {
+        "ecosystemOverview": "生态系统概览",
+        "banks": "银行",
+        "brokersExecution": "经纪商与执行",
+        "custody": "托管",
+        "familyOfficesWealth": "家族办公室与财富管理公司",
+        "compliance": "合规"
+      }
+    },
+    "company": {
+      "label": "公司",
+      "items": {
+        "ourVision": "我们的愿景",
+        "theNewSoftware": "新软件",
+        "businessModel": "商业模式",
+        "ellevaLoop": "Elleva 循环",
+        "competitiveAdvantage": "竞争优势",
+        "operationalAdvantage": "运营优势",
+        "faq": "常见问题"
+      }
+    }
+  },
+  "menuToggle": "切换导航菜单"
+}

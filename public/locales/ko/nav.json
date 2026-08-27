@@ -1,0 +1,100 @@
+{
+  "languageSelector": "언어 선택",
+  "languageSelectorPopover": "언어",
+  "calculator": "시뮬레이터",
+  "governance": "거버넌스",
+  "legal": "법무",
+  "operatingSystem": "운영 시스템",
+  "researchIntelligence": "리서치 및 인텔리전스",
+  "resources": "리소스",
+  "tutorials": "튜토리얼",
+  "themeToggle": "디스플레이 테마 전환",
+  "getStarted": "시작하기",
+  "institutionalNav": "기관 내비게이션",
+  "openMenu": "메뉴 열기",
+  "closeMenu": "메뉴 닫기",
+  "footer": {
+    "brandDescription": "인텔리전스로 운영되는 자본. 데이터, 위임, 금융 기관 및 실행을 기관 규모로 연결하는 자율 레이어.",
+    "statusActive": "운영 인프라 활성화됨",
+    "architectureTitle": "아키텍처",
+    "governanceTitle": "거버넌스",
+    "accessTitle": "기관 액세스",
+    "accessDesc": "패밀리 오피스, 자산 운용사, 웰스 어드바이저 및 기관 재무 부서에서 사용 가능.",
+    "requestCredentials": "자격 증명 요청",
+    "copyrightCompany": "ELLEVA Technologies. All rights reserved.",
+    "backToTop": "맨 위로",
+    "links": {
+      "layerTopology": "레이어 토폴로지",
+      "operatingCycle": "운영 주기",
+      "globalGateways": "글로벌 게이트웨이",
+      "operatingLeverage": "운영 레버리지",
+      "riskGuardrails": "위험 가드레일",
+      "segregatedCustody": "분리 커스터디",
+      "auditTrails": "감사 추적",
+      "standards": "SOC 2 / ISO 표준"
+    },
+    "disclaimer": {
+      "title": "기관 및 규제 면책 조항:",
+      "part1": "Elleva는 자본 운영 오케스트레이션을 위한 소프트웨어 기술 및 자율 인프라 제공업체입니다. Elleva는 금융 기관이 아니며, 브로커-딜러나 증권 유통업자로 활동하지 않으며, 제3자 자산이나 고객 자금의 보관을 수행하지 않습니다.",
+      "part2": "본 소프트웨어를 통해 실행되는 모든 투자 결정 및 실행 매개변수는 승인된 매니저, 어드바이저 및 투자자에게만 귀속되며, 그들의 수탁자 위임에 따라 관리되고 적절히 규제된 적격 커스터디언에 의해 결제됩니다."
+    }
+  },
+  "categories": {
+    "platform": {
+      "label": "플랫폼",
+      "items": {
+        "overview": "개요",
+        "theProduct": "제품",
+        "investmentExperience": "투자 경험",
+        "investmentIntelligence": "투자 인텔리전스",
+        "operatingLoop": "연구 → 결정 → 실행 → 모니터링",
+        "architecture": "아키텍처"
+      }
+    },
+    "markets": {
+      "label": "마켓",
+      "items": {
+        "globalMarkets": "글로벌 시장",
+        "marketOpportunity": "시장 기회",
+        "marketData": "시장 데이터",
+        "portfolioIntelligence": "포트폴리오 인텔리전스",
+        "liquidity": "유동성"
+      }
+    },
+    "technology": {
+      "label": "기술",
+      "items": {
+        "aiInfrastructure": "AI 인프라",
+        "financialInfrastructure": "금융 인프라",
+        "intelligenceOrchestration": "인텔리전스 및 오케스트레이션",
+        "securityGovernance": "보안 및 거버넌스",
+        "web3Infrastructure": "Web3 인프라",
+        "transparency": "투명성"
+      }
+    },
+    "ecosystem": {
+      "label": "에코시스템",
+      "items": {
+        "ecosystemOverview": "에코시스템 개요",
+        "banks": "은행",
+        "brokersExecution": "브로커 및 실행",
+        "custody": "커스터디",
+        "familyOfficesWealth": "패밀리 오피스 및 웰스 매니저",
+        "compliance": "컴플라이언스"
+      }
+    },
+    "company": {
+      "label": "회사",
+      "items": {
+        "ourVision": "우리의 비전",
+        "theNewSoftware": "새로운 소프트웨어",
+        "businessModel": "비즈니스 모델",
+        "ellevaLoop": "Elleva 루프",
+        "competitiveAdvantage": "경쟁 우위",
+        "operationalAdvantage": "운영 우위",
+        "faq": "FAQ"
+      }
+    }
+  },
+  "menuToggle": "네비게이션 메뉴 전환"
+}

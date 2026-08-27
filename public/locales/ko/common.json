@@ -1,0 +1,81 @@
+{
+  "brand": {
+    "name": "Elleva",
+    "tagline": "자율 자본 인프라",
+    "description": "투자 운영을 위한 자율 AI 인프라."
+  },
+  "flow": {
+    "activeExploration": "활성 탐색",
+    "recenterTitle": "원래 프레이밍으로 복원",
+    "recenter": "재중심"
+  },
+  "actions": {
+    "getStarted": "액세스 요청",
+    "requestAccess": "기관 액세스 요청",
+    "architecture": "아키텍처 보기",
+    "learnMore": "자세히 알아보기",
+    "close": "닫기",
+    "submit": "요청 제출",
+    "completed": "완료",
+    "viewDetails": "세부 정보 보기"
+  },
+  "status": {
+    "nominal": "정상 / 분리됨",
+    "active": "활성",
+    "connected": "연결됨",
+    "audited": "감사됨"
+  },
+  "modal": {
+    "badge": "적격 기관 투자자 액세스",
+    "title": "Elleva 액세스 요청",
+    "description": "Elleva 인프라는 적격 금융 기관, 자산 운용사 및 패밀리 오피스를 위해 프로비저닝됩니다. 기관 정보를 제공해 주십시오.",
+    "nameLabel": "임원 성명",
+    "namePlaceholder": "Dr. Edward Silva",
+    "institutionLabel": "기관 / 펀드",
+    "institutionPlaceholder": "Alpha Capital Asset",
+    "emailLabel": "회사 이메일",
+    "emailPlaceholder": "management@alphacapital.com",
+    "typeLabel": "기관 유형",
+    "types": {
+      "assetManager": "자산 운용사",
+      "multiFamilyOffice": "멀티 패밀리 오피스",
+      "singleFamilyOffice": "싱글 패밀리 오피스",
+      "advisor": "투자 자문사 / RIA",
+      "treasury": "기관 재무 / 기금"
+    },
+    "scopeLabel": "운영 범위 / 위임",
+    "scopePlaceholder": "관리 규모 또는 목표 자동화 범위를 간략히 설명해 주십시오...",
+    "submitButton": "액세스 요청 제출",
+    "successTitle": "요청 접수 완료",
+    "successDescPrefix": "다음 기관의 데이터를 접수했습니다:",
+    "successDescSuffix": "기관 파트너십 팀이 기술 세션 일정 및 통합 문서 제공을 위해 연락드리겠습니다."
+  },
+  "done": "완료",
+  "close": "닫기",
+  "footer": {
+    "copyright": "Elleva © 2026. 모든 권리 보유.",
+    "terms": "기관 이용 약관",
+    "security": "보안 및 규정 준수",
+    "regulatory": "규제 공시",
+    "aboutElleva": "Elleva 소개",
+    "apiData": "API 및 데이터",
+    "bottomTagline": "투자 운영을 위한 자율 자본 인프라.",
+    "brandDesc": "투자 운영을 위한 자율 AI 인프라.",
+    "contact": "문의",
+    "documentation": "문서",
+    "executionEngine": "실행 엔진",
+    "journey": "여정",
+    "privacyPolicy": "개인정보 처리방침",
+    "riskDisclosures": "위험 공시",
+    "termsOfService": "서비스 약관"
+  },
+  "theme": {
+    "label": "테마",
+    "light": "라이트",
+    "dark": "다크",
+    "system": "시스템",
+    "toggle": "테마 전환"
+  },
+  "year": "연도",
+  "allRightsReserved": "모든 권리 보유."
+}

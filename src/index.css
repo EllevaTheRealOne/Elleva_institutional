@@ -1,0 +1,493 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+/*
+|--------------------------------------------------------------------------
+| Tailwind CSS v4
+|--------------------------------------------------------------------------
+*/
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /*
+  |--------------------------------------------------------------------------
+  | Typography
+  |--------------------------------------------------------------------------
+  */
+
+  --font-display: "Poppins", sans-serif;
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "Roboto", monospace;
+  --font-meta: "Roboto", sans-serif;
+
+  /*
+  |--------------------------------------------------------------------------
+  | Semantic Tailwind Colors
+  |--------------------------------------------------------------------------
+  |
+  | Isso habilita:
+  |
+  | bg-background
+  | text-foreground
+  | bg-card
+  | text-card-foreground
+  | bg-primary
+  | text-primary
+  | border-border
+  | ring-ring
+  | etc.
+  |
+  */
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  /*
+  |--------------------------------------------------------------------------
+  | Elleva Brand Colors
+  |--------------------------------------------------------------------------
+  */
+
+  --color-elleva: #189890;
+  --color-elleva-deep: #0c5f5a;
+  --color-elleva-soft: #d9f1ee;
+  --color-elleva-light: #89eae6;
+
+  /*
+  |--------------------------------------------------------------------------
+  | Radius
+  |--------------------------------------------------------------------------
+  */
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Theme Tokens
+|--------------------------------------------------------------------------
+*/
+
+:root {
+  /*
+  |--------------------------------------------------------------------------
+  | Elleva Base Colors — Light
+  |--------------------------------------------------------------------------
+  */
+
+  --color-light-background: #f7f8f6;
+  --color-light-surface: #ffffff;
+  --color-light-secondary: #f1f3f1;
+  --color-light-text: #0a0d0c;
+  --color-light-secondary-text: #4e5653;
+  --color-light-border: rgba(10, 13, 12, 0.08);
+
+  /*
+  |--------------------------------------------------------------------------
+  | Elleva Base Colors — Dark
+  |--------------------------------------------------------------------------
+  */
+
+  --color-dark-background: #050607;
+  --color-dark-surface: #0a0d0f;
+  --color-dark-secondary: #0e1214;
+  --color-dark-text: #f5f7f6;
+  --color-dark-secondary-text: #8e9995;
+  --color-dark-border: #26292e;
+
+  /*
+  |--------------------------------------------------------------------------
+  | Accent
+  |--------------------------------------------------------------------------
+  */
+
+  --color-accent-emerald-cyan: #189890;
+  --color-accent-deep-emerald: #0c5f5a;
+  --color-accent-soft: #d9f1ee;
+
+  /*
+  |--------------------------------------------------------------------------
+  | Active Semantic Tokens
+  |--------------------------------------------------------------------------
+  */
+
+  --bg-main: var(--color-light-background);
+  --bg-surface: var(--color-light-surface);
+  --bg-secondary: var(--color-light-secondary);
+
+  --text-main: var(--color-light-text);
+  --text-muted: var(--color-light-secondary-text);
+
+  --border-color: var(--color-light-border);
+
+  --accent-cyan: var(--color-accent-emerald-cyan);
+  --accent-cyan-light: #89eae6;
+
+  --accent-gradient: linear-gradient(135deg, #189890 0%, #34d399 100%);
+
+  /*
+  |--------------------------------------------------------------------------
+  | Tailwind Semantic Color Channels
+  |--------------------------------------------------------------------------
+  */
+
+  --background: 90 6% 97%;
+  --foreground: 160 13% 5%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 160 13% 5%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 160 13% 5%;
+
+  --primary: 176 73% 35%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 120 4% 95%;
+  --secondary-foreground: 160 13% 5%;
+
+  --muted: 120 4% 95%;
+  --muted-foreground: 153 5% 32%;
+
+  --accent: 173 47% 90%;
+  --accent-foreground: 176 77% 21%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 160 13% 88%;
+  --input: 160 13% 88%;
+  --ring: 176 73% 35%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Dark Theme
+|--------------------------------------------------------------------------
+*/
+
+.dark {
+  --bg-main: var(--color-dark-background);
+  --bg-surface: var(--color-dark-surface);
+  --bg-secondary: var(--color-dark-secondary);
+
+  --text-main: var(--color-dark-text);
+  --text-muted: var(--color-dark-secondary-text);
+
+  --border-color: var(--color-dark-border);
+
+  --accent-gradient: linear-gradient(135deg, #189890 0%, #89eae6 100%);
+
+  --background: 210 17% 2%;
+  --foreground: 150 7% 97%;
+
+  --card: 210 20% 5%;
+  --card-foreground: 150 7% 97%;
+
+  --popover: 210 20% 5%;
+  --popover-foreground: 150 7% 97%;
+
+  --primary: 176 73% 35%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 200 18% 6%;
+  --secondary-foreground: 150 7% 97%;
+
+  --muted: 200 18% 6%;
+  --muted-foreground: 158 5% 58%;
+
+  --accent: 176 73% 15%;
+  --accent-foreground: 173 47% 90%;
+
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 220 9% 17%;
+  --input: 220 9% 17%;
+  --ring: 176 73% 35%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Base
+|--------------------------------------------------------------------------
+*/
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+
+    background: var(--bg-main);
+    color: var(--text-main);
+
+    font-family: var(--font-sans);
+    line-height: 1.6;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  section,
+  [id] {
+    scroll-margin-top: 5.5rem;
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Fluid Typography
+|--------------------------------------------------------------------------
+*/
+
+/* Hero */
+.type-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.625rem, 5vw + 1rem, 3.75rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
+/* CTA */
+.type-cta {
+  font-family: var(--font-display);
+  font-size: clamp(2.625rem, 5vw + 1rem, 5.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
+/* Section title */
+.type-section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 2.5vw + 1rem, 3.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+/* Eyebrow */
+.type-section-eyebrow {
+  font-family: var(--font-ui);
+  font-size: clamp(0.6875rem, 0.15vw + 0.65rem, 0.8125rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Card title */
+.type-card-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.125rem, 0.8vw + 0.95rem, 1.5rem);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+
+/* Body */
+.type-body {
+  font-family: var(--font-body);
+  font-size: clamp(0.9375rem, 0.25vw + 0.9rem, 1.125rem);
+  line-height: 1.65;
+}
+
+/* Small body */
+.type-body-sm {
+  font-family: var(--font-body);
+  font-size: clamp(0.8125rem, 0.2vw + 0.775rem, 0.9375rem);
+  line-height: 1.6;
+}
+
+/* UI */
+.type-ui {
+  font-family: var(--font-ui);
+  font-size: clamp(0.75rem, 0.2vw + 0.75rem, 0.875rem);
+  line-height: 1.35;
+}
+
+/* Metrics */
+.type-metric {
+  font-family: var(--font-ui);
+  font-size: clamp(1.5rem, 2.5vw + 0.75rem, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+/* Metadata */
+.type-micro {
+  font-family: var(--font-meta);
+  font-size: clamp(0.625rem, 0.15vw + 0.625rem, 0.75rem);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Elleva Utilities
+|--------------------------------------------------------------------------
+*/
+
+.accent-glow {
+  box-shadow: 0 0 20px rgba(24, 152, 144, 0.12);
+}
+
+.accent-glow-subtle {
+  box-shadow: 0 4px 20px -2px rgba(24, 152, 144, 0.08);
+}
+
+.node-card {
+  border: 1px solid rgba(10, 13, 12, 0.08);
+  background: #ffffff;
+}
+
+.dark .node-card {
+  border-color: rgba(245, 247, 246, 0.08);
+  background: #0a0d0f;
+}
+
+.cycle-step {
+  transition:
+    color 250ms ease,
+    background-color 250ms ease,
+    border-color 250ms ease,
+    transform 250ms ease;
+}
+
+.cycle-step:hover {
+  color: #189890;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Dot Patterns
+|--------------------------------------------------------------------------
+*/
+
+.dot-pattern-light {
+  background-image: radial-gradient(
+    rgba(10, 13, 12, 0.06) 1px,
+    transparent 1px
+  );
+
+  background-size: 24px 24px;
+}
+
+.dot-pattern-dark {
+  background-image: radial-gradient(
+    rgba(245, 247, 246, 0.08) 1px,
+    transparent 1px
+  );
+
+  background-size: 24px 24px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Grid Patterns
+|--------------------------------------------------------------------------
+*/
+
+.bg-grid-subtle-light {
+  background-size: 32px 32px;
+
+  background-image:
+    linear-gradient(to right, rgba(10, 13, 12, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(10, 13, 12, 0.03) 1px, transparent 1px);
+}
+
+.bg-grid-subtle-dark {
+  background-size: 32px 32px;
+
+  background-image:
+    linear-gradient(to right, rgba(245, 247, 246, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 247, 246, 0.04) 1px, transparent 1px);
+}
+
+/*
+|--------------------------------------------------------------------------
+| React Flow
+|--------------------------------------------------------------------------
+*/
+
+.react-flow__renderer {
+  background: transparent !important;
+}
+
+.react-flow__edge-path {
+  stroke-width: 1.5;
+}
+
+.react-flow__attribution {
+  display: none !important;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Map Animation
+|--------------------------------------------------------------------------
+*/
+
+@keyframes mapRouteDash {
+  from {
+    stroke-dashoffset: 28;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.map-route-subtle {
+  stroke-dasharray: 4 6;
+  animation: mapRouteDash 20s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .map-route-subtle {
+    animation: none;
+  }
+}

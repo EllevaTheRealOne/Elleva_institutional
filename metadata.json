@@ -1,0 +1,6 @@
+{
+  "name": "ELLEVA",
+  "description": "Elleva is a global investment platform combining research, portfolio intelligence, execution and monitoring in a unified investment experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

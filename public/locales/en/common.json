@@ -1,0 +1,81 @@
+{
+  "brand": {
+    "name": "Elleva",
+    "tagline": "Autonomous Capital Infrastructure",
+    "description": "Autonomous AI infrastructure for investment operations."
+  },
+  "flow": {
+    "activeExploration": "Active Exploration",
+    "recenterTitle": "Restore original framing",
+    "recenter": "Recenter"
+  },
+  "actions": {
+    "getStarted": "Request Access",
+    "requestAccess": "Request Institutional Access",
+    "architecture": "View Architecture",
+    "learnMore": "Learn More",
+    "close": "Close",
+    "submit": "Submit Request",
+    "completed": "Done",
+    "viewDetails": "View Details"
+  },
+  "status": {
+    "nominal": "Nominal / Segregated",
+    "active": "Active",
+    "connected": "Connected",
+    "audited": "Audited"
+  },
+  "modal": {
+    "badge": "Qualified Institutional Access",
+    "title": "Request Elleva Access",
+    "description": "Elleva infrastructure is provisioned for qualified financial institutions, asset managers, and family offices. Please provide institution details.",
+    "nameLabel": "Executive Name",
+    "namePlaceholder": "Dr. Edward Silva",
+    "institutionLabel": "Institution / Fund",
+    "institutionPlaceholder": "Alpha Capital Asset",
+    "emailLabel": "Corporate Email",
+    "emailPlaceholder": "management@alphacapital.com",
+    "typeLabel": "Institution Type",
+    "types": {
+      "assetManager": "Asset Manager",
+      "multiFamilyOffice": "Multi-Family Office",
+      "singleFamilyOffice": "Single Family Office",
+      "advisor": "Wealth Advisor / RIA",
+      "treasury": "Institutional Treasury / Endowment"
+    },
+    "scopeLabel": "Operational Scope / Mandate",
+    "scopePlaceholder": "Briefly describe managed volume or targeted automation scope...",
+    "submitButton": "Submit Access Request",
+    "successTitle": "Request Received",
+    "successDescPrefix": "We have received data for",
+    "successDescSuffix": "Our institutional partnerships team will reach out to schedule a technical session and deliver integration documentation."
+  },
+  "done": "Done",
+  "close": "Close",
+  "footer": {
+    "copyright": "Elleva © 2026. All rights reserved.",
+    "terms": "Institutional Terms",
+    "security": "Security & Compliance",
+    "regulatory": "Regulatory Disclosure",
+    "aboutElleva": "About Elleva",
+    "apiData": "API & Data",
+    "bottomTagline": "Autonomous capital infrastructure for investment operations.",
+    "brandDesc": "Autonomous AI infrastructure for investment operations.",
+    "contact": "Contact",
+    "documentation": "Documentation",
+    "executionEngine": "Execution Engine",
+    "journey": "Journey",
+    "privacyPolicy": "Privacy Policy",
+    "riskDisclosures": "Risk Disclosures",
+    "termsOfService": "Terms of Service"
+  },
+  "theme": {
+    "label": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "toggle": "Toggle theme"
+  },
+  "year": "Year",
+  "allRightsReserved": "All rights reserved."
+}

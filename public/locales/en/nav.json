@@ -1,0 +1,99 @@
+{
+  "languageSelector": "Select Language",
+  "languageSelectorPopover": "Language",
+  "calculator": "Calculator",
+  "governance": "Governance",
+  "legal": "Legal",
+  "operatingSystem": "Operating System",
+  "researchIntelligence": "Research & Intelligence",
+  "resources": "Resources",
+  "tutorials": "Tutorials",
+  "themeToggle": "Toggle Display Theme",
+  "getStarted": "Get Started",
+  "institutionalNav": "Institutional Navigation",
+  "openMenu": "Open menu",
+  "closeMenu": "Close menu",
+  "footer": {
+    "brandDescription": "Capital, operated by intelligence. The autonomous layer connecting data, mandates, financial institutions, and execution at institutional scale.",
+    "statusActive": "Operational Infrastructure Active",
+    "architectureTitle": "Architecture",
+    "governanceTitle": "Governance",
+    "accessTitle": "Institutional Access",
+    "accessDesc": "Available for Family Offices, Asset Managers, Wealth Advisors, and Institutional Treasuries.",
+    "requestCredentials": "Request credentials",
+    "copyrightCompany": "ELLEVA Technologies. All rights reserved.",
+    "backToTop": "Back to top",
+    "links": {
+      "layerTopology": "Layer Topology",
+      "operatingCycle": "Operating Cycle",
+      "globalGateways": "Global Gateways",
+      "operatingLeverage": "Operating Leverage",
+      "riskGuardrails": "Risk Guardrails",
+      "segregatedCustody": "Segregated Custody",
+      "auditTrails": "Audit Trails",
+      "standards": "SOC 2 / ISO Standards"
+    },
+    "disclaimer": {
+      "title": "Institutional & Regulatory Disclaimer:",
+      "part1": "Elleva is a software technology and autonomous infrastructure provider for capital operations orchestration. Elleva is not a financial institution, does not act as a broker-dealer or securities distributor, and does not hold custody of third-party assets or client funds.",
+      "part2": "All investment decisions and execution parameters executed via the software belong exclusively to authorized managers, advisors, and investors, governed by their fiduciary mandates and settled with duly regulated qualified custodians."
+    }
+  },
+  "categories": {
+    "platform": {
+      "label": "Platform",
+      "items": {
+        "overview": "Overview",
+        "theProduct": "The Product",
+        "investmentExperience": "Investment Experience",
+        "investmentIntelligence": "Investment Intelligence",
+        "operatingLoop": "Research → Decide → Execute → Monitor",
+        "architecture": "Architecture"
+      }
+    },
+    "markets": {
+      "label": "Markets",
+      "items": {
+        "globalMarkets": "Global Markets",
+        "marketOpportunity": "Market Opportunity",
+        "marketData": "Market Data",
+        "portfolioIntelligence": "Portfolio Intelligence",
+        "liquidity": "Liquidity"
+      }
+    },
+    "technology": {
+      "label": "Technology",
+      "items": {
+        "aiInfrastructure": "AI Infrastructure",
+        "financialInfrastructure": "Financial Infrastructure",
+        "intelligenceOrchestration": "Intelligence & Orchestration",
+        "securityGovernance": "Security & Governance",
+        "transparency": "Transparency"
+      }
+    },
+    "ecosystem": {
+      "label": "Ecosystem",
+      "items": {
+        "ecosystemOverview": "Ecosystem Overview",
+        "banks": "Banks",
+        "brokersExecution": "Brokers & Execution",
+        "custody": "Custody",
+        "familyOfficesWealth": "Family Offices & Wealth Managers",
+        "compliance": "Compliance"
+      }
+    },
+    "company": {
+      "label": "Company",
+      "items": {
+        "ourVision": "Our Vision",
+        "theNewSoftware": "The New Software",
+        "businessModel": "Business Model",
+        "ellevaLoop": "Elleva Loop",
+        "competitiveAdvantage": "Competitive Advantage",
+        "operationalAdvantage": "Operational Advantage",
+        "faq": "FAQ"
+      }
+    }
+  },
+  "menuToggle": "Toggle Navigation Menu"
+}

@@ -1,0 +1,81 @@
+{
+  "brand": {
+    "name": "Elleva",
+    "tagline": "自主资本基础设施",
+    "description": "面向投资运营的自主AI基础设施。"
+  },
+  "flow": {
+    "activeExploration": "主动探索",
+    "recenterTitle": "恢复原始视角",
+    "recenter": "重新居中"
+  },
+  "actions": {
+    "getStarted": "申请访问",
+    "requestAccess": "申请机构访问权限",
+    "architecture": "查看架构",
+    "learnMore": "了解更多",
+    "close": "关闭",
+    "submit": "提交申请",
+    "completed": "已完成",
+    "viewDetails": "查看详情"
+  },
+  "status": {
+    "nominal": "正常 / 隔离",
+    "active": "活跃",
+    "connected": "已连接",
+    "audited": "已审计"
+  },
+  "modal": {
+    "badge": "合格机构访问",
+    "title": "申请 Elleva 访问权限",
+    "description": "Elleva 基础设施专为合格金融机构、资产管理公司和家族办公室提供。请提供机构详细信息。",
+    "nameLabel": "高管姓名",
+    "namePlaceholder": "Edward Silva 博士",
+    "institutionLabel": "机构 / 基金",
+    "institutionPlaceholder": "Alpha Capital Asset",
+    "emailLabel": "企业邮箱",
+    "emailPlaceholder": "management@alphacapital.com",
+    "typeLabel": "机构类型",
+    "types": {
+      "assetManager": "资产管理公司",
+      "multiFamilyOffice": "多家族办公室",
+      "singleFamilyOffice": "单一家族办公室",
+      "advisor": "投资顾问 / RIA",
+      "treasury": "机构财资 / 捐赠基金"
+    },
+    "scopeLabel": "运营范围 / 委托",
+    "scopePlaceholder": "简要描述管理规模或目标自动化范围...",
+    "submitButton": "提交访问申请",
+    "successTitle": "申请已收到",
+    "successDescPrefix": "我们已收到以下机构的数据：",
+    "successDescSuffix": "我们的机构合作团队将联系您安排技术会议并提供集成文档。"
+  },
+  "done": "完成",
+  "close": "关闭",
+  "footer": {
+    "copyright": "Elleva © 2026。保留所有权利。",
+    "terms": "机构条款",
+    "security": "安全与合规",
+    "regulatory": "监管披露",
+    "aboutElleva": "关于 Elleva",
+    "apiData": "API 与数据",
+    "bottomTagline": "面向投资运营的自主资本基础设施。",
+    "brandDesc": "面向投资运营的自主 AI 基础设施。",
+    "contact": "联系我们",
+    "documentation": "文档",
+    "executionEngine": "执行引擎",
+    "journey": "发展历程",
+    "privacyPolicy": "隐私政策",
+    "riskDisclosures": "风险披露",
+    "termsOfService": "服务条款"
+  },
+  "theme": {
+    "label": "主题",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "系统",
+    "toggle": "切换主题"
+  },
+  "year": "年份",
+  "allRightsReserved": "保留所有权利。"
+}

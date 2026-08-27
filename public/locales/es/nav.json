@@ -1,0 +1,100 @@
+{
+  "languageSelector": "Seleccionar idioma",
+  "languageSelectorPopover": "Idioma",
+  "calculator": "Calculadora",
+  "governance": "Gobernanza",
+  "legal": "Legal",
+  "operatingSystem": "Sistema Operativo",
+  "researchIntelligence": "Investigación e Inteligencia",
+  "resources": "Recursos",
+  "tutorials": "Tutoriales",
+  "themeToggle": "Cambiar tema de visualización",
+  "getStarted": "Comenzar",
+  "institutionalNav": "Navegación Institucional",
+  "openMenu": "Abrir menú",
+  "closeMenu": "Cerrar menú",
+  "footer": {
+    "brandDescription": "Capital, operado por inteligencia. La capa autónoma que conecta datos, mandatos, instituciones financieras y ejecución a escala institucional.",
+    "statusActive": "Infraestructura Operativa Activa",
+    "architectureTitle": "Arquitectura",
+    "governanceTitle": "Gobernanza",
+    "accessTitle": "Acceso Institucional",
+    "accessDesc": "Disponible para Family Offices, Gestores de Activos, Asesores Patrimoniales y Tesorerías Institucionales.",
+    "requestCredentials": "Solicitar credenciales",
+    "copyrightCompany": "ELLEVA Technologies. Todos los derechos reservados.",
+    "backToTop": "Volver arriba",
+    "links": {
+      "layerTopology": "Topología de Capas",
+      "operatingCycle": "Ciclo Operativo",
+      "globalGateways": "Pasarelas Globales",
+      "operatingLeverage": "Apalancamiento Operativo",
+      "riskGuardrails": "Guardarraíles de Riesgo",
+      "segregatedCustody": "Custodia Segregada",
+      "auditTrails": "Pistas de Auditoría",
+      "standards": "Estándares SOC 2 / ISO"
+    },
+    "disclaimer": {
+      "title": "Aviso Institucional y Regulatorio:",
+      "part1": "Elleva es un proveedor de tecnología de software e infraestructura autónoma para la orquestación de operaciones de capital. Elleva no es una institución financiera, no actúa como corredor-distribuidor o distribuidor de valores, y no tiene la custodia de activos de terceros ni de fondos de clientes.",
+      "part2": "Todas las decisiones de inversión y parámetros de ejecución realizados a través del software pertenecen exclusivamente a gestores, asesores e inversores autorizados, regidos por sus mandatos fiduciarios y liquidados con custodios cualificados debidamente regulados."
+    }
+  },
+  "categories": {
+    "platform": {
+      "label": "Plataforma",
+      "items": {
+        "overview": "Visión General",
+        "theProduct": "El Producto",
+        "investmentExperience": "Experiencia de Inversión",
+        "investmentIntelligence": "Inteligencia de Inversión",
+        "operatingLoop": "Investigar → Decidir → Ejecutar → Monitorear",
+        "architecture": "Arquitectura"
+      }
+    },
+    "markets": {
+      "label": "Mercados",
+      "items": {
+        "globalMarkets": "Mercados Globales",
+        "marketOpportunity": "Oportunidad de Mercado",
+        "marketData": "Datos de Mercado",
+        "portfolioIntelligence": "Inteligencia de Cartera",
+        "liquidity": "Liquidez"
+      }
+    },
+    "technology": {
+      "label": "Tecnología",
+      "items": {
+        "aiInfrastructure": "Infraestructura de IA",
+        "financialInfrastructure": "Infraestructura Financiera",
+        "intelligenceOrchestration": "Inteligencia y Orquestación",
+        "securityGovernance": "Seguridad y Gobernanza",
+        "web3Infrastructure": "Infraestructura Web3",
+        "transparency": "Transparencia"
+      }
+    },
+    "ecosystem": {
+      "label": "Ecosistema",
+      "items": {
+        "ecosystemOverview": "Visión General del Ecosistema",
+        "banks": "Bancos",
+        "brokersExecution": "Corredores y Ejecución",
+        "custody": "Custodia",
+        "familyOfficesWealth": "Family Offices y Gestores Patrimoniales",
+        "compliance": "Cumplimiento"
+      }
+    },
+    "company": {
+      "label": "Empresa",
+      "items": {
+        "ourVision": "Nuestra Visión",
+        "theNewSoftware": "El Nuevo Software",
+        "businessModel": "Modelo de Negocio",
+        "ellevaLoop": "Elleva Loop",
+        "competitiveAdvantage": "Ventaja Competitiva",
+        "operationalAdvantage": "Ventaja Operativa",
+        "faq": "Preguntas Frecuentes"
+      }
+    }
+  },
+  "menuToggle": "Alternar Menú de Navegación"
+}

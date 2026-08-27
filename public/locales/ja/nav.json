@@ -1,0 +1,100 @@
+{
+  "languageSelector": "言語を選択",
+  "languageSelectorPopover": "言語",
+  "calculator": "シミュレーター",
+  "governance": "ガバナンス",
+  "legal": "法務",
+  "operatingSystem": "オペレーティングシステム",
+  "researchIntelligence": "リサーチとインテリジェンス",
+  "resources": "リソース",
+  "tutorials": "チュートリアル",
+  "themeToggle": "表示テーマを切り替え",
+  "getStarted": "はじめる",
+  "institutionalNav": "機関向けナビゲーション",
+  "openMenu": "メニューを開く",
+  "closeMenu": "メニューを閉じる",
+  "footer": {
+    "brandDescription": "インテリジェンスによって運用される資本。データ、マンデート、金融機関、実行を機関規模で接続する自律レイヤー。",
+    "statusActive": "運用インフラストラクチャがアクティブ",
+    "architectureTitle": "アーキテクチャ",
+    "governanceTitle": "ガバナンス",
+    "accessTitle": "機関アクセス",
+    "accessDesc": "ファミリーオフィス、資産運用会社、ウェルスアドバイザー、機関財務部門が利用可能。",
+    "requestCredentials": "認証情報をリクエスト",
+    "copyrightCompany": "ELLEVA Technologies. All rights reserved.",
+    "backToTop": "トップに戻る",
+    "links": {
+      "layerTopology": "レイヤートポロジ",
+      "operatingCycle": "運用サイクル",
+      "globalGateways": "グローバルゲートウェイ",
+      "operatingLeverage": "オペレーティングレバレッジ",
+      "riskGuardrails": "リスクガードレール",
+      "segregatedCustody": "分離カストディ",
+      "auditTrails": "監査証跡",
+      "standards": "SOC 2 / ISO 標準"
+    },
+    "disclaimer": {
+      "title": "機関・規制に関する免責事項：",
+      "part1": "Elleva は、資本運用オーケストレーションのためのソフトウェアテクノロジーおよび自律インフラストラクチャプロバイダーです。Elleva は金融機関ではなく、証券ブローカーディーラーや証券販売業者としての業務も行わず、第三者資産や顧客資金の保管も行いません。",
+      "part2": "本ソフトウェアを介して実行されるすべての投資判断および実行パラメータは、認可された運用者、アドバイザー、投資家に独占的に帰属し、その受託者マンデートに従い、適切に規制された適格カストディアンによって決済されます。"
+    }
+  },
+  "categories": {
+    "platform": {
+      "label": "プラットフォーム",
+      "items": {
+        "overview": "概要",
+        "theProduct": "製品",
+        "investmentExperience": "投資体験",
+        "investmentIntelligence": "投資インテリジェンス",
+        "operatingLoop": "リサーチ → 決定 → 実行 → 監視",
+        "architecture": "アーキテクチャ"
+      }
+    },
+    "markets": {
+      "label": "マーケット",
+      "items": {
+        "globalMarkets": "グローバル市場",
+        "marketOpportunity": "市場機会",
+        "marketData": "市場データ",
+        "portfolioIntelligence": "ポートフォリオインテリジェンス",
+        "liquidity": "流動性"
+      }
+    },
+    "technology": {
+      "label": "テクノロジー",
+      "items": {
+        "aiInfrastructure": "AIインフラストラクチャ",
+        "financialInfrastructure": "金融インフラストラクチャ",
+        "intelligenceOrchestration": "インテリジェンスとオーケストレーション",
+        "securityGovernance": "セキュリティとガバナンス",
+        "web3Infrastructure": "Web3インフラストラクチャ",
+        "transparency": "透明性"
+      }
+    },
+    "ecosystem": {
+      "label": "エコシステム",
+      "items": {
+        "ecosystemOverview": "エコシステム概要",
+        "banks": "銀行",
+        "brokersExecution": "ブローカーと執行",
+        "custody": "カストディ",
+        "familyOfficesWealth": "ファミリーオフィスとウェルスマネージャー",
+        "compliance": "コンプライアンス"
+      }
+    },
+    "company": {
+      "label": "会社",
+      "items": {
+        "ourVision": "私たちのビジョン",
+        "theNewSoftware": "新しいソフトウェア",
+        "businessModel": "ビジネスモデル",
+        "ellevaLoop": "Elleva ループ",
+        "competitiveAdvantage": "競争優位性",
+        "operationalAdvantage": "運用優位性",
+        "faq": "よくある質問"
+      }
+    }
+  },
+  "menuToggle": "ナビゲーションメニューを切り替え"
+}

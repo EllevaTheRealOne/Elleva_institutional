@@ -1,0 +1,81 @@
+{
+  "brand": {
+    "name": "Elleva",
+    "tagline": "自律型資本インフラストラクチャ",
+    "description": "投資運用のための自律型AIインフラストラクチャ。"
+  },
+  "flow": {
+    "activeExploration": "アクティブエクスプロレーション",
+    "recenterTitle": "元のフレーミングに戻す",
+    "recenter": "再センタリング"
+  },
+  "actions": {
+    "getStarted": "アクセスをリクエスト",
+    "requestAccess": "機関アクセスをリクエスト",
+    "architecture": "アーキテクチャを見る",
+    "learnMore": "詳細を見る",
+    "close": "閉じる",
+    "submit": "リクエストを送信",
+    "completed": "完了",
+    "viewDetails": "詳細を表示"
+  },
+  "status": {
+    "nominal": "ノーマル / セグリゲート",
+    "active": "アクティブ",
+    "connected": "接続済み",
+    "audited": "監査済み"
+  },
+  "modal": {
+    "badge": "適格機関投資家アクセス",
+    "title": "Elleva アクセスリクエスト",
+    "description": "Elleva インフラストラクチャは、適格金融機関、資産運用会社、ファミリーオフィス向けにプロビジョニングされています。機関の詳細を入力してください。",
+    "nameLabel": "役職員名",
+    "namePlaceholder": "Dr. Edward Silva",
+    "institutionLabel": "機関 / ファンド",
+    "institutionPlaceholder": "Alpha Capital Asset",
+    "emailLabel": "企業メールアドレス",
+    "emailPlaceholder": "management@alphacapital.com",
+    "typeLabel": "機関タイプ",
+    "types": {
+      "assetManager": "資産運用会社",
+      "multiFamilyOffice": "マルチファミリーオフィス",
+      "singleFamilyOffice": "シングルファミリーオフィス",
+      "advisor": "投資顧問 / RIA",
+      "treasury": "機関財務 / 基金"
+    },
+    "scopeLabel": "運用範囲 / マンデート",
+    "scopePlaceholder": "管理規模または目標とする自動化範囲を簡単に説明してください...",
+    "submitButton": "アクセスリクエストを送信",
+    "successTitle": "リクエストを受信しました",
+    "successDescPrefix": "以下のデータを受信しました：",
+    "successDescSuffix": "弊社機関パートナーシップチームが技術セッションのスケジュール調整と統合ドキュメントの提供のためにご連絡いたします。"
+  },
+  "done": "完了",
+  "close": "閉じる",
+  "footer": {
+    "copyright": "Elleva © 2026。All rights reserved.",
+    "terms": "機関向け利用規約",
+    "security": "セキュリティとコンプライアンス",
+    "regulatory": "規制開示",
+    "aboutElleva": "Ellevaについて",
+    "apiData": "APIとデータ",
+    "bottomTagline": "投資業務のための自律型資本インフラストラクチャ。",
+    "brandDesc": "投資業務のための自律型AIインフラストラクチャ。",
+    "contact": "お問い合わせ",
+    "documentation": "ドキュメント",
+    "executionEngine": "執行エンジン",
+    "journey": "歩み",
+    "privacyPolicy": "プライバシーポリシー",
+    "riskDisclosures": "リスク開示",
+    "termsOfService": "サービス利用規約"
+  },
+  "theme": {
+    "label": "テーマ",
+    "light": "ライト",
+    "dark": "ダーク",
+    "system": "システム",
+    "toggle": "テーマを切り替え"
+  },
+  "year": "年",
+  "allRightsReserved": "All rights reserved."
+}
