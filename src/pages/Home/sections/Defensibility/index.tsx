@@ -81,7 +81,7 @@ export const Defensibility: React.FC<DefensibilityProps> = ({
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-2">
                 <div className="flex items-center gap-3">
-                  <div className="p-1.5 rounded-sm bg-[#0C5F5A] text-[#189890]">
+                  <div className="p-1.5 rounded-sm bg-[#050607] text-[#F5F7F6]">
                     {layer.icon}
                   </div>
                   <h3 className="font-display font-bold text-base sm:text-lg">{layer.title}</h3>

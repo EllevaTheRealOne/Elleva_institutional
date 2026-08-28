@@ -535,7 +535,7 @@ export const GlobalMarkets: React.FC<GlobalMarketsProps> = ({
               }`}
             >
               <div>
-                <div className="mb-3 inline-block rounded-sm bg-[#D9F1EE] p-2 text-[#0C5F5A]">
+                <div className="mb-3 inline-block rounded-sm bg-[#189890]/10 p-2 text-[#0C5F5A]">
                   {module.icon}
                 </div>
 

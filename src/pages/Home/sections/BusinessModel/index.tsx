@@ -84,7 +84,7 @@ export const BusinessModel: React.FC<BusinessModelProps> = ({
             >
               <div>
                 <div className="flex items-center gap-2.5 mb-4">
-                  <div className="p-1.5 rounded-sm bg-[#0C5F5A] text-[#189890]">
+                  <div className="p-1.5 rounded-sm bg-[#189890]/10 text-[#189890]">
                     {stream.icon}
                   </div>
                   <h3 className="font-display font-bold text-lg">{stream.title}</h3>
