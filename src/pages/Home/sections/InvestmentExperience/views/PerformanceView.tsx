@@ -103,12 +103,12 @@ export const PerformanceView: React.FC<ViewProps> = ({ isDark = false }) => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Cumulative Performance Trajectory */}
         <div
-          className={`lg:col-span-8 p-5 rounded-xl border ${
+          className={`lg:col-span-8 p-5 rounded-xl border flex flex-col justify-between ${
             isDark ? 'bg-[#0E1214] border-white/5' : 'bg-[#F7F8F6] border-black/[0.06]'
           }`}
         >
-          <div className="flex items-center justify-between mb-4">
-            <div>
+          <div>
+            <div className="mb-4">
               <div className="text-[10px] font-ui uppercase tracking-widest text-[#8E9995] font-semibold">
                 {t('investmentExperience.performanceView.chart.eyebrow')}
               </div>
@@ -116,59 +116,60 @@ export const PerformanceView: React.FC<ViewProps> = ({ isDark = false }) => {
                 {t('investmentExperience.performanceView.chart.heading')}
               </h4>
             </div>
-            <span className="text-xs font-mono text-[#189890] font-bold">
-              {t('investmentExperience.performanceView.chart.badge')}
-            </span>
+
+            <div className="w-full h-60">
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart
+                  data={PERFORMANCE_TRAJECTORY_DATA}
+                  margin={{ top: 10, right: 10, left: -20, bottom: 0 }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" stroke={gridColor} vertical={false} />
+                  <XAxis
+                    dataKey="period"
+                    tick={{ fill: textColor, fontSize: 10 }}
+                    axisLine={{ stroke: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)' }}
+                    tickLine={false}
+                  />
+                  <YAxis
+                    tick={{ fill: textColor, fontSize: 10 }}
+                    domain={[98, 116]}
+                    axisLine={false}
+                    tickLine={false}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      backgroundColor: isDark ? '#0A0D0F' : '#FFFFFF',
+                      borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)',
+                      borderRadius: '6px',
+                      fontSize: '11px',
+                      color: isDark ? '#F5F7F6' : '#0A0D0C',
+                    }}
+                  />
+                  <Legend wrapperStyle={{ fontSize: '11px', paddingTop: '8px' }} />
+                  <Line
+                    type="monotone"
+                    dataKey="portfolio"
+                    name={t('investmentExperience.performanceView.chart.seriesPortfolio')}
+                    stroke="#189890"
+                    strokeWidth={2.5}
+                    dot={{ r: 3, fill: '#189890' }}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="benchmark"
+                    name={t('investmentExperience.performanceView.chart.seriesBenchmark')}
+                    stroke={isDark ? '#8E9995' : '#4E5653'}
+                    strokeWidth={1.5}
+                    strokeDasharray="4 4"
+                    dot={{ r: 2, fill: isDark ? '#8E9995' : '#4E5653' }}
+                  />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
           </div>
 
-          <div className="w-full h-60">
-            <ResponsiveContainer width="100%" height="100%">
-              <LineChart
-                data={PERFORMANCE_TRAJECTORY_DATA}
-                margin={{ top: 10, right: 10, left: -20, bottom: 0 }}
-              >
-                <CartesianGrid strokeDasharray="3 3" stroke={gridColor} vertical={false} />
-                <XAxis
-                  dataKey="period"
-                  tick={{ fill: textColor, fontSize: 10 }}
-                  axisLine={{ stroke: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)' }}
-                  tickLine={false}
-                />
-                <YAxis
-                  tick={{ fill: textColor, fontSize: 10 }}
-                  domain={[98, 116]}
-                  axisLine={false}
-                  tickLine={false}
-                />
-                <Tooltip
-                  contentStyle={{
-                    backgroundColor: isDark ? '#0A0D0F' : '#FFFFFF',
-                    borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)',
-                    borderRadius: '6px',
-                    fontSize: '11px',
-                    color: isDark ? '#F5F7F6' : '#0A0D0C',
-                  }}
-                />
-                <Legend wrapperStyle={{ fontSize: '11px', paddingTop: '8px' }} />
-                <Line
-                  type="monotone"
-                  dataKey="portfolio"
-                  name={t('investmentExperience.performanceView.chart.seriesPortfolio')}
-                  stroke="#189890"
-                  strokeWidth={2.5}
-                  dot={{ r: 3, fill: '#189890' }}
-                />
-                <Line
-                  type="monotone"
-                  dataKey="benchmark"
-                  name={t('investmentExperience.performanceView.chart.seriesBenchmark')}
-                  stroke={isDark ? '#8E9995' : '#4E5653'}
-                  strokeWidth={1.5}
-                  strokeDasharray="4 4"
-                  dot={{ r: 2, fill: isDark ? '#8E9995' : '#4E5653' }}
-                />
-              </LineChart>
-            </ResponsiveContainer>
+          <div className="pt-3 border-t border-black/[0.04] dark:border-white/5 mt-4 text-[11px] text-[#189890]">
+            * {t('investmentExperience.performanceView.chart.badge', 'DAILY AUDITED')}
           </div>
         </div>
 

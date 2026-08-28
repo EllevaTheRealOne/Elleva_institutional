@@ -123,12 +123,12 @@ export const PositionsView: React.FC<ViewProps> = ({ isDark = false }) => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Holdings Table */}
         <div
-          className={`lg:col-span-8 p-5 rounded-xl border overflow-hidden ${
+          className={`lg:col-span-8 p-5 rounded-xl border flex flex-col justify-between overflow-hidden ${
             isDark ? 'bg-[#0E1214] border-white/5' : 'bg-[#F7F8F6] border-black/[0.06]'
           }`}
         >
-          <div className="flex items-center justify-between mb-4">
-            <div>
+          <div>
+            <div className="mb-4">
               <div className="text-[10px] font-ui uppercase tracking-widest text-[#8E9995] font-semibold">
                 {t('investmentExperience.positions.table.eyebrow')}
               </div>
@@ -136,45 +136,46 @@ export const PositionsView: React.FC<ViewProps> = ({ isDark = false }) => {
                 {t('investmentExperience.positions.table.heading')}
               </h4>
             </div>
-            <span className="text-xs font-mono text-[#189890] font-bold">
-              {t('investmentExperience.positions.table.badge')}
-            </span>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs">
+                <thead>
+                  <tr className={`border-b ${isDark ? 'border-white/10 text-[#8E9995]' : 'border-black/10 text-[#4E5653]'}`}>
+                    <th className="pb-2.5 font-semibold">{t('investmentExperience.positions.table.asset')}</th>
+                    <th className="pb-2.5 font-semibold">{t('investmentExperience.positions.table.category')}</th>
+                    <th className="pb-2.5 font-semibold text-right">{t('investmentExperience.positions.table.weight')}</th>
+                    <th className="pb-2.5 font-semibold">{t('investmentExperience.positions.table.custodian')}</th>
+                    <th className="pb-2.5 font-semibold text-right">{t('investmentExperience.positions.table.settlement')}</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-black/[0.04] dark:divide-white/5 font-mono">
+                  {INSTITUTIONAL_HOLDINGS.map((item) => (
+                    <tr key={item.id} className="hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors">
+                      <td className="py-3 pr-2">
+                        <div className="font-sans font-medium text-xs text-foreground">
+                          {holdingsNameMap[item.id] || item.name}
+                        </div>
+                        <div className="text-[10px] text-[#8E9995]">{item.id}</div>
+                      </td>
+                      <td className="py-3 px-2 font-sans text-[11px] text-[#8E9995]">
+                        {categoryMap[item.category] || item.category}
+                      </td>
+                      <td className="py-3 px-2 text-right font-bold text-[#189890]">{item.weight}</td>
+                      <td className="py-3 px-2 font-sans text-[11px] text-[#8E9995]">{item.custodian}</td>
+                      <td className="py-3 pl-2 text-right text-[10px]">
+                        <span className="px-1.5 py-0.5 rounded bg-[#189890]/10 text-[#189890] font-medium">
+                          {settlementMap[item.settlement] || item.settlement}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
 
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-xs">
-              <thead>
-                <tr className={`border-b ${isDark ? 'border-white/10 text-[#8E9995]' : 'border-black/10 text-[#4E5653]'}`}>
-                  <th className="pb-2.5 font-semibold">{t('investmentExperience.positions.table.asset')}</th>
-                  <th className="pb-2.5 font-semibold">{t('investmentExperience.positions.table.category')}</th>
-                  <th className="pb-2.5 font-semibold text-right">{t('investmentExperience.positions.table.weight')}</th>
-                  <th className="pb-2.5 font-semibold">{t('investmentExperience.positions.table.custodian')}</th>
-                  <th className="pb-2.5 font-semibold text-right">{t('investmentExperience.positions.table.settlement')}</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-black/[0.04] dark:divide-white/5 font-mono">
-                {INSTITUTIONAL_HOLDINGS.map((item) => (
-                  <tr key={item.id} className="hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors">
-                    <td className="py-3 pr-2">
-                      <div className="font-sans font-medium text-xs text-foreground">
-                        {holdingsNameMap[item.id] || item.name}
-                      </div>
-                      <div className="text-[10px] text-[#8E9995]">{item.id}</div>
-                    </td>
-                    <td className="py-3 px-2 font-sans text-[11px] text-[#8E9995]">
-                      {categoryMap[item.category] || item.category}
-                    </td>
-                    <td className="py-3 px-2 text-right font-bold text-[#189890]">{item.weight}</td>
-                    <td className="py-3 px-2 font-sans text-[11px] text-[#8E9995]">{item.custodian}</td>
-                    <td className="py-3 pl-2 text-right text-[10px]">
-                      <span className="px-1.5 py-0.5 rounded bg-[#189890]/10 text-[#189890] font-medium">
-                        {settlementMap[item.settlement] || item.settlement}
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="pt-3 border-t border-black/[0.04] dark:border-white/5 mt-4 text-[11px] text-[#189890]">
+            * {t('investmentExperience.positions.table.badge', 'T+0 AUDITED BOOK')}
           </div>
         </div>
 

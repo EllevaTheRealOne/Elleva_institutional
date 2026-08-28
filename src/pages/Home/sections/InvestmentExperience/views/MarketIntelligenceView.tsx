@@ -124,12 +124,12 @@ export const MarketIntelligenceView: React.FC<ViewProps> = ({ isDark = false }) 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Macro Regime Signal Matrix */}
         <div
-          className={`lg:col-span-7 p-5 rounded-xl border overflow-hidden ${
+          className={`lg:col-span-7 p-5 rounded-xl border flex flex-col justify-between overflow-hidden ${
             isDark ? 'bg-[#0E1214] border-white/5' : 'bg-[#F7F8F6] border-black/[0.06]'
           }`}
         >
-          <div className="flex items-center justify-between mb-4">
-            <div>
+          <div>
+            <div className="mb-4">
               <div className="text-[10px] font-ui uppercase tracking-widest text-[#8E9995] font-semibold">
                 {t('investmentExperience.marketIntelligenceView.matrix.eyebrow', 'MACRO REGIME MATRIX')}
               </div>
@@ -137,40 +137,41 @@ export const MarketIntelligenceView: React.FC<ViewProps> = ({ isDark = false }) 
                 {t('investmentExperience.marketIntelligenceView.matrix.heading', 'Autonomous Intelligence Engine Signals')}
               </h4>
             </div>
-            <span className="text-xs font-mono text-[#189890] font-bold">
-              {t('investmentExperience.marketIntelligenceView.matrix.badge', 'DETERMINISTIC ENGINE')}
-            </span>
+
+            <div className="space-y-3">
+              {MACRO_REGIME_SIGNALS.map((sig) => {
+                const localized = indicatorKeyMap[sig.indicator];
+                return (
+                  <div
+                    key={sig.indicator}
+                    className={`p-3.5 rounded-lg border flex items-center justify-between text-xs ${
+                      isDark ? 'bg-black/20 border-white/5' : 'bg-white border-black/[0.04]'
+                    }`}
+                  >
+                    <div className="truncate pr-2">
+                      <div className="font-medium text-foreground truncate">
+                        {localized?.indicator || sig.indicator}
+                      </div>
+                      <div className="text-[10px] text-[#8E9995] mt-0.5">
+                        {localized?.status || sig.status}
+                      </div>
+                    </div>
+                    <div className="text-right shrink-0">
+                      <span className="px-2 py-0.5 rounded bg-[#189890]/10 text-[#189890] font-mono font-bold text-[11px]">
+                        {localized?.signal || sig.signal}
+                      </span>
+                      <div className="text-[10px] font-mono text-[#8E9995] mt-0.5">
+                        {t('investmentExperience.marketIntelligenceView.matrix.confLabel', 'Confidence')}: {sig.confidence}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
 
-          <div className="space-y-3">
-            {MACRO_REGIME_SIGNALS.map((sig) => {
-              const localized = indicatorKeyMap[sig.indicator];
-              return (
-                <div
-                  key={sig.indicator}
-                  className={`p-3.5 rounded-lg border flex items-center justify-between text-xs ${
-                    isDark ? 'bg-black/20 border-white/5' : 'bg-white border-black/[0.04]'
-                  }`}
-                >
-                  <div className="truncate pr-2">
-                    <div className="font-medium text-foreground truncate">
-                      {localized?.indicator || sig.indicator}
-                    </div>
-                    <div className="text-[10px] text-[#8E9995] mt-0.5">
-                      {localized?.status || sig.status}
-                    </div>
-                  </div>
-                  <div className="text-right shrink-0">
-                    <span className="px-2 py-0.5 rounded bg-[#189890]/10 text-[#189890] font-mono font-bold text-[11px]">
-                      {localized?.signal || sig.signal}
-                    </span>
-                    <div className="text-[10px] font-mono text-[#8E9995] mt-0.5">
-                      {t('investmentExperience.marketIntelligenceView.matrix.confLabel', 'Confidence')}: {sig.confidence}
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+          <div className="pt-3 border-t border-black/[0.04] dark:border-white/5 mt-4 text-[11px] text-[#189890]">
+            * {t('investmentExperience.marketIntelligenceView.matrix.badge', 'DETERMINISTIC ENGINE')}
           </div>
         </div>
 

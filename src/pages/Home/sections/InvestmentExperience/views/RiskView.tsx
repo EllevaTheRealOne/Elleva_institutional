@@ -116,12 +116,12 @@ export const RiskView: React.FC<ViewProps> = ({ isDark = false }) => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Scenario Shock Simulation Chart */}
         <div
-          className={`lg:col-span-8 p-5 rounded-xl border ${
+          className={`lg:col-span-8 p-5 rounded-xl border flex flex-col justify-between ${
             isDark ? 'bg-[#0E1214] border-white/5' : 'bg-[#F7F8F6] border-black/[0.06]'
           }`}
         >
-          <div className="flex items-center justify-between mb-4">
-            <div>
+          <div>
+            <div className="mb-4">
               <div className="text-[10px] font-ui uppercase tracking-widest text-[#8E9995] font-semibold">
                 {t('investmentExperience.riskView.chart.eyebrow')}
               </div>
@@ -129,58 +129,59 @@ export const RiskView: React.FC<ViewProps> = ({ isDark = false }) => {
                 {t('investmentExperience.riskView.chart.heading')}
               </h4>
             </div>
-            <span className="text-xs font-mono text-[#189890] font-bold">
-              {t('investmentExperience.riskView.chart.badge')}
-            </span>
+
+            <div className="w-full h-60">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart
+                  data={stressData}
+                  margin={{ top: 10, right: 10, left: -20, bottom: 0 }}
+                  layout="vertical"
+                >
+                  <CartesianGrid strokeDasharray="3 3" stroke={gridColor} horizontal={false} />
+                  <XAxis
+                    type="number"
+                    domain={[-10, 0]}
+                    tick={{ fill: textColor, fontSize: 10 }}
+                    axisLine={{ stroke: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)' }}
+                    tickLine={false}
+                  />
+                  <YAxis
+                    type="category"
+                    dataKey="scenarioLabel"
+                    tick={{ fill: textColor, fontSize: 10 }}
+                    width={140}
+                    axisLine={false}
+                    tickLine={false}
+                  />
+                  <Tooltip
+                    formatter={(val: any) => [`${val}%`, t('investmentExperience.riskView.chart.seriesImpact')]}
+                    contentStyle={{
+                      backgroundColor: isDark ? '#0A0D0F' : '#FFFFFF',
+                      borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)',
+                      borderRadius: '6px',
+                      fontSize: '11px',
+                      color: isDark ? '#F5F7F6' : '#0A0D0C',
+                    }}
+                  />
+                  <ReferenceLine
+                    x={-5}
+                    stroke="#8E9995"
+                    strokeDasharray="3 3"
+                    label={{ value: t('investmentExperience.riskView.chart.mandateLimit'), fill: textColor, fontSize: 9 }}
+                  />
+                  <Bar
+                    dataKey="impacto"
+                    name={t('investmentExperience.riskView.chart.seriesImpact')}
+                    fill="#189890"
+                    radius={[0, 4, 4, 0]}
+                  />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
           </div>
 
-          <div className="w-full h-60">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart
-                data={stressData}
-                margin={{ top: 10, right: 10, left: -20, bottom: 0 }}
-                layout="vertical"
-              >
-                <CartesianGrid strokeDasharray="3 3" stroke={gridColor} horizontal={false} />
-                <XAxis
-                  type="number"
-                  domain={[-10, 0]}
-                  tick={{ fill: textColor, fontSize: 10 }}
-                  axisLine={{ stroke: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)' }}
-                  tickLine={false}
-                />
-                <YAxis
-                  type="category"
-                  dataKey="scenarioLabel"
-                  tick={{ fill: textColor, fontSize: 10 }}
-                  width={140}
-                  axisLine={false}
-                  tickLine={false}
-                />
-                <Tooltip
-                  formatter={(val: any) => [`${val}%`, t('investmentExperience.riskView.chart.seriesImpact')]}
-                  contentStyle={{
-                    backgroundColor: isDark ? '#0A0D0F' : '#FFFFFF',
-                    borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)',
-                    borderRadius: '6px',
-                    fontSize: '11px',
-                    color: isDark ? '#F5F7F6' : '#0A0D0C',
-                  }}
-                />
-                <ReferenceLine
-                  x={-5}
-                  stroke="#8E9995"
-                  strokeDasharray="3 3"
-                  label={{ value: t('investmentExperience.riskView.chart.mandateLimit'), fill: textColor, fontSize: 9 }}
-                />
-                <Bar
-                  dataKey="impacto"
-                  name={t('investmentExperience.riskView.chart.seriesImpact')}
-                  fill="#189890"
-                  radius={[0, 4, 4, 0]}
-                />
-              </BarChart>
-            </ResponsiveContainer>
+          <div className="pt-3 border-t border-black/[0.04] dark:border-white/5 mt-4 text-[11px] text-[#189890]">
+            * {t('investmentExperience.riskView.chart.badge', '4 SEVERE SCENARIOS')}
           </div>
         </div>
 

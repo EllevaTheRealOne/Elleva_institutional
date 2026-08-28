@@ -122,12 +122,12 @@ export const AllocationView: React.FC<ViewProps> = ({ isDark = false }) => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Actual vs Target Chart */}
         <div
-          className={`lg:col-span-8 p-5 rounded-xl border ${
+          className={`lg:col-span-8 p-5 rounded-xl border flex flex-col justify-between ${
             isDark ? 'bg-[#0E1214] border-white/5' : 'bg-[#F7F8F6] border-black/[0.06]'
           }`}
         >
-          <div className="flex items-center justify-between mb-4">
-            <div>
+          <div>
+            <div className="mb-4">
               <div className="text-[10px] font-ui uppercase tracking-widest text-[#8E9995] font-semibold">
                 {t('investmentExperience.allocationView.chart.eyebrow')}
               </div>
@@ -135,56 +135,57 @@ export const AllocationView: React.FC<ViewProps> = ({ isDark = false }) => {
                 {t('investmentExperience.allocationView.chart.heading')}
               </h4>
             </div>
-            <span className="text-xs font-mono text-[#189890] font-bold">
-              {t('investmentExperience.allocationView.chart.badge')}
-            </span>
+
+            <div className="w-full h-60">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart
+                  data={chartData}
+                  margin={{ top: 10, right: 10, left: -20, bottom: 0 }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" stroke={gridColor} vertical={false} />
+                  <XAxis
+                    dataKey="assetClassLabel"
+                    tick={{ fill: textColor, fontSize: 10 }}
+                    axisLine={{ stroke: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)' }}
+                    tickLine={false}
+                  />
+                  <YAxis
+                    tick={{ fill: textColor, fontSize: 10 }}
+                    domain={[0, 60]}
+                    axisLine={false}
+                    tickLine={false}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      backgroundColor: isDark ? '#0A0D0F' : '#FFFFFF',
+                      borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)',
+                      borderRadius: '6px',
+                      fontSize: '11px',
+                      color: isDark ? '#F5F7F6' : '#0A0D0C',
+                    }}
+                  />
+                  <Legend
+                    wrapperStyle={{ fontSize: '11px', paddingTop: '8px' }}
+                  />
+                  <Bar
+                    dataKey="atual"
+                    name={t('investmentExperience.allocationView.chart.seriesActual')}
+                    fill="#189890"
+                    radius={[4, 4, 0, 0]}
+                  />
+                  <Bar
+                    dataKey="alvo"
+                    name={t('investmentExperience.allocationView.chart.seriesTarget')}
+                    fill={isDark ? '#4E5653' : '#8E9995'}
+                    radius={[4, 4, 0, 0]}
+                  />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
           </div>
 
-          <div className="w-full h-60">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart
-                data={chartData}
-                margin={{ top: 10, right: 10, left: -20, bottom: 0 }}
-              >
-                <CartesianGrid strokeDasharray="3 3" stroke={gridColor} vertical={false} />
-                <XAxis
-                  dataKey="assetClassLabel"
-                  tick={{ fill: textColor, fontSize: 10 }}
-                  axisLine={{ stroke: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)' }}
-                  tickLine={false}
-                />
-                <YAxis
-                  tick={{ fill: textColor, fontSize: 10 }}
-                  domain={[0, 60]}
-                  axisLine={false}
-                  tickLine={false}
-                />
-                <Tooltip
-                  contentStyle={{
-                    backgroundColor: isDark ? '#0A0D0F' : '#FFFFFF',
-                    borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)',
-                    borderRadius: '6px',
-                    fontSize: '11px',
-                    color: isDark ? '#F5F7F6' : '#0A0D0C',
-                  }}
-                />
-                <Legend
-                  wrapperStyle={{ fontSize: '11px', paddingTop: '8px' }}
-                />
-                <Bar
-                  dataKey="atual"
-                  name={t('investmentExperience.allocationView.chart.seriesActual')}
-                  fill="#189890"
-                  radius={[4, 4, 0, 0]}
-                />
-                <Bar
-                  dataKey="alvo"
-                  name={t('investmentExperience.allocationView.chart.seriesTarget')}
-                  fill={isDark ? '#4E5653' : '#8E9995'}
-                  radius={[4, 4, 0, 0]}
-                />
-              </BarChart>
-            </ResponsiveContainer>
+          <div className="pt-3 border-t border-black/[0.04] dark:border-white/5 mt-4 text-[11px] text-[#189890]">
+            * {t('investmentExperience.allocationView.chart.badge', 'DETERMINISTIC DRIFT CONTROL')}
           </div>
         </div>
 

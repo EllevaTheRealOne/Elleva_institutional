@@ -132,12 +132,12 @@ export const AlertsView: React.FC<ViewProps> = ({ isDark = false }) => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Real-time Telemetry Stream */}
         <div
-          className={`lg:col-span-8 p-5 rounded-xl border overflow-hidden ${
+          className={`lg:col-span-8 p-5 rounded-xl border flex flex-col justify-between overflow-hidden ${
             isDark ? 'bg-[#0E1214] border-white/5' : 'bg-[#F7F8F6] border-black/[0.06]'
           }`}
         >
-          <div className="flex items-center justify-between mb-4">
-            <div>
+          <div>
+            <div className="mb-4">
               <div className="text-[10px] font-ui uppercase tracking-widest text-[#8E9995] font-semibold">
                 {t('investmentExperience.alertsView.log.eyebrow', 'REAL-TIME TELEMETRY FEED')}
               </div>
@@ -145,69 +145,69 @@ export const AlertsView: React.FC<ViewProps> = ({ isDark = false }) => {
                 {t('investmentExperience.alertsView.log.heading', 'Continuous Fiduciary Process Audit')}
               </h4>
             </div>
-            <span className="text-xs font-mono text-[#189890] font-bold flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-[#189890] animate-pulse" />
-              {t('investmentExperience.alertsView.log.badge', 'ACTIVE HEARTBEAT')}
-            </span>
-          </div>
 
-          {/* Mobile Card View (< sm) */}
-          <div className="space-y-2.5 sm:hidden">
-            {TELEMETRY_LOGS.map((log, idx) => (
-              <div
-                key={idx}
-                className={`p-3 rounded-lg border flex flex-col gap-1.5 ${
-                  isDark ? 'bg-black/20 border-white/5' : 'bg-white border-black/[0.04]'
-                }`}
-              >
-                <div className="flex items-center justify-between gap-2">
-                  <span className="font-sans font-medium text-foreground text-xs">
-                    {logNodeKeyMap[log.node] || log.node}
-                  </span>
-                  <span className="px-1.5 py-0.5 rounded bg-[#189890]/10 text-[#189890] font-bold font-mono text-[10px] shrink-0">
-                    {logStatusKeyMap[log.status] || log.status}
-                  </span>
-                </div>
-                <div className="text-xs text-[#8E9995] font-sans">
-                  {logEventKeyMap[log.event] || log.event}
-                </div>
-                <div className="text-[10px] text-[#8E9995] font-mono">
-                  {log.time}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Desktop & Tablet Table View (>= sm) */}
-          <div className="hidden sm:block overflow-x-auto">
-            <table className="w-full min-w-[540px] text-left text-xs font-mono">
-              <thead>
-                <tr className={`border-b ${isDark ? 'border-white/10 text-[#8E9995]' : 'border-black/10 text-[#4E5653]'}`}>
-                  <th className="pb-2.5 font-semibold font-sans">{t('investmentExperience.alertsView.log.time', 'Time (UTC)')}</th>
-                  <th className="pb-2.5 font-semibold font-sans">{t('investmentExperience.alertsView.log.node', 'Node / Component')}</th>
-                  <th className="pb-2.5 font-semibold font-sans">{t('investmentExperience.alertsView.log.event', 'Verified Event')}</th>
-                  <th className="pb-2.5 font-semibold font-sans text-right">{t('investmentExperience.alertsView.log.status', 'Status')}</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-black/[0.04] dark:divide-white/5">
-                {TELEMETRY_LOGS.map((log, idx) => (
-                  <tr key={idx} className="hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors">
-                    <td className="py-3 pr-2 text-[#8E9995] text-[11px] whitespace-nowrap">{log.time}</td>
-                    <td className="py-3 px-2 font-sans font-medium text-foreground text-xs whitespace-nowrap">
+            {/* Mobile Card View (< sm) */}
+            <div className="space-y-2.5 sm:hidden">
+              {TELEMETRY_LOGS.map((log, idx) => (
+                <div
+                  key={idx}
+                  className={`p-3 rounded-lg border flex flex-col gap-1.5 ${
+                    isDark ? 'bg-black/20 border-white/5' : 'bg-white border-black/[0.04]'
+                  }`}
+                >
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="font-sans font-medium text-foreground text-xs">
                       {logNodeKeyMap[log.node] || log.node}
-                    </td>
-                    <td className="py-3 px-2 font-sans text-[#8E9995] text-xs">
-                      {logEventKeyMap[log.event] || log.event}
-                    </td>
-                    <td className="py-3 pl-2 text-right whitespace-nowrap">
-                      <span className="px-1.5 py-0.5 rounded bg-[#189890]/10 text-[#189890] font-bold text-[10px]">
-                        {logStatusKeyMap[log.status] || log.status}
-                      </span>
-                    </td>
+                    </span>
+                    <span className="px-1.5 py-0.5 rounded bg-[#189890]/10 text-[#189890] font-bold font-mono text-[10px] shrink-0">
+                      {logStatusKeyMap[log.status] || log.status}
+                    </span>
+                  </div>
+                  <div className="text-xs text-[#8E9995] font-sans">
+                    {logEventKeyMap[log.event] || log.event}
+                  </div>
+                  <div className="text-[10px] text-[#8E9995] font-mono">
+                    {log.time}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Desktop & Tablet Table View (>= sm) */}
+            <div className="hidden sm:block overflow-x-auto">
+              <table className="w-full min-w-[540px] text-left text-xs font-mono">
+                <thead>
+                  <tr className={`border-b ${isDark ? 'border-white/10 text-[#8E9995]' : 'border-black/10 text-[#4E5653]'}`}>
+                    <th className="pb-2.5 font-semibold font-sans">{t('investmentExperience.alertsView.log.time', 'Time (UTC)')}</th>
+                    <th className="pb-2.5 font-semibold font-sans">{t('investmentExperience.alertsView.log.node', 'Node / Component')}</th>
+                    <th className="pb-2.5 font-semibold font-sans">{t('investmentExperience.alertsView.log.event', 'Verified Event')}</th>
+                    <th className="pb-2.5 font-semibold font-sans text-right">{t('investmentExperience.alertsView.log.status', 'Status')}</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody className="divide-y divide-black/[0.04] dark:divide-white/5">
+                  {TELEMETRY_LOGS.map((log, idx) => (
+                    <tr key={idx} className="hover:bg-black/[0.02] dark:hover:bg-white/[0.02] transition-colors">
+                      <td className="py-3 pr-2 text-[#8E9995] text-[11px] whitespace-nowrap">{log.time}</td>
+                      <td className="py-3 px-2 font-sans font-medium text-foreground text-xs whitespace-nowrap">
+                        {logNodeKeyMap[log.node] || log.node}
+                      </td>
+                      <td className="py-3 px-2 font-sans text-[#8E9995] text-xs">
+                        {logEventKeyMap[log.event] || log.event}
+                      </td>
+                      <td className="py-3 pl-2 text-right whitespace-nowrap">
+                        <span className="px-1.5 py-0.5 rounded bg-[#189890]/10 text-[#189890] font-bold text-[10px]">
+                          {logStatusKeyMap[log.status] || log.status}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="pt-3 border-t border-black/[0.04] dark:border-white/5 mt-4 text-[11px] text-[#189890]">
+            * {t('investmentExperience.alertsView.log.badge', 'ACTIVE HEARTBEAT')}
           </div>
         </div>
 

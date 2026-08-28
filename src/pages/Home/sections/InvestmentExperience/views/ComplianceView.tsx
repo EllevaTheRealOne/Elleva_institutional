@@ -107,12 +107,12 @@ export const ComplianceView: React.FC<ViewProps> = ({ isDark = false }) => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Mandate & Constraints Matrix */}
         <div
-          className={`lg:col-span-8 p-5 rounded-xl border overflow-hidden ${
+          className={`lg:col-span-8 p-5 rounded-xl border flex flex-col justify-between overflow-hidden ${
             isDark ? 'bg-[#0E1214] border-white/5' : 'bg-[#F7F8F6] border-black/[0.06]'
           }`}
         >
-          <div className="flex items-center justify-between mb-4">
-            <div>
+          <div>
+            <div className="mb-4">
               <div className="text-[10px] font-ui uppercase tracking-widest text-[#8E9995] font-semibold">
                 {t('investmentExperience.complianceView.matrix.eyebrow', 'MANDATE & CONSTRAINT MATRIX')}
               </div>
@@ -120,40 +120,41 @@ export const ComplianceView: React.FC<ViewProps> = ({ isDark = false }) => {
                 {t('investmentExperience.complianceView.matrix.heading', 'Statutory Controls & Fiduciary Limits')}
               </h4>
             </div>
-            <span className="text-xs font-mono text-[#189890] font-bold">
-              {t('investmentExperience.complianceView.matrix.badge', 'DETERMINISTIC AUDIT')}
-            </span>
+
+            <div className="space-y-3">
+              {MANDATE_COMPLIANCE_RULES.map((rule) => {
+                const localized = ruleKeyMap[rule.rule];
+                return (
+                  <div
+                    key={rule.rule}
+                    className={`p-3 rounded-lg border flex items-center justify-between text-xs ${
+                      isDark ? 'bg-black/20 border-white/5' : 'bg-white border-black/[0.04]'
+                    }`}
+                  >
+                    <div className="truncate pr-2">
+                      <div className="font-medium text-foreground font-sans truncate">
+                        {localized?.name || rule.rule}
+                      </div>
+                      <div className="text-[10px] text-[#8E9995] mt-0.5 font-mono">
+                        {t('investmentExperience.complianceView.matrix.limitLabel', 'Limit:')} {localized?.limit || rule.limit}
+                      </div>
+                    </div>
+                    <div className="text-right shrink-0">
+                      <span className="px-2 py-0.5 rounded bg-[#189890]/10 text-[#189890] font-mono font-bold text-[10px]">
+                        {t('investmentExperience.complianceView.matrix.compliant', t('investmentExperience.complianceView.matrix.statusPassed', 'COMPLIANT'))}
+                      </span>
+                      <div className="text-[10px] text-[#8E9995] mt-0.5 font-mono">
+                        {t('investmentExperience.complianceView.matrix.currentLabel', 'Current:')} {rule.current}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
 
-          <div className="space-y-3">
-            {MANDATE_COMPLIANCE_RULES.map((rule) => {
-              const localized = ruleKeyMap[rule.rule];
-              return (
-                <div
-                  key={rule.rule}
-                  className={`p-3 rounded-lg border flex items-center justify-between text-xs ${
-                    isDark ? 'bg-black/20 border-white/5' : 'bg-white border-black/[0.04]'
-                  }`}
-                >
-                  <div className="truncate pr-2">
-                    <div className="font-medium text-foreground font-sans truncate">
-                      {localized?.name || rule.rule}
-                    </div>
-                    <div className="text-[10px] text-[#8E9995] mt-0.5 font-mono">
-                      {t('investmentExperience.complianceView.matrix.limitLabel', 'Limit:')} {localized?.limit || rule.limit}
-                    </div>
-                  </div>
-                  <div className="text-right shrink-0">
-                    <span className="px-2 py-0.5 rounded bg-[#189890]/10 text-[#189890] font-mono font-bold text-[10px]">
-                      {t('investmentExperience.complianceView.matrix.compliant', t('investmentExperience.complianceView.matrix.statusPassed', 'COMPLIANT'))}
-                    </span>
-                    <div className="text-[10px] text-[#8E9995] mt-0.5 font-mono">
-                      {t('investmentExperience.complianceView.matrix.currentLabel', 'Current:')} {rule.current}
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+          <div className="pt-3 border-t border-black/[0.04] dark:border-white/5 mt-4 text-[11px] text-[#189890]">
+            * {t('investmentExperience.complianceView.matrix.badge', 'DETERMINISTIC AUDIT')}
           </div>
         </div>
 
