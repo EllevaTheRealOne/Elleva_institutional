@@ -209,15 +209,15 @@ export const Hero: React.FC<HeroProps> = ({
       />
 
       <div className="max-w-7xl mx-auto px-6 sm:px-10 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+        <div className="flex flex-col gap-8 lg:gap-10">
           {/* Left Column: Narrative */}
-          <div className="lg:col-span-5 flex flex-col justify-center gap-6">
-            <div className="space-y-4">
+          <div className="w-full flex flex-col justify-center gap-6">
+            <div className="space-y-4 text-center max-w-3xl mx-auto">
               <motion.h1
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="type-hero-title max-w-2xl"
+                className="type-hero-title w-full"
               >
                 {t("hero.title")}
               </motion.h1>
@@ -226,7 +226,7 @@ export const Hero: React.FC<HeroProps> = ({
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className={`type-body max-w-xl ${
+                className={`type-body w-full ${
                   isDark ? "text-[#8E9995]" : "text-[#4E5653]"
                 }`}
               >
@@ -235,50 +235,10 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
 
             {/* Quick Multiplier Pill stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex gap-4"
-            >
-              <div
-                className={`p-4 rounded-xl flex-1 transition-all ${
-                  isDark
-                    ? "node-card-dark accent-glow"
-                    : "node-card accent-glow"
-                }`}
-              >
-                <div
-                  className={`type-section-eyebrow mb-1 ${isDark ? "text-[#8E9995]" : "text-[#4E5653]"}`}
-                >
-                  {t("hero.stats.operationalLeverage")}
-                </div>
-                <div className="type-metric text-[#189890]">14.2x</div>
-                <div className="type-micro text-[#8E9995] mt-1">
-                  {t("hero.stats.operationalLeverageSub")}
-                </div>
-              </div>
-
-              <div
-                className={`p-4 rounded-xl flex-1 transition-all ${
-                  isDark ? "node-card-dark" : "node-card"
-                }`}
-              >
-                <div
-                  className={`type-section-eyebrow mb-1 ${isDark ? "text-[#8E9995]" : "text-[#4E5653]"}`}
-                >
-                  {t("hero.stats.globalConnectivity")}
-                </div>
-                <div className="type-metric">24/7</div>
-                <div className="type-micro text-[#8E9995] mt-1">
-                  {t("hero.stats.globalConnectivitySub")}
-                </div>
-              </div>
-            </motion.div>
           </div>
 
           {/* Right Column: React Flow Topology */}
-          <div className="lg:col-span-7 flex flex-col justify-center">
+          <div className="w-full flex flex-col justify-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -296,61 +256,153 @@ export const Hero: React.FC<HeroProps> = ({
               />
             </motion.div>
           </div>
-        </div>
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="flex gap-4"
+          >
+            <div
+              className={`p-4 rounded-xl flex-1 transition-all max-w-fit  ${
+                isDark ? "node-card-dark accent-glow" : "node-card accent-glow"
+              }`}
+            >
+              <div
+                className={`type-section-eyebrow mb-1 ${isDark ? "text-[#8E9995]" : "text-[#4E5653]"}`}
+              >
+                {t("hero.stats.operationalLeverage")}
+              </div>
+              <div className="type-metric text-[#189890]">14.2x</div>
+              <div className="type-micro text-[#8E9995] mt-1">
+                {t("hero.stats.operationalLeverageSub")}
+              </div>
+            </div>
 
+            <div
+              className={`p-4 rounded-xl flex-1 transition-all max-w-fit  ${
+                isDark ? "node-card-dark" : "node-card"
+              }`}
+            >
+              <div
+                className={`type-section-eyebrow mb-1 ${isDark ? "text-[#8E9995]" : "text-[#4E5653]"}`}
+              >
+                {t("hero.stats.globalConnectivity")}
+              </div>
+              <div className="type-metric">24/7</div>
+              <div className="type-micro text-[#8E9995] mt-1">
+                {t("hero.stats.globalConnectivitySub")}
+              </div>
+            </div>
+          </motion.div>
+        </div>
         {/* Operating Cycle Strip */}
         <div
           id="hero-operating-cycle"
-          className={`mt-10 sm:mt-12 py-5 px-6 sm:px-8 rounded-xl border flex flex-col md:flex-row items-center justify-between gap-6 transition-all ${
+          className={[
+            "mt-10 sm:mt-12",
+            "rounded-xl border",
+            "px-5 py-5 sm:px-6 sm:py-6 lg:px-8",
+            "flex flex-col lg:flex-row",
+            "items-center lg:items-center",
+            "justify-between",
+            "gap-6 lg:gap-10",
+            "transition-colors",
             isDark
               ? "bg-[#0A0D0F] border-[rgba(245,247,246,0.08)]"
-              : "bg-white border-[rgba(10,13,12,0.06)] shadow-xs"
-          }`}
+              : "bg-white border-[rgba(10,13,12,0.06)] shadow-xs",
+          ].join(" ")}
         >
-          <div className="flex flex-col gap-1.5 items-center md:items-start w-full md:w-auto">
-            <span className="text-[10px] font-ui uppercase tracking-widest text-[#8E9995] font-semibold">
+          {/* Operating Cycle */}
+          <div className="w-full min-w-0">
+            <span className="block mb-3 text-center lg:text-left text-[10px] font-ui font-semibold uppercase tracking-widest text-[#8E9995]">
               {t("hero.loopTitle")}
             </span>
-            <div className="flex flex-wrap gap-3 sm:gap-6 items-center justify-center">
-              {operatingPhases.map((phase, idx) => (
-                <React.Fragment key={phase.name}>
-                  <a
-                    href="#product"
-                    className="font-ui text-xs sm:text-sm font-semibold tracking-wider cycle-step transition-colors hover:text-[#189890]"
+
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-3 gap-y-3 sm:gap-x-5">
+              {operatingPhases.map((phase, idx) => {
+                const isLast = idx === operatingPhases.length - 1;
+
+                return (
+                  <div
+                    key={phase.name}
+                    className="flex items-center gap-3 sm:gap-5"
                   >
-                    {phase.name}
-                  </a>
-                  {idx < operatingPhases.length - 1 && (
-                    <span className="text-[#189890] opacity-40 inline-flex items-center">
-                      <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
-                    </span>
-                  )}
-                </React.Fragment>
-              ))}
+                    <a
+                      href="#product"
+                      className="
+                cycle-step
+                font-ui font-semibold
+                text-xs sm:text-sm
+                tracking-wider
+                whitespace-nowrap
+                transition-colors
+                hover:text-[#189890]
+                focus-visible:outline-none
+                focus-visible:ring-2
+                focus-visible:ring-[#189890]/40
+                rounded-sm
+              "
+                    >
+                      {phase.name}
+                    </a>
+
+                    {!isLast && (
+                      <ArrowRight
+                        aria-hidden="true"
+                        className={`
+                  w-3 h-3 sm:w-3.5 sm:h-3.5
+                  shrink-0
+                  text-[#189890]/40
+                  ${idx === 1 ? "hidden sm:block" : "block"}
+                `}
+                      />
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
 
-          <div className="flex items-center gap-6 sm:gap-8 justify-between md:justify-end w-full md:w-auto">
-            <div className="text-right">
-              <div className="text-[10px] font-ui uppercase tracking-widest text-[#8E9995] font-semibold mb-0.5">
+          {/* Metrics */}
+          <div
+            className="
+      w-full lg:w-auto
+      flex flex-col sm:flex-row
+      items-center justify-center lg:justify-end
+      gap-5 sm:gap-8
+      lg:shrink-0
+    "
+          >
+            {/* Efficiency */}
+            <div className="flex flex-col items-center lg:items-end">
+              <span className="text-center lg:text-right text-[10px] font-ui font-semibold uppercase tracking-widest text-[#8E9995]">
                 {t("hero.operationalAdvantage")}
-              </div>
-              <div className="flex items-center gap-2 justify-end">
+              </span>
+
+              <div className="mt-0.5 flex items-center gap-2">
                 <span className="text-xs font-ui font-bold text-[#189890]">
                   +28.4%
                 </span>
-                <span className="text-[10px] text-[#8E9995]">
+
+                <span className="text-[10px] text-[#8E9995] whitespace-nowrap">
                   {t("hero.efficiencyDelta")}
                 </span>
               </div>
             </div>
 
-            <div className="h-8 w-[1px] bg-[rgba(10,13,12,0.08)] dark:bg-[rgba(245,247,246,0.1)] hidden sm:block" />
-
+            {/* Continuous Fiduciary */}
             <div className="flex items-center gap-2">
-              <Activity className="w-4 h-4 text-[#189890]" />
+              <Activity
+                aria-hidden="true"
+                className="w-4 h-4 shrink-0 text-[#189890]"
+              />
+
               <span
-                className={`text-[11px] font-ui font-medium ${isDark ? "text-[#8E9995]" : "text-[#4E5653]"}`}
+                className={[
+                  "text-center sm:text-left",
+                  "text-[11px] font-ui font-medium",
+                  isDark ? "text-[#8E9995]" : "text-[#4E5653]",
+                ].join(" ")}
               >
                 {t("hero.continuousFiduciary")}
               </span>
