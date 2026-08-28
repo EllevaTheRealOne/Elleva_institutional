@@ -910,7 +910,7 @@ Only extract when reuse exists.
 
 Translation content remains outside component architecture under:
 
-public/locales/
+public/internationalization/
 
 Page components and sections consume translation keys.
 
@@ -918,8 +918,8 @@ They must not create local translation dictionaries.
 
 Example:
 
-public/locales/en/home.json
-public/locales/pt-BR/home.json
+public/internationalization/en/home.json
+public/internationalization/pt-BR/home.json
 
 The page file structure and translation namespace should remain semantically aligned whenever possible.
 

@@ -283,7 +283,7 @@ Use these libraries for:
 * translation loading;
 * React translation hooks;
 * browser language detection;
-* loading locale JSON from public/locales.
+* loading locale JSON from public/internationalization.
 
 Do not introduce another i18n framework.
 

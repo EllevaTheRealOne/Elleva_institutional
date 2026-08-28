@@ -40,14 +40,14 @@ The system must remain:
 
 All translation files must live inside:
 
-public/locales
+public/internationalization
 
 Inside locales, create one folder per supported language.
 
 Example:
 
 public/
-└── locales/
+└── internationalization/
     ├── en/
     │   ├── common.json
     │   ├── nav.json
@@ -68,7 +68,7 @@ public/
     │
     └── ...
 
-Do not place translation files outside public/locales unless the existing project architecture explicitly requires it.
+Do not place translation files outside public/internationalization unless the existing project architecture explicitly requires it.
 
 ⸻
 
@@ -276,7 +276,7 @@ Do not introduce user-facing strings directly inside .tsx, .ts, hooks, services,
 
 Before creating a new key:
 
-1. Search all files under public/locales.
+1. Search all files under public/internationalization.
 2. Identify whether an equivalent translation already exists.
 3. Reuse the existing key when the semantic meaning is the same.
 4. Create a new key only when no appropriate key exists.
@@ -301,8 +301,8 @@ Every supported language must contain the same file structure.
 
 Example:
 
-public/locales/en/home.json
-public/locales/pt-BR/home.json
+public/internationalization/en/home.json
+public/internationalization/pt-BR/home.json
 
 If home.json exists in one supported language, it must exist in every supported language.
 
@@ -1060,7 +1060,7 @@ Before considering a new feature complete:
 
 Before completing any i18n-related task, verify:
 
-1. Does public/locales exist?
+1. Does public/internationalization exist?
 2. Does every supported language have its own directory?
 3. Do all language directories contain the required equivalent files?
 4. Are route files separated correctly?

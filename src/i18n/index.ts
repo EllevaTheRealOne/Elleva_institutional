@@ -21,7 +21,7 @@ if (!i18n.isInitialized) {
         escapeValue: false,
       },
       backend: {
-        loadPath: "/locales/{{lng}}/{{ns}}.json",
+        loadPath: "/internationalization/{{lng}}/{{ns}}.json",
       },
       detection: {
         order: ["path", "localStorage", "querystring", "cookie", "navigator"],
