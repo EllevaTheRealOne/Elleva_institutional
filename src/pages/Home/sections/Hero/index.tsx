@@ -322,7 +322,7 @@ export const Hero: React.FC<HeroProps> = ({
                   </a>
                   {idx < operatingPhases.length - 1 && (
                     <span className="text-[#189890] opacity-30 font-mono">
-                      →
+                      <ArrowRight />
                     </span>
                   )}
                 </React.Fragment>
