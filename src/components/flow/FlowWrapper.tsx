@@ -10,6 +10,7 @@ import {
   Background,
   BackgroundVariant,
   Viewport,
+  useNodesState,
 } from "@xyflow/react";
 import { RotateCcw } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -42,8 +43,14 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
 }) => {
   const { t } = useTranslation("common");
   const { fitView, setViewport, getViewport } = useReactFlow();
+  const [interactiveNodes, setInteractiveNodes, onNodesChange] =
+    useNodesState(nodes);
   const containerRef = useRef<HTMLDivElement>(null);
   const resetTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const nodeResetTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const initialNodesRef = useRef(
+    nodes.map((node) => ({ ...node, position: { ...node.position } })),
+  );
   const initialViewportRef = useRef<Viewport | null>(null);
   const isResettingRef = useRef(false);
   const [isInteracting, setIsInteracting] = useState(false);
@@ -106,6 +113,9 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
       if (resetTimerRef.current) {
         clearTimeout(resetTimerRef.current);
       }
+      if (nodeResetTimerRef.current) {
+        clearTimeout(nodeResetTimerRef.current);
+      }
     };
   }, []);
 
@@ -123,6 +133,34 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
     scheduleViewportReset();
   }, [scheduleViewportReset]);
 
+  const scheduleNodeReset = useCallback(() => {
+    if (nodeResetTimerRef.current) {
+      clearTimeout(nodeResetTimerRef.current);
+    }
+
+    nodeResetTimerRef.current = setTimeout(() => {
+      setInteractiveNodes(
+        initialNodesRef.current.map((node) => ({
+          ...node,
+          position: { ...node.position },
+        })),
+      );
+      setIsInteracting(false);
+    }, 1500);
+  }, [setInteractiveNodes]);
+
+  const handleNodeDragStart = useCallback(() => {
+    if (nodeResetTimerRef.current) {
+      clearTimeout(nodeResetTimerRef.current);
+      nodeResetTimerRef.current = null;
+    }
+    setIsInteracting(true);
+  }, []);
+
+  const handleNodeDragStop = useCallback(() => {
+    scheduleNodeReset();
+  }, [scheduleNodeReset]);
+
   const handleManualReset = () => {
     if (resetTimerRef.current) {
       clearTimeout(resetTimerRef.current);
@@ -139,6 +177,16 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
       performFit();
       setIsInteracting(false);
     }
+    if (nodeResetTimerRef.current) {
+      clearTimeout(nodeResetTimerRef.current);
+      nodeResetTimerRef.current = null;
+    }
+    setInteractiveNodes(
+      initialNodesRef.current.map((node) => ({
+        ...node,
+        position: { ...node.position },
+      })),
+    );
   };
 
   return (
@@ -183,18 +231,22 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
       </button>
 
       <ReactFlow
-        nodes={nodes}
+        nodes={interactiveNodes}
         edges={edges}
         nodeTypes={nodeTypes}
         edgeTypes={edgeTypes}
         onMoveStart={handleMoveStart}
         onMoveEnd={handleMoveEnd}
-        nodesDraggable={false}
+        onNodesChange={onNodesChange}
+        onNodeDragStart={handleNodeDragStart}
+        onNodeDragStop={handleNodeDragStop}
+        nodesDraggable
         nodesConnectable={false}
         elementsSelectable={false}
         nodesFocusable={false}
         panOnDrag={false}
         panOnScroll={false}
+        preventScrolling={false}
         zoomOnScroll={false}
         zoomOnPinch={true}
         zoomOnDoubleClick={false}

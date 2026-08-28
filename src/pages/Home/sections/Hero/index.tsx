@@ -33,95 +33,196 @@ export const Hero: React.FC<HeroProps> = ({
 }) => {
   const { t } = useTranslation(["home", "common"]);
 
-  // React Flow nodes for Hero - perfectly aligned on horizontal and vertical corridors
+  const HERO_CORE_WIDTH = 324.86;
+  const HERO_CORE_HEIGHT = 96.72;
+
+  const HERO_LEFT_WIDTH = 191.87;
+  const HERO_RIGHT_WIDTH = 192.32;
+
+  const HERO_SIDE_HEIGHT = 36.54;
+  const HERO_SIDE_GAP_Y = 40;
+  const HERO_SIDE_GAP_X = 40;
+
+  const HERO_CORE_X = 300;
+  const HERO_CORE_Y = 130;
+
+  const HERO_CORE_RIGHT = HERO_CORE_X + HERO_CORE_WIDTH;
+
+  const HERO_LEFT_X = HERO_CORE_X - HERO_SIDE_GAP_X - HERO_LEFT_WIDTH;
+
+  const HERO_RIGHT_X = HERO_CORE_RIGHT + HERO_SIDE_GAP_X;
+
+  const HERO_SIDE_GROUP_HEIGHT = HERO_SIDE_HEIGHT * 3 + HERO_SIDE_GAP_Y * 2;
+
+  const HERO_CORE_CENTER_Y = HERO_CORE_Y + HERO_CORE_HEIGHT / 2;
+
+  const HERO_SIDE_START_Y = HERO_CORE_CENTER_Y - HERO_SIDE_GROUP_HEIGHT / 2;
+
   const heroNodes: Node[] = [
-    // Center: ELLEVA CAMADA OPERACIONAL AUTÔNOMA
     {
       id: "hero-core",
       type: "centralCore",
-      position: { x: 310, y: 140 },
+      position: {
+        x: HERO_CORE_X,
+        y: HERO_CORE_Y,
+      },
+      style: {
+        width: HERO_CORE_WIDTH,
+        minWidth: HERO_CORE_WIDTH,
+        maxWidth: HERO_CORE_WIDTH,
+        height: HERO_CORE_HEIGHT,
+      },
       data: {
         title: "ELLEVA",
         subtitle: t("hero.nodes.coreSubtitle"),
         caption: t("hero.nodes.coreCaption"),
         isDark,
-        minWidth: "260px",
+        minWidth: `${HERO_CORE_WIDTH}px`,
+        width: HERO_CORE_WIDTH,
         DecorativeOrbits: true,
       },
     },
-    // Left Column: Dados de Mercado, Bancos, Corretoras (X=50)
+
     {
       id: "hero-mod-data",
       type: "moduleNode",
-      position: { x: 50, y: 40 },
+      position: {
+        x: HERO_LEFT_X,
+        y: HERO_SIDE_START_Y,
+      },
+      style: {
+        width: HERO_LEFT_WIDTH,
+        minWidth: HERO_LEFT_WIDTH,
+        maxWidth: HERO_LEFT_WIDTH,
+      },
       data: {
         label: t("hero.nodes.marketData"),
         subtext: t("hero.nodes.marketDataSub"),
         icon: <Database className="w-3.5 h-3.5" />,
         isDark,
+        width: HERO_LEFT_WIDTH,
+        minWidth: HERO_LEFT_WIDTH,
+        maxWidth: HERO_LEFT_WIDTH,
       },
     },
+
     {
       id: "hero-mod-banks",
       type: "moduleNode",
-      position: { x: 50, y: 150 },
+      position: {
+        x: HERO_LEFT_X,
+        y: HERO_SIDE_START_Y + HERO_SIDE_HEIGHT + HERO_SIDE_GAP_Y,
+      },
+      style: {
+        width: HERO_LEFT_WIDTH,
+        minWidth: HERO_LEFT_WIDTH,
+        maxWidth: HERO_LEFT_WIDTH,
+      },
       data: {
         label: t("hero.nodes.banks"),
         subtext: t("hero.nodes.banksSub"),
         icon: <Landmark className="w-3.5 h-3.5" />,
         isDark,
+        width: HERO_LEFT_WIDTH,
+        minWidth: HERO_LEFT_WIDTH,
+        maxWidth: HERO_LEFT_WIDTH,
       },
     },
+
     {
       id: "hero-mod-brokers",
       type: "moduleNode",
-      position: { x: 50, y: 260 },
+      position: {
+        x: HERO_LEFT_X,
+        y: HERO_SIDE_START_Y + (HERO_SIDE_HEIGHT + HERO_SIDE_GAP_Y) * 2,
+      },
+      style: {
+        width: HERO_LEFT_WIDTH,
+        minWidth: HERO_LEFT_WIDTH,
+        maxWidth: HERO_LEFT_WIDTH,
+      },
       data: {
         label: t("hero.nodes.brokers"),
         subtext: t("hero.nodes.brokersSub"),
         icon: <Building className="w-3.5 h-3.5" />,
         isDark,
+        width: HERO_LEFT_WIDTH,
+        minWidth: HERO_LEFT_WIDTH,
+        maxWidth: HERO_LEFT_WIDTH,
       },
     },
-    // Right Column: Custódia, Compliance, Portfólios (X=650)
+
     {
       id: "hero-mod-custody",
       type: "moduleNode",
-      position: { x: 650, y: 40 },
+      position: {
+        x: HERO_RIGHT_X,
+        y: HERO_SIDE_START_Y,
+      },
+      style: {
+        width: HERO_RIGHT_WIDTH,
+        minWidth: HERO_RIGHT_WIDTH,
+        maxWidth: HERO_RIGHT_WIDTH,
+      },
       data: {
         label: t("hero.nodes.custody"),
         subtext: t("hero.nodes.custodySub"),
         icon: <Lock className="w-3.5 h-3.5" />,
         isDark,
+        width: HERO_RIGHT_WIDTH,
+        minWidth: HERO_RIGHT_WIDTH,
+        maxWidth: HERO_RIGHT_WIDTH,
       },
     },
+
     {
       id: "hero-mod-compliance",
       type: "moduleNode",
-      position: { x: 650, y: 150 },
+      position: {
+        x: HERO_RIGHT_X,
+        y: HERO_SIDE_START_Y + HERO_SIDE_HEIGHT + HERO_SIDE_GAP_Y,
+      },
+      style: {
+        width: HERO_RIGHT_WIDTH,
+        minWidth: HERO_RIGHT_WIDTH,
+        maxWidth: HERO_RIGHT_WIDTH,
+      },
       data: {
         label: t("hero.nodes.compliance"),
         subtext: t("hero.nodes.complianceSub"),
         icon: <ShieldCheck className="w-3.5 h-3.5" />,
         isDark,
+        width: HERO_RIGHT_WIDTH,
+        minWidth: HERO_RIGHT_WIDTH,
+        maxWidth: HERO_RIGHT_WIDTH,
       },
     },
+
     {
       id: "hero-mod-portfolios",
       type: "moduleNode",
-      position: { x: 650, y: 260 },
+      position: {
+        x: HERO_RIGHT_X,
+        y: HERO_SIDE_START_Y + (HERO_SIDE_HEIGHT + HERO_SIDE_GAP_Y) * 2,
+      },
+      style: {
+        width: HERO_RIGHT_WIDTH,
+        minWidth: HERO_RIGHT_WIDTH,
+        maxWidth: HERO_RIGHT_WIDTH,
+      },
       data: {
         label: t("hero.nodes.portfolios"),
         subtext: t("hero.nodes.portfoliosSub"),
         icon: <PieChart className="w-3.5 h-3.5" />,
         isDark,
+        width: HERO_RIGHT_WIDTH,
+        minWidth: HERO_RIGHT_WIDTH,
+        maxWidth: HERO_RIGHT_WIDTH,
       },
     },
   ];
 
-  // Refined orthogonal routing with dedicated handle IDs to prevent overlap or diagonal crosses
   const heroEdges: Edge[] = [
-    // Left Column -> Core (dedicated left entry points)
     createArchitectureEdge({
       id: "eh-data-core",
       source: "hero-mod-data",
@@ -146,7 +247,6 @@ export const Hero: React.FC<HeroProps> = ({
       targetHandle: "left-bottom",
       isDark,
     }),
-    // Core -> Right Column (dedicated right exit points)
     createArchitectureEdge({
       id: "eh-core-custody",
       source: "hero-core",
