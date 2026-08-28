@@ -503,6 +503,319 @@
       "badge": "10,000パスシミュレーション",
       "seriesExecution": "最適確率論的フロンティア",
       "seriesTarget": "マンデートポリシー境界"
+    },
+    "positions": {
+      "stats": {
+        "holdings": {
+          "label": "アクティブ直接保有銘柄",
+          "value": "142 証券",
+          "status": "100% 分離カストディ"
+        },
+        "custody": {
+          "label": "分離カストディ比率",
+          "value": "100.0%",
+          "status": "カウンターパーティリスクゼロ"
+        },
+        "liquidity": {
+          "label": "日中流動性（<24時間）",
+          "value": "94.2%",
+          "status": "T+0 / T+1 ホライズン"
+        },
+        "exposure": {
+          "label": "実効総エクスポージャー",
+          "value": "100.0%",
+          "status": "レバレッジゼロ / 準拠"
+        }
+      },
+      "table": {
+        "eyebrow": "機関資産構成",
+        "heading": "主要ポジションおよび受託者カストディ",
+        "badge": "監査済みT+0台帳",
+        "asset": "資産 / 識別子",
+        "category": "資産クラス",
+        "weight": "比率 (%)",
+        "custodian": "カストディアン",
+        "settlement": "決済"
+      },
+      "distribution": {
+        "eyebrow": "カストディアン別分布",
+        "heading": "ティア1資産分離"
+      }
+    },
+    "allocationView": {
+      "stats": {
+        "drift": {
+          "label": "目標ウェイトドリフト",
+          "value": "±0.12%",
+          "status": "許容範囲内（±1.50%）"
+        },
+        "duration": {
+          "label": "実効アクティブデュレーション",
+          "value": "4.22 年",
+          "status": "ベンチマーク：4.20 年"
+        },
+        "beta": {
+          "label": "ポリシー対比アクティブベータ",
+          "value": "0.84",
+          "status": "検証済みディフェンシブ姿勢"
+        },
+        "rebalancing": {
+          "label": "リバランスステータス",
+          "value": "均衡状態",
+          "status": "リバランス不要"
+        }
+      },
+      "chart": {
+        "eyebrow": "資産クラス配分",
+        "heading": "実績配分 vs マンデート目標",
+        "badge": "確定的ドリフト制御",
+        "seriesActual": "実績配分 (%)",
+        "seriesTarget": "マンデート目標 (%)"
+      },
+      "geography": {
+        "eyebrow": "グローバル分散",
+        "heading": "地理的エクスポージャー"
+      }
+    },
+    "performanceView": {
+      "stats": {
+        "informationRatio": {
+          "label": "インフォメーションレシオ (IR)",
+          "value": "1.82",
+          "status": "受託者の一貫性"
+        },
+        "trackingError": {
+          "label": "年率トラッキングエラー",
+          "value": "0.34%",
+          "status": "マンデート上限：<1.00%"
+        },
+        "sharpeRatio": {
+          "label": "調整後シャープレシオ",
+          "value": "2.14",
+          "status": "無リスク金利：SOFR"
+        },
+        "maxDrawdown": {
+          "label": "過去最大ドローダウン",
+          "value": "-1.42%",
+          "status": "回復期間：14日"
+        }
+      },
+      "chart": {
+        "eyebrow": "累積軌跡",
+        "heading": "ポートフォリオ成長 vs ポリシーベンチマーク",
+        "badge": "日次監査済み",
+        "seriesPortfolio": "機関投資ポートフォリオ",
+        "seriesBenchmark": "マンデートベンチマーク"
+      },
+      "attribution": {
+        "eyebrow": "ブリンソン・ファックラー帰属",
+        "heading": "アクティブリターン分解"
+      }
+    },
+    "riskView": {
+      "stats": {
+        "parametricVar": {
+          "label": "パラメトリック 99% 10日 VaR",
+          "value": "1.24%",
+          "status": "制限：4.50%（準拠）"
+        },
+        "expectedShortfall": {
+          "label": "期待ショートフォール (CVaR)",
+          "value": "1.89%",
+          "status": "正規化テールリスク"
+        },
+        "stressCoverage": {
+          "label": "ストレスカバレッジ",
+          "value": "3.8x",
+          "status": "規制最小値：1.5x"
+        },
+        "durationMismatch": {
+          "label": "デュレーションミスマッチ",
+          "value": "+0.02y",
+          "status": "アクティブ免疫化"
+        }
+      },
+      "chart": {
+        "eyebrow": "マクロ確率論的ストレステスト",
+        "heading": "シナリオショックシミュレーション",
+        "badge": "4つの過酷シナリオ",
+        "seriesImpact": "ポートフォリオ影響度 (%)"
+      },
+      "budget": {
+        "eyebrow": "リスクバジェッティング",
+        "heading": "マンデート制限消化率"
+      }
+    },
+    "liquidityView": {
+      "stats": {
+        "cashT0": {
+          "label": "即時利用可能キャッシュ (T+0)",
+          "value": "US$ 57.9M",
+          "status": "即時流動性"
+        },
+        "convertibleT1": {
+          "label": "即時転換資産 (T+1)",
+          "value": "US$ 214.2M",
+          "status": "国債およびソブリン債"
+        },
+        "lcr": {
+          "label": "流動性カバレッジ比率 (LCR)",
+          "value": "420%",
+          "status": "バーゼルIII：>100%"
+        },
+        "settlementFail": {
+          "label": "決済不履行率",
+          "value": "0.00%",
+          "status": "12ヶ月間不履行ゼロ"
+        }
+      },
+      "chart": {
+        "eyebrow": "時間的流動性ラダー",
+        "heading": "期間別キャッシュ変換プロファイル",
+        "badge": "日中モニタリング",
+        "seriesLiquidity": "累積利用可能流動性 (US$ M)"
+      },
+      "buffers": {
+        "eyebrow": "安全バッファ",
+        "heading": "主要流動性インストゥルメント"
+      }
+    },
+    "marketIntelligenceView": {
+      "stats": {
+        "telemetryFeeds": {
+          "label": "グローバルテレメトリフィード",
+          "value": "4,820/秒",
+          "status": "リアルタイム処理中"
+        },
+        "regimeConfidence": {
+          "label": "マクロレジーム確信度",
+          "value": "94.2%",
+          "status": "フェーズ：穏やかな拡大"
+        },
+        "correlationShift": {
+          "label": "クロスアセット相関シフト",
+          "value": "-0.18",
+          "status": "アクティブ非相関化"
+        },
+        "yieldSteepening": {
+          "label": "イールドカーブスティープ化指数",
+          "value": "+14 bps",
+          "status": "正常化カーブ"
+        }
+      },
+      "matrix": {
+        "eyebrow": "マクロレジームマトリックス",
+        "heading": "自律型知能エンジンのシグナル",
+        "badge": "確定的エンジン"
+      },
+      "theses": {
+        "eyebrow": "自律的統合",
+        "heading": "アクティブ投資テーゼと仮説"
+      }
+    },
+    "attributionView": {
+      "stats": {
+        "systematic": {
+          "label": "システマティックファクターエクスポージャー",
+          "value": "92.4%",
+          "status": "純粋機関投資ファクター"
+        },
+        "residual": {
+          "label": "個別残差リスク",
+          "value": "7.6%",
+          "status": "管理された固有リスク"
+        },
+        "activeShare": {
+          "label": "実効アクティブシェア",
+          "value": "68.4%",
+          "status": "制御された差異化"
+        },
+        "rSquared": {
+          "label": "マルチファクター R²",
+          "value": "0.96",
+          "status": "堅牢な統計適合度"
+        }
+      },
+      "chart": {
+        "eyebrow": "BARRA / MSCI ファクター分解",
+        "heading": "スタイルファクターエクスポージャー",
+        "badge": "7ファクターモデル",
+        "seriesExposure": "ファクターエクスポージャー Zスコア"
+      },
+      "sources": {
+        "eyebrow": "リターン源泉",
+        "heading": "純ファクター分解"
+      }
+    },
+    "alertsView": {
+      "stats": {
+        "critical": {
+          "label": "アクティブ重大アラート",
+          "value": "0",
+          "status": "システム完全準拠"
+        },
+        "auditNodes": {
+          "label": "監視対象監査ノード",
+          "value": "1,240",
+          "status": "100% 暗号学的整合性"
+        },
+        "heartbeat": {
+          "label": "テレメトリ遅延",
+          "value": "32 ms",
+          "status": "50ms未満ネットワークSLA"
+        },
+        "checkpoints": {
+          "label": "日次自動チェック回数",
+          "value": "86,400",
+          "status": "毎秒1回の検証"
+        }
+      },
+      "log": {
+        "eyebrow": "リアルタイムテレメトリフィード",
+        "heading": "継続的受託プロセス監査",
+        "badge": "ハートビート稼働中",
+        "time": "時刻 (UTC)",
+        "node": "ノード / コンポーネント",
+        "event": "検証済みイベント",
+        "status": "状態"
+      },
+      "health": {
+        "eyebrow": "インフラ健全性",
+        "heading": "主要サブシステム状態"
+      }
+    },
+    "complianceView": {
+      "stats": {
+        "policyRules": {
+          "label": "監査対象マンデート規則",
+          "value": "100%",
+          "status": "240/240 規則合格"
+        },
+        "restrictedList": {
+          "label": "制限対象エンティティ違反",
+          "value": "0",
+          "status": "OFAC / 制裁リスト違反ゼロ"
+        },
+        "esg": {
+          "label": "ESG / 除外マンデート遵守率",
+          "value": "100.0%",
+          "status": "完全な受託責任準拠"
+        },
+        "preTrade": {
+          "label": "事前取引検証 (Pre-Trade)",
+          "value": "< 1 ms",
+          "status": "確定的ロック稼働中"
+        }
+      },
+      "matrix": {
+        "eyebrow": "マンデート＆制約マトリックス",
+        "heading": "法定管理および受託者制限",
+        "badge": "確定的監査"
+      },
+      "seal": {
+        "eyebrow": "暗号学的監査シール",
+        "heading": "不変のガバナンストレイル"
+      }
     }
   },
   "intelligence": {

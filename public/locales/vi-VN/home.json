@@ -503,6 +503,319 @@
       "badge": "MÔ PHỎNG 10.000 ĐƯỜNG DẪN",
       "seriesExecution": "Biên giới Ngẫu nhiên Tối ưu",
       "seriesTarget": "Ranh giới Chính sách Ủy thác"
+    },
+    "positions": {
+      "stats": {
+        "holdings": {
+          "label": "Vị thế Nắm giữ Trực tiếp",
+          "value": "142 Tài sản",
+          "status": "100% Lưu ký Tách biệt"
+        },
+        "custody": {
+          "label": "Tỷ lệ Lưu ký Tách biệt",
+          "value": "100,0%",
+          "status": "Không Rủi ro Đối tác"
+        },
+        "liquidity": {
+          "label": "Thanh khoản Trong ngày (<24h)",
+          "value": "94,2%",
+          "status": "Kỳ hạn T+0 / T+1"
+        },
+        "exposure": {
+          "label": "Mức Phơi nhiễm Tổng Thực tế",
+          "value": "100,0%",
+          "status": "Đòn bẩy 0 / Tuân thủ"
+        }
+      },
+      "table": {
+        "eyebrow": "CƠ CẤU TÀI SẢN THỂ CHẾ",
+        "heading": "Vị thế Chính & Lưu ký Ủy thác",
+        "badge": "SỔ CÁI ĐÃ KIỂM TOÁN T+0",
+        "asset": "Tài sản / Mã định danh",
+        "category": "Loại tài sản",
+        "weight": "Tỷ trọng (%)",
+        "custodian": "Tổ chức Lưu ký",
+        "settlement": "Quyết toán"
+      },
+      "distribution": {
+        "eyebrow": "PHÂN BỔ THEO TỔ CHỨC LƯU KÝ",
+        "heading": "Tách biệt Tài sản Cấp 1"
+      }
+    },
+    "allocationView": {
+      "stats": {
+        "drift": {
+          "label": "Độ lệch Trọng số Mục tiêu",
+          "value": "±0,12%",
+          "status": "Trong Biên độ (±1,50%)"
+        },
+        "duration": {
+          "label": "Thời lượng Hiệu dụng Thực tế",
+          "value": "4,22 Năm",
+          "status": "Chuẩn: 4,20 Năm"
+        },
+        "beta": {
+          "label": "Beta Hoạt động vs Chính sách",
+          "value": "0,84",
+          "status": "Đã Xác minh Thế Phòng thủ"
+        },
+        "rebalancing": {
+          "label": "Trạng thái Tái cân bằng",
+          "value": "Cân bằng",
+          "status": "Không Cần Tái cân bằng"
+        }
+      },
+      "chart": {
+        "eyebrow": "PHÂN BỔ CÁC LOẠI TÀI SẢN",
+        "heading": "Phân bổ Thực tế vs Mục tiêu Ủy thác",
+        "badge": "KIỂM SOÁT ĐỘ LỆCH XÁC ĐỊNH",
+        "seriesActual": "Phân bổ Thực tế (%)",
+        "seriesTarget": "Mục tiêu Ủy thác (%)"
+      },
+      "geography": {
+        "eyebrow": "ĐA DẠNG HÓA TOÀN CẦU",
+        "heading": "Mức độ Phơi nhiễm Địa lý"
+      }
+    },
+    "performanceView": {
+      "stats": {
+        "informationRatio": {
+          "label": "Tỷ số Thông tin (IR)",
+          "value": "1,82",
+          "status": "Tính Nhất quán Ủy thác"
+        },
+        "trackingError": {
+          "label": "Lỗi Theo dõi Năm hóa",
+          "value": "0,34%",
+          "status": "Trần Ủy thác: <1,00%"
+        },
+        "sharpeRatio": {
+          "label": "Tỷ số Sharpe Điều chỉnh",
+          "value": "2,14",
+          "status": "Lãi suất Phi Rủi ro: SOFR"
+        },
+        "maxDrawdown": {
+          "label": "Mức Giảm Tối đa Lịch sử",
+          "value": "-1,42%",
+          "status": "Hồi phục: 14 Ngày"
+        }
+      },
+      "chart": {
+        "eyebrow": "QUỸ ĐẠO TÍCH LŨY",
+        "heading": "Tăng trưởng Danh mục vs Chuẩn Chính sách",
+        "badge": "KIỂM TOÁN HÀNG NGÀY",
+        "seriesPortfolio": "Danh mục Thể chế",
+        "seriesBenchmark": "Chuẩn Ủy thác"
+      },
+      "attribution": {
+        "eyebrow": "QUY KẾT BRINSON-FACHLER",
+        "heading": "Phân rã Lợi nhuận Vượt trội"
+      }
+    },
+    "riskView": {
+      "stats": {
+        "parametricVar": {
+          "label": "VaR Tham số 99% 10D",
+          "value": "1,24%",
+          "status": "Giới hạn: 4,50% (Tuân thủ)"
+        },
+        "expectedShortfall": {
+          "label": "Thiếu hụt Kỳ vọng (CVaR)",
+          "value": "1,89%",
+          "status": "Rủi ro Đuôi Đã Chuẩn hóa"
+        },
+        "stressCoverage": {
+          "label": "Bảo vệ Tổn thất Căng thẳng",
+          "value": "3,8x",
+          "status": "Tối thiểu Quy định: 1,5x"
+        },
+        "durationMismatch": {
+          "label": "Lệch Thời lượng (Duration)",
+          "value": "+0,02y",
+          "status": "Miễn nhiễm Hoạt động"
+        }
+      },
+      "chart": {
+        "eyebrow": "KIỂM TRA CĂNG THẲNG NGẪU NHIÊN",
+        "heading": "Mô phỏng Cú sốc Kịch bản",
+        "badge": "4 KỊCH BẢN KHẮC NGHIỆT",
+        "seriesImpact": "Tác động Danh mục (%)"
+      },
+      "budget": {
+        "eyebrow": "DỰ TOÁN RỦI RO",
+        "heading": "Mức Sử dụng Giới hạn Ủy thác"
+      }
+    },
+    "liquidityView": {
+      "stats": {
+        "cashT0": {
+          "label": "Tiền mặt Sẵn sàng T+0",
+          "value": "US$ 57,9M",
+          "status": "Thanh khoản Tức thì"
+        },
+        "convertibleT1": {
+          "label": "Tài sản Chuyển đổi T+1",
+          "value": "US$ 214,2M",
+          "status": "Trái phiếu Kho bạc & Quốc gia"
+        },
+        "lcr": {
+          "label": "Tỷ lệ Đảm bảo Thanh khoản (LCR)",
+          "value": "420%",
+          "status": "Basel III: >100%"
+        },
+        "settlementFail": {
+          "label": "Tỷ lệ Lỗi Quyết toán",
+          "value": "0,00%",
+          "status": "0 Lỗi trong 12 Tháng"
+        }
+      },
+      "chart": {
+        "eyebrow": "THANG THANH KHOẢN THỜI GIAN",
+        "heading": "Hồ sơ Chuyển đổi Tiền mặt theo Kỳ hạn",
+        "badge": "GIÁM SÁT TRONG NGÀY",
+        "seriesLiquidity": "Thanh khoản Tích lũy (US$ M)"
+      },
+      "buffers": {
+        "eyebrow": "BỘ ĐỆM AN TOÀN",
+        "heading": "Công cụ Thanh khoản Cấp 1"
+      }
+    },
+    "marketIntelligenceView": {
+      "stats": {
+        "telemetryFeeds": {
+          "label": "Nguồn Dữ liệu Đo lường Toàn cầu",
+          "value": "4.820/giây",
+          "status": "Xử lý Thời gian Thực"
+        },
+        "regimeConfidence": {
+          "label": "Độ tin cậy Chế độ Vĩ mô",
+          "value": "94,2%",
+          "status": "Giai đoạn: Mở rộng Vừa phải"
+        },
+        "correlationShift": {
+          "label": "Dịch chuyển Tương quan Liên Tài sản",
+          "value": "-0,18",
+          "status": "Phi Tương quan Hoạt động"
+        },
+        "yieldSteepening": {
+          "label": "Chỉ số Độ dốc Đường cong",
+          "value": "+14 bps",
+          "status": "Đường cong Chuẩn hóa"
+        }
+      },
+      "matrix": {
+        "eyebrow": "MA TRẬN CHẾ ĐỘ VĨ MÔ",
+        "heading": "Tín hiệu Động cơ Trí tuệ Tự trị",
+        "badge": "ĐỘNG CƠ XÁC ĐỊNH"
+      },
+      "theses": {
+        "eyebrow": "TỔNG HỢP TỰ TRỊ",
+        "heading": "Luận điểm Đầu tư & Giả thuyết Hoạt động"
+      }
+    },
+    "attributionView": {
+      "stats": {
+        "systematic": {
+          "label": "Mức Phơi nhiễm Nhân tố Hệ thống",
+          "value": "92,4%",
+          "status": "Nhân tố Thể chế Thuần túy"
+        },
+        "residual": {
+          "label": "Rủi ro Thặng dư Đặc thù",
+          "value": "7,6%",
+          "status": "Đặc thù Được Kiểm soát"
+        },
+        "activeShare": {
+          "label": "Active Share Hiệu dụng",
+          "value": "68,4%",
+          "status": "Khác biệt Được Kiểm soát"
+        },
+        "rSquared": {
+          "label": "R² Đa Nhân tố",
+          "value": "0,96",
+          "status": "Mức độ Khớp Thống kê Vững chắc"
+        }
+      },
+      "chart": {
+        "eyebrow": "PHÂN RÃ NHÂN TỐ BARRA / MSCI",
+        "heading": "Phơi nhiễm Nhân tố Phong cách",
+        "badge": "MÔ HÌNH 7 NHÂN TỐ",
+        "seriesExposure": "Điểm Z Phơi nhiễm Nhân tố"
+      },
+      "sources": {
+        "eyebrow": "NGUỒN LỢI NHUẬN",
+        "heading": "Phân rã Nhân tố Thuần túy"
+      }
+    },
+    "alertsView": {
+      "stats": {
+        "critical": {
+          "label": "Cảnh báo Nghiêm trọng Đang hoạt động",
+          "value": "0",
+          "status": "Hệ thống Tuân thủ Hoàn hảo"
+        },
+        "auditNodes": {
+          "label": "Nút Kiểm toán Được Giám sát",
+          "value": "1.240",
+          "status": "100% Toàn vẹn Mật mã"
+        },
+        "heartbeat": {
+          "label": "Độ trễ Dữ liệu Đo lường",
+          "value": "32 ms",
+          "status": "SLA Mạng Dưới 50ms"
+        },
+        "checkpoints": {
+          "label": "Kiểm tra Tự động Hàng ngày",
+          "value": "86.400",
+          "status": "1 Lần Kiểm tra Mỗi Giây"
+        }
+      },
+      "log": {
+        "eyebrow": "NGUỒN DỮ LIỆU ĐO LƯỜNG THỜI GIAN THỰC",
+        "heading": "Kiểm toán Quy trình Ủy thác Liên tục",
+        "badge": "NHỊP TIM ĐANG HOẠT ĐỘNG",
+        "time": "Thời gian (UTC)",
+        "node": "Nút / Thành phần",
+        "event": "Sự kiện Đã Xác minh",
+        "status": "Trạng thái"
+      },
+      "health": {
+        "eyebrow": "SỨC KHỎE HẠ TẦNG",
+        "heading": "Trạng thái Hệ thống Phụ Thiết yếu"
+      }
+    },
+    "complianceView": {
+      "stats": {
+        "policyRules": {
+          "label": "Quy tắc Ủy thác Đã Kiểm toán",
+          "value": "100%",
+          "status": "240/240 Quy tắc Đạt"
+        },
+        "restrictedList": {
+          "label": "Vi phạm Thực thể Bị Hạn chế",
+          "value": "0",
+          "status": "Bộ lọc OFAC / Trừng phạt Sạch"
+        },
+        "esg": {
+          "label": "Tuân thủ Ủy thác ESG / Loại trừ",
+          "value": "100,0%",
+          "status": "Tuân thủ Ủy thác Tuyệt đối"
+        },
+        "preTrade": {
+          "label": "Xác minh Trước Giao dịch (Pre-Trade)",
+          "value": "< 1 ms",
+          "status": "Khóa Xác định Đang Hoạt động"
+        }
+      },
+      "matrix": {
+        "eyebrow": "MA TRẬN ỦY THÁC & RÀNG BUỘC",
+        "heading": "Kiểm soát Luật định & Giới hạn Ủy thác",
+        "badge": "KIỂM TOÁN XÁC ĐỊNH"
+      },
+      "seal": {
+        "eyebrow": "DẤU KIỂM TOÁN MẬT MÃ",
+        "heading": "Dấu vết Quản trị Bất biến"
+      }
     }
   },
   "intelligence": {

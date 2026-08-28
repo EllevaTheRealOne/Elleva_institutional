@@ -503,6 +503,485 @@
       "badge": "SIMULACIÓN DE 10.000 CAMINOS",
       "seriesExecution": "Frontera Estocástica Óptima",
       "seriesTarget": "Límite de Política de Mandato"
+    },
+    "positions": {
+      "stats": {
+        "holdings": {
+          "label": "Posiciones Directas Activas",
+          "value": "142 Activos",
+          "status": "100% Custodia Segregada"
+        },
+        "custody": {
+          "label": "Tasa de Custodia Segregada",
+          "value": "100,0%",
+          "status": "Cero Riesgo de Contraparte"
+        },
+        "liquidity": {
+          "label": "Liquidez Intradiaria (<24h)",
+          "value": "94,2%",
+          "status": "Horizontes T+0 / T+1"
+        },
+        "exposure": {
+          "label": "Exposición Bruta Efectiva",
+          "value": "100,0%",
+          "status": "Apalancamiento Cero / Conforme"
+        }
+      },
+      "table": {
+        "eyebrow": "COMPOSICIÓN DE ACTIVOS INSTITUCIONALES",
+        "heading": "Posiciones Principales y Custodia Fiduciaria",
+        "badge": "LIBRO AUDITADO T+0",
+        "asset": "Activo / Identificador",
+        "category": "Clase",
+        "weight": "Peso (%)",
+        "custodian": "Custodio",
+        "settlement": "Liquidación"
+      },
+      "distribution": {
+        "eyebrow": "DISTRIBUCIÓN POR CUSTODIO",
+        "heading": "Segregación Patrimonial de Nivel 1",
+        "tooltipLabel": "Participación de Custodia"
+      },
+      "categories": {
+        "sovereignFixedIncome": "Renta Fija Soberana",
+        "globalEquities": "Renta Variable Global",
+        "realAssets": "Activos Reales",
+        "strategicLiquidity": "Liquidez Estratégica"
+      },
+      "settlementTypes": {
+        "t0": "T+0 Intradiario",
+        "t1": "T+1 DVP",
+        "t0Realtime": "T+0 Tiempo Real"
+      }
+    },
+    "allocationView": {
+      "stats": {
+        "drift": {
+          "label": "Desviación de Peso Objetivo (Drift)",
+          "value": "±0,12%",
+          "status": "Dentro de la Banda (±1,50%)"
+        },
+        "duration": {
+          "label": "Duración Activa Efectiva",
+          "value": "4,22 Años",
+          "status": "Benchmark: 4,20 Años"
+        },
+        "beta": {
+          "label": "Beta Activo vs Política",
+          "value": "0,84",
+          "status": "Perfil Defensivo Verificado"
+        },
+        "rebalancing": {
+          "label": "Estado de Rebalanceo",
+          "value": "En Equilibrio",
+          "status": "No Requiere Rebalanceo"
+        }
+      },
+      "chart": {
+        "eyebrow": "DISTRIBUCIÓN DE CLASES DE ACTIVOS",
+        "heading": "Asignación Actual vs Objetivo de Mandato",
+        "badge": "CONTROL DE DRIFT DETERMINISTA",
+        "seriesActual": "Asignación Actual (%)",
+        "seriesTarget": "Objetivo de Mandato (%)"
+      },
+      "geography": {
+        "eyebrow": "DIVERSIFICACIÓN GLOBAL",
+        "heading": "Exposición Geográfica"
+      },
+      "footnote": "100% en conformidad con las directrices de asignación soberana y fiduciaria UCITS.",
+      "assetClasses": {
+        "sovereignFixedIncome": "Renta Fija Soberana",
+        "globalEquitiesCore": "Renta Variable Global Núcleo",
+        "realAssetsInfra": "Activos Reales e Infraestructura",
+        "strategicCashSofr": "Efectivo Estratégico y SOFR"
+      },
+      "regions": {
+        "northAmerica": "América del Norte",
+        "developedEurope": "Europa Desarrollada",
+        "developedAsia": "Asia Desarrollada (APAC)",
+        "globalEmerging": "Mercados Emergentes Globales"
+      }
+    },
+    "performanceView": {
+      "stats": {
+        "informationRatio": {
+          "label": "Ratio de Información (IR)",
+          "value": "1,82",
+          "status": "Consistencia Fiduciaria"
+        },
+        "trackingError": {
+          "label": "Tracking Error Anualizado",
+          "value": "0,34%",
+          "status": "Límite de Mandato: <1,00%"
+        },
+        "sharpeRatio": {
+          "label": "Ratio Sharpe Ajustado",
+          "value": "2,14",
+          "status": "Tasa Libre de Riesgo: SOFR"
+        },
+        "maxDrawdown": {
+          "label": "Drawdown Máximo Histórico",
+          "value": "-1,42%",
+          "status": "Recuperación: 14 Días"
+        }
+      },
+      "chart": {
+        "eyebrow": "TRAYECTORIA ACUMULADA",
+        "heading": "Evolución de Cartera vs Benchmark de Política",
+        "badge": "AUDITADO DIARIAMENTE",
+        "seriesPortfolio": "Cartera Institucional",
+        "seriesBenchmark": "Benchmark de Mandato"
+      },
+      "attribution": {
+        "eyebrow": "ATRIBUCIÓN BRINSON-FACHLER",
+        "heading": "Descomposición de Retorno Activo",
+        "allocationEffect": "Efecto de Asignación de Activos",
+        "selectionEffect": "Efecto de Selección de Valores",
+        "interactionAlpha": "Alfa de Interacción / Ejecución",
+        "hedgeEffect": "Efecto Neto de Cobertura de Divisas"
+      },
+      "footnote": "Alfa Activo Total: +2.74% anualizado sobre la política de referencia."
+    },
+    "riskView": {
+      "stats": {
+        "parametricVar": {
+          "label": "VaR Paramétrico 99% 10D",
+          "value": "1,24%",
+          "status": "Límite: 4,50% (Cumple)"
+        },
+        "expectedShortfall": {
+          "label": "Expected Shortfall (CVaR)",
+          "value": "1,89%",
+          "status": "Cola Extrema Normalizada"
+        },
+        "stressCoverage": {
+          "label": "Cobertura de Estrés",
+          "value": "3,8x",
+          "status": "Mínimo Regulatorio: 1,5x"
+        },
+        "durationMismatch": {
+          "label": "Desajuste de Duración",
+          "value": "+0,02y",
+          "status": "Inmunización Activa"
+        }
+      },
+      "chart": {
+        "eyebrow": "TEST DE ESTRÉS MACROESTOCÁSTICO",
+        "heading": "Simulación de Shocks de Escenario",
+        "badge": "4 ESCENARIOS SEVEROS",
+        "seriesImpact": "Impacto en Cartera (%)",
+        "mandateLimit": "Límite de Mandato"
+      },
+      "budget": {
+        "eyebrow": "PRESUPUESTO DE RIESGO",
+        "heading": "Utilización de Límites de Mandato",
+        "varConsumption": "Consumo de VaR 99%",
+        "trackingErrorLimit": "Límite de Tracking Error",
+        "concentrationLimit": "Concentración en Emisor Único",
+        "stressAbsorption": "Absorción de Estrés de Liquidez",
+        "compliant": "Cumple"
+      },
+      "scenarios": {
+        "stagflation": "Shock de Estanflación Macro",
+        "geopolitical": "Salto de Volatilidad Geopolítica",
+        "yieldSpike": "Pico en Curva de Tipos (+150bps)",
+        "equityDrawdown": "Drawdown de Renta Variable Global (-20%)"
+      },
+      "footnote": "La validación continua de Monte Carlo ejecuta 10.000 trayectorias por ciclo."
+    },
+    "liquidityView": {
+      "stats": {
+        "cashT0": {
+          "label": "Efectivo Disponible T+0",
+          "value": "US$ 57,9M",
+          "status": "Liquidez Inmediata"
+        },
+        "convertibleT1": {
+          "label": "Activos Convertibles T+1",
+          "value": "US$ 214,2M",
+          "status": "Treasuries y Soberanos"
+        },
+        "lcr": {
+          "label": "Ratio de Cobertura (LCR)",
+          "value": "420%",
+          "status": "Basilea III: >100%"
+        },
+        "settlementFail": {
+          "label": "Fallos de Liquidación",
+          "value": "0,00%",
+          "status": "0 Fallos en 12 Meses"
+        }
+      },
+      "chart": {
+        "eyebrow": "ESCALERA DE LIQUIDEZ TEMPORAL",
+        "heading": "Perfil de Conversión por Horizonte",
+        "badge": "MONITORIZACIÓN INTRA-DÍA",
+        "seriesLiquidity": "Liquidez Disponible (US$ M)"
+      },
+      "buffers": {
+        "eyebrow": "COLCHONES DE SEGURIDAD",
+        "heading": "Instrumentos de Liquidez Primaria"
+      },
+      "horizons": {
+        "t0": "T+0 Intradiario",
+        "t1": "T+1 Siguiente Día",
+        "t2t3": "T+2 / T+3 Mercado",
+        "t5": "T+5 Núcleo Global"
+      },
+      "instruments": {
+        "repo": "Overnight Fed Reverse Repo / Efectivo SOFR",
+        "tbills": "Letras del Tesoro de EE. UU. (< 90 días)",
+        "sovereignBonds": "Bonos Gubernamentales Soberanos G7",
+        "tier1Cash": "Equivalentes de Efectivo Tier-1",
+        "tier1Sovereign": "Soberano Tier-1",
+        "tier1Gov": "Gubernamental Tier-1"
+      },
+      "footnote": "100% de los activos líquidos mantenidos en cuentas DVP / liquidación inmediata."
+    },
+    "marketIntelligenceView": {
+      "stats": {
+        "telemetryFeeds": {
+          "label": "Feeds de Telemetría Global",
+          "value": "4.820/s",
+          "status": "Procesamiento en Tiempo Real"
+        },
+        "regimeConfidence": {
+          "label": "Confianza de Régimen Macro",
+          "value": "94,2%",
+          "status": "Fase: Expansión Moderada"
+        },
+        "correlationShift": {
+          "label": "Desplazamiento de Correlación",
+          "value": "-0,18",
+          "status": "Descorrelación Activa"
+        },
+        "yieldSteepening": {
+          "label": "Inclinación de Curva",
+          "value": "+14 bps",
+          "status": "Curva Normalizada"
+        }
+      },
+      "matrix": {
+        "eyebrow": "MATRIZ DE RÉGIMEN MACRO",
+        "heading": "Señales del Motor Autónomo de Inteligencia",
+        "badge": "MOTOR DETERMINISTA"
+      },
+      "theses": {
+        "eyebrow": "SÍNTESIS AUTÓNOMA",
+        "heading": "Tesis de Inversión e Hipótesis Activas"
+      },
+      "signals": {
+        "growthImpulse": "Impulso de Crecimiento Macro",
+        "expansion": "Expansión Moderada",
+        "constructive": "Constructivo",
+        "liquidityCondition": "Condiciones de Liquidez Global",
+        "neutralPlus": "Neutro (+0,2z)",
+        "balanced": "Equilibrado",
+        "realRates": "Trayectoria de Tipos Reales",
+        "restrictive": "Restrictivo Estable",
+        "neutral": "Neutro",
+        "volatilityRegime": "Régimen de Volatilidad Multiactivo",
+        "subdued": "Moderado (<14 VIX)",
+        "riskOn": "Sesgo Pro-Riesgo"
+      },
+      "thesesItems": {
+        "semiCooling": "Semiconductores Especializados e Infraestructura Eléctrica",
+        "semiHypothesis": "Hipótesis: Expansión asimétrica de capex en refrigeración líquida y redes limpias.",
+        "steepener": "Inclinación de Curva Soberana Global",
+        "steepenerHypothesis": "Hipótesis: Repreciación de prima por plazo fiscal impulsando la desinversión.",
+        "activeConviction": "Convicción Activa (94%)",
+        "tacticalConviction": "Convicción Táctica (88%)"
+      },
+      "footnote": "Validación cruzada en 4.820 series temporales macro con guardarraíles estrictos contra alucinaciones."
+    },
+    "attributionView": {
+      "stats": {
+        "systematic": {
+          "label": "Exposición Factorial Sistemática",
+          "value": "92,4%",
+          "status": "Factores Institucionales Puros"
+        },
+        "residual": {
+          "label": "Riesgo Residual Específico",
+          "value": "7,6%",
+          "status": "Idiosincrásico Controlado"
+        },
+        "activeShare": {
+          "label": "Active Share Efectivo",
+          "value": "68,4%",
+          "status": "Diferenciación Controlada"
+        },
+        "rSquared": {
+          "label": "R² Multifactorial",
+          "value": "0,96",
+          "status": "Ajuste Estadístico Robusto"
+        }
+      },
+      "chart": {
+        "eyebrow": "DESCOMPOSICIÓN FACTORIAL BARRA / MSCI",
+        "heading": "Exposición a Factores de Estilo",
+        "badge": "MODELO DE 7 FACTORES",
+        "seriesExposure": "Puntuación Z de Exposición"
+      },
+      "sources": {
+        "eyebrow": "FUENTES DE RETORNO",
+        "heading": "Descomposición Factorial Neta"
+      },
+      "factors": {
+        "value": "Factor Valor",
+        "momentum": "Factor Momento",
+        "quality": "Calidad / Rentabilidad",
+        "lowVol": "Baja Volatilidad",
+        "size": "Tamaño (Sesgo Large Cap)",
+        "yield": "Dividendo / Rendimiento Carry",
+        "liquidity": "Prima de Liquidez"
+      },
+      "sourcesItems": {
+        "qualityEngine": "Factor Calidad y Rentabilidad",
+        "qualityEngineDesc": "Motor Primario de Retorno",
+        "liquidityPremium": "Factor Prima de Liquidez",
+        "liquidityPremiumDesc": "Prima Soberana Tier-1",
+        "lowVolShield": "Sesgo de Baja Volatilidad",
+        "lowVolShieldDesc": "Escudo Defensivo contra Caídas"
+      },
+      "footnote": "Alineación factorial 100% verificada con modelos Barra Global Equity & Fixed Income."
+    },
+    "alertsView": {
+      "stats": {
+        "critical": {
+          "label": "Alertas Críticas Activas",
+          "value": "0",
+          "status": "Sistema en Perfecta Conformidad"
+        },
+        "auditNodes": {
+          "label": "Nodos de Auditoría Monitoreados",
+          "value": "1.240",
+          "status": "Integridad Criptográfica 100%"
+        },
+        "heartbeat": {
+          "label": "Latencia de Telemetría",
+          "value": "32 ms",
+          "status": "SLA de Red Sub-50ms"
+        },
+        "checkpoints": {
+          "label": "Chequeos Automáticos Diarios",
+          "value": "86.400",
+          "status": "1 Comprobación por Segundo"
+        }
+      },
+      "log": {
+        "eyebrow": "FEED DE TELEMETRÍA EN TIEMPO REAL",
+        "heading": "Auditoría Continua de Procesos Fiduciarios",
+        "badge": "HEARTBEAT ACTIVO",
+        "time": "Hora (UTC)",
+        "node": "Nodo / Componente",
+        "event": "Evento Verificado",
+        "status": "Estado"
+      },
+      "logNodes": {
+        "vault01": "Bóveda-01 (BNY Mellon)",
+        "compliance": "Motor de Cumplimiento Pre-Trade",
+        "riskEngine": "Motor de Riesgo Monte Carlo",
+        "rebalancer": "Rebalanceador de Custodia",
+        "marketFeed": "Telemetría de Feeds de Mercado",
+        "router": "Enrutador FIX 5.0",
+        "custodyRecon": "Reconciliación de Custodia",
+        "portfolioCore": "Núcleo de Portafolio"
+      },
+      "logEvents": {
+        "settlementHash": "Hash de Liquidación Verificado (T+0)",
+        "mandateRules": "240 Reglas de Mandato Evaluadas (0,4ms)",
+        "varRecalibration": "Recalibración VaR de 10.000 Trayectorias (1,24%)",
+        "driftCheck": "Verificación de Límite de Desviación (±0,12% < ±1,50%)",
+        "feedIngestion": "Ingestión Global de 4.820 feeds/seg",
+        "fixAck": "Sesión FIX 5.0 Confirmada por Primary Dealer",
+        "varEpoch": "Simulación Monte Carlo de 10.000 Trayectorias Convergida",
+        "dvpSettled": "Hash de Libro Mayor Criptográfico Verificado con BNY Mellon",
+        "driftTolerance": "Desviación Dinámica dentro del Límite de Tolerancia (0,42%)"
+      },
+      "logStatus": {
+        "secure": "SEGURO",
+        "passed": "APROBADO",
+        "compliant": "CONFORME",
+        "optimal": "ÓPTIMO",
+        "synchronized": "SINCRONIZADO",
+        "success": "ÉXITO",
+        "normal": "NORMAL",
+        "settled": "LIQUIDADO"
+      },
+      "health": {
+        "eyebrow": "SALUD DE INFRAESTRUCTURA",
+        "heading": "Estado de Subsistemas Críticos",
+        "latencyLabel": "Latencia:",
+        "loadLabel": "Carga:",
+        "online": "ONLINE",
+        "orderRouter": "Enrutador Central de Órdenes (FIX 5.0)",
+        "riskEngine": "Motor de Riesgo Monte Carlo (HPC)",
+        "custodyRecon": "Reconciliación Custodial DVP",
+        "firewall": "Firewall de Mandato Pre-Trade"
+      },
+      "events": {
+        "fiduciaryRecon": "Reconciliación Continua de Libro Mayor Fiduciario: 0 Discrepancias",
+        "monteCarloCycle": "Ciclo de Riesgo Monte Carlo 10k Trayectorias Completado: Nominal",
+        "preTradeCheck": "Validación de Orden FIX Pre-Trade (Sub-1ms): Aprovada",
+        "custodyProof": "Sello Criptográfico de Custodia Directa Tier-1 Verificado",
+        "success": "ÉXITO",
+        "verified": "VERIFICADO",
+        "passed": "APROBADO"
+      },
+      "footnote": "SLA del 99.999% respaldado por consenso determinista multirregional."
+    },
+    "complianceView": {
+      "stats": {
+        "policyRules": {
+          "label": "Reglas de Mandato Auditadas",
+          "value": "100%",
+          "status": "240 de 240 Reglas Aprobadas"
+        },
+        "restrictedList": {
+          "label": "Violaciones de Entidades Restringidas",
+          "value": "0",
+          "status": "Filtro OFAC / Sanciones Limpio"
+        },
+        "esg": {
+          "label": "Adhesión al Mandato ESG / Exclusión",
+          "value": "100,0%",
+          "status": "Cumplimiento Fiduciario Total"
+        },
+        "preTrade": {
+          "label": "Verificación Previa (Pre-Trade)",
+          "value": "< 1 ms",
+          "status": "Bloqueo Determinista Activo"
+        }
+      },
+      "matrix": {
+        "eyebrow": "MATRIZ DE RESTRICCIONES Y MANDATO",
+        "heading": "Controles Estatutarios y Límites Fiduciarios",
+        "badge": "AUDITORÍA DETERMINISTA",
+        "limitLabel": "Límite:",
+        "currentLabel": "Actual:",
+        "statusPassed": "APROBADO"
+      },
+      "seal": {
+        "eyebrow": "SELLO DE AUDITORÍA CRIPTOGRÁFICA",
+        "heading": "Pista Inmutable de Gobernanza",
+        "soc2": "Certificado SOC-2 Tipo II",
+        "merkle": "Libro Mayor Inmutable en Árbol Merkle",
+        "merkleRoot": "Raíz de Merkle:",
+        "epoch": "Marca de Tiempo de Época:",
+        "custodyId": "ID de Custodia Fiduciaria:"
+      },
+      "rules": {
+        "singleIssuer": "Límite de Exposición a Emisor Único",
+        "singleIssuerLimit": "< 5.0% del AUM Neto",
+        "unhedgedFx": "Límite de Exposición de Divisas No Cubierta",
+        "unhedgedFxLimit": "< 2.0% del AUM Neto",
+        "esgScreening": "Filtrado Negativo OFAC / ESG",
+        "esgScreeningLimit": "0 Violaciones",
+        "illiquidAssets": "Límite de Asignación en Activos Ilíquidos",
+        "illiquidAssetsLimit": "< 1.0% del AUM Neto"
+      },
+      "footnote": "Cero excepciones de cumplimiento registradas en todos los mandatos monitoreados."
     }
   },
   "intelligence": {
