@@ -540,7 +540,11 @@
       "distribution": {
         "eyebrow": "DISTRIBUIÇÃO POR CUSTODIANTE",
         "heading": "Segregação Patrimonial de Nível 1",
-        "tooltipLabel": "Participação de Custódia"
+        "tooltipLabel": "Participação de Custódia",
+        "bny": "BNY Mellon",
+        "stateStreet": "State Street",
+        "jpMorgan": "J.P. Morgan",
+        "euroclear": "Euroclear"
       },
       "categories": {
         "sovereignFixedIncome": "Renda Fixa Soberana",
@@ -552,6 +556,13 @@
         "t0": "T+0 Intradiário",
         "t1": "T+1 DVP",
         "t0Realtime": "T+0 Tempo Real"
+      },
+      "holdingsNames": {
+        "tbills": "Treasuries dos EUA 3M / 6M",
+        "tnotes": "Treasuries dos EUA 2 anos",
+        "msciWorld": "ETF MSCI World",
+        "infra": "Fundo de Infraestrutura Global",
+        "sofrSweep": "Sweep de Caixa SOFR"
       }
     },
     "allocationView": {
@@ -599,7 +610,8 @@
         "northAmerica": "América do Norte",
         "developedEurope": "Europa Desenvolvida",
         "developedAsia": "Ásia Desenvolvida (APAC)",
-        "globalEmerging": "Mercados Emergentes Globais"
+        "globalEmerging": "Mercados Emergentes Globais",
+        "globalSupranational": "Supranacional Global"
       }
     },
     "performanceView": {
@@ -734,7 +746,11 @@
         "sovereignBonds": "Títulos Soberanos Governamentais G7",
         "tier1Cash": "Equivalentes de Caixa Tier-1",
         "tier1Sovereign": "Soberano Tier-1",
-        "tier1Gov": "Governamental Tier-1"
+        "tier1Gov": "Governamental Tier-1",
+        "benchmarkNotes": "Notas Benchmark dos EUA (G10 Líquido)",
+        "tier1HighLiquid": "Alta Liquidez Tier-1",
+        "largeCapEq": "Ações Líquidas de Grande Capitalização (DVP)",
+        "liquidEquities": "Ações Líquidas"
       },
       "footnote": "100% dos ativos líquidos mantidos em contas DVP / liquidação imediata."
     },
@@ -764,7 +780,8 @@
       "matrix": {
         "eyebrow": "MATRIZ DE REGIME MACRO",
         "heading": "Sinais do Motor Autônomo de Inteligência",
-        "badge": "MOTOR DETERMINÍSTICO"
+        "badge": "MOTOR DETERMINÍSTICO",
+        "confLabel": "Confiança:"
       },
       "theses": {
         "eyebrow": "SÍNTESE AUTÔNOMA",
@@ -782,7 +799,17 @@
         "neutral": "Neutro",
         "volatilityRegime": "Regime de Volatilidade Multi-Ativos",
         "subdued": "Moderado (<14 VIX)",
-        "riskOn": "Viés Pró-Risco"
+        "riskOn": "Viés Pró-Risco",
+        "moderateExpansion": "Expansão Moderada",
+        "inflationDrift": "Deriva Inflacionária Fiduciária",
+        "disinflating": "Desinflação / Neutro",
+        "termPremia": "Prêmio a Termo da Curva Soberana",
+        "normalizedSlope": "Inclinação Normalizada",
+        "neutralDuration": "Duration Neutra",
+        "creditRiskPremia": "Prêmio de Risco de Crédito (IG/HY)",
+        "tightSpreads": "Spreads Estreitos / Estáveis",
+        "noTailStress": "Sem Estresse de Cauda",
+        "controlled": "Controlado"
       },
       "thesesItems": {
         "semiCooling": "Semicondutores Especializados e Infraestrutura Elétrica",
@@ -790,7 +817,15 @@
         "steepener": "Inclinação da Curva de Juros Soberana Global",
         "steepenerHypothesis": "Hipótese: Reprecificação de prêmio de prazo fiscal acelerando desinversão.",
         "activeConviction": "Convicção Ativa (94%)",
-        "tacticalConviction": "Convicção Tática (88%)"
+        "tacticalConviction": "Convicção Tática (88%)",
+        "durationTitle": "Imunização de Duration Soberana",
+        "durationHypothesis": "Manter a duration efetiva em +/-0,05 ano do mandato benchmark para neutralizar a volatilidade das taxas.",
+        "qualityTitle": "Sobreponderação Sistemática de Qualidade",
+        "qualityHypothesis": "Manter exposição positiva a fatores institucionais de rentabilidade e resiliência do balanço.",
+        "custodyTitle": "Auditoria Intradiária de Segregação de Custódia",
+        "custodyHypothesis": "Exigir reconciliação criptográfica em tempo real dos ativos nos 4 cofres custodiais Tier-1.",
+        "verifiedContinuous": "VERIFICADO CONTINUAMENTE",
+        "activeExecution": "EXECUÇÃO ATIVA"
       },
       "footnote": "Validação cruzada em 4.820 séries temporais macro com proteção estrita contra alucinações."
     },
@@ -825,7 +860,13 @@
       },
       "sources": {
         "eyebrow": "FONTES DE RETORNO",
-        "heading": "Decomposição Fatorial Líquida"
+        "heading": "Decomposição Fatorial Líquida",
+        "qualityTitle": "Fator de Qualidade e Rentabilidade",
+        "qualitySubtitle": "Motor Primário de Retorno",
+        "liquidityTitle": "Fator de Prêmio de Liquidez",
+        "liquiditySubtitle": "Prêmio Soberano Tier-1",
+        "lowVolTitle": "Viés de Baixa Volatilidade",
+        "lowVolSubtitle": "Proteção Defensiva contra Quedas"
       },
       "factors": {
         "value": "Fator Valor",
@@ -918,7 +959,9 @@
         "orderRouter": "Roteador Central de Ordens (FIX 5.0)",
         "riskEngine": "Motor de Risco Monte Carlo (HPC)",
         "custodyRecon": "Reconciliação Custodial DVP",
-        "firewall": "Firewall de Mandato Pré-Trade"
+        "firewall": "Firewall de Mandato Pré-Trade",
+        "latency": "Latência:",
+        "load": "Carga:"
       },
       "events": {
         "fiduciaryRecon": "Reconciliação Contínua de Razão Fiduciário: 0 Discrepâncias",
@@ -929,7 +972,13 @@
         "verified": "VERIFICADO",
         "passed": "APROVADO"
       },
-      "footnote": "SLA de 99,999% suportado por consenso determinístico multirregional."
+      "footnote": "SLA de 99,999% suportado por consenso determinístico multirregional.",
+      "subsystems": {
+        "router": "Roteador Central de Ordens (FIX 5.0)",
+        "riskEngine": "Motor de Risco Monte Carlo (HPC)",
+        "reconciliation": "Reconciliação Custodial DVP",
+        "firewall": "Firewall de Mandato Pré-Negociação"
+      }
     },
     "complianceView": {
       "stats": {
@@ -960,7 +1009,8 @@
         "badge": "AUDITORIA DETERMINÍSTICA",
         "limitLabel": "Limite:",
         "currentLabel": "Atual:",
-        "statusPassed": "APROVADO"
+        "statusPassed": "APROVADO",
+        "compliant": "CONFORME"
       },
       "seal": {
         "eyebrow": "SELO DE AUDITORIA CRIPTOGRÁFICA",
@@ -969,7 +1019,9 @@
         "merkle": "Livro-Razão Imutável em Árvore Merkle",
         "merkleRoot": "Raiz de Merkle:",
         "epoch": "Timestamp da Época:",
-        "custodyId": "ID de Custódia Fiduciária:"
+        "custodyId": "ID de Custódia Fiduciária:",
+        "merkleTree": "Ledger de Árvore Merkle Imutável",
+        "epochTimestamp": "Timestamp da Época:"
       },
       "rules": {
         "singleIssuer": "Teto de Exposição a Emissor Único",
@@ -979,9 +1031,64 @@
         "esgScreening": "Triagem Negativa OFAC / ESG",
         "esgScreeningLimit": "0 Violações",
         "illiquidAssets": "Teto de Alocação em Ativos Ilíquidos",
-        "illiquidAssetsLimit": "< 1,0% do AUM Líquido"
+        "illiquidAssetsLimit": "< 1,0% do AUM Líquido",
+        "leverageLimit": "0,00x (Nenhuma Alavancagem Permitida)",
+        "investmentGrade": "Piso de Grau de Investimento",
+        "investmentGradeLimit": "100% BBB- ou superior",
+        "custodySegregation": "Mandato de Segregação de Custódia Direta",
+        "custodySegregationLimit": "100% em Titularidade Legal do Cliente",
+        "leverage": "Restrição de Alavancagem do Mandato"
       },
       "footnote": "Zero exceções de conformidade registradas em todos os mandatos monitorados."
+    },
+    "months": {
+      "jan": "Jan",
+      "feb": "Fev",
+      "mar": "Mar",
+      "apr": "Abr",
+      "may": "Mai",
+      "jun": "Jun",
+      "jul": "Jul"
+    },
+    "overview": {
+      "allocation": {
+        "eyebrow": "ALOCAÇÃO DE MANDATO",
+        "heading": "Pesos Ativos do Portfólio",
+        "tooltipLabel": "Peso Alocado",
+        "fixedIncome": "Renda Fixa",
+        "globalEquities": "Ações Globais",
+        "realAssets": "Ativos Reais e Infraestrutura",
+        "strategicCash": "Caixa Estratégico e Reservas"
+      },
+      "stats": {
+        "monitoredAum": {
+          "label": "AUM de Mandato Monitorado",
+          "value": "US$ 482.5M",
+          "status": "Nominal / Segregado"
+        },
+        "adherence": {
+          "label": "Adesão à Política de Mandato",
+          "value": "99.8%",
+          "deviation": "0,00% de Desvio"
+        },
+        "var": {
+          "label": "VaR Paramétrico 99% 10D",
+          "value": "1.24%",
+          "policyLimit": "Limite: 4,50% (Conforme)"
+        },
+        "custody": {
+          "label": "Status de Custódia",
+          "status": "Primeira Linha Segregada",
+          "subtext": "100% Título Legal do Cliente"
+        }
+      },
+      "chart": {
+        "eyebrow": "FRONTEIRA EFICIENTE DINÂMICA",
+        "heading": "Simulação Estocástica em Tempo Real",
+        "seriesExecution": "Fronteira Estocástica Ótima",
+        "seriesTarget": "Limite da Política de Mandato",
+        "badge": "SIMULAÇÃO DE 10.000 CAMINHOS"
+      }
     }
   },
   "intelligence": {
@@ -1327,7 +1434,7 @@
         "moduleDescription": "IA especializada em coletar, interpretar e estruturar dados globais relevantes.",
         "process1": "Ingestão contínua de demonstrações financeiras (10-K, 10-Q, arquivos regulatórios)",
         "process2": "Processamento semântico de notícias macro e transcrições de teleconferências de resultados",
-        "process3": "Extraç\u00e3o em tempo real de sinais de fluxo de ordens institucionais e liquidez",
+        "process3": "Extração em tempo real de sinais de fluxo de ordens institucionais e liquidez",
         "metric1": "Feeds Ativos",
         "metric2": "Latência de Análise",
         "metric3": "Cobertura de Ativos"

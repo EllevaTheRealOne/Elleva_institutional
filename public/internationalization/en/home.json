@@ -24,6 +24,17 @@
     "successDescPrefix": "We have received data for",
     "successDescSuffix": "Our institutional partnerships team will reach out to schedule a technical session and deliver integration documentation."
   },
+  "common": {
+    "done": "Done",
+    "footer": {
+      "copyright": "Elleva © 2026. All rights reserved.",
+      "terms": "Institutional Terms",
+      "security": "Security & Compliance",
+      "regulatory": "Regulatory Disclosures"
+    },
+    "close": "Close",
+    "year": "Year"
+  },
   "architecture": {
     "flow": {
       "coreSubtitle": "INTELLIGENCE & ORCHESTRATION LAYER",
@@ -172,7 +183,7 @@
       "level": "LEVEL 1"
     },
     "title": "Compounding Defensibility",
-    "description": "With every executed decision, Elleva’s structural depth compounds across proprietary decision logs, institutional integrations, and domain expertise.",
+    "description": "With every executed decision, Elleva's structural depth compounds across proprietary decision logs, institutional integrations, and domain expertise.",
     "footer": {
       "scaleLabel": "Operating Leverage",
       "scaleValue": "14.2x Delta",
@@ -262,7 +273,7 @@
     "items": {
       "custody": {
         "q": "How does Elleva guarantee asset security and segregation?",
-        "a": "Elleva operates with zero asset custody. Capital remains at regulated tier-1 custodial banks under the investor’s legal tax ID and name. Elleva interacts exclusively through secure, tokenized API/FIX protocols with read/trade permissions strictly governed by deterministic mandate constraints."
+        "a": "Elleva operates with zero asset custody. Capital remains at regulated tier-1 custodial banks under the investor's legal tax ID and name. Elleva interacts exclusively through secure, tokenized API/FIX protocols with read/trade permissions strictly governed by deterministic mandate constraints."
       },
       "replacement": {
         "q": "Does Elleva replace asset managers and fiduciary committees?",
@@ -447,7 +458,7 @@
     "allocation": {
       "fixedIncome": "Fixed Income",
       "globalEquities": "Global Equities",
-      "realAssets": "Real Assets & Infra",
+      "realAssets": "Real Assets & Infrastructure",
       "strategicCash": "Strategic Cash & Reserves",
       "eyebrow": "MANDATE ALLOCATION",
       "heading": "Active Portfolio Weights",
@@ -529,7 +540,11 @@
       "distribution": {
         "eyebrow": "CUSTODIAN DISTRIBUTION",
         "heading": "Tier-1 Asset Segregation",
-        "tooltipLabel": "Custody Share"
+        "tooltipLabel": "Custody Share",
+        "bny": "BNY Mellon",
+        "stateStreet": "State Street",
+        "jpMorgan": "J.P. Morgan",
+        "euroclear": "Euroclear"
       },
       "categories": {
         "sovereignFixedIncome": "Sovereign Fixed Income",
@@ -541,6 +556,13 @@
         "t0": "T+0 Intraday",
         "t1": "T+1 DVP",
         "t0Realtime": "T+0 Real-time"
+      },
+      "holdingsNames": {
+        "tbills": "US Treasury Bills 3M / 6M",
+        "tnotes": "US Treasury Notes 2Y",
+        "msciWorld": "MSCI World ETF",
+        "infra": "Global Infrastructure Fund",
+        "sofrSweep": "SOFR Cash Sweep"
       }
     },
     "allocationView": {
@@ -581,14 +603,15 @@
       "assetClasses": {
         "sovereignFixedIncome": "Sovereign Fixed Income",
         "globalEquitiesCore": "Global Equities Core",
-        "realAssetsInfra": "Real Assets & Infra",
+        "realAssetsInfra": "Real Assets & Infrastructure",
         "strategicCashSofr": "Strategic Cash & SOFR"
       },
       "regions": {
         "northAmerica": "North America",
         "developedEurope": "Developed Europe",
         "developedAsia": "Developed Asia (APAC)",
-        "globalEmerging": "Global Emerging Markets"
+        "globalEmerging": "Global Emerging Markets",
+        "globalSupranational": "Global Supranational"
       }
     },
     "performanceView": {
@@ -714,8 +737,10 @@
       "horizons": {
         "t0": "T+0 Intraday",
         "t1": "T+1 Next Day",
+        "t2": "T+2 / T+3 Market",
         "t2t3": "T+2 / T+3 Market",
-        "t5": "T+5 Global Core"
+        "t5": "T+5 Global Core",
+        "t30": "T+30 One Month"
       },
       "instruments": {
         "repo": "Overnight Fed Reverse Repo / SOFR Cash",
@@ -723,7 +748,11 @@
         "sovereignBonds": "Sovereign G7 Government Bonds",
         "tier1Cash": "Tier-1 Cash Equivalents",
         "tier1Sovereign": "Tier-1 Sovereign",
-        "tier1Gov": "Tier-1 Gov"
+        "tier1Gov": "Tier-1 Gov",
+        "benchmarkNotes": "US Benchmark Notes (Liquid G10)",
+        "tier1HighLiquid": "Tier-1 High Liquid",
+        "largeCapEq": "Liquid Large-Cap Equities (DVP)",
+        "liquidEquities": "Liquid Equities"
       },
       "footnote": "100% of liquid assets held in DVP / immediate delivery accounts."
     },
@@ -753,7 +782,8 @@
       "matrix": {
         "eyebrow": "MACRO REGIME MATRIX",
         "heading": "Autonomous Intelligence Engine Signals",
-        "badge": "DETERMINISTIC ENGINE"
+        "badge": "DETERMINISTIC ENGINE",
+        "confLabel": "Confidence:"
       },
       "theses": {
         "eyebrow": "AUTONOMOUS SYNTHESIS",
@@ -771,7 +801,17 @@
         "neutral": "Neutral",
         "volatilityRegime": "Cross-Asset Volatility Regime",
         "subdued": "Subdued (<14 VIX)",
-        "riskOn": "Risk-On Bias"
+        "riskOn": "Risk-On Bias",
+        "moderateExpansion": "Moderate Expansion",
+        "inflationDrift": "Fiduciary Inflation Drift",
+        "disinflating": "Disinflating / Neutral",
+        "termPremia": "Sovereign Curve Term Premia",
+        "normalizedSlope": "Normalized Slope",
+        "neutralDuration": "Neutral Duration",
+        "creditRiskPremia": "Credit Risk Premia (IG/HY)",
+        "tightSpreads": "Tight Spreads / Stable",
+        "noTailStress": "No Tail Stress",
+        "controlled": "Controlled"
       },
       "thesesItems": {
         "semiCooling": "Specialized Semiconductors & Power Infrastructure",
@@ -779,7 +819,15 @@
         "steepener": "Global Sovereign Yield Curve Steepener",
         "steepenerHypothesis": "Hypothesis: Fiscal term premium repricing driving curve disinversion.",
         "activeConviction": "Active Conviction (94%)",
-        "tacticalConviction": "Tactical Conviction (88%)"
+        "tacticalConviction": "Tactical Conviction (88%)",
+        "durationTitle": "Sovereign Duration Immunization",
+        "durationHypothesis": "Maintain effective duration within +/-0.05y of benchmark mandate to neutralize rates volatility.",
+        "qualityTitle": "Systematic Factor Quality Overweight",
+        "qualityHypothesis": "Maintain positive exposure to institutional profitability and balance-sheet resilience factors.",
+        "custodyTitle": "Intraday Custody Segregation Auditing",
+        "custodyHypothesis": "Enforce real-time cryptographic asset reconciliation across all 4 Tier-1 custodial vaults.",
+        "verifiedContinuous": "VERIFIED CONTINUOUS",
+        "activeExecution": "ACTIVE EXECUTION"
       },
       "footnote": "Cross-validation across 4,820 macro time series with zero hallucination guardrails."
     },
@@ -814,7 +862,13 @@
       },
       "sources": {
         "eyebrow": "RETURN SOURCES",
-        "heading": "Net Factor Decomposition"
+        "heading": "Net Factor Decomposition",
+        "qualityTitle": "Quality & Profitability Factor",
+        "qualitySubtitle": "Primary Return Engine",
+        "liquidityTitle": "Liquidity Premium Factor",
+        "liquiditySubtitle": "Tier-1 Sovereign Premium",
+        "lowVolTitle": "Low Volatility Bias",
+        "lowVolSubtitle": "Defensive Downside Shield"
       },
       "factors": {
         "value": "Value Factor",
@@ -856,6 +910,26 @@
           "label": "Daily Automated Checks",
           "value": "86,400",
           "status": "1 Check per Second"
+        },
+        "activeAudits": {
+          "label": "Active Real-Time Audits",
+          "value": "100.0%",
+          "status": "All Nodes Nominal"
+        },
+        "criticalAlerts": {
+          "label": "Critical Violations / Alerts",
+          "value": "0",
+          "status": "Zero Violations"
+        },
+        "telemetryLatency": {
+          "label": "Telemetry Sync Latency",
+          "value": "18 ms",
+          "status": "Distributed Encrypted Ledger"
+        },
+        "compliancePassRate": {
+          "label": "Pre-Trade Rule Compliance Rate",
+          "value": "100.0%",
+          "status": "4,210 Checks All Passed"
         }
       },
       "log": {
@@ -907,7 +981,9 @@
         "orderRouter": "Core Order Router (FIX 5.0)",
         "riskEngine": "Monte Carlo Risk Engine (HPC)",
         "custodyRecon": "Custodial DVP Reconciliation",
-        "firewall": "Pre-Trade Mandate Firewall"
+        "firewall": "Pre-Trade Mandate Firewall",
+        "latency": "Latency:",
+        "load": "Load:"
       },
       "events": {
         "fiduciaryRecon": "Continuous Fiduciary Ledger Reconciliation: 0 Discrepancies",
@@ -918,7 +994,13 @@
         "verified": "VERIFIED",
         "passed": "PASSED"
       },
-      "footnote": "99.999% SLA backed by multi-region deterministic consensus."
+      "footnote": "99.999% SLA backed by multi-region deterministic consensus.",
+      "subsystems": {
+        "router": "Core Order Router (FIX 5.0)",
+        "riskEngine": "Monte Carlo Risk Engine (HPC)",
+        "reconciliation": "Custodial DVP Reconciliation",
+        "firewall": "Pre-Trade Mandate Firewall"
+      }
     },
     "complianceView": {
       "stats": {
@@ -949,7 +1031,8 @@
         "badge": "DETERMINISTIC AUDIT",
         "limitLabel": "Limit:",
         "currentLabel": "Current:",
-        "statusPassed": "PASSED"
+        "statusPassed": "PASSED",
+        "compliant": "COMPLIANT"
       },
       "seal": {
         "eyebrow": "CRYPTOGRAPHIC AUDIT SEAL",
@@ -958,7 +1041,9 @@
         "merkle": "Immutable Merkle Tree Ledger",
         "merkleRoot": "Merkle Root:",
         "epoch": "Epoch Timestamp:",
-        "custodyId": "Fiduciary Custody ID:"
+        "custodyId": "Fiduciary Custody ID:",
+        "merkleTree": "Immutable Merkle Tree Ledger",
+        "epochTimestamp": "Epoch Timestamp:"
       },
       "rules": {
         "singleIssuer": "Single Issuer Exposure Cap",
@@ -968,9 +1053,64 @@
         "esgScreening": "OFAC / ESG Negative Screening",
         "esgScreeningLimit": "0 Violations",
         "illiquidAssets": "Illiquid Assets Allocation Cap",
-        "illiquidAssetsLimit": "< 1.0% Net AUM"
+        "illiquidAssetsLimit": "< 1.0% Net AUM",
+        "leverageLimit": "0.00x (No Leverage Permitted)",
+        "investmentGrade": "Minimum Investment Grade Floor",
+        "investmentGradeLimit": "100% BBB- or higher",
+        "custodySegregation": "Direct Custody Segregation Mandate",
+        "custodySegregationLimit": "100% Client Legal Title",
+        "leverage": "Mandate Leverage Constraint"
       },
       "footnote": "Zero compliance exceptions recorded across all monitored mandates."
+    },
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun",
+      "jul": "Jul"
+    },
+    "overview": {
+      "allocation": {
+        "eyebrow": "MANDATE ALLOCATION",
+        "heading": "Active Portfolio Weights",
+        "tooltipLabel": "Allocated Weight",
+        "fixedIncome": "Fixed Income",
+        "globalEquities": "Global Equities",
+        "realAssets": "Real Assets & Infrastructure",
+        "strategicCash": "Strategic Cash & Reserves"
+      },
+      "stats": {
+        "monitoredAum": {
+          "label": "Monitored Mandate AUM",
+          "value": "US$ 482.5M",
+          "status": "Nominal / Segregated"
+        },
+        "adherence": {
+          "label": "Mandate Policy Adherence",
+          "value": "99.8%",
+          "deviation": "0.00% Drift Deviation"
+        },
+        "var": {
+          "label": "Parametric 99% 10D VaR",
+          "value": "1.24%",
+          "policyLimit": "Limit: 4.50% (Compliant)"
+        },
+        "custody": {
+          "label": "Custody Status",
+          "status": "Segregated Tier-1",
+          "subtext": "100% Client Legal Title"
+        }
+      },
+      "chart": {
+        "eyebrow": "DYNAMIC EFFICIENT FRONTIER",
+        "heading": "Real-Time Stochastic Simulation",
+        "seriesExecution": "Optimal Stochastic Frontier",
+        "seriesTarget": "Mandate Policy Boundary",
+        "badge": "10,000 PATH SIMULATION"
+      }
     }
   },
   "intelligence": {
@@ -1032,24 +1172,24 @@
         "desc": "Global assets under management today"
       },
       "globalProjection2030": {
-        "label": "Projeção Global 2030",
+        "label": "Global Projection 2030",
         "desc": "Projected global AUM by 2030"
       },
       "familyOfficesToday": {
-        "label": "Family Offices Hoje",
+        "label": "Family Offices Today",
         "desc": "Current family office AUM"
       },
       "familyOffices2030": {
         "label": "Family Offices 2030",
-        "desc": "Expansão projetada até 2030"
+        "desc": "Projected expansion by 2030"
       }
     },
     "chart": {
       "eyebrow": "MARKET TRANSFORMATION",
       "heading": "AUM per FTE vs. Total Managed Assets",
-      "scale": "Scale: Trillions of Dollars (USD )",
+      "scale": "Scale: Trillions of Dollars (USD)",
       "tooltipAum": "AUM Global",
-      "seriesGlobalAum": "AUM Global (US$ Trilhões)",
+      "seriesGlobalAum": "Global AUM (US$ Trillions)",
       "footnote": "* Data anchor: US$ 147T in 2025 and US$ 200T projected in 2030 for global AUM; US$ 3.1T today and US$ 5.4T projected in 2030 for family offices. Points from 2026 to 2029 represent visual geometric interpolation."
     }
   },
@@ -1179,7 +1319,7 @@
     },
     "pillar3": {
       "title": "Segregated Direct Custody",
-      "quote": "Zero custody risk: capital never leaves the client’s qualified custodian."
+      "quote": "Zero custody risk: capital never leaves the client's qualified custodian."
     },
     "pillar4": {
       "title": "Explainable Audit Trails",
@@ -1263,7 +1403,7 @@
       }
     },
     "title": "Software That Executes Decisions",
-    "description": "Traditional software records historical transactions. Elleva’s autonomous infrastructure actively performs analytical and operational tasks to deliver superior leverage.",
+    "description": "Traditional software records historical transactions. Elleva's autonomous infrastructure actively performs analytical and operational tasks to deliver superior leverage.",
     "stepLabel": "STAGE",
     "closingQuote": "Not merely a fintech tool. A true operational infrastructure for capital."
   },
@@ -1377,7 +1517,7 @@
     "guarantees": {
       "segregation": {
         "title": "Fiduciary Asset Segregation",
-        "quote": "Elleva never takes custody of assets. Capital remains at qualified custodians in the client’s legal name."
+        "quote": "Elleva never takes custody of assets. Capital remains at qualified custodians in the client's legal name."
       },
       "determinism": {
         "title": "Deterministic Risk Controls",
@@ -1409,16 +1549,5 @@
     "title": "Institutional-Grade Governance & Security",
     "description": "Elleva operates purely as an intelligence and orchestration layer. Capital remains safely in segregated custody at regulated institutions.",
     "guaranteeLabel": "GUARANTEE"
-  },
-  "common": {
-    "done": "Done",
-    "footer": {
-      "copyright": "Elleva © 2026. All rights reserved.",
-      "terms": "Institutional Terms",
-      "security": "Security & Compliance",
-      "regulatory": "Regulatory Disclosures"
-    },
-    "close": "Close",
-    "year": "Year"
   }
 }

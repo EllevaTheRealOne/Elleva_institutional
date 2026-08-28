@@ -167,7 +167,7 @@
     "layer3": {
       "title": "Chiều sâu Lĩnh vực Vận hành",
       "quote": "Chiều sâu vận hành tạo ra hiệu quả tổng hợp.",
-      "detail": "Mô hình hóa quy trình đầu tư đầu-cuối không bị phân mảnh — từ tiếp nhận vĩ mô đến rủi ro trước giao dịch và kiểm toán thực thi sau giao dịch.",
+      "detail": "Mô hình hóa quy trình đầu tư đầu-cuối không bị phân mảnh—từ tiếp nhận vĩ mô đến rủi ro trước giao dịch và kiểm toán thực thi sau giao dịch.",
       "level": "CẤP ĐỘ 3"
     },
     "layer2": {
@@ -195,18 +195,10 @@
   },
   "ecosystem": {
     "categories": {
-      "custodians": {
-        "title": "Ngân hàng và Tổ chức Lưu ký"
-      },
-      "brokers": {
-        "title": "Môi giới và Sàn Thanh khoản"
-      },
-      "marketData": {
-        "title": "Dữ liệu Thị trường và Nguồn cấp dữ liệu"
-      },
-      "compliance": {
-        "title": "Cơ quan Quản lý và Kiểm toán"
-      }
+      "custodians": { "title": "Ngân hàng và Tổ chức Lưu ký" },
+      "brokers": { "title": "Môi giới và Sàn Thanh khoản" },
+      "marketData": { "title": "Dữ liệu Thị trường và Nguồn cấp dữ liệu" },
+      "compliance": { "title": "Cơ quan Quản lý và Kiểm toán" }
     },
     "complianceItems": {
       "soc2": "Kiến trúc Chứng nhận SOC 2 Loại II",
@@ -231,35 +223,20 @@
         "subtitle": "NHÂN LIÊN TỤC",
         "caption": "Hoạt động ủy thác tự động"
       },
-      "stage1": {
-        "label": "1. Nghiên cứu",
-        "desc": "Thông minh thị trường"
-      },
-      "stage2": {
-        "label": "2. Quyết định",
-        "desc": "Tối ưu hóa ủy thác"
-      },
-      "stage3": {
-        "label": "3. Kiểm tra Rủi ro",
-        "desc": "Ranh giới xác định"
-      },
+      "stage1": { "label": "1. Nghiên cứu", "desc": "Thông minh thị trường" },
+      "stage2": { "label": "2. Quyết định", "desc": "Tối ưu hóa ủy thác" },
+      "stage3": { "label": "3. Kiểm tra Rủi ro", "desc": "Ranh giới xác định" },
       "stage4": {
         "label": "4. Thực thi",
         "desc": "Định tuyến lệnh thông minh"
       },
-      "stage5": {
-        "label": "5. Thanh toán",
-        "desc": "Lưu ký trực tiếp"
-      },
-      "stage6": {
-        "label": "6. Giám sát",
-        "desc": "Nhật ký kiểm toán bất biến"
-      }
+      "stage5": { "label": "5. Thanh toán", "desc": "Lưu ký trực tiếp" },
+      "stage6": { "label": "6. Giám sát", "desc": "Nhật ký kiểm toán bất biến" }
     },
     "steps": {
       "s1": "Công cụ thông minh đa nguồn tự động thu thập, làm sạch và cấu trúc dữ liệu tài chính toàn cầu phi cấu trúc 24/7.",
       "s2": "Đánh giá xác định các đề xuất giao dịch đã điều chỉnh rủi ro được xác minh theo tuyên bố chính sách đầu tư theo luật định.",
-      "s3": "Các ràng buộc toán học không thể bị vi phạm — thực thi mức suy giảm tối đa, tập trung ngành và ranh giới thanh khoản.",
+      "s3": "Các ràng buộc toán học không thể bị vi phạm—thực thi mức suy giảm tối đa, tập trung ngành và ranh giới thanh khoản.",
       "s4": "Thực thi lệnh theo thuật toán qua Định tuyến Lệnh Thông minh trên các điểm cuối môi giới và lưu ký trực tiếp với độ trượt giá tối thiểu.",
       "s5": "Thanh toán số dư trước và sau giao dịch liên tục trực tiếp trong các tài khoản tổ chức tách biệt thuộc sở hữu của khách hàng.",
       "s6": "Đối chiếu vị thế thời gian thực, xác minh rào chắn rủi ro và ghi nhật ký kiểm toán bất biến để tuân thủ quy định."
@@ -440,10 +417,7 @@
         "name": "NGHIÊN CỨU",
         "role": "Tác nhân Nghiên cứu Tự động"
       },
-      "decide": {
-        "name": "QUYẾT ĐỊNH",
-        "role": "Nhân Ủy thác Xác định"
-      },
+      "decide": { "name": "QUYẾT ĐỊNH", "role": "Nhân Ủy thác Xác định" },
       "execute": {
         "name": "THỰC THI",
         "role": "Bộ định tuyến Lệnh Thông minh (FIX/DMA)"
@@ -456,772 +430,671 @@
   },
   "investmentExperience": {
     "allocation": {
-      "sovereignFixedIncome": "Thu nhập cố định chính phủ",
-      "globalEquities": "Cổ phiếu cốt lõi toàn cầu",
-      "realAssets": "Tài sản thực & Cơ sở hạ tầng",
-      "strategicCash": "Tiền mặt chiến lược & Dự trữ",
-      "eyebrow": "PHÂN BỔ DANH MỤC ỦY THÁC",
-      "heading": "Tỷ trọng danh mục đầu tư chủ động",
-      "tooltipLabel": "Tỷ trọng phân bổ",
-      "fixedIncome": "Renda Fixa"
+      "fixedIncome": "Thu nhập cố định",
+      "globalEquities": "Cổ phiếu toàn cầu",
+      "realAssets": "Tài sản thực và Cơ sở hạ tầng",
+      "strategicCash": "Tiền mặt chiến lược và Dự trữ",
+      "eyebrow": "PHÂN BỔ ỦY THÁC",
+      "heading": "Tỷ trọng Danh mục Đầu tư Chủ động",
+      "tooltipLabel": "Tỷ trọng Phân bổ"
     },
     "tabs": {
-      "overview": "Tổng quan danh mục",
-      "positions": "Vị thế nắm giữ",
-      "allocation": "Phân bổ tài sản",
-      "performance": "Đóng góp hiệu suất",
-      "risk": "Rủi ro & Hạn mức",
-      "liquidity": "Quản lý thanh khoản",
-      "marketIntelligence": "Thông tin thị trường",
-      "attribution": "Phân tích nhân tố",
-      "alerts": "Cảnh báo đo lường từ xa",
-      "compliance": "Tuân thủ ủy thác"
+      "overview": "Tổng quan Danh mục",
+      "positions": "Vị thế",
+      "allocation": "Phân bổ Tài sản",
+      "performance": "Đóng góp Hiệu suất",
+      "risk": "Rủi ro và Hạn mức",
+      "liquidity": "Quản lý Thanh khoản",
+      "marketIntelligence": "Thông minh Thị trường",
+      "attribution": "Phân tích Nhân tố",
+      "alerts": "Cảnh báo Đo từ xa",
+      "compliance": "Tuân thủ Ủy thác"
     },
-    "title": "Trải nghiệm đầu tư tổ chức chính xác cao",
-    "description": "Giao diện điều hành được thiết kế cho các nhà phân bổ tài sản tổ chức, văn phòng quản lý gia sản và ủy ban tín thác đòi hỏi sự minh bạch tuyệt đối và khả năng kiểm soát có tính xác thực cao.",
+    "title": "Trải nghiệm Đầu tư Tổ chức Chính xác",
+    "description": "Một giao diện điều hành được thiết kế cho các nhà phân bổ tài sản tổ chức, văn phòng gia đình và ủy ban ủy thác yêu cầu tính minh bạch tuyệt đối và kiểm soát xác định.",
     "stats": {
       "monitoredAum": {
-        "label": "AUM danh mục ủy thác được giám sát",
-        "status": "Danh nghĩa / Lưu ký tách biệt"
+        "label": "AUM Ủy thác Được Giám sát",
+        "status": "Danh nghĩa / Tách biệt"
       },
       "adherence": {
-        "label": "Mức độ tuân thủ chính sách ủy thác",
-        "deviation": "0.00% độ lệch trôi dạt"
+        "label": "Tuân thủ Chính sách Ủy thác",
+        "deviation": "0,00% Độ lệch"
       },
       "var": {
-        "label": "VaR 10 ngày 99% tham số",
-        "policyLimit": "Hạn mức: 4.50% (Đạt yêu cầu)"
+        "label": "VaR 99% 10D Tham số",
+        "policyLimit": "Hạn mức: 4,50% (Tuân thủ)"
       },
       "custody": {
-        "label": "Tình trạng lưu ký",
-        "status": "Lưu ký tách biệt Cấp 1 (Tier-1)",
-        "subtext": "100% quyền sở hữu pháp lý của khách hàng"
+        "label": "Trạng thái Lưu ký",
+        "status": "Tách biệt Cấp 1",
+        "subtext": "100% Quyền sở hữu Pháp lý của Khách hàng"
       }
     },
     "chart": {
-      "eyebrow": "ĐƯỜNG BIÊN HIỆU QUẢ ĐỘNG",
-      "heading": "Mô phỏng ngẫu nhiên theo thời gian thực",
+      "eyebrow": "BIÊN GIỚI HIỆU QUẢ ĐỘNG",
+      "heading": "Mô phỏng Ngẫu nhiên Thời gian Thực",
       "badge": "MÔ PHỎNG 10.000 ĐƯỜNG ĐI",
-      "seriesExecution": "Đường biên ngẫu nhiên tối ưu",
-      "seriesTarget": "Ranh giới chính sách ủy thác"
+      "seriesExecution": "Biên giới Ngẫu nhiên Tối ưu",
+      "seriesTarget": "Ranh giới Chính sách Ủy thác"
     },
     "positions": {
       "stats": {
         "holdings": {
-          "label": "Tài sản nắm giữ trực tiếp",
-          "value": "142 chứng khoán",
-          "status": "100% lưu ký tách biệt"
+          "label": "Vị thế Trực tiếp Chủ động",
+          "value": "142 Chứng khoán",
+          "status": "100% Lưu ký Tách biệt"
         },
         "custody": {
-          "label": "Tỷ lệ lưu ký tách biệt",
-          "value": "100.0%",
-          "status": "Không có rủi ro đối tác"
+          "label": "Tỷ lệ Lưu ký Tách biệt",
+          "value": "100,0%",
+          "status": "Không Rủi ro Đối tác"
         },
         "liquidity": {
-          "label": "Thanh khoản trong ngày (<24 giờ)",
-          "value": "94.2%",
-          "status": "Kỳ hạn thanh toán T+0 / T+1"
+          "label": "Thanh khoản Trong ngày (<24h)",
+          "value": "94,2%",
+          "status": "T+0 / T+1"
         },
         "exposure": {
-          "label": "Mức độ phơi bày rủi ro gộp thực tế",
-          "value": "100.0%",
-          "status": "Không đòn bẩy / Đúng quy định"
+          "label": "Tổng Mức phơi bày Hiệu quả",
+          "value": "100,0%",
+          "status": "Không Đòn bẩy / Tuân thủ"
         }
       },
       "table": {
         "eyebrow": "CƠ CẤU TÀI SẢN TỔ CHỨC",
-        "heading": "Vị thế chủ chốt & Tình trạng lưu ký",
+        "heading": "Vị thế Chính và Lưu ký Ủy thác",
         "badge": "SỔ CÁI ĐÃ KIỂM TOÁN T+0",
         "asset": "Tài sản / Mã định danh",
-        "category": "Loại tài sản",
+        "category": "Loại Tài sản",
         "weight": "Tỷ trọng (%)",
-        "custodian": "Tổ chức lưu ký",
+        "custodian": "Tổ chức Lưu ký",
         "settlement": "Thanh toán"
       },
       "distribution": {
-        "eyebrow": "PHÂN BỐ TỔ CHỨC LƯU KÝ",
-        "heading": "Tách biệt tài sản chuẩn Cấp 1",
-        "tooltipLabel": "Tỷ phần lưu ký"
+        "eyebrow": "PHÂN BỔ TỔ CHỨC LƯU KÝ",
+        "heading": "Tách biệt Tài sản Cấp 1",
+        "tooltipLabel": "Tỷ phần Lưu ký",
+        "bny": "BNY Mellon",
+        "stateStreet": "State Street",
+        "jpMorgan": "J.P. Morgan",
+        "euroclear": "Euroclear"
       },
       "categories": {
-        "sovereignFixedIncome": "Trái phiếu chính phủ",
-        "globalEquities": "Cổ phiếu toàn cầu",
-        "realAssets": "Tài sản thực",
-        "strategicLiquidity": "Thanh khoản chiến lược"
+        "sovereignFixedIncome": "Thu nhập cố định Chính phủ",
+        "globalEquities": "Cổ phiếu Toàn cầu",
+        "realAssets": "Tài sản Thực",
+        "strategicLiquidity": "Thanh khoản Chiến lược"
       },
       "settlementTypes": {
         "t0": "T+0 Trong ngày",
         "t1": "T+1 DVP",
         "t0Realtime": "T+0 Thời gian thực"
+      },
+      "holdingsNames": {
+        "tbills": "Tín phiếu Kho bạc Mỹ 3T / 6T",
+        "tnotes": "Trái phiếu Kho bạc Mỹ 2N",
+        "msciWorld": "ETF MSCI World",
+        "infra": "Quỹ Cơ sở hạ tầng Toàn cầu",
+        "sofrSweep": "Quét Tiền mặt SOFR"
       }
     },
     "allocationView": {
       "stats": {
         "drift": {
-          "label": "Độ lệch tỷ trọng mục tiêu",
-          "value": "±0.12%",
-          "status": "Trong giới hạn cho phép (±1.50%)"
+          "label": "Độ lệch Tỷ trọng Mục tiêu",
+          "value": "±0,12%",
+          "status": "Trong ngưỡng (±1,50%)"
         },
         "duration": {
-          "label": "Thời lượng hiệu dụng chủ động",
-          "value": "4.22 năm",
-          "status": "Điểm chuẩn: 4.20 năm"
+          "label": "Thời lượng Hiệu dụng Chủ động",
+          "value": "4,22 Năm",
+          "status": "Điểm chuẩn: 4,20 Năm"
         },
         "beta": {
-          "label": "Beta chủ động so với chính sách",
-          "value": "0.84",
-          "status": "Đã xác nhận vị thế phòng thủ"
+          "label": "Beta Chủ động so với Chính sách",
+          "value": "0,84",
+          "status": "Đã xác nhận Vị thế Phòng thủ"
         },
         "rebalancing": {
-          "label": "Trạng thái kích hoạt tái cân bằng",
-          "value": "Ở trạng thái cân bằng",
-          "status": "Không cần hành động"
+          "label": "Trạng thái Kích hoạt Tái cân bằng",
+          "value": "Cân bằng",
+          "status": "Không cần Hành động"
         }
       },
       "chart": {
-        "eyebrow": "PHÂN BỔ THEO LOẠI TÀI SẢN",
-        "heading": "Phân bổ thực tế so với Mục tiêu ủy thác",
-        "badge": "KIỂM SOÁT ĐỘ LỆCH XÁC THỰC",
-        "seriesActual": "Phân bổ thực tế (%)",
-        "seriesTarget": "Mục tiêu ủy thác (%)"
+        "eyebrow": "PHÂN BỔ LOẠI TÀI SẢN",
+        "heading": "Phân bổ Thực tế vs Mục tiêu Ủy thác",
+        "badge": "KIỂM SOÁT ĐỘ LỆCH XÁC ĐỊNH",
+        "seriesActual": "Phân bổ Thực tế (%)",
+        "seriesTarget": "Mục tiêu Ủy thác (%)"
       },
       "geography": {
         "eyebrow": "ĐA DẠNG HÓA TOÀN CẦU",
-        "heading": "Mức độ phơi bày theo khu vực địa lý"
+        "heading": "Mức phơi bày Địa lý"
       },
-      "footnote": "Tuân thủ 100% các nguyên tắc phân bổ trái phiếu chính phủ theo chuẩn UCITS/Ủy thác.",
+      "footnote": "Tuân thủ 100% hướng dẫn phân bổ chính phủ UCITS/Ủy thác.",
       "assetClasses": {
-        "sovereignFixedIncome": "Trái phiếu chính phủ",
-        "globalEquitiesCore": "Cổ phiếu cốt lõi toàn cầu",
-        "realAssetsInfra": "Tài sản thực & Cơ sở hạ tầng",
-        "strategicCashSofr": "Tiền mặt chiến lược & SOFR"
+        "sovereignFixedIncome": "Thu nhập cố định Chính phủ",
+        "globalEquitiesCore": "Cổ phiếu Cốt lõi Toàn cầu",
+        "realAssetsInfra": "Tài sản Thực và Cơ sở hạ tầng",
+        "strategicCashSofr": "Tiền mặt Chiến lược và SOFR"
       },
       "regions": {
         "northAmerica": "Bắc Mỹ",
-        "developedEurope": "Châu Âu phát triển",
-        "developedAsia": "Châu Á - Thái Bình Dương phát triển",
-        "globalEmerging": "Thị trường mới nổi toàn cầu"
+        "developedEurope": "Châu Âu Phát triển",
+        "developedAsia": "Châu Á Phát triển (APAC)",
+        "globalEmerging": "Thị trường Mới nổi Toàn cầu",
+        "globalSupranational": "Siêu quốc gia Toàn cầu"
       }
     },
     "performanceView": {
       "stats": {
         "informationRatio": {
-          "label": "Tỷ lệ thông tin (IR)",
-          "value": "1.82",
-          "status": "Tính nhất quán ủy thác"
+          "label": "Tỷ lệ Thông tin (IR)",
+          "value": "1,82",
+          "status": "Nhất quán Ủy thác"
         },
         "trackingError": {
-          "label": "Sai số theo dõi hàng năm (TE)",
-          "value": "1.14%",
-          "status": "Hạn mức chính sách: < 2.50%"
+          "label": "Sai số Theo dõi Hàng năm",
+          "value": "1,14%",
+          "status": "Hạn mức Chính sách: < 2,50%"
         },
         "alpha": {
-          "label": "Lợi nhuận vượt trội Alpha hàng năm",
-          "value": "+3.40%",
-          "status": "Đã khấu trừ toàn bộ chi phí"
+          "label": "Alpha Chủ động Hàng năm",
+          "value": "+3,40%",
+          "status": "Sau khi trừ phí"
         },
         "sharpeRatio": {
-          "label": "Tỷ lệ Sharpe (trên lãi suất phi rủi ro)",
-          "value": "2.14",
-          "status": "Hiệu quả điều chỉnh rủi ro hàng đầu"
+          "label": "Tỷ lệ Sharpe (trên Lãi suất phi rủi ro)",
+          "value": "2,14",
+          "status": "Hiệu suất Điều chỉnh Rủi ro Hàng đầu"
         },
         "maxDrawdown": {
-          "label": "Drawdown Máximo Histórico",
+          "label": "Mức giảm Tối đa Lịch sử",
           "value": "-1,42%",
-          "status": "Recuperação: 14 Dias"
+          "status": "Thời gian Phục hồi: 14 Ngày"
         }
       },
       "chart": {
         "eyebrow": "ĐÓNG GÓP HIỆU SUẤT TÍCH LŨY",
-        "heading": "Giá trị ròng danh mục vs Điểm chuẩn chính sách",
+        "heading": "Giá trị ròng Danh mục vs Điểm chuẩn Chính sách",
         "badge": "KIỂM TOÁN HÀNG NGÀY",
         "seriesPortfolio": "Danh mục Elleva (Giá trị ròng)",
-        "seriesBenchmark": "Điểm chuẩn chính sách (Danh nghĩa)"
-      },
-      "metrics": {
-        "eyebrow": "CÁC CHỈ SỐ THỐNG KÊ ĐIỀU CHỈNH RỦI RO",
-        "heading": "Chỉ số hiệu suất ủy thác",
-        "volatility": "Độ biến động hàng năm",
-        "maxDrawdown": "Mức sụt giảm tối đa (Lịch sử)",
-        "sortinoRatio": "Tỷ lệ Sortino (Rủi ro giảm giá)",
-        "calmarRatio": "Tỷ lệ Calmar (Lợi nhuận/Sụt giảm tối đa)"
+        "seriesBenchmark": "Điểm chuẩn Chính sách"
       },
       "attribution": {
-        "eyebrow": "ATRIBUIÇÃO BRINSON-FACHLER",
-        "heading": "Decomposição de Retorno Ativo",
-        "allocationEffect": "Efeito de Alocação de Ativos",
-        "selectionEffect": "Efeito de Seleção de Títulos",
-        "interactionAlpha": "Alfa de Interação / Execução",
-        "hedgeEffect": "Efeito Líquido de Hedge Cambial"
+        "eyebrow": "ĐÓNG GÓP BRINSON-FACHLER",
+        "heading": "Phân tích Lợi nhuận Chủ động",
+        "allocationEffect": "Hiệu ứng Phân bổ Tài sản",
+        "selectionEffect": "Hiệu ứng Chọn lọc Chứng khoán",
+        "interactionAlpha": "Alpha Tương tác / Thực thi",
+        "hedgeEffect": "Hiệu ứng Phòng ngừa Tiền tệ Ròng"
       },
-      "footnote": "Alfa Ativo Total: +2,74% anualizado sobre a política de benchmark."
+      "footnote": "Tổng Alpha Chủ động: +2,74% hàng năm so với chính sách điểm chuẩn."
     },
     "riskView": {
       "stats": {
-        "cvar": {
-          "label": "Giá trị rủi ro có điều kiện (CVaR 99%)",
-          "value": "5.10%",
-          "status": "Hạn mức: 6.50% (Đạt)"
-        },
-        "stressLoss": {
-          "label": "Tổn thất tối đa khi kiểm tra sức chịu tải",
-          "value": "-4.80%",
-          "status": "Khủng hoảng thanh khoản toàn cầu"
-        },
-        "durationGap": {
-          "label": "Độ nhạy chênh lệch thời lượng",
-          "value": "+0.02 năm",
-          "status": "Vị thế trung lập với lãi suất"
-        },
-        "liquidityCoverage": {
-          "label": "Tỷ lệ đảm bảo thanh khoản (LCR)",
-          "value": "420%",
-          "status": "Vượt xa tiêu chuẩn Basel III"
-        },
         "parametricVar": {
-          "label": "VaR Paramétrico 99% 10D",
+          "label": "VaR 99% 10D Tham số",
           "value": "1,24%",
-          "status": "Limite: 4,50% (Conforme)"
+          "status": "Hạn mức: 4,50% (Tuân thủ)"
         },
         "expectedShortfall": {
-          "label": "Expected Shortfall (CVaR)",
+          "label": "Thâm hụt Dự kiến (CVaR)",
           "value": "1,89%",
-          "status": "Cauda Extrema Normalizada"
+          "status": "Rủi ro Đuôi Chuẩn hóa"
         },
         "stressCoverage": {
-          "label": "Cobertura de Estresse",
+          "label": "Mức độ Che phủ Tổn thất Áp lực",
           "value": "3,8x",
-          "status": "Mínimo Regulatório: 1,5x"
+          "status": "Tối thiểu Quy định: 1,5x"
         },
         "durationMismatch": {
-          "label": "Descompasso de Duration",
+          "label": "Sai lệch Thời lượng",
           "value": "+0,02y",
-          "status": "Imunização Ativa"
+          "status": "Miễn nhiễm Chủ động"
         }
       },
       "chart": {
-        "eyebrow": "KIỂM TRA SỨC CHỊU TẢI KỊCH BẢN LỊCH SỬ",
-        "heading": "Mô phỏng cú sốc kịch bản kinh tế vĩ mô",
+        "eyebrow": "KIỂM TRA ÁP LỰC NGẪU NHIÊN VĨ MÔ",
+        "heading": "Mô phỏng Cú sốc Kịch bản",
         "badge": "4 KỊCH BẢN NGHIÊM TRỌNG",
-        "seriesImpact": "Tác động ước tính đến danh mục (%)",
-        "mandateLimit": "Mức dung sai ủy thác tối đa (-5.00%)"
-      },
-      "scenarios": {
-        "ratesShock": "Lãi suất tăng đột ngột (+200 điểm cơ bản)",
-        "globalRecession": "Suy thoái kinh tế toàn cầu sâu sắc",
-        "liquidityFreeze": "Thị trường tín dụng đóng băng & Khủng hoảng thanh khoản",
-        "geopoliticalCrisis": "Cú sốc địa chính trị nghiêm trọng",
-        "stagflation": "Choque de Estagflação Macro",
-        "geopolitical": "Salto de Volatilidade Geopolítica",
-        "yieldSpike": "Pico na Curva de Juros (+150bps)",
-        "equityDrawdown": "Drawdown de Ações Globais (-20%)"
-      },
-      "breakdown": {
-        "eyebrow": "PHÂN RÃ NHÂN TỐ RỦI RO",
-        "heading": "Đóng góp rủi ro cận biên (MCTR)",
-        "equityRisk": "Rủi ro Beta thị trường cổ phiếu",
-        "interestRateRisk": "Thời lượng lãi suất & Đường cong lợi suất",
-        "creditSpread": "Chênh lệch tín dụng & Rủi ro vỡ nợ",
-        "fxCommodity": "Mức độ phơi bày ngoại hối & Hàng hóa"
+        "seriesImpact": "Tác động đến Danh mục (%)",
+        "mandateLimit": "Hạn mức Ủy thác"
       },
       "budget": {
-        "eyebrow": "ORÇAMENTO DE RISCO",
-        "heading": "Utilização de Limites de Mandato",
-        "varConsumption": "Consumo de VaR 99%",
-        "trackingErrorLimit": "Limite de Tracking Error",
-        "concentrationLimit": "Concentração em Emissor Único",
-        "stressAbsorption": "Absorção de Estresse de Liquidez",
-        "compliant": "Conforme"
+        "eyebrow": "NGÂN SÁCH RỦI RO",
+        "heading": "Sử dụng Hạn mức Chính sách Ủy thác",
+        "varConsumption": "Tiêu thụ VaR 99%",
+        "trackingErrorLimit": "Hạn mức Sai số Theo dõi",
+        "concentrationLimit": "Tập trung vào Một Tổ chức Phát hành",
+        "stressAbsorption": "Hấp thụ Áp lực Thanh khoản",
+        "compliant": "Tuân thủ"
       },
-      "footnote": "Validação contínua de Monte Carlo executa 10.000 trajetórias por ciclo."
+      "scenarios": {
+        "stagflation": "Cú sốc Lạm phát đình trệ Vĩ mô",
+        "geopolitical": "Bùng nổ Biến động Địa chính trị",
+        "yieldSpike": "Tăng đột biến Đường cong Lợi suất (+150bp)",
+        "equityDrawdown": "Giảm điểm Cổ phiếu Toàn cầu (-20%)"
+      },
+      "footnote": "Xác nhận Monte Carlo liên tục chạy 10.000 đường dẫn mỗi chu kỳ."
     },
     "liquidityView": {
       "stats": {
-        "t0Coverage": {
-          "label": "Thanh khoản thanh lý tức thì T+0",
-          "value": "US$ 142.5M",
-          "status": "Khả dụng thanh toán qua đêm"
-        },
-        "t1Coverage": {
-          "label": "Thanh khoản chuyển đổi T+1 DVP",
-          "value": "US$ 218.0M",
-          "status": "Trái phiếu chính phủ thanh khoản cao"
-        },
-        "avgBidAsk": {
-          "label": "Chênh lệch giá mua/bán bình quân gia quyền",
-          "value": "0.8 bps",
-          "status": "Độ sâu thị trường vượt trội"
-        },
-        "stressedExit": {
-          "label": "Thời gian thoái vốn khi khủng hoảng (90% AUM)",
-          "value": "< 48 giờ",
-          "status": "Tác động thị trường < 12 bps"
-        },
         "cashT0": {
-          "label": "Caixa Disponível T+0",
+          "label": "Tiền mặt Sẵn có T+0",
           "value": "US$ 57,9M",
-          "status": "Liquidez Imediata"
+          "status": "Thanh khoản Tức thời"
         },
         "convertibleT1": {
-          "label": "Ativos Conversíveis T+1",
+          "label": "Tài sản Có thể Chuyển đổi T+1",
           "value": "US$ 214,2M",
-          "status": "Treasuries & Soberanos"
+          "status": "Trái phiếu Chính phủ"
         },
         "lcr": {
-          "label": "Índice de Cobertura (LCR)",
+          "label": "Tỷ lệ Che phủ Thanh khoản (LCR)",
           "value": "420%",
-          "status": "Basileia III: >100%"
+          "status": "Basel III: >100%"
         },
         "settlementFail": {
-          "label": "Falhas de Liquidação",
+          "label": "Tỷ lệ Thất bại Thanh toán",
           "value": "0,00%",
-          "status": "0 Falhas em 12 Meses"
+          "status": "0 Thất bại trong 12 Tháng"
         }
       },
       "chart": {
-        "eyebrow": "THANG KỲ HẠN THANH KHOẢN",
-        "heading": "Nguồn vốn thanh lý tích lũy (Triệu USD)",
+        "eyebrow": "THANG THỜI HẠN THANH KHOẢN",
+        "heading": "Hồ sơ Chuyển đổi Tiền mặt theo Kỳ hạn",
         "badge": "GIÁM SÁT TRONG NGÀY",
-        "seriesLiquidity": "Quy mô thanh khoản khả dụng"
-      },
-      "horizons": {
-        "t0": "T+0 (Tức thì)",
-        "t1": "T+1 (24 giờ)",
-        "t2": "T+2 (48 giờ)",
-        "t5": "T+5 (1 tuần)",
-        "t30": "T+30 (1 tháng)",
-        "t2t3": "T+2 / T+3 Mercado"
-      },
-      "stress": {
-        "eyebrow": "KỊCH BẢN ÁP LỰC THANH KHOẢN CỰC ĐOAN",
-        "heading": "Biên độ an toàn thanh khoản",
-        "dailyOutflow": "Rút vốn dự kiến tối đa trong một ngày",
-        "bufferAvailable": "Đệm thanh khoản dự phòng khả dụng",
-        "collateralHaircut": "Tỷ lệ khấu trừ tài sản bảo đảm chất lượng",
-        "settlementStatus": "Trạng thái thanh toán tự động"
+        "seriesLiquidity": "Tích lũy Sẵn có (US$ M)"
       },
       "buffers": {
-        "eyebrow": "RESERVAS DE SEGURANÇA",
-        "heading": "Instrumentos de Liquidez Primária"
+        "eyebrow": "BỘ ĐỆM AN TOÀN",
+        "heading": "Công cụ Thanh khoản Chính"
+      },
+      "horizons": {
+        "t0": "T+0 Trong ngày",
+        "t1": "T+1 Ngày tiếp theo",
+        "t2": "T+2 Thị trường",
+        "t2t3": "T+2 / T+3 Thị trường",
+        "t5": "T+5 Cốt lõi Toàn cầu",
+        "t30": "T+30 Một Tháng"
       },
       "instruments": {
-        "repo": "Overnight Fed Reverse Repo / Caixa SOFR",
-        "tbills": "US Treasury Bills (< 90 dias)",
-        "sovereignBonds": "Títulos Soberanos Governamentais G7",
-        "tier1Cash": "Equivalentes de Caixa Tier-1",
-        "tier1Sovereign": "Soberano Tier-1",
-        "tier1Gov": "Governamental Tier-1"
+        "repo": "Repo Liên bang Qua đêm / Tiền mặt SOFR",
+        "tbills": "Tín phiếu Kho bạc Mỹ (dưới 90 ngày)",
+        "sovereignBonds": "Trái phiếu Chính phủ G7",
+        "tier1Cash": "Tương đương Tiền mặt Cấp 1",
+        "tier1Sovereign": "Chính phủ Cấp 1",
+        "tier1Gov": "Chính phủ Cấp 1",
+        "benchmarkNotes": "Trái phiếu Chuẩn Mỹ (G10 Thanh khoản)",
+        "tier1HighLiquid": "Thanh khoản Cao Cấp 1",
+        "largeCapEq": "Cổ phiếu Vốn hóa Lớn Thanh khoản (DVP)",
+        "liquidEquities": "Cổ phiếu Thanh khoản"
       },
-      "footnote": "100% dos ativos líquidos mantidos em contas DVP / liquidação imediata."
+      "footnote": "100% tài sản thanh khoản được nắm giữ trong tài khoản DVP / giao ngay."
     },
     "marketIntelligenceView": {
       "stats": {
-        "feedsProcessed": {
-          "label": "Nguồn dữ liệu xử lý mỗi ngày",
-          "value": "4.8M+",
-          "status": "Dữ liệu đa tài sản theo thời gian thực"
-        },
-        "regimeState": {
-          "label": "Giai đoạn chu kỳ vĩ mô hiện tại",
-          "value": "Mở rộng giai đoạn cuối",
-          "status": "Độ tin cậy: 94.2%"
-        },
-        "sentimentScore": {
-          "label": "Chỉ số tâm lý thị trường đa tài sản",
-          "value": "+0.42 (Tích cực vừa phải)",
-          "status": "Kiểm soát vị thế mang tính hệ thống"
-        },
-        "signalLatency": {
-          "label": "Độ trễ phát tín hiệu",
-          "value": "< 120 ms",
-          "status": "Suy luận chính xác dưới mili-giây"
-        },
         "telemetryFeeds": {
-          "label": "Feeds de Telemetria Global",
+          "label": "Nguồn cấp Đo từ xa Toàn cầu",
           "value": "4.820/s",
-          "status": "Processamento em Tempo Real"
+          "status": "Xử lý Thời gian Thực"
         },
         "regimeConfidence": {
-          "label": "Confiança do Regime Macro",
+          "label": "Độ tin cậy Chế độ Vĩ mô",
           "value": "94,2%",
-          "status": "Fase: Expansão Moderada"
+          "status": "Giai đoạn: Mở rộng Vừa phải"
         },
         "correlationShift": {
-          "label": "Deslocamento de Correlação",
+          "label": "Dịch chuyển Tương quan Đa tài sản",
           "value": "-0,18",
-          "status": "Descorrelação Ativa"
+          "status": "Giải tương quan Chủ động"
         },
         "yieldSteepening": {
-          "label": "Inclinação da Curva",
+          "label": "Chỉ số Dốc Đường cong",
           "value": "+14 bps",
-          "status": "Curva Normalizada"
+          "status": "Đường cong Chuẩn hóa"
         }
       },
       "matrix": {
-        "eyebrow": "MA TRẬN TÍN HIỆU CHU KỲ VĨ MÔ",
-        "heading": "Tín hiệu động cơ thông minh tự chủ theo thời gian thực",
-        "badge": "ĐỘNG CƠ XÁC THỰC",
-        "confLabel": "Độ tin cậy"
-      },
-      "indicators": {
-        "usRates": "Cấu trúc kỳ hạn lãi suất & Đường cong lợi suất Hoa Kỳ",
-        "sofrSpread": "Chênh lệch SOFR / Thị trường Repo & Thanh khoản",
-        "creditSpreads": "Chênh lệch tín dụng cấp đầu tư (IG) & Lợi suất cao (HY)",
-        "vixTermStructure": "Cấu trúc kỳ hạn biến động VIX & Độ lệch quyền chọn"
-      },
-      "indicatorStatuses": {
-        "disinversionTrend": "Đường cong lợi suất đang bình thường hóa",
-        "lowSystemicStress": "Áp lực hệ thống thấp / Thanh khoản ổn định",
-        "rangeBoundCompression": "Dao động trong biên độ hợp lý",
-        "contangoNormal": "Cấu trúc Contango bình thường / Rủi ro đuôi được kiểm soát"
-      },
-      "indicatorSignals": {
-        "durationNeutral": "Thời lượng trung lập",
-        "favorableCarry": "Lợi nhuận nắm giữ thuận lợi",
-        "selectiveCredit": "Chọn lọc tín dụng",
-        "hedgedEquity": "Phòng ngừa rủi ro cổ phiếu"
-      },
-      "insights": {
-        "eyebrow": "KẾT LUẬN CHIẾN LƯỢC ĐỊNH HƯỚNG",
-        "heading": "Triển vọng vĩ mô và khuyến nghị phân bổ theo thuật toán",
-        "point1": "Đường cong lợi suất dốc hơn củng cố giá trị phân bổ vào trái phiếu chính phủ kỳ hạn 4-5 năm.",
-        "point2": "Áp lực lạm phát hàng hóa hạ nhiệt tạo môi trường thuận lợi cho chiến lược cổ phiếu cổ tức cao toàn cầu.",
-        "point3": "Đồng USD ổn định mở ra cơ hội chiến thuật cho trái phiếu chính phủ chất lượng cao bằng nội tệ tại thị trường mới nổi."
+        "eyebrow": "MA TRẬN CHẾ ĐỘ VĨ MÔ",
+        "heading": "Tín hiệu Công cụ Thông minh Tự động",
+        "badge": "CÔNG CỤ XÁC ĐỊNH",
+        "confLabel": "Độ tin cậy:"
       },
       "theses": {
-        "eyebrow": "SÍNTESE AUTÔNOMA",
-        "heading": "Teses de Investimento e Hipóteses Ativas"
+        "eyebrow": "TỔNG HỢP TỰ ĐỘNG",
+        "heading": "Luận điểm Đầu tư và Giả thuyết Chủ động"
       },
       "signals": {
-        "growthImpulse": "Impulso de Crescimento Macro",
-        "expansion": "Expansão Moderada",
-        "constructive": "Construtivo",
-        "liquidityCondition": "Condições de Liquidez Global",
-        "neutralPlus": "Neutro (+0,2z)",
-        "balanced": "Equilibrado",
-        "realRates": "Trajetória de Juros Reais",
-        "restrictive": "Restritivo Estável",
-        "neutral": "Neutro",
-        "volatilityRegime": "Regime de Volatilidade Multi-Ativos",
-        "subdued": "Moderado (<14 VIX)",
-        "riskOn": "Viés Pró-Risco"
+        "growthImpulse": "Xung Tăng trưởng Vĩ mô",
+        "expansion": "Mở rộng Vừa phải",
+        "constructive": "Xây dựng",
+        "liquidityCondition": "Điều kiện Thanh khoản Toàn cầu",
+        "neutralPlus": "Trung lập (+0,2z)",
+        "balanced": "Cân bằng",
+        "realRates": "Quỹ đạo Lãi suất Thực",
+        "restrictive": "Hạn chế Ổn định",
+        "neutral": "Trung lập",
+        "volatilityRegime": "Chế độ Biến động Đa tài sản",
+        "subdued": "Ôn hòa (<14 VIX)",
+        "riskOn": "Thiên hướng Rủi ro",
+        "moderateExpansion": "Mở rộng Vừa phải",
+        "inflationDrift": "Độ trôi Lạm phát Ủy thác",
+        "disinflating": "Giảm lạm phát / Trung lập",
+        "termPremia": "Phần bù Kỳ hạn Đường cong Chính phủ",
+        "normalizedSlope": "Độ dốc Chuẩn hóa",
+        "neutralDuration": "Thời lượng Trung lập",
+        "creditRiskPremia": "Phần bù Rủi ro Tín dụng (IG/HY)",
+        "tightSpreads": "Chênh lệch hẹp / Ổn định",
+        "noTailStress": "Không có Áp lực Đuôi",
+        "controlled": "Được kiểm soát"
       },
       "thesesItems": {
-        "semiCooling": "Semicondutores Especializados e Infraestrutura Elétrica",
-        "semiHypothesis": "Hipótese: Expansão assimétrica de capex em refrigeração líquida e redes limpas.",
-        "steepener": "Inclinação da Curva de Juros Soberana Global",
-        "steepenerHypothesis": "Hipótese: Reprecificação de prêmio de prazo fiscal acelerando desinversão.",
-        "activeConviction": "Convicção Ativa (94%)",
-        "tacticalConviction": "Convicção Tática (88%)"
+        "semiCooling": "Bán dẫn Chuyên dụng và Cơ sở hạ tầng Điện",
+        "semiHypothesis": "Giả thuyết: Mở rộng chi phí vốn không đối xứng trong làm mát bằng chất lỏng và lưới điện sạch.",
+        "steepener": "Làm dốc Đường cong Lợi suất Chính phủ Toàn cầu",
+        "steepenerHypothesis": "Giả thuyết: Định giá lại phần bù kỳ hạn tài khóa thúc đẩy bình thường hóa đường cong.",
+        "activeConviction": "Niềm tin Chủ động (94%)",
+        "tacticalConviction": "Niềm tin Chiến thuật (88%)",
+        "durationTitle": "Miễn nhiễm Thời lượng Chính phủ",
+        "durationHypothesis": "Duy trì thời lượng hiệu dụng trong phạm vi +/-0,05 năm của ủy thác chuẩn để trung hòa biến động lãi suất.",
+        "qualityTitle": "Tăng Tỷ trọng Chất lượng Hệ thống",
+        "qualityHypothesis": "Duy trì mức phơi bày tích cực với các yếu tố lợi nhuận tổ chức và khả năng phục hồi bảng cân đối.",
+        "custodyTitle": "Kiểm toán Tách biệt Lưu ký Trong ngày",
+        "custodyHypothesis": "Thực thi đối chiếu tài sản mật mã thời gian thực trên tất cả 4 kho lưu ký Cấp 1.",
+        "verifiedContinuous": "ĐÃ XÁC MINH LIÊN TỤC",
+        "activeExecution": "THỰC THI CHỦ ĐỘNG"
       },
-      "footnote": "Validação cruzada em 4.820 séries temporais macro com proteção estrita contra alucinações."
+      "footnote": "Xác nhận chéo trên 4.820 chuỗi thời gian vĩ mô với rào chắn ảo giác bằng không."
     },
     "attributionView": {
       "stats": {
-        "totalAlpha": {
-          "label": "Tổng lợi nhuận Alpha vượt trội (Hàng năm)",
-          "value": "+3.40%",
-          "status": "So với điểm chuẩn chính sách"
-        },
-        "selectionEffect": {
-          "label": "Hiệu ứng lựa chọn chứng khoán (Selection)",
-          "value": "+1.92%",
-          "status": "Mô hình định lượng từ dưới lên"
-        },
-        "allocationEffect": {
-          "label": "Hiệu ứng phân bổ tài sản (Allocation)",
-          "value": "+1.18%",
-          "status": "Thích ứng linh hoạt chu kỳ vĩ mô"
-        },
-        "interactionEffect": {
-          "label": "Hiệu ứng tương tác và thời điểm",
-          "value": "+0.30%",
-          "status": "Đóng góp từ thực thi lệnh thông minh"
-        },
         "systematic": {
-          "label": "Exposição Fatorial Sistemática",
+          "label": "Mức phơi bày Yếu tố Hệ thống",
           "value": "92,4%",
-          "status": "Fatores Institucionais Puros"
+          "status": "Yếu tố Tổ chức Thuần túy"
         },
         "residual": {
-          "label": "Risco Residual Específico",
+          "label": "Rủi ro Dư Cụ thể",
           "value": "7,6%",
-          "status": "Idiossincrático Controlado"
+          "status": "Idiosyncratic Được Kiểm soát"
         },
         "activeShare": {
-          "label": "Active Share Efetivo",
+          "label": "Phần Chủ động Hiệu quả",
           "value": "68,4%",
-          "status": "Diferenciação Controlada"
+          "status": "Khác biệt hóa Được Kiểm soát"
         },
         "rSquared": {
-          "label": "R² Multi-Fatorial",
+          "label": "R² Đa Yếu tố",
           "value": "0,96",
-          "status": "Ajuste Estatístico Robusto"
+          "status": "Phù hợp Thống kê Mạnh mẽ"
         }
       },
       "chart": {
-        "eyebrow": "PHÂN RÃ NHÂN TỐ BARRA / MSCI",
-        "heading": "Mức độ phơi bày nhân tố phong cách (Z-Score)",
-        "badge": "MÔ HÌNH 7 NHÂN TỐ",
-        "seriesExposure": "Z-Score mức độ phơi bày nhân tố"
-      },
-      "factors": {
-        "value": "Giá trị (Value)",
-        "quality": "Chất lượng (Quality)",
-        "momentum": "Đà tăng trưởng (Momentum)",
-        "lowVol": "Biến động thấp (Low Vol)",
-        "size": "Quy mô (Size)",
-        "liquidity": "Thanh khoản (Liquidity)",
-        "growth": "Tăng trưởng (Growth)",
-        "yield": "Dividendos / Rendimento Carry"
-      },
-      "decomposition": {
-        "eyebrow": "MÔ HÌNH PHÂN TÍCH BRINSON-FACHLER",
-        "heading": "Phân tích toàn diện nguồn gốc lợi nhuận",
-        "assetAllocation": "Phân bổ chiến thuật theo loại tài sản",
-        "securitySelection": "Lựa chọn cổ phiếu Alpha định lượng",
-        "currencyHedging": "Đóng góp từ phòng ngừa rủi ro tỷ giá",
-        "tradingExecution": "Thực thi thông minh & Tiết giảm chi phí giao dịch"
+        "eyebrow": "PHÂN TÍCH YẾU TỐ BARRA / MSCI",
+        "heading": "Mức phơi bày Yếu tố Phong cách",
+        "badge": "MÔ HÌNH 7 YẾU TỐ",
+        "seriesExposure": "Điểm Z Mức phơi bày Yếu tố"
       },
       "sources": {
-        "eyebrow": "FONTES DE RETORNO",
-        "heading": "Decomposição Fatorial Líquida"
+        "eyebrow": "NGUỒN LỢI NHUẬN",
+        "heading": "Phân tách Yếu tố Ròng",
+        "qualityTitle": "Yếu tố Chất lượng và Khả năng Sinh lời",
+        "qualitySubtitle": "Động cơ Lợi nhuận Chính",
+        "liquidityTitle": "Yếu tố Phần bù Thanh khoản",
+        "liquiditySubtitle": "Phần bù Chính phủ Cấp 1",
+        "lowVolTitle": "Thiên lệch Biến động Thấp",
+        "lowVolSubtitle": "Lá chắn Phòng thủ Giảm giá"
+      },
+      "factors": {
+        "value": "Yếu tố Giá trị",
+        "momentum": "Yếu tố Đà tăng",
+        "quality": "Chất lượng / Khả năng Sinh lời",
+        "lowVol": "Biến động Thấp",
+        "size": "Quy mô (Thiên lệch Vốn hóa Lớn)",
+        "yield": "Lợi suất Cổ tức / Carry",
+        "liquidity": "Phần bù Thanh khoản"
       },
       "sourcesItems": {
-        "qualityEngine": "Fator Qualidade & Rentabilidade",
-        "qualityEngineDesc": "Motor Primário de Retorno",
-        "liquidityPremium": "Fator Prêmio de Liquidez",
-        "liquidityPremiumDesc": "Prêmio Soberano Tier-1",
-        "lowVolShield": "Viés de Baixa Volatilidade",
-        "lowVolShieldDesc": "Proteção Defensiva contra Quedas"
+        "qualityEngine": "Yếu tố Chất lượng và Khả năng Sinh lời",
+        "qualityEngineDesc": "Động cơ Lợi nhuận Chính",
+        "liquidityPremium": "Yếu tố Phần bù Thanh khoản",
+        "liquidityPremiumDesc": "Phần bù Chính phủ Cấp 1",
+        "lowVolShield": "Thiên lệch Biến động Thấp",
+        "lowVolShieldDesc": "Lá chắn Phòng thủ Giảm giá"
       },
-      "footnote": "Alinhamento fatorial 100% verificado com modelos Barra Global Equity & Fixed Income."
+      "footnote": "Đã xác minh 100% căn chỉnh yếu tố với các mô hình Barra Cổ phiếu và Thu nhập cố định Toàn cầu."
     },
     "alertsView": {
       "stats": {
-        "activeAudits": {
-          "label": "Quy trình kiểm toán thời gian thực đang chạy",
-          "value": "100.0%",
-          "status": "Tất cả các nút hoạt động bình thường"
-        },
-        "criticalAlerts": {
-          "label": "Cảnh báo vi phạm nghiêm trọng / Bất thường",
-          "value": "0",
-          "status": "Không có vi phạm nào"
-        },
-        "telemetryLatency": {
-          "label": "Độ trễ đồng bộ nhật ký đo lường",
-          "value": "18 ms",
-          "status": "Sổ cái phân tán mã hóa"
-        },
-        "compliancePassRate": {
-          "label": "Tỷ lệ vượt qua kiểm tra quy tắc trước giao dịch",
-          "value": "100.0%",
-          "status": "4.210 lượt kiểm tra đều tuân thủ"
-        },
         "critical": {
-          "label": "Alertas Críticos Ativos",
+          "label": "Cảnh báo Nghiêm trọng Hoạt động",
           "value": "0",
-          "status": "Sistema em Perfeita Conformidade"
+          "status": "Hệ thống Tuân thủ Hoàn hảo"
         },
         "auditNodes": {
-          "label": "Nós de Auditoria Monitorados",
+          "label": "Nút Kiểm toán Được Giám sát",
           "value": "1.240",
-          "status": "Integridade Criptográfica 100%"
+          "status": "100% Tính toàn vẹn Mật mã"
         },
         "heartbeat": {
-          "label": "Latência de Telemetria",
+          "label": "Độ trễ Đo từ xa",
           "value": "32 ms",
-          "status": "SLA de Rede Sub-50ms"
+          "status": "SLA Mạng Dưới 50ms"
         },
         "checkpoints": {
-          "label": "Checagens Automáticas Diárias",
+          "label": "Kiểm tra Tự động Hàng ngày",
           "value": "86.400",
-          "status": "1 Verificação por Segundo"
+          "status": "1 Kiểm tra mỗi Giây"
+        },
+        "activeAudits": {
+          "label": "Kiểm toán Thời gian Thực Hoạt động",
+          "value": "100,0%",
+          "status": "Tất cả các Nút Bình thường"
+        },
+        "criticalAlerts": {
+          "label": "Vi phạm / Cảnh báo Nghiêm trọng",
+          "value": "0",
+          "status": "Không vi phạm"
+        },
+        "telemetryLatency": {
+          "label": "Độ trễ Đồng bộ Đo từ xa",
+          "value": "18 ms",
+          "status": "Sổ cái Phân tán Mã hóa"
+        },
+        "compliancePassRate": {
+          "label": "Tỷ lệ Tuân thủ Quy tắc Trước Giao dịch",
+          "value": "100,0%",
+          "status": "4.210 Lần kiểm tra Đều Đạt"
         }
       },
       "log": {
-        "eyebrow": "LUỒNG DỮ LIỆU ĐO LƯỜNG THỜI GIAN THỰC",
-        "heading": "Kiểm toán quy trình ủy thác liên tục",
-        "badge": "NHỊP TIM HOẠT ĐỘNG",
+        "eyebrow": "LUỒNG ĐO TỪ XA THỜI GIAN THỰC",
+        "heading": "Kiểm toán Quy trình Ủy thác Liên tục",
+        "badge": "HEARTBEAT HOẠT ĐỘNG",
         "time": "Thời gian (UTC)",
         "node": "Nút / Thành phần",
-        "event": "Sự kiện đã xác minh",
+        "event": "Sự kiện Đã Xác minh",
         "status": "Trạng thái"
       },
-      "nodes": {
-        "compliance": "Động cơ tuân thủ trước giao dịch",
-        "riskEngine": "Lõi quản lý rủi ro thời gian thực",
-        "orderRouter": "Cổng định tuyến lệnh thông minh FIX",
-        "custodyRecon": "Hệ thống đối soát lưu ký Cấp 1"
-      },
-      "events": {
-        "complianceCheck": "Xác minh tuân thủ ủy thác trước giao dịch hoàn tất (Độ lệch 0%)",
-        "varRecalculation": "Tính toán lại VaR 99% tham số toàn danh mục hoàn tất",
-        "fixAck": "Xác nhận thực hiện lệnh FIX 35=8 không trượt giá",
-        "custodySync": "Đối soát số dư và kiểm tra tách biệt tài sản thời gian thực hoàn tất",
-        "fiduciaryRecon": "Reconciliação Contínua de Razão Fiduciário: 0 Discrepâncias",
-        "monteCarloCycle": "Ciclo de Risco Monte Carlo 10k Trajetórias Concluído: Nominal",
-        "preTradeCheck": "Validação de Ordem FIX Pré-Trade (Sub-1ms): Aprovada",
-        "custodyProof": "Selo Criptográfico de Custódia Direta Tier-1 Verificado",
-        "success": "SUCESSO",
-        "verified": "VERIFICADO",
-        "passed": "APROVADO"
-      },
-      "statuses": {
-        "pass": "ĐẠT (PASS)",
-        "verified": "ĐÃ XÁC MINH (VERIFIED)",
-        "executed": "ĐÃ THỰC THI (EXECUTED)",
-        "settled": "ĐÃ ĐỐI SOÁT (SETTLED)"
-      },
-      "channels": {
-        "eyebrow": "TÍCH HỢP THÔNG BÁO TỔ CHỨC",
-        "heading": "Kênh phân phối cảnh báo & Nhật ký đo lường",
-        "fixDropCopy": "Luồng kiểm toán FIX Drop-Copy thời gian thực",
-        "swiftIso": "Điện tín SWIFT MT535 / ISO 20022",
-        "webhookApi": "Doanh nghiệp Webhook & REST API",
-        "fiduciaryDesk": "Bàn hỗ trợ rủi ro & ủy thác Elleva"
-      },
       "logNodes": {
-        "vault01": "Cofre-01 (BNY Mellon)",
-        "compliance": "Motor de Conformidade Pré-Trade",
-        "riskEngine": "Motor de Risco Monte Carlo",
-        "rebalancer": "Rebalanceador de Custódia",
-        "marketFeed": "Telemetria de Feeds de Mercado",
-        "router": "Roteador FIX 5.0",
-        "custodyRecon": "Reconciliação de Custódia",
-        "portfolioCore": "Núcleo de Portfólio"
+        "vault01": "Kho-01 (BNY Mellon)",
+        "compliance": "Công cụ Tuân thủ Trước Giao dịch",
+        "riskEngine": "Công cụ Rủi ro Monte Carlo",
+        "rebalancer": "Công cụ Tái cân bằng Lưu ký",
+        "marketFeed": "Đo từ xa Nguồn cấp Thị trường",
+        "router": "Bộ định tuyến Lệnh Cốt lõi (FIX 5.0)",
+        "custodyRecon": "Đối chiếu Lưu ký",
+        "portfolioCore": "Cốt lõi Danh mục"
       },
       "logEvents": {
-        "settlementHash": "Hash de Liquidação Verificado (T+0)",
-        "mandateRules": "240 Regras de Mandato Avaliadas (0,4ms)",
-        "varRecalibration": "Recalibração VaR de 10.000 Trajetórias (1,24%)",
-        "driftCheck": "Checagem de Limite de Desvio (±0,12% < ±1,50%)",
-        "feedIngestion": "Ingestão Global de 4.820 feeds/seg",
-        "fixAck": "Sessão FIX 5.0 Confirmada por Primary Dealer",
-        "varEpoch": "Simulação Monte Carlo de 10.000 Trajetórias Convergida",
-        "dvpSettled": "Hash de Razão Criptográfico Verificado com BNY Mellon",
-        "driftTolerance": "Desvio Dinâmico Dentro do Limite de Tolerância (0,42%)"
+        "settlementHash": "Mã băm Thanh toán Đã xác minh (T+0)",
+        "mandateRules": "240 Quy tắc Ủy thác Đã đánh giá (0,4ms)",
+        "varRecalibration": "Hiệu chỉnh VaR 10.000 Đường dẫn (1,24%)",
+        "driftCheck": "Kiểm tra Ngưỡng Trôi (±0,12% < ±1,50%)",
+        "feedIngestion": "Tiếp nhận 4.820 luồng/giây Toàn cầu",
+        "fixAck": "Phiên FIX 5.0 Đã xác nhận bởi Đại lý Chính",
+        "varEpoch": "Mô phỏng Monte Carlo 10.000 đường dẫn đã hội tụ",
+        "dvpSettled": "Đã xác minh khớp mã băm sổ cái mật mã với BNY Mellon",
+        "driftTolerance": "Trôi động trong ngưỡng dung sai (0,42%)"
       },
       "logStatus": {
-        "secure": "SEGURO",
-        "passed": "APROVADO",
-        "compliant": "CONFORME",
-        "optimal": "OTIMIZADO",
-        "synchronized": "SINCRONIZADO",
-        "success": "SUCESSO",
-        "normal": "NORMAL",
-        "settled": "LIQUIDADO"
+        "secure": "AN TOÀN",
+        "passed": "ĐẠT",
+        "compliant": "TUÂN THỦ",
+        "optimal": "TỐI ƯU",
+        "synchronized": "ĐÃ ĐỒNG BỘ",
+        "success": "THÀNH CÔNG",
+        "normal": "BÌNH THƯỜNG",
+        "settled": "ĐÃ THANH TOÁN"
       },
       "health": {
-        "eyebrow": "SAÚDE DA INFRAESTRUTURA",
-        "heading": "Status dos Subsistemas Críticos",
-        "latencyLabel": "Latência:",
-        "loadLabel": "Carga:",
-        "online": "ONLINE",
-        "orderRouter": "Roteador Central de Ordens (FIX 5.0)",
-        "riskEngine": "Motor de Risco Monte Carlo (HPC)",
-        "custodyRecon": "Reconciliação Custodial DVP",
-        "firewall": "Firewall de Mandato Pré-Trade"
+        "eyebrow": "SỨC KHỎE CƠ SỞ HẠ TẦNG",
+        "heading": "Trạng thái Hệ thống Con Quan trọng",
+        "latencyLabel": "Độ trễ:",
+        "loadLabel": "Tải:",
+        "online": "TRỰC TUYẾN",
+        "orderRouter": "Bộ định tuyến Lệnh Cốt lõi (FIX 5.0)",
+        "riskEngine": "Công cụ Rủi ro Monte Carlo (HPC)",
+        "custodyRecon": "Đối chiếu Lưu ký DVP",
+        "firewall": "Tường lửa Ủy thác Trước Giao dịch",
+        "latency": "Độ trễ:",
+        "load": "Tải:"
       },
-      "footnote": "SLA de 99,999% suportado por consenso determinístico multirregional."
+      "events": {
+        "fiduciaryRecon": "Đối chiếu Sổ cái Ủy thác Liên tục: 0 Sai lệch",
+        "monteCarloCycle": "Chu kỳ Rủi ro Monte Carlo 10k Đường dẫn Hoàn tất: Bình thường",
+        "preTradeCheck": "Xác thực Lệnh FIX Trước Giao dịch (Dưới 1ms): Đạt",
+        "custodyProof": "Đã xác minh Con dấu Mật mã Lưu ký Trực tiếp Cấp 1",
+        "success": "THÀNH CÔNG",
+        "verified": "ĐÃ XÁC MINH",
+        "passed": "ĐÃ ĐẠT"
+      },
+      "footnote": "SLA 99,999% được hỗ trợ bởi đồng thuận xác định đa khu vực.",
+      "subsystems": {
+        "router": "Bộ định tuyến Lệnh Cốt lõi (FIX 5.0)",
+        "riskEngine": "Công cụ Rủi ro Monte Carlo (HPC)",
+        "reconciliation": "Đối chiếu Lưu ký DVP",
+        "firewall": "Tường lửa Ủy thác Trước Giao dịch"
+      }
     },
     "complianceView": {
       "stats": {
-        "mandateChecks": {
-          "label": "Quy tắc giới hạn theo luật định đang kích hoạt",
-          "value": "48 quy tắc",
-          "status": "100% bao phủ xác định"
-        },
-        "auditTrailStatus": {
-          "label": "Trạng thái nhật ký dấu vết kiểm toán",
-          "value": "Đã ký mã hóa",
-          "status": "Chống can thiệp SHA-256"
-        },
-        "esgGovernance": {
-          "label": "Điểm số ESG & Quản trị ủy thác",
-          "value": "AAA (Mức cao nhất)",
-          "status": "Tuân thủ nghiêm ngặt danh sách loại trừ"
-        },
-        "regulatoryFiling": {
-          "label": "Tình trạng báo cáo quy định",
-          "value": "Tự động sẵn sàng",
-          "status": "Hỗ trợ xuất tức thì"
-        },
         "policyRules": {
-          "label": "Regras de Mandato Auditadas",
+          "label": "Quy tắc Ủy thác Đã Kiểm toán",
           "value": "100%",
-          "status": "240 de 240 Regras Aprovadas"
+          "status": "240/240 Quy tắc Đạt"
         },
         "restrictedList": {
-          "label": "Violações de Entidades Restritas",
+          "label": "Vi phạm Thực thể Hạn chế",
           "value": "0",
-          "status": "Filtro OFAC / Sanções Limpo"
+          "status": "Bộ lọc OFAC / Trừng phạt Sạch"
         },
         "esg": {
-          "label": "Adesão ao Mandato ESG / Exclusão",
+          "label": "Tuân thủ Ủy thác ESG / Loại trừ",
           "value": "100,0%",
-          "status": "Conformidade Fiduciária Total"
+          "status": "Tuân thủ Ủy thác Đầy đủ"
         },
         "preTrade": {
-          "label": "Verificação Pré-Negociação",
+          "label": "Xác minh Trước Giao dịch",
           "value": "< 1 ms",
-          "status": "Bloqueio Determinístico Ativo"
+          "status": "Khóa Xác định Hoạt động"
         }
       },
       "matrix": {
         "eyebrow": "MA TRẬN ỦY THÁC & RÀNG BUỘC",
-        "heading": "Kiểm soát theo luật định & Hạn mức ủy thác",
-        "badge": "KIỂM TOÁN XÁC THỰC",
-        "limitLabel": "Hạn mức:",
+        "heading": "Kiểm soát Theo Luật định và Giới hạn Ủy thác",
+        "badge": "KIỂM TOÁN XÁC ĐỊNH",
+        "limitLabel": "Giới hạn:",
         "currentLabel": "Hiện tại:",
-        "compliant": "ĐẠT YÊU CẦU",
-        "statusPassed": "ĐẠT"
-      },
-      "rules": {
-        "issuerLimit": "Mức tập trung tối đa vào một tổ chức phát hành",
-        "sovereignMin": "Tỷ lệ tối thiểu tài sản chính phủ & xếp hạng AAA/AA",
-        "durationBound": "Biên độ biến động thời lượng hiệu dụng danh mục",
-        "cashLimit": "Hạn mức tiền mặt chưa đầu tư & Thanh khoản siêu ngắn hạn",
-        "varCeiling": "Trần giá trị rủi ro VaR 99% trong ngày",
-        "singleIssuer": "Teto de Exposição a Emissor Único",
-        "singleIssuerLimit": "< 5,0% do AUM Líquido",
-        "unhedgedFx": "Teto de Exposição Cambial Não Coberta",
-        "unhedgedFxLimit": "< 2,0% do AUM Líquido",
-        "esgScreening": "Triagem Negativa OFAC / ESG",
-        "esgScreeningLimit": "0 Violações",
-        "illiquidAssets": "Teto de Alocação em Ativos Ilíquidos",
-        "illiquidAssetsLimit": "< 1,0% do AUM Líquido"
-      },
-      "limits": {
-        "issuerLimit": "Tối đa 5.00%",
-        "sovereignMin": "Tối thiểu 40.00%",
-        "durationBound": "3.50 - 5.00 năm",
-        "cashLimit": "Tối đa 15.00%",
-        "varCeiling": "Tối đa 4.50%"
-      },
-      "governance": {
-        "eyebrow": "KHUNG QUẢN TRỊ ỦY THÁC",
-        "heading": "Cơ chế bảo vệ mang tính thể chế",
-        "point1": "Kiểm tra trước giao dịch: Mọi lệnh trước khi phát đi đều phải tự động vượt qua 48 quy tắc kiểm tra.",
-        "point2": "Nguyên tắc phân tách trách nhiệm: Lõi quyết định thông minh hoàn toàn tách biệt với lưu ký tài sản thực.",
-        "point3": "Dấu vết kiểm toán toàn diện: Mọi cơ sở ra quyết định và giao dịch đều được ghi lại và lưu trữ vĩnh viễn."
+        "statusPassed": "ĐẠT",
+        "compliant": "TUÂN THỦ"
       },
       "seal": {
-        "eyebrow": "SELO DE AUDITORIA CRIPTOGRÁFICA",
-        "heading": "Trilha Imutável de Governança",
-        "soc2": "Certificação SOC-2 Tipo II",
-        "merkle": "Livro-Razão Imutável em Árvore Merkle",
-        "merkleRoot": "Raiz de Merkle:",
-        "epoch": "Timestamp da Época:",
-        "custodyId": "ID de Custódia Fiduciária:"
+        "eyebrow": "CON DẤU KIỂM TOÁN MẬT MÃ",
+        "heading": "Dấu vết Quản trị Bất biến",
+        "soc2": "Chứng nhận SOC-2 Loại II",
+        "merkle": "Sổ cái Cây Merkle Bất biến",
+        "merkleRoot": "Gốc Merkle:",
+        "epoch": "Mốc thời gian Kỷ nguyên:",
+        "custodyId": "ID Lưu ký Ủy thác:",
+        "merkleTree": "Sổ cái Cây Merkle Bất biến",
+        "epochTimestamp": "Mốc thời gian Kỷ nguyên:"
       },
-      "footnote": "Zero exceções de conformidade registradas em todos os mandatos monitorados."
+      "rules": {
+        "singleIssuer": "Giới hạn Mức phơi bày Một Tổ chức Phát hành",
+        "singleIssuerLimit": "< 5,0% AUM Ròng",
+        "unhedgedFx": "Giới hạn Mức phơi bày Ngoại hối Chưa Phòng ngừa",
+        "unhedgedFxLimit": "< 2,0% AUM Ròng",
+        "esgScreening": "Sàng lọc Tiêu cực OFAC / ESG",
+        "esgScreeningLimit": "0 Vi phạm",
+        "illiquidAssets": "Giới hạn Phân bổ Tài sản Kém Thanh khoản",
+        "illiquidAssetsLimit": "< 1,0% AUM Ròng",
+        "leverageLimit": "0,00x (Không cho phép Đòn bẩy)",
+        "investmentGrade": "Ngưỡng Xếp hạng Đầu tư Tối thiểu",
+        "investmentGradeLimit": "100% BBB- trở lên",
+        "custodySegregation": "Ủy thác Tách biệt Lưu ký Trực tiếp",
+        "custodySegregationLimit": "100% Quyền sở hữu Pháp lý của Khách hàng",
+        "leverage": "Ràng buộc Đòn bẩy Ủy thác"
+      },
+      "footnote": "Không có ngoại lệ tuân thủ nào được ghi nhận trên tất cả các ủy thác được giám sát."
+    },
+    "months": {
+      "jan": "Thg 1",
+      "feb": "Thg 2",
+      "mar": "Thg 3",
+      "apr": "Thg 4",
+      "may": "Thg 5",
+      "jun": "Thg 6",
+      "jul": "Thg 7"
+    },
+    "overview": {
+      "allocation": {
+        "eyebrow": "PHÂN BỔ ỦY THÁC",
+        "heading": "Tỷ trọng Danh mục Đầu tư Chủ động",
+        "tooltipLabel": "Tỷ trọng Phân bổ",
+        "fixedIncome": "Thu nhập cố định",
+        "globalEquities": "Cổ phiếu Toàn cầu",
+        "realAssets": "Tài sản Thực và Cơ sở hạ tầng",
+        "strategicCash": "Tiền mặt Chiến lược và Dự trữ"
+      },
+      "stats": {
+        "monitoredAum": {
+          "label": "AUM Ủy thác Được Giám sát",
+          "value": "US$ 482.5M",
+          "status": "Danh nghĩa / Tách biệt"
+        },
+        "adherence": {
+          "label": "Tuân thủ Chính sách Ủy thác",
+          "value": "99.8%",
+          "deviation": "0,00% Độ lệch"
+        },
+        "var": {
+          "label": "VaR 99% 10D Tham số",
+          "value": "1.24%",
+          "policyLimit": "Hạn mức: 4,50% (Tuân thủ)"
+        },
+        "custody": {
+          "label": "Trạng thái Lưu ký",
+          "status": "Tách biệt Cấp 1",
+          "subtext": "100% Quyền sở hữu Pháp lý của Khách hàng"
+        }
+      },
+      "chart": {
+        "eyebrow": "BIÊN GIỚI HIỆU QUẢ ĐỘNG",
+        "heading": "Mô phỏng Ngẫu nhiên Thời gian Thực",
+        "seriesExecution": "Biên giới Ngẫu nhiên Tối ưu",
+        "seriesTarget": "Ranh giới Chính sách Ủy thác",
+        "badge": "MÔ PHỎNG 10.000 ĐƯỜNG ĐI"
+      }
     }
   },
   "intelligence": {
     "scenarios": {
-      "low": "Áp lực Lạm phát Đình trệ (15%)",
+      "low": "Áp lực Lạm phát đình trệ (15%)",
       "base": "Kịch bản Mở rộng Cơ sở (65%)",
       "high": "Gia tốc Công nghệ (20%)"
     },
@@ -1366,23 +1239,15 @@
       "portfoliosDesc": "Phân bổ và rủi ro"
     },
     "title": "Một Danh mục Mới trong Công nghệ Tài chính",
-    "description": "Chúng tôi đang định nghĩa Cơ sở hạ tầng Vốn Tự động — phần mềm không chỉ hiển thị các con số mà còn thực thi các quy trình đầu tư phức tạp với độ chính xác ủy thác.",
+    "description": "Chúng tôi đang định nghĩa Cơ sở hạ tầng Vốn Tự động—phần mềm không chỉ hiển thị các con số mà còn thực thi các quy trình đầu tư phức tạp với độ chính xác ủy thác.",
     "topologyBadge": "TẠO DANH MỤC MỚI"
   },
   "operational": {
     "metrics": {
-      "monitoredAssets": {
-        "name": "Tài sản được Giám sát"
-      },
-      "responseSpeed": {
-        "name": "Tốc độ Phản hồi"
-      },
-      "costPerAnalysis": {
-        "name": "Chi phí cho mỗi Phân tích"
-      },
-      "analystCapacity": {
-        "name": "Năng lực cho mỗi Nhà phân tích"
-      }
+      "monitoredAssets": { "name": "Tài sản được Giám sát" },
+      "responseSpeed": { "name": "Tốc độ Phản hồi" },
+      "costPerAnalysis": { "name": "Chi phí cho mỗi Phân tích" },
+      "analystCapacity": { "name": "Năng lực cho mỗi Nhà phân tích" }
     },
     "title": "Lợi thế Vận hành Có thể Đo lường",
     "description": "So sánh hiệu suất vận hành của cơ sở hạ tầng tự động so với hoạt động quản lý tài sản tuyến tính truyền thống.",

@@ -195,18 +195,10 @@
   },
   "ecosystem": {
     "categories": {
-      "custodians": {
-        "title": "은행 및 커스터디언"
-      },
-      "brokers": {
-        "title": "브로커 및 유동성 거래소"
-      },
-      "marketData": {
-        "title": "시장 데이터 및 피드"
-      },
-      "compliance": {
-        "title": "규제 및 감사 기관"
-      }
+      "custodians": { "title": "은행 및 커스터디언" },
+      "brokers": { "title": "브로커 및 유동성 거래소" },
+      "marketData": { "title": "시장 데이터 및 피드" },
+      "compliance": { "title": "규제 및 감사 기관" }
     },
     "complianceItems": {
       "soc2": "SOC 2 Type II 인증 아키텍처",
@@ -231,35 +223,17 @@
         "subtitle": "연속 커널",
         "caption": "자율 수탁자 운영"
       },
-      "stage1": {
-        "label": "1. 리서치",
-        "desc": "시장 인텔리전스"
-      },
-      "stage2": {
-        "label": "2. 의사 결정",
-        "desc": "위임 최적화"
-      },
-      "stage3": {
-        "label": "3. 위험 점검",
-        "desc": "확정적 경계"
-      },
-      "stage4": {
-        "label": "4. 실행",
-        "desc": "스마트 오더 라우팅"
-      },
-      "stage5": {
-        "label": "5. 결제",
-        "desc": "직접 커스터디"
-      },
-      "stage6": {
-        "label": "6. 모니터링",
-        "desc": "불변 감사 로그"
-      }
+      "stage1": { "label": "1. 리서치", "desc": "시장 인텔리전스" },
+      "stage2": { "label": "2. 의사 결정", "desc": "위임 최적화" },
+      "stage3": { "label": "3. 위험 점검", "desc": "확정적 경계" },
+      "stage4": { "label": "4. 실행", "desc": "스마트 오더 라우팅" },
+      "stage5": { "label": "5. 결제", "desc": "직접 커스터디" },
+      "stage6": { "label": "6. 모니터링", "desc": "불변 감사 로그" }
     },
     "steps": {
       "s1": "다중 소스 자율 인텔리전스 엔진이 24/7 비정형 글로벌 금융 데이터를 수집, 정제 및 구조화합니다.",
       "s2": "법정 투자 정책 성명서에 대해 검증된 위험 조정 거래 제안에 대한 확정적 평가.",
-      "s3": "위반할 수 없는 수학적 제약 — 최대 드로다운, 섹터 집중도 및 유동성 경계를 강제합니다.",
+      "s3": "위반할 수 없는 수학적 제약—최대 드로다운, 섹터 집중도 및 유동성 경계를 강제합니다.",
       "s4": "직접 브로커 및 커스터디언 엔드포인트 간 스마트 오더 라우팅을 통한 알고리즘 주문 실행, 최소 슬리피지 실현.",
       "s5": "고객 소유 분리 기관 계정 내 직접적인 거래 전후 잔고 지속 결제.",
       "s6": "실시간 포지션 정산 대조, 위험 가드레일 검증 및 규제 준수를 위한 불변 감사 로깅."
@@ -436,34 +410,21 @@
   },
   "operatingLoop": {
     "steps": {
-      "research": {
-        "name": "리서치",
-        "role": "자율 리서치 에이전트"
-      },
-      "decide": {
-        "name": "의사 결정",
-        "role": "확정적 위임 커널"
-      },
-      "execute": {
-        "name": "실행",
-        "role": "스마트 오더 라우터 (FIX/DMA)"
-      },
-      "monitor": {
-        "name": "모니터링",
-        "role": "지속적 감사 및 텔레메트리"
-      }
+      "research": { "name": "리서치", "role": "자율 리서치 에이전트" },
+      "decide": { "name": "의사 결정", "role": "확정적 위임 커널" },
+      "execute": { "name": "실행", "role": "스마트 오더 라우터 (FIX/DMA)" },
+      "monitor": { "name": "모니터링", "role": "지속적 감사 및 텔레메트리" }
     }
   },
   "investmentExperience": {
     "allocation": {
-      "sovereignFixedIncome": "국채 및 우량 채권",
-      "globalEquities": "글로벌 핵심 주식",
+      "fixedIncome": "채권",
+      "globalEquities": "글로벌 주식",
       "realAssets": "실물 자산 및 인프라",
       "strategicCash": "전략 현금 및 유동성",
       "eyebrow": "위임 자산 배분",
       "heading": "액티브 포트폴리오 비중",
-      "tooltipLabel": "배분 비중",
-      "fixedIncome": "Renda Fixa"
+      "tooltipLabel": "배분 비중"
     },
     "tabs": {
       "overview": "포트폴리오 개요",
@@ -541,7 +502,11 @@
       "distribution": {
         "eyebrow": "수탁기관별 분포",
         "heading": "Tier-1 자산 분리 보관",
-        "tooltipLabel": "수탁 비중"
+        "tooltipLabel": "수탁 비중",
+        "bny": "BNY Mellon",
+        "stateStreet": "State Street",
+        "jpMorgan": "J.P. Morgan",
+        "euroclear": "Euroclear"
       },
       "categories": {
         "sovereignFixedIncome": "국채 및 채권",
@@ -553,6 +518,13 @@
         "t0": "T+0 당일",
         "t1": "T+1 DVP",
         "t0Realtime": "T+0 실시간"
+      },
+      "holdingsNames": {
+        "tbills": "미국 재무부 단기채 3M / 6M",
+        "tnotes": "미국 재무부 중기채 2년",
+        "msciWorld": "MSCI World ETF",
+        "infra": "글로벌 인프라 펀드",
+        "sofrSweep": "SOFR 현금 스윕"
       }
     },
     "allocationView": {
@@ -585,10 +557,7 @@
         "seriesActual": "실제 배분 (%)",
         "seriesTarget": "위임 목표 (%)"
       },
-      "geography": {
-        "eyebrow": "글로벌 다각화",
-        "heading": "지역별 익스포저"
-      },
+      "geography": { "eyebrow": "글로벌 다각화", "heading": "지역별 익스포저" },
       "footnote": "UCITS 및 수탁자 책임 국채 배분 가이드라인 100% 준수.",
       "assetClasses": {
         "sovereignFixedIncome": "국채 및 채권",
@@ -600,7 +569,8 @@
         "northAmerica": "북미",
         "developedEurope": "유럽 선진국",
         "developedAsia": "아시아 태평양 선진국",
-        "globalEmerging": "글로벌 신흥국"
+        "globalEmerging": "신흥국 시장",
+        "globalSupranational": "글로벌 초국가"
       }
     },
     "performanceView": {
@@ -626,9 +596,9 @@
           "status": "최상위 위험조정 성과"
         },
         "maxDrawdown": {
-          "label": "Drawdown Máximo Histórico",
-          "value": "-1,42%",
-          "status": "Recuperação: 14 Dias"
+          "label": "최대 낙폭 (MDD)",
+          "value": "-1.42%",
+          "status": "회복 기간: 14일"
         }
       },
       "chart": {
@@ -638,585 +608,470 @@
         "seriesPortfolio": "Elleva 포트폴리오 (순자산)",
         "seriesBenchmark": "정책 벤치마크 (기준)"
       },
-      "metrics": {
-        "eyebrow": "위험조정 통계 지표",
-        "heading": "수탁 성과 지표",
-        "volatility": "연환산 변동성",
-        "maxDrawdown": "최대 낙폭 (MDD)",
-        "sortinoRatio": "소르티노 비율 (하방 위험)",
-        "calmarRatio": "칼마 비율 (수익률/MDD)"
-      },
       "attribution": {
-        "eyebrow": "ATRIBUIÇÃO BRINSON-FACHLER",
-        "heading": "Decomposição de Retorno Ativo",
-        "allocationEffect": "Efeito de Alocação de Ativos",
-        "selectionEffect": "Efeito de Seleção de Títulos",
-        "interactionAlpha": "Alfa de Interação / Execução",
-        "hedgeEffect": "Efeito Líquido de Hedge Cambial"
+        "eyebrow": "BRINSON-FACHLER 귀속 분석",
+        "heading": "액티브 리턴 분해",
+        "allocationEffect": "자산 배분 효과",
+        "selectionEffect": "증권 선택 효과",
+        "interactionAlpha": "상호작용 / 실행 알파",
+        "hedgeEffect": "순 통화 헤지 효과"
       },
-      "footnote": "Alfa Ativo Total: +2,74% anualizado sobre a política de benchmark."
+      "footnote": "총 액티브 알파: 벤치마크 정책 대비 연환산 +2.74%."
     },
     "riskView": {
       "stats": {
-        "cvar": {
-          "label": "조건부 VaR (CVaR 99%)",
-          "value": "5.10%",
-          "status": "한도: 6.50% (준수)"
-        },
-        "stressLoss": {
-          "label": "최악의 스트레스 테스트 손실",
-          "value": "-4.80%",
-          "status": "글로벌 유동성 위기"
-        },
-        "durationGap": {
-          "label": "듀레이션 갭 민감도",
-          "value": "+0.02년",
-          "status": "중립적 금리 포지션"
-        },
-        "liquidityCoverage": {
-          "label": "유동성 커버리지 비율 (LCR)",
-          "value": "420%",
-          "status": "바젤 III 요건 대폭 상회"
-        },
         "parametricVar": {
-          "label": "VaR Paramétrico 99% 10D",
-          "value": "1,24%",
-          "status": "Limite: 4,50% (Conforme)"
+          "label": "모수적 99% 10일 VaR",
+          "value": "1.24%",
+          "status": "한도: 4.50% (준수)"
         },
         "expectedShortfall": {
-          "label": "Expected Shortfall (CVaR)",
-          "value": "1,89%",
-          "status": "Cauda Extrema Normalizada"
+          "label": "기대 손실 (CVaR)",
+          "value": "1.89%",
+          "status": "정규화된 꼬리 위험"
         },
         "stressCoverage": {
-          "label": "Cobertura de Estresse",
-          "value": "3,8x",
-          "status": "Mínimo Regulatório: 1,5x"
+          "label": "스트레스 손실 커버리지",
+          "value": "3.8배",
+          "status": "규제 최소: 1.5배"
         },
         "durationMismatch": {
-          "label": "Descompasso de Duration",
-          "value": "+0,02y",
-          "status": "Imunização Ativa"
+          "label": "듀레이션 미스매치",
+          "value": "+0.02년",
+          "status": "액티브 이뮤니제이션"
         }
       },
       "chart": {
-        "eyebrow": "과거 시나리오 스트레스 테스트",
-        "heading": "거시경제 충격 시나리오 시뮬레이션",
-        "badge": "4대 엄격 시나리오",
-        "seriesImpact": "포트폴리오 예상 영향 (%)",
-        "mandateLimit": "위임 최대 허용 한도 (-5.00%)"
-      },
-      "scenarios": {
-        "ratesShock": "급격한 금리 인상 (+200bps)",
-        "globalRecession": "글로벌 경기 침체",
-        "liquidityFreeze": "신용 시장 동결 및 유동성 경색",
-        "geopoliticalCrisis": "심각한 지정학적 충격",
-        "stagflation": "Choque de Estagflação Macro",
-        "geopolitical": "Salto de Volatilidade Geopolítica",
-        "yieldSpike": "Pico na Curva de Juros (+150bps)",
-        "equityDrawdown": "Drawdown de Ações Globais (-20%)"
-      },
-      "breakdown": {
-        "eyebrow": "위험 요인 분해",
-        "heading": "한계 리스크 기여도 (MCTR)",
-        "equityRisk": "주식 시장 베타 리스크",
-        "interestRateRisk": "금리 듀레이션 및 수익률 곡선",
-        "creditSpread": "신용 스프레드 및 부도 프리미엄",
-        "fxCommodity": "환율 및 원자재 익스포저"
+        "eyebrow": "거시 확률론적 스트레스 테스트",
+        "heading": "시나리오 충격 시뮬레이션",
+        "badge": "4개 심각 시나리오",
+        "seriesImpact": "포트폴리오 영향 (%)",
+        "mandateLimit": "위임 한도"
       },
       "budget": {
-        "eyebrow": "ORÇAMENTO DE RISCO",
-        "heading": "Utilização de Limites de Mandato",
-        "varConsumption": "Consumo de VaR 99%",
-        "trackingErrorLimit": "Limite de Tracking Error",
-        "concentrationLimit": "Concentração em Emissor Único",
-        "stressAbsorption": "Absorção de Estresse de Liquidez",
-        "compliant": "Conforme"
+        "eyebrow": "위험 예산 편성",
+        "heading": "위임 정책 한도 사용률",
+        "varConsumption": "VaR 99% 소비",
+        "trackingErrorLimit": "추적 오차 한도",
+        "concentrationLimit": "단일 발행자 집중도",
+        "stressAbsorption": "유동성 스트레스 흡수",
+        "compliant": "준수"
       },
-      "footnote": "Validação contínua de Monte Carlo executa 10.000 trajetórias por ciclo."
+      "scenarios": {
+        "stagflation": "거시 스태그플레이션 충격",
+        "geopolitical": "지정학적 변동성 급등",
+        "yieldSpike": "수익률 곡선 급등 (+150bp)",
+        "equityDrawdown": "글로벌 주식 드로다운 (-20%)"
+      },
+      "footnote": "지속적 몬테카를로 검증은 에포크당 10,000 경로를 실행합니다."
     },
     "liquidityView": {
       "stats": {
-        "t0Coverage": {
-          "label": "T+0 즉시 청산 유동성",
-          "value": "US$ 142.5M",
-          "status": "익일물 즉시 결제 가능"
-        },
-        "t1Coverage": {
-          "label": "T+1 DVP 환금 가능 유동성",
-          "value": "US$ 218.0M",
-          "status": "유동성 우량 국채"
-        },
-        "avgBidAsk": {
-          "label": "포트폴리오 가중 매수/매도 스프레드",
-          "value": "0.8 bps",
-          "status": "매우 우수한 시장 깊이"
-        },
-        "stressedExit": {
-          "label": "위기 시 청산 소요 기간 (90% AUM)",
-          "value": "< 48시간",
-          "status": "시장 충격 < 12 bps"
-        },
         "cashT0": {
-          "label": "Caixa Disponível T+0",
-          "value": "US$ 57,9M",
-          "status": "Liquidez Imediata"
+          "label": "T+0 가용 현금",
+          "value": "US$ 57.9M",
+          "status": "즉시 유동성"
         },
         "convertibleT1": {
-          "label": "Ativos Conversíveis T+1",
-          "value": "US$ 214,2M",
-          "status": "Treasuries & Soberanos"
+          "label": "T+1 전환 가능 자산",
+          "value": "US$ 214.2M",
+          "status": "국채 및 채권"
         },
         "lcr": {
-          "label": "Índice de Cobertura (LCR)",
+          "label": "유동성 커버리지 비율 (LCR)",
           "value": "420%",
-          "status": "Basileia III: >100%"
+          "status": "바젤 III: >100%"
         },
         "settlementFail": {
-          "label": "Falhas de Liquidação",
-          "value": "0,00%",
-          "status": "0 Falhas em 12 Meses"
+          "label": "결제 실패율",
+          "value": "0.00%",
+          "status": "12개월간 0건"
         }
       },
       "chart": {
-        "eyebrow": "유동성 만기 래더",
-        "heading": "누적 가용 청산 자금 (백만 달러)",
+        "eyebrow": "시간적 유동성 래더",
+        "heading": "기간별 현금 전환 프로파일",
         "badge": "일중 모니터링",
-        "seriesLiquidity": "가용 유동성 규모"
+        "seriesLiquidity": "누적 가용 자금 (US$ M)"
       },
+      "buffers": { "eyebrow": "안전 버퍼", "heading": "주요 유동성 상품" },
       "horizons": {
-        "t0": "T+0 (즉시)",
-        "t1": "T+1 (24시간)",
-        "t2": "T+2 (48시간)",
-        "t5": "T+5 (1주일)",
-        "t30": "T+30 (1개월)",
-        "t2t3": "T+2 / T+3 Mercado"
-      },
-      "stress": {
-        "eyebrow": "극단적 유동성 스트레스 시나리오",
-        "heading": "유동성 안전 여유도",
-        "dailyOutflow": "예상 최대 일일 환매 요구액",
-        "bufferAvailable": "가용 유동성 완충액",
-        "collateralHaircut": "우량 담보 헤어컷 적용률",
-        "settlementStatus": "자동 결제 상태"
-      },
-      "buffers": {
-        "eyebrow": "RESERVAS DE SEGURANÇA",
-        "heading": "Instrumentos de Liquidez Primária"
+        "t0": "T+0 일중",
+        "t1": "T+1 익일",
+        "t2": "T+2 시장",
+        "t2t3": "T+2 / T+3 시장",
+        "t5": "T+5 글로벌 코어",
+        "t30": "T+30 1개월"
       },
       "instruments": {
-        "repo": "Overnight Fed Reverse Repo / Caixa SOFR",
-        "tbills": "US Treasury Bills (< 90 dias)",
-        "sovereignBonds": "Títulos Soberanos Governamentais G7",
-        "tier1Cash": "Equivalentes de Caixa Tier-1",
-        "tier1Sovereign": "Soberano Tier-1",
-        "tier1Gov": "Governamental Tier-1"
+        "repo": "오버나이트 연방 레포 / SOFR 현금",
+        "tbills": "미국 재무부 단기채 (90일 미만)",
+        "sovereignBonds": "G7 국채",
+        "tier1Cash": "Tier-1 현금 등가물",
+        "tier1Sovereign": "Tier-1 국채",
+        "tier1Gov": "Tier-1 정부",
+        "benchmarkNotes": "미국 벤치마크 채권 (유동성 G10)",
+        "tier1HighLiquid": "Tier-1 고유동성",
+        "largeCapEq": "유동성 대형주 (DVP)",
+        "liquidEquities": "유동성 주식"
       },
-      "footnote": "100% dos ativos líquidos mantidos em contas DVP / liquidação imediata."
+      "footnote": "유동성 자산의 100%는 DVP/즉시 인도 계정에 보관."
     },
     "marketIntelligenceView": {
       "stats": {
-        "feedsProcessed": {
-          "label": "일일 처리 데이터 피드",
-          "value": "4.8M+",
-          "status": "실시간 다중 자산 데이터"
-        },
-        "regimeState": {
-          "label": "현재 매크로 사이클 국면",
-          "value": "후기 확장기",
-          "status": "신뢰도: 94.2%"
-        },
-        "sentimentScore": {
-          "label": "자산군 통합 심리 지수",
-          "value": "+0.42 (중립적 상승세)",
-          "status": "체계적 포지션 통제"
-        },
-        "signalLatency": {
-          "label": "시그널 생성 지연 시간",
-          "value": "< 120 ms",
-          "status": "밀리초 단위 결정론적 추론"
-        },
         "telemetryFeeds": {
-          "label": "Feeds de Telemetria Global",
-          "value": "4.820/s",
-          "status": "Processamento em Tempo Real"
+          "label": "글로벌 텔레메트리 피드",
+          "value": "4,820/s",
+          "status": "실시간 처리"
         },
         "regimeConfidence": {
-          "label": "Confiança do Regime Macro",
-          "value": "94,2%",
-          "status": "Fase: Expansão Moderada"
+          "label": "매크로 레짐 신뢰도",
+          "value": "94.2%",
+          "status": "페이즈: 완만한 확장"
         },
         "correlationShift": {
-          "label": "Deslocamento de Correlação",
-          "value": "-0,18",
-          "status": "Descorrelação Ativa"
+          "label": "교차 자산 상관관계 이동",
+          "value": "-0.18",
+          "status": "액티브 디커릴레이션"
         },
         "yieldSteepening": {
-          "label": "Inclinação da Curva",
+          "label": "곡선 스티프닝 지수",
           "value": "+14 bps",
-          "status": "Curva Normalizada"
+          "status": "정규화 곡선"
         }
       },
       "matrix": {
-        "eyebrow": "매크로 사이클 시그널 매트릭스",
-        "heading": "자율 인텔리전스 엔진 실시간 시그널",
-        "badge": "결정론적 엔진",
-        "confLabel": "신뢰도"
-      },
-      "indicators": {
-        "usRates": "미국 금리 기간 구조 및 수익률 곡선",
-        "sofrSpread": "SOFR / 레포 시장 스프레드 및 유동성",
-        "creditSpreads": "투자등급 및 하이일드 신용 스프레드",
-        "vixTermStructure": "VIX 변동성 기간 구조 및 스큐"
-      },
-      "indicatorStatuses": {
-        "disinversionTrend": "수익률 곡선 역전 해소 추세",
-        "lowSystemicStress": "유동성 양호 / 시스템 스트레스 낮음",
-        "rangeBoundCompression": "적정 범위 내 유지",
-        "contangoNormal": "정상 콘탱고 구조 / 꼬리 위험 통제"
-      },
-      "indicatorSignals": {
-        "durationNeutral": "듀레이션 중립",
-        "favorableCarry": "우호적 캐리",
-        "selectiveCredit": "선별적 크레딧 투자",
-        "hedgedEquity": "주식 헤지 유지"
-      },
-      "insights": {
-        "eyebrow": "전략적 시사점",
-        "heading": "알고리즘 매크로 전망 및 자산 배분",
-        "point1": "수익률 곡선 스티프닝으로 4~5년 만기 중기 국채의 매력도 상승.",
-        "point2": "원자재 인플레이션 완화로 글로벌 고배당주 전략에 우호적 환경 조성.",
-        "point3": "달러화 안정 추세로 신흥국 로컬 통화 우량 국채에 전술적 기회 발생."
+        "eyebrow": "매크로 레짐 매트릭스",
+        "heading": "자율 인텔리전스 엔진 신호",
+        "badge": "확정적 엔진",
+        "confLabel": "신뢰도:"
       },
       "theses": {
-        "eyebrow": "SÍNTESE AUTÔNOMA",
-        "heading": "Teses de Investimento e Hipóteses Ativas"
+        "eyebrow": "자율 종합",
+        "heading": "액티브 투자 테제 및 가설"
       },
       "signals": {
-        "growthImpulse": "Impulso de Crescimento Macro",
-        "expansion": "Expansão Moderada",
-        "constructive": "Construtivo",
-        "liquidityCondition": "Condições de Liquidez Global",
-        "neutralPlus": "Neutro (+0,2z)",
-        "balanced": "Equilibrado",
-        "realRates": "Trajetória de Juros Reais",
-        "restrictive": "Restritivo Estável",
-        "neutral": "Neutro",
-        "volatilityRegime": "Regime de Volatilidade Multi-Ativos",
-        "subdued": "Moderado (<14 VIX)",
-        "riskOn": "Viés Pró-Risco"
+        "growthImpulse": "매크로 성장 충격",
+        "expansion": "완만한 확장",
+        "constructive": "건설적",
+        "liquidityCondition": "글로벌 유동성 조건",
+        "neutralPlus": "중립 (+0.2z)",
+        "balanced": "균형",
+        "realRates": "실질 금리 궤적",
+        "restrictive": "제한적 안정",
+        "neutral": "중립",
+        "volatilityRegime": "교차 자산 변동성 레짐",
+        "subdued": "진정 (<14 VIX)",
+        "riskOn": "위험 선호 편향",
+        "moderateExpansion": "완만한 확장",
+        "inflationDrift": "수탁자 인플레이션 드리프트",
+        "disinflating": "디스인플레이션 / 중립",
+        "termPremia": "국채 곡선 기간 프리미엄",
+        "normalizedSlope": "정규화된 기울기",
+        "neutralDuration": "중립 듀레이션",
+        "creditRiskPremia": "신용 위험 프리미엄 (IG/HY)",
+        "tightSpreads": "좁은 스프레드 / 안정",
+        "noTailStress": "꼬리 위험 없음",
+        "controlled": "통제됨"
       },
       "thesesItems": {
-        "semiCooling": "Semicondutores Especializados e Infraestrutura Elétrica",
-        "semiHypothesis": "Hipótese: Expansão assimétrica de capex em refrigeração líquida e redes limpas.",
-        "steepener": "Inclinação da Curva de Juros Soberana Global",
-        "steepenerHypothesis": "Hipótese: Reprecificação de prêmio de prazo fiscal acelerando desinversão.",
-        "activeConviction": "Convicção Ativa (94%)",
-        "tacticalConviction": "Convicção Tática (88%)"
+        "semiCooling": "특수 반도체 및 전력 인프라",
+        "semiHypothesis": "가설: 액체 냉각 및 청정 전력망에서의 비대칭적 자본지출 확대.",
+        "steepener": "글로벌 국채 수익률 곡선 스티프너",
+        "steepenerHypothesis": "가설: 재정 기간 프리미엄 재평가가 곡선 역전 정상화를 주도.",
+        "activeConviction": "액티브 컨빅션 (94%)",
+        "tacticalConviction": "전술적 컨빅션 (88%)",
+        "durationTitle": "국채 듀레이션 이뮤니제이션",
+        "durationHypothesis": "금리 변동성을 중화하기 위해 유효 듀레이션을 벤치마크 위임의 +/-0.05년 이내로 유지.",
+        "qualityTitle": "체계적 품질 오버웨이트",
+        "qualityHypothesis": "기관 수익성 및 대차대조표 회복탄력성 요인에 대한 양의 익스포저 유지.",
+        "custodyTitle": "일중 커스터디 분리 감사",
+        "custodyHypothesis": "전체 4개 Tier-1 커스터디 금고에서 실시간 암호화 자산 대조 시행.",
+        "verifiedContinuous": "지속 검증 완료",
+        "activeExecution": "활성 실행"
       },
-      "footnote": "Validação cruzada em 4.820 séries temporais macro com proteção estrita contra alucinações."
+      "footnote": "4,820개 매크로 시계열에 대한 교차 검증 및 제로 환각 가드레일 적용."
     },
     "attributionView": {
       "stats": {
-        "totalAlpha": {
-          "label": "총 초과수익 (연환산 알파)",
-          "value": "+3.40%",
-          "status": "정책 벤치마크 대비"
-        },
-        "selectionEffect": {
-          "label": "종목 선택 효과 (Selection)",
-          "value": "+1.92%",
-          "status": "상향식 퀀트 모델 기반"
-        },
-        "allocationEffect": {
-          "label": "자산 배분 효과 (Allocation)",
-          "value": "+1.18%",
-          "status": "매크로 사이클 동적 적응"
-        },
-        "interactionEffect": {
-          "label": "상호작용 및 타이밍 효과",
-          "value": "+0.30%",
-          "status": "스마트 주문 집행 기여"
-        },
         "systematic": {
-          "label": "Exposição Fatorial Sistemática",
-          "value": "92,4%",
-          "status": "Fatores Institucionais Puros"
+          "label": "체계적 팩터 익스포저",
+          "value": "92.4%",
+          "status": "순수 기관 팩터"
         },
         "residual": {
-          "label": "Risco Residual Específico",
-          "value": "7,6%",
-          "status": "Idiossincrático Controlado"
+          "label": "특정 잔여 위험",
+          "value": "7.6%",
+          "status": "통제된 개별 위험"
         },
         "activeShare": {
-          "label": "Active Share Efetivo",
-          "value": "68,4%",
-          "status": "Diferenciação Controlada"
+          "label": "유효 액티브 셰어",
+          "value": "68.4%",
+          "status": "통제된 차별화"
         },
         "rSquared": {
-          "label": "R² Multi-Fatorial",
-          "value": "0,96",
-          "status": "Ajuste Estatístico Robusto"
+          "label": "다중 팩터 R²",
+          "value": "0.96",
+          "status": "강건한 통계 적합"
         }
       },
       "chart": {
         "eyebrow": "BARRA / MSCI 팩터 분해",
-        "heading": "스타일 팩터 익스포저 (Z-Score)",
+        "heading": "스타일 팩터 익스포저",
         "badge": "7-팩터 모델",
-        "seriesExposure": "팩터 익스포저 Z-Score"
-      },
-      "factors": {
-        "value": "가치 (Value)",
-        "quality": "우량성 (Quality)",
-        "momentum": "모멘텀 (Momentum)",
-        "lowVol": "저변동성 (Low Vol)",
-        "size": "규모 (Size)",
-        "liquidity": "유동성 (Liquidity)",
-        "growth": "성장성 (Growth)",
-        "yield": "Dividendos / Rendimento Carry"
-      },
-      "decomposition": {
-        "eyebrow": "BRINSON-FACHLER 성과 귀속 모델",
-        "heading": "수익 요인 체계적 분석",
-        "assetAllocation": "자산군 전술적 배분",
-        "securitySelection": "퀀트 알파 종목 선정",
-        "currencyHedging": "환헤지 기여도",
-        "tradingExecution": "스마트 주문 및 거래 비용 절감"
+        "seriesExposure": "팩터 익스포저 Z-스코어"
       },
       "sources": {
-        "eyebrow": "FONTES DE RETORNO",
-        "heading": "Decomposição Fatorial Líquida"
+        "eyebrow": "수익 출처",
+        "heading": "순 팩터 분해",
+        "qualityTitle": "품질 및 수익성 팩터",
+        "qualitySubtitle": "주요 수익 엔진",
+        "liquidityTitle": "유동성 프리미엄 팩터",
+        "liquiditySubtitle": "Tier-1 국채 프리미엄",
+        "lowVolTitle": "저변동성 편향",
+        "lowVolSubtitle": "방어적 하방 보호막"
+      },
+      "factors": {
+        "value": "가치 팩터",
+        "momentum": "모멘텀 팩터",
+        "quality": "품질 / 수익성",
+        "lowVol": "저변동성",
+        "size": "규모 (대형주 편향)",
+        "yield": "배당 / 캐리 수익률",
+        "liquidity": "유동성 프리미엄"
       },
       "sourcesItems": {
-        "qualityEngine": "Fator Qualidade & Rentabilidade",
-        "qualityEngineDesc": "Motor Primário de Retorno",
-        "liquidityPremium": "Fator Prêmio de Liquidez",
-        "liquidityPremiumDesc": "Prêmio Soberano Tier-1",
-        "lowVolShield": "Viés de Baixa Volatilidade",
-        "lowVolShieldDesc": "Proteção Defensiva contra Quedas"
+        "qualityEngine": "품질 및 수익성 팩터",
+        "qualityEngineDesc": "주요 수익 엔진",
+        "liquidityPremium": "유동성 프리미엄 팩터",
+        "liquidityPremiumDesc": "Tier-1 국채 프리미엄",
+        "lowVolShield": "저변동성 편향",
+        "lowVolShieldDesc": "방어적 하방 보호막"
       },
-      "footnote": "Alinhamento fatorial 100% verificado com modelos Barra Global Equity & Fixed Income."
+      "footnote": "Barra 글로벌 주식 및 채권 모델에 대해 100% 팩터 정렬 검증 완료."
     },
     "alertsView": {
       "stats": {
-        "activeAudits": {
-          "label": "실시간 상시 감사 프로세스",
-          "value": "100.0%",
-          "status": "전체 프로세스 정상"
-        },
-        "criticalAlerts": {
-          "label": "중대 경보 / 규정 위반",
-          "value": "0건",
-          "status": "위반 사항 없음"
-        },
-        "telemetryLatency": {
-          "label": "텔레메트리 동기화 지연 시간",
-          "value": "18 ms",
-          "status": "암호화 분산 원장"
-        },
-        "compliancePassRate": {
-          "label": "사전 룰 준수 통과율",
-          "value": "100.0%",
-          "status": "4,210회 검사 전건 통과"
-        },
         "critical": {
-          "label": "Alertas Críticos Ativos",
+          "label": "활성 중대 알림",
           "value": "0",
-          "status": "Sistema em Perfeita Conformidade"
+          "status": "완벽한 규정 준수"
         },
         "auditNodes": {
-          "label": "Nós de Auditoria Monitorados",
-          "value": "1.240",
-          "status": "Integridade Criptográfica 100%"
+          "label": "감사 노드 수",
+          "value": "1,240",
+          "status": "100% 암호화 무결성"
         },
         "heartbeat": {
-          "label": "Latência de Telemetria",
+          "label": "텔레메트리 지연 시간",
           "value": "32 ms",
-          "status": "SLA de Rede Sub-50ms"
+          "status": "50ms 미만 네트워크 SLA"
         },
         "checkpoints": {
-          "label": "Checagens Automáticas Diárias",
-          "value": "86.400",
-          "status": "1 Verificação por Segundo"
+          "label": "일일 자동 점검",
+          "value": "86,400",
+          "status": "초당 1회 점검"
+        },
+        "activeAudits": {
+          "label": "활성 실시간 감사",
+          "value": "100.0%",
+          "status": "모든 노드 정상"
+        },
+        "criticalAlerts": {
+          "label": "중대 위반 / 알림",
+          "value": "0",
+          "status": "제로 위반"
+        },
+        "telemetryLatency": {
+          "label": "텔레메트리 동기화 지연",
+          "value": "18 ms",
+          "status": "분산 암호화 원장"
+        },
+        "compliancePassRate": {
+          "label": "거래 전 규정 준수율",
+          "value": "100.0%",
+          "status": "4,210회 점검 모두 통과"
         }
       },
       "log": {
-        "eyebrow": "실시간 시스템 텔레메트리 피드",
-        "heading": "지속적 수탁 프로세스 감사 로그",
+        "eyebrow": "실시간 텔레메트리 피드",
+        "heading": "지속적 수탁 프로세스 감사",
         "badge": "활성 하트비트",
         "time": "시간 (UTC)",
-        "node": "노드 / 컴포넌트",
+        "node": "노드 / 구성 요소",
         "event": "검증된 이벤트",
         "status": "상태"
       },
-      "nodes": {
-        "compliance": "사전 컴플라이언스 엔진",
-        "riskEngine": "실시간 리스크 관리 코어",
-        "orderRouter": "FIX 스마트 주문 라우터",
-        "custodyRecon": "Tier-1 수탁 대사 시스템"
-      },
-      "events": {
-        "complianceCheck": "사전 주문 위임 규정 검증 완료 (0% 편차)",
-        "varRecalculation": "전체 포트폴리오 99% 모수적 VaR 재계산 완료",
-        "fixAck": "FIX 35=8 체결 확인 완료 (슬리피지 0%)",
-        "custodySync": "실시간 잔고 대사 및 분리 수탁 검증 완료",
-        "fiduciaryRecon": "Reconciliação Contínua de Razão Fiduciário: 0 Discrepâncias",
-        "monteCarloCycle": "Ciclo de Risco Monte Carlo 10k Trajetórias Concluído: Nominal",
-        "preTradeCheck": "Validação de Ordem FIX Pré-Trade (Sub-1ms): Aprovada",
-        "custodyProof": "Selo Criptográfico de Custódia Direta Tier-1 Verificado",
-        "success": "SUCESSO",
-        "verified": "VERIFICADO",
-        "passed": "APROVADO"
-      },
-      "statuses": {
-        "pass": "통과 (PASS)",
-        "verified": "검증됨 (VERIFIED)",
-        "executed": "체결됨 (EXECUTED)",
-        "settled": "대사완료 (SETTLED)"
-      },
-      "channels": {
-        "eyebrow": "기관 알림 연동",
-        "heading": "경보 및 텔레메트리 전송 채널",
-        "fixDropCopy": "FIX Drop-Copy 실시간 감사 피드",
-        "swiftIso": "SWIFT MT535 / ISO 20022 전문",
-        "webhookApi": "엔터프라이즈 Webhook & REST API",
-        "fiduciaryDesk": "Elleva 수탁 및 리스크 지원 데스크"
-      },
       "logNodes": {
-        "vault01": "Cofre-01 (BNY Mellon)",
-        "compliance": "Motor de Conformidade Pré-Trade",
-        "riskEngine": "Motor de Risco Monte Carlo",
-        "rebalancer": "Rebalanceador de Custódia",
-        "marketFeed": "Telemetria de Feeds de Mercado",
-        "router": "Roteador FIX 5.0",
-        "custodyRecon": "Reconciliação de Custódia",
-        "portfolioCore": "Núcleo de Portfólio"
+        "vault01": "Vault-01 (BNY Mellon)",
+        "compliance": "컴플라이언스 엔진 (거래 전)",
+        "riskEngine": "몬테카를로 리스크 엔진",
+        "rebalancer": "커스터디 리밸런서",
+        "marketFeed": "시장 피드 텔레메트리",
+        "router": "코어 오더 라우터 (FIX 5.0)",
+        "custodyRecon": "커스터디 대조",
+        "portfolioCore": "포트폴리오 코어"
       },
       "logEvents": {
-        "settlementHash": "Hash de Liquidação Verificado (T+0)",
-        "mandateRules": "240 Regras de Mandato Avaliadas (0,4ms)",
-        "varRecalibration": "Recalibração VaR de 10.000 Trajetórias (1,24%)",
-        "driftCheck": "Checagem de Limite de Desvio (±0,12% < ±1,50%)",
-        "feedIngestion": "Ingestão Global de 4.820 feeds/seg",
-        "fixAck": "Sessão FIX 5.0 Confirmada por Primary Dealer",
-        "varEpoch": "Simulação Monte Carlo de 10.000 Trajetórias Convergida",
-        "dvpSettled": "Hash de Razão Criptográfico Verificado com BNY Mellon",
-        "driftTolerance": "Desvio Dinâmico Dentro do Limite de Tolerância (0,42%)"
+        "settlementHash": "결제 해시 검증됨 (T+0)",
+        "mandateRules": "240개 위임 규칙 평가 (0.4ms)",
+        "varRecalibration": "10,000 경로 VaR 재조정 (1.24%)",
+        "driftCheck": "드리프트 임계값 점검 (±0.12% < ±1.50%)",
+        "feedIngestion": "글로벌 4,820 피드/초 수집",
+        "fixAck": "FIX 5.0 세션 프라이머리 딜러 승인",
+        "varEpoch": "몬테카를로 10,000 경로 시뮬레이션 수렴",
+        "dvpSettled": "BNY Mellon과 암호화 원장 해시 매치 검증",
+        "driftTolerance": "동적 드리프트 허용 임계값 내 (0.42%)"
       },
       "logStatus": {
-        "secure": "SEGURO",
-        "passed": "APROVADO",
-        "compliant": "CONFORME",
-        "optimal": "OTIMIZADO",
-        "synchronized": "SINCRONIZADO",
-        "success": "SUCESSO",
-        "normal": "NORMAL",
-        "settled": "LIQUIDADO"
+        "secure": "보안",
+        "passed": "통과",
+        "compliant": "준수",
+        "optimal": "최적",
+        "synchronized": "동기화됨",
+        "success": "성공",
+        "normal": "정상",
+        "settled": "결제됨"
       },
       "health": {
-        "eyebrow": "SAÚDE DA INFRAESTRUTURA",
-        "heading": "Status dos Subsistemas Críticos",
-        "latencyLabel": "Latência:",
-        "loadLabel": "Carga:",
-        "online": "ONLINE",
-        "orderRouter": "Roteador Central de Ordens (FIX 5.0)",
-        "riskEngine": "Motor de Risco Monte Carlo (HPC)",
-        "custodyRecon": "Reconciliação Custodial DVP",
-        "firewall": "Firewall de Mandato Pré-Trade"
+        "eyebrow": "인프라 상태",
+        "heading": "중요 하위 시스템 상태",
+        "latencyLabel": "지연 시간:",
+        "loadLabel": "부하:",
+        "online": "온라인",
+        "orderRouter": "코어 오더 라우터 (FIX 5.0)",
+        "riskEngine": "몬테카를로 리스크 엔진 (HPC)",
+        "custodyRecon": "커스터디 DVP 대조",
+        "firewall": "거래 전 위임 방화벽",
+        "latency": "지연 시간:",
+        "load": "부하:"
       },
-      "footnote": "SLA de 99,999% suportado por consenso determinístico multirregional."
+      "events": {
+        "fiduciaryRecon": "지속적 수탁 원장 대조: 0건 불일치",
+        "monteCarloCycle": "몬테카를로 10k 경로 리스크 사이클 완료: 정상",
+        "preTradeCheck": "거래 전 FIX 주문 검증 (1ms 미만): 통과",
+        "custodyProof": "직접 커스터디 Tier-1 암호화 실 검증됨",
+        "success": "성공",
+        "verified": "검증됨",
+        "passed": "통과"
+      },
+      "footnote": "99.999% SLA는 다중 지역 확정적 합의에 의해 지원됨.",
+      "subsystems": {
+        "router": "코어 오더 라우터 (FIX 5.0)",
+        "riskEngine": "몬테카를로 리스크 엔진 (HPC)",
+        "reconciliation": "커스터디 DVP 대조",
+        "firewall": "거래 전 위임 방화벽"
+      }
     },
     "complianceView": {
       "stats": {
-        "mandateChecks": {
-          "label": "활성화된 법적 제한 검사",
-          "value": "48개 규칙",
-          "status": "100% 결정론적 적용"
-        },
-        "auditTrailStatus": {
-          "label": "감사 추적 로그 상태",
-          "value": "암호화 서명됨",
-          "status": "SHA-256 위변조 방지"
-        },
-        "esgGovernance": {
-          "label": "ESG 및 수탁 거버넌스 점수",
-          "value": "AAA (최상위 등급)",
-          "status": "배제 목록 엄격 준수"
-        },
-        "regulatoryFiling": {
-          "label": "규제 당국 보고서 상태",
-          "value": "자동 생성 준비",
-          "status": "실시간 내보내기 지원"
-        },
         "policyRules": {
-          "label": "Regras de Mandato Auditadas",
+          "label": "감사된 위임 규칙",
           "value": "100%",
-          "status": "240 de 240 Regras Aprovadas"
+          "status": "240개 중 240개 통과"
         },
         "restrictedList": {
-          "label": "Violações de Entidades Restritas",
+          "label": "제한 기관 위반",
           "value": "0",
-          "status": "Filtro OFAC / Sanções Limpo"
+          "status": "깨끗한 OFAC / 제재 필터"
         },
         "esg": {
-          "label": "Adesão ao Mandato ESG / Exclusão",
-          "value": "100,0%",
-          "status": "Conformidade Fiduciária Total"
+          "label": "ESG / 배제 위임 준수",
+          "value": "100.0%",
+          "status": "완전한 수탁자 준수"
         },
         "preTrade": {
-          "label": "Verificação Pré-Negociação",
+          "label": "거래 전 검증",
           "value": "< 1 ms",
-          "status": "Bloqueio Determinístico Ativo"
+          "status": "확정적 잠금 활성"
         }
       },
       "matrix": {
-        "eyebrow": "위임 및 제약 조건 매트릭스",
-        "heading": "법정 통제 및 수탁 한도 규정",
-        "badge": "결정론적 감사",
+        "eyebrow": "위임 및 제약 매트릭스",
+        "heading": "법정 통제 및 수탁자 한도",
+        "badge": "확정적 감사",
         "limitLabel": "한도:",
-        "currentLabel": "현재치:",
-        "compliant": "규정 준수",
-        "statusPassed": "통과"
-      },
-      "rules": {
-        "issuerLimit": "단일 발행자 최대 집중 한도",
-        "sovereignMin": "국채 및 AAA/AA 우량 자산 최소 비중",
-        "durationBound": "포트폴리오 실효 듀레이션 허용 범위",
-        "cashLimit": "미투자 현금 및 초단기 유동성 한도",
-        "varCeiling": "일중 99% 모수적 VaR 상한선",
-        "singleIssuer": "Teto de Exposição a Emissor Único",
-        "singleIssuerLimit": "< 5,0% do AUM Líquido",
-        "unhedgedFx": "Teto de Exposição Cambial Não Coberta",
-        "unhedgedFxLimit": "< 2,0% do AUM Líquido",
-        "esgScreening": "Triagem Negativa OFAC / ESG",
-        "esgScreeningLimit": "0 Violações",
-        "illiquidAssets": "Teto de Alocação em Ativos Ilíquidos",
-        "illiquidAssetsLimit": "< 1,0% do AUM Líquido"
-      },
-      "limits": {
-        "issuerLimit": "최대 5.00%",
-        "sovereignMin": "최소 40.00%",
-        "durationBound": "3.50 - 5.00년",
-        "cashLimit": "최대 15.00%",
-        "varCeiling": "최대 4.50%"
-      },
-      "governance": {
-        "eyebrow": "수탁 거버넌스 체계",
-        "heading": "제도적 관리 프레임워크",
-        "point1": "사전 주문 검증: 모든 주문은 발송 전 48개 검사 규칙을 자동으로 통과해야 합니다.",
-        "point2": "직무 분리 원칙: 인공지능 분석 및 결정 엔진과 실제 자산 수탁을 완벽히 분리합니다.",
-        "point3": "완벽한 감사 추적: 모든 투자 판단의 근거와 실행 내역을 영구 암호화 보관합니다."
+        "currentLabel": "현재:",
+        "statusPassed": "통과",
+        "compliant": "준수"
       },
       "seal": {
-        "eyebrow": "SELO DE AUDITORIA CRIPTOGRÁFICA",
-        "heading": "Trilha Imutável de Governança",
-        "soc2": "Certificação SOC-2 Tipo II",
-        "merkle": "Livro-Razão Imutável em Árvore Merkle",
-        "merkleRoot": "Raiz de Merkle:",
-        "epoch": "Timestamp da Época:",
-        "custodyId": "ID de Custódia Fiduciária:"
+        "eyebrow": "암호화 감사 실",
+        "heading": "불변 거버넌스 추적",
+        "soc2": "SOC-2 Type II 인증",
+        "merkle": "불변 머클 트리 원장",
+        "merkleRoot": "머클 루트:",
+        "epoch": "에포크 타임스탬프:",
+        "custodyId": "수탁 커스터디 ID:",
+        "merkleTree": "불변 머클 트리 원장",
+        "epochTimestamp": "에포크 타임스탬프:"
       },
-      "footnote": "Zero exceções de conformidade registradas em todos os mandatos monitorados."
+      "rules": {
+        "singleIssuer": "단일 발행자 익스포저 상한",
+        "singleIssuerLimit": "< 5.0% 순 AUM",
+        "unhedgedFx": "미헤지 FX 익스포저 상한",
+        "unhedgedFxLimit": "< 2.0% 순 AUM",
+        "esgScreening": "OFAC / ESG 네거티브 스크리닝",
+        "esgScreeningLimit": "0건 위반",
+        "illiquidAssets": "비유동 자산 배분 상한",
+        "illiquidAssetsLimit": "< 1.0% 순 AUM",
+        "leverageLimit": "0.00x (레버리지 불가)",
+        "investmentGrade": "최소 투자 등급 하한",
+        "investmentGradeLimit": "100% BBB- 이상",
+        "custodySegregation": "직접 커스터디 분리 위임",
+        "custodySegregationLimit": "100% 고객 법적 소유권",
+        "leverage": "위임 레버리지 제약"
+      },
+      "footnote": "모든 모니터링 위임에서 규정 준수 예외 제로."
+    },
+    "months": {
+      "jan": "1월",
+      "feb": "2월",
+      "mar": "3월",
+      "apr": "4월",
+      "may": "5월",
+      "jun": "6월",
+      "jul": "7월"
+    },
+    "overview": {
+      "allocation": {
+        "eyebrow": "위임 자산 배분",
+        "heading": "액티브 포트폴리오 비중",
+        "tooltipLabel": "배분 비중",
+        "fixedIncome": "채권",
+        "globalEquities": "글로벌 주식",
+        "realAssets": "실물 자산 및 인프라",
+        "strategicCash": "전략 현금 및 유동성"
+      },
+      "stats": {
+        "monitoredAum": {
+          "label": "모니터링 위임 AUM",
+          "value": "US$ 482.5M",
+          "status": "명목 / 분리 보관"
+        },
+        "adherence": {
+          "label": "위임 정책 준수율",
+          "value": "99.8%",
+          "deviation": "0.00% 드리프트 편차"
+        },
+        "var": {
+          "label": "모수적 99% 10일 VaR",
+          "value": "1.24%",
+          "policyLimit": "한도: 4.50% (준수)"
+        },
+        "custody": {
+          "label": "수탁 상태",
+          "status": "Tier-1 분리 수탁",
+          "subtext": "100% 고객 법적 소유권"
+        }
+      },
+      "chart": {
+        "eyebrow": "동적 효율적 투자선",
+        "heading": "실시간 확률론적 시뮬레이션",
+        "seriesExecution": "최적 확률적 프론티어",
+        "seriesTarget": "위임 정책 경계선",
+        "badge": "10,000개 경로 시뮬레이션"
+      }
     }
   },
   "intelligence": {
@@ -1366,23 +1221,15 @@
       "portfoliosDesc": "귀속 및 위험"
     },
     "title": "금융 기술의 새로운 카테고리",
-    "description": "우리는 자율 자본 인프라를 정의하고 있습니다 — 단순히 숫자를 표시하는 것이 아니라, 수탁자 정밀도로 복잡한 투자 프로세스를 실행하는 소프트웨어입니다.",
+    "description": "우리는 자율 자본 인프라를 정의하고 있습니다—단순히 숫자를 표시하는 것이 아니라, 수탁자 정밀도로 복잡한 투자 프로세스를 실행하는 소프트웨어입니다.",
     "topologyBadge": "카테고리 창조"
   },
   "operational": {
     "metrics": {
-      "monitoredAssets": {
-        "name": "모니터링 자산"
-      },
-      "responseSpeed": {
-        "name": "응답 속도"
-      },
-      "costPerAnalysis": {
-        "name": "분석당 비용"
-      },
-      "analystCapacity": {
-        "name": "애널리스트당 역량"
-      }
+      "monitoredAssets": { "name": "모니터링 자산" },
+      "responseSpeed": { "name": "응답 속도" },
+      "costPerAnalysis": { "name": "분석당 비용" },
+      "analystCapacity": { "name": "애널리스트당 역량" }
     },
     "title": "측정 가능한 운영 우위",
     "description": "자율 인프라와 전통적 선형 자산 운용 운영의 운영 성과를 비교합니다.",

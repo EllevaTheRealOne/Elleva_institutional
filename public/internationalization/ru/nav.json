@@ -1,6 +1,13 @@
 {
   "languageSelector": "Выбрать язык",
   "languageSelectorPopover": "Язык",
+  "calculator": "Калькулятор",
+  "governance": "Управление",
+  "legal": "Юридическая информация",
+  "operatingSystem": "Операционная система",
+  "researchIntelligence": "Исследования и аналитика",
+  "resources": "Ресурсы",
+  "tutorials": "Руководства",
   "themeToggle": "Переключить тему отображения",
   "getStarted": "Начать",
   "institutionalNav": "Институциональная навигация",
@@ -61,8 +68,8 @@
         "financialInfrastructure": "Финансовая инфраструктура",
         "intelligenceOrchestration": "Интеллект и оркестрация",
         "securityGovernance": "Безопасность и управление",
-        "transparency": "Прозрачность",
-        "web3Infrastructure": "Инфраструктура Web3"
+        "web3Infrastructure": "Инфраструктура Web3",
+        "transparency": "Прозрачность"
       }
     },
     "ecosystem": {
@@ -89,12 +96,5 @@
       }
     }
   },
-  "menuToggle": "Переключить меню навигации",
-  "calculator": "Калькулятор",
-  "governance": "Управление",
-  "legal": "Юридическая информация",
-  "operatingSystem": "Операционная система",
-  "researchIntelligence": "Исследования и аналитика",
-  "resources": "Ресурсы",
-  "tutorials": "Руководства"
+  "menuToggle": "Переключить меню навигации"
 }
