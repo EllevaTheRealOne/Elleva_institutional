@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
-import ellevaLogo from "@/assets/elleva-logo.svg";
+import ellevaLogoCyanWhite from "@/assets/brand/brand_cyan_white.svg";
+import ellevaLogoCyanBlack from "@/assets/brand/brand_cyan_black.svg";
 import { useTranslation } from "react-i18next";
 import { Twitter, Linkedin, MessageSquare, Send, Globe } from "lucide-react";
+import { useTheme } from "@/context/theme";
 
 interface FooterLink {
   label: string;
@@ -16,6 +18,9 @@ interface FooterColumn {
 
 export const Footer = () => {
   const { t } = useTranslation(["nav", "common"]);
+  const { resolvedTheme } = useTheme();
+  const ellevaLogo =
+    resolvedTheme === "dark" ? ellevaLogoCyanWhite : ellevaLogoCyanBlack;
 
   const columns: FooterColumn[] = [
     {
@@ -175,12 +180,12 @@ export const Footer = () => {
       <div className="container mx-auto max-w-7xl px-5 md:px-8">
         <div className="grid grid-cols-1 gap-10 border-b border-border pb-14 lg:grid-cols-12 lg:gap-12">
           {/* Brand */}
-          <div className="space-y-4 lg:col-span-4">
+          <div className="lg:col-span-4">
             <a href="/#" className="group inline-block">
               <img
                 src={ellevaLogo}
                 alt="ELLEVA"
-                className="h-6 w-auto object-contain transition-opacity group-hover:opacity-90 md:h-7"
+                className="h-16 w-auto object-contain transition-opacity group-hover:opacity-90"
               />
             </a>
 
@@ -190,7 +195,7 @@ export const Footer = () => {
             </p>
 
             {/* Social */}
-            <div className="flex items-center gap-3 pt-2">
+            <div className="flex items-center gap-3 pt-6">
               <a
                 href="https://twitter.com"
                 target="_blank"

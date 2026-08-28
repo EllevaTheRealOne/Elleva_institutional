@@ -21,7 +21,7 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ isDark = false }) => {
       <div className="max-w-7xl mx-auto px-6 sm:px-10">
         {/* Main Institutional CTA Banner */}
         <div
-          className={`p-8 sm:p-14 rounded-2xl border text-center relative overflow-hidden transition-all mb-16 ${
+          className={`p-8 sm:p-14 rounded-2xl border text-center relative overflow-hidden transition-all ${
             isDark
               ? "bg-[#0A0D0F] border-[rgba(245,247,246,0.1)] shadow-2xl"
               : "bg-white border-[rgba(10,13,12,0.1)] shadow-md"
@@ -36,36 +36,6 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ isDark = false }) => {
           >
             {t("finalCTA.description")}
           </p>
-        </div>
-
-        {/* Footer Credentials & Guarantees */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-black/[0.06] dark:border-white/10 text-center sm:text-left mb-12">
-          <div className="flex items-center justify-center sm:justify-start gap-3">
-            <Lock className="w-4 h-4 text-[#189890] shrink-0" />
-            <span
-              className={`text-xs ${isDark ? "text-[#8E9995]" : "text-[#4E5653]"}`}
-            >
-              {t("finalCTA.credentials.segregation")}
-            </span>
-          </div>
-
-          <div className="flex items-center justify-center sm:justify-start gap-3">
-            <ShieldCheck className="w-4 h-4 text-[#189890] shrink-0" />
-            <span
-              className={`text-xs ${isDark ? "text-[#8E9995]" : "text-[#4E5653]"}`}
-            >
-              {t("finalCTA.credentials.noCustody")}
-            </span>
-          </div>
-
-          <div className="flex items-center justify-center sm:justify-start gap-3">
-            <CheckCircle2 className="w-4 h-4 text-[#189890] shrink-0" />
-            <span
-              className={`text-xs ${isDark ? "text-[#8E9995]" : "text-[#4E5653]"}`}
-            >
-              {t("finalCTA.credentials.connectivity")}
-            </span>
-          </div>
         </div>
       </div>
     </footer>

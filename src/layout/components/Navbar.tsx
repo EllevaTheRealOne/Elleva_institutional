@@ -24,7 +24,7 @@ const Navbar = () => {
   const { pathWithoutLng } = useRouteTranslation();
   const navList = navLinks[pathWithoutLng] || navLinks["1"];
   const location = useLocation();
-  const { theme, resolvedTheme, setTheme, toggleTheme } = useTheme();
+  const { resolvedTheme } = useTheme();
   const ellevaLogo =
     resolvedTheme === "dark" ? ellevaLogoCyanWhite : ellevaLogoCyanBlack;
   const handleHREF = useCallback(
