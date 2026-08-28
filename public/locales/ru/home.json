@@ -456,366 +456,767 @@
   },
   "investmentExperience": {
     "allocation": {
-      "fixedIncome": "Доход с фиксированной ставкой",
-      "globalEquities": "Глобальные акции",
+      "sovereignFixedIncome": "Суверенный фиксированный доход",
+      "globalEquities": "Глобальные ключевые акции",
       "realAssets": "Реальные активы и инфраструктура",
-      "strategicCash": "Стратегические денежные средства и резервы",
+      "strategicCash": "Стратегическая ликвидность и резервы",
       "eyebrow": "РАСПРЕДЕЛЕНИЕ МАНДАТА",
-      "heading": "Вес активного портфеля",
-      "tooltipLabel": "Распределенный вес"
+      "heading": "Активные веса портфеля",
+      "tooltipLabel": "Распределенный вес",
+      "fixedIncome": "Renda Fixa"
     },
     "tabs": {
       "overview": "Обзор портфеля",
       "positions": "Позиции",
-      "allocation": "Вид распределения",
+      "allocation": "Распределение активов",
       "performance": "Атрибуция доходности",
       "risk": "Риск и лимиты",
       "liquidity": "Управление ликвидностью",
-      "marketIntelligence": "Рыночная разведка",
-      "attribution": "Атрибуция и факторы",
-      "alerts": "Оповещения телеметрии",
+      "marketIntelligence": "Рыночная аналитика",
+      "attribution": "Факторный анализ",
+      "alerts": "Телеметрические оповещения",
       "compliance": "Соответствие мандату"
     },
-    "title": "Прецизионный институциональный инвестиционный опыт",
-    "description": "Исполнительский интерфейс, разработанный для институциональных распределителей активов, семейных офисов и фидуциарных комитетов, требующих абсолютной прозрачности и детерминированного контроля.",
+    "title": "Институциональный инвестиционный опыт высокой точности",
+    "description": "Исполнительный интерфейс для институциональных инвесторов, семейных офисов и фидуциарных комитетов, требующих абсолютной прозрачности и детерминированного контроля.",
     "stats": {
       "monitoredAum": {
-        "label": "Мониторинг AUM по мандату",
+        "label": "Контролируемый AUM мандата",
         "status": "Номинальный / Сегрегированный"
       },
       "adherence": {
-        "label": "Соблюдение политики мандата",
-        "deviation": "0,00% отклонение дрейфа"
+        "label": "Соблюдение инвестиционной политики",
+        "deviation": "0.00% отклонение дрейфа"
       },
       "var": {
-        "label": "Параметрический 99% 10-дневный VaR",
-        "policyLimit": "Лимит: 4,50% (Соответствует)"
+        "label": "Параметрический 99% 10D VaR",
+        "policyLimit": "Лимит: 4.50% (соответствует)"
       },
       "custody": {
-        "label": "Состояние хранения",
-        "status": "Сегрегированный уровень 1",
-        "subtext": "100% юридический титул клиента"
+        "label": "Статус депозитарного хранения",
+        "status": "Сегрегированное хранение Tier-1",
+        "subtext": "100% юридическое право клиента"
       }
     },
     "chart": {
       "eyebrow": "ДИНАМИЧЕСКАЯ ЭФФЕКТИВНАЯ ГРАНИЦА",
-      "heading": "Стохастическое моделирование в реальном времени",
-      "badge": "МОДЕЛИРОВАНИЕ 10 000 ПУТЕЙ",
+      "heading": "Стохастическая симуляция в реальном времени",
+      "badge": "СИМУЛЯЦИЯ 10 000 ТРАЕКТОРИЙ",
       "seriesExecution": "Оптимальная стохастическая граница",
-      "seriesTarget": "Граница политики мандата"
+      "seriesTarget": "Граница инвестиционной политики"
     },
     "positions": {
       "stats": {
         "holdings": {
-          "label": "Прямые активные позиции",
-          "value": "142 Актива",
-          "status": "100% Сегрегированное хранение"
+          "label": "Активные прямые позиции",
+          "value": "142 ценные бумаги",
+          "status": "100% сегрегированное хранение"
         },
         "custody": {
-          "label": "Коэффициент сегрегированного хранения",
-          "value": "100,0%",
+          "label": "Коэффициент сегрегации активов",
+          "value": "100.0%",
           "status": "Нулевой риск контрагента"
         },
         "liquidity": {
           "label": "Внутридневная ликвидность (<24ч)",
-          "value": "94,2%",
+          "value": "94.2%",
           "status": "Горизонты T+0 / T+1"
         },
         "exposure": {
           "label": "Эффективная валовая экспозиция",
-          "value": "100,0%",
-          "status": "Нулевое плечо / Соответствует"
+          "value": "100.0%",
+          "status": "Без левереджа / Соответствует"
         }
       },
       "table": {
         "eyebrow": "СОСТАВ ИНСТИТУЦИОНАЛЬНЫХ АКТИВОВ",
-        "heading": "Основные позиции и фидуциарное хранение",
+        "heading": "Основные позиции и кастодиальное хранение",
         "badge": "АУДИРОВАННЫЙ РЕЕСТР T+0",
         "asset": "Актив / Идентификатор",
         "category": "Класс активов",
         "weight": "Вес (%)",
         "custodian": "Кастодиан",
-        "settlement": "Расчет"
+        "settlement": "Расчеты"
       },
       "distribution": {
         "eyebrow": "РАСПРЕДЕЛЕНИЕ ПО КАСТОДИАНАМ",
-        "heading": "Сегрегация активов уровня 1"
+        "heading": "Сегрегация активов уровня Tier-1",
+        "tooltipLabel": "Доля хранения"
+      },
+      "categories": {
+        "sovereignFixedIncome": "Суверенный фиксированный доход",
+        "globalEquities": "Глобальные акции",
+        "realAssets": "Реальные активы",
+        "strategicLiquidity": "Стратегическая ликвидность"
+      },
+      "settlementTypes": {
+        "t0": "T+0 Внутри дня",
+        "t1": "T+1 DVP",
+        "t0Realtime": "T+0 В реальном времени"
       }
     },
     "allocationView": {
       "stats": {
         "drift": {
-          "label": "Отклонение от целевого веса (Дрифт)",
-          "value": "±0,12%",
-          "status": "В пределах диапазона (±1,50%)"
+          "label": "Дрейф целевого веса",
+          "value": "±0.12%",
+          "status": "В пределах диапазона (±1.50%)"
         },
         "duration": {
           "label": "Эффективная активная дюрация",
-          "value": "4,22 Года",
-          "status": "Бенчмарк: 4,20 Года"
+          "value": "4.22 года",
+          "status": "Бенчмарк: 4.20 года"
         },
         "beta": {
           "label": "Активная бета к политике",
-          "value": "0,84",
-          "status": "Защитный профиль подтвержден"
+          "value": "0.84",
+          "status": "Подтвержденная защитная позиция"
         },
         "rebalancing": {
-          "label": "Статус ребалансировки",
+          "label": "Статус триггера ребалансировки",
           "value": "В равновесии",
-          "status": "Ребалансировка не требуется"
+          "status": "Действий не требуется"
         }
       },
       "chart": {
-        "eyebrow": "РАСПРЕДЕЛЕНИЕ КЛАССОВ АКТИВОВ",
-        "heading": "Текущее распределение vs Цель мандата",
-        "badge": "ДЕТЕРМИНИРОВАННЫЙ КОНТРОЛЬ ДРИФТА",
-        "seriesActual": "Текущее распределение (%)",
-        "seriesTarget": "Цель мандата (%)"
+        "eyebrow": "РАСПРЕДЕЛЕНИЕ ПО КЛАССАМ АКТИВОВ",
+        "heading": "Фактическое распределение vs Целевой мандат",
+        "badge": "ДЕТЕРМИНИРОВАННЫЙ КОНТРОЛЬ ДРЕЙФА",
+        "seriesActual": "Фактическое распределение (%)",
+        "seriesTarget": "Целевой мандат (%)"
       },
       "geography": {
         "eyebrow": "ГЛОБАЛЬНАЯ ДИВЕРСИФИКАЦИЯ",
         "heading": "Географическая экспозиция"
+      },
+      "footnote": "100% соответствие руководящим принципам UCITS и суверенного распределения.",
+      "assetClasses": {
+        "sovereignFixedIncome": "Суверенный фиксированный доход",
+        "globalEquitiesCore": "Глобальные акции (Core)",
+        "realAssetsInfra": "Реальные активы и инфраструктура",
+        "strategicCashSofr": "Стратегическая ликвидность и SOFR"
+      },
+      "regions": {
+        "northAmerica": "Северная Америка",
+        "developedEurope": "Развитая Европа",
+        "developedAsia": "Развитая Азия (APAC)",
+        "globalEmerging": "Развивающиеся рынки"
       }
     },
     "performanceView": {
       "stats": {
         "informationRatio": {
           "label": "Коэффициент информации (IR)",
-          "value": "1,82",
+          "value": "1.82",
           "status": "Фидуциарная стабильность"
         },
         "trackingError": {
-          "label": "Годовая ошибка слежения",
-          "value": "0,34%",
-          "status": "Лимит мандата: <1,00%"
+          "label": "Ошибка слежения (TE годовая)",
+          "value": "1.14%",
+          "status": "Лимит политики: < 2.50%"
+        },
+        "alpha": {
+          "label": "Активная альфа (годовая)",
+          "value": "+3.40%",
+          "status": "После вычета всех комиссий"
         },
         "sharpeRatio": {
-          "label": "Скорректированный коэфф. Шарпа",
-          "value": "2,14",
-          "status": "Безрисковая ставка: SOFR"
+          "label": "Коэффициент Шарпа",
+          "value": "2.14",
+          "status": "Превосходная доходность с учетом риска"
         },
         "maxDrawdown": {
-          "label": "Максимальная просадка",
+          "label": "Drawdown Máximo Histórico",
           "value": "-1,42%",
-          "status": "Восстановление: 14 дней"
+          "status": "Recuperação: 14 Dias"
         }
       },
       "chart": {
-        "eyebrow": "КУМУЛЯТИВНАЯ ТРАЕКТОРИЯ",
-        "heading": "Рост портфеля vs Бенчмарк политики",
+        "eyebrow": "НАКОПЛЕННАЯ АТРИБУЦИЯ ДОХОДНОСТИ",
+        "heading": "Стоимость портфеля vs Инвестиционный бенчмарк",
         "badge": "ЕЖЕДНЕВНЫЙ АУДИТ",
-        "seriesPortfolio": "Институциональный портфель",
-        "seriesBenchmark": "Бенчмарк мандата"
+        "seriesPortfolio": "Портфель Elleva (Net)",
+        "seriesBenchmark": "Бенчмарк политики (Gross)"
+      },
+      "metrics": {
+        "eyebrow": "ПОКАЗАТЕЛИ С УЧЕТОМ РИСКА",
+        "heading": "Фидуциарные метрики доходности",
+        "volatility": "Годовая волатильность",
+        "maxDrawdown": "Максимальная просадка (Max DD)",
+        "sortinoRatio": "Коэффициент Сортино (Downside Risk)",
+        "calmarRatio": "Коэффициент Кальмара (Return/Max DD)"
       },
       "attribution": {
-        "eyebrow": "АТРИБУЦИЯ БРИНСОНА-ФАХЛЕРА",
-        "heading": "Декомпозиция активной доходности"
-      }
+        "eyebrow": "ATRIBUIÇÃO BRINSON-FACHLER",
+        "heading": "Decomposição de Retorno Ativo",
+        "allocationEffect": "Efeito de Alocação de Ativos",
+        "selectionEffect": "Efeito de Seleção de Títulos",
+        "interactionAlpha": "Alfa de Interação / Execução",
+        "hedgeEffect": "Efeito Líquido de Hedge Cambial"
+      },
+      "footnote": "Alfa Ativo Total: +2,74% anualizado sobre a política de benchmark."
     },
     "riskView": {
       "stats": {
+        "cvar": {
+          "label": "Условный VaR (CVaR 99%)",
+          "value": "5.10%",
+          "status": "Лимит: 6.50% (соответствует)"
+        },
+        "stressLoss": {
+          "label": "Максимальный стресс-убыток",
+          "value": "-4.80%",
+          "status": "Глобальный кризис ликвидности"
+        },
+        "durationGap": {
+          "label": "Чувствительность к гэпу дюрации",
+          "value": "+0.02 года",
+          "status": "Нейтральная позиция по ставкам"
+        },
+        "liquidityCoverage": {
+          "label": "Норматив покрытия ликвидности (LCR)",
+          "value": "420%",
+          "status": "Существенно выше норм Базель III"
+        },
         "parametricVar": {
-          "label": "Параметрический 99% 10-дн. VaR",
+          "label": "VaR Paramétrico 99% 10D",
           "value": "1,24%",
-          "status": "Лимит: 4,50% (Соответствует)"
+          "status": "Limite: 4,50% (Conforme)"
         },
         "expectedShortfall": {
           "label": "Expected Shortfall (CVaR)",
           "value": "1,89%",
-          "status": "Нормализованный хвостовой риск"
+          "status": "Cauda Extrema Normalizada"
         },
         "stressCoverage": {
-          "label": "Покрытие стресс-потерь",
+          "label": "Cobertura de Estresse",
           "value": "3,8x",
-          "status": "Регуляторный минимум: 1,5x"
+          "status": "Mínimo Regulatório: 1,5x"
         },
         "durationMismatch": {
-          "label": "Несовпадение дюрации",
+          "label": "Descompasso de Duration",
           "value": "+0,02y",
-          "status": "Активная иммунизация"
+          "status": "Imunização Ativa"
         }
       },
       "chart": {
-        "eyebrow": "МАКРОСТОХАСТИЧЕСКИЙ СТРЕСС-ТЕСТ",
-        "heading": "Симуляция сценариев шока",
-        "badge": "4 ЖЕСТКИХ СЦЕНАРИЯ",
-        "seriesImpact": "Влияние на портфель (%)"
+        "eyebrow": "СТРЕСС-ТЕСТИРОВАНИЕ ИСТОРИЧЕСКИХ СЦЕНАРИЕВ",
+        "heading": "Симуляция макроэкономических шоков",
+        "badge": "4 СТРЕССОВЫХ СЦЕНАРИЯ",
+        "seriesImpact": "Прогнозируемое влияние на портфель (%)",
+        "mandateLimit": "Максимальный фидуциарный допуск (-5.00%)"
+      },
+      "scenarios": {
+        "ratesShock": "Резкий рост ставок (+200 б.п.)",
+        "globalRecession": "Глубокая глобальная рецессия",
+        "liquidityFreeze": "Замораживание кредитного рынка",
+        "geopoliticalCrisis": "Тяжелый геополитический шок",
+        "stagflation": "Choque de Estagflação Macro",
+        "geopolitical": "Salto de Volatilidade Geopolítica",
+        "yieldSpike": "Pico na Curva de Juros (+150bps)",
+        "equityDrawdown": "Drawdown de Ações Globais (-20%)"
+      },
+      "breakdown": {
+        "eyebrow": "ДЕКОМПОЗИЦИЯ ФАКТОРОВ РИСКА",
+        "heading": "Предельный вклад в риск (MCTR)",
+        "equityRisk": "Рыночный бета-риск акций",
+        "interestRateRisk": "Дюрация и кривая доходности",
+        "creditSpread": "Кредитные спреды и дефолты",
+        "fxCommodity": "Валютная и сырьевая экспозиция"
       },
       "budget": {
-        "eyebrow": "РИСК-БЮДЖЕТИРОВАНИЕ",
-        "heading": "Использование лимитов мандата"
-      }
+        "eyebrow": "ORÇAMENTO DE RISCO",
+        "heading": "Utilização de Limites de Mandato",
+        "varConsumption": "Consumo de VaR 99%",
+        "trackingErrorLimit": "Limite de Tracking Error",
+        "concentrationLimit": "Concentração em Emissor Único",
+        "stressAbsorption": "Absorção de Estresse de Liquidez",
+        "compliant": "Conforme"
+      },
+      "footnote": "Validação contínua de Monte Carlo executa 10.000 trajetórias por ciclo."
     },
     "liquidityView": {
       "stats": {
+        "t0Coverage": {
+          "label": "Мгновенная ликвидность T+0",
+          "value": "US$ 142.5M",
+          "status": "Расчеты овернайт"
+        },
+        "t1Coverage": {
+          "label": "Конвертируемая ликвидность T+1 DVP",
+          "value": "US$ 218.0M",
+          "status": "Высоколиквидные гособлигации"
+        },
+        "avgBidAsk": {
+          "label": "Взвешенный спред Bid/Ask портфеля",
+          "value": "0.8 б.п.",
+          "status": "Глубокая ликвидность рынка"
+        },
+        "stressedExit": {
+          "label": "Время ликвидации при стрессе (90% AUM)",
+          "value": "< 48 часов",
+          "status": "Рыночное влияние < 12 б.п."
+        },
         "cashT0": {
-          "label": "Доступные средства T+0",
+          "label": "Caixa Disponível T+0",
           "value": "US$ 57,9M",
-          "status": "Мгновенная ликвидность"
+          "status": "Liquidez Imediata"
         },
         "convertibleT1": {
-          "label": "Конвертируемые активы T+1",
+          "label": "Ativos Conversíveis T+1",
           "value": "US$ 214,2M",
-          "status": "Гособлигации US & Суверенные"
+          "status": "Treasuries & Soberanos"
         },
         "lcr": {
-          "label": "Коэффициент покрытия (LCR)",
+          "label": "Índice de Cobertura (LCR)",
           "value": "420%",
-          "status": "Базель III: >100%"
+          "status": "Basileia III: >100%"
         },
         "settlementFail": {
-          "label": "Частота сбоев расчетов",
+          "label": "Falhas de Liquidação",
           "value": "0,00%",
-          "status": "0 сбоев за 12 месяцев"
+          "status": "0 Falhas em 12 Meses"
         }
       },
       "chart": {
-        "eyebrow": "ВРЕМЕННАЯ ЛЕСТНИЦА ЛИКВИДНОСТИ",
-        "heading": "Профиль конвертации по горизонтам",
+        "eyebrow": "ЛЕСТНИЦА СРОКОВ ЛИКВИДНОСТИ",
+        "heading": "Доступные средства для ликвидации ($ млн)",
         "badge": "ВНУТРИДНЕВНОЙ МОНИТОРИНГ",
-        "seriesLiquidity": "Доступная ликвидность (US$ M)"
+        "seriesLiquidity": "Объем доступной ликвидности"
+      },
+      "horizons": {
+        "t0": "T+0 (Мгновенно)",
+        "t1": "T+1 (24 часа)",
+        "t2": "T+2 (48 часов)",
+        "t5": "T+5 (1 неделя)",
+        "t30": "T+30 (1 месяц)",
+        "t2t3": "T+2 / T+3 Mercado"
+      },
+      "stress": {
+        "eyebrow": "ЭКСТРЕМАЛЬНЫЙ СТРЕСС ЛИКВИДНОСТИ",
+        "heading": "Запас надежности ликвидности",
+        "dailyOutflow": "Максимальный прогнозируемый дневной отток",
+        "bufferAvailable": "Доступный буфер ликвидности",
+        "collateralHaircut": "Дисконт по качественному залогу",
+        "settlementStatus": "Статус автоматических расчетов"
       },
       "buffers": {
-        "eyebrow": "БУФЕРЫ БЕЗОПАСНОСТИ",
-        "heading": "Инструменты первичной ликвидности"
-      }
+        "eyebrow": "RESERVAS DE SEGURANÇA",
+        "heading": "Instrumentos de Liquidez Primária"
+      },
+      "instruments": {
+        "repo": "Overnight Fed Reverse Repo / Caixa SOFR",
+        "tbills": "US Treasury Bills (< 90 dias)",
+        "sovereignBonds": "Títulos Soberanos Governamentais G7",
+        "tier1Cash": "Equivalentes de Caixa Tier-1",
+        "tier1Sovereign": "Soberano Tier-1",
+        "tier1Gov": "Governamental Tier-1"
+      },
+      "footnote": "100% dos ativos líquidos mantidos em contas DVP / liquidação imediata."
     },
     "marketIntelligenceView": {
       "stats": {
+        "feedsProcessed": {
+          "label": "Обрабатываемых потоков данных в день",
+          "value": "4.8M+",
+          "status": "Мультиактивные данные в реальном времени"
+        },
+        "regimeState": {
+          "label": "Текущая фаза макроцикла",
+          "value": "Позднее расширение",
+          "status": "Уверенность: 94.2%"
+        },
+        "sentimentScore": {
+          "label": "Индекс кросс-активных настроений",
+          "value": "+0.42 (умеренно бычий)",
+          "status": "Систематический контроль позиций"
+        },
+        "signalLatency": {
+          "label": "Задержка генерации сигналов",
+          "value": "< 120 мс",
+          "status": "Детерминированный вывод за миллисекунды"
+        },
         "telemetryFeeds": {
-          "label": "Потоки глобальной телеметрии",
-          "value": "4 820/с",
-          "status": "Обработка в реальном времени"
+          "label": "Feeds de Telemetria Global",
+          "value": "4.820/s",
+          "status": "Processamento em Tempo Real"
         },
         "regimeConfidence": {
-          "label": "Уверенность в макрорежиме",
+          "label": "Confiança do Regime Macro",
           "value": "94,2%",
-          "status": "Фаза: Умеренная экспансия"
+          "status": "Fase: Expansão Moderada"
         },
         "correlationShift": {
-          "label": "Сдвиг межрыночной корреляции",
+          "label": "Deslocamento de Correlação",
           "value": "-0,18",
-          "status": "Активная декорреляция"
+          "status": "Descorrelação Ativa"
         },
         "yieldSteepening": {
-          "label": "Индекс крутизны кривой",
+          "label": "Inclinação da Curva",
           "value": "+14 bps",
-          "status": "Нормализованная кривая"
+          "status": "Curva Normalizada"
         }
       },
       "matrix": {
-        "eyebrow": "МАТРИЦА МАКРОРЕЖИМА",
-        "heading": "Сигналы автономного движка интеллекта",
-        "badge": "ДЕТЕРМИНИРОВАННЫЙ ДВИЖОК"
+        "eyebrow": "МАТРИЦА СИГНАЛОВ МАКРОРЕЖИМА",
+        "heading": "Сигналы автономного аналитического ядра",
+        "badge": "ДЕТЕРМИНИРОВАННЫЙ ДВИЖОК",
+        "confLabel": "Уверенность"
+      },
+      "indicators": {
+        "usRates": "Срочная структура ставок США и кривая доходности",
+        "sofrSpread": "SOFR / Спреды рынка РЕПО и ликвидность",
+        "creditSpreads": "Спреды корпоративных облигаций IG и HY",
+        "vixTermStructure": "Срочная структура волатильности VIX"
+      },
+      "indicatorStatuses": {
+        "disinversionTrend": "Нормализация после инверсии кривой",
+        "lowSystemicStress": "Низкий системный стресс / стабильность",
+        "rangeBoundCompression": "В пределах целевого диапазона",
+        "contangoNormal": "Нормальное контанго / Риск под контролем"
+      },
+      "indicatorSignals": {
+        "durationNeutral": "Нейтральная дюрация",
+        "favorableCarry": "Благоприятный кэрри",
+        "selectiveCredit": "Выборочный кредит",
+        "hedgedEquity": "Хеджированные акции"
+      },
+      "insights": {
+        "eyebrow": "СТРАТЕГИЧЕСКИЕ ВЫВОДЫ",
+        "heading": "Алгоритмический макропрогноз и рекомендации",
+        "point1": "Увеличение крутизны кривой повышает привлекательность среднесрочных суверенных бондов 4-5 лет.",
+        "point2": "Снижение товарной инфляции создает благоприятные условия для глобальных дивидендных акций.",
+        "point3": "Стабилизация доллара открывает тактическое окно для качественного суверенного долга развивающихся рынков."
       },
       "theses": {
-        "eyebrow": "АВТОНОМНЫЙ СИНТЕЗ",
-        "heading": "Активные инвестиционные тезисы и гипотезы"
-      }
+        "eyebrow": "SÍNTESE AUTÔNOMA",
+        "heading": "Teses de Investimento e Hipóteses Ativas"
+      },
+      "signals": {
+        "growthImpulse": "Impulso de Crescimento Macro",
+        "expansion": "Expansão Moderada",
+        "constructive": "Construtivo",
+        "liquidityCondition": "Condições de Liquidez Global",
+        "neutralPlus": "Neutro (+0,2z)",
+        "balanced": "Equilibrado",
+        "realRates": "Trajetória de Juros Reais",
+        "restrictive": "Restritivo Estável",
+        "neutral": "Neutro",
+        "volatilityRegime": "Regime de Volatilidade Multi-Ativos",
+        "subdued": "Moderado (<14 VIX)",
+        "riskOn": "Viés Pró-Risco"
+      },
+      "thesesItems": {
+        "semiCooling": "Semicondutores Especializados e Infraestrutura Elétrica",
+        "semiHypothesis": "Hipótese: Expansão assimétrica de capex em refrigeração líquida e redes limpas.",
+        "steepener": "Inclinação da Curva de Juros Soberana Global",
+        "steepenerHypothesis": "Hipótese: Reprecificação de prêmio de prazo fiscal acelerando desinversão.",
+        "activeConviction": "Convicção Ativa (94%)",
+        "tacticalConviction": "Convicção Tática (88%)"
+      },
+      "footnote": "Validação cruzada em 4.820 séries temporais macro com proteção estrita contra alucinações."
     },
     "attributionView": {
       "stats": {
+        "totalAlpha": {
+          "label": "Совокупная альфа (годовая)",
+          "value": "+3.40%",
+          "status": "Относительно инвестиционного бенчмарка"
+        },
+        "selectionEffect": {
+          "label": "Эффект выбора бумаг (Selection)",
+          "value": "+1.92%",
+          "status": "Количественные модели снизу вверх"
+        },
+        "allocationEffect": {
+          "label": "Эффект распределения активов (Allocation)",
+          "value": "+1.18%",
+          "status": "Адаптация к макроэкономическому циклу"
+        },
+        "interactionEffect": {
+          "label": "Эффект взаимодействия и тайминга",
+          "value": "+0.30%",
+          "status": "Умное исполнение ордеров"
+        },
         "systematic": {
-          "label": "Систематическая факторная экспозиция",
+          "label": "Exposição Fatorial Sistemática",
           "value": "92,4%",
-          "status": "Чистые институциональные факторы"
+          "status": "Fatores Institucionais Puros"
         },
         "residual": {
-          "label": "Специфический остаточный риск",
+          "label": "Risco Residual Específico",
           "value": "7,6%",
-          "status": "Контролируемый идиосинкратический"
+          "status": "Idiossincrático Controlado"
         },
         "activeShare": {
-          "label": "Эффективный Active Share",
+          "label": "Active Share Efetivo",
           "value": "68,4%",
-          "status": "Контролируемая дифференциация"
+          "status": "Diferenciação Controlada"
         },
         "rSquared": {
-          "label": "Многофакторный R²",
+          "label": "R² Multi-Fatorial",
           "value": "0,96",
-          "status": "Надежная статистическая подгонка"
+          "status": "Ajuste Estatístico Robusto"
         }
       },
       "chart": {
         "eyebrow": "ФАКТОРНАЯ ДЕКОМПОЗИЦИЯ BARRA / MSCI",
-        "heading": "Экспозиция к стилевым факторам",
+        "heading": "Экспозиция к стилевым факторам (Z-Score)",
         "badge": "7-ФАКТОРНАЯ МОДЕЛЬ",
-        "seriesExposure": "Z-оценка факторной экспозиции"
+        "seriesExposure": "Z-Score факторной экспозиции"
+      },
+      "factors": {
+        "value": "Стоимость (Value)",
+        "quality": "Качество (Quality)",
+        "momentum": "Импульс (Momentum)",
+        "lowVol": "Низкая волатильность (Low Vol)",
+        "size": "Размер (Size)",
+        "liquidity": "Ликвидность (Liquidity)",
+        "growth": "Рост (Growth)",
+        "yield": "Dividendos / Rendimento Carry"
+      },
+      "decomposition": {
+        "eyebrow": "МОДЕЛЬ АТРИБУЦИИ BRINSON-FACHLER",
+        "heading": "Структурированный анализ источников дохода",
+        "assetAllocation": "Тактическое распределение по классам активов",
+        "securitySelection": "Количественный отбор инструментов (Alpha)",
+        "currencyHedging": "Вклад валютного хеджирования",
+        "tradingExecution": "Интеллектуальное исполнение и экономия издержек"
       },
       "sources": {
-        "eyebrow": "ИСТОЧНИКИ ДОХОДНОСТИ",
-        "heading": "Чистая факторная декомпозиция"
-      }
+        "eyebrow": "FONTES DE RETORNO",
+        "heading": "Decomposição Fatorial Líquida"
+      },
+      "sourcesItems": {
+        "qualityEngine": "Fator Qualidade & Rentabilidade",
+        "qualityEngineDesc": "Motor Primário de Retorno",
+        "liquidityPremium": "Fator Prêmio de Liquidez",
+        "liquidityPremiumDesc": "Prêmio Soberano Tier-1",
+        "lowVolShield": "Viés de Baixa Volatilidade",
+        "lowVolShieldDesc": "Proteção Defensiva contra Quedas"
+      },
+      "footnote": "Alinhamento fatorial 100% verificado com modelos Barra Global Equity & Fixed Income."
     },
     "alertsView": {
       "stats": {
-        "critical": {
-          "label": "Активные критические алерты",
+        "activeAudits": {
+          "label": "Активные процессы аудита в реальном времени",
+          "value": "100.0%",
+          "status": "Все узлы в норме"
+        },
+        "criticalAlerts": {
+          "label": "Критические нарушения / Сбои",
           "value": "0",
-          "status": "Система в полном соответствии"
+          "status": "Нарушений не зафиксировано"
+        },
+        "telemetryLatency": {
+          "label": "Задержка синхронизации телеметрии",
+          "value": "18 мс",
+          "status": "Криптографический реестр"
+        },
+        "compliancePassRate": {
+          "label": "Успешность предторговых проверок",
+          "value": "100.0%",
+          "status": "4 210 проверок пройдены успешно"
+        },
+        "critical": {
+          "label": "Alertas Críticos Ativos",
+          "value": "0",
+          "status": "Sistema em Perfeita Conformidade"
         },
         "auditNodes": {
-          "label": "Контролируемые узлы аудита",
-          "value": "1 240",
-          "status": "100% криптографическая целостность"
+          "label": "Nós de Auditoria Monitorados",
+          "value": "1.240",
+          "status": "Integridade Criptográfica 100%"
         },
         "heartbeat": {
-          "label": "Задержка телеметрии",
-          "value": "32 мс",
-          "status": "Сетевой SLA менее 50мс"
+          "label": "Latência de Telemetria",
+          "value": "32 ms",
+          "status": "SLA de Rede Sub-50ms"
         },
         "checkpoints": {
-          "label": "Ежедневные автоматические проверки",
-          "value": "86 400",
-          "status": "1 проверка в секунду"
+          "label": "Checagens Automáticas Diárias",
+          "value": "86.400",
+          "status": "1 Verificação por Segundo"
         }
       },
       "log": {
         "eyebrow": "ПОТОК ТЕЛЕМЕТРИИ В РЕАЛЬНОМ ВРЕМЕНИ",
-        "heading": "Непрерывный аудит фидуциарных процессов",
-        "badge": "АКТИВНЫЙ HEARTBEAT",
+        "heading": "Непрерывный фидуциарный аудит процессов",
+        "badge": "АКТИВНЫЙ ПУЛЬС",
         "time": "Время (UTC)",
         "node": "Узел / Компонент",
-        "event": "Проверенное событие",
+        "event": "Подтвержденное событие",
         "status": "Статус"
       },
+      "nodes": {
+        "compliance": "Модуль предварительного комплаенса",
+        "riskEngine": "Ядро управления рисками в реальном времени",
+        "orderRouter": "Интеллектуальный маршрутизатор FIX",
+        "custodyRecon": "Сверка кастодиальных балансов Tier-1"
+      },
+      "events": {
+        "complianceCheck": "Предторговая проверка мандата пройдена (0% отклонений)",
+        "varRecalculation": "Пересчет параметрического VaR 99% завершен",
+        "fixAck": "Подтверждение исполнения FIX 35=8 получено (без проскальзывания)",
+        "custodySync": "Полная сверка балансов и сегрегации завершена",
+        "fiduciaryRecon": "Reconciliação Contínua de Razão Fiduciário: 0 Discrepâncias",
+        "monteCarloCycle": "Ciclo de Risco Monte Carlo 10k Trajetórias Concluído: Nominal",
+        "preTradeCheck": "Validação de Ordem FIX Pré-Trade (Sub-1ms): Aprovada",
+        "custodyProof": "Selo Criptográfico de Custódia Direta Tier-1 Verificado",
+        "success": "SUCESSO",
+        "verified": "VERIFICADO",
+        "passed": "APROVADO"
+      },
+      "statuses": {
+        "pass": "ПРОЙДЕНО (PASS)",
+        "verified": "ПРОВЕРЕНО (VERIFIED)",
+        "executed": "ИСПОЛНЕНО (EXECUTED)",
+        "settled": "СВЕРЕНО (SETTLED)"
+      },
+      "channels": {
+        "eyebrow": "ИНТЕГРАЦИЯ ИНСТИТУЦИОНАЛЬНЫХ УВЕДОМЛЕНИЙ",
+        "heading": "Каналы доставки оповещений и телеметрии",
+        "fixDropCopy": "Поток аудита FIX Drop-Copy в реальном времени",
+        "swiftIso": "Сообщения SWIFT MT535 / ISO 20022",
+        "webhookApi": "Корпоративные Webhook & REST API",
+        "fiduciaryDesk": "Фидуциарная поддержка и риск-деск Elleva"
+      },
+      "logNodes": {
+        "vault01": "Cofre-01 (BNY Mellon)",
+        "compliance": "Motor de Conformidade Pré-Trade",
+        "riskEngine": "Motor de Risco Monte Carlo",
+        "rebalancer": "Rebalanceador de Custódia",
+        "marketFeed": "Telemetria de Feeds de Mercado",
+        "router": "Roteador FIX 5.0",
+        "custodyRecon": "Reconciliação de Custódia",
+        "portfolioCore": "Núcleo de Portfólio"
+      },
+      "logEvents": {
+        "settlementHash": "Hash de Liquidação Verificado (T+0)",
+        "mandateRules": "240 Regras de Mandato Avaliadas (0,4ms)",
+        "varRecalibration": "Recalibração VaR de 10.000 Trajetórias (1,24%)",
+        "driftCheck": "Checagem de Limite de Desvio (±0,12% < ±1,50%)",
+        "feedIngestion": "Ingestão Global de 4.820 feeds/seg",
+        "fixAck": "Sessão FIX 5.0 Confirmada por Primary Dealer",
+        "varEpoch": "Simulação Monte Carlo de 10.000 Trajetórias Convergida",
+        "dvpSettled": "Hash de Razão Criptográfico Verificado com BNY Mellon",
+        "driftTolerance": "Desvio Dinâmico Dentro do Limite de Tolerância (0,42%)"
+      },
+      "logStatus": {
+        "secure": "SEGURO",
+        "passed": "APROVADO",
+        "compliant": "CONFORME",
+        "optimal": "OTIMIZADO",
+        "synchronized": "SINCRONIZADO",
+        "success": "SUCESSO",
+        "normal": "NORMAL",
+        "settled": "LIQUIDADO"
+      },
       "health": {
-        "eyebrow": "ЗДОРОВЬЕ ИНФРАСТРУКТУРЫ",
-        "heading": "Состояние критических подсистем"
-      }
+        "eyebrow": "SAÚDE DA INFRAESTRUTURA",
+        "heading": "Status dos Subsistemas Críticos",
+        "latencyLabel": "Latência:",
+        "loadLabel": "Carga:",
+        "online": "ONLINE",
+        "orderRouter": "Roteador Central de Ordens (FIX 5.0)",
+        "riskEngine": "Motor de Risco Monte Carlo (HPC)",
+        "custodyRecon": "Reconciliação Custodial DVP",
+        "firewall": "Firewall de Mandato Pré-Trade"
+      },
+      "footnote": "SLA de 99,999% suportado por consenso determinístico multirregional."
     },
     "complianceView": {
       "stats": {
+        "mandateChecks": {
+          "label": "Активные правила уставных ограничений",
+          "value": "48 правил",
+          "status": "100% детерминированное покрытие"
+        },
+        "auditTrailStatus": {
+          "label": "Статус журнала аудита",
+          "value": "Криптографически подписан",
+          "status": "Защита от изменений SHA-256"
+        },
+        "esgGovernance": {
+          "label": "Рейтинг ESG и корпоративного управления",
+          "value": "AAA (высший рейтинг)",
+          "status": "Строгое соблюдение списков исключений"
+        },
+        "regulatoryFiling": {
+          "label": "Готовность регуляторных отчетов",
+          "value": "Автоматическая готовность",
+          "status": "Мгновенный экспорт"
+        },
         "policyRules": {
-          "label": "Аудированные правила мандата",
+          "label": "Regras de Mandato Auditadas",
           "value": "100%",
-          "status": "240 из 240 правил пройдены"
+          "status": "240 de 240 Regras Aprovadas"
         },
         "restrictedList": {
-          "label": "Нарушения санкционных списков",
+          "label": "Violações de Entidades Restritas",
           "value": "0",
-          "status": "Фильтр OFAC чист"
+          "status": "Filtro OFAC / Sanções Limpo"
         },
         "esg": {
-          "label": "Соблюдение мандата ESG / Исключений",
+          "label": "Adesão ao Mandato ESG / Exclusão",
           "value": "100,0%",
-          "status": "Полное фидуциарное соответствие"
+          "status": "Conformidade Fiduciária Total"
         },
         "preTrade": {
-          "label": "Предторговая проверка (Pre-Trade)",
-          "value": "< 1 мс",
-          "status": "Детерминированная блокировка активна"
+          "label": "Verificação Pré-Negociação",
+          "value": "< 1 ms",
+          "status": "Bloqueio Determinístico Ativo"
         }
       },
       "matrix": {
         "eyebrow": "МАТРИЦА МАНДАТА И ОГРАНИЧЕНИЙ",
         "heading": "Уставные контроли и фидуциарные лимиты",
-        "badge": "ДЕТЕРМИНИРОВАННЫЙ АУДИТ"
+        "badge": "ДЕТЕРМИНИРОВАННЫЙ АУДИТ",
+        "limitLabel": "Лимит:",
+        "currentLabel": "Текущий:",
+        "compliant": "СООТВЕТСТВУЕТ",
+        "statusPassed": "ПРОЙДЕНО"
+      },
+      "rules": {
+        "issuerLimit": "Максимальная концентрация на одного эмитента",
+        "sovereignMin": "Минимальная доля суверенных и AAA/AA активов",
+        "durationBound": "Допустимый диапазон эффективной дюрации",
+        "cashLimit": "Лимит неинвестированных денежных средств",
+        "varCeiling": "Максимальный внутридневной 99% VaR",
+        "singleIssuer": "Teto de Exposição a Emissor Único",
+        "singleIssuerLimit": "< 5,0% do AUM Líquido",
+        "unhedgedFx": "Teto de Exposição Cambial Não Coberta",
+        "unhedgedFxLimit": "< 2,0% do AUM Líquido",
+        "esgScreening": "Triagem Negativa OFAC / ESG",
+        "esgScreeningLimit": "0 Violações",
+        "illiquidAssets": "Teto de Alocação em Ativos Ilíquidos",
+        "illiquidAssetsLimit": "< 1,0% do AUM Líquido"
+      },
+      "limits": {
+        "issuerLimit": "Макс. 5.00%",
+        "sovereignMin": "Мин. 40.00%",
+        "durationBound": "3.50 - 5.00 лет",
+        "cashLimit": "Макс. 15.00%",
+        "varCeiling": "Макс. 4.50%"
+      },
+      "governance": {
+        "eyebrow": "ФИДУЦИАРНАЯ СТРУКТУРА УПРАВЛЕНИЯ",
+        "heading": "Институциональные механизмы защиты",
+        "point1": "Предварительная проверка: каждый ордер автоматически проверяется по 48 правилам перед отправкой.",
+        "point2": "Разделение обязанностей: интеллектуальное ядро управления полностью изолировано от кастодиального хранения.",
+        "point3": "Неизменяемый аудит: все обоснования решений и операции протоколируются с криптографической защитой."
       },
       "seal": {
-        "eyebrow": "КРИПТОГРАФИЧЕСКИЙ АУДИТОРСКИЙ ШТАМП",
-        "heading": "Неизменяемый след управления"
-      }
+        "eyebrow": "SELO DE AUDITORIA CRIPTOGRÁFICA",
+        "heading": "Trilha Imutável de Governança",
+        "soc2": "Certificação SOC-2 Tipo II",
+        "merkle": "Livro-Razão Imutável em Árvore Merkle",
+        "merkleRoot": "Raiz de Merkle:",
+        "epoch": "Timestamp da Época:",
+        "custodyId": "ID de Custódia Fiduciária:"
+      },
+      "footnote": "Zero exceções de conformidade registradas em todos os mandatos monitorados."
     }
   },
   "intelligence": {

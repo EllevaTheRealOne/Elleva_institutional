@@ -68,7 +68,8 @@
         "financialInfrastructure": "Financial Infrastructure",
         "intelligenceOrchestration": "Intelligence & Orchestration",
         "securityGovernance": "Security & Governance",
-        "transparency": "Transparency"
+        "transparency": "Transparency",
+        "web3Infrastructure": "Web3 & Decentralized Infrastructure"
       }
     },
     "ecosystem": {

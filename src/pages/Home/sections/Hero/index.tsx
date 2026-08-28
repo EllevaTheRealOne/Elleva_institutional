@@ -321,8 +321,8 @@ export const Hero: React.FC<HeroProps> = ({
                     {phase.name}
                   </a>
                   {idx < operatingPhases.length - 1 && (
-                    <span className="text-[#189890] opacity-30 font-mono">
-                      <ArrowRight />
+                    <span className="text-[#189890] opacity-40 inline-flex items-center">
+                      <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                     </span>
                   )}
                 </React.Fragment>

@@ -1409,5 +1409,16 @@
     "title": "Institutional-Grade Governance & Security",
     "description": "Elleva operates purely as an intelligence and orchestration layer. Capital remains safely in segregated custody at regulated institutions.",
     "guaranteeLabel": "GUARANTEE"
+  },
+  "common": {
+    "done": "Done",
+    "footer": {
+      "copyright": "Elleva © 2026. All rights reserved.",
+      "terms": "Institutional Terms",
+      "security": "Security & Compliance",
+      "regulatory": "Regulatory Disclosures"
+    },
+    "close": "Close",
+    "year": "Year"
   }
 }

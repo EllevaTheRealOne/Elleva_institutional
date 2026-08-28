@@ -61,7 +61,8 @@
         "financialInfrastructure": "Финансовая инфраструктура",
         "intelligenceOrchestration": "Интеллект и оркестрация",
         "securityGovernance": "Безопасность и управление",
-        "transparency": "Прозрачность"
+        "transparency": "Прозрачность",
+        "web3Infrastructure": "Инфраструктура Web3"
       }
     },
     "ecosystem": {
@@ -88,5 +89,12 @@
       }
     }
   },
-  "menuToggle": "Переключить меню навигации"
+  "menuToggle": "Переключить меню навигации",
+  "calculator": "Калькулятор",
+  "governance": "Управление",
+  "legal": "Юридическая информация",
+  "operatingSystem": "Операционная система",
+  "researchIntelligence": "Исследования и аналитика",
+  "resources": "Ресурсы",
+  "tutorials": "Руководства"
 }
