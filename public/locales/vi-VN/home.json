@@ -343,6 +343,43 @@
         "desc": "Tối ưu hóa danh mục đầu tư ngẫu nhiên liên tục và quản lý chính sách."
       }
     },
+    "hubs": {
+      "nyc": {
+        "role": "Nút Thực thi và Thanh khoản",
+        "module": "Môi giới và Sàn Giao dịch",
+        "desc": "Kết nối DMA/FIX trực tiếp độ trễ thấp với các sàn giao dịch cổ phiếu, quyền chọn và hợp đồng tương lai lớn của Hoa Kỳ."
+      },
+      "lon": {
+        "role": "Ngoại hối và Thanh toán Châu Âu",
+        "module": "Cổng Ngân hàng Hạng nhất và Môi giới",
+        "desc": "Cổng kết nối với các đường ray ngân hàng Châu Âu Hạng nhất, giao dịch giao ngay ngoại hối xuyên biên giới và thanh khoản đa tiền tệ."
+      },
+      "zrh": {
+        "role": "Lưu ký và Quản lý Tài sản Cá nhân",
+        "module": "Tổ chức Lưu ký Đủ điều kiện",
+        "desc": "Liên kết tổ chức an toàn với các tổ chức lưu ký đủ điều kiện của Thụy Sĩ và kho lưu trữ tách biệt."
+      },
+      "dxb": {
+        "role": "Vốn Soberano và Trung Đông",
+        "module": "Kho bạc Soberano và Lưu ký",
+        "desc": "Cổng tổ chức khu vực phục vụ các quỹ tài sản có chủ quyền, văn phòng gia đình và hành lang thanh khoản đa khu vực tài phán."
+      },
+      "sao": {
+        "role": "Thực thi và Bù trừ Mỹ Latinh",
+        "module": "Môi giới và Lưu ký Đủ điều kiện",
+        "desc": "Tích hợp trực tiếp với B3 và các tổ chức lưu ký địa phương theo sự tuân thủ quy định ủy thác CVM và ANBIMA."
+      },
+      "sgp": {
+        "role": "Ngoại hối Châu Á và Bù trừ Đa phương",
+        "module": "Tổ chức Lưu ký Đủ điều kiện và Ngân hàng",
+        "desc": "Nút tài chính chiến lược APAC cung cấp định tuyến thông lượng cao theo tiêu chuẩn quy định MAS."
+      },
+      "hkg": {
+        "role": "Đại Trung Hoa và Dòng chảy Toàn cầu",
+        "module": "Sàn Giao dịch và Thanh khoản Hạng nhất",
+        "desc": "Cổng thực thi tốc độ cao kết nối vốn quốc tế với thị trường cổ phiếu và phái sinh APAC."
+      }
+    },
     "title": "Kết nối Thị trường Toàn cầu",
     "description": "Truy cập tổ chức trực tiếp đến các sàn giao dịch toàn cầu, môi giới chính, sàn thanh khoản và mạng lưới lưu ký trên tất cả các khu vực tài phán tài chính lớn.",
     "telemetry": {

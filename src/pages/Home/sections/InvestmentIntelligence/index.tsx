@@ -72,9 +72,6 @@ export const InvestmentIntelligence: React.FC<InvestmentIntelligenceProps> = ({
             }`}
           >
             <div className="flex items-center gap-3">
-              <span className="px-2.5 py-1 rounded text-xs font-mono font-bold bg-[#189890]/15 text-[#189890]">
-                CASE #IC-2026-8942
-              </span>
               <h3 className="font-display font-bold text-base sm:text-lg">
                 {t('intelligence.caseTitle')}
               </h3>
@@ -245,9 +242,7 @@ export const InvestmentIntelligence: React.FC<InvestmentIntelligenceProps> = ({
                   <span className="text-[10px] font-ui uppercase tracking-widest text-[#189890] font-bold">
                     {t('intelligence.action.badge')}
                   </span>
-                  <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-[#189890]/15 text-[#189890]">
-                    {t('intelligence.action.status')}
-                  </span>
+            
                 </div>
                 <div className="text-base font-display font-bold mb-2">
                   {t('intelligence.action.headline')}

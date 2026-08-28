@@ -152,18 +152,11 @@ export const TheProduct: React.FC<TheProductProps> = ({ isDark = false }) => {
                 <span className="w-2.5 h-2.5 rounded-full bg-black/20 dark:bg-white/20" />
               </div>
               <span className="text-xs font-mono font-semibold text-[#189890]">
-                ELLEVA_OS // KERNEL v4.2.0 [AUTONOMOUS ENGINE]
+                ELLEVA_OS // KERNEL v4.2.0 
               </span>
             </div>
 
-            <div className="flex items-center gap-3 text-xs font-mono text-[#8E9995]">
-              <span className="flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-[#189890] animate-pulse" />
-                {t('theProduct.osHeader.systemActive')}
-              </span>
-              <span>•</span>
-              <span>{t('theProduct.osHeader.circuitsClosed')}</span>
-            </div>
+
           </div>
 
           {/* OS Navigation Tabs (4 Core Pillars) */}

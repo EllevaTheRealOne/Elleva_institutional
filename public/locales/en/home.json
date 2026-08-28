@@ -332,6 +332,43 @@
         "desc": "Continuous stochastic portfolio optimization and policy management."
       }
     },
+    "hubs": {
+      "nyc": {
+        "role": "Execution & Liquidity Hub",
+        "module": "Brokers & Execution Venues",
+        "desc": "Direct low-latency DMA/FIX connection with major US equity, options, and futures exchanges."
+      },
+      "lon": {
+        "role": "FX & European Settlement",
+        "module": "Prime Banking & Brokers",
+        "desc": "Gateway to Tier-1 European banking rails, cross-border FX spot trading, and multi-currency liquidity."
+      },
+      "zrh": {
+        "role": "Custodial & Private Wealth",
+        "module": "Qualified Custodians",
+        "desc": "Secure institutional interconnection with Swiss qualified custodians and segregated vault repositories."
+      },
+      "dxb": {
+        "role": "Sovereign Capital & Middle East",
+        "module": "Sovereign Treasury & Custody",
+        "desc": "Regional institutional gateway serving sovereign funds, family offices, and cross-jurisdictional liquidity corridors."
+      },
+      "sao": {
+        "role": "LatAm Execution & Clearing",
+        "module": "Brokers & Qualified Custody",
+        "desc": "Direct integration with B3 and local custodians under full CVM and ANBIMA fiduciary regulatory compliance."
+      },
+      "sgp": {
+        "role": "Asian FX & Multilateral Clearing",
+        "module": "Qualified Custodians & Banks",
+        "desc": "Strategic APAC financial hub providing high-throughput routing under MAS regulatory standards."
+      },
+      "hkg": {
+        "role": "Greater China & Global Flow",
+        "module": "Execution Venues & Prime Liquidity",
+        "desc": "High-speed execution gateway connecting international capital to APAC equity and derivatives markets."
+      }
+    },
     "title": "Global Market Connectivity",
     "description": "Direct institutional access to global exchanges, prime brokers, liquidity venues, and custodial networks across all major financial jurisdictions.",
     "telemetry": {

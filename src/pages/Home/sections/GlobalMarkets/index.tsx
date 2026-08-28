@@ -253,19 +253,10 @@ export const GlobalMarkets: React.FC<GlobalMarketsProps> = ({
             }`}
           >
             <div className="flex items-center gap-2.5">
-              <span className="h-2 w-2 animate-pulse rounded-full bg-[#189890]" />
-
               <span className="font-bold text-[#189890]">
                 {t('globalMarkets.telemetry.mesh')}
               </span>
 
-              <span
-                className={`hidden sm:inline ${
-                  isDark ? 'text-[#8E9995]' : 'text-[#4E5653]'
-                }`}
-              >
-                {t('globalMarkets.telemetry.hubsCount')}
-              </span>
             </div>
 
             <div className="flex items-center gap-4 text-[11px]">
@@ -309,12 +300,13 @@ export const GlobalMarkets: React.FC<GlobalMarketsProps> = ({
                           fill={isDark ? '#11161A' : '#E8EBE7'}
                           stroke={isDark ? '#1C252B' : '#DCE1DC'}
                           strokeWidth={0.4}
+                          className="pointer-events-none select-none"
                           style={{
                             default: {
                               outline: 'none',
                             },
                             hover: {
-                              fill: isDark ? '#172026' : '#DFE5DE',
+                              fill: isDark ? '#11161A' : '#E8EBE7',
                               outline: 'none',
                             },
                             pressed: {
@@ -334,7 +326,7 @@ export const GlobalMarkets: React.FC<GlobalMarketsProps> = ({
                       stroke={isDark ? '#189890' : '#0C5F5A'}
                       strokeWidth={1.2}
                       strokeOpacity={isDark ? 0.45 : 0.35}
-                      className="map-route-subtle"
+                      className="map-route-subtle pointer-events-none select-none"
                     />
                   ))}
 
@@ -346,7 +338,16 @@ export const GlobalMarkets: React.FC<GlobalMarketsProps> = ({
                         key={hub.id}
                         coordinates={hub.coordinates}
                         onClick={() => setSelectedHub(hub)}
-                        className="cursor-pointer transition-transform duration-200"
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            setSelectedHub(hub);
+                          }
+                        }}
+                        role="button"
+                        tabIndex={0}
+                        aria-label={hub.name}
+                        className="cursor-pointer transition-transform duration-200 focus:outline-none"
                       >
                         {isSelected && (
                           <circle

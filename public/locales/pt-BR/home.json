@@ -343,6 +343,43 @@
         "desc": "Otimização contínua de portfólio estocástica e gestão de políticas."
       }
     },
+    "hubs": {
+      "nyc": {
+        "role": "Hub de Execução e Liquidez",
+        "module": "Corretoras e Ambientes de Execução",
+        "desc": "Conexão direta DMA/FIX de baixa latência com as principais bolsas americanas de ações, opções e futuros."
+      },
+      "lon": {
+        "role": "Câmbio e Liquidação Europeia",
+        "module": "Gateways Bancários e Corretoras",
+        "desc": "Gateway para trilhos bancários europeus de primeira linha, negociação de câmbio à vista e liquidez multimoeda."
+      },
+      "zrh": {
+        "role": "Hub Custodial e Wealth Management",
+        "module": "Custodiantes Qualificados",
+        "desc": "Interconexão institucional segura com custodiantes qualificados suíços e repositórios segregados."
+      },
+      "dxb": {
+        "role": "Capital Soberano e Oriente Médio",
+        "module": "Tesouraria Soberana e Custódia",
+        "desc": "Gateway institucional regional atendendo fundos soberanos, family offices e corredores de liquidez interjurisdicionais."
+      },
+      "sao": {
+        "role": "Hub de Execução e Clearing LatAm",
+        "module": "Corretoras e Custódia Qualificada",
+        "desc": "Integração direta com a B3 e custodiantes locais em total conformidade regulatória fiduciária CVM e ANBIMA."
+      },
+      "sgp": {
+        "role": "Câmbio Asiático e Clearing Multilateral",
+        "module": "Custodiantes Qualificados e Bancos",
+        "desc": "Hub financeiro estratégico da APAC fornecendo roteamento de alto rendimento sob normas regulatórias da MAS."
+      },
+      "hkg": {
+        "role": "Fluxo Global e Grande China",
+        "module": "Ambientes de Execução e Liquidez Prime",
+        "desc": "Gateway de execução de alta velocidade conectando capital internacional aos mercados de ações e derivativos da APAC."
+      }
+    },
     "title": "Conectividade Global de Mercado",
     "description": "Acesso institucional direto a exchanges globais, prime brokers, ambientes de liquidez e redes custodiais em todas as principais jurisdições financeiras.",
     "telemetry": {

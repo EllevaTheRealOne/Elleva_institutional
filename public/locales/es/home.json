@@ -343,6 +343,43 @@
         "desc": "Optimización continua de cartera estocástica y gestión de políticas."
       }
     },
+    "hubs": {
+      "nyc": {
+        "role": "Hub de Ejecución y Liquidez",
+        "module": "Brokers y Entornos de Ejecución",
+        "desc": "Conexión directa DMA/FIX de baja latencia con las principales bolsas estadounidenses de acciones, opciones y futuros."
+      },
+      "lon": {
+        "role": "FX y Liquidación Europea",
+        "module": "Banca Prime y Brokers",
+        "desc": "Acceso a rieles bancarios europeos de primer nivel, negociación de FX al contado y liquidez multidivisa."
+      },
+      "zrh": {
+        "role": "Custodia y Gestión Patrimonial",
+        "module": "Custodios Calificados",
+        "desc": "Interconexión institucional segura con custodios calificados suizos y repositorios segregados."
+      },
+      "dxb": {
+        "role": "Capital Soberano y Oriente Medio",
+        "module": "Tesorería Soberana y Custodia",
+        "desc": "Pasarela institucional regional para fondos soberanos, family offices y corredores de liquidez interjurisdiccionales."
+      },
+      "sao": {
+        "role": "Ejecución y Compensación LatAm",
+        "module": "Brokers y Custodia Calificada",
+        "desc": "Integración directa con B3 y custodios locales bajo total cumplimiento normativo fiduciario de CVM y ANBIMA."
+      },
+      "sgp": {
+        "role": "FX Asiático y Compensación Multilateral",
+        "module": "Custodios Calificados y Bancos",
+        "desc": "Hub financiero estratégico de APAC con enrutamiento de alto rendimiento bajo normas regulatorias de la MAS."
+      },
+      "hkg": {
+        "role": "Gran China y Flujo Global",
+        "module": "Plataformas de Ejecución y Liquidez Prime",
+        "desc": "Pasarela de ejecución de alta velocidad que conecta el capital internacional con los mercados de renta variable y derivados de APAC."
+      }
+    },
     "title": "Conectividad Global de Mercado",
     "description": "Acceso institucional directo a bolsas globales, prime brokers, entornos de liquidez y redes custodiales en todas las principales jurisdicciones financieras.",
     "telemetry": {
