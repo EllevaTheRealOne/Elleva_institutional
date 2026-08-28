@@ -13,7 +13,7 @@ import { useChangeLanguage } from "@/hooks/use-change-language";
 import { useTranslation } from "react-i18next";
 
 interface Props {
-  onCloseDrawer?: Dispatch<SetStateAction<boolean>>;
+  onCloseDrawer?: ((open: boolean) => void) | Dispatch<SetStateAction<boolean>>;
   variant?: "desktop" | "mobile" | "compact";
 }
 
@@ -114,10 +114,9 @@ export const LanguageSwitcher = ({
   };
 
   const handleSelect = async (lang: IAllLangs) => {
-    await changeLanguage(lang.value);
-
     setOpen(false);
     onCloseDrawer?.(false);
+    await changeLanguage(lang.value);
   };
 
   if (variant === "mobile") {

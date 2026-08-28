@@ -13,14 +13,28 @@ import {
 interface ThemeToggleProps {
   variant?: "desktop" | "mobile" | "compact";
   className?: string;
+  onCloseDrawer?:
+    | ((open: boolean) => void)
+    | React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export const ThemeToggle: React.FC<ThemeToggleProps> = ({
   variant = "desktop",
   className,
+  onCloseDrawer,
 }) => {
   const { theme, resolvedTheme, setTheme, toggleTheme } = useTheme();
   const { t } = useTranslation("common");
+
+  const handleSetTheme = (newTheme: "light" | "dark" | "system") => {
+    setTheme(newTheme);
+    onCloseDrawer?.(false);
+  };
+
+  const handleToggle = () => {
+    toggleTheme();
+    onCloseDrawer?.(false);
+  };
 
   if (variant === "mobile") {
     return (
@@ -44,35 +58,31 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
         <div className="flex items-center gap-1 bg-background/80 p-1 rounded-lg border border-border">
           <button
             type="button"
-            onClick={() => setTheme("light")}
+            onClick={() => handleSetTheme("light")}
             aria-label={t("theme.light") || "Light mode"}
             className={cn(
-              "p-1.5 rounded-md text-xs transition-all flex items-center gap-1",
+              "p-1.5 rounded-md text-xs transition-all flex items-center gap-1 cursor-pointer",
               theme === "light"
                 ? "bg-primary text-primary-foreground font-medium shadow-xs"
                 : "text-muted-foreground hover:text-foreground",
             )}
           >
             <Sun className="w-3.5 h-3.5" />
-            <span className="text-[11px]">
-              {t("theme.light") || "Light"}
-            </span>
+            <span className="text-[11px]">{t("theme.light") || "Light"}</span>
           </button>
           <button
             type="button"
-            onClick={() => setTheme("dark")}
+            onClick={() => handleSetTheme("dark")}
             aria-label={t("theme.dark") || "Dark mode"}
             className={cn(
-              "p-1.5 rounded-md text-xs transition-all flex items-center gap-1",
+              "p-1.5 rounded-md text-xs transition-all flex items-center gap-1 cursor-pointer",
               theme === "dark"
                 ? "bg-primary text-primary-foreground font-medium shadow-xs"
                 : "text-muted-foreground hover:text-foreground",
             )}
           >
             <Moon className="w-3.5 h-3.5" />
-            <span className="text-[11px]">
-              {t("theme.dark") || "Dark"}
-            </span>
+            <span className="text-[11px]">{t("theme.dark") || "Dark"}</span>
           </button>
         </div>
       </div>
@@ -83,11 +93,11 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
     return (
       <button
         type="button"
-        onClick={toggleTheme}
+        onClick={handleToggle}
         aria-label={t("theme.toggle") || "Toggle theme"}
         title={t("theme.toggle") || "Toggle theme"}
         className={cn(
-          "relative p-2 rounded-lg bg-card/80 hover:bg-secondary border border-border text-foreground transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/40",
+          "relative p-2 rounded-lg bg-card/80 hover:bg-secondary border border-border text-foreground transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/40 cursor-pointer",
           className,
         )}
       >
@@ -107,7 +117,7 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
           type="button"
           aria-label={t("theme.toggle") || "Toggle theme"}
           className={cn(
-            "relative p-2 rounded-lg bg-card/80 hover:bg-secondary border border-border text-foreground transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/40 flex items-center justify-center group",
+            "relative p-2 rounded-lg bg-card/80 hover:bg-secondary border border-border text-foreground transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/40 flex items-center justify-center group cursor-pointer",
             className,
           )}
         >
@@ -123,7 +133,7 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
         className="w-36 bg-popover/95 backdrop-blur-xl border border-border text-popover-foreground shadow-xl rounded-xl p-1 z-[9999]"
       >
         <DropdownMenuItem
-          onClick={() => setTheme("light")}
+          onClick={() => handleSetTheme("light")}
           className={cn(
             "flex items-center gap-2.5 px-2.5 py-1.5 text-xs rounded-lg cursor-pointer transition-colors",
             theme === "light"
@@ -135,7 +145,7 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
           <span>{t("theme.light") || "Light"}</span>
         </DropdownMenuItem>
         <DropdownMenuItem
-          onClick={() => setTheme("dark")}
+          onClick={() => handleSetTheme("dark")}
           className={cn(
             "flex items-center gap-2.5 px-2.5 py-1.5 text-xs rounded-lg cursor-pointer transition-colors",
             theme === "dark"
@@ -147,7 +157,7 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
           <span>{t("theme.dark") || "Dark"}</span>
         </DropdownMenuItem>
         <DropdownMenuItem
-          onClick={() => setTheme("system")}
+          onClick={() => handleSetTheme("system")}
           className={cn(
             "flex items-center gap-2.5 px-2.5 py-1.5 text-xs rounded-lg cursor-pointer transition-colors",
             theme === "system"
