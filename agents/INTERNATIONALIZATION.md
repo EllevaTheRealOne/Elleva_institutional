@@ -16,23 +16,23 @@ You must treat internationalization as part of the production architecture, not 
 
 Elleva must support multiple languages without:
 
-* hardcoded user-facing text;
-* duplicated translation keys;
-* inconsistent JSON structures;
-* missing translations;
-* broken interpolation;
-* language-specific logic inside components;
-* duplicated localization architecture;
-* unorganized locale files.
+- hardcoded user-facing text;
+- duplicated translation keys;
+- inconsistent JSON structures;
+- missing translations;
+- broken interpolation;
+- language-specific logic inside components;
+- duplicated localization architecture;
+- unorganized locale files.
 
 The system must remain:
 
-* predictable;
-* modular;
-* scalable;
-* route-aware;
-* section-aware;
-* production-ready.
+- predictable;
+- modular;
+- scalable;
+- route-aware;
+- section-aware;
+- production-ready.
 
 ⸻
 
@@ -48,25 +48,25 @@ Example:
 
 public/
 └── internationalization/
-    ├── en/
-    │   ├── common.json
-    │   ├── nav.json
-    │   ├── notfound.json
-    │   ├── home.json
-    │   ├── platform.json
-    │   ├── architecture.json
-    │   └── company.json
-    │
-    ├── pt-BR/
-    │   ├── common.json
-    │   ├── nav.json
-    │   ├── notfound.json
-    │   ├── home.json
-    │   ├── platform.json
-    │   ├── architecture.json
-    │   └── company.json
-    │
-    └── ...
+├── en/
+│ ├── common.json
+│ ├── nav.json
+│ ├── notfound.json
+│ ├── home.json
+│ ├── platform.json
+│ ├── architecture.json
+│ └── company.json
+│
+├── pt-BR/
+│ ├── common.json
+│ ├── nav.json
+│ ├── notfound.json
+│ ├── home.json
+│ ├── platform.json
+│ ├── architecture.json
+│ └── company.json
+│
+└── ...
 
 Do not place translation files outside public/internationalization unless the existing project architecture explicitly requires it.
 
@@ -91,28 +91,28 @@ Use for shared global content.
 
 Examples:
 
-* generic actions;
-* reusable labels;
-* shared form text;
-* global UI states;
-* generic loading messages;
-* reusable buttons;
-* generic accessibility labels;
-* common validation text.
+- generic actions;
+- reusable labels;
+- shared form text;
+- global UI states;
+- generic loading messages;
+- reusable buttons;
+- generic accessibility labels;
+- common validation text.
 
 Example:
 
 {
-  "actions": {
-    "learnMore": "Learn more",
-    "getStarted": "Get started",
-    "back": "Back",
-    "close": "Close"
-  },
-  "status": {
-    "loading": "Loading...",
-    "error": "Something went wrong"
-  }
+"actions": {
+"learnMore": "Learn more",
+"getStarted": "Get started",
+"back": "Back",
+"close": "Close"
+},
+"status": {
+"loading": "Loading...",
+"error": "Something went wrong"
+}
 }
 
 ⸻
@@ -123,22 +123,22 @@ Use only for global navigation-related text.
 
 Examples:
 
-* navbar links;
-* menu labels;
-* mobile navigation;
-* navigation CTA;
-* footer navigation groups when tied to site navigation.
+- navbar links;
+- menu labels;
+- mobile navigation;
+- navigation CTA;
+- footer navigation groups when tied to site navigation.
 
 Example:
 
 {
-  "navbar": {
-    "platform": "Platform",
-    "architecture": "Architecture",
-    "intelligence": "Intelligence",
-    "company": "Company",
-    "getStarted": "Get Started"
-  }
+"navbar": {
+"platform": "Platform",
+"architecture": "Architecture",
+"intelligence": "Intelligence",
+"company": "Company",
+"getStarted": "Get Started"
+}
 }
 
 Do not mix page content into nav.json.
@@ -149,19 +149,19 @@ notfound.json
 
 Use only for:
 
-* 404 page;
-* route-not-found states;
-* missing-page messaging;
-* recovery actions from invalid routes.
+- 404 page;
+- route-not-found states;
+- missing-page messaging;
+- recovery actions from invalid routes.
 
 Example:
 
 {
-  "title": "Page not found",
-  "description": "The page you are looking for does not exist or has been moved.",
-  "actions": {
-    "home": "Return home"
-  }
+"title": "Page not found",
+"description": "The page you are looking for does not exist or has been moved.",
+"actions": {
+"home": "Return home"
+}
 }
 
 ⸻
@@ -192,37 +192,37 @@ Inside each route file, translation content must be organized by section or sema
 Example:
 
 {
-  "hero": {
-    "eyebrow": "Autonomous Capital Infrastructure",
-    "title": "Capital, operated by intelligence.",
-    "description": "Autonomous AI infrastructure for investment operations.",
-    "ctaPrimary": "Explore the platform"
-  },
-  "problem": {
-    "eyebrow": "The Problem",
-    "title": "Investment operations remain fragmented.",
-    "description": "..."
-  },
-  "architecture": {
-    "eyebrow": "Architecture",
-    "title": "An intelligence and orchestration layer.",
-    "nodes": {
-      "research": "Research",
-      "decide": "Decide",
-      "execute": "Execute",
-      "monitor": "Monitor"
-    }
-  }
+"hero": {
+"eyebrow": "Autonomous Capital Infrastructure",
+"title": "Capital, operated by intelligence.",
+"description": "Autonomous AI infrastructure for investment operations.",
+"ctaPrimary": "Explore the platform"
+},
+"problem": {
+"eyebrow": "The Problem",
+"title": "Investment operations remain fragmented.",
+"description": "..."
+},
+"architecture": {
+"eyebrow": "Architecture",
+"title": "An intelligence and orchestration layer.",
+"nodes": {
+"research": "Research",
+"decide": "Decide",
+"execute": "Execute",
+"monitor": "Monitor"
+}
+}
 }
 
 Do not create a flat structure such as:
 
 {
-  "heroTitle": "...",
-  "heroDescription": "...",
-  "problemTitle": "...",
-  "problemDescription": "...",
-  "architectureTitle": "..."
+"heroTitle": "...",
+"heroDescription": "...",
+"problemTitle": "...",
+"problemDescription": "...",
+"architectureTitle": "..."
 }
 
 Prefer hierarchical, contextual organization.
@@ -235,38 +235,38 @@ All text visible to users must use the project’s i18n system.
 
 This includes:
 
-* page titles;
-* section titles;
-* subtitles;
-* descriptions;
-* labels;
-* buttons;
-* links;
-* navigation;
-* placeholders;
-* tooltips;
-* tabs;
-* cards;
-* diagram labels;
-* chart labels;
-* table headers;
-* filters;
-* dropdown options;
-* form descriptions;
-* validation messages;
-* error messages;
-* success messages;
-* notifications;
-* modals;
-* confirmations;
-* empty states;
-* loading states;
-* accessibility text;
-* aria-label;
-* alt text when localized;
-* status messages;
-* CTA content;
-* footer text.
+- page titles;
+- section titles;
+- subtitles;
+- descriptions;
+- labels;
+- buttons;
+- links;
+- navigation;
+- placeholders;
+- tooltips;
+- tabs;
+- cards;
+- diagram labels;
+- chart labels;
+- table headers;
+- filters;
+- dropdown options;
+- form descriptions;
+- validation messages;
+- error messages;
+- success messages;
+- notifications;
+- modals;
+- confirmations;
+- empty states;
+- loading states;
+- accessibility text;
+- aria-label;
+- alt text when localized;
+- status messages;
+- CTA content;
+- footer text.
 
 Do not introduce user-facing strings directly inside .tsx, .ts, hooks, services, or component logic.
 
@@ -311,10 +311,10 @@ The internal key structure must also match.
 Example:
 
 {
-  "hero": {
-    "title": "...",
-    "description": "..."
-  }
+"hero": {
+"title": "...",
+"description": "..."
+}
 }
 
 must have the same structure in all locales.
@@ -337,25 +337,25 @@ Before completing a task, verify that every new key exists in every supported la
 
 Translations must preserve:
 
-* meaning;
-* context;
-* tone;
-* hierarchy;
-* financial terminology;
-* institutional positioning;
-* CTA intent;
-* technical meaning.
+- meaning;
+- context;
+- tone;
+- hierarchy;
+- financial terminology;
+- institutional positioning;
+- CTA intent;
+- technical meaning.
 
 Do not perform word-for-word translations when they sound unnatural.
 
 Elleva’s language should remain:
 
-* institutional;
-* premium;
-* precise;
-* financial;
-* technologically sophisticated;
-* restrained.
+- institutional;
+- premium;
+- precise;
+- financial;
+- technologically sophisticated;
+- restrained.
 
 Do not translate copy into a casual or promotional tone if the source is institutional.
 
@@ -394,11 +394,11 @@ Financial values must remain denominated in US dollars unless the user explicitl
 
 Do not translate or convert financial values into:
 
-* BRL;
-* EUR;
-* AED;
-* GBP;
-* local currency.
+- BRL;
+- EUR;
+- AED;
+- GBP;
+- local currency.
 
 Example source:
 
@@ -440,8 +440,8 @@ When a value is a real dynamic financial value, use locale-aware number formatti
 Preferred approach:
 
 new Intl.NumberFormat(locale, {
-  style: 'currency',
-  currency: 'USD',
+style: 'currency',
+currency: 'USD',
 }).format(value)
 
 This may produce localized punctuation while preserving the dollar denomination.
@@ -473,15 +473,15 @@ Do not silently rewrite editorial numbers.
 
 Do not translate:
 
-* USD;
-* $;
-* ticker symbols;
-* ISIN;
-* CUSIP;
-* fund codes;
-* security identifiers;
-* API identifiers;
-* ISO currency codes.
+- USD;
+- $;
+- ticker symbols;
+- ISIN;
+- CUSIP;
+- fund codes;
+- security identifiers;
+- API identifiers;
+- ISO currency codes.
 
 Only localize surrounding user-facing text.
 
@@ -502,9 +502,9 @@ t('welcome.user', { name })
 with:
 
 {
-  "welcome": {
-    "user": "Welcome, {{name}}"
-  }
+"welcome": {
+"user": "Welcome, {{name}}"
+}
 }
 
 Each language must control its own sentence structure.
@@ -580,9 +580,9 @@ Use common.json only when a string is genuinely reusable.
 Example:
 
 {
-  "actions": {
-    "learnMore": "Learn more"
-  }
+"actions": {
+"learnMore": "Learn more"
+}
 }
 
 Use a route file when wording is specific to that page.
@@ -590,11 +590,11 @@ Use a route file when wording is specific to that page.
 Example:
 
 {
-  "hero": {
-    "actions": {
-      "exploreArchitecture": "Explore the architecture"
-    }
-  }
+"hero": {
+"actions": {
+"exploreArchitecture": "Explore the architecture"
+}
+}
 }
 
 Do not centralize every phrase merely to reduce the number of keys.
@@ -652,11 +652,11 @@ nav.json
 
 This includes:
 
-* desktop menu;
-* mobile menu;
-* CTA;
-* submenu labels;
-* accessibility labels associated with navigation when appropriate.
+- desktop menu;
+- mobile menu;
+- CTA;
+- submenu labels;
+- accessibility labels associated with navigation when appropriate.
 
 Do not duplicate navbar translations inside route files.
 
@@ -678,19 +678,19 @@ User-facing metadata should also be localized where the application architecture
 
 This includes:
 
-* <title>;
-* meta description;
-* Open Graph title;
-* Open Graph description;
-* localized structured metadata where appropriate.
+- <title>;
+- meta description;
+- Open Graph title;
+- Open Graph description;
+- localized structured metadata where appropriate.
 
 A route file may contain a dedicated metadata section:
 
 {
-  "meta": {
-    "title": "Elleva | Global Investment Infrastructure",
-    "description": "..."
-  }
+"meta": {
+"title": "Elleva | Global Investment Infrastructure",
+"description": "..."
+}
 }
 
 Do not mix metadata strings randomly throughout the file.
@@ -702,17 +702,17 @@ Do not mix metadata strings randomly throughout the file.
 Preferred route structure:
 
 {
-  "meta": {
-    "title": "...",
-    "description": "..."
-  },
-  "hero": {
-    "title": "...",
-    "description": "..."
-  },
-  "platform": {
-    "...": "..."
-  }
+"meta": {
+"title": "...",
+"description": "..."
+},
+"hero": {
+"title": "...",
+"description": "..."
+},
+"platform": {
+"...": "..."
+}
 }
 
 This keeps SEO copy clearly separated from visible page sections.
@@ -723,12 +723,12 @@ This keeps SEO copy clearly separated from visible page sections.
 
 Localize user-facing accessibility text such as:
 
-* aria-label;
-* screen-reader instructions;
-* accessible button names;
-* chart descriptions;
-* map descriptions;
-* diagram descriptions.
+- aria-label;
+- screen-reader instructions;
+- accessible button names;
+- chart descriptions;
+- map descriptions;
+- diagram descriptions.
 
 Do not translate purely technical accessibility identifiers.
 
@@ -741,8 +741,8 @@ If an image’s alt text communicates content to the user, it must use i18n.
 Example:
 
 <img
-  src={image}
-  alt={t('architecture.diagram.alt')}
+src={image}
+alt={t('architecture.diagram.alt')}
 />
 
 Decorative images should follow normal accessibility rules and may use:
@@ -772,16 +772,16 @@ Internal node IDs must remain unchanged.
 Correct:
 
 {
-  id: 'research',
-  data: {
-    label: t('architecture.nodes.research')
-  }
+id: 'research',
+data: {
+label: t('architecture.nodes.research')
+}
 }
 
 Incorrect:
 
 {
-  id: t('architecture.nodes.research')
+id: t('architecture.nodes.research')
 }
 
 Internal topology must not depend on translated strings.
@@ -810,20 +810,20 @@ Supporting labels and descriptions should be translated.
 
 Never translate:
 
-* object keys;
-* route IDs;
-* component names;
-* enum values;
-* API fields;
-* event names;
-* analytics identifiers;
-* CSS classes;
-* React keys;
-* React Flow node IDs;
-* database fields;
-* type names;
-* function names;
-* translation keys.
+- object keys;
+- route IDs;
+- component names;
+- enum values;
+- API fields;
+- event names;
+- analytics identifiers;
+- CSS classes;
+- React keys;
+- React Flow node IDs;
+- database fields;
+- type names;
+- function names;
+- translation keys.
 
 Only user-facing values should be localized.
 
@@ -850,10 +850,10 @@ If the project already persists the selected language, preserve that behavior.
 
 Common valid mechanisms include:
 
-* localStorage;
-* cookies;
-* URL prefix;
-* user profile preference.
+- localStorage;
+- cookies;
+- URL prefix;
+- user profile preference.
 
 Do not add multiple conflicting persistence mechanisms.
 
@@ -863,11 +863,11 @@ Do not add multiple conflicting persistence mechanisms.
 
 The language selector must:
 
-* use the existing i18n API;
-* update the active locale;
-* preserve the current route where possible;
-* persist language when the current architecture supports persistence;
-* not reload unnecessarily unless required by the framework.
+- use the existing i18n API;
+- update the active locale;
+- preserve the current route where possible;
+- persist language when the current architecture supports persistence;
+- not reload unnecessarily unless required by the framework.
 
 Language labels should be clear.
 
@@ -939,20 +939,20 @@ Do not improvise a new translation every time the same concept appears.
 
 Translations should avoid:
 
-* casual startup language;
-* slang;
-* exaggerated marketing language;
-* crypto terminology;
-* retail trading terminology;
-* unnecessary buzzwords.
+- casual startup language;
+- slang;
+- exaggerated marketing language;
+- crypto terminology;
+- retail trading terminology;
+- unnecessary buzzwords.
 
 The intended tone is:
 
-* institutional;
-* confident;
-* concise;
-* technically sophisticated;
-* globally understandable.
+- institutional;
+- confident;
+- concise;
+- technically sophisticated;
+- globally understandable.
 
 ⸻
 
@@ -961,53 +961,53 @@ The intended tone is:
 Example:
 
 {
-  "meta": {
-    "title": "Elleva | Autonomous Capital Infrastructure",
-    "description": "Autonomous AI infrastructure for investment operations."
-  },
-  "hero": {
-    "eyebrow": "Autonomous Capital Infrastructure",
-    "title": "Capital, operated by intelligence.",
-    "description": "The intelligence and orchestration layer between data, mandates, financial institutions, and execution.",
-    "actions": {
-      "primary": "Explore Elleva"
-    }
-  },
-  "operatingCycle": {
-    "title": "Research → Decide → Execute → Monitor",
-    "steps": {
-      "research": "Research",
-      "decide": "Decide",
-      "execute": "Execute",
-      "monitor": "Monitor"
-    }
-  }
+"meta": {
+"title": "Elleva | Autonomous Capital Infrastructure",
+"description": "Autonomous AI infrastructure for investment operations."
+},
+"hero": {
+"eyebrow": "Autonomous Capital Infrastructure",
+"title": "Capital, operated by intelligence.",
+"description": "The intelligence and orchestration layer between data, mandates, financial institutions, and execution.",
+"actions": {
+"primary": "Explore Elleva"
+}
+},
+"operatingCycle": {
+"title": "Research → Decide → Execute → Monitor",
+"steps": {
+"research": "Research",
+"decide": "Decide",
+"execute": "Execute",
+"monitor": "Monitor"
+}
+}
 }
 
 Equivalent pt-BR:
 
 {
-  "meta": {
-    "title": "Elleva | Infraestrutura Autônoma de Capital",
-    "description": "Infraestrutura autônoma de IA para operações de investimento."
-  },
-  "hero": {
-    "eyebrow": "Infraestrutura Autônoma de Capital",
-    "title": "Capital, operado por inteligência.",
-    "description": "A camada de inteligência e orquestração entre dados, mandatos, instituições financeiras e execução.",
-    "actions": {
-      "primary": "Conheça a Elleva"
-    }
-  },
-  "operatingCycle": {
-    "title": "Pesquisar → Decidir → Executar → Monitorar",
-    "steps": {
-      "research": "Pesquisar",
-      "decide": "Decidir",
-      "execute": "Executar",
-      "monitor": "Monitorar"
-    }
-  }
+"meta": {
+"title": "Elleva | Infraestrutura Autônoma de Capital",
+"description": "Infraestrutura autônoma de IA para operações de investimento."
+},
+"hero": {
+"eyebrow": "Infraestrutura Autônoma de Capital",
+"title": "Capital, operado por inteligência.",
+"description": "A camada de inteligência e orquestração entre dados, mandatos, instituições financeiras e execução.",
+"actions": {
+"primary": "Conheça a Elleva"
+}
+},
+"operatingCycle": {
+"title": "Pesquisar → Decidir → Executar → Monitorar",
+"steps": {
+"research": "Pesquisar",
+"decide": "Decidir",
+"execute": "Executar",
+"monitor": "Monitorar"
+}
+}
 }
 
 The object structure must remain identical.
@@ -1036,23 +1036,23 @@ When modifying an existing feature:
 
 Before considering a new feature complete:
 
-* No user-facing text is hardcoded.
-* Correct locale namespace is used.
-* Route-specific strings are in the correct route file.
-* Shared strings are in common.json.
-* Navigation strings are in nav.json.
-* 404 strings are in notfound.json.
-* JSON is organized by section/context.
-* Translation keys are descriptive.
-* Existing keys were reused where appropriate.
-* Every supported locale contains the same keys.
-* Dynamic values use interpolation.
-* Pluralization uses the i18n system.
-* Accessibility text is localized when user-facing.
-* Financial values remain in USD.
-* Internal identifiers remain untranslated.
-* All JSON files are valid.
-* No duplicate keys exist.
+- No user-facing text is hardcoded.
+- Correct locale namespace is used.
+- Route-specific strings are in the correct route file.
+- Shared strings are in common.json.
+- Navigation strings are in nav.json.
+- 404 strings are in notfound.json.
+- JSON is organized by section/context.
+- Translation keys are descriptive.
+- Existing keys were reused where appropriate.
+- Every supported locale contains the same keys.
+- Dynamic values use interpolation.
+- Pluralization uses the i18n system.
+- Accessibility text is localized when user-facing.
+- Financial values remain in USD.
+- Internal identifiers remain untranslated.
+- All JSON files are valid.
+- No duplicate keys exist.
 
 ⸻
 
@@ -1084,11 +1084,11 @@ Whenever an AI agent works on UI or content, it must inspect the i18n system bef
 
 The agent must not assume:
 
-* which i18n library is used;
-* which language is the default;
-* which languages are supported;
-* which namespaces already exist;
-* how locale detection works.
+- which i18n library is used;
+- which language is the default;
+- which languages are supported;
+- which namespaces already exist;
+- how locale detection works.
 
 Inspect the project first.
 
@@ -1100,10 +1100,10 @@ Then follow the existing architecture.
 
 If hardcoded text is found while modifying a related component:
 
-* migrate that text to i18n;
-* place it in the appropriate namespace;
-* add translations for all supported languages;
-* preserve the original meaning.
+- migrate that text to i18n;
+- place it in the appropriate namespace;
+- add translations for all supported languages;
+- preserve the original meaning.
 
 Do not perform a project-wide unrelated refactor unless explicitly requested.
 
@@ -1113,12 +1113,12 @@ Do not perform a project-wide unrelated refactor unless explicitly requested.
 
 Do not introduce:
 
-* a second translation directory;
-* another i18n provider;
-* another localization library;
-* a custom translation store;
-* local component dictionaries;
-* duplicate locale-loading logic.
+- a second translation directory;
+- another i18n provider;
+- another localization library;
+- a custom translation store;
+- local component dictionaries;
+- duplicate locale-loading logic.
 
 The project must have one coherent i18n system.
 
@@ -1128,12 +1128,12 @@ The project must have one coherent i18n system.
 
 Translation files must remain:
 
-* valid JSON;
-* UTF-8;
-* consistently indented;
-* free of comments;
-* free of trailing commas;
-* structurally synchronized between locales.
+- valid JSON;
+- UTF-8;
+- consistently indented;
+- free of comments;
+- free of trailing commas;
+- structurally synchronized between locales.
 
 Prefer readable grouping over very large flat objects.
 
@@ -1144,7 +1144,7 @@ Prefer readable grouping over very large flat objects.
 Avoid storing markup-heavy values such as:
 
 {
-  "title": "<strong>Investment</strong> Intelligence"
+"title": "<strong>Investment</strong> Intelligence"
 }
 
 Prefer structured text and appropriate rich-text handling supported by the i18n library.
@@ -1168,8 +1168,8 @@ The translator must retain control over sentence order.
 Correct:
 
 const formattedValue = new Intl.NumberFormat(locale, {
-  style: 'currency',
-  currency: 'USD',
+style: 'currency',
+currency: 'USD',
 }).format(amount)
 
 Incorrect:

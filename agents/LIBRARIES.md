@@ -8,14 +8,14 @@ Your responsibility is to define, audit, install, approve, reuse, and maintain t
 
 Your goal is to keep the dependency system:
 
-* consistent;
-* modern;
-* secure;
-* maintainable;
-* minimal;
-* non-duplicated;
-* aligned with the project architecture;
-* aligned with the Elleva design and product requirements.
+- consistent;
+- modern;
+- secure;
+- maintainable;
+- minimal;
+- non-duplicated;
+- aligned with the project architecture;
+- aligned with the Elleva design and product requirements.
 
 Do not install libraries casually.
 
@@ -89,31 +89,31 @@ Use shadcn components before introducing another UI component library.
 
 Examples:
 
-* Button;
-* Dialog;
-* Sheet;
-* Drawer;
-* Dropdown;
-* Popover;
-* Tabs;
-* Accordion;
-* Select;
-* Input;
-* Form;
-* Tooltip;
-* Table;
-* Command;
-* Calendar;
-* Toast-related UI;
-* Navigation components.
+- Button;
+- Dialog;
+- Sheet;
+- Drawer;
+- Dropdown;
+- Popover;
+- Tabs;
+- Accordion;
+- Select;
+- Input;
+- Form;
+- Tooltip;
+- Table;
+- Command;
+- Calendar;
+- Toast-related UI;
+- Navigation components.
 
 Do not introduce:
 
-* Material UI;
-* Ant Design;
-* Chakra UI;
-* Mantine;
-* Bootstrap component libraries;
+- Material UI;
+- Ant Design;
+- Chakra UI;
+- Mantine;
+- Bootstrap component libraries;
 
 unless explicitly approved.
 
@@ -137,10 +137,10 @@ For reusable component variants.
 
 Example responsibilities:
 
-* size;
-* intent;
-* appearance;
-* state variants.
+- size;
+- intent;
+- appearance;
+- state variants.
 
 clsx
 
@@ -178,9 +178,9 @@ zod
 
 Use:
 
-* react-hook-form for form state;
-* zod for schema validation;
-* @hookform/resolvers for integration.
+- react-hook-form for form state;
+- zod for schema validation;
+- @hookform/resolvers for integration.
 
 Preferred flow:
 
@@ -204,12 +204,12 @@ zod
 
 Use Zod for:
 
-* forms;
-* API validation when appropriate;
-* client-side data validation;
-* schemas;
-* parsing external data;
-* safe type inference.
+- forms;
+- API validation when appropriate;
+- client-side data validation;
+- schemas;
+- parsing external data;
+- safe type inference.
 
 Do not duplicate validation logic manually when a schema can express it clearly.
 
@@ -223,13 +223,13 @@ Primary server-state library:
 
 Use TanStack Query for:
 
-* fetching;
-* cache;
-* loading states;
-* mutations;
-* invalidation;
-* background refetch;
-* synchronization with backend state.
+- fetching;
+- cache;
+- loading states;
+- mutations;
+- invalidation;
+- background refetch;
+- synchronization with backend state.
 
 Do not replace server-state behavior with manual useEffect + local state when TanStack Query is appropriate.
 
@@ -243,11 +243,11 @@ axios
 
 Use Axios for:
 
-* API requests;
-* interceptors;
-* credentials;
-* headers;
-* centralized HTTP configuration.
+- API requests;
+- interceptors;
+- credentials;
+- headers;
+- centralized HTTP configuration.
 
 Do not mix multiple HTTP clients throughout the project without a clear reason.
 
@@ -280,10 +280,10 @@ i18next-http-backend
 
 Use these libraries for:
 
-* translation loading;
-* React translation hooks;
-* browser language detection;
-* loading locale JSON from public/internationalization.
+- translation loading;
+- React translation hooks;
+- browser language detection;
+- loading locale JSON from public/internationalization.
 
 Do not introduce another i18n framework.
 
@@ -311,10 +311,10 @@ date-fns
 
 Use for:
 
-* formatting;
-* date arithmetic;
-* comparisons;
-* date calculations.
+- formatting;
+- date arithmetic;
+- comparisons;
+- date calculations.
 
 Prefer locale-aware formatting where appropriate.
 
@@ -363,19 +363,19 @@ Follow the Animation Agent for motion behavior.
 
 GSAP may be introduced only when:
 
-* timeline sequencing is genuinely complex;
-* Motion cannot express the behavior cleanly;
-* precise choreography is required.
+- timeline sequencing is genuinely complex;
+- Motion cannot express the behavior cleanly;
+- precise choreography is required.
 
 GSAP is not the default animation library.
 
 Do not use GSAP for simple:
 
-* fades;
-* reveals;
-* dropdowns;
-* modals;
-* section transitions.
+- fades;
+- reveals;
+- dropdowns;
+- modals;
+- section transitions.
 
 ⸻
 
@@ -412,13 +412,13 @@ recharts
 
 Use Recharts for:
 
-* line charts;
-* area charts;
-* bar charts;
-* allocation charts;
-* performance charts;
-* KPI visuals;
-* institutional data visualization.
+- line charts;
+- area charts;
+- bar charts;
+- allocation charts;
+- performance charts;
+- KPI visuals;
+- institutional data visualization.
 
 Do not introduce Chart.js, ApexCharts, ECharts, or similar libraries unless Recharts cannot satisfy the requirement.
 
@@ -432,10 +432,10 @@ Primary geographic visualization library:
 
 Use for:
 
-* global financial maps;
-* hub visualizations;
-* geographic routes;
-* institutional geographic storytelling.
+- global financial maps;
+- hub visualizations;
+- geographic routes;
+- institutional geographic storytelling.
 
 Approved supporting dependency:
 
@@ -489,10 +489,10 @@ cmdk
 
 Use for:
 
-* command menus;
-* searchable actions;
-* keyboard-first navigation;
-* command palette interfaces.
+- command menus;
+- searchable actions;
+- keyboard-first navigation;
+- command palette interfaces.
 
 This integrates naturally with shadcn.
 
@@ -506,10 +506,10 @@ sonner
 
 Use Sonner for:
 
-* success;
-* error;
-* warning;
-* informational notifications.
+- success;
+- error;
+- warning;
+- informational notifications.
 
 Do not maintain multiple toast libraries.
 
@@ -535,9 +535,9 @@ input-otp
 
 Use for:
 
-* verification codes;
-* OTP;
-* PIN-style inputs.
+- verification codes;
+- OTP;
+- PIN-style inputs.
 
 Do not build fragile manual segmented input logic when this library already solves the problem.
 
@@ -551,10 +551,10 @@ react-resizable-panels
 
 Use for interfaces requiring:
 
-* split panes;
-* adjustable panels;
-* research workspace layouts;
-* institutional multi-panel views.
+- split panes;
+- adjustable panels;
+- research workspace layouts;
+- institutional multi-panel views.
 
 Do not implement resize behavior manually unless necessary.
 
@@ -582,10 +582,10 @@ use-debounce
 
 Use for:
 
-* search inputs;
-* delayed filtering;
-* interaction debounce;
-* viewport reset timing when appropriate.
+- search inputs;
+- delayed filtering;
+- interaction debounce;
+- viewport reset timing when appropriate.
 
 Do not create duplicated custom debounce implementations throughout the project.
 
@@ -614,10 +614,10 @@ pdfjs-dist
 
 Use for:
 
-* PDF rendering;
-* document preview;
-* page navigation;
-* in-product PDF visualization.
+- PDF rendering;
+- document preview;
+- page navigation;
+- in-product PDF visualization.
 
 Keep the packages aligned with each other for compatibility.
 
@@ -639,9 +639,9 @@ Elleva must not become dependent on heavy 3D effects for basic product storytell
 
 Use Three.js only when:
 
-* 3D communicates information;
-* performance remains acceptable;
-* the effect supports institutional positioning.
+- 3D communicates information;
+- performance remains acceptable;
+- the effect supports institutional positioning.
 
 ⸻
 
@@ -717,44 +717,44 @@ Do not keep duplicates indefinitely without justification.
 
 37. Preferred Library Matrix
 
-Responsibility	Preferred Library
-UI primitives	shadcn/ui
-Icons	lucide-react
-Styling	Tailwind CSS
-Class variants	class-variance-authority
-Class composition	clsx
-Tailwind conflict resolution	tailwind-merge
-Forms	react-hook-form
-Validation	zod
-Form schema integration	@hookform/resolvers
-Server state	@tanstack/react-query
-HTTP	axios
-Routing	react-router-dom
-i18n	i18next + react-i18next
-Language detection	i18next-browser-languagedetector
-Locale loading	i18next-http-backend
-Dates	date-fns
-Date picker	react-day-picker
-Motion	motion
-Diagrams	@xyflow/react
-Charts	recharts
-Maps	@vnedyalk0v/react19-simple-maps
-Geo data	topojson-client
-Low-level visualization	selected D3 modules
-Carousel	embla-carousel-react
-Autoplay	embla-carousel-autoplay
-Command palette	cmdk
-Toasts	sonner
-Drawers	vaul
-OTP	input-otp
-Resizable panels	react-resizable-panels
-PDF	react-pdf + pdfjs-dist
-Debounce	use-debounce
-Client cookies	js-cookie
-3D	three
-Google AI	@google/genai
-Node server	express
-Environment loading	dotenv
+Responsibility Preferred Library
+UI primitives shadcn/ui
+Icons lucide-react
+Styling Tailwind CSS
+Class variants class-variance-authority
+Class composition clsx
+Tailwind conflict resolution tailwind-merge
+Forms react-hook-form
+Validation zod
+Form schema integration @hookform/resolvers
+Server state @tanstack/react-query
+HTTP axios
+Routing react-router-dom
+i18n i18next + react-i18next
+Language detection i18next-browser-languagedetector
+Locale loading i18next-http-backend
+Dates date-fns
+Date picker react-day-picker
+Motion motion
+Diagrams @xyflow/react
+Charts recharts
+Maps @vnedyalk0v/react19-simple-maps
+Geo data topojson-client
+Low-level visualization selected D3 modules
+Carousel embla-carousel-react
+Autoplay embla-carousel-autoplay
+Command palette cmdk
+Toasts sonner
+Drawers vaul
+OTP input-otp
+Resizable panels react-resizable-panels
+PDF react-pdf + pdfjs-dist
+Debounce use-debounce
+Client cookies js-cookie
+3D three
+Google AI @google/genai
+Node server express
+Environment loading dotenv
 
 ⸻
 
@@ -796,12 +796,12 @@ If yes, prefer another solution.
 
 When installing an approved dependency:
 
-* do not pin a version unless necessary;
-* use the project’s existing package manager;
-* avoid unnecessary --force;
-* avoid --legacy-peer-deps unless there is a documented compatibility issue;
-* inspect peer dependency warnings;
-* verify the build afterward.
+- do not pin a version unless necessary;
+- use the project’s existing package manager;
+- avoid unnecessary --force;
+- avoid --legacy-peer-deps unless there is a documented compatibility issue;
+- inspect peer dependency warnings;
+- verify the build afterward.
 
 Example:
 
@@ -819,9 +819,9 @@ Approved does not mean mandatory.
 
 A library should be installed only when:
 
-* the project uses it;
-* a feature requires it;
-* there is a clear implementation plan.
+- the project uses it;
+- a feature requires it;
+- there is a clear implementation plan.
 
 Do not preload dozens of dependencies merely because they appear in this document.
 
@@ -850,22 +850,22 @@ Never choose convenience over dependency security.
 
 Before introducing libraries that handle:
 
-* authentication;
-* cryptography;
-* files;
-* PDF;
-* cookies;
-* AI;
-* external content;
+- authentication;
+- cryptography;
+- files;
+- PDF;
+- cookies;
+- AI;
+- external content;
 
 evaluate the security implications.
 
 Do not expose:
 
-* API keys;
-* access tokens;
-* secrets;
-* private credentials;
+- API keys;
+- access tokens;
+- secrets;
+- private credentials;
 
 through frontend dependencies or bundled environment variables.
 
@@ -889,11 +889,11 @@ Avoid adding a heavy dependency for trivial functionality.
 
 Prefer libraries that are:
 
-* actively maintained;
-* widely adopted;
-* well documented;
-* compatible with the current React ecosystem;
-* TypeScript-friendly.
+- actively maintained;
+- widely adopted;
+- well documented;
+- compatible with the current React ecosystem;
+- TypeScript-friendly.
 
 Do not introduce obscure dependencies when a stable established solution already exists.
 
@@ -905,22 +905,22 @@ Third-party components must not dictate the Elleva visual identity.
 
 When using:
 
-* shadcn;
-* React Day Picker;
-* Sonner;
-* Vaul;
-* Embla;
-* React Flow;
-* Recharts;
+- shadcn;
+- React Day Picker;
+- Sonner;
+- Vaul;
+- Embla;
+- React Flow;
+- Recharts;
 
 apply the existing Elleva:
 
-* colors;
-* typography;
-* spacing;
-* radius;
-* motion;
-* accessibility rules.
+- colors;
+- typography;
+- spacing;
+- radius;
+- motion;
+- accessibility rules.
 
 The library provides behavior.
 
@@ -957,23 +957,23 @@ Do not duplicate behavior rules unnecessarily across agents.
 
 Before completing work involving dependencies:
 
-* package.json was inspected.
-* Existing packages were checked before adding new ones.
-* No unnecessary duplicate library was introduced.
-* shadcn was preferred for UI components.
-* Lucide was preferred for icons.
-* React Hook Form + Zod were preferred for forms.
-* TanStack Query was preferred for server state.
-* Axios was reused for HTTP.
-* Motion was preferred for animations.
-* @xyflow/react was preferred for new diagrams.
-* Recharts was preferred for charts.
-* @vnedyalk0v/react19-simple-maps was preferred for maps.
-* Existing i18next architecture was preserved.
-* No unnecessary fixed package version was introduced.
-* Security implications were evaluated.
-* Bundle impact was considered.
-* Build was validated after dependency changes when applicable.
+- package.json was inspected.
+- Existing packages were checked before adding new ones.
+- No unnecessary duplicate library was introduced.
+- shadcn was preferred for UI components.
+- Lucide was preferred for icons.
+- React Hook Form + Zod were preferred for forms.
+- TanStack Query was preferred for server state.
+- Axios was reused for HTTP.
+- Motion was preferred for animations.
+- @xyflow/react was preferred for new diagrams.
+- Recharts was preferred for charts.
+- @vnedyalk0v/react19-simple-maps was preferred for maps.
+- Existing i18next architecture was preserved.
+- No unnecessary fixed package version was introduced.
+- Security implications were evaluated.
+- Bundle impact was considered.
+- Build was validated after dependency changes when applicable.
 
 ⸻
 

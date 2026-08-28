@@ -10,15 +10,15 @@ Before creating, moving, deleting, or refactoring any file, analyze the existing
 
 The architecture must remain:
 
-* modular;
-* predictable;
-* scalable;
-* testable;
-* easy to navigate;
-* low-coupled;
-* highly cohesive;
-* easy to modify;
-* easy to remove.
+- modular;
+- predictable;
+- scalable;
+- testable;
+- easy to navigate;
+- low-coupled;
+- highly cohesive;
+- easy to modify;
+- easy to remove.
 
 Do not introduce architectural complexity simply to follow a pattern.
 
@@ -30,19 +30,19 @@ Architecture must solve real project problems.
 
 All new or refactored code must follow:
 
-* SOLID;
-* Single Responsibility Principle;
-* Separation of Concerns;
-* DRY without premature abstraction;
-* KISS;
-* low coupling;
-* high cohesion;
-* composition over inheritance;
-* small and predictable functions;
-* clear ownership of responsibilities;
-* code that is easy to locate;
-* code that is easy to test;
-* code that is easy to replace.
+- SOLID;
+- Single Responsibility Principle;
+- Separation of Concerns;
+- DRY without premature abstraction;
+- KISS;
+- low coupling;
+- high cohesion;
+- composition over inheritance;
+- small and predictable functions;
+- clear ownership of responsibilities;
+- code that is easy to locate;
+- code that is easy to test;
+- code that is easy to replace.
 
 Before creating an abstraction, verify that the project actually benefits from it.
 
@@ -82,11 +82,11 @@ Example:
 
 src/
 └── pages/
-    ├── Home/
-    ├── Platform/
-    ├── Architecture/
-    ├── Markets/
-    └── Company/
+├── Home/
+├── Platform/
+├── Architecture/
+├── Markets/
+└── Company/
 
 A page directory represents a route-level feature.
 
@@ -98,47 +98,47 @@ The preferred structure for a page is:
 
 src/
 └── pages/
-    └── Home/
-        ├── view.tsx
-        │
-        ├── sections/
-        │   ├── Hero/
-        │   │   └── index.tsx
-        │   ├── MarketOpportunity/
-        │   │   └── index.tsx
-        │   ├── InvestmentIntelligence/
-        │   │   └── index.tsx
-        │   └── GlobalMarkets/
-        │       └── index.tsx
-        │
-        ├── components/
-        │   └── ...
-        │
-        ├── hooks/
-        │   └── ...
-        │
-        ├── context/
-        │   └── ...
-        │
-        ├── queries/
-        │   └── ...
-        │
-        ├── mutations/
-        │   └── ...
-        │
-        └── types/
-            └── ...
+└── Home/
+├── view.tsx
+│
+├── sections/
+│ ├── Hero/
+│ │ └── index.tsx
+│ ├── MarketOpportunity/
+│ │ └── index.tsx
+│ ├── InvestmentIntelligence/
+│ │ └── index.tsx
+│ └── GlobalMarkets/
+│ └── index.tsx
+│
+├── components/
+│ └── ...
+│
+├── hooks/
+│ └── ...
+│
+├── context/
+│ └── ...
+│
+├── queries/
+│ └── ...
+│
+├── mutations/
+│ └── ...
+│
+└── types/
+└── ...
 
 Only create directories that are actually required.
 
 Not every page needs:
 
-* context;
-* hooks;
-* queries;
-* mutations;
-* types;
-* components.
+- context;
+- hooks;
+- queries;
+- mutations;
+- types;
+- components.
 
 The sections/ directory, however, should be used whenever the page contains meaningful visual/content sections.
 
@@ -169,35 +169,35 @@ A section is a major content or layout block that participates directly in page 
 
 Examples:
 
-* Hero;
-* Problem;
-* Market Opportunity;
-* Product;
-* Investment Intelligence;
-* Architecture;
-* Global Markets;
-* Business Model;
-* Strategic Pillars;
-* Technology;
-* Trust;
-* FAQ;
-* Final CTA.
+- Hero;
+- Problem;
+- Market Opportunity;
+- Product;
+- Investment Intelligence;
+- Architecture;
+- Global Markets;
+- Business Model;
+- Strategic Pillars;
+- Technology;
+- Trust;
+- FAQ;
+- Final CTA.
 
 Conceptually:
 
 export function HomeView() {
-  return (
-    <>
-      <Hero />
-      <Problem />
-      <MarketOpportunity />
-      <InvestmentIntelligence />
-      <Architecture />
-      <GlobalMarkets />
-      <Trust />
-      <FinalCTA />
-    </>
-  )
+return (
+<>
+<Hero />
+<Problem />
+<MarketOpportunity />
+<InvestmentIntelligence />
+<Architecture />
+<GlobalMarkets />
+<Trust />
+<FinalCTA />
+</>
+)
 }
 
 Each of these should normally exist inside:
@@ -212,7 +212,7 @@ A section may remain simple:
 
 sections/
 └── Hero/
-    └── index.tsx
+└── index.tsx
 
 If it grows, keep its internal dependencies colocated.
 
@@ -220,13 +220,13 @@ Example:
 
 sections/
 └── Architecture/
-    ├── index.tsx
-    ├── ArchitectureDiagram.tsx
-    ├── ArchitectureNode.tsx
-    ├── architecture.types.ts
-    ├── architecture.constants.ts
-    └── hooks/
-        └── useArchitectureFlow.ts
+├── index.tsx
+├── ArchitectureDiagram.tsx
+├── ArchitectureNode.tsx
+├── architecture.types.ts
+├── architecture.constants.ts
+└── hooks/
+└── useArchitectureFlow.ts
 
 Do not move section-specific internals to global folders.
 
@@ -260,8 +260,8 @@ Example:
 
 src/
 └── components/
-    └── sections/
-        └── FinalCTA/
+└── sections/
+└── FinalCTA/
 
 Only do this when there is real reuse.
 
@@ -311,18 +311,18 @@ Examples:
 
 src/
 └── components/
-    ├── layout/
-    │   ├── Navbar/
-    │   ├── Footer/
-    │   └── SectionContainer/
-    │
-    ├── ui/
-    │   ├── Button/
-    │   ├── Modal/
-    │   └── Input/
-    │
-    └── data/
-        └── ...
+├── layout/
+│ ├── Navbar/
+│ ├── Footer/
+│ └── SectionContainer/
+│
+├── ui/
+│ ├── Button/
+│ ├── Modal/
+│ └── Input/
+│
+└── data/
+└── ...
 
 Do not move a component here merely for convenience.
 
@@ -362,24 +362,24 @@ Prefer .tsx when JSX is rendered.
 
 The view.tsx is responsible primarily for:
 
-* page composition;
-* section ordering;
-* top-level page layout;
-* connecting page-level providers when necessary;
-* assembling sections.
+- page composition;
+- section ordering;
+- top-level page layout;
+- connecting page-level providers when necessary;
+- assembling sections.
 
 Example:
 
 export function HomeView() {
-  return (
-    <>
-      <Hero />
-      <Problem />
-      <MarketOpportunity />
-      <Architecture />
-      <FinalCTA />
-    </>
-  )
+return (
+<>
+<Hero />
+<Problem />
+<MarketOpportunity />
+<Architecture />
+<FinalCTA />
+</>
+)
 }
 
 ⸻
@@ -388,17 +388,17 @@ export function HomeView() {
 
 view.tsx must not contain:
 
-* HTTP calls;
-* large JSX sections;
-* complex business logic;
-* large data transformations;
-* extensive animation logic;
-* chart implementations;
-* React Flow implementations;
-* deeply nested component markup;
-* arbitrary constants;
-* translation dictionaries;
-* complex hook implementations.
+- HTTP calls;
+- large JSX sections;
+- complex business logic;
+- large data transformations;
+- extensive animation logic;
+- chart implementations;
+- React Flow implementations;
+- deeply nested component markup;
+- arbitrary constants;
+- translation dictionaries;
+- complex hook implementations.
 
 If JSX represents a meaningful section, move it to:
 
@@ -412,13 +412,13 @@ A section should coordinate the UI and behavior required for that particular pag
 
 A section may:
 
-* compose internal components;
-* consume hooks;
-* consume translations;
-* consume query results;
-* render diagrams;
-* render charts;
-* manage section-specific UI behavior.
+- compose internal components;
+- consume hooks;
+- consume translations;
+- consume query results;
+- render diagrams;
+- render charts;
+- manage section-specific UI behavior.
 
 A section should not become a second page.
 
@@ -474,11 +474,11 @@ Do not introduce global state simply to avoid one or two props.
 
 When a component receives many props, investigate:
 
-* whether it has too many responsibilities;
-* whether it should be split;
-* whether data belongs to a context;
-* whether there is prop drilling;
-* whether related values can be grouped semantically.
+- whether it has too many responsibilities;
+- whether it should be split;
+- whether data belongs to a context;
+- whether there is prop drilling;
+- whether related values can be grouped semantically.
 
 Do not create giant objects merely to hide excessive prop count.
 
@@ -492,9 +492,9 @@ Prefer the simplest solution.
 
 Do not use:
 
-* Zustand;
-* Context;
-* Signals;
+- Zustand;
+- Context;
+- Signals;
 
 when useState adequately solves the problem.
 
@@ -504,11 +504,11 @@ when useState adequately solves the problem.
 
 Use preact/signals when appropriate for:
 
-* lightweight reactive state;
-* locally shared state;
-* derived values;
-* UI state;
-* reactive communication where Context would add unnecessary complexity.
+- lightweight reactive state;
+- locally shared state;
+- derived values;
+- UI state;
+- reactive communication where Context would add unnecessary complexity.
 
 Preferred primitives:
 
@@ -526,11 +526,11 @@ Use Zustand only when there is real global/client-side shared state.
 
 Examples:
 
-* application preferences;
-* theme/preferences;
-* cross-page filters;
-* global UI state;
-* non-server session state.
+- application preferences;
+- theme/preferences;
+- cross-page filters;
+- global UI state;
+- non-server session state.
 
 Do not store server-owned data in Zustand when TanStack Query should own it.
 
@@ -542,12 +542,12 @@ Example:
 
 src/
 └── stores/
-    ├── ui/
-    │   └── ui.store.ts
-    ├── preferences/
-    │   └── preferences.store.ts
-    └── session/
-        └── session.store.ts
+├── ui/
+│ └── ui.store.ts
+├── preferences/
+│ └── preferences.store.ts
+└── session/
+└── session.store.ts
 
 ⸻
 
@@ -557,14 +557,14 @@ Use TanStack Query for server state whenever appropriate.
 
 TanStack Query owns:
 
-* fetching;
-* caching;
-* refetching;
-* loading;
-* errors;
-* mutations;
-* invalidation;
-* synchronization with backend state.
+- fetching;
+- caching;
+- refetching;
+- loading;
+- errors;
+- mutations;
+- invalidation;
+- synchronization with backend state.
 
 Do not manually recreate these behaviors using useEffect.
 
@@ -575,12 +575,10 @@ Do not manually recreate these behaviors using useEffect.
 Do not keep the same server information simultaneously in:
 
 TanStack Query
-+
-Zustand
-+
-Context
-+
-Signals
+
+- Zustand
+- Context
+- Signals
 
 unless there is a specific architectural reason.
 
@@ -596,11 +594,11 @@ Prefer:
 
 queries/
 ├── getUser/
-│   └── useGetUser.ts
+│ └── useGetUser.ts
 ├── getPortfolio/
-│   └── useGetPortfolio.ts
+│ └── useGetPortfolio.ts
 └── getMarkets/
-    └── useGetMarkets.ts
+└── useGetMarkets.ts
 
 Avoid:
 
@@ -618,11 +616,11 @@ Example:
 
 mutations/
 ├── createUser/
-│   └── useCreateUser.ts
+│ └── useCreateUser.ts
 ├── updateUser/
-│   └── useUpdateUser.ts
+│ └── useUpdateUser.ts
 └── deleteUser/
-    └── useDeleteUser.ts
+└── useDeleteUser.ts
 
 A mutation hook should not contain unrelated business operations.
 
@@ -650,25 +648,25 @@ Preferred structure:
 
 src/
 └── api/
-    ├── client/
-    │   └── httpClient.ts
-    ├── config/
-    │   └── apiConfig.ts
-    ├── auth/
-    │   └── session.ts
-    └── interceptors/
-        └── ...
+├── client/
+│ └── httpClient.ts
+├── config/
+│ └── apiConfig.ts
+├── auth/
+│ └── session.ts
+└── interceptors/
+└── ...
 
 Responsibilities include:
 
-* base URL;
-* HTTP client configuration;
-* headers;
-* credentials;
-* cookies;
-* interceptors;
-* technical response handling;
-* backend communication.
+- base URL;
+- HTTP client configuration;
+- headers;
+- credentials;
+- cookies;
+- interceptors;
+- technical response handling;
+- backend communication.
 
 Do not place domain business logic inside the HTTP client.
 
@@ -684,16 +682,16 @@ Example:
 
 src/
 └── services/
-    ├── users/
-    │   ├── getUser.service.ts
-    │   └── updateUser.service.ts
-    │
-    ├── portfolio/
-    │   ├── getPortfolio.service.ts
-    │   └── rebalancePortfolio.service.ts
-    │
-    └── markets/
-        └── getMarkets.service.ts
+├── users/
+│ ├── getUser.service.ts
+│ └── updateUser.service.ts
+│
+├── portfolio/
+│ ├── getPortfolio.service.ts
+│ └── rebalancePortfolio.service.ts
+│
+└── markets/
+└── getMarkets.service.ts
 
 Services consume the API layer.
 
@@ -704,13 +702,13 @@ Services consume the API layer.
 Prefer:
 
 Component / Section
-        ↓
+↓
 TanStack Query Hook
-        ↓
+↓
 Service
-        ↓
+↓
 API Client
-        ↓
+↓
 Backend
 
 Components must not make HTTP calls directly.
@@ -859,15 +857,15 @@ Example:
 
 pages/
 └── Home/
-    └── sections/
-        └── Architecture/
-            ├── index.tsx
-            ├── ArchitectureFlow.tsx
-            ├── nodes/
-            ├── edges/
-            ├── hooks/
-            ├── types/
-            └── constants/
+└── sections/
+└── Architecture/
+├── index.tsx
+├── ArchitectureFlow.tsx
+├── nodes/
+├── edges/
+├── hooks/
+├── types/
+└── constants/
 
 If the same diagram infrastructure becomes truly reusable, extract only the reusable parts.
 
@@ -929,11 +927,11 @@ The page file structure and translation namespace should remain semantically ali
 
 Do not hardcode user-facing content inside:
 
-* pages;
-* sections;
-* components;
-* hooks;
-* services.
+- pages;
+- sections;
+- components;
+- hooks;
+- services.
 
 Use the project’s i18n architecture.
 
@@ -994,9 +992,9 @@ Do not create excessive barrel files.
 
 Avoid barrel exports that create:
 
-* circular dependencies;
-* unclear dependency paths;
-* unnecessarily large import graphs.
+- circular dependencies;
+- unclear dependency paths;
+- unnecessarily large import graphs.
 
 ⸻
 
@@ -1006,12 +1004,12 @@ Do not split files based exclusively on line count.
 
 Split when the file:
 
-* has multiple responsibilities;
-* contains multiple substantial components;
-* contains unrelated hooks;
-* contains business rules mixed with presentation;
-* becomes difficult to navigate;
-* becomes difficult to test.
+- has multiple responsibilities;
+- contains multiple substantial components;
+- contains unrelated hooks;
+- contains business rules mixed with presentation;
+- becomes difficult to navigate;
+- becomes difficult to test.
 
 A long but cohesive file may be better than five artificial files.
 
@@ -1027,11 +1025,11 @@ Example:
 
 sections/
 └── InvestmentExperience/
-    ├── index.tsx
-    ├── ExperienceHeader.tsx
-    ├── ExperienceInterface.tsx
-    ├── ExperienceMetrics.tsx
-    └── hooks/
+├── index.tsx
+├── ExperienceHeader.tsx
+├── ExperienceInterface.tsx
+├── ExperienceMetrics.tsx
+└── hooks/
 
 Ownership stays with the section.
 
@@ -1043,11 +1041,11 @@ Business rules should not be scattered throughout JSX.
 
 If logic has meaningful complexity, extract it into:
 
-* pure functions;
-* domain helpers;
-* services;
-* specific hooks;
-* domain modules.
+- pure functions;
+- domain helpers;
+- services;
+- specific hooks;
+- domain modules.
 
 UI should preferably consume prepared results.
 
@@ -1057,10 +1055,10 @@ UI should preferably consume prepared results.
 
 Relevant asynchronous features must account for:
 
-* loading;
-* error;
-* empty;
-* success.
+- loading;
+- error;
+- empty;
+- success.
 
 Do not silently ignore failures.
 
@@ -1114,11 +1112,11 @@ Code should generally move outward only when reuse becomes real.
 Preferred progression:
 
 Section-specific
-      ↓
+↓
 Page-specific
-      ↓
+↓
 Domain-shared
-      ↓
+↓
 Application-shared
 
 Do not start at the global level.
@@ -1190,16 +1188,16 @@ src/pages/Platform/
 ├── view.tsx
 │
 ├── sections/
-│   ├── Hero/
-│   ├── OperatingSystem/
-│   ├── PortfolioIntelligence/
-│   └── Architecture/
+│ ├── Hero/
+│ ├── OperatingSystem/
+│ ├── PortfolioIntelligence/
+│ └── Architecture/
 │
 ├── components/
-│   └── PlatformLabel/
+│ └── PlatformLabel/
 │
 └── types/
-    └── platform.types.ts
+└── platform.types.ts
 
 ⸻
 
@@ -1225,24 +1223,24 @@ When an existing page has a large view.tsx containing many page sections:
 Migrate towards:
 
 view.tsx
-+
-sections/
+
+- sections/
 
 Example before:
 
 Home/view.tsx
-  → 1500 lines
+→ 1500 lines
 
 Preferred:
 
 Home/
 ├── view.tsx
 └── sections/
-    ├── Hero/
-    ├── MarketOpportunity/
-    ├── Architecture/
-    ├── Trust/
-    └── FinalCTA/
+├── Hero/
+├── MarketOpportunity/
+├── Architecture/
+├── Trust/
+└── FinalCTA/
 
 Do not change functional behavior unnecessarily during structural refactoring.
 
@@ -1274,15 +1272,15 @@ Migration should be safe and incremental.
 
 Before creating a file, ask:
 
-* What is its responsibility?
-* Which feature owns it?
-* Is it section-specific?
-* Is it page-specific?
-* Is it genuinely shared?
-* Does an existing file already own this responsibility?
-* Does the new file reduce complexity?
-* Will it create duplication?
-* Does the dependency direction remain valid?
+- What is its responsibility?
+- Which feature owns it?
+- Is it section-specific?
+- Is it page-specific?
+- Is it genuinely shared?
+- Does an existing file already own this responsibility?
+- Does the new file reduce complexity?
+- Will it create duplication?
+- Does the dependency direction remain valid?
 
 If responsibility is unclear, do not create the file.
 
@@ -1292,12 +1290,12 @@ If responsibility is unclear, do not create the file.
 
 Do not create:
 
-* generic hooks without genuine reuse;
-* universal services without a clear domain;
-* huge utility collections;
-* giant contexts;
-* giant stores;
-* universal components with dozens of configuration props.
+- generic hooks without genuine reuse;
+- universal services without a clear domain;
+- huge utility collections;
+- giant contexts;
+- giant stores;
+- universal components with dozens of configuration props.
 
 Abstraction must emerge from concrete reuse.
 
@@ -1309,12 +1307,12 @@ Important business logic should be easy to test.
 
 Prefer:
 
-* pure functions;
-* isolated domain logic;
-* separated API access;
-* predictable hooks;
-* small components;
-* minimal hidden global dependencies.
+- pure functions;
+- isolated domain logic;
+- separated API access;
+- predictable hooks;
+- small components;
+- minimal hidden global dependencies.
 
 Do not bury business rules inside JSX.
 
@@ -1326,14 +1324,14 @@ Architectural refactors must preserve application behavior.
 
 After relevant structural changes:
 
-* validate imports;
-* remove dead imports;
-* verify routes;
-* verify aliases;
-* run TypeScript checks;
-* run lint when available;
-* run tests when available;
-* run production build.
+- validate imports;
+- remove dead imports;
+- verify routes;
+- verify aliases;
+- run TypeScript checks;
+- run lint when available;
+- run tests when available;
+- run production build.
 
 Do not claim validation was successful unless it was actually executed.
 
@@ -1409,11 +1407,11 @@ Then place it as close as possible to that owner.
 Preferred hierarchy:
 
 Section ownership
-       ↓
+↓
 Page ownership
-       ↓
+↓
 Domain ownership
-       ↓
+↓
 Global ownership
 
 The architecture should expand outward only as reuse becomes real.
@@ -1424,26 +1422,26 @@ The architecture should expand outward only as reuse becomes real.
 
 Before completing a task, verify:
 
-* Every file has a clear responsibility.
-* Each substantial page has a clear view.tsx.
-* Major page blocks are inside pages/(Page)/sections/.
-* Page-exclusive sections are not inside global src/components/.
-* Smaller page-shared components are separated from sections appropriately.
-* Section-specific internals remain colocated.
-* There are no unnecessary cross-page imports.
-* Shared components are genuinely shared.
-* There is no unnecessary prop drilling.
-* State has one clear owner.
-* Server state uses TanStack Query when appropriate.
-* HTTP communication goes through services and API.
-* No UI component performs raw HTTP calls.
-* No unnecessary global abstractions were introduced.
-* No circular dependencies were created.
-* Types and constants are located close to their responsibility.
-* i18n architecture remains respected.
-* Sensitive tokens are not exposed.
-* Unrelated code was not refactored unnecessarily.
-* Build/lint/tests were executed when appropriate.
+- Every file has a clear responsibility.
+- Each substantial page has a clear view.tsx.
+- Major page blocks are inside pages/(Page)/sections/.
+- Page-exclusive sections are not inside global src/components/.
+- Smaller page-shared components are separated from sections appropriately.
+- Section-specific internals remain colocated.
+- There are no unnecessary cross-page imports.
+- Shared components are genuinely shared.
+- There is no unnecessary prop drilling.
+- State has one clear owner.
+- Server state uses TanStack Query when appropriate.
+- HTTP communication goes through services and API.
+- No UI component performs raw HTTP calls.
+- No unnecessary global abstractions were introduced.
+- No circular dependencies were created.
+- Types and constants are located close to their responsibility.
+- i18n architecture remains respected.
+- Sensitive tokens are not exposed.
+- Unrelated code was not refactored unnecessarily.
+- Build/lint/tests were executed when appropriate.
 
 ⸻
 
@@ -1474,12 +1472,12 @@ Page
 ├── view.tsx
 │
 ├── sections/
-│   ├── SectionA/
-│   ├── SectionB/
-│   └── SectionC/
+│ ├── SectionA/
+│ ├── SectionB/
+│ └── SectionC/
 │
 ├── components/
-│   └── page-shared small components
+│ └── page-shared small components
 │
 ├── hooks/
 ├── context/
