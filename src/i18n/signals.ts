@@ -2,6 +2,7 @@ import { useSyncExternalStore, useRef } from "react";
 import {
   allLangs,
   defaultLang,
+  detectInitialLanguage,
   getLanguageConfig,
   getLocale,
   getCurrency,
@@ -86,34 +87,8 @@ export function useSignal<T>(initialValue: T): Signal<T> {
 // CENTRALIZED i18n & APP SIGNALS (Sections 107, 110, 125)
 // -------------------------------------------------------------
 
-function getStoredLanguage(): string {
-  try {
-    const fromPath = window.location.pathname.split("/").filter(Boolean)[0];
-    if (
-      fromPath &&
-      allLangs.some((l) => l.value.toLowerCase() === fromPath.toLowerCase())
-    ) {
-      return fromPath;
-    }
-    const saved =
-      localStorage.getItem("i18nextLng") || localStorage.getItem("elleva_lang");
-    if (saved) {
-      const match = allLangs.find(
-        (l) =>
-          l.value.toLowerCase() === saved.toLowerCase() ||
-          l.valueWhithCurrrency.toLowerCase() === saved.toLowerCase() ||
-          l.value.toLowerCase() === saved.split("-")[0].toLowerCase(),
-      );
-      if (match) return match.value;
-    }
-  } catch (e) {
-    // Fallback
-  }
-  return defaultLang.value;
-}
-
 /** Single Source of Truth for current language */
-export const languageSignal = signal<string>(getStoredLanguage());
+export const languageSignal = signal<string>(detectInitialLanguage());
 
 /** Global Mobile Menu state signal */
 export const mobileMenuSignal = signal<boolean>(false);

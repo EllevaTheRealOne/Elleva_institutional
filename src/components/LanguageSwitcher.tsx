@@ -97,8 +97,6 @@ export const LanguageSwitcher = ({
       clearTimeout(timeoutRef.current);
       timeoutRef.current = null;
     }
-
-    setOpen(true);
   };
 
   const handleMouseLeave = () => {
@@ -110,13 +108,17 @@ export const LanguageSwitcher = ({
 
     timeoutRef.current = setTimeout(() => {
       setOpen(false);
-    }, 160);
+    }, 200);
   };
 
-  const handleSelect = async (lang: IAllLangs) => {
+  const handleSelect = (lang: IAllLangs) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
     setOpen(false);
     onCloseDrawer?.(false);
-    await changeLanguage(lang.value);
+    void changeLanguage(lang.value);
   };
 
   if (variant === "mobile") {

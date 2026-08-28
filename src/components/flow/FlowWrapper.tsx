@@ -55,6 +55,25 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
   const isResettingRef = useRef(false);
   const [isInteracting, setIsInteracting] = useState(false);
 
+  // Synchronize interactiveNodes when incoming nodes prop updates (e.g., language change)
+  useEffect(() => {
+    setInteractiveNodes((currentInteractiveNodes) => {
+      const currentPositionsMap = new Map(
+        currentInteractiveNodes.map((n) => [n.id, n.position]),
+      );
+
+      return nodes.map((node) => ({
+        ...node,
+        position: currentPositionsMap.get(node.id) || node.position,
+      }));
+    });
+
+    initialNodesRef.current = nodes.map((node) => ({
+      ...node,
+      position: { ...node.position },
+    }));
+  }, [nodes, setInteractiveNodes]);
+
   const performFit = useCallback(() => {
     const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
     const padding = isMobile ? 0.05 : fitPadding;
