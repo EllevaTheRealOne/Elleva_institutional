@@ -1,153 +1,15 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { FlowWrapper } from "@/components/flow/FlowWrapper";
-import {
-  CentralCoreNode,
-  PipelineStageNode,
-} from "@/components/flow/CustomNodes";
-import { Node, Edge, MarkerType } from "@xyflow/react";
+import { ModernFinancialInfrastructureFlow } from "./components/Flow";
 
 interface ModernFinancialInfrastructureProps {
   isDark?: boolean;
 }
 
-const nodeTypes = {
-  centralCore: CentralCoreNode,
-  pipelineStage: PipelineStageNode,
-};
-
 export const ModernFinancialInfrastructure: React.FC<
   ModernFinancialInfrastructureProps
 > = ({ isDark = false }) => {
   const { t } = useTranslation(["home", "common"]);
-  const edgeColor = isDark ? "#189890" : "#0C5F5A";
-
-  // 3-Tier Layered Stack in React Flow:
-  // Top: CLIENT INTELLIGENCE & GOVERNANCE
-  // Middle: ELLEVA AUTONOMOUS LAYER
-  // Bottom: INSTITUTIONAL INFRASTRUCTURE
-  const stackNodes: Node[] = [
-    // Layer 1 (Top)
-    {
-      id: "stack-top-1",
-      type: "pipelineStage",
-      position: { x: 180, y: 30 },
-      data: {
-        stageNumber: t("infrastructure.tier1Badge"),
-        label: t("infrastructure.tier1LeftTitle"),
-        description: t("infrastructure.tier1LeftDesc"),
-        isDark,
-      },
-    },
-    {
-      id: "stack-top-2",
-      type: "pipelineStage",
-      position: { x: 540, y: 30 },
-      data: {
-        stageNumber: t("infrastructure.tier1Badge"),
-        label: t("infrastructure.tier1RightTitle"),
-        description: t("infrastructure.tier1RightDesc"),
-        isDark,
-      },
-    },
-
-    // Layer 2 (Middle - Elleva Autonomous Layer)
-    {
-      id: "stack-middle",
-      type: "centralCore",
-      position: { x: 300, y: 170 },
-      data: {
-        title: "ELLEVA AUTONOMOUS LAYER",
-        subtitle: t("infrastructure.middleSubtitle"),
-        caption: t("infrastructure.middleCaption"),
-        isDark,
-        minWidth: "340px",
-      },
-    },
-
-    // Layer 3 (Bottom - Institutional Infrastructure)
-    {
-      id: "stack-bot-1",
-      type: "pipelineStage",
-      position: { x: 80, y: 340 },
-      data: {
-        stageNumber: t("infrastructure.tier3Badge"),
-        label: t("infrastructure.tier3CustodyTitle"),
-        description: t("infrastructure.tier3CustodyDesc"),
-        isDark,
-      },
-    },
-    {
-      id: "stack-bot-2",
-      type: "pipelineStage",
-      position: { x: 370, y: 340 },
-      data: {
-        stageNumber: t("infrastructure.tier3Badge"),
-        label: t("infrastructure.tier3BanksTitle"),
-        description: t("infrastructure.tier3BanksDesc"),
-        isDark,
-      },
-    },
-    {
-      id: "stack-bot-3",
-      type: "pipelineStage",
-      position: { x: 660, y: 340 },
-      data: {
-        stageNumber: t("infrastructure.tier3Badge"),
-        label: t("infrastructure.tier3BrokersTitle"),
-        description: t("infrastructure.tier3BrokersDesc"),
-        isDark,
-      },
-    },
-  ];
-
-  const stackEdges: Edge[] = [
-    {
-      id: "es-top1-mid",
-      source: "stack-top-1",
-      target: "stack-middle",
-      type: "default",
-      animated: true,
-      style: { stroke: edgeColor, strokeWidth: 1.8 },
-      markerEnd: { type: MarkerType.ArrowClosed, color: edgeColor },
-    },
-    {
-      id: "es-top2-mid",
-      source: "stack-top-2",
-      target: "stack-middle",
-      type: "default",
-      animated: true,
-      style: { stroke: edgeColor, strokeWidth: 1.8 },
-      markerEnd: { type: MarkerType.ArrowClosed, color: edgeColor },
-    },
-    {
-      id: "es-mid-bot1",
-      source: "stack-middle",
-      target: "stack-bot-1",
-      type: "default",
-      animated: true,
-      style: { stroke: edgeColor, strokeWidth: 1.8 },
-      markerEnd: { type: MarkerType.ArrowClosed, color: edgeColor },
-    },
-    {
-      id: "es-mid-bot2",
-      source: "stack-middle",
-      target: "stack-bot-2",
-      type: "default",
-      animated: true,
-      style: { stroke: edgeColor, strokeWidth: 1.8 },
-      markerEnd: { type: MarkerType.ArrowClosed, color: edgeColor },
-    },
-    {
-      id: "es-mid-bot3",
-      source: "stack-middle",
-      target: "stack-bot-3",
-      type: "default",
-      animated: true,
-      style: { stroke: edgeColor, strokeWidth: 1.8 },
-      markerEnd: { type: MarkerType.ArrowClosed, color: edgeColor },
-    },
-  ];
 
   return (
     <section
@@ -171,15 +33,7 @@ export const ModernFinancialInfrastructure: React.FC<
 
         {/* React Flow Layered Stack */}
         <div className="mb-10" id="institutional-connectivity">
-          <FlowWrapper
-            nodes={stackNodes}
-            edges={stackEdges}
-            nodeTypes={nodeTypes}
-            isDark={isDark}
-            heightClass="h-[480px] sm:h-[520px]"
-            badgeLabel={t("infrastructure.flowBadge")}
-            fitPadding={0.15}
-          />
+          <ModernFinancialInfrastructureFlow isDark={isDark} />
         </div>
 
         {/* 3 Tier Summary Cards */}

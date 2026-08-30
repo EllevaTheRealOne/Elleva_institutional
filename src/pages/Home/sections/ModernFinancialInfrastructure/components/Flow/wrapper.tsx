@@ -23,10 +23,8 @@ interface FlowCanvasInnerProps {
   isDark?: boolean;
   minZoom?: number;
   maxZoom?: number;
-  heightClass?: string;
   badgeLabel?: string;
   fitPadding?: number;
-  DecorativeOrbits?: boolean;
 }
 
 const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
@@ -38,8 +36,7 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
   minZoom = 0.2,
   maxZoom = 1.25,
   badgeLabel,
-  fitPadding = 0.08,
-  DecorativeOrbits = false,
+  fitPadding = 0.15,
 }) => {
   const { t } = useTranslation("common");
   const { fitView, setViewport, getViewport } = useReactFlow();
@@ -55,7 +52,6 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
   const isResettingRef = useRef(false);
   const [isInteracting, setIsInteracting] = useState(false);
 
-  // Synchronize interactiveNodes when incoming nodes prop updates (e.g., language change)
   useEffect(() => {
     setInteractiveNodes((currentInteractiveNodes) => {
       const currentPositionsMap = new Map(
@@ -74,16 +70,22 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
     }));
   }, [nodes, setInteractiveNodes]);
 
-  const performFit = useCallback(() => {
-    const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
-    const padding = isMobile ? 0.05 : fitPadding;
-    fitView({ duration: 300, padding, minZoom: isMobile ? 0.2 : minZoom });
-    requestAnimationFrame(() => {
-      initialViewportRef.current = getViewport();
-    });
-  }, [fitView, getViewport, fitPadding, minZoom]);
+  const performFit = useCallback(
+    (options?: { duration?: number }) => {
+      const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+      const padding = isMobile ? 0.05 : fitPadding;
+      fitView({
+        duration: options?.duration ?? 0,
+        padding,
+        minZoom: isMobile ? 0.2 : minZoom,
+      });
+      requestAnimationFrame(() => {
+        initialViewportRef.current = getViewport();
+      });
+    },
+    [fitView, getViewport, fitPadding, minZoom],
+  );
 
-  // Fit after the actual container size is available, including responsive layout changes.
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -91,7 +93,7 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
     let frame: number | null = null;
     const scheduleFit = () => {
       if (frame !== null) cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(performFit);
+      frame = requestAnimationFrame(() => performFit({ duration: 0 }));
     };
 
     const observer = new ResizeObserver(scheduleFit);
@@ -104,7 +106,6 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
     };
   }, [performFit]);
 
-  // Debounced auto-restore viewport logic (~1500ms debounce after user interaction)
   const scheduleViewportReset = useCallback(() => {
     if (resetTimerRef.current) {
       clearTimeout(resetTimerRef.current);
@@ -126,7 +127,6 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
     }, 1500);
   }, [setViewport, performFit]);
 
-  // Clean up timer on unmount
   useEffect(() => {
     return () => {
       if (resetTimerRef.current) {
@@ -210,7 +210,6 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
 
   return (
     <div ref={containerRef} className="relative w-full h-full touch-pan-y">
-      {/* Interactive Status Badge Indicator */}
       {badgeLabel && (
         <div className="absolute top-3 left-3 z-10 pointer-events-none max-w-[80%] sm:max-w-none">
           <div
@@ -221,7 +220,7 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
             }`}
           >
             <span
-              className={` ${
+              className={`${
                 isInteracting
                   ? "w-1.5 h-1.5 rounded-full flex-shrink-0 bg-[#189890] animate-ping"
                   : "w-0 h-0 hidden bg-transparent"
@@ -234,19 +233,18 @@ const FlowCanvasInner: React.FC<FlowCanvasInnerProps> = ({
         </div>
       )}
 
-      {/* Manual Center Control */}
       <button
         type="button"
         onClick={handleManualReset}
         title={t("flow.recenterTitle")}
-        className={`absolute bottom-3 right-3 z-10 p-2 sm:px-2.5 sm:py-1 rounded-sm border text-[11px] font-ui font-medium flex items-center gap-1.5 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#189890] ${
+        aria-label={t("flow.recenterTitle")}
+        className={`absolute bottom-3 right-3 z-10 p-2 rounded-sm border transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#189890] ${
           isDark
-            ? "bg-[#0E1214] border-[rgba(245,247,246,0.1)] text-[#8E9995] hover:text-white"
-            : "bg-white border-[rgba(10,13,12,0.08)] text-[#4E5653] hover:text-black shadow-xs"
+            ? "bg-[#0E1214] border-[rgba(245,247,246,0.1)] text-[#8E9995] hover:text-white hover:border-[#189890]"
+            : "bg-white border-[rgba(10,13,12,0.08)] text-[#4E5653] hover:text-black hover:border-[#189890] shadow-xs"
         }`}
       >
         <RotateCcw className="w-3.5 h-3.5" />
-        <span className="hidden sm:inline">{t("flow.recenter")}</span>
       </button>
 
       <ReactFlow
@@ -295,7 +293,6 @@ export interface FlowWrapperProps {
   heightClass?: string;
   badgeLabel?: string;
   fitPadding?: number;
-  DecorativeOrbits?: boolean;
 }
 
 export const FlowWrapper: React.FC<FlowWrapperProps> = ({
@@ -306,10 +303,9 @@ export const FlowWrapper: React.FC<FlowWrapperProps> = ({
   isDark = false,
   minZoom = 0.2,
   maxZoom = 1.25,
-  heightClass = "h-[380px] sm:h-[420px]",
+  heightClass = "h-[480px] sm:h-[520px]",
   badgeLabel,
-  fitPadding = 0.08,
-  DecorativeOrbits = false,
+  fitPadding = 0.15,
 }) => {
   return (
     <div
@@ -330,7 +326,6 @@ export const FlowWrapper: React.FC<FlowWrapperProps> = ({
           maxZoom={maxZoom}
           badgeLabel={badgeLabel}
           fitPadding={fitPadding}
-          DecorativeOrbits={DecorativeOrbits}
         />
       </ReactFlowProvider>
     </div>
