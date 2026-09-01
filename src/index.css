@@ -492,3 +492,42 @@
     animation: none;
   }
 }
+
+/* The backdrop sits behind a section that paints its own ground.
+   The wrapper owns the dark ground itself rather than clearing the section's:
+   making the section fully transparent left its text colour deciding
+   legibility on its own, and a heading came out near-black on near-black. The
+   section keeps a translucent version of its ground, so the drawn scene reads
+   through it and the copy always sits on something dark. */
+.el-backdrop {
+  background-color: #050607;
+}
+.el-backdrop > canvas {
+  z-index: 0;
+}
+.el-backdrop > section {
+  position: relative;
+  z-index: 1;
+  color: #f5f7f6;
+}
+
+/* A still scene is a photograph and can take a heavier veil: the copy has to
+   sit on something quiet. A live one is carrying the movement, so the veil is
+   light enough to see through — at the weight the stills use, the motion
+   disappeared entirely. */
+.el-backdrop--still > section {
+  background-color: rgba(5, 6, 7, 0.62) !important;
+}
+.el-backdrop--live > section {
+  background-color: rgba(4, 10, 12, 0.34) !important;
+}
+
+/* The hero figures: the same display face as the headline, sized to read as a
+   headline in their own right rather than as caption numbers. */
+.type-hero-metric {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 1.2vw + 1.4rem, 2.9rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
