@@ -424,19 +424,29 @@
     },
     "title": "Infraestructura Autónoma de IA para Operaciones de Inversión",
     "description": "Elleva es la capa de inteligencia y orquestación que conecta datos de mercado, investigación, política de inversión, custodia cualificada y ejecución multi-corredor en un bucle operativo continuo, auditado y determinista.",
-    "stats": {
-      "operationalLeverage": "14,2x",
-      "operationalLeverageSub": "Delta de Apalancamiento Operativo",
-      "globalConnectivity": "48+",
-      "globalConnectivitySub": "Entornos Institucionales Conectados"
-    },
+    "stats": [
+      {
+        "value": "14,2x",
+        "label": "Delta de Apalancamiento"
+      },
+      {
+        "value": "48+",
+        "label": "Entornos Conectados"
+      },
+      {
+        "value": "24/7",
+        "label": "Gobernanza Continua"
+      }
+    ],
     "getStarted": "Solicitar Acceso",
     "architecture": "Ver Arquitectura",
     "topologyBadge": "ARQUITECTURA AUTÓNOMA",
     "loopTitle": "Bucle Operativo Continuo",
     "operationalAdvantage": "Apalancamiento Operativo",
     "efficiencyDelta": "Delta de Eficiencia +14,2x",
-    "continuousFiduciary": "Gobernanza Fiduciaria Continua"
+    "continuousFiduciary": "Gobernanza Fiduciaria Continua",
+    "eyebrow": "Arquitectura Autónoma",
+    "accent": "Autónoma de IA"
   },
   "operatingLoop": {
     "steps": {

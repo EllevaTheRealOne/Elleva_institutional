@@ -195,10 +195,18 @@
   },
   "ecosystem": {
     "categories": {
-      "custodians": { "title": "은행 및 커스터디언" },
-      "brokers": { "title": "브로커 및 유동성 거래소" },
-      "marketData": { "title": "시장 데이터 및 피드" },
-      "compliance": { "title": "규제 및 감사 기관" }
+      "custodians": {
+        "title": "은행 및 커스터디언"
+      },
+      "brokers": {
+        "title": "브로커 및 유동성 거래소"
+      },
+      "marketData": {
+        "title": "시장 데이터 및 피드"
+      },
+      "compliance": {
+        "title": "규제 및 감사 기관"
+      }
     },
     "complianceItems": {
       "soc2": "SOC 2 Type II 인증 아키텍처",
@@ -223,12 +231,30 @@
         "subtitle": "연속 커널",
         "caption": "자율 수탁자 운영"
       },
-      "stage1": { "label": "1. 리서치", "desc": "시장 인텔리전스" },
-      "stage2": { "label": "2. 의사 결정", "desc": "위임 최적화" },
-      "stage3": { "label": "3. 위험 점검", "desc": "확정적 경계" },
-      "stage4": { "label": "4. 실행", "desc": "스마트 오더 라우팅" },
-      "stage5": { "label": "5. 결제", "desc": "직접 커스터디" },
-      "stage6": { "label": "6. 모니터링", "desc": "불변 감사 로그" }
+      "stage1": {
+        "label": "1. 리서치",
+        "desc": "시장 인텔리전스"
+      },
+      "stage2": {
+        "label": "2. 의사 결정",
+        "desc": "위임 최적화"
+      },
+      "stage3": {
+        "label": "3. 위험 점검",
+        "desc": "확정적 경계"
+      },
+      "stage4": {
+        "label": "4. 실행",
+        "desc": "스마트 오더 라우팅"
+      },
+      "stage5": {
+        "label": "5. 결제",
+        "desc": "직접 커스터디"
+      },
+      "stage6": {
+        "label": "6. 모니터링",
+        "desc": "불변 감사 로그"
+      }
     },
     "steps": {
       "s1": "다중 소스 자율 인텔리전스 엔진이 24/7 비정형 글로벌 금융 데이터를 수집, 정제 및 구조화합니다.",
@@ -398,26 +424,48 @@
     },
     "title": "투자 운영을 위한 자율 AI 인프라",
     "description": "Elleva는 시장 데이터, 리서치, 투자 정책, 적격 커스터디 및 멀티 브로커 실행을 연결하는 인텔리전스 및 오케스트레이션 레이어로, 지속적이고 감사 가능한 확정적 운영 루프를 구현합니다.",
-    "stats": {
-      "operationalLeverage": "14.2배",
-      "operationalLeverageSub": "운영 레버리지 델타",
-      "globalConnectivity": "48+",
-      "globalConnectivitySub": "연결된 기관 거래소"
-    },
+    "stats": [
+      {
+        "value": "14.2x",
+        "label": "운영 레버리지 델타"
+      },
+      {
+        "value": "48+",
+        "label": "연결된 환경"
+      },
+      {
+        "value": "24/7",
+        "label": "지속적 거버넌스"
+      }
+    ],
     "getStarted": "액세스 요청",
     "architecture": "아키텍처 보기",
     "topologyBadge": "자율 아키텍처",
     "loopTitle": "지속적 운영 루프",
     "operationalAdvantage": "운영 레버리지",
     "efficiencyDelta": "+14.2배 효율 델타",
-    "continuousFiduciary": "지속적 수탁자 거버넌스"
+    "continuousFiduciary": "지속적 수탁자 거버넌스",
+    "eyebrow": "자율 아키텍처",
+    "accent": "자율 AI"
   },
   "operatingLoop": {
     "steps": {
-      "research": { "name": "리서치", "role": "자율 리서치 에이전트" },
-      "decide": { "name": "의사 결정", "role": "확정적 위임 커널" },
-      "execute": { "name": "실행", "role": "스마트 오더 라우터 (FIX/DMA)" },
-      "monitor": { "name": "모니터링", "role": "지속적 감사 및 텔레메트리" }
+      "research": {
+        "name": "리서치",
+        "role": "자율 리서치 에이전트"
+      },
+      "decide": {
+        "name": "의사 결정",
+        "role": "확정적 위임 커널"
+      },
+      "execute": {
+        "name": "실행",
+        "role": "스마트 오더 라우터 (FIX/DMA)"
+      },
+      "monitor": {
+        "name": "모니터링",
+        "role": "지속적 감사 및 텔레메트리"
+      }
     }
   },
   "investmentExperience": {
@@ -561,7 +609,10 @@
         "seriesActual": "실제 배분 (%)",
         "seriesTarget": "위임 목표 (%)"
       },
-      "geography": { "eyebrow": "글로벌 다각화", "heading": "지역별 익스포저" },
+      "geography": {
+        "eyebrow": "글로벌 다각화",
+        "heading": "지역별 익스포저"
+      },
       "footnote": "UCITS 및 수탁자 책임 국채 배분 가이드라인 100% 준수.",
       "assetClasses": {
         "sovereignFixedIncome": "국채 및 채권",
@@ -698,7 +749,10 @@
         "badge": "일중 모니터링",
         "seriesLiquidity": "누적 가용 자금 (US$ M)"
       },
-      "buffers": { "eyebrow": "안전 버퍼", "heading": "주요 유동성 상품" },
+      "buffers": {
+        "eyebrow": "안전 버퍼",
+        "heading": "주요 유동성 상품"
+      },
       "horizons": {
         "t0": "T+0 일중",
         "t1": "T+1 익일",
@@ -1230,10 +1284,18 @@
   },
   "operational": {
     "metrics": {
-      "monitoredAssets": { "name": "모니터링 자산" },
-      "responseSpeed": { "name": "응답 속도" },
-      "costPerAnalysis": { "name": "분석당 비용" },
-      "analystCapacity": { "name": "애널리스트당 역량" }
+      "monitoredAssets": {
+        "name": "모니터링 자산"
+      },
+      "responseSpeed": {
+        "name": "응답 속도"
+      },
+      "costPerAnalysis": {
+        "name": "분석당 비용"
+      },
+      "analystCapacity": {
+        "name": "애널리스트당 역량"
+      }
     },
     "title": "측정 가능한 운영 우위",
     "description": "자율 인프라와 전통적 선형 자산 운용 운영의 운영 성과를 비교합니다.",

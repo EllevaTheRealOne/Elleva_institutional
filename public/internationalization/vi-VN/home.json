@@ -195,10 +195,18 @@
   },
   "ecosystem": {
     "categories": {
-      "custodians": { "title": "Ngân hàng và Tổ chức Lưu ký" },
-      "brokers": { "title": "Môi giới và Sàn Thanh khoản" },
-      "marketData": { "title": "Dữ liệu Thị trường và Nguồn cấp dữ liệu" },
-      "compliance": { "title": "Cơ quan Quản lý và Kiểm toán" }
+      "custodians": {
+        "title": "Ngân hàng và Tổ chức Lưu ký"
+      },
+      "brokers": {
+        "title": "Môi giới và Sàn Thanh khoản"
+      },
+      "marketData": {
+        "title": "Dữ liệu Thị trường và Nguồn cấp dữ liệu"
+      },
+      "compliance": {
+        "title": "Cơ quan Quản lý và Kiểm toán"
+      }
     },
     "complianceItems": {
       "soc2": "Kiến trúc Chứng nhận SOC 2 Loại II",
@@ -223,15 +231,30 @@
         "subtitle": "NHÂN LIÊN TỤC",
         "caption": "Hoạt động ủy thác tự động"
       },
-      "stage1": { "label": "1. Nghiên cứu", "desc": "Thông minh thị trường" },
-      "stage2": { "label": "2. Quyết định", "desc": "Tối ưu hóa ủy thác" },
-      "stage3": { "label": "3. Kiểm tra Rủi ro", "desc": "Ranh giới xác định" },
+      "stage1": {
+        "label": "1. Nghiên cứu",
+        "desc": "Thông minh thị trường"
+      },
+      "stage2": {
+        "label": "2. Quyết định",
+        "desc": "Tối ưu hóa ủy thác"
+      },
+      "stage3": {
+        "label": "3. Kiểm tra Rủi ro",
+        "desc": "Ranh giới xác định"
+      },
       "stage4": {
         "label": "4. Thực thi",
         "desc": "Định tuyến lệnh thông minh"
       },
-      "stage5": { "label": "5. Thanh toán", "desc": "Lưu ký trực tiếp" },
-      "stage6": { "label": "6. Giám sát", "desc": "Nhật ký kiểm toán bất biến" }
+      "stage5": {
+        "label": "5. Thanh toán",
+        "desc": "Lưu ký trực tiếp"
+      },
+      "stage6": {
+        "label": "6. Giám sát",
+        "desc": "Nhật ký kiểm toán bất biến"
+      }
     },
     "steps": {
       "s1": "Công cụ thông minh đa nguồn tự động thu thập, làm sạch và cấu trúc dữ liệu tài chính toàn cầu phi cấu trúc 24/7.",
@@ -401,19 +424,29 @@
     },
     "title": "Cơ sở hạ tầng AI Tự động cho Hoạt động Đầu tư",
     "description": "Elleva là lớp thông minh và điều phối kết nối dữ liệu thị trường, nghiên cứu, chính sách đầu tư, lưu ký đủ điều kiện và thực thi đa môi giới thành một vòng lặp vận hành liên tục, có thể kiểm toán và xác định.",
-    "stats": {
-      "operationalLeverage": "14,2x",
-      "operationalLeverageSub": "Chênh lệch Đòn bẩy Vận hành",
-      "globalConnectivity": "48+",
-      "globalConnectivitySub": "Sàn Giao dịch Tổ chức Đã Kết nối"
-    },
+    "stats": [
+      {
+        "value": "14,2x",
+        "label": "Chênh lệch đòn bẩy vận hành"
+      },
+      {
+        "value": "48+",
+        "label": "Môi trường kết nối"
+      },
+      {
+        "value": "24/7",
+        "label": "Quản trị liên tục"
+      }
+    ],
     "getStarted": "Yêu cầu Truy cập",
     "architecture": "Xem Kiến trúc",
     "topologyBadge": "KIẾN TRÚC TỰ ĐỘNG",
     "loopTitle": "Vòng lặp Vận hành Liên tục",
     "operationalAdvantage": "Đòn bẩy Vận hành",
     "efficiencyDelta": "Chênh lệch Hiệu quả +14,2x",
-    "continuousFiduciary": "Quản trị Ủy thác Liên tục"
+    "continuousFiduciary": "Quản trị Ủy thác Liên tục",
+    "eyebrow": "Kiến trúc Tự vận hành",
+    "accent": "AI Tự động"
   },
   "operatingLoop": {
     "steps": {
@@ -421,7 +454,10 @@
         "name": "NGHIÊN CỨU",
         "role": "Tác nhân Nghiên cứu Tự động"
       },
-      "decide": { "name": "QUYẾT ĐỊNH", "role": "Nhân Ủy thác Xác định" },
+      "decide": {
+        "name": "QUYẾT ĐỊNH",
+        "role": "Nhân Ủy thác Xác định"
+      },
       "execute": {
         "name": "THỰC THI",
         "role": "Bộ định tuyến Lệnh Thông minh (FIX/DMA)"
@@ -1248,10 +1284,18 @@
   },
   "operational": {
     "metrics": {
-      "monitoredAssets": { "name": "Tài sản được Giám sát" },
-      "responseSpeed": { "name": "Tốc độ Phản hồi" },
-      "costPerAnalysis": { "name": "Chi phí cho mỗi Phân tích" },
-      "analystCapacity": { "name": "Năng lực cho mỗi Nhà phân tích" }
+      "monitoredAssets": {
+        "name": "Tài sản được Giám sát"
+      },
+      "responseSpeed": {
+        "name": "Tốc độ Phản hồi"
+      },
+      "costPerAnalysis": {
+        "name": "Chi phí cho mỗi Phân tích"
+      },
+      "analystCapacity": {
+        "name": "Năng lực cho mỗi Nhà phân tích"
+      }
     },
     "title": "Lợi thế Vận hành Có thể Đo lường",
     "description": "So sánh hiệu suất vận hành của cơ sở hạ tầng tự động so với hoạt động quản lý tài sản tuyến tính truyền thống.",
