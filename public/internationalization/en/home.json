@@ -424,19 +424,29 @@
     },
     "title": "Autonomous AI Infrastructure for Investment Operations",
     "description": "Elleva is the intelligence and orchestration layer that connects market data, research, investment policy, qualified custody, and multi-broker execution into a continuous, audited, deterministic operational loop.",
-    "stats": {
-      "operationalLeverage": "14.2x",
-      "operationalLeverageSub": "Operational Leverage Delta",
-      "globalConnectivity": "48+",
-      "globalConnectivitySub": "Institutional Venues Connected"
-    },
+    "stats": [
+      {
+        "value": "14.2x",
+        "label": "Operating Leverage Delta"
+      },
+      {
+        "value": "48+",
+        "label": "Connected Environments"
+      },
+      {
+        "value": "24/7",
+        "label": "Continuous Governance"
+      }
+    ],
     "getStarted": "Request Access",
     "architecture": "View Architecture",
     "topologyBadge": "AUTONOMOUS ARCHITECTURE",
     "loopTitle": "Continuous Operating Loop",
     "operationalAdvantage": "Operational Leverage",
     "efficiencyDelta": "+14.2x Efficiency Delta",
-    "continuousFiduciary": "Continuous Fiduciary Governance"
+    "continuousFiduciary": "Continuous Fiduciary Governance",
+    "eyebrow": "Autonomous Architecture",
+    "accent": "Autonomous AI"
   },
   "operatingLoop": {
     "steps": {

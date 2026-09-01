@@ -424,19 +424,29 @@
     },
     "title": "Infraestrutura Autônoma de IA para Operações de Investimento",
     "description": "A Elleva é a camada de inteligência e orquestração que conecta dados de mercado, pesquisa, política de investimento, custódia qualificada e execução multi-corretora em um loop operacional contínuo, auditado e determinístico.",
-    "stats": {
-      "operationalLeverage": "14,2x",
-      "operationalLeverageSub": "Delta de Alavancagem Operacional",
-      "globalConnectivity": "48+",
-      "globalConnectivitySub": "Ambientes Institucionais Conectados"
-    },
+    "stats": [
+      {
+        "value": "14,2x",
+        "label": "Delta de Alavancagem"
+      },
+      {
+        "value": "48+",
+        "label": "Ambientes Conectados"
+      },
+      {
+        "value": "24/7",
+        "label": "Governança Contínua"
+      }
+    ],
     "getStarted": "Solicitar Acesso",
     "architecture": "Ver Arquitetura",
     "topologyBadge": "ARQUITETURA AUTÔNOMA",
     "loopTitle": "Loop Operacional Contínuo",
     "operationalAdvantage": "Alavancagem Operacional",
     "efficiencyDelta": "Delta de Eficiência +14,2x",
-    "continuousFiduciary": "Governança Fiduciária Contínua"
+    "continuousFiduciary": "Governança Fiduciária Contínua",
+    "eyebrow": "Arquitetura Autônoma",
+    "accent": "Autônoma de IA"
   },
   "operatingLoop": {
     "steps": {

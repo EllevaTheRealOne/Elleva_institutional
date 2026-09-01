@@ -81,9 +81,7 @@ export const MarketOpportunity: React.FC<MarketOpportunityProps> = ({
                 {t('marketOpportunity.cards.globalProjection2030.label')}
               </span>
             </div>
-            <div className="type-metric text-[#189890]">
-              US$ 200 T
-            </div>
+            <div className="type-metric text-[#189890]">US$ 200 T</div>
             <div className="type-body-sm mt-1 text-[#189890]">
               {t('marketOpportunity.cards.globalProjection2030.desc')}
             </div>

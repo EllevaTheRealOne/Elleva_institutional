@@ -424,19 +424,29 @@
     },
     "title": "投資運用のための自律型AIインフラストラクチャ",
     "description": "Elleva は、市場データ、リサーチ、投資方針、適格カストディ、マルチブローカー執行を接続するインテリジェンスおよびオーケストレーションレイヤーであり、継続的で監査可能な確定的運用ループを実現します。",
-    "stats": {
-      "operationalLeverage": "14.2倍",
-      "operationalLeverageSub": "オペレーティングレバレッジデルタ",
-      "globalConnectivity": "48+",
-      "globalConnectivitySub": "接続された機関取引所"
-    },
+    "stats": [
+      {
+        "value": "14.2x",
+        "label": "オペレーティングレバレッジ"
+      },
+      {
+        "value": "48+",
+        "label": "接続環境"
+      },
+      {
+        "value": "24/7",
+        "label": "継続的ガバナンス"
+      }
+    ],
     "getStarted": "アクセスをリクエスト",
     "architecture": "アーキテクチャを見る",
     "topologyBadge": "自律型アーキテクチャ",
     "loopTitle": "継続的運用ループ",
     "operationalAdvantage": "オペレーティングレバレッジ",
     "efficiencyDelta": "+14.2倍 効率デルタ",
-    "continuousFiduciary": "継続的受託者ガバナンス"
+    "continuousFiduciary": "継続的受託者ガバナンス",
+    "eyebrow": "自律型アーキテクチャ",
+    "accent": "自律型AI"
   },
   "operatingLoop": {
     "steps": {

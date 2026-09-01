@@ -195,10 +195,18 @@
   },
   "ecosystem": {
     "categories": {
-      "custodians": { "title": "银行与托管机构" },
-      "brokers": { "title": "经纪商与流动性场所" },
-      "marketData": { "title": "市场数据与数据源" },
-      "compliance": { "title": "监管与审计机构" }
+      "custodians": {
+        "title": "银行与托管机构"
+      },
+      "brokers": {
+        "title": "经纪商与流动性场所"
+      },
+      "marketData": {
+        "title": "市场数据与数据源"
+      },
+      "compliance": {
+        "title": "监管与审计机构"
+      }
     },
     "complianceItems": {
       "soc2": "SOC 2 Type II 认证架构",
@@ -223,12 +231,30 @@
         "subtitle": "持续内核",
         "caption": "自主信托运营"
       },
-      "stage1": { "label": "1. 研究", "desc": "市场智能" },
-      "stage2": { "label": "2. 决策", "desc": "委托优化" },
-      "stage3": { "label": "3. 风险检查", "desc": "确定性边界" },
-      "stage4": { "label": "4. 执行", "desc": "智能订单路由" },
-      "stage5": { "label": "5. 结算", "desc": "直接托管" },
-      "stage6": { "label": "6. 监控", "desc": "不可变审计日志" }
+      "stage1": {
+        "label": "1. 研究",
+        "desc": "市场智能"
+      },
+      "stage2": {
+        "label": "2. 决策",
+        "desc": "委托优化"
+      },
+      "stage3": {
+        "label": "3. 风险检查",
+        "desc": "确定性边界"
+      },
+      "stage4": {
+        "label": "4. 执行",
+        "desc": "智能订单路由"
+      },
+      "stage5": {
+        "label": "5. 结算",
+        "desc": "直接托管"
+      },
+      "stage6": {
+        "label": "6. 监控",
+        "desc": "不可变审计日志"
+      }
     },
     "steps": {
       "s1": "自主多源智能引擎全天候收集、清洗和结构化非结构化全球金融数据。",
@@ -398,26 +424,48 @@
     },
     "title": "面向投资运营的自主 AI 基础设施",
     "description": "Elleva 是智能与编排层，连接市场数据、研究、投资政策、合格托管和多经纪商执行，形成一个持续、可审计、确定性的运营闭环。",
-    "stats": {
-      "operationalLeverage": "14.2倍",
-      "operationalLeverageSub": "运营杠杆增量",
-      "globalConnectivity": "48+",
-      "globalConnectivitySub": "已连接机构交易场所"
-    },
+    "stats": [
+      {
+        "value": "14.2x",
+        "label": "运营杠杆增益"
+      },
+      {
+        "value": "48+",
+        "label": "已连接环境"
+      },
+      {
+        "value": "24/7",
+        "label": "持续治理"
+      }
+    ],
     "getStarted": "申请访问",
     "architecture": "查看架构",
     "topologyBadge": "自主架构",
     "loopTitle": "持续运营闭环",
     "operationalAdvantage": "运营杠杆",
     "efficiencyDelta": "+14.2倍效率增量",
-    "continuousFiduciary": "持续信托治理"
+    "continuousFiduciary": "持续信托治理",
+    "eyebrow": "自主架构",
+    "accent": "自主 AI"
   },
   "operatingLoop": {
     "steps": {
-      "research": { "name": "研究", "role": "自主研究代理" },
-      "decide": { "name": "决策", "role": "确定性委托内核" },
-      "execute": { "name": "执行", "role": "智能订单路由器（FIX/DMA）" },
-      "monitor": { "name": "监控", "role": "持续审计与遥测" }
+      "research": {
+        "name": "研究",
+        "role": "自主研究代理"
+      },
+      "decide": {
+        "name": "决策",
+        "role": "确定性委托内核"
+      },
+      "execute": {
+        "name": "执行",
+        "role": "智能订单路由器（FIX/DMA）"
+      },
+      "monitor": {
+        "name": "监控",
+        "role": "持续审计与遥测"
+      }
     }
   },
   "investmentExperience": {
@@ -449,7 +497,10 @@
         "label": "监控受托资产规模 (AUM)",
         "status": "名义 / 隔离托管"
       },
-      "adherence": { "label": "委托政策遵循度", "deviation": "0.00% 偏离偏差" },
+      "adherence": {
+        "label": "委托政策遵循度",
+        "deviation": "0.00% 偏离偏差"
+      },
       "var": {
         "label": "参数化 99% 10日 VaR",
         "policyLimit": "限额: 4.50% (合规)"
@@ -558,7 +609,10 @@
         "seriesActual": "实际配置 (%)",
         "seriesTarget": "委托目标 (%)"
       },
-      "geography": { "eyebrow": "全球多元化", "heading": "地域敞口" },
+      "geography": {
+        "eyebrow": "全球多元化",
+        "heading": "地域敞口"
+      },
       "footnote": "100% 符合 UCITS / 信托主权配置准则。",
       "assetClasses": {
         "sovereignFixedIncome": "主权固定收益",
@@ -695,7 +749,10 @@
         "badge": "日内监控",
         "seriesLiquidity": "累计可用资金 (US$ M)"
       },
-      "buffers": { "eyebrow": "安全缓冲", "heading": "主要流动性工具" },
+      "buffers": {
+        "eyebrow": "安全缓冲",
+        "heading": "主要流动性工具"
+      },
       "horizons": {
         "t0": "T+0 日内",
         "t1": "T+1 次日",
@@ -747,7 +804,10 @@
         "badge": "确定性引擎",
         "confLabel": "置信度:"
       },
-      "theses": { "eyebrow": "自主综合", "heading": "主动投资论文与假设" },
+      "theses": {
+        "eyebrow": "自主综合",
+        "heading": "主动投资论文与假设"
+      },
       "signals": {
         "growthImpulse": "宏观增长脉冲",
         "expansion": "温和扩张",
@@ -1224,10 +1284,18 @@
   },
   "operational": {
     "metrics": {
-      "monitoredAssets": { "name": "监控资产" },
-      "responseSpeed": { "name": "响应速度" },
-      "costPerAnalysis": { "name": "单次分析成本" },
-      "analystCapacity": { "name": "每位分析师产能" }
+      "monitoredAssets": {
+        "name": "监控资产"
+      },
+      "responseSpeed": {
+        "name": "响应速度"
+      },
+      "costPerAnalysis": {
+        "name": "单次分析成本"
+      },
+      "analystCapacity": {
+        "name": "每位分析师产能"
+      }
     },
     "title": "可量化的运营优势",
     "description": "比较自主基础设施与传统线性资产管理运营的运营绩效。",
