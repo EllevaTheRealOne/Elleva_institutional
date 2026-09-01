@@ -352,10 +352,17 @@
 /* Metrics */
 .type-metric {
   font-family: var(--font-ui);
-  font-size: clamp(1.5rem, 2.5vw + 0.75rem, 3rem);
+  /* Capped at 2.5rem: at 3rem a nine-character figure no longer fits a card in
+     the four-column row, and "US$ 200 T" wrapped while "US$ 147 T" did not —
+     a proportional 1 is far narrower than a 2, so the row broke on its
+     content rather than on its layout. */
+  font-size: clamp(1.5rem, 2.2vw + 0.7rem, 2.5rem);
   line-height: 1.1;
   letter-spacing: -0.02em;
   font-weight: 700;
+  /* Figures meant to be compared line up and keep one width per digit. */
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 /* Metadata */
