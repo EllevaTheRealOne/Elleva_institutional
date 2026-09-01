@@ -6,4 +6,6 @@ export const THEMES = {
   SYSTEM: "system",
 } as const;
 
-export const DEFAULT_THEME = THEMES.LIGHT;
+// The page is dark end to end, so the chrome that reads from the theme
+// tokens — navbar, footer, borders — has to start dark as well.
+export const DEFAULT_THEME = THEMES.DARK;
