@@ -94,6 +94,24 @@
         "operationalAdvantage": "運用優位性",
         "faq": "よくある質問"
       }
+    },
+    "businessPlan": {
+      "label": "事業計画",
+      "items": {
+        "overview": "Elleva とは",
+        "problem": "課題",
+        "market": "市場の進展",
+        "howItWorks": "仕組み",
+        "brokers": "ブローカー",
+        "backOffice": "クライアントバックオフィス",
+        "purpose": "私たちの目的",
+        "partners": "Elleva Partners",
+        "connectedClient": "Connected Client",
+        "framework": "パートナーフレームワーク",
+        "diversification": "分散",
+        "contractAcceleration": "Contract Acceleration",
+        "nextSteps": "次のステップ"
+      }
     }
   },
   "menuToggle": "ナビゲーションメニューを切り替え"

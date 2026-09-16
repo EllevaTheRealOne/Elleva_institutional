@@ -94,6 +94,24 @@
         "operationalAdvantage": "Ventaja Operativa",
         "faq": "Preguntas Frecuentes"
       }
+    },
+    "businessPlan": {
+      "label": "Plan de Negocios",
+      "items": {
+        "overview": "Qué es Elleva",
+        "problem": "El Problema",
+        "market": "Progresión del Mercado",
+        "howItWorks": "Cómo Funciona",
+        "brokers": "Corredores",
+        "backOffice": "Back Office del Cliente",
+        "purpose": "Nuestro Propósito",
+        "partners": "Elleva Partners",
+        "connectedClient": "Connected Client",
+        "framework": "Framework de Partners",
+        "diversification": "Diversificación",
+        "contractAcceleration": "Contract Acceleration",
+        "nextSteps": "Próximos Pasos"
+      }
     }
   },
   "menuToggle": "Alternar Menú de Navegación"

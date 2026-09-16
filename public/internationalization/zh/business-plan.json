@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "title": "商业计划 | Elleva",
+    "description": "Elleva 商业计划：面向金融市场的自主 AI 基础设施、客户后台、Elleva Partners 计划、E1–E5 Partner Framework 以及合约加速机制（Contract Acceleration）。"
+  },
+  "hero": {
+    "eyebrow": "商业计划 · 1.0 版",
+    "title": "Elleva",
+    "scrollCue": "滚动浏览"
+  },
+  "whatIs": {
+    "eyebrow": "什么是 Elleva？",
+    "title": "我们是一家面向金融市场的自主 AI 智能体基础设施初创企业。",
+    "titleAccent": "自主 AI 智能体",
+    "p1": "介于资本与金融机构之间的全新技术层。",
+    "p2": "这是一种为资本管理带来智能与规模的金融科技。",
+    "p3Accent": "正如云计算已成为企业的基础设施，",
+    "p3": "Elleva 的诞生，正是为了成为资本的基础设施。",
+    "core": {
+      "name": "Elleva",
+      "sub": "自主运营层"
+    },
+    "nodes": {
+      "marketData": { "title": "Market Data", "sub": "全球数据源与供应商" },
+      "custody": { "title": "托管", "sub": "资产与安全结算" },
+      "banks": { "title": "银行", "sub": "流动性、信贷与金融服务" },
+      "compliance": { "title": "合规", "sub": "风险、规则与治理" },
+      "brokers": { "title": "经纪商", "sub": "执行与市场准入" },
+      "portfolios": { "title": "投资组合", "sub": "委托、头寸与业绩" }
+    },
+    "loop": ["研究", "决策", "执行", "监控"]
+  },
+  "problem": {
+    "eyebrow": "问题所在",
+    "title": "市场时刻在变化。",
+    "cards": [
+      {
+        "index": "/01",
+        "title": "市场时刻在变动",
+        "text": "价格变化，新闻涌现，机会随之出现。"
+      },
+      {
+        "index": "/02",
+        "title": "时机至关重要",
+        "text": "此刻可得的机会，可能转瞬即逝。"
+      },
+      {
+        "index": "/03",
+        "title": "决策需要清晰",
+        "text": "缺乏分析的信息可能带来疑虑与错误决策。"
+      }
+    ]
+  },
+  "market": {
+    "eyebrow": "市场演进",
+    "title": "更多资本需要更多技术",
+    "titleAccent": "更多技术",
+    "lead": "介于资本与全球金融体系之间的自主层。",
+    "text": "Elleva 不是经纪商，不是基金，也不是信号平台。它是一套 AI 基础设施，在既有金融机构之上连接数据、委托、合规与执行。",
+    "chart": {
+      "title": "全球 AUM 的结构性增长",
+      "subtitle": "单位：万亿美元（US$）",
+      "calloutValue": "US$ 200 万亿",
+      "calloutLabel": "2030 年预测值",
+      "series": "全球 AUM",
+      "unit": "万亿"
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "技术如何运作",
+    "title": "Elleva 通过四个简单步骤完成工作",
+    "titleAccent": "四个简单步骤",
+    "steps": [
+      { "number": "01", "title": "研究", "sub": "市场、财报、新闻、信号" },
+      { "number": "02", "title": "决策", "sub": "论点、情景、风险、配置" },
+      { "number": "03", "title": "执行", "sub": "订单、再平衡、资金流" },
+      { "number": "04", "title": "监控", "sub": "业绩、警报、合规" }
+    ],
+    "footerAccent": "当市场在变动时，",
+    "footer": "技术持续观察、分析与跟进。"
+  },
+  "brokers": {
+    "eyebrow": "交易在何处发生",
+    "title": "知名经纪商为市场执行提供结构支撑。",
+    "infinox": {
+      "name": "Infinox",
+      "tagline": "活跃于全球体育领域的品牌",
+      "line1": "一级方程式 · BWT Alpine",
+      "line1Sub": "2024 年车队官方 CFD 合作伙伴",
+      "line2": "Tottenham Hotspur",
+      "line2Sub": "2026 年宣布的全球合作伙伴关系"
+    },
+    "roboforex": {
+      "name": "RoboForex",
+      "tagline": "覆盖广度与市场认可",
+      "line1": "12,000+ 种交易品种",
+      "line1Sub": "40 余项国际奖项",
+      "line2": "Club Cienciano · 秘鲁",
+      "line2Sub": "2022/23 赛季官方赞助商"
+    }
+  },
+  "backOffice": {
+    "eyebrow": "客户后台",
+    "title": "客户全程跟踪成果的演进。",
+    "titleAccent": "成果的演进。",
+    "lead": "并看到资金在为自己工作。",
+    "text": "由罗伯特·清崎（Robert Kiyosaki）推广的理念：构建资产，让资金为您工作。",
+    "imageAlt": "手机上的 Elleva 客户后台：可用分配、分配上限、下一次分配及本月分配。"
+  },
+  "purpose": {
+    "eyebrow": "我们的使命",
+    "title": "金融市场不应只属于少数人",
+    "left": {
+      "pill": "已积累财富者",
+      "title": "大型企业家",
+      "sub": "与经验丰富的投资者"
+    },
+    "center": {
+      "name": "Elleva",
+      "sub": "同一扇入口"
+    },
+    "right": {
+      "pill": "正在起步者",
+      "title": "专业人士与家庭",
+      "sub": "寻求新的可能"
+    },
+    "closingLead": "不同的起点。同一扇入口。",
+    "closing": "Elleva。以技术推动金融市场准入的普及化。"
+  },
+  "partners": {
+    "eyebrow": "Elleva Partners",
+    "title": "有些关系可以超越客户身份。",
+    "titleAccent": "超越客户身份。",
+    "text": "了解 Elleva 体验的合格客户，也将能够参与公司的商业拓展。",
+    "born": "由此诞生：",
+    "brand": "Elleva",
+    "brandAccent": "Partners",
+    "program": "Client Portfolio Development Program",
+    "text2": "一套为希望发展自身商业关系组合的客户而设立的架构。",
+    "core": {
+      "name": "Elleva",
+      "sub": "Partners",
+      "program": "Client Portfolio Development Program"
+    },
+    "clientLabel": "客户",
+    "segments": {
+      "banking": "银行业",
+      "technology": "科技",
+      "insurance": "保险",
+      "retail": "零售",
+      "realEstate": "房地产",
+      "industry": "工业",
+      "education": "教育",
+      "health": "医疗健康"
+    }
+  },
+  "journey": {
+    "eyebrow": "从客户到 Partner",
+    "title": "您可以从客户起步，进而成长为 Partner。",
+    "titleAccent": "进而成长为 Partner。",
+    "steps": [
+      { "number": "01", "title": "客户", "text": "了解 Elleva 并参与生态系统。" },
+      { "number": "02", "title": "体验", "text": "亲身体验公司的服务。" },
+      { "number": "03", "title": "Partner", "text": "获得参与公司拓展的资格。" },
+      { "number": "04", "title": "客户组合", "text": "开始发展自己的客户组合。" },
+      { "number": "05", "title": "成长", "text": "拓展与 Elleva 的商业关系。" }
+    ]
+  },
+  "connectedClient": {
+    "title": "什么是 Connected Client？",
+    "relationship": {
+      "title": "每一个组合都始于一段关系。",
+      "textBefore": "Connected Client 是指通过 Elleva Partner 的商业活动引荐、并依据计划规则归入其组合的客户。在为客户发放奖励时，Elleva Partner 可获得",
+      "textAccent": "最高 5% 的奖励",
+      "textAfter": "，具体依据计划的规则与条件执行。"
+    },
+    "contribution": {
+      "title": "每一段新的合格关系都有助于形成：",
+      "card": "客户组合"
+    },
+    "highlight": {
+      "badge": "重点",
+      "title": "Partner 发展客户。客户构筑其组合。",
+      "text": "您的组合代表您所发展的业务。客户组合汇集了由 Partner 发起的合格商业关系。"
+    },
+    "numbers": {
+      "eyebrow": "该组合的增长通过以下指标进行跟踪：",
+      "title": "用数字看您的组合。",
+      "indicators": [
+        { "title": "Connected Clients", "text": "合格的已连接客户。" },
+        { "title": "组合规模", "text": "与组合关联的合格资本。" },
+        { "title": "多元化", "text": "规模在不同组合板块之间的分布。" },
+        { "title": "留存", "text": "关系的持续性。" },
+        { "title": "合规", "text": "商业活动的质量。" }
+      ]
+    }
+  },
+  "framework": {
+    "eyebrow": "Partner development",
+    "title": "Framework",
+    "lead": "您的晋升与您组合的发展同步。",
+    "text": "Elleva 设有五个商业发展等级。",
+    "levels": [
+      { "code": "E1", "title": "Portfolio Associate", "text": "组合构建的第一阶段。" },
+      { "code": "E2", "title": "Portfolio Partner", "text": "组合活跃且持续增长。" },
+      { "code": "E3", "title": "Senior Portfolio Partner", "text": "规模稳固，一致性更强。" },
+      { "code": "E4", "title": "Strategic Partner", "text": "具备相当的商业规模。" },
+      { "code": "E5", "title": "Executive Partner", "text": "计划中的最高发展等级。" }
+    ],
+    "profitShare": {
+      "value": "3%",
+      "label": "Profit share",
+      "text": "参与 ProfitShare 收益分配。"
+    }
+  },
+  "grow": {
+    "eyebrow": "组合构建等级",
+    "title": "壮大您的组合。",
+    "title2": "提升您的等级。",
+    "textBefore": "您的组合越大、越稳定，您在 Elleva Partners 中的",
+    "textAccent": "客户组合拓展与市场构建等级",
+    "textAfter": "就越高。"
+  },
+  "diversification": {
+    "eyebrow": "组合多元化",
+    "title": "成长也意味着分散。",
+    "text": "为使组合在资格认定层面被视为健康，其规模不得过度依赖单一来源。",
+    "rule": {
+      "value": "50%",
+      "title": "组合最高集中度",
+      "text": "任何单一组合板块在用于资格认定的合格规模中的占比不得超过 50%。",
+      "exampleLabel": "示例",
+      "exampleLine1": "对于合格规模为 US$ 100,000 的组合：",
+      "exampleLine2": "单一板块最多可贡献：US$ 50,000",
+      "exampleClosing": "其余 US$ 50,000 须来自其他合格板块。",
+      "barSegment": "单一板块 · 最高 50%",
+      "barOthers": "其他合格板块 · 50%"
+    }
+  },
+  "acceleration": {
+    "eyebrow": "差异化优势",
+    "title": "Elleva Partners",
+    "lead": "发展客户并不产生平行佣金。",
+    "text": "在 Elleva Partners 中，合格的商业活动可产生一项应用于 Partner 自身合约的权益。",
+    "mechanismLabel": "这一机制称为：",
+    "mechanism": "Contract Acceleration",
+    "steps": [
+      { "number": "01", "title": "商业活动", "text": "Partner 发展新客户，产生合格的商业活动。" },
+      { "number": "02", "title": "权益应用", "text": "该活动的成果转化为 Partner 自身合约内的权益。" },
+      { "number": "03", "title": "合约加速", "text": "该权益加速 Partner 与 Elleva 既有合约的进程。" },
+      { "number": "04", "title": "更多成果", "text": "您在成长，合约在推进，您的潜力也随之提升。" }
+    ],
+    "gauge": {
+      "badge": "周期",
+      "value": "400%",
+      "label": "的成长潜力"
+    },
+    "closingBefore": "不同于另行设立一个独立的佣金余额，",
+    "closingAccent": "商业活动可以加速合约的进程",
+    "closingAfter": "——即 Partner 与 Elleva 之间已有的合约。"
+  },
+  "nextSteps": {
+    "eyebrow": "您的下一步",
+    "title": "行动！",
+    "sub": "简单、快速、安全。",
+    "steps": [
+      {
+        "number": "1",
+        "title": "下载并连接您的钱包",
+        "titleAccent": "钱包",
+        "text": "下载 Trust Wallet 并将您的钱包连接至 Elleva 平台。"
+      },
+      {
+        "number": "2",
+        "title": "完成付款",
+        "titleAccent": "付款",
+        "text": "通过 Pix 或 USDT 支付您的数字资产。"
+      },
+      {
+        "number": "3",
+        "title": "跟踪您的业绩",
+        "titleAccent": "业绩",
+        "text": "登录平台，跟踪您的 ProfitShare 业绩表现。"
+      }
+    ]
+  },
+  "closing": {
+    "line1": "并非您的境遇，",
+    "line2": "而是您的抉择",
+    "line3": "在改变您的命运"
+  }
+}

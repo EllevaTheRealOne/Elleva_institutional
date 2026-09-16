@@ -94,6 +94,24 @@
         "operationalAdvantage": "运营优势",
         "faq": "常见问题"
       }
+    },
+    "businessPlan": {
+      "label": "商业计划",
+      "items": {
+        "overview": "什么是 Elleva",
+        "problem": "问题所在",
+        "market": "市场演进",
+        "howItWorks": "运作方式",
+        "brokers": "经纪商",
+        "backOffice": "客户后台",
+        "purpose": "我们的使命",
+        "partners": "Elleva Partners",
+        "connectedClient": "Connected Client",
+        "framework": "Partner Framework",
+        "diversification": "多元化",
+        "contractAcceleration": "Contract Acceleration",
+        "nextSteps": "下一步"
+      }
     }
   },
   "menuToggle": "切换导航菜单"

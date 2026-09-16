@@ -1,0 +1,402 @@
+{
+  "meta": {
+    "title": "Kế hoạch Kinh doanh | Elleva",
+    "description": "Kế hoạch kinh doanh của Elleva: hạ tầng AI tự chủ cho thị trường tài chính, back office của khách hàng, chương trình Elleva Partners, khung phát triển Partner E1–E5 và cơ chế tăng tốc hợp đồng."
+  },
+  "hero": {
+    "eyebrow": "Kế hoạch Kinh doanh · Phiên bản 1.0",
+    "title": "Elleva",
+    "scrollCue": "Cuộn để khám phá"
+  },
+  "whatIs": {
+    "eyebrow": "Elleva là gì?",
+    "title": "Chúng tôi là một startup hạ tầng gồm các tác nhân AI tự chủ dành cho thị trường tài chính.",
+    "titleAccent": "các tác nhân AI tự chủ",
+    "p1": "Một lớp công nghệ mới nằm giữa nguồn vốn và các tổ chức tài chính.",
+    "p2": "Đó là công nghệ tài chính mang trí tuệ và quy mô đến cho hoạt động quản lý vốn.",
+    "p3Accent": "Cũng như điện toán đám mây đã trở thành hạ tầng cho doanh nghiệp,",
+    "p3": "Elleva được tạo ra để trở thành hạ tầng cho nguồn vốn.",
+    "core": {
+      "name": "Elleva",
+      "sub": "Lớp vận hành tự chủ"
+    },
+    "nodes": {
+      "marketData": {
+        "title": "Market Data",
+        "sub": "Nguồn dữ liệu và nhà cung cấp toàn cầu"
+      },
+      "custody": {
+        "title": "Lưu ký",
+        "sub": "Tài sản và thanh toán an toàn"
+      },
+      "banks": {
+        "title": "Ngân hàng",
+        "sub": "Thanh khoản, tín dụng và dịch vụ tài chính"
+      },
+      "compliance": {
+        "title": "Tuân thủ",
+        "sub": "Rủi ro, quy tắc và quản trị"
+      },
+      "brokers": {
+        "title": "Nhà môi giới",
+        "sub": "Thực thi và tiếp cận thị trường"
+      },
+      "portfolios": {
+        "title": "Danh mục đầu tư",
+        "sub": "Ủy thác, vị thế và hiệu suất"
+      }
+    },
+    "loop": [
+      "Nghiên cứu",
+      "Quyết định",
+      "Thực thi",
+      "Giám sát"
+    ]
+  },
+  "problem": {
+    "eyebrow": "Vấn đề",
+    "title": "Thị trường thay đổi không ngừng.",
+    "cards": [
+      {
+        "index": "/01",
+        "title": "Thị trường luôn vận động",
+        "text": "Giá cả thay đổi, tin tức xuất hiện và cơ hội mở ra."
+      },
+      {
+        "index": "/02",
+        "title": "Thời điểm tạo nên sự khác biệt",
+        "text": "Một cơ hội đang có lúc này có thể biến mất nhanh chóng."
+      },
+      {
+        "index": "/03",
+        "title": "Quyết định đòi hỏi sự sáng suốt",
+        "text": "Thông tin thiếu phân tích có thể gây hoài nghi và dẫn đến quyết định sai lầm."
+      }
+    ]
+  },
+  "market": {
+    "eyebrow": "Tiến trình của thị trường",
+    "title": "Nhiều vốn hơn đòi hỏi nhiều công nghệ hơn",
+    "titleAccent": "nhiều công nghệ hơn",
+    "lead": "Lớp tự chủ nằm giữa nguồn vốn và hệ thống tài chính toàn cầu.",
+    "text": "Elleva không phải là nhà môi giới, không phải quỹ đầu tư, cũng không phải nền tảng tín hiệu. Đây là hạ tầng AI kết nối dữ liệu, ủy thác, tuân thủ và thực thi trên nền các tổ chức tài chính đã hiện hữu.",
+    "chart": {
+      "title": "Tăng trưởng cơ cấu của AUM toàn cầu",
+      "subtitle": "Tính bằng nghìn tỷ đô la Mỹ (US$)",
+      "calloutValue": "US$ 200 nghìn tỷ",
+      "calloutLabel": "dự phóng cho năm 2030",
+      "series": "AUM toàn cầu",
+      "unit": "nghìn tỷ"
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "Công nghệ vận hành như thế nào",
+    "title": "Elleva thực hiện công việc qua bốn bước đơn giản",
+    "titleAccent": "qua bốn bước đơn giản",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Nghiên cứu",
+        "sub": "thị trường, báo cáo tài chính, tin tức, tín hiệu"
+      },
+      {
+        "number": "02",
+        "title": "Quyết định",
+        "sub": "luận điểm, kịch bản, rủi ro, phân bổ"
+      },
+      {
+        "number": "03",
+        "title": "Thực thi",
+        "sub": "lệnh, tái cân bằng, dòng vốn"
+      },
+      {
+        "number": "04",
+        "title": "Giám sát",
+        "sub": "hiệu suất, cảnh báo, tuân thủ"
+      }
+    ],
+    "footerAccent": "Trong khi thị trường vận động",
+    "footer": "công nghệ vẫn không ngừng quan sát, phân tích và theo dõi."
+  },
+  "brokers": {
+    "eyebrow": "Nơi các giao dịch diễn ra",
+    "title": "Các nhà môi giới uy tín cung cấp cấu trúc cho việc thực thi trên thị trường.",
+    "infinox": {
+      "name": "Infinox",
+      "tagline": "Thương hiệu hiện diện trong thể thao thế giới",
+      "line1": "Formula 1 · BWT Alpine",
+      "line1Sub": "Đối tác CFD chính thức của đội đua năm 2024",
+      "line2": "Tottenham Hotspur",
+      "line2Sub": "Quan hệ đối tác toàn cầu được công bố năm 2026"
+    },
+    "roboforex": {
+      "name": "RoboForex",
+      "tagline": "Tầm vóc và sự công nhận",
+      "line1": "12.000+ công cụ giao dịch",
+      "line1Sub": "Hơn 40 giải thưởng quốc tế",
+      "line2": "Club Cienciano · Peru",
+      "line2Sub": "Nhà tài trợ chính thức mùa giải 2022/23"
+    }
+  },
+  "backOffice": {
+    "eyebrow": "Back office của khách hàng",
+    "title": "Khách hàng theo dõi sự tiến triển của kết quả.",
+    "titleAccent": "sự tiến triển của kết quả.",
+    "lead": "Và thấy tiền đang làm việc cho mình.",
+    "text": "Một nguyên tắc được Robert Kiyosaki phổ biến: xây dựng tài sản để tiền làm việc cho bạn.",
+    "imageAlt": "Back office khách hàng của Elleva trên điện thoại: các khoản phân phối khả dụng, hạn mức phân phối, đợt phân phối tiếp theo và các khoản phân phối trong tháng này."
+  },
+  "purpose": {
+    "eyebrow": "Sứ mệnh của chúng tôi",
+    "title": "Thị trường tài chính không nên chỉ dành cho số ít",
+    "left": {
+      "pill": "Những người đã gây dựng được tài sản",
+      "title": "Các doanh nhân lớn",
+      "sub": "và nhà đầu tư giàu kinh nghiệm"
+    },
+    "center": {
+      "name": "Elleva",
+      "sub": "Một cánh cửa chung"
+    },
+    "right": {
+      "pill": "Những người mới bắt đầu",
+      "title": "Người đi làm và các gia đình",
+      "sub": "đang tìm kiếm những khả năng mới"
+    },
+    "closingLead": "Điểm xuất phát khác nhau. Cùng một cánh cửa.",
+    "closing": "Elleva. Công nghệ để dân chủ hóa việc tiếp cận thị trường tài chính."
+  },
+  "partners": {
+    "eyebrow": "Elleva Partners",
+    "title": "Một số mối quan hệ có thể vượt ra ngoài vị thế khách hàng.",
+    "titleAccent": "vượt ra ngoài vị thế khách hàng.",
+    "text": "Những khách hàng đủ điều kiện đã trải nghiệm Elleva cũng sẽ có thể tham gia vào quá trình mở rộng thương mại của công ty.",
+    "born": "Từ đó ra đời:",
+    "brand": "Elleva",
+    "brandAccent": "Partners",
+    "program": "Client Portfolio Development Program",
+    "text2": "Một cấu trúc được tạo ra dành cho những khách hàng mong muốn phát triển danh mục quan hệ thương mại của riêng mình.",
+    "core": {
+      "name": "Elleva",
+      "sub": "Partners",
+      "program": "Client Portfolio Development Program"
+    },
+    "clientLabel": "Khách hàng",
+    "segments": {
+      "banking": "Ngân hàng",
+      "technology": "Công nghệ",
+      "insurance": "Bảo hiểm",
+      "retail": "Bán lẻ",
+      "realEstate": "Bất động sản",
+      "industry": "Công nghiệp",
+      "education": "Giáo dục",
+      "health": "Y tế"
+    }
+  },
+  "journey": {
+    "eyebrow": "Từ khách hàng đến Partner",
+    "title": "Bạn có thể bắt đầu là khách hàng và phát triển thành Partner.",
+    "titleAccent": "và phát triển thành Partner.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Khách hàng",
+        "text": "Tìm hiểu Elleva và tham gia vào hệ sinh thái."
+      },
+      {
+        "number": "02",
+        "title": "Trải nghiệm",
+        "text": "Trải nghiệm hành trình cùng công ty."
+      },
+      {
+        "number": "03",
+        "title": "Partner",
+        "text": "Trở nên đủ điều kiện tham gia vào quá trình mở rộng."
+      },
+      {
+        "number": "04",
+        "title": "Danh mục",
+        "text": "Bắt đầu phát triển danh mục của mình."
+      },
+      {
+        "number": "05",
+        "title": "Tăng trưởng",
+        "text": "Mở rộng mối quan hệ thương mại với Elleva."
+      }
+    ]
+  },
+  "connectedClient": {
+    "title": "Connected Client là gì?",
+    "relationship": {
+      "title": "Mỗi danh mục đều bắt đầu từ một mối quan hệ.",
+      "textBefore": "Connected Client là khách hàng được giới thiệu thông qua hoạt động thương mại của một Elleva Partner và được gắn với danh mục của Partner đó theo quy định của chương trình. Khi ghi nhận thưởng cho một khách hàng, Elleva Partner có thể nhận được ",
+      "textAccent": "khoản thưởng lên tới 5%",
+      "textAfter": ", theo các quy định và điều kiện của chương trình."
+    },
+    "contribution": {
+      "title": "Mỗi mối quan hệ đủ điều kiện mới đều góp phần hình thành nên:",
+      "card": "Danh mục Khách hàng"
+    },
+    "highlight": {
+      "badge": "Điểm nổi bật",
+      "title": "Partner phát triển khách hàng. Khách hàng xây dựng nên danh mục đó.",
+      "text": "Danh mục của bạn thể hiện hoạt động kinh doanh mà bạn đã phát triển. Danh mục Khách hàng tập hợp các mối quan hệ thương mại đủ điều kiện do Partner khởi tạo."
+    },
+    "numbers": {
+      "eyebrow": "Sự tăng trưởng của danh mục này được theo dõi qua các chỉ số như:",
+      "title": "Danh mục của bạn qua những con số.",
+      "indicators": [
+        {
+          "title": "Connected Clients",
+          "text": "Số khách hàng kết nối đủ điều kiện."
+        },
+        {
+          "title": "Quy mô danh mục",
+          "text": "Nguồn vốn đủ điều kiện gắn với danh mục."
+        },
+        {
+          "title": "Đa dạng hóa",
+          "text": "Sự phân bổ quy mô giữa các phân khúc khác nhau của danh mục."
+        },
+        {
+          "title": "Duy trì",
+          "text": "Tính liên tục của các mối quan hệ."
+        },
+        {
+          "title": "Tuân thủ",
+          "text": "Chất lượng của hoạt động thương mại."
+        }
+      ]
+    }
+  },
+  "framework": {
+    "eyebrow": "Partner development",
+    "title": "Framework",
+    "lead": "Sự phát triển của bạn đi cùng sự phát triển của danh mục.",
+    "text": "Elleva có năm cấp độ phát triển thương mại.",
+    "levels": [
+      {
+        "code": "E1",
+        "title": "Portfolio Associate",
+        "text": "Giai đoạn đầu xây dựng danh mục."
+      },
+      {
+        "code": "E2",
+        "title": "Portfolio Partner",
+        "text": "Danh mục đang hoạt động và tăng trưởng."
+      },
+      {
+        "code": "E3",
+        "title": "Senior Portfolio Partner",
+        "text": "Quy mô ổn định và tính nhất quán cao hơn."
+      },
+      {
+        "code": "E4",
+        "title": "Strategic Partner",
+        "text": "Quy mô thương mại đáng kể."
+      },
+      {
+        "code": "E5",
+        "title": "Executive Partner",
+        "text": "Cấp độ phát triển cao nhất của chương trình."
+      }
+    ],
+    "profitShare": {
+      "value": "3%",
+      "label": "Profit share",
+      "text": "Tham gia vào kết quả của ProfitShare."
+    }
+  },
+  "grow": {
+    "eyebrow": "Các cấp độ xây dựng danh mục",
+    "title": "Phát triển danh mục của bạn.",
+    "title2": "Nâng cao cấp độ của bạn.",
+    "textBefore": "Danh mục của bạn càng lớn và càng nhất quán, cấp độ của bạn càng cao ",
+    "textAccent": "về mở rộng danh mục khách hàng và xây dựng thị trường",
+    "textAfter": " trong Elleva Partners."
+  },
+  "diversification": {
+    "eyebrow": "Đa dạng hóa danh mục",
+    "title": "Tăng trưởng cũng có nghĩa là phân bổ.",
+    "text": "Để một danh mục được coi là lành mạnh cho mục đích xét cấp độ, quy mô của danh mục không được phụ thuộc quá mức vào một nguồn duy nhất.",
+    "rule": {
+      "value": "50%",
+      "title": "Mức tập trung tối đa của danh mục",
+      "text": "Không một Phân khúc Danh mục nào được chiếm quá 50% quy mô đủ điều kiện dùng để xét cấp độ.",
+      "exampleLabel": "Ví dụ",
+      "exampleLine1": "Với một danh mục đủ điều kiện là: US$ 100.000",
+      "exampleLine2": "một phân khúc duy nhất chỉ được đóng góp tối đa: US$ 50.000",
+      "exampleClosing": "US$ 50.000 còn lại phải đến từ các phân khúc đủ điều kiện khác.",
+      "barSegment": "Một phân khúc · tối đa 50%",
+      "barOthers": "Các phân khúc đủ điều kiện khác · 50%"
+    }
+  },
+  "acceleration": {
+    "eyebrow": "Điểm khác biệt của",
+    "title": "Elleva Partners",
+    "lead": "Phát triển khách hàng không tạo ra một khoản hoa hồng song song.",
+    "text": "Trong Elleva Partners, hoạt động thương mại đủ điều kiện có thể tạo ra một lợi ích được áp dụng vào chính hợp đồng của Partner.",
+    "mechanismLabel": "Cơ chế này được gọi là:",
+    "mechanism": "Contract Acceleration",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Hoạt động thương mại",
+        "text": "Partner phát triển khách hàng mới và tạo ra hoạt động thương mại đủ điều kiện."
+      },
+      {
+        "number": "02",
+        "title": "Lợi ích được áp dụng",
+        "text": "Kết quả của hoạt động đó được chuyển thành lợi ích trong chính hợp đồng của Partner."
+      },
+      {
+        "number": "03",
+        "title": "Tăng tốc hợp đồng",
+        "text": "Lợi ích đó đẩy nhanh tiến trình của hợp đồng mà Partner đã có với Elleva."
+      },
+      {
+        "number": "04",
+        "title": "Nhiều kết quả hơn",
+        "text": "Bạn phát triển, hợp đồng của bạn tiến lên và tiềm năng của bạn cũng tăng theo."
+      }
+    ],
+    "gauge": {
+      "badge": "Chu kỳ",
+      "value": "400%",
+      "label": "tiềm năng phát triển"
+    },
+    "closingBefore": "Thay vì tạo ra một số dư hoa hồng thứ hai tách biệt, ",
+    "closingAccent": "hoạt động thương mại có thể đẩy nhanh tiến trình của hợp đồng",
+    "closingAfter": " mà Partner đã có với Elleva."
+  },
+  "nextSteps": {
+    "eyebrow": "Tiếp theo là",
+    "title": "Các bước của bạn!",
+    "sub": "Đơn giản, nhanh chóng và an toàn.",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Tải và kết nối ví của bạn",
+        "titleAccent": "ví",
+        "text": "Tải Trust Wallet và kết nối ví của bạn với nền tảng Elleva."
+      },
+      {
+        "number": "2",
+        "title": "Thực hiện thanh toán",
+        "titleAccent": "thanh toán",
+        "text": "Thanh toán Tài sản Số của bạn qua Pix hoặc USDT."
+      },
+      {
+        "number": "3",
+        "title": "Theo dõi hiệu suất của bạn",
+        "titleAccent": "hiệu suất",
+        "text": "Truy cập nền tảng và theo dõi hiệu suất ProfitShare của bạn."
+      }
+    ]
+  },
+  "closing": {
+    "line1": "Không phải hoàn cảnh của bạn,",
+    "line2": "mà chính những quyết định của bạn",
+    "line3": "mới thay đổi vận mệnh của bạn"
+  }
+}

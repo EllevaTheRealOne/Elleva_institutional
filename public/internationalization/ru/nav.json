@@ -94,6 +94,24 @@
         "operationalAdvantage": "Операционное преимущество",
         "faq": "Часто задаваемые вопросы"
       }
+    },
+    "businessPlan": {
+      "label": "Бизнес-план",
+      "items": {
+        "overview": "Что такое Elleva",
+        "problem": "Проблема",
+        "market": "Развитие рынка",
+        "howItWorks": "Как это работает",
+        "brokers": "Брокеры",
+        "backOffice": "Клиентский бэк-офис",
+        "purpose": "Наша миссия",
+        "partners": "Elleva Partners",
+        "connectedClient": "Connected Client",
+        "framework": "Partner Framework",
+        "diversification": "Диверсификация",
+        "contractAcceleration": "Contract Acceleration",
+        "nextSteps": "Следующие шаги"
+      }
     }
   },
   "menuToggle": "Переключить меню навигации"
