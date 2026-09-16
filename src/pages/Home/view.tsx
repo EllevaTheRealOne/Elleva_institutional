@@ -21,8 +21,17 @@ import { Trust } from "./sections/Trust";
 import { Ecosystem } from "./sections/Ecosystem";
 import { FAQ } from "./sections/FAQ";
 import { FinalCTA } from "./sections/FinalCTA";
+import { usePageMeta } from "@/hooks/use-page-meta";
+import { PATH_PAGE } from "@/constants/routes/routes.constants";
 
 export const HomeView: React.FC = () => {
+  usePageMeta({
+    title: "Elleva | Global Investment Platform",
+    description:
+      "Elleva is a global investment platform combining research, portfolio intelligence, execution and monitoring in a unified investment experience.",
+    path: PATH_PAGE.home,
+  });
+
   // Every section is dark. The page used to alternate white and dark bands in
   // light mode; the white ones are gone, so the ground is continuous.
   const getSectionDark = (_sectionNum: number) => true;

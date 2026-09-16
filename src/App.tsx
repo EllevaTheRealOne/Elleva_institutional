@@ -8,6 +8,8 @@ import { Suspense } from "react";
 import { allLangs } from "./i18n/langs";
 import { useSyncHtmlLang } from "./hooks/use-sync-html-lang";
 import { HomeView } from "./pages/Home";
+import { BusinessPlanView } from "./pages/BusinessPlan";
+import { PATH_PAGE } from "./constants/routes/routes.constants";
 import NotFoundView from "./pages/NotFound";
 
 const Root = () => {
@@ -15,7 +17,10 @@ const Root = () => {
   return <Outlet />;
 };
 
-const mainChildRoutes = [{ index: true, element: <HomeView /> }];
+const mainChildRoutes = [
+  { index: true, element: <HomeView /> },
+  { path: PATH_PAGE.businessPlan.slice(1), element: <BusinessPlanView /> },
+];
 
 const buildRoutesForPrefix = (prefix?: string) => {
   const layoutPath = prefix || "/";
