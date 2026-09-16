@@ -1,0 +1,405 @@
+/*
+|--------------------------------------------------------------------------
+| Business Plan — page theme
+|--------------------------------------------------------------------------
+|
+| This page follows the art direction of the "ELLEVA versão 1.0" deck rather
+| than the site's institutional palette: bright turquoise, near-black, and
+| white slides alternating, Montserrat set in heavy uppercase, black cards
+| with cyan titles, and the two-dash motif that closes every slide.
+|
+| Everything is scoped under `.bp` so nothing leaks into the rest of the site.
+*/
+
+.bp {
+  --bp-cyan: #1ae6d6;
+  --bp-cyan-deep: #12cfc0;
+  --bp-cyan-dark: #0b8f86;
+  --bp-black: #0a0a0a;
+  --bp-ink: #111111;
+  --bp-ink-soft: #3a3f3f;
+  --bp-white: #ffffff;
+  --bp-off-white: #f7f9f9;
+  --bp-dark-text: #f4f6f6;
+  --bp-dark-muted: #b3bcbb;
+  --bp-card-dark: #151515;
+  --bp-card-dark-2: #1d1d1d;
+
+  font-family: "Montserrat", "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Slide grounds ---------- */
+
+.bp-slide {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.bp-slide > .bp-chrome {
+  position: relative;
+  z-index: 1;
+}
+
+.bp-dark {
+  background-color: #050505;
+  color: var(--bp-dark-text);
+  background-image:
+    radial-gradient(60% 70% at 0% 0%, rgba(0, 210, 196, 0.22), transparent 60%),
+    radial-gradient(40% 50% at 100% 100%, rgba(0, 170, 160, 0.1), transparent 60%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080' preserveAspectRatio='none'><g fill='rgba(255,255,255,0.025)' stroke='rgba(255,255,255,0.06)' stroke-width='1.5'><path d='M-60 140 L1500 140 L1760 40 L2000 40 L2000 100 L1780 100 L1520 200 L-60 200 Z'/><path d='M140 720 L1080 720 L1180 560 L1900 560 L1900 640 L1230 640 L1130 800 L140 800 Z'/></g></svg>");
+  background-size: 100% 100%, 100% 100%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bp-teal {
+  background-color: #10dfd0;
+  color: var(--bp-black);
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080' preserveAspectRatio='none'><g fill='none' stroke='rgba(255,255,255,0.42)' stroke-width='3'><path d='M-40 150 L520 150 L680 40 L1960 40'/><path d='M1960 760 L1240 760 L1100 900 L-40 900'/><path d='M1960 480 L1560 480 L1470 580'/></g></svg>"),
+    linear-gradient(118deg, #26f2e2 0%, #0fe0d0 48%, #05cfc1 100%);
+  background-size: 100% 100%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bp-light {
+  background-color: #fbfcfc;
+  color: var(--bp-ink);
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080' preserveAspectRatio='none'><g fill='rgba(10,10,10,0.028)'><path d='M520 -40 L1960 -40 L1960 40 L560 40 Z'/><path d='M-60 980 L680 980 L760 860 L1960 860 L1960 900 L790 900 L710 1020 L-60 1020 Z'/></g><g fill='none' stroke='rgba(10,10,10,0.05)' stroke-width='2'><path d='M400 120 L1460 120 L1620 20'/></g></svg>"),
+    linear-gradient(180deg, #ffffff 0%, #f6f8f8 100%);
+  background-size: 100% 100%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* ---------- Slide chrome: wordmark and the two dashes ---------- */
+
+.bp-wordmark {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.55em;
+  text-transform: uppercase;
+}
+
+.bp-dashes {
+  display: inline-flex;
+  gap: 0.75rem;
+}
+
+.bp-dashes > span {
+  display: block;
+  width: 5.5rem;
+  height: 4px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.bp-dark .bp-wordmark,
+.bp-dark .bp-dashes,
+.bp-light .bp-dashes {
+  color: var(--bp-cyan);
+}
+
+.bp-light .bp-wordmark {
+  color: var(--bp-cyan-deep);
+}
+
+.bp-teal .bp-wordmark,
+.bp-teal .bp-dashes {
+  color: var(--bp-black);
+}
+
+/* ---------- Type ---------- */
+
+.bp-eyebrow {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.7rem, 0.3vw + 0.6rem, 0.85rem);
+  font-weight: 500;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+}
+
+.bp-dark .bp-eyebrow {
+  color: var(--bp-dark-text);
+}
+
+.bp-teal .bp-eyebrow {
+  color: var(--bp-black);
+}
+
+.bp-light .bp-eyebrow {
+  color: var(--bp-cyan-deep);
+}
+
+.bp-h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(1.75rem, 2.6vw + 0.9rem, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+
+.bp-h1-xl {
+  font-size: clamp(2.4rem, 5vw + 1rem, 6.5rem);
+  line-height: 0.98;
+}
+
+.bp-h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(1.25rem, 1.2vw + 0.8rem, 1.9rem);
+  line-height: 1.15;
+}
+
+.bp-accent {
+  color: var(--bp-cyan);
+}
+
+.bp-light .bp-accent {
+  color: var(--bp-cyan-deep);
+}
+
+.bp-teal .bp-accent {
+  color: var(--bp-cyan);
+}
+
+.bp-lead {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1rem, 0.4vw + 0.9rem, 1.25rem);
+  line-height: 1.4;
+}
+
+.bp-body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.95rem, 0.3vw + 0.85rem, 1.15rem);
+  line-height: 1.55;
+}
+
+.bp-small {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.8rem, 0.2vw + 0.75rem, 0.95rem);
+  line-height: 1.5;
+}
+
+.bp-dark .bp-body,
+.bp-dark .bp-small {
+  color: var(--bp-dark-text);
+}
+
+.bp-light .bp-body,
+.bp-light .bp-small {
+  color: var(--bp-ink-soft);
+}
+
+.bp-teal .bp-body,
+.bp-teal .bp-small {
+  color: var(--bp-ink);
+}
+
+.bp-num {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Cards ---------- */
+
+.bp-card-dark {
+  background: linear-gradient(160deg, var(--bp-card-dark-2) 0%, var(--bp-card-dark) 100%);
+  color: var(--bp-dark-text);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1rem;
+  box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.55);
+}
+
+.bp-card-dark .bp-eyebrow,
+.bp-card-dark .bp-body,
+.bp-card-dark .bp-small {
+  color: var(--bp-dark-text);
+}
+
+.bp-card-dark .bp-accent {
+  color: var(--bp-cyan);
+}
+
+.bp-card-light {
+  background: var(--bp-white);
+  color: var(--bp-ink);
+  border: 1px solid rgba(10, 10, 10, 0.06);
+  border-radius: 1.1rem;
+  box-shadow:
+    0 24px 50px -28px rgba(10, 30, 30, 0.35),
+    0 2px 6px rgba(10, 30, 30, 0.06);
+}
+
+.bp-card-light .bp-body,
+.bp-card-light .bp-small {
+  color: var(--bp-ink-soft);
+}
+
+.bp-card-light .bp-accent {
+  color: var(--bp-cyan-deep);
+}
+
+.bp-card-glass {
+  background: linear-gradient(180deg, rgba(0, 196, 184, 0.16) 0%, rgba(0, 196, 184, 0.03) 100%);
+  border: 1px solid rgba(26, 230, 214, 0.35);
+  border-radius: 0.9rem;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 40px -10px rgba(26, 230, 214, 0.25);
+}
+
+.bp-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+/* ---------- Icon discs ---------- */
+
+.bp-disc {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 999px;
+  flex: none;
+}
+
+.bp-disc-cyan {
+  background: linear-gradient(145deg, #4cf5e9, #08c9bb);
+  color: var(--bp-black);
+  box-shadow:
+    0 0 0 6px rgba(26, 230, 214, 0.18),
+    0 12px 28px -12px rgba(8, 201, 187, 0.8);
+}
+
+.bp-disc-black {
+  background: linear-gradient(145deg, #2a2a2a, #080808);
+  color: var(--bp-white);
+  box-shadow: 0 12px 28px -14px rgba(0, 0, 0, 0.9);
+}
+
+.bp-disc-outline {
+  border: 2px solid var(--bp-cyan);
+  color: var(--bp-cyan);
+  background: rgba(5, 5, 5, 0.6);
+  box-shadow: 0 0 24px -6px rgba(26, 230, 214, 0.55);
+}
+
+/* ---------- Connector dots between step cards ---------- */
+
+.bp-connector {
+  position: relative;
+}
+
+.bp-connector::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -1.25rem;
+  width: 2.5rem;
+  height: 2px;
+  transform: translateY(-50%);
+  background: currentColor;
+  opacity: 0.35;
+}
+
+.bp-connector:last-child::after {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .bp-connector::after {
+    display: none;
+  }
+}
+
+/* ---------- Glow pill (Contract Acceleration) ---------- */
+
+.bp-glow-pill {
+  display: inline-block;
+  padding: 0.6rem 2.2rem;
+  border-radius: 999px;
+  border: 2px solid rgba(26, 230, 214, 0.9);
+  background: rgba(26, 230, 214, 0.08);
+  color: var(--bp-cyan-deep);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(1.1rem, 1.5vw + 0.6rem, 2.1rem);
+  letter-spacing: 0.02em;
+  box-shadow:
+    0 0 0 8px rgba(26, 230, 214, 0.12),
+    0 0 48px -6px rgba(26, 230, 214, 0.65);
+}
+
+/* ---------- Radial diagrams ---------- */
+
+.bp-ring {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* ---------- Reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .bp * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ---------- Back to top ---------- */
+
+/* Phones: a small translucent disc tucked in the corner, above the
+   home-indicator area, that only comes to full strength when pressed. */
+.bp-back-to-top {
+  right: 0.9rem;
+  bottom: calc(0.9rem + env(safe-area-inset-bottom, 0px));
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  opacity: 0.55;
+  color: var(--bp-cyan);
+  background: rgba(5, 5, 5, 0.7);
+  border-color: rgba(26, 230, 214, 0.4);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.7);
+}
+
+.bp-back-to-top:active {
+  opacity: 1;
+}
+
+/* Wider screens: a labelled pill. */
+@media (min-width: 640px) {
+  .bp-back-to-top {
+    right: 1.5rem;
+    bottom: 1.5rem;
+    width: auto;
+    height: auto;
+    padding: 0.6rem 1.1rem 0.6rem 0.9rem;
+    opacity: 0.85;
+    color: var(--bp-black);
+    background: var(--bp-cyan);
+    border-color: transparent;
+    box-shadow: 0 12px 30px -12px rgba(26, 230, 214, 0.8);
+  }
+}

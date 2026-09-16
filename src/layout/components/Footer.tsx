@@ -4,6 +4,9 @@ import ellevaLogoCyanBlack from "@/assets/brand/brand_cyan_black.svg";
 import { useTranslation } from "react-i18next";
 import { Twitter, Linkedin, MessageSquare, Send, Globe } from "lucide-react";
 import { useTheme } from "@/context/theme";
+import { useI18n } from "@/i18n/useI18n";
+import { localizePath } from "@/i18n/localizePath";
+import { PATH_PAGE } from "@/constants/routes/routes.constants";
 
 interface FooterLink {
   label: string;
@@ -19,6 +22,7 @@ interface FooterColumn {
 export const Footer = () => {
   const { t } = useTranslation(["nav", "common"]);
   const { resolvedTheme } = useTheme();
+  const { language } = useI18n();
   const ellevaLogo =
     resolvedTheme === "dark" ? ellevaLogoCyanWhite : ellevaLogoCyanBlack;
 
@@ -128,6 +132,10 @@ export const Footer = () => {
     {
       title: t("nav:categories.company.label") || "Company",
       links: [
+        {
+          label: t("nav:categories.businessPlan.label") || "Business Plan",
+          href: PATH_PAGE.businessPlan,
+        },
         {
           label: t("common:footer.aboutElleva") || "About Elleva",
           href: "/#what-is-elleva",
@@ -270,7 +278,7 @@ export const Footer = () => {
                         </a>
                       ) : isInternalRoute(link.href) ? (
                         <Link
-                          to={link.href}
+                          to={localizePath(link.href, language)}
                           className="block text-xs font-normal text-muted-foreground transition-colors hover:text-primary"
                         >
                           {link.label}

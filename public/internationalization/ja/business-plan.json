@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "title": "事業計画 | Elleva",
+    "description": "Elleva の事業計画：金融市場向けの自律型AIインフラストラクチャ、クライアントバックオフィス、Elleva Partners プログラム、E1–E5 のパートナーフレームワーク、そして Contract Acceleration。"
+  },
+  "hero": {
+    "eyebrow": "事業計画 · バージョン 1.0",
+    "title": "Elleva",
+    "scrollCue": "スクロールして続きをご覧ください"
+  },
+  "whatIs": {
+    "eyebrow": "Elleva とは？",
+    "title": "私たちは、金融市場向けの自律型AIエージェントのインフラストラクチャを提供するスタートアップです。",
+    "titleAccent": "自律型AIエージェント",
+    "p1": "資本と金融機関の間に生まれた、新しいテクノロジーレイヤーです。",
+    "p2": "資本運用にインテリジェンスとスケールをもたらす金融テクノロジーです。",
+    "p3Accent": "クラウドが企業のインフラストラクチャとなったように、",
+    "p3": "Elleva は資本のためのインフラストラクチャとして生まれました。",
+    "core": {
+      "name": "Elleva",
+      "sub": "自律型オペレーショナルレイヤー"
+    },
+    "nodes": {
+      "marketData": { "title": "Market Data", "sub": "グローバルなフィードとプロバイダー" },
+      "custody": { "title": "カストディ", "sub": "資産と安全な決済" },
+      "banks": { "title": "銀行", "sub": "流動性、与信、金融サービス" },
+      "compliance": { "title": "コンプライアンス", "sub": "リスク、ルール、ガバナンス" },
+      "brokers": { "title": "ブローカー", "sub": "執行と市場アクセス" },
+      "portfolios": { "title": "ポートフォリオ", "sub": "マンデート、ポジション、パフォーマンス" }
+    },
+    "loop": ["リサーチ", "決定", "実行", "監視"]
+  },
+  "problem": {
+    "eyebrow": "課題",
+    "title": "市場は絶えず変化しています。",
+    "cards": [
+      {
+        "index": "/01",
+        "title": "市場は絶えず動いています",
+        "text": "価格は変動し、ニュースが流れ、機会が生まれます。"
+      },
+      {
+        "index": "/02",
+        "title": "タイミングが差を生みます",
+        "text": "今ある機会も、すぐに消えてしまうことがあります。"
+      },
+      {
+        "index": "/03",
+        "title": "判断には明確さが求められます",
+        "text": "分析を伴わない情報は、迷いと誤った判断を生みかねません。"
+      }
+    ]
+  },
+  "market": {
+    "eyebrow": "市場の進展",
+    "title": "より多くの資本には、より高度なテクノロジーが求められます",
+    "titleAccent": "より高度なテクノロジー",
+    "lead": "資本とグローバル金融システムの間にある自律レイヤー。",
+    "text": "Elleva はブローカーでも、ファンドでも、シグナル配信プラットフォームでもありません。既存の金融機関の上で、データ、マンデート、コンプライアンス、執行を接続するAIインフラストラクチャです。",
+    "chart": {
+      "title": "グローバルAUMの構造的成長",
+      "subtitle": "単位：兆米ドル（US$）",
+      "calloutValue": "US$ 200兆",
+      "calloutLabel": "2030年の予測値",
+      "series": "グローバルAUM",
+      "unit": "兆"
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "テクノロジーの仕組み",
+    "title": "Elleva は、4つのシンプルなステップで業務を遂行します",
+    "titleAccent": "4つのシンプルなステップで",
+    "steps": [
+      { "number": "01", "title": "リサーチ", "sub": "市場、財務諸表、ニュース、シグナル" },
+      { "number": "02", "title": "決定", "sub": "投資テーマ、シナリオ、リスク、配分" },
+      { "number": "03", "title": "実行", "sub": "注文、リバランス、フロー" },
+      { "number": "04", "title": "監視", "sub": "パフォーマンス、アラート、コンプライアンス" }
+    ],
+    "footerAccent": "市場が動き続ける間も、",
+    "footer": "テクノロジーは観察し、分析し、追跡し続けます。"
+  },
+  "brokers": {
+    "eyebrow": "取引が行われる場所",
+    "title": "信頼あるブローカーが、市場執行の基盤を提供します。",
+    "infinox": {
+      "name": "Infinox",
+      "tagline": "世界のスポーツに名を連ねるブランド",
+      "line1": "フォーミュラ1 · BWT Alpine",
+      "line1Sub": "2024年、チームの公式CFDパートナー",
+      "line2": "Tottenham Hotspur",
+      "line2Sub": "2026年に発表されたグローバルパートナーシップ"
+    },
+    "roboforex": {
+      "name": "RoboForex",
+      "tagline": "リーチと評価",
+      "line1": "12,000以上の取引銘柄",
+      "line1Sub": "40を超える国際的な受賞歴",
+      "line2": "Club Cienciano · ペルー",
+      "line2Sub": "2022/23シーズンの公式スポンサー"
+    }
+  },
+  "backOffice": {
+    "eyebrow": "クライアントバックオフィス",
+    "title": "クライアントは、成果の推移を確認できます。",
+    "titleAccent": "成果の推移",
+    "lead": "そして、資金が自分のために働く様子を目にします。",
+    "text": "ロバート・キヨサキが広めた原則：資産を築き、お金に働いてもらう。",
+    "imageAlt": "スマートフォンに表示された Elleva クライアントバックオフィス：分配可能額、分配上限、次回の分配、今月の分配。"
+  },
+  "purpose": {
+    "eyebrow": "私たちの目的",
+    "title": "金融市場は、一部の人だけのものであってはなりません",
+    "left": {
+      "pill": "すでに資産を築いた方",
+      "title": "大手起業家",
+      "sub": "そして経験豊富な投資家"
+    },
+    "center": {
+      "name": "Elleva",
+      "sub": "ひとつの入口"
+    },
+    "right": {
+      "pill": "これから始める方",
+      "title": "専門職と家族",
+      "sub": "新たな可能性を求めて"
+    },
+    "closingLead": "出発点は異なっても、入口は同じです。",
+    "closing": "Elleva。金融市場へのアクセスを民主化するテクノロジー。"
+  },
+  "partners": {
+    "eyebrow": "Elleva Partners",
+    "title": "一部の関係は、クライアントという立場を超えていくことができます。",
+    "titleAccent": "クライアントという立場を超えていく",
+    "text": "Elleva の体験を知る適格クライアントは、当社の事業拡大にも参加できるようになります。",
+    "born": "こうして生まれます：",
+    "brand": "Elleva",
+    "brandAccent": "Partners",
+    "program": "Client Portfolio Development Program",
+    "text2": "自らのビジネスリレーションシップのポートフォリオを構築したいクライアントのために設計された仕組みです。",
+    "core": {
+      "name": "Elleva",
+      "sub": "Partners",
+      "program": "Client Portfolio Development Program"
+    },
+    "clientLabel": "クライアント",
+    "segments": {
+      "banking": "銀行",
+      "technology": "テクノロジー",
+      "insurance": "保険",
+      "retail": "小売",
+      "realEstate": "不動産",
+      "industry": "製造業",
+      "education": "教育",
+      "health": "ヘルスケア"
+    }
+  },
+  "journey": {
+    "eyebrow": "クライアントからパートナーへ",
+    "title": "クライアントとして始め、パートナーへと成長することができます。",
+    "titleAccent": "パートナーへと成長する",
+    "steps": [
+      { "number": "01", "title": "クライアント", "text": "Elleva を知り、エコシステムに参加します。" },
+      { "number": "02", "title": "体験", "text": "Elleva での体験を重ねます。" },
+      { "number": "03", "title": "Partner", "text": "事業拡大に参加する資格を得ます。" },
+      { "number": "04", "title": "ポートフォリオ", "text": "自らのポートフォリオの構築を始めます。" },
+      { "number": "05", "title": "成長", "text": "Elleva とのビジネスリレーションシップを拡大します。" }
+    ]
+  },
+  "connectedClient": {
+    "title": "Connected Client とは？",
+    "relationship": {
+      "title": "すべてのポートフォリオは、ひとつの関係から始まります。",
+      "textBefore": "Connected Client とは、Elleva Partner の営業活動を通じて紹介され、プログラムの規則に基づいてそのポートフォリオに紐づけられたクライアントを指します。クライアントにボーナスを付与する際、Elleva Partner は",
+      "textAccent": "最大5%のボーナス",
+      "textAfter": "を、プログラムの規則および条件に基づいて受け取ることができます。"
+    },
+    "contribution": {
+      "title": "新たな適格関係の一つひとつが、次の形成に寄与します：",
+      "card": "クライアントポートフォリオ"
+    },
+    "highlight": {
+      "badge": "ハイライト",
+      "title": "Partner はクライアントを開拓し、クライアントがポートフォリオを築きます。",
+      "text": "あなたのポートフォリオは、あなたが開拓したビジネスそのものです。クライアントポートフォリオは、Partner が生み出した適格なビジネスリレーションシップを集約したものです。"
+    },
+    "numbers": {
+      "eyebrow": "このポートフォリオの成長は、次のような指標で追跡されます：",
+      "title": "数字で見るあなたのポートフォリオ。",
+      "indicators": [
+        { "title": "Connected Clients", "text": "適格な Connected Clients。" },
+        { "title": "ポートフォリオボリューム", "text": "ポートフォリオに紐づく適格資本。" },
+        { "title": "分散", "text": "ポートフォリオの各セグメントにおけるボリュームの分布。" },
+        { "title": "リテンション", "text": "関係の継続性。" },
+        { "title": "コンプライアンス", "text": "営業活動の品質。" }
+      ]
+    }
+  },
+  "framework": {
+    "eyebrow": "Partner development",
+    "title": "Framework",
+    "lead": "あなたの成長は、ポートフォリオの成長に連動します。",
+    "text": "Elleva には、5段階の事業開発レベルがあります。",
+    "levels": [
+      { "code": "E1", "title": "Portfolio Associate", "text": "ポートフォリオ構築の第一段階。" },
+      { "code": "E2", "title": "Portfolio Partner", "text": "活発に成長を続けるポートフォリオ。" },
+      { "code": "E3", "title": "Senior Portfolio Partner", "text": "確立されたボリュームと、より高い一貫性。" },
+      { "code": "E4", "title": "Strategic Partner", "text": "重要な事業規模。" },
+      { "code": "E5", "title": "Executive Partner", "text": "プログラムにおける最高の開発レベル。" }
+    ],
+    "profitShare": {
+      "value": "3%",
+      "label": "Profit share",
+      "text": "ProfitShare の成果への参加。"
+    }
+  },
+  "grow": {
+    "eyebrow": "ポートフォリオ構築のレベル",
+    "title": "ポートフォリオを育てる。",
+    "title2": "レベルを高める。",
+    "textBefore": "ポートフォリオが大きく、一貫性が高いほど、Elleva Partners における",
+    "textAccent": "クライアントポートフォリオの拡大と市場構築のレベル",
+    "textAfter": "は高まります。"
+  },
+  "diversification": {
+    "eyebrow": "ポートフォリオの分散",
+    "title": "成長とは、分散することでもあります。",
+    "text": "資格認定上、ポートフォリオが健全とみなされるためには、そのボリュームが単一の出所に過度に依存していてはなりません。",
+    "rule": {
+      "value": "50%",
+      "title": "ポートフォリオの最大集中度",
+      "text": "いかなるポートフォリオセグメントも、資格認定に用いる適格ボリュームの50%を超えてはなりません。",
+      "exampleLabel": "例",
+      "exampleLine1": "適格ポートフォリオが US$ 100,000 の場合：",
+      "exampleLine2": "単一セグメントの寄与上限は US$ 50,000 です",
+      "exampleClosing": "残りの US$ 50,000 は、他の適格セグメントから構成される必要があります。",
+      "barSegment": "単一セグメント · 最大50%",
+      "barOthers": "その他の適格セグメント · 50%"
+    }
+  },
+  "acceleration": {
+    "eyebrow": "差別化要因",
+    "title": "Elleva Partners",
+    "lead": "クライアントの開拓は、別枠のコミッションを生むものではありません。",
+    "text": "Elleva Partners では、適格な営業活動が Partner 自身の契約に適用されるベネフィットを生み出すことができます。",
+    "mechanismLabel": "この仕組みを、次のように呼びます：",
+    "mechanism": "Contract Acceleration",
+    "steps": [
+      { "number": "01", "title": "営業活動", "text": "Partner が新たなクライアントを開拓し、適格な営業活動を生み出します。" },
+      { "number": "02", "title": "適用されるベネフィット", "text": "その活動の成果は、Partner 自身の契約内のベネフィットに変換されます。" },
+      { "number": "03", "title": "契約の加速", "text": "そのベネフィットが、Partner が Elleva とすでに結んでいる契約の進行を加速させます。" },
+      { "number": "04", "title": "さらなる成果", "text": "あなたが成長し、契約が前進し、可能性もまた広がります。" }
+    ],
+    "gauge": {
+      "badge": "サイクル",
+      "value": "400%",
+      "label": "の成長ポテンシャル"
+    },
+    "closingBefore": "第二の独立したコミッション残高を設けるのではなく、",
+    "closingAccent": "営業活動が、Partner が Elleva とすでに結んでいる契約の進行を加速させる",
+    "closingAfter": "ことができます。"
+  },
+  "nextSteps": {
+    "eyebrow": "さあ、次の",
+    "title": "ステップへ！",
+    "sub": "シンプル、迅速、そして安全。",
+    "steps": [
+      {
+        "number": "1",
+        "title": "ウォレットをダウンロードして接続する",
+        "titleAccent": "ウォレット",
+        "text": "Trust Wallet をダウンロードし、ウォレットを Elleva プラットフォームに接続します。"
+      },
+      {
+        "number": "2",
+        "title": "支払いを行う",
+        "titleAccent": "支払い",
+        "text": "Pix または USDT で、デジタル資産の代金をお支払いください。"
+      },
+      {
+        "number": "3",
+        "title": "パフォーマンスを確認する",
+        "titleAccent": "パフォーマンス",
+        "text": "プラットフォームにアクセスし、ProfitShare のパフォーマンスを確認します。"
+      }
+    ]
+  },
+  "closing": {
+    "line1": "あなたの境遇ではなく、",
+    "line2": "あなたの決断こそが、",
+    "line3": "運命を変えるのです。"
+  }
+}

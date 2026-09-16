@@ -8,10 +8,12 @@ import { motion, AnimatePresence } from "motion/react";
 import { animateVar } from "@/components/animate/variants";
 import { scrollToSection } from "../utils/scrollToSection";
 import { useRouteTranslation } from "@/hooks/use-route-translation";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import ThemeToggle from "@/components/ThemeToggle";
 import { useI18n } from "@/i18n/useI18n";
+import { localizePath } from "@/i18n/localizePath";
+import { PATH_PAGE, ROUTE_KEY } from "@/constants/routes/routes.constants";
 import NavDropdown from "./NavDropdown";
 import MobileNavAccordion from "./MobileNavAccordion";
 import { useTheme } from "@/context/theme";
@@ -21,32 +23,26 @@ const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
   const [active, setActive] = useState<string>("");
   const [scrolled, setScrolled] = useState<boolean>(false);
-  const { pathWithoutLng } = useRouteTranslation();
-  const navList = navLinks[pathWithoutLng] || navLinks["1"];
+  const { routeKey, appPath } = useRouteTranslation();
+  const navList = navLinks[routeKey] || navLinks[ROUTE_KEY.home];
   const location = useLocation();
-  const { theme, resolvedTheme, setTheme, toggleTheme } = useTheme();
+  const navigate = useNavigate();
+  const { resolvedTheme } = useTheme();
   const ellevaLogo =
     resolvedTheme === "dark" ? ellevaLogoCyanWhite : ellevaLogoCyanBlack;
-  const handleHREF = useCallback(
-    (href: string): string => {
-      let finalHref = href;
-      return finalHref;
-    },
-    [language],
-  );
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
       const scrollPosition = window.scrollY + 140;
 
-      // Flatten all link targets (direct and sub-items) to detect active section
+      // Flatten all link targets (direct and sub-items) to detect the active one
       const checkHref = (href?: string) => {
         if (!href) return;
         if (!href.startsWith("#")) {
-          if (location.pathname === href) {
-            setActive(href);
-          }
+          // A route link is active while the visitor is on that route.
+          const [path] = href.split("#");
+          if (path && path === appPath) setActive(href);
           return;
         }
 
@@ -81,7 +77,7 @@ const Navbar = () => {
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [navList, location.pathname]);
+  }, [navList, appPath, location.pathname]);
 
   // Close mobile drawer whenever route changes (pathname, search, hash)
   useEffect(() => {
@@ -100,13 +96,37 @@ const Navbar = () => {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [open]);
 
-  const handleSelectLink = (href: string) => {
-    setOpen(false);
-    const target = handleHREF(href);
-    setTimeout(() => {
-      scrollToSection(target);
-    }, 50);
-  };
+  /**
+   * A "#hash" scrolls within the page. A "/path" or "/path#hash" is a route:
+   * it is prefixed with the current language and handed to the router, and
+   * the layout scrolls to the hash once the page is in.
+   */
+  const handleSelectLink = useCallback(
+    (href: string) => {
+      setOpen(false);
+
+      if (href.startsWith("#")) {
+        setTimeout(() => scrollToSection(href), 50);
+        return;
+      }
+
+      if (href.startsWith("/")) {
+        const target = localizePath(href, language);
+        const current = `${location.pathname}${location.hash}`;
+        if (target === current) {
+          const hash = href.includes("#") ? `#${href.split("#")[1]}` : "";
+          if (hash) scrollToSection(hash);
+          else window.scrollTo({ top: 0, behavior: "smooth" });
+          return;
+        }
+        navigate(target);
+        return;
+      }
+
+      window.location.href = href;
+    },
+    [language, location.pathname, location.hash, navigate],
+  );
 
   return (
     <>
@@ -139,10 +159,12 @@ const Navbar = () => {
             {/* Official Logo */}
             <div className="flex items-center gap-4">
               <a
-                href="/#"
+                href={localizePath(PATH_PAGE.home, language)}
                 onClick={(e) => {
                   e.preventDefault();
-                  handleSelectLink("#hero");
+                  handleSelectLink(
+                    routeKey === ROUTE_KEY.home ? "#hero" : PATH_PAGE.home,
+                  );
                 }}
                 className="flex items-center gap-2 group cursor-pointer"
               >
@@ -166,19 +188,10 @@ const Navbar = () => {
               ))}
             </nav>
 
-            {/* Actions: Theme Switcher + Lang Switcher + Primary Platform Access */}
+            {/* Actions: Theme Switcher + Lang Switcher */}
             <div className="hidden lg:flex items-center gap-2.5">
               <ThemeToggle />
               <LanguageSwitcher onCloseDrawer={setOpen} />
-              {/* <a
-                href="https://app.elleva.me/root"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group px-4 py-2 text-xs font-medium tracking-wider uppercase text-white bg-primary hover:brightness-110 rounded-lg transition-all duration-300 shadow-sm shadow-primary/20 flex items-center gap-1.5"
-              >
-                <span>{t("common.actions.getStarted")}</span>
-                <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </a> */}
             </div>
 
             {/* Mobile Menu Actions */}
@@ -217,15 +230,6 @@ const Navbar = () => {
                 <div className="pt-4 mt-2 border-t border-border flex flex-col gap-3">
                   <ThemeToggle variant="mobile" onCloseDrawer={setOpen} />
                   <LanguageSwitcher onCloseDrawer={setOpen} variant="mobile" />
-                  {/*<a
-                    href="https://app.elleva.me/root"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full py-3 text-center rounded-lg text-xs font-semibold tracking-wider uppercase text-white bg-primary hover:brightness-110 transition-all flex items-center justify-center gap-1.5 shadow-md shadow-primary/20"
-                  >
-                    <span>{t("common.actions.getStarted")}</span>
-                    <ArrowUpRight className="w-3.5 h-3.5" />
-                  </a>*/}
                 </div>
               </div>
             </motion.div>

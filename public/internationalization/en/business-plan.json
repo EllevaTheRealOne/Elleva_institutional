@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "title": "Business Plan | Elleva",
+    "description": "The Elleva business plan: autonomous AI infrastructure for the financial market, the client back office, the Elleva Partners program, the E1–E5 partner framework and contract acceleration."
+  },
+  "hero": {
+    "eyebrow": "Business Plan · Version 1.0",
+    "title": "Elleva",
+    "scrollCue": "Scroll to explore"
+  },
+  "whatIs": {
+    "eyebrow": "What is Elleva?",
+    "title": "We are an infrastructure startup of autonomous AI agents for the financial market.",
+    "titleAccent": "of autonomous AI agents",
+    "p1": "A new technological layer between capital and financial institutions.",
+    "p2": "It is financial technology that brings intelligence and scale to capital management.",
+    "p3Accent": "Just as the cloud became infrastructure for companies,",
+    "p3": "Elleva was created to be infrastructure for capital.",
+    "core": {
+      "name": "Elleva",
+      "sub": "Autonomous operational layer"
+    },
+    "nodes": {
+      "marketData": { "title": "Market Data", "sub": "Global feeds and providers" },
+      "custody": { "title": "Custody", "sub": "Assets and secure settlement" },
+      "banks": { "title": "Banks", "sub": "Liquidity, credit and financial services" },
+      "compliance": { "title": "Compliance", "sub": "Risk, rules and governance" },
+      "brokers": { "title": "Brokers", "sub": "Execution and market access" },
+      "portfolios": { "title": "Portfolios", "sub": "Mandates, positions and performance" }
+    },
+    "loop": ["Research", "Decide", "Execute", "Monitor"]
+  },
+  "problem": {
+    "eyebrow": "The problem",
+    "title": "The market changes all the time.",
+    "cards": [
+      {
+        "index": "/01",
+        "title": "The market moves all the time",
+        "text": "Prices change, news breaks and opportunities appear."
+      },
+      {
+        "index": "/02",
+        "title": "Timing makes the difference",
+        "text": "An opportunity available now can disappear quickly."
+      },
+      {
+        "index": "/03",
+        "title": "Deciding demands clarity",
+        "text": "Information without analysis can create doubt and poor decisions."
+      }
+    ]
+  },
+  "market": {
+    "eyebrow": "Market progression",
+    "title": "More capital demands more technology",
+    "titleAccent": "more technology",
+    "lead": "The autonomous layer between capital and the global financial system.",
+    "text": "Elleva is not a broker, nor a fund, nor a signals platform. It is the AI infrastructure that connects data, mandates, compliance and execution on top of financial institutions that already exist.",
+    "chart": {
+      "title": "Structural growth of global AUM",
+      "subtitle": "In trillions of US dollars (US$)",
+      "calloutValue": "US$ 200 T",
+      "calloutLabel": "projected for 2030",
+      "series": "Global AUM",
+      "unit": "T"
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "How the technology works",
+    "title": "Elleva does the work in four simple steps",
+    "titleAccent": "in four simple steps",
+    "steps": [
+      { "number": "01", "title": "Research", "sub": "market, balance sheets, news, signals" },
+      { "number": "02", "title": "Decide", "sub": "theses, scenarios, risk, allocation" },
+      { "number": "03", "title": "Execute", "sub": "orders, rebalancing, flow" },
+      { "number": "04", "title": "Monitor", "sub": "performance, alerts, compliance" }
+    ],
+    "footerAccent": "While the market moves",
+    "footer": "the technology keeps observing, analyzing and following."
+  },
+  "brokers": {
+    "eyebrow": "Where the operations happen",
+    "title": "Recognized brokers provide the structure for market execution.",
+    "infinox": {
+      "name": "Infinox",
+      "tagline": "A brand present in world sport",
+      "line1": "Formula 1 · BWT Alpine",
+      "line1Sub": "Official CFD partner of the team in 2024",
+      "line2": "Tottenham Hotspur",
+      "line2Sub": "Global partnership announced in 2026"
+    },
+    "roboforex": {
+      "name": "RoboForex",
+      "tagline": "Reach and recognition",
+      "line1": "12,000+ instruments",
+      "line1Sub": "More than 40 international awards",
+      "line2": "Club Cienciano · Peru",
+      "line2Sub": "Official sponsor in the 2022/23 season"
+    }
+  },
+  "backOffice": {
+    "eyebrow": "Client back office",
+    "title": "The client follows the evolution of the result.",
+    "titleAccent": "evolution of the result.",
+    "lead": "And sees money working in their favor.",
+    "text": "A principle popularized by Robert Kiyosaki: build assets to make money work for you.",
+    "imageAlt": "Elleva client back office on a phone: available distributions, distribution cap, next distribution and this month's distributions."
+  },
+  "purpose": {
+    "eyebrow": "Our purpose",
+    "title": "The financial market should not be for the few",
+    "left": {
+      "pill": "Those who have already built wealth",
+      "title": "Large entrepreneurs",
+      "sub": "and experienced investors"
+    },
+    "center": {
+      "name": "Elleva",
+      "sub": "One entry door"
+    },
+    "right": {
+      "pill": "Those who are starting now",
+      "title": "Professionals and families",
+      "sub": "seeking new possibilities"
+    },
+    "closingLead": "Different starting points. The same entry door.",
+    "closing": "Elleva. Technology to democratize access to the financial market."
+  },
+  "partners": {
+    "eyebrow": "Elleva Partners",
+    "title": "Some relationships can go beyond the client condition.",
+    "titleAccent": "go beyond the client condition.",
+    "text": "Eligible clients who know the Elleva experience will also be able to take part in the company's commercial expansion.",
+    "born": "It is born like this:",
+    "brand": "Elleva",
+    "brandAccent": "Partners",
+    "program": "Client Portfolio Development Program",
+    "text2": "A structure created for clients who wish to develop their own portfolio of commercial relationships.",
+    "core": {
+      "name": "Elleva",
+      "sub": "Partners",
+      "program": "Client Portfolio Development Program"
+    },
+    "clientLabel": "Client",
+    "segments": {
+      "banking": "Banking",
+      "technology": "Technology",
+      "insurance": "Insurance",
+      "retail": "Retail",
+      "realEstate": "Real estate",
+      "industry": "Industry",
+      "education": "Education",
+      "health": "Health"
+    }
+  },
+  "journey": {
+    "eyebrow": "From client to partner",
+    "title": "You can start as a client and evolve into a partner.",
+    "titleAccent": "and evolve into a partner.",
+    "steps": [
+      { "number": "01", "title": "Client", "text": "Gets to know Elleva and takes part in the ecosystem." },
+      { "number": "02", "title": "Experience", "text": "Lives the company's experience." },
+      { "number": "03", "title": "Partner", "text": "Becomes eligible to take part in its expansion." },
+      { "number": "04", "title": "Portfolio", "text": "Starts to develop their portfolio." },
+      { "number": "05", "title": "Growth", "text": "Expands their commercial relationship with Elleva." }
+    ]
+  },
+  "connectedClient": {
+    "title": "What is a Connected Client?",
+    "relationship": {
+      "title": "Every portfolio starts with a relationship.",
+      "textBefore": "A Connected Client is a client introduced through the commercial activity of an Elleva Partner and associated with their portfolio under the program's rules. When bonusing a client, the Elleva Partner may receive a ",
+      "textAccent": "bonus of up to 5%",
+      "textAfter": ", under the program's rules and conditions."
+    },
+    "contribution": {
+      "title": "Every new eligible relationship contributes to the formation of the:",
+      "card": "Client Portfolio"
+    },
+    "highlight": {
+      "badge": "Highlight",
+      "title": "The Partner develops clients. The clients build their portfolio.",
+      "text": "Your portfolio represents the business you developed. The Client Portfolio gathers the eligible commercial relationships originated by the Partner."
+    },
+    "numbers": {
+      "eyebrow": "The growth of this portfolio is tracked through indicators such as:",
+      "title": "Your portfolio in numbers.",
+      "indicators": [
+        { "title": "Connected Clients", "text": "Eligible connected clients." },
+        { "title": "Portfolio Volume", "text": "Eligible capital associated with the portfolio." },
+        { "title": "Diversification", "text": "Distribution of volume across different portfolio segments." },
+        { "title": "Retention", "text": "Continuity of the relationships." },
+        { "title": "Compliance", "text": "Quality of the commercial activity." }
+      ]
+    }
+  },
+  "framework": {
+    "eyebrow": "Partner development",
+    "title": "Framework",
+    "lead": "Your evolution follows the evolution of your portfolio.",
+    "text": "Elleva has five levels of commercial development.",
+    "levels": [
+      { "code": "E1", "title": "Portfolio Associate", "text": "First phase of portfolio building." },
+      { "code": "E2", "title": "Portfolio Partner", "text": "Active and growing portfolio." },
+      { "code": "E3", "title": "Senior Portfolio Partner", "text": "Consolidated volume and greater consistency." },
+      { "code": "E4", "title": "Strategic Partner", "text": "Relevant commercial scale." },
+      { "code": "E5", "title": "Executive Partner", "text": "Maximum level of development in the program." }
+    ],
+    "profitShare": {
+      "value": "3%",
+      "label": "Profit share",
+      "text": "Participation in the ProfitShare results."
+    }
+  },
+  "grow": {
+    "eyebrow": "The portfolio building levels",
+    "title": "Grow your portfolio.",
+    "title2": "Advance your level.",
+    "textBefore": "The bigger and more consistent your portfolio, the higher your level ",
+    "textAccent": "of expansion of your client portfolio and of market building",
+    "textAfter": " within Elleva Partners."
+  },
+  "diversification": {
+    "eyebrow": "Portfolio diversification",
+    "title": "Growing also means distributing.",
+    "text": "For a portfolio to be considered healthy for qualification purposes, its volume must not depend excessively on a single origin.",
+    "rule": {
+      "value": "50%",
+      "title": "Maximum portfolio concentration",
+      "text": "No Portfolio Segment may represent more than 50% of the eligible volume used for qualification.",
+      "exampleLabel": "Example",
+      "exampleLine1": "For an eligible portfolio of: US$ 100,000",
+      "exampleLine2": "a single segment may contribute at most: US$ 50,000",
+      "exampleClosing": "The remaining US$ 50,000 must come from other eligible segments.",
+      "barSegment": "Single segment · up to 50%",
+      "barOthers": "Other eligible segments · 50%"
+    }
+  },
+  "acceleration": {
+    "eyebrow": "The differential of",
+    "title": "Elleva Partners",
+    "lead": "Developing clients does not create a parallel commission.",
+    "text": "In Elleva Partners, eligible commercial activity can generate a benefit applied to the Partner's own contract.",
+    "mechanismLabel": "This mechanism is called:",
+    "mechanism": "Contract Acceleration",
+    "steps": [
+      { "number": "01", "title": "Commercial activity", "text": "The Partner develops new clients and generates eligible commercial activity." },
+      { "number": "02", "title": "Applied benefit", "text": "The result of that activity is converted into a benefit within the Partner's own contract." },
+      { "number": "03", "title": "Contract acceleration", "text": "That benefit accelerates the progression of the contract the Partner already holds with Elleva." },
+      { "number": "04", "title": "More results", "text": "You grow, your contract advances and your potential grows too." }
+    ],
+    "gauge": {
+      "badge": "Cycle",
+      "value": "400%",
+      "label": "of evolution potential"
+    },
+    "closingBefore": "Instead of creating a second, separate commission balance, ",
+    "closingAccent": "commercial activity can accelerate the progression of the contract",
+    "closingAfter": " the Partner already holds with Elleva."
+  },
+  "nextSteps": {
+    "eyebrow": "Your next",
+    "title": "Steps!",
+    "sub": "Simple, fast and secure.",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Download and connect your wallet",
+        "titleAccent": "wallet",
+        "text": "Download Trust Wallet and connect your wallet to the Elleva platform."
+      },
+      {
+        "number": "2",
+        "title": "Make the payment",
+        "titleAccent": "payment",
+        "text": "Pay for your Digital Asset via Pix or USDT."
+      },
+      {
+        "number": "3",
+        "title": "Follow your performance",
+        "titleAccent": "performance",
+        "text": "Access the platform and follow the performance of your ProfitShare."
+      }
+    ]
+  },
+  "closing": {
+    "line1": "It is not your conditions,",
+    "line2": "but your decisions",
+    "line3": "that change your destiny"
+  }
+}

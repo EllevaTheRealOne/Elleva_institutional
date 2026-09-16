@@ -94,6 +94,24 @@
         "operationalAdvantage": "Lợi thế Vận hành",
         "faq": "Câu hỏi Thường gặp"
       }
+    },
+    "businessPlan": {
+      "label": "Kế hoạch Kinh doanh",
+      "items": {
+        "overview": "Elleva là gì",
+        "problem": "Vấn đề",
+        "market": "Tiến trình Thị trường",
+        "howItWorks": "Cách thức Vận hành",
+        "brokers": "Nhà môi giới",
+        "backOffice": "Back office Khách hàng",
+        "purpose": "Sứ mệnh của Chúng tôi",
+        "partners": "Elleva Partners",
+        "connectedClient": "Connected Client",
+        "framework": "Khung Phát triển Partner",
+        "diversification": "Đa dạng hóa",
+        "contractAcceleration": "Contract Acceleration",
+        "nextSteps": "Các bước Tiếp theo"
+      }
     }
   },
   "menuToggle": "Chuyển đổi Menu Điều hướng"

@@ -94,6 +94,24 @@
         "operationalAdvantage": "운영 우위",
         "faq": "FAQ"
       }
+    },
+    "businessPlan": {
+      "label": "사업 계획",
+      "items": {
+        "overview": "Elleva란",
+        "problem": "문제",
+        "market": "시장의 진화",
+        "howItWorks": "작동 방식",
+        "brokers": "브로커",
+        "backOffice": "고객 백오피스",
+        "purpose": "우리의 목적",
+        "partners": "Elleva Partners",
+        "connectedClient": "Connected Client",
+        "framework": "Partner Framework",
+        "diversification": "다각화",
+        "contractAcceleration": "Contract Acceleration",
+        "nextSteps": "다음 단계"
+      }
     }
   },
   "menuToggle": "네비게이션 메뉴 전환"

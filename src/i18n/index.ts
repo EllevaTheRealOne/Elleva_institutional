@@ -28,7 +28,7 @@ export const i18nReady = i18n.isInitialized
         supportedLngs: allLangs.map((lang) => lang.value),
         fallbackLng: defaultLang.value,
         defaultNS,
-        ns: ["common", "nav", "home", "notfound"],
+        ns: ["common", "nav", "home", "notfound", "business-plan"],
         interpolation: {
           escapeValue: false,
         },
