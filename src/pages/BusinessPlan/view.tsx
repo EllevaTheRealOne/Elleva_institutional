@@ -20,6 +20,7 @@ import { Diversification } from "./sections/Diversification";
 import { ContractAcceleration } from "./sections/ContractAcceleration";
 import { NextSteps } from "./sections/NextSteps";
 import { Closing } from "./sections/Closing";
+import { BackToTop } from "./components/BackToTop";
 
 /**
  * The Business Plan, one section per slide of the "ELLEVA versão 1.0" deck,
@@ -53,6 +54,7 @@ export const BusinessPlanView: React.FC = () => {
       <ContractAcceleration />
       <NextSteps />
       <Closing />
+      <BackToTop />
     </div>
   );
 };

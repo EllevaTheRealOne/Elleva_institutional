@@ -365,3 +365,41 @@
     transition: none !important;
   }
 }
+
+/* ---------- Back to top ---------- */
+
+/* Phones: a small translucent disc tucked in the corner, above the
+   home-indicator area, that only comes to full strength when pressed. */
+.bp-back-to-top {
+  right: 0.9rem;
+  bottom: calc(0.9rem + env(safe-area-inset-bottom, 0px));
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  opacity: 0.55;
+  color: var(--bp-cyan);
+  background: rgba(5, 5, 5, 0.7);
+  border-color: rgba(26, 230, 214, 0.4);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.7);
+}
+
+.bp-back-to-top:active {
+  opacity: 1;
+}
+
+/* Wider screens: a labelled pill. */
+@media (min-width: 640px) {
+  .bp-back-to-top {
+    right: 1.5rem;
+    bottom: 1.5rem;
+    width: auto;
+    height: auto;
+    padding: 0.6rem 1.1rem 0.6rem 0.9rem;
+    opacity: 0.85;
+    color: var(--bp-black);
+    background: var(--bp-cyan);
+    border-color: transparent;
+    box-shadow: 0 12px 30px -12px rgba(26, 230, 214, 0.8);
+  }
+}
