@@ -1,16 +1,19 @@
-import { allLangs } from "@/i18n/langs";
 import { useLocation } from "react-router-dom";
+import { stripLanguagePrefix } from "@/i18n/localizePath";
+import { ROUTE_KEY, type RouteKey } from "@/constants/routes/routes.constants";
 
+/**
+ * Identifies the current route independently of its language prefix, so that
+ * navigation and content can be configured per route ("home", "business-plan")
+ * rather than per URL.
+ */
 export const useRouteTranslation = () => {
   const { pathname } = useLocation();
 
-  const segments = pathname.split("/").filter(Boolean);
+  const appPath = stripLanguagePrefix(pathname);
+  const firstSegment = appPath.split("/").filter(Boolean)[0];
 
-  const isLang = allLangs.some((l) => l.value.toLowerCase() === segments[0]);
+  const routeKey: RouteKey | string = firstSegment ?? ROUTE_KEY.home;
 
-  const pathSegments = isLang ? segments.slice(1) : segments;
-
-  const pathWithoutLng = pathSegments.length === 0 ? 1 : 2;
-
-  return { pathWithoutLng };
+  return { appPath, routeKey };
 };
