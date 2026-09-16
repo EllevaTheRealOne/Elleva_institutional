@@ -269,7 +269,7 @@ export const navLinks: NavLinksMap = {
     { ...businessPlanLabel, href: PATH_PAGE.businessPlan },
   ],
   [ROUTE_KEY.businessPlan]: [
-    { ...businessPlanLabel, items: businessPlanSections },
     ...onRoute(PATH_PAGE.home, homeCategories),
+    { ...businessPlanLabel, items: businessPlanSections },
   ],
 };
