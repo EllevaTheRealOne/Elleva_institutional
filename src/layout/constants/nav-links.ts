@@ -58,17 +58,17 @@ const homeCategories: NavLinkItem[] = [
       },
       {
         label: "Portfolio Intelligence",
-        href: "#portfolio-overview",
+        href: "#infrastructure-portfolios",
         key: "categories.markets.items.portfolioIntelligence",
       },
       {
         label: "Liquidity",
-        href: "#liquidity",
+        href: "#infrastructure-liquidity",
         key: "categories.markets.items.liquidity",
       },
       {
         label: "Market Data",
-        href: "#market-data",
+        href: "#infrastructure-market-data",
         key: "categories.markets.items.marketData",
       },
     ],
@@ -89,17 +89,17 @@ const homeCategories: NavLinkItem[] = [
       },
       {
         label: "Web3 Infrastructure",
-        href: "#web3",
+        href: "#institutional-connectivity",
         key: "categories.technology.items.web3Infrastructure",
       },
       {
         label: "Security & Governance",
-        href: "#security",
+        href: "#strategic-pillars",
         key: "categories.technology.items.securityGovernance",
       },
       {
         label: "Transparency",
-        href: "#transparency",
+        href: "#trust",
         key: "categories.technology.items.transparency",
       },
     ],
@@ -110,32 +110,32 @@ const homeCategories: NavLinkItem[] = [
     items: [
       {
         label: "Architecture",
-        href: "#architecture",
+        href: "#ecosystem",
         key: "categories.ecosystem.items.ecosystemOverview",
       },
       {
         label: "Banks",
-        href: "#banks",
+        href: "#infrastructure-banks",
         key: "categories.ecosystem.items.banks",
       },
       {
         label: "Brokers & Execution",
-        href: "#brokers",
+        href: "#infrastructure-brokers",
         key: "categories.ecosystem.items.brokersExecution",
       },
       {
         label: "Custody",
-        href: "#custody",
+        href: "#ecosystem-custody",
         key: "categories.ecosystem.items.custody",
       },
       {
         label: "Compliance",
-        href: "#compliance",
+        href: "#infrastructure-compliance",
         key: "categories.ecosystem.items.compliance",
       },
       {
         label: "Family Offices & Wealth Managers",
-        href: "#wealth",
+        href: "#ecosystem-wealth-managers",
         key: "categories.ecosystem.items.familyOfficesWealth",
       },
     ],
@@ -146,7 +146,7 @@ const homeCategories: NavLinkItem[] = [
     items: [
       {
         label: "Our Vision",
-        href: "#vision",
+        href: "#new-category",
         key: "categories.company.items.ourVision",
       },
       {
@@ -166,7 +166,7 @@ const homeCategories: NavLinkItem[] = [
       },
       {
         label: "Defensibility",
-        href: "#advantage",
+        href: "#defensibility",
         key: "categories.company.items.competitiveAdvantage",
       },
       {
