@@ -50,7 +50,10 @@ const Navbar = () => {
         const section = document.getElementById(id);
         if (!section) return;
 
-        const offsetTop = section.offsetTop;
+        // Measured from the document, not from the offset parent: the home
+        // sections sit inside positioned backdrop wrappers, so their
+        // offsetTop is 0 and every section would claim the scroll position.
+        const offsetTop = section.getBoundingClientRect().top + window.scrollY;
         const height = section.offsetHeight;
 
         if (
