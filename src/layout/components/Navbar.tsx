@@ -3,7 +3,8 @@ import ellevaLogoCyanBlack from "@/assets/brand/brand_cyan_black.svg";
 import { cn } from "@/lib/utils";
 import { useEffect, useState, useCallback } from "react";
 import { navLinks } from "../constants/nav-links";
-import { Menu, X } from "lucide-react";
+import { LogIn, Menu, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "motion/react";
 import { animateVar } from "@/components/animate/variants";
 import { scrollToSection } from "../utils/scrollToSection";
@@ -18,8 +19,12 @@ import NavDropdown from "./NavDropdown";
 import MobileNavAccordion from "./MobileNavAccordion";
 import { useTheme } from "@/context/theme";
 
+/** The member back office. Signed-in visitors land on their dashboard. */
+const OFFICE_SIGN_IN_URL = "https://my.elleva.me/signin";
+
 const Navbar = () => {
   const { language } = useI18n();
+  const { t } = useTranslation("nav");
   const [open, setOpen] = useState<boolean>(false);
   const [active, setActive] = useState<string>("");
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -158,7 +163,7 @@ const Navbar = () => {
             open && "rounded-b-none border-b-0",
           )}
         >
-          <div className="flex h-16 md:h-18 items-center justify-between px-5 md:px-8">
+          <div className="flex h-16 md:h-18 items-center justify-between px-5 md:px-8 lg:px-5 xl:px-8">
             {/* Official Logo */}
             <div className="flex items-center gap-4">
               <a
@@ -195,10 +200,25 @@ const Navbar = () => {
             <div className="hidden lg:flex items-center gap-2.5">
               <ThemeToggle />
               <LanguageSwitcher onCloseDrawer={setOpen} />
+              <a
+                href={OFFICE_SIGN_IN_URL}
+                title={t("signIn")}
+                className="ml-1 inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-xl bg-primary p-2.5 xl:px-4 xl:py-2 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:opacity-90 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              >
+                <LogIn size={16} aria-hidden="true" />
+                <span className="sr-only xl:not-sr-only">{t("signIn")}</span>
+              </a>
             </div>
 
             {/* Mobile Menu Actions */}
             <div className="flex items-center gap-2 lg:hidden">
+              <a
+                href={OFFICE_SIGN_IN_URL}
+                className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+              >
+                <LogIn size={16} aria-hidden="true" />
+                <span className="max-[359px]:sr-only">{t("signIn")}</span>
+              </a>
               <button
                 className="p-2 text-foreground hover:text-primary transition-colors rounded-lg bg-secondary border border-border cursor-pointer"
                 onClick={() => setOpen(!open)}
