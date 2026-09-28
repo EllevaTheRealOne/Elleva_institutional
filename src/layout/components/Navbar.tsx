@@ -198,7 +198,7 @@ const Navbar = () => {
 
             {/* Actions: Theme Switcher + Lang Switcher */}
             <div className="hidden lg:flex items-center gap-2.5">
-              <ThemeToggle />
+              {/* <ThemeToggle /> */}
               <LanguageSwitcher onCloseDrawer={setOpen} />
               <a
                 href={OFFICE_SIGN_IN_URL}
@@ -251,7 +251,7 @@ const Navbar = () => {
                 ))}
 
                 <div className="pt-4 mt-2 border-t border-border flex flex-col gap-3">
-                  <ThemeToggle variant="mobile" onCloseDrawer={setOpen} />
+                  {/* <ThemeToggle variant="mobile" onCloseDrawer={setOpen} /> */}
                   <LanguageSwitcher onCloseDrawer={setOpen} variant="mobile" />
                 </div>
               </div>
