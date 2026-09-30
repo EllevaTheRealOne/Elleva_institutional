@@ -430,6 +430,19 @@
     "aria": {
       "map": "Elleva の国別会員数を示す世界地図",
       "country_other": "{{name}}：会員 {{members}} 名、全体の {{share}}"
+    },
+    "presence": {
+      "description": "Elleva の会員が現在いる国です。この地図上のすべての国に登録済みアカウントがあります。",
+      "legend": {
+        "present": "Elleva 会員あり",
+        "none": "まだ会員なし"
+      },
+      "list": {
+        "title": "会員がいる国"
+      },
+      "aria": {
+        "map": "Elleva の会員がいる国を示す世界地図"
+      }
     }
   },
   "hero": {

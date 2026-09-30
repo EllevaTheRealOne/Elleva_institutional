@@ -433,6 +433,19 @@
       "map": "World map of Elleva members by country",
       "country_one": "{{name}}: {{members}} member, {{share}} of the total",
       "country_other": "{{name}}: {{members}} members, {{share}} of the total"
+    },
+    "presence": {
+      "description": "Where Elleva members are today — every country on this map has registered accounts.",
+      "legend": {
+        "present": "Elleva members present",
+        "none": "No members yet"
+      },
+      "list": {
+        "title": "Countries with members"
+      },
+      "aria": {
+        "map": "World map of the countries where Elleva has members"
+      }
     }
   },
   "hero": {

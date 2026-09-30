@@ -430,6 +430,19 @@
     "aria": {
       "map": "Bản đồ thế giới về thành viên Elleva theo quốc gia",
       "country_other": "{{name}}: {{members}} thành viên, chiếm {{share}} tổng số"
+    },
+    "presence": {
+      "description": "Nơi các thành viên Elleva đang có mặt hôm nay — mỗi quốc gia trên bản đồ này đều có tài khoản đã đăng ký.",
+      "legend": {
+        "present": "Có thành viên Elleva",
+        "none": "Chưa có thành viên"
+      },
+      "list": {
+        "title": "Quốc gia có thành viên"
+      },
+      "aria": {
+        "map": "Bản đồ thế giới về các quốc gia có thành viên Elleva"
+      }
     }
   },
   "hero": {

@@ -76,4 +76,34 @@ describe("home.json › globalPresence", () => {
       }
     }
   });
+
+  describe("presence mode (no quantities)", () => {
+    // Every key the presence view reads, plus the shared ones it reuses.
+    const PRESENCE_KEYS = [
+      "presence.description",
+      "presence.legend.present",
+      "presence.legend.none",
+      "presence.list.title",
+      "presence.aria.map",
+      "kpi.countries",
+      "footer.updated",
+    ];
+
+    it("has every key the presence view reads, in every locale", () => {
+      for (const l of locales) {
+        const keys = new Set(leaves(blocks[l]).map((k) => k.replace(PLURAL, "")));
+        for (const key of PRESENCE_KEYS) expect(keys.has(key), `${l}: ${key}`).toBe(true);
+      }
+    });
+
+    it("never interpolates or states a quantity", () => {
+      for (const l of locales) {
+        const presence = blocks[l].presence as Tree;
+        for (const key of leaves(presence)) {
+          const value = key.split(".").reduce<string | Tree>((node, part) => (node as Tree)[part], presence) as string;
+          expect(value, `${l}: presence.${key}`).not.toMatch(/\{\{|\d/);
+        }
+      }
+    });
+  });
 });

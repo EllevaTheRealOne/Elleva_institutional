@@ -430,6 +430,19 @@
     "aria": {
       "map": "국가별 Elleva 회원 분포 세계 지도",
       "country_other": "{{name}}: 회원 {{members}}명, 전체의 {{share}}"
+    },
+    "presence": {
+      "description": "현재 Elleva 회원이 있는 국가입니다. 이 지도의 모든 국가에 등록된 계정이 있습니다.",
+      "legend": {
+        "present": "Elleva 회원 있음",
+        "none": "아직 회원 없음"
+      },
+      "list": {
+        "title": "회원이 있는 국가"
+      },
+      "aria": {
+        "map": "Elleva 회원이 있는 국가를 보여 주는 세계 지도"
+      }
     }
   },
   "hero": {

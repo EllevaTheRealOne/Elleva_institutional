@@ -436,6 +436,19 @@
       "country_one": "{{name}}: {{members}} membro, {{share}} do total",
       "country_many": "{{name}}: {{members}} de membros, {{share}} do total",
       "country_other": "{{name}}: {{members}} membros, {{share}} do total"
+    },
+    "presence": {
+      "description": "Onde estão hoje os membros da Elleva — cada país deste mapa tem contas cadastradas.",
+      "legend": {
+        "present": "Com membros da Elleva",
+        "none": "Ainda sem membros"
+      },
+      "list": {
+        "title": "Países com membros"
+      },
+      "aria": {
+        "map": "Mapa-múndi dos países onde a Elleva tem membros"
+      }
     }
   },
   "hero": {

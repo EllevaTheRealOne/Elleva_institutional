@@ -430,6 +430,19 @@
     "aria": {
       "map": "Elleva 各国会员分布世界地图",
       "country_other": "{{name}}：{{members}} 名会员，占总数的 {{share}}"
+    },
+    "presence": {
+      "description": "Elleva 会员目前所在的国家——地图上的每个国家都有已注册账户。",
+      "legend": {
+        "present": "有 Elleva 会员",
+        "none": "暂无会员"
+      },
+      "list": {
+        "title": "有会员的国家"
+      },
+      "aria": {
+        "map": "Elleva 会员所在国家的世界地图"
+      }
     }
   },
   "hero": {
