@@ -18,6 +18,7 @@ import { Technology } from "./sections/Technology";
 import { ModernFinancialInfrastructure } from "./sections/ModernFinancialInfrastructure";
 import { OperationalAdvantage } from "./sections/OperationalAdvantage";
 import { Trust } from "./sections/Trust";
+import { GlobalPresence } from "./sections/GlobalPresence";
 import { Ecosystem } from "./sections/Ecosystem";
 import { FAQ } from "./sections/FAQ";
 import { FinalCTA } from "./sections/FinalCTA";
@@ -128,19 +129,24 @@ export const HomeView: React.FC = () => {
         <Trust isDark={getSectionDark(18)} />
       </SectionBackdrop>
 
-      {/* 19 Ecosystem */}
+      {/* 19 Global Presence */}
       <SectionBackdrop index={19}>
-        <Ecosystem isDark={getSectionDark(19)} />
+        <GlobalPresence isDark={getSectionDark(19)} />
       </SectionBackdrop>
 
-      {/* 20 FAQ */}
+      {/* 20 Ecosystem */}
       <SectionBackdrop index={20}>
-        <FAQ isDark={getSectionDark(20)} />
+        <Ecosystem isDark={getSectionDark(20)} />
       </SectionBackdrop>
 
-      {/* 21 Final CTA */}
+      {/* 21 FAQ */}
       <SectionBackdrop index={21}>
-        <FinalCTA isDark={getSectionDark(21)} />
+        <FAQ isDark={getSectionDark(21)} />
+      </SectionBackdrop>
+
+      {/* 22 Final CTA */}
+      <SectionBackdrop index={22}>
+        <FinalCTA isDark={getSectionDark(22)} />
       </SectionBackdrop>
     </>
   );
