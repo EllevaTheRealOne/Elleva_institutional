@@ -109,6 +109,11 @@ const homeCategories: NavLinkItem[] = [
     key: "categories.ecosystem.label",
     items: [
       {
+        label: "Global Presence",
+        href: "#global-presence",
+        key: "categories.ecosystem.items.globalPresence",
+      },
+      {
         label: "Architecture",
         href: "#ecosystem",
         key: "categories.ecosystem.items.ecosystemOverview",
