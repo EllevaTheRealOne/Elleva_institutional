@@ -76,6 +76,7 @@
     "ecosystem": {
       "label": "Ecosystem",
       "items": {
+        "globalPresence": "Global Presence",
         "ecosystemOverview": "Ecosystem Overview",
         "banks": "Banks",
         "brokersExecution": "Brokers & Execution",

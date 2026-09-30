@@ -76,6 +76,7 @@
     "ecosystem": {
       "label": "生态系统",
       "items": {
+        "globalPresence": "全球布局",
         "ecosystemOverview": "生态系统概览",
         "banks": "银行",
         "brokersExecution": "经纪商与执行",

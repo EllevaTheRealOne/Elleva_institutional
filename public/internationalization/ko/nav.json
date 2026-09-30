@@ -76,6 +76,7 @@
     "ecosystem": {
       "label": "에코시스템",
       "items": {
+        "globalPresence": "글로벌 입지",
         "ecosystemOverview": "에코시스템 개요",
         "banks": "은행",
         "brokersExecution": "브로커 및 실행",
