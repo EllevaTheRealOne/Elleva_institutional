@@ -401,6 +401,56 @@
       "switchHub": "ALTERNAR NÓ"
     }
   },
+  "globalPresence": {
+    "title": "Presença Global",
+    "description": "Membros da Elleva por país, contabilizados a partir de contas cadastradas — cada número deste mapa vem de dados em tempo real, não de projeções.",
+    "kpi": {
+      "members": "Membros",
+      "countries": "Países",
+      "topCountry": "Maior participação"
+    },
+    "tooltip": {
+      "members": "Membros",
+      "share": "Participação no total"
+    },
+    "list": {
+      "title": "Membros por país",
+      "more_one": "e mais {{count}} país",
+      "more_many": "e mais {{count}} de países",
+      "more_other": "e mais {{count}} países",
+      "less": "Mostrar menos"
+    },
+    "legend": {
+      "title": "Membros por país"
+    },
+    "footer": {
+      "updated_one": "{{countries}} país · atualizado em {{date}}",
+      "updated_many": "{{countries}} de países · atualizado em {{date}}",
+      "updated_other": "{{countries}} países · atualizado em {{date}}"
+    },
+    "state": {
+      "loading": "Carregando os números de membros"
+    },
+    "aria": {
+      "map": "Mapa-múndi dos membros da Elleva por país",
+      "country_one": "{{name}}: {{members}} membro, {{share}} do total",
+      "country_many": "{{name}}: {{members}} de membros, {{share}} do total",
+      "country_other": "{{name}}: {{members}} membros, {{share}} do total"
+    },
+    "presence": {
+      "description": "Onde estão hoje os membros da Elleva — cada país deste mapa tem contas cadastradas.",
+      "legend": {
+        "present": "Com membros da Elleva",
+        "none": "Ainda sem membros"
+      },
+      "list": {
+        "title": "Países com membros"
+      },
+      "aria": {
+        "map": "Mapa-múndi dos países onde a Elleva tem membros"
+      }
+    }
+  },
   "hero": {
     "nodes": {
       "coreSubtitle": "CAMADA DE INTELIGÊNCIA E ORQUESTRAÇÃO",

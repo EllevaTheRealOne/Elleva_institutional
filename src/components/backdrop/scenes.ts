@@ -185,13 +185,13 @@ const STILL_SCENES: PhotoConfig[] = [
     ridges:[{base:.73,amp:0,col:"#182C36",seed:2.6,rough:.26},{base:.83,amp:0,col:"#101F27",seed:4.4,rough:.38},
             {base:.92,amp:0,col:"#0A141A",seed:6.0,rough:.54},{base:.98,amp:0,col:"#04080C",seed:7.5,rough:.68}],
     haze:[[.65,.12,.075],[.79,.08,.045]] },
-  // 19 Ecosystem · warm teal, many things sharing one ground.
+  // 19 Global Presence · warm teal, many things sharing one ground.
   { sky: [[0,"#03080A"],[.38,"#08191A"],[.68,"#0F2E2A"],[.88,"#1E432F"],[1,"#3C5426"]],
     sun:"rgba(190,220,140,ALPHA)", sunPos:[.44,.92], warm:"#BEDC8C",
     ridges:[{base:.79,amp:0,col:"#122622",seed:1.5,rough:.2},{base:.88,amp:0,col:"#0B1A17",seed:3.6,rough:.34},
             {base:.96,amp:0,col:"#050E0C",seed:5.7,rough:.5}],
     haze:[[.74,.10,.055]] },
-  // 21 Final CTA · the last light in the page, and the warmest.
+  // 21 FAQ · the last of the daylight, and the warmest photograph.
   { sky: [[0,"#050406"],[.28,"#12100C"],[.52,"#33251A"],[.74,"#7A4A16"],[.92,"#C08810"],[1,"#FEED6C"]],
     sun:"rgba(254,237,108,ALPHA)", sunPos:[.5,.99], warm:"#FEED6C",
     ridges:[{base:.68,amp:0,col:"rgba(62,44,26,.84)",seed:1.0,rough:.22},{base:.79,amp:0,col:"rgba(42,28,16,.9)",seed:2.9,rough:.34},
@@ -335,7 +335,7 @@ export const STILL: ((x: Ctx, w: number, h: number) => void)[] = [() => {}, ...P
 /** The hero's dial, which runs. Kept apart from LIVE so the page order holds. */
 export const HERO_LOOP = heroLoop;
 
-/** Ten fields, one per even section, in page order. No two share a mechanic. */
+/** Eleven fields, one per even section, in page order. No two share a mechanic. */
 export const LIVE: ((x: Ctx, w: number, h: number, t: number, dpr: number) => void)[] = [
   // 02 The Problem · a lattice that never changes beside one that breathes.
   (x, w, h, t, dpr) => {
@@ -476,7 +476,7 @@ export const LIVE: ((x: Ctx, w: number, h: number, t: number, dpr: number) => vo
     x.globalAlpha=1;
     x.beginPath(); x.arc(cx,cy,6*dpr,0,6.284); x.fillStyle="#EAF2EF"; x.fill();
   },
-  // 20 FAQ · venues and the orders crossing between them.
+  // 20 Ecosystem · venues and the orders crossing between them.
   (x, w, h, t, dpr) => {
     ground(x, w, h, [[0,"#04080F"],[.5,"#081A22"],[1,"#0B2A2C"]], { at:[.5,.4], color:"rgba(24,152,144,.14)" });
     const N: [number,number][] = [[.14,.3],[.3,.62],[.46,.24],[.58,.7],[.72,.38],[.86,.6],[.66,.14]];
@@ -499,5 +499,20 @@ export const LIVE: ((x: Ctx, w: number, h: number, t: number, dpr: number) => vo
       x.globalAlpha=.18; x.beginPath(); x.arc(nx*w,ny*h,15*dpr*pulse,0,6.284);
       x.strokeStyle=i===4?WARM:TEAL_DEEP; x.stroke(); x.globalAlpha=1;
     });
+  },
+  // 22 Final CTA · after the last light: the warm ground still holds, embers rising off it.
+  (x, w, h, t, dpr) => {
+    ground(x, w, h, [[0,"#050406"],[.46,"#120E0A"],[.8,"#35230F"],[1,"#7A4A16"]], { at:[.5,1.02], color:"rgba(254,237,108,.16)" });
+    for (let i=0;i<46;i++) {
+      const px=((i*97)%100)/100*w, speed=.35+((i*13)%10)/20;
+      const q=((t/9000)*speed+((i*29)%100)/100)%1;
+      x.globalAlpha=Math.sin(q*Math.PI)*(.25+((i*7)%10)/40);
+      x.fillStyle=i%5?WARM:WARM_HI;
+      x.beginPath(); x.arc(px+Math.sin(t/2400+i*1.7)*10*dpr, h*(1-q), (i%5?1.6:2.4)*dpr, 0, 6.284); x.fill();
+    }
+    x.globalAlpha=1;
+    const hy=h*.9, hz=x.createLinearGradient(0,hy,w,hy);
+    hz.addColorStop(0,"rgba(254,237,108,0)"); hz.addColorStop(.5,`rgba(254,237,108,${.22+.06*Math.sin(t/1800)})`); hz.addColorStop(1,"rgba(254,237,108,0)");
+    x.strokeStyle=hz; x.lineWidth=1.2*dpr; x.beginPath(); x.moveTo(0,hy); x.lineTo(w,hy); x.stroke();
   },
 ];

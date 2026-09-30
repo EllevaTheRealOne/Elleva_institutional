@@ -401,6 +401,53 @@
       "switchHub": "SWITCH NODE"
     }
   },
+  "globalPresence": {
+    "title": "Global Presence",
+    "description": "Elleva members by country, counted from registered accounts — every figure on this map is drawn from live data, not projected.",
+    "kpi": {
+      "members": "Members",
+      "countries": "Countries",
+      "topCountry": "Largest share"
+    },
+    "tooltip": {
+      "members": "Members",
+      "share": "Share of total"
+    },
+    "list": {
+      "title": "Members by country",
+      "more_one": "and {{count}} more country",
+      "more_other": "and {{count}} more countries",
+      "less": "Show fewer"
+    },
+    "legend": {
+      "title": "Members per country"
+    },
+    "footer": {
+      "updated_one": "{{countries}} country · updated {{date}}",
+      "updated_other": "{{countries}} countries · updated {{date}}"
+    },
+    "state": {
+      "loading": "Loading member figures"
+    },
+    "aria": {
+      "map": "World map of Elleva members by country",
+      "country_one": "{{name}}: {{members}} member, {{share}} of the total",
+      "country_other": "{{name}}: {{members}} members, {{share}} of the total"
+    },
+    "presence": {
+      "description": "Where Elleva members are today — every country on this map has registered accounts.",
+      "legend": {
+        "present": "Elleva members present",
+        "none": "No members yet"
+      },
+      "list": {
+        "title": "Countries with members"
+      },
+      "aria": {
+        "map": "World map of the countries where Elleva has members"
+      }
+    }
+  },
   "hero": {
     "nodes": {
       "coreSubtitle": "INTELLIGENCE & ORCHESTRATION LAYER",

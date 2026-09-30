@@ -401,6 +401,50 @@
       "switchHub": "切换节点"
     }
   },
+  "globalPresence": {
+    "title": "全球布局",
+    "description": "按国家统计的 Elleva 会员分布，数据来自已注册账户——地图上的每一个数字均来自实时数据，而非预测。",
+    "kpi": {
+      "members": "会员",
+      "countries": "国家",
+      "topCountry": "占比最高"
+    },
+    "tooltip": {
+      "members": "会员",
+      "share": "占总数比例"
+    },
+    "list": {
+      "title": "各国会员",
+      "more_other": "及另外 {{count}} 个国家",
+      "less": "收起"
+    },
+    "legend": {
+      "title": "每个国家的会员数"
+    },
+    "footer": {
+      "updated_other": "{{countries}} 个国家 · 更新于 {{date}}"
+    },
+    "state": {
+      "loading": "正在加载会员数据"
+    },
+    "aria": {
+      "map": "Elleva 各国会员分布世界地图",
+      "country_other": "{{name}}：{{members}} 名会员，占总数的 {{share}}"
+    },
+    "presence": {
+      "description": "Elleva 会员目前所在的国家——地图上的每个国家都有已注册账户。",
+      "legend": {
+        "present": "有 Elleva 会员",
+        "none": "暂无会员"
+      },
+      "list": {
+        "title": "有会员的国家"
+      },
+      "aria": {
+        "map": "Elleva 会员所在国家的世界地图"
+      }
+    }
+  },
   "hero": {
     "nodes": {
       "coreSubtitle": "智能与编排层",

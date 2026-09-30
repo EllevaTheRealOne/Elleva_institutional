@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/context/theme";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Layout from "./layout";
 import { Suspense } from "react";
@@ -57,23 +58,38 @@ const router = createBrowserRouter([
   },
 ]);
 
+// Server state (ARCHITECTURE.md, "Mandatory Data Flow"). The site only reads
+// public, slow-moving figures, so one retry and a long stale time are enough, and
+// refocusing the tab never refetches them.
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: 1,
+      staleTime: 15 * 60 * 1000,
+      refetchOnWindowFocus: false,
+    },
+  },
+});
+
 export function App() {
   return (
-    <ThemeProvider>
-      <Suspense
-        fallback={
-          <div className="flex min-h-screen items-center justify-center bg-background text-foreground">
-            <div className="h-8 w-8 animate-spin rounded-full border-2 border-primary border-t-transparent" />
-          </div>
-        }
-      >
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <RouterProvider router={router} />
-        </TooltipProvider>
-      </Suspense>
-    </ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider>
+        <Suspense
+          fallback={
+            <div className="flex min-h-screen items-center justify-center bg-background text-foreground">
+              <div className="h-8 w-8 animate-spin rounded-full border-2 border-primary border-t-transparent" />
+            </div>
+          }
+        >
+          <TooltipProvider>
+            <Toaster />
+            <Sonner />
+            <RouterProvider router={router} />
+          </TooltipProvider>
+        </Suspense>
+      </ThemeProvider>
+    </QueryClientProvider>
   );
 }
 
