@@ -401,6 +401,46 @@
       "switchHub": "ПЕРЕКЛЮЧИТЬ УЗЕЛ"
     }
   },
+  "globalPresence": {
+    "title": "Глобальное присутствие",
+    "description": "Участники Elleva по странам, подсчитанные по зарегистрированным аккаунтам: каждая цифра на этой карте основана на актуальных данных, а не на прогнозах.",
+    "kpi": {
+      "members": "Участники",
+      "countries": "Страны",
+      "topCountry": "Крупнейшая доля"
+    },
+    "tooltip": {
+      "members": "Участники",
+      "share": "Доля от общего числа"
+    },
+    "list": {
+      "title": "Участники по странам",
+      "more_one": "и ещё {{count}} страна",
+      "more_few": "и ещё {{count}} страны",
+      "more_many": "и ещё {{count}} стран",
+      "more_other": "и ещё {{count}} страны",
+      "less": "Свернуть"
+    },
+    "legend": {
+      "title": "Участников в стране"
+    },
+    "footer": {
+      "updated_one": "{{countries}} страна · обновлено {{date}}",
+      "updated_few": "{{countries}} страны · обновлено {{date}}",
+      "updated_many": "{{countries}} стран · обновлено {{date}}",
+      "updated_other": "{{countries}} страны · обновлено {{date}}"
+    },
+    "state": {
+      "loading": "Загрузка данных об участниках"
+    },
+    "aria": {
+      "map": "Карта мира: участники Elleva по странам",
+      "country_one": "{{name}}: {{members}} участник, {{share}} от общего числа",
+      "country_few": "{{name}}: {{members}} участника, {{share}} от общего числа",
+      "country_many": "{{name}}: {{members}} участников, {{share}} от общего числа",
+      "country_other": "{{name}}: {{members}} участника, {{share}} от общего числа"
+    }
+  },
   "hero": {
     "nodes": {
       "coreSubtitle": "УРОВЕНЬ ИНТЕЛЛЕКТА И ОРКЕСТРАЦИИ",

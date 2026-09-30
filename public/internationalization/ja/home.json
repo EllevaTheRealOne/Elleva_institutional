@@ -401,6 +401,37 @@
       "switchHub": "ノード切替"
     }
   },
+  "globalPresence": {
+    "title": "グローバルプレゼンス",
+    "description": "国別の Elleva 会員数です。登録済みアカウントから集計しており、この地図の数値はすべて予測ではなく、最新の実データに基づいています。",
+    "kpi": {
+      "members": "会員数",
+      "countries": "国数",
+      "topCountry": "最大シェア"
+    },
+    "tooltip": {
+      "members": "会員数",
+      "share": "全体に占める割合"
+    },
+    "list": {
+      "title": "国別会員数",
+      "more_other": "ほか {{count}} か国",
+      "less": "表示を減らす"
+    },
+    "legend": {
+      "title": "1か国あたりの会員数"
+    },
+    "footer": {
+      "updated_other": "{{countries}} か国 · 更新 {{date}}"
+    },
+    "state": {
+      "loading": "会員データを読み込んでいます"
+    },
+    "aria": {
+      "map": "Elleva の国別会員数を示す世界地図",
+      "country_other": "{{name}}：会員 {{members}} 名、全体の {{share}}"
+    }
+  },
   "hero": {
     "nodes": {
       "coreSubtitle": "インテリジェンス＆オーケストレーションレイヤー",

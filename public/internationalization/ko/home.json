@@ -401,6 +401,37 @@
       "switchHub": "노드 전환"
     }
   },
+  "globalPresence": {
+    "title": "글로벌 입지",
+    "description": "국가별 Elleva 회원 현황입니다. 등록된 계정을 기준으로 집계하며, 이 지도의 모든 수치는 예측이 아닌 실시간 데이터에서 산출됩니다.",
+    "kpi": {
+      "members": "회원",
+      "countries": "국가",
+      "topCountry": "최대 비중"
+    },
+    "tooltip": {
+      "members": "회원",
+      "share": "전체 대비 비중"
+    },
+    "list": {
+      "title": "국가별 회원",
+      "more_other": "외 {{count}}개국",
+      "less": "간략히 보기"
+    },
+    "legend": {
+      "title": "국가별 회원 수"
+    },
+    "footer": {
+      "updated_other": "{{countries}}개국 · {{date}} 업데이트"
+    },
+    "state": {
+      "loading": "회원 수치를 불러오는 중입니다"
+    },
+    "aria": {
+      "map": "국가별 Elleva 회원 분포 세계 지도",
+      "country_other": "{{name}}: 회원 {{members}}명, 전체의 {{share}}"
+    }
+  },
   "hero": {
     "nodes": {
       "coreSubtitle": "인텔리전스 및 오케스트레이션 레이어",
