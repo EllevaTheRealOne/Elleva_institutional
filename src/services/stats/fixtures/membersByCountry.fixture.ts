@@ -1,4 +1,4 @@
-import type { CountryMembers, MembersByCountryResponse } from "../types";
+import type { CountryMembers, CountryPresence, FiguresPayload, MembersByCountryResponse } from "../types";
 
 /**
  * A plausible answer from GET /api/public/members-by-country, for developing the
@@ -29,9 +29,23 @@ const countries: CountryMembers[] = [
   { code: "SG", members: 1 },
 ];
 
-export const membersByCountryFixture: MembersByCountryResponse = {
+/** The figures shape (`PUBLIC_STATS_PUBLISH_COUNTS=true`). `VITE_ELLEVA_API_URL=fixture`. */
+export const membersByCountryFixture: FiguresPayload = {
   generated_at: "2026-09-29T14:00:00Z",
   total_members: countries.reduce((sum, c) => sum + c.members, 0),
   total_countries: countries.length,
   countries,
+};
+
+/**
+ * The presence shape — the api's default: the same countries, no count anywhere,
+ * sorted by code as the api sends them so that no order hints at size.
+ * `VITE_ELLEVA_API_URL=fixture-presence`.
+ */
+export const presenceByCountryFixture: MembersByCountryResponse = {
+  generated_at: "2026-09-29T14:00:00Z",
+  total_countries: countries.length,
+  countries: countries
+    .map(({ code }): CountryPresence => ({ code }))
+    .sort((a, b) => (a.code < b.code ? -1 : 1)),
 };

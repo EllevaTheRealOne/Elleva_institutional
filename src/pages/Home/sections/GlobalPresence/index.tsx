@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { hasFigures } from "@/services/stats/types";
 import { useGetMembersByCountry } from "../../queries/getMembersByCountry/useGetMembersByCountry";
 import { PresenceMap } from "./components/PresenceMap";
 import { PresencePanel } from "./components/PresencePanel";
@@ -26,11 +27,12 @@ export const GlobalPresence: React.FC<GlobalPresenceProps> = ({ isDark = true })
   const { t } = useTranslation(["home", "common"]);
   const format = usePresenceFormat();
   const { data, isPending, isError } = useGetMembersByCountry();
-  const ranking = useMemo(() => (data ? rankCountries(data.countries, LIST_SIZE) : null), [data]);
+  const ranking = useMemo(() => (data && hasFigures(data) ? rankCountries(data.countries, LIST_SIZE) : null), [data]);
   // The country under the pointer or keyboard focus, on the map or in the list.
   const [activeCode, setActiveCode] = useState<string | null>(null);
 
-  if (isError || (ranking && ranking.totalCountries === 0)) return null;
+  // A payload without counts (presence mode) is not drawn yet: hide rather than guess.
+  if (isError || (data && !hasFigures(data)) || (ranking && ranking.totalCountries === 0)) return null;
 
   return (
     <section
