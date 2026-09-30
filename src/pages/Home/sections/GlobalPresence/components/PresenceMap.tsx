@@ -3,7 +3,9 @@ import { useTranslation } from "react-i18next";
 import { ComposableMap, Geographies, Geography, type PreparedFeature } from "@vnedyalk0v/react19-simple-maps";
 import countries110m from "world-atlas/countries-110m.json";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { countriesIn, totalCountriesIn, type PresenceView } from "../globalPresence.types";
 import type { PresenceFormat } from "../hooks/usePresenceFormat";
+import type { ListedCountry } from "../utils/listCountries";
 import type { CountryRanking, RankedCountry } from "../utils/rankCountries";
 import { MAP_HEIGHT, MAP_WIDTH, anchorOf, atlasIdOf, presenceProjection } from "../utils/geo";
 import { MEMBER_CLASS_OPACITY, memberScale } from "../utils/memberScale";
@@ -26,6 +28,10 @@ const NO_OUTLINE = {
   focused: { outline: "none" },
 };
 
+// Presence mode paints every country with members in one tone — the strongest
+// class — because any gradation would still show who is bigger.
+const PRESENCE_OPACITY = MEMBER_CLASS_OPACITY[MEMBER_CLASS_OPACITY.length - 1];
+
 const LABELS_DESKTOP = 12;
 const LABELS_PHONE = 6;
 
@@ -33,7 +39,7 @@ type Point = { x: number; y: number };
 
 interface PresenceMapProps {
   /** null while loading: the map is drawn neutral and nothing on it is interactive. */
-  ranking: CountryRanking | null;
+  view: PresenceView | null;
   generatedAt?: string;
   activeCode: string | null;
   onActiveChange: (code: string | null) => void;
@@ -44,17 +50,23 @@ const codeAt = (target: EventTarget | null): string | null =>
   target instanceof Element ? (target.closest("[data-code]")?.getAttribute("data-code") ?? null) : null;
 
 /**
- * The choropleth: countries with members filled from the accent ramp, the rest
- * left as section 09's neutral land. Count pills sit over the largest countries
- * that fit; every other figure is one hover, tap or Tab away, and all of them
- * are in the panel's list.
+ * Figures mode — the choropleth: countries with members filled from the accent
+ * ramp, the rest left as section 09's neutral land. Count pills sit over the
+ * largest countries that fit; every other figure is one hover, tap or Tab away,
+ * and all of them are in the panel's list.
+ *
+ * Presence mode — the api sent no counts: every country with members in one
+ * tone, no markers, no pills, and a tooltip and aria-label that carry the name
+ * only. Nothing on the map can be read as a size.
  *
  * Pills, dots and the tooltip are HTML laid over the SVG rather than SVG text,
  * so they keep their pixel size at every width — SVG text scales with the map
  * and is unreadable on a phone. Both layers use the same projection instance.
  */
-export const PresenceMap: React.FC<PresenceMapProps> = ({ ranking, generatedAt, activeCode, onActiveChange, format }) => {
+export const PresenceMap: React.FC<PresenceMapProps> = ({ view, generatedAt, activeCode, onActiveChange, format }) => {
   const { t } = useTranslation(["home", "common"]);
+  // Only figures mode has a ranking; everything that draws a number reads it.
+  const ranking = view?.mode === "figures" ? view.ranking : null;
   const isMobile = useIsMobile();
   const frameRef = useRef<HTMLDivElement>(null);
   const [frameWidth, setFrameWidth] = useState(0);
@@ -75,15 +87,18 @@ export const PresenceMap: React.FC<PresenceMapProps> = ({ ranking, generatedAt, 
   const frameHeight = MAP_HEIGHT * pxPerUnit;
 
   const byAtlasId = useMemo(() => {
-    const map = new Map<string, RankedCountry>();
-    ranking?.countries.forEach((c) => {
+    const map = new Map<string, RankedCountry | ListedCountry>();
+    (view ? countriesIn(view) : []).forEach((c) => {
       const id = atlasIdOf(c.code);
       if (id) map.set(id, c);
     });
     return map;
-  }, [ranking]);
+  }, [view]);
 
-  const byCode = useMemo(() => new Map(ranking?.countries.map((c) => [c.code, c]) ?? []), [ranking]);
+  const byCode = useMemo(
+    () => new Map<string, RankedCountry | ListedCountry>((view ? countriesIn(view) : []).map((c) => [c.code, c] as const)),
+    [view],
+  );
 
   const classOf = useMemo(
     () => (ranking ? memberScale(ranking.minMembers, ranking.maxMembers) : () => 0),
@@ -131,7 +146,7 @@ export const PresenceMap: React.FC<PresenceMapProps> = ({ ranking, generatedAt, 
 
   // Pointer handling is delegated to the frame: countries and markers both carry
   // data-code, and one handler covers them without a closure per country.
-  const interactive = ranking !== null;
+  const interactive = view !== null;
   const frameHandlers = interactive
     ? {
         onPointerMove: (e: React.PointerEvent) => {
@@ -170,7 +185,7 @@ export const PresenceMap: React.FC<PresenceMapProps> = ({ ranking, generatedAt, 
           projection={presenceProjection}
           className="absolute inset-0 h-full w-full"
           role="group"
-          aria-label={t("globalPresence.aria.map")}
+          aria-label={t(ranking ? "globalPresence.aria.map" : "globalPresence.presence.aria.map")}
         >
           <Geographies geography={countries110m}>
             {({ geographies }) => {
@@ -191,6 +206,23 @@ export const PresenceMap: React.FC<PresenceMapProps> = ({ ranking, generatedAt, 
                           tabIndex={-1}
                           aria-hidden="true"
                           className="pointer-events-none"
+                          style={NO_OUTLINE}
+                        />
+                      );
+                    }
+                    if (!("members" in country)) {
+                      return (
+                        <Geography
+                          key={geo.rsmKey}
+                          geography={geo}
+                          data-code={country.code}
+                          fill={ACCENT}
+                          fillOpacity={PRESENCE_OPACITY}
+                          stroke={BORDER}
+                          strokeWidth={0.4}
+                          role="img"
+                          aria-label={country.name}
+                          className="cursor-pointer"
                           style={NO_OUTLINE}
                         />
                       );
@@ -293,16 +325,23 @@ export const PresenceMap: React.FC<PresenceMapProps> = ({ ranking, generatedAt, 
       </div>
 
       <div className="mt-4 flex min-h-4 flex-wrap items-center justify-between gap-x-6 gap-y-2 px-1 font-mono text-[10px] text-[#8E9995]">
-        {ranking && generatedAt ? (
+        {view && generatedAt ? (
           <>
             <span>
               {t("globalPresence.footer.updated", {
-                count: ranking.totalCountries,
-                countries: format.number(ranking.totalCountries),
+                count: totalCountriesIn(view),
+                countries: format.number(totalCountriesIn(view)),
                 date: format.dateTime(generatedAt),
               })}
             </span>
-            <MapLegend ranking={ranking} format={format} title={t("globalPresence.legend.title")} />
+            {ranking ? (
+              <MapLegend ranking={ranking} format={format} title={t("globalPresence.legend.title")} />
+            ) : (
+              <PresenceLegend
+                present={t("globalPresence.presence.legend.present")}
+                none={t("globalPresence.presence.legend.none")}
+              />
+            )}
           </>
         ) : (
           <span className="h-2.5 w-48 rounded-sm bg-[rgba(245,247,246,0.06)] motion-safe:animate-pulse" />
@@ -347,3 +386,26 @@ const MapLegend: React.FC<MapLegendProps> = ({ ranking, format, title }) => {
     </div>
   );
 };
+
+interface PresenceLegendProps {
+  present: string;
+  none: string;
+}
+
+/**
+ * Presence mode's key: the one tone, and the neutral land. The second swatch is
+ * kept on purpose — without it a grey country reads as "no data" rather than as
+ * "no members yet", and grey is also how section 09 draws every country.
+ */
+const PresenceLegend: React.FC<PresenceLegendProps> = ({ present, none }) => (
+  <div className="flex flex-wrap items-center gap-x-4 gap-y-1 font-ui">
+    <span className="flex items-center gap-1.5">
+      <span className="h-2 w-5 rounded-[2px]" style={{ backgroundColor: ACCENT, opacity: PRESENCE_OPACITY }} />
+      {present}
+    </span>
+    <span className="flex items-center gap-1.5">
+      <span className="h-2 w-5 rounded-[2px]" style={{ backgroundColor: LAND, boxShadow: `inset 0 0 0 1px ${BORDER}` }} />
+      {none}
+    </span>
+  </div>
+);

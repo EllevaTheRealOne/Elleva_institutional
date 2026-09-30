@@ -6,6 +6,7 @@ import type { PresenceFormat } from "../hooks/usePresenceFormat";
 import type { CountryRanking, RankedCountry } from "../utils/rankCountries";
 import { CountryFlag } from "./CountryFlag";
 import { CountUp } from "./CountUp";
+import { Figure } from "./Figure";
 
 interface PresencePanelProps {
   /** null while loading. */
@@ -88,23 +89,6 @@ export const PresencePanel: React.FC<PresencePanelProps> = ({ ranking, activeCod
     </div>
   );
 };
-
-interface FigureProps {
-  label: string;
-  aside?: React.ReactNode;
-  className?: string;
-  children: React.ReactNode;
-}
-
-const Figure: React.FC<FigureProps> = ({ label, aside, className, children }) => (
-  <div className={cn("rounded-lg border border-[rgba(245,247,246,0.06)] bg-[#0A0D0F] px-4 py-3.5", className)}>
-    <dt className="font-ui text-[11px] leading-tight text-[#8E9995]">{label}</dt>
-    <dd className="mt-2 flex items-end justify-between gap-3">
-      <span className="font-ui text-[1.75rem] font-bold leading-none tracking-[-0.02em] text-[#F5F7F6]">{children}</span>
-      {aside}
-    </dd>
-  </div>
-);
 
 interface CountryRowProps {
   country: RankedCountry;
