@@ -1,4 +1,6 @@
-import { z } from "zod";
+// zod/mini, not the classic API: same validation, but tree-shakeable — the
+// classic build added 86 kB to the bundle for this one schema.
+import * as z from "zod/mini";
 
 /**
  * GET /api/public/members-by-country — meta/docs/global-presence/00-PLAN.md.
@@ -7,14 +9,14 @@ import { z } from "zod";
  * country name in the visitor's language, so the api never sends one.
  */
 export const countryMembersSchema = z.object({
-  code: z.string().regex(/^[A-Z]{2}$/),
-  members: z.number().int().positive(),
+  code: z.string().check(z.regex(/^[A-Z]{2}$/)),
+  members: z.int().check(z.positive()),
 });
 
 export const membersByCountryResponseSchema = z.object({
   generated_at: z.iso.datetime({ offset: true }),
-  total_members: z.number().int().nonnegative(),
-  total_countries: z.number().int().nonnegative(),
+  total_members: z.int().check(z.nonnegative()),
+  total_countries: z.int().check(z.nonnegative()),
   countries: z.array(countryMembersSchema),
 });
 
