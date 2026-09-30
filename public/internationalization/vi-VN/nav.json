@@ -76,6 +76,7 @@
     "ecosystem": {
       "label": "Hệ sinh thái",
       "items": {
+        "globalPresence": "Hiện diện Toàn cầu",
         "ecosystemOverview": "Tổng quan Hệ sinh thái",
         "banks": "Ngân hàng",
         "brokersExecution": "Môi giới và Thực thi",
