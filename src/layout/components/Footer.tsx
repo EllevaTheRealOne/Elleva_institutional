@@ -161,20 +161,20 @@ export const Footer = () => {
       links: [
         {
           label: t("common:footer.privacyPolicy") || "Privacy Policy",
-          href: "/privacy-policy",
+          href: PATH_PAGE.privacypolicy,
         },
         {
           label: t("common:footer.termsOfService") || "Terms of Service",
-          href: "/terms",
+          href: PATH_PAGE.termsofuse,
         },
         {
           label: t("common:footer.riskDisclosures") || "Risk Disclosures",
-          href: "/risk-disclosures",
+          href: PATH_PAGE.riskdisclosure,
         },
-        {
-          label: t("nav:categories.ecosystem.items.compliance") || "Compliance",
-          href: "/#compliance",
-        },
+        // {
+        //   label: t("nav:categories.ecosystem.items.compliance") || "Compliance",
+        //   href: "/#compliance",
+        // },
       ],
     },
   ];
@@ -184,7 +184,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="relative overflow-hidden border-t border-border bg-card/60 pt-16 pb-12 backdrop-blur-md transition-colors duration-200">
+    <footer className="relative overflow-hidden border-t border-border bg-card pt-16 pb-12 backdrop-blur-md transition-colors duration-200">
       <div className="container mx-auto max-w-7xl px-5 md:px-8">
         <div className="grid grid-cols-1 gap-10 border-b border-border pb-14 lg:grid-cols-12 lg:gap-12">
           {/* Brand */}

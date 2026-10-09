@@ -5,6 +5,11 @@ function path(root: string, sublink: string) {
 export const PATH_PAGE = {
   home: "/",
   businessPlan: "/business-plan",
+  privacypolicy: "/privacy",
+  termsofuse: "/terms",
+  contact: "/contact",
+  programrules: "/program-rules",
+  riskdisclosure: "/risk-disclosure",
 } as const;
 
 /**
