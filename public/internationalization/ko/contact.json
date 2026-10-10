@@ -1,0 +1,90 @@
+{
+  "pageTitle": "문의하기",
+  "heroTitle": "대화를 시작해 보세요.",
+  "heroDescription": "플랫폼 지원이 필요하거나, 전략적 파트너십을 논의하고 싶거나, Elleva의 인프라를 이해하고 싶으시다면 메시지를 보내주세요.",
+  "contactTypes": [
+    {
+      "title": "플랫폼 지원",
+      "description": "계정, 접근 및 기술 관련 질문"
+    },
+    {
+      "title": "비즈니스 및 파트너십",
+      "description": "전략적 및 생태계 기회"
+    },
+    {
+      "title": "기관",
+      "description": "브로커, 인프라 및 유동성 관계"
+    }
+  ],
+  "globalStatement": "글로벌 인프라. 국제 생태계.",
+  "formTitle": "어떻게 도와드릴까요?",
+  "formDescription": "양식을 작성하고 Elleva 팀에 연락하는 방법을 선택하세요.",
+  "fields": {
+    "name": "이름",
+    "namePlaceholder": "이름",
+    "email": "이메일",
+    "emailPlaceholder": "name@company.com",
+    "company": "회사",
+    "optional": "선택 사항",
+    "companyPlaceholder": "회사명",
+    "topic": "무엇을 도와드릴까요?",
+    "topicPlaceholder": "주제 선택",
+    "message": "메시지",
+    "messagePlaceholder": "어떻게 도와드릴 수 있는지 알려주세요..."
+  },
+  "topics": [
+    {
+      "value": "general",
+      "label": "일반 문의"
+    },
+    {
+      "value": "support",
+      "label": "플랫폼 지원"
+    },
+    {
+      "value": "account",
+      "label": "계정 및 접근"
+    },
+    {
+      "value": "business",
+      "label": "비즈니스 및 파트너십"
+    },
+    {
+      "value": "institutional",
+      "label": "기관"
+    },
+    {
+      "value": "privacy",
+      "label": "개인정보 및 법률"
+    }
+  ],
+  "actions": {
+    "email": "이메일로 보내기",
+    "whatsapp": "WhatsApp으로 보내기"
+  },
+  "consent": "문의하시면 Elleva가 귀하의 요청에 응답하기 위해 제공된 정보를 처리하는 데 동의하는 것으로 간주됩니다.",
+  "contactMethods": [
+    {
+      "title": "이메일",
+      "description": "선호하는 이메일 애플리케이션을 통해 직접 구조화된 문의를 보내세요."
+    },
+    {
+      "title": "WhatsApp",
+      "description": "WhatsApp을 사용하여 Elleva 팀에 직접 연락하세요."
+    },
+    {
+      "title": "글로벌",
+      "description": "Elleva는 국제적인 기술 및 자본 인프라 생태계를 구축하고 있습니다."
+    }
+  ],
+  "emailSubject": "Elleva 문의",
+  "emailBodyTitle": "ELLEVA — 문의 요청",
+  "emailBody": {
+    "name": "이름",
+    "email": "이메일",
+    "company": "회사",
+    "companyNotProvided": "제공되지 않음",
+    "topic": "주제",
+    "message": "메시지"
+  }
+}

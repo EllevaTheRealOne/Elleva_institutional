@@ -1,0 +1,128 @@
+{
+  "lastUpdated": "9 de octubre de 2026",
+  "heroTitleLine1": "Programa y Riesgo",
+  "heroTitleLine2": "Divulgación",
+  "heroDescription": "El marco que rige determinados programas del ecosistema Elleva, las condiciones operativas y los riesgos asociados.",
+  "lastUpdatedLabel": "Última actualización: {{date}}",
+  "programs": [
+    {
+      "title": "ProfitShare",
+      "description": "Distribuciones variables del ecosistema."
+    },
+    {
+      "title": "Elleva Direct",
+      "description": "Programa de desarrollo del ecosistema."
+    },
+    {
+      "title": "Elleva Pool",
+      "description": "Participación vinculada a los resultados aplicables de la empresa."
+    },
+    {
+      "title": "Riesgo",
+      "description": "Sin resultado garantizado."
+    }
+  ],
+  "importantDisclosure": {
+    "title": "Divulgación importante",
+    "description": "Los programas de Elleva implican riesgos operativos, de mercado, tecnológicos y de otro tipo. Ningún programa descrito aquí garantiza ingresos, ganancias, rendimientos ni preservación del capital."
+  },
+  "sections": [
+    {
+      "number": "01",
+      "title": "Propósito de este documento",
+      "paragraphs": [
+        "Este documento describe el marco general aplicable a determinados programas y mecanismos operativos del ecosistema Elleva.",
+        "Estas reglas deben leerse junto con los Términos de Uso y la Política de Privacidad de Elleva.",
+        "Las condiciones del programa pueden variar según el producto aplicable, la cuenta, la jurisdicción, los requisitos de elegibilidad y las condiciones operativas."
+      ]
+    },
+    {
+      "number": "02",
+      "title": "ProfitShare",
+      "paragraphs": [
+        "ProfitShare es un mecanismo del ecosistema Elleva mediante el cual los usuarios elegibles pueden participar en distribuciones variables asociadas con resultados operativos y económicos aplicables.",
+        "ProfitShare es variable. No es un pago de intereses fijo y no constituye una garantía de ganancias, rendimiento o preservación del capital.",
+        "Las distribuciones aplicables pueden depender de resultados operativos, elegibilidad, condiciones de la cuenta, reglas del programa y otros factores aplicables en el momento.",
+        "Las distribuciones históricas no establecen una promesa, previsión ni garantía de distribuciones futuras."
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Elleva Direct",
+      "paragraphs": [
+        "Elleva Direct es un programa de desarrollo del ecosistema mediante el cual los participantes elegibles pueden recibir beneficios o distribuciones asociados con actividad calificada dentro de su estructura de ecosistema elegible.",
+        "La estructura actual del programa puede incluir distribuciones basadas en niveles según las reglas oficiales de Elleva Direct.",
+        "La participación no garantiza ingresos, ganancias, resultados financieros ni ascenso a ningún nivel de reconocimiento.",
+        "Los participantes no pueden hacer afirmaciones no autorizadas, engañosas o garantizadas sobre Elleva, sus programas o resultados potenciales."
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Elleva Pool",
+      "paragraphs": [
+        "Elleva Pool es un mecanismo interno del ecosistema conectado al desempeño económico de la empresa y a los criterios aplicables de calificación de los participantes.",
+        "Bajo la estructura aplicable del programa, el Pool puede asignar una porción definida del beneficio bruto de la empresa a los participantes calificados.",
+        "La participación está sujeta a las reglas de calificación aplicables y no crea una garantía de ninguna distribución particular."
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Condiciones operativas",
+      "paragraphs": [
+        "Los mínimos, máximos, comisiones, condiciones de retiro, períodos de procesamiento, requisitos de calificación y otros parámetros operativos aplicables pueden mostrarse en la plataforma de Elleva o en la documentación aplicable del programa.",
+        "Los parámetros operativos actuales pueden actualizarse a medida que evolucionan la infraestructura, los programas, los proveedores terceros o los requisitos aplicables.",
+        "Cuando una transacción o programa específico presenta condiciones aplicables antes de su finalización, esas condiciones rigen la actividad correspondiente."
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Riesgo",
+      "paragraphs": [
+        "La participación en los programas de Elleva puede implicar riesgos financieros, operativos, tecnológicos y de mercado.",
+        "Estos pueden incluir:"
+      ],
+      "riskItems": [
+        "Volatilidad del mercado",
+        "Riesgo de liquidez",
+        "Riesgo de ejecución",
+        "Riesgo de blockchain y activos digitales",
+        "Fallos tecnológicos y de infraestructura",
+        "Incidentes de ciberseguridad",
+        "Interrupciones de servicios de terceros",
+        "Cambios regulatorios o legales",
+        "Retrasos operativos",
+        "Posible pérdida de capital"
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Sin resultado garantizado",
+      "paragraphs": [
+        "Ningún programa de Elleva debe presentarse como una oportunidad de ingresos garantizados, rendimiento garantizado o libre de riesgo.",
+        "Los participantes no deben presentar resultados históricos, ejemplos, porcentajes o distribuciones como promesas de rendimiento futuro."
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Cambios en el programa",
+      "paragraphs": [
+        "Elleva puede modificar, suspender o descontinuar un programa del ecosistema o mecanismo operativo cuando sea razonablemente necesario debido a consideraciones operativas, tecnológicas, de seguridad, de cumplimiento, legales o comerciales.",
+        "Los cambios pueden comunicarse a través de la plataforma, la documentación oficial u otros canales apropiados."
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Conducta del participante",
+      "paragraphs": [
+        "Los participantes son responsables de comunicar información precisa sobre Elleva y sus programas.",
+        "Los participantes no deben prometer resultados financieros, fabricar rendimiento, hacerse pasar por Elleva, alterar las condiciones oficiales del programa ni hacer declaraciones inconsistentes con los materiales oficiales de Elleva."
+      ]
+    }
+  ],
+  "links": {
+    "terms": "Términos de Uso",
+    "privacy": "Política de Privacidad"
+  },
+  "brandTitle": "Infraestructura de Capital Autónoma",
+  "brandDescription": "Investigar → Decidir → Ejecutar → Monitorear."
+}

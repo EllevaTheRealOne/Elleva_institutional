@@ -1,0 +1,90 @@
+{
+  "pageTitle": "お問い合わせ",
+  "heroTitle": "対話を始めましょう。",
+  "heroDescription": "プラットフォームのサポートが必要な場合、戦略的パートナーシップについて話し合いたい場合、またはEllevaのインフラストラクチャを理解したい場合、メッセージをお送りください。",
+  "contactTypes": [
+    {
+      "title": "プラットフォームサポート",
+      "description": "アカウント、アクセス、技術的なご質問"
+    },
+    {
+      "title": "ビジネスとパートナーシップ",
+      "description": "戦略的およびエコシステムの機会"
+    },
+    {
+      "title": "機関向け",
+      "description": "ブローカー、インフラストラクチャ、流動性の関係"
+    }
+  ],
+  "globalStatement": "グローバルインフラストラクチャ。国際的なエコシステム。",
+  "formTitle": "どのようにお手伝いできますか?",
+  "formDescription": "フォームにご記入のうえ、Ellevaチームへのお問い合わせ方法をお選びください。",
+  "fields": {
+    "name": "お名前",
+    "namePlaceholder": "お名前",
+    "email": "メールアドレス",
+    "emailPlaceholder": "name@company.com",
+    "company": "会社名",
+    "optional": "任意",
+    "companyPlaceholder": "会社名",
+    "topic": "どのようなご用件でしょうか?",
+    "topicPlaceholder": "トピックを選択",
+    "message": "メッセージ",
+    "messagePlaceholder": "どのようにお手伝いできるかお聞かせください..."
+  },
+  "topics": [
+    {
+      "value": "general",
+      "label": "一般的なお問い合わせ"
+    },
+    {
+      "value": "support",
+      "label": "プラットフォームサポート"
+    },
+    {
+      "value": "account",
+      "label": "アカウントとアクセス"
+    },
+    {
+      "value": "business",
+      "label": "ビジネスとパートナーシップ"
+    },
+    {
+      "value": "institutional",
+      "label": "機関向け"
+    },
+    {
+      "value": "privacy",
+      "label": "プライバシーと法務"
+    }
+  ],
+  "actions": {
+    "email": "メールで送信",
+    "whatsapp": "WhatsAppで送信"
+  },
+  "consent": "お問い合わせいただくことにより、お客様のリクエストに対応するためにEllevaが提供情報を処理することに同意したものとみなされます。",
+  "contactMethods": [
+    {
+      "title": "メール",
+      "description": "お好みのメールアプリケーションから直接、構造化されたお問い合わせをお送りください。"
+    },
+    {
+      "title": "WhatsApp",
+      "description": "WhatsAppを使用してEllevaチームに直接お問い合わせください。"
+    },
+    {
+      "title": "グローバル",
+      "description": "Ellevaは国際的なテクノロジーおよび資本インフラストラクチャのエコシステムを構築しています。"
+    }
+  ],
+  "emailSubject": "Elleva お問い合わせ",
+  "emailBodyTitle": "ELLEVA — お問い合わせリクエスト",
+  "emailBody": {
+    "name": "お名前",
+    "email": "メールアドレス",
+    "company": "会社名",
+    "companyNotProvided": "未提供",
+    "topic": "トピック",
+    "message": "メッセージ"
+  }
+}

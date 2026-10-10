@@ -14,8 +14,7 @@ const initialLanguage = detectInitialLanguage();
 // Set initial document lang attribute synchronously
 if (typeof document !== "undefined") {
   const config = getLanguageConfig(initialLanguage);
-  document.documentElement.lang =
-    config.valueWhithCurrrency || initialLanguage;
+  document.documentElement.lang = config.valueWhithCurrrency || initialLanguage;
 }
 
 export const i18nReady = i18n.isInitialized
@@ -28,7 +27,17 @@ export const i18nReady = i18n.isInitialized
         supportedLngs: allLangs.map((lang) => lang.value),
         fallbackLng: defaultLang.value,
         defaultNS,
-        ns: ["common", "nav", "home", "notfound", "business-plan"],
+        ns: [
+          "common",
+          "nav",
+          "home",
+          "notfound",
+          "business-plan",
+          "privacypolicy",
+          "programrules",
+          "termsofuse",
+          "contact",
+        ],
         interpolation: {
           escapeValue: false,
         },
@@ -41,4 +50,3 @@ export const i18nReady = i18n.isInitialized
       });
 
 export default i18n;
-

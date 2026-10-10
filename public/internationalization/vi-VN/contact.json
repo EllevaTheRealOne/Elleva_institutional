@@ -1,0 +1,90 @@
+{
+  "pageTitle": "Liên hệ",
+  "heroTitle": "Hãy bắt đầu một cuộc trò chuyện.",
+  "heroDescription": "Dù bạn cần hỗ trợ nền tảng, muốn thảo luận về quan hệ đối tác chiến lược hay muốn hiểu về cơ sở hạ tầng của Elleva, hãy gửi tin nhắn cho chúng tôi.",
+  "contactTypes": [
+    {
+      "title": "Hỗ trợ nền tảng",
+      "description": "Các câu hỏi về tài khoản, quyền truy cập và kỹ thuật"
+    },
+    {
+      "title": "Kinh doanh & đối tác",
+      "description": "Cơ hội chiến lược và hệ sinh thái"
+    },
+    {
+      "title": "Tổ chức",
+      "description": "Quan hệ với nhà môi giới, cơ sở hạ tầng và thanh khoản"
+    }
+  ],
+  "globalStatement": "Cơ sở hạ tầng toàn cầu. Hệ sinh thái quốc tế.",
+  "formTitle": "Chúng tôi có thể giúp gì?",
+  "formDescription": "Hoàn thành biểu mẫu và chọn cách bạn muốn liên hệ với đội ngũ Elleva.",
+  "fields": {
+    "name": "Tên",
+    "namePlaceholder": "Tên của bạn",
+    "email": "Email",
+    "emailPlaceholder": "name@company.com",
+    "company": "Công ty",
+    "optional": "tùy chọn",
+    "companyPlaceholder": "Tên công ty",
+    "topic": "Chúng tôi có thể giúp gì?",
+    "topicPlaceholder": "Chọn chủ đề",
+    "message": "Tin nhắn",
+    "messagePlaceholder": "Cho chúng tôi biết chúng tôi có thể giúp gì..."
+  },
+  "topics": [
+    {
+      "value": "general",
+      "label": "Yêu cầu chung"
+    },
+    {
+      "value": "support",
+      "label": "Hỗ trợ nền tảng"
+    },
+    {
+      "value": "account",
+      "label": "Tài khoản & quyền truy cập"
+    },
+    {
+      "value": "business",
+      "label": "Kinh doanh & đối tác"
+    },
+    {
+      "value": "institutional",
+      "label": "Tổ chức"
+    },
+    {
+      "value": "privacy",
+      "label": "Quyền riêng tư & pháp lý"
+    }
+  ],
+  "actions": {
+    "email": "Gửi qua Email",
+    "whatsapp": "Gửi qua WhatsApp"
+  },
+  "consent": "Bằng việc liên hệ với chúng tôi, bạn đồng ý rằng Elleva có thể xử lý thông tin được cung cấp để phản hồi yêu cầu của bạn.",
+  "contactMethods": [
+    {
+      "title": "Email",
+      "description": "Gửi yêu cầu có cấu trúc trực tiếp qua ứng dụng email ưa thích của bạn."
+    },
+    {
+      "title": "WhatsApp",
+      "description": "Liên hệ trực tiếp với đội ngũ Elleva bằng WhatsApp."
+    },
+    {
+      "title": "Toàn cầu",
+      "description": "Elleva đang xây dựng một hệ sinh thái cơ sở hạ tầng công nghệ và vốn quốc tế."
+    }
+  ],
+  "emailSubject": "Liên hệ Elleva",
+  "emailBodyTitle": "ELLEVA — Yêu cầu liên hệ",
+  "emailBody": {
+    "name": "Tên",
+    "email": "Email",
+    "company": "Công ty",
+    "companyNotProvided": "Không được cung cấp",
+    "topic": "Chủ đề",
+    "message": "Tin nhắn"
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "lastUpdated": "9 de octubre de 2026",
+  "heroTitle": "Términos de Uso",
+  "heroDescription": "Las condiciones que rigen el acceso a la tecnología, la infraestructura y el ecosistema digital de Elleva.",
+  "lastUpdatedLabel": "Última actualización: {{date}}",
+  "featureCards": [
+    {
+      "title": "Marco claro",
+      "description": "Reglas para acceder y utilizar el ecosistema Elleva."
+    },
+    {
+      "title": "Infraestructura autónoma",
+      "description": "IA, automatización, datos e infraestructura de ejecución."
+    },
+    {
+      "title": "Responsabilidad del usuario",
+      "description": "Los usuarios siguen siendo responsables de sus cuentas y transacciones."
+    },
+    {
+      "title": "Conectividad con terceros",
+      "description": "Elleva puede conectarse con infraestructura financiera y tecnológica independiente."
+    }
+  ],
+  "riskNotice": {
+    "title": "Aviso importante de riesgo",
+    "description": "Los mercados financieros, los activos digitales, las transacciones en blockchain y los sistemas automatizados implican riesgo. Elleva no garantiza beneficios, rendimiento ni preservación del capital. Los usuarios deben comprender los riesgos aplicables antes de utilizar la plataforma o participar en un programa de Elleva."
+  },
+  "sections": [
+    {
+      "number": "01",
+      "title": "Aceptación de los Términos",
+      "paragraphs": [
+        "Estos Términos de Uso rigen tu acceso y uso del sitio web, la plataforma, las aplicaciones, los paneles, la tecnología, la infraestructura, las herramientas, el contenido, los programas y los servicios digitales relacionados de Elleva.",
+        "Al crear una cuenta, acceder a la plataforma o utilizar cualquier funcionalidad de Elleva, reconoces que has leído, comprendido y aceptado estos Términos.",
+        "Si no estás de acuerdo con estos Términos, no debes acceder ni utilizar los servicios aplicables de Elleva."
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Acerca de Elleva",
+      "paragraphs": [
+        "Elleva es una Infraestructura de Capital Autónoma diseñada para conectar capital, inteligencia, datos, infraestructura financiera y ejecución mediante tecnología.",
+        "Su arquitectura puede combinar investigación, información de mercado, sistemas de decisión, automatización, monitoreo, infraestructura blockchain y conectividad con proveedores financieros y tecnológicos de terceros.",
+        "Elleva opera en torno al modelo de infraestructura continua:",
+        "Investigar → Decidir → Ejecutar → Monitorear."
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Naturaleza y Alcance de la Infraestructura",
+      "paragraphs": [
+        "Elleva proporciona infraestructura tecnológica y servicios digitales relacionados. Dependiendo del servicio involucrado, la infraestructura puede conectar usuarios o cuentas con proveedores independientes de terceros.",
+        "Salvo que se indique expresamente en un acuerdo separado, Elleva no actúa como banco, corredor, exchange, fondo de inversión tradicional, custodio ni asesor financiero por el mero hecho de proporcionar acceso a su tecnología.",
+        "Los servicios financieros, de pago, custodia, liquidez, corretaje u otros servicios regulados pueden ser prestados por proveedores independientes de terceros cuando corresponda."
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Infraestructura de Investigación, Decisión y Ejecución",
+      "paragraphs": [
+        "La tecnología de Elleva puede incluir sistemas de investigación, datos de mercado, procesamiento automatizado, sistemas de apoyo a la decisión, infraestructura de ejecución y monitoreo continuo.",
+        "La inteligencia artificial, los algoritmos y los sistemas automatizados pueden utilizarse para procesar información, monitorear condiciones, identificar oportunidades operativas o apoyar decisiones y ejecución.",
+        "La tecnología automatizada no puede eliminar el riesgo de mercado, el riesgo de liquidez, el riesgo de ejecución, el riesgo tecnológico ni las condiciones de mercado inesperadas."
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Sin Garantía de Resultados Financieros",
+      "paragraphs": [
+        "Los mercados financieros y los activos digitales implican riesgo. El rendimiento histórico, las simulaciones, las proyecciones, los ejemplos, los objetivos o los resultados previos no garantizan el rendimiento futuro.",
+        "Ninguna información mostrada por Elleva debe interpretarse como una garantía de beneficio, preservación del capital o resultado financiero fijo.",
+        "Los usuarios siguen siendo responsables de determinar si el uso de la plataforma y cualquier asignación aplicable de capital es adecuada para sus propias circunstancias."
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Elegibilidad y Acceso Restringido",
+      "paragraphs": [
+        "Solo puedes utilizar Elleva si tienes la capacidad legal para celebrar acuerdos vinculantes y tu uso del servicio aplicable está permitido según las leyes que te sean aplicables.",
+        "Elleva puede restringir, suspender o rechazar el acceso a determinados servicios, funciones, programas o jurisdicciones cuando sea razonablemente necesario por motivos legales, de cumplimiento, seguridad, operativos o comerciales."
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Registro de Cuenta y Seguridad",
+      "paragraphs": [
+        "Eres responsable de proporcionar información precisa y actualizada durante el registro y de mantener actualizada la información de tu cuenta.",
+        "Eres responsable de mantener la confidencialidad de tus credenciales, métodos de autenticación y dispositivos utilizados para acceder a la plataforma.",
+        "Debes notificar a Elleva sin demora si crees que tu cuenta ha sido comprometida o accedida sin autorización."
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Verificación y Cumplimiento",
+      "paragraphs": [
+        "Elleva o sus socios de infraestructura aplicables pueden requerir información de identidad, cuenta, transacción u otra información para fines de seguridad, prevención de fraude, cumplimiento, legales u operativos.",
+        "La falta de proporcionar información razonablemente requerida para la verificación puede resultar en acceso restringido a ciertos servicios o transacciones.",
+        "Elleva puede retrasar, rechazar, restringir o suspender la actividad cuando sea razonablemente necesario para abordar preocupaciones de seguridad, fraude, cumplimiento o legales."
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Billeteras y Transacciones en Blockchain",
+      "paragraphs": [
+        "Ciertos servicios de Elleva pueden interactuar con billeteras digitales de terceros o redes blockchain.",
+        "Las transacciones en blockchain pueden ser irreversibles después de su confirmación. Elleva puede no ser capaz de cancelar, recuperar o revertir activos enviados a una dirección incorrecta, red no compatible o activo incompatible.",
+        "Los usuarios son responsables de validar las direcciones de billetera, las redes, los activos admitidos y la información de la transacción antes de confirmar una transferencia.",
+        "Salvo que se indique expresamente lo contrario, el acceso tecnológico a la funcionalidad de billetera o blockchain no significa por sí mismo que Elleva asuma la custodia de los activos digitales del usuario."
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Infraestructura de Terceros",
+      "paragraphs": [
+        "Elleva puede integrarse con o depender de proveedores terceros, incluidas instituciones financieras, corredores, infraestructura bancaria, proveedores de liquidez, redes blockchain, infraestructura de billeteras, proveedores de pago, servicios en la nube y proveedores de datos de mercado.",
+        "Los servicios de terceros pueden regirse por acuerdos, divulgaciones y políticas de privacidad separados.",
+        "Elleva no es responsable de fallos, restricciones, retrasos o interrupciones causados exclusivamente por sistemas independientes de terceros o eventos fuera del control razonable de Elleva."
+      ]
+    },
+    {
+      "number": "11",
+      "title": "ProfitShare",
+      "paragraphs": [
+        "Cuando esté disponible, ProfitShare es un mecanismo del ecosistema Elleva cuyas distribuciones aplicables pueden depender del rendimiento operativo y económico y de las reglas del programa aplicable.",
+        "Las distribuciones de ProfitShare son variables y no están garantizadas. No deben interpretarse como interés fijo, rendimientos garantizados o promesa de beneficio.",
+        "Las condiciones, límites, cualificaciones y reglas operativas aplicables de ProfitShare se describen por separado en la documentación del programa aplicable."
+      ]
+    },
+    {
+      "number": "12",
+      "title": "Elleva Direct y Programas del Ecosistema",
+      "paragraphs": [
+        "Elleva puede proporcionar programas de desarrollo del ecosistema, de socios, de referidos o comunitarios, incluido Elleva Direct.",
+        "La elegibilidad, los criterios de cualificación, las distribuciones, los niveles de reconocimiento y otras condiciones pueden definirse por separado en las reglas del programa aplicable.",
+        "La participación en cualquier programa de Elleva no garantiza ingresos, beneficios ni un resultado financiero específico.",
+        "Los participantes no pueden hacer afirmaciones financieras falsas, engañosas, no autorizadas o garantizadas sobre Elleva."
+      ]
+    },
+    {
+      "number": "13",
+      "title": "Comisiones y Condiciones Operativas",
+      "paragraphs": [
+        "Ciertas transacciones, retiros, servicios o actividades de la plataforma pueden estar sujetas a comisiones o límites operativos.",
+        "Las comisiones aplicables, mínimos, máximos, períodos de procesamiento y condiciones del programa pueden presentarse a través de la interfaz correspondiente, la confirmación de la transacción o las reglas del programa aplicable.",
+        "Las redes blockchain y la infraestructura de terceros pueden imponer cargos adicionales fuera del control de Elleva."
+      ]
+    },
+    {
+      "number": "14",
+      "title": "Responsabilidades del Usuario",
+      "paragraphs": ["Aceptas:"],
+      "items": [
+        "proporcionar información precisa y actualizada",
+        "mantener una seguridad de cuenta adecuada",
+        "cumplir con las leyes y regulaciones aplicables",
+        "verificar la información de transacciones y billeteras",
+        "utilizar la plataforma solo para fines lícitos",
+        "seguir las reglas del programa aplicable",
+        "evitar representaciones no autorizadas o engañosas sobre Elleva"
+      ]
+    },
+    {
+      "number": "15",
+      "title": "Conducta Prohibida",
+      "paragraphs": ["No puedes utilizar Elleva para:"],
+      "items": [
+        "realizar actividades fraudulentas o ilícitas",
+        "proporcionar información falsa o engañosa",
+        "intentar acceso no autorizado a sistemas o cuentas",
+        "interferir con la seguridad o la infraestructura de la plataforma",
+        "hacerte pasar por Elleva u otra persona",
+        "hacer un uso indebido de programas de referidos o del ecosistema",
+        "manipular transacciones o datos de la plataforma",
+        "violar derechos de propiedad intelectual",
+        "eludir procedimientos de seguridad o cumplimiento"
+      ]
+    },
+    {
+      "number": "16",
+      "title": "Suspensión y Terminación",
+      "paragraphs": [
+        "Elleva puede restringir, suspender o terminar el acceso cuando sea razonablemente necesario para proteger a los usuarios, investigar actividades sospechosas, cumplir con obligaciones legales, proteger la infraestructura o hacer cumplir estos Términos.",
+        "Cuando corresponda, Elleva puede solicitar información o verificación adicional antes de restaurar el acceso."
+      ]
+    },
+    {
+      "number": "17",
+      "title": "Disponibilidad de la Plataforma",
+      "paragraphs": [
+        "Elleva procura mantener una infraestructura confiable, pero no garantiza una disponibilidad ininterrumpida o libre de errores.",
+        "El acceso puede estar temporalmente no disponible debido a mantenimiento, actualizaciones, incidentes de ciberseguridad, congestión de blockchain, interrupciones de terceros, condiciones de mercado o eventos fuera del control razonable de Elleva."
+      ]
+    },
+    {
+      "number": "18",
+      "title": "Propiedad Intelectual",
+      "paragraphs": [
+        "El nombre, la marca, la interfaz, el software, la identidad visual, la documentación, el contenido, la tecnología y la propiedad intelectual relacionada de Elleva están protegidos por las leyes de propiedad intelectual aplicables.",
+        "No se transfieren derechos de propiedad a los usuarios por el mero hecho de acceder o utilizar la plataforma."
+      ]
+    },
+    {
+      "number": "19",
+      "title": "Divulgación de Riesgos",
+      "paragraphs": [
+        "La actividad en los mercados financieros, los activos digitales, las transacciones en blockchain, la ejecución automatizada y la infraestructura tecnológica implican riesgos materiales.",
+        "Los riesgos pueden incluir volatilidad del mercado, limitaciones de liquidez, fallos de ejecución, fallos tecnológicos, incidentes de ciberseguridad, interrupciones de terceros, congestión de blockchain, cambios regulatorios y pérdida de capital.",
+        "En la Divulgación de Programa y Riesgo de Elleva se proporciona una descripción más detallada de los riesgos operativos y de programa aplicables."
+      ]
+    },
+    {
+      "number": "20",
+      "title": "Limitación de Responsabilidad",
+      "paragraphs": [
+        "En la máxima medida permitida por la ley aplicable, Elleva no será responsable de pérdidas indirectas, incidentales, consecuentes o especiales que surjan de circunstancias fuera de su control razonable.",
+        "Nada en estos Términos excluye o limita la responsabilidad que no pueda excluirse o limitarse legalmente."
+      ]
+    },
+    {
+      "number": "21",
+      "title": "Indemnización",
+      "paragraphs": [
+        "En la medida permitida por la ley aplicable, puedes ser responsable de pérdidas, reclamaciones, responsabilidades o costos razonables que surjan de tu uso ilícito de la plataforma, la violación de estos Términos o la infracción de los derechos de Elleva o de terceros."
+      ]
+    },
+    {
+      "number": "22",
+      "title": "Cambios en la Plataforma o los Términos",
+      "paragraphs": [
+        "Elleva puede actualizar su plataforma, productos, funcionalidad, programas o estos Términos a medida que evolucionan su tecnología, modelo de negocio, requisitos operativos u obligaciones legales.",
+        "Los cambios materiales pueden comunicarse a través de la plataforma, el sitio web u otros canales apropiados."
+      ]
+    },
+    {
+      "number": "23",
+      "title": "Privacidad",
+      "paragraphs": [
+        "La información personal se procesa de acuerdo con la Política de Privacidad de Elleva y los requisitos de protección de datos aplicables."
+      ],
+      "link": {
+        "label": "Leer la Política de Privacidad →",
+        "target": "privacy"
+      }
+    },
+    {
+      "number": "24",
+      "title": "Ley Aplicable y Resolución de Disputas",
+      "paragraphs": [
+        "La ley aplicable, la entidad contratante y el mecanismo de resolución de disputas aplicables a la relación de un usuario con Elleva deben identificarse en la documentación contractual aplicable y de conformidad con la ley imperativa.",
+        "Nada en estos Términos pretende eliminar o restringir derechos que no puedan excluirse legalmente según las leyes aplicables al usuario."
+      ]
+    },
+    {
+      "number": "25",
+      "title": "Contacto",
+      "paragraphs": [
+        "Las preguntas sobre estos Términos, la Política de Privacidad o los programas aplicables de Elleva pueden enviarse a través de los canales de contacto oficiales de Elleva."
+      ],
+      "link": {
+        "label": "Contactar con Elleva →",
+        "target": "contact"
+      }
+    }
+  ],
+  "brandTitle": "Infraestructura de Capital Autónoma",
+  "brandDescription": "Investigar → Decidir → Ejecutar → Monitorear."
+}

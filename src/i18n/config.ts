@@ -4,7 +4,16 @@ import Backend from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
 import { allLangs, defaultLang } from "./langs";
 
-const ns = ["common", "home", "nav", "notfound"];
+const ns = [
+  "common",
+  "home",
+  "nav",
+  "notfound",
+  "privacypolicy",
+  "programrules",
+  "termsofuse",
+  "contact",
+];
 
 if (!i18n.isInitialized) {
   i18n

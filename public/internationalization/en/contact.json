@@ -1,0 +1,90 @@
+{
+  "pageTitle": "Contact",
+  "heroTitle": "Let's start a conversation.",
+  "heroDescription": "Whether you need platform support, want to discuss a strategic partnership or want to understand Elleva's infrastructure, send us a message.",
+  "contactTypes": [
+    {
+      "title": "Platform support",
+      "description": "Account, access and technical questions"
+    },
+    {
+      "title": "Business & partnerships",
+      "description": "Strategic and ecosystem opportunities"
+    },
+    {
+      "title": "Institutional",
+      "description": "Brokers, infrastructure and liquidity relationships"
+    }
+  ],
+  "globalStatement": "Global infrastructure. International ecosystem.",
+  "formTitle": "How can we help?",
+  "formDescription": "Complete the form and choose how you would like to contact the Elleva team.",
+  "fields": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "name@company.com",
+    "company": "Company",
+    "optional": "optional",
+    "companyPlaceholder": "Company name",
+    "topic": "What can we help with?",
+    "topicPlaceholder": "Select a topic",
+    "message": "Message",
+    "messagePlaceholder": "Tell us how we can help..."
+  },
+  "topics": [
+    {
+      "value": "general",
+      "label": "General inquiry"
+    },
+    {
+      "value": "support",
+      "label": "Platform support"
+    },
+    {
+      "value": "account",
+      "label": "Account & access"
+    },
+    {
+      "value": "business",
+      "label": "Business & partnerships"
+    },
+    {
+      "value": "institutional",
+      "label": "Institutional"
+    },
+    {
+      "value": "privacy",
+      "label": "Privacy & legal"
+    }
+  ],
+  "actions": {
+    "email": "Send by Email",
+    "whatsapp": "Send by WhatsApp"
+  },
+  "consent": "By contacting us, you agree that Elleva may process the information provided to respond to your request.",
+  "contactMethods": [
+    {
+      "title": "Email",
+      "description": "Send structured inquiries directly through your preferred email application."
+    },
+    {
+      "title": "WhatsApp",
+      "description": "Contact the Elleva team directly using WhatsApp."
+    },
+    {
+      "title": "Global",
+      "description": "Elleva is building an international technology and capital infrastructure ecosystem."
+    }
+  ],
+  "emailSubject": "Elleva Contact",
+  "emailBodyTitle": "ELLEVA — Contact Request",
+  "emailBody": {
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "companyNotProvided": "Not provided",
+    "topic": "Topic",
+    "message": "Message"
+  }
+}

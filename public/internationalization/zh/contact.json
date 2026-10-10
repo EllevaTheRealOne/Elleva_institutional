@@ -1,0 +1,90 @@
+{
+  "pageTitle": "联系我们",
+  "heroTitle": "让我们开始对话。",
+  "heroDescription": "无论您需要平台支持、希望讨论战略合作，还是想了解 Elleva 的基础设施，请给我们发送消息。",
+  "contactTypes": [
+    {
+      "title": "平台支持",
+      "description": "账户、访问和技术问题"
+    },
+    {
+      "title": "业务与合作",
+      "description": "战略和生态系统机会"
+    },
+    {
+      "title": "机构",
+      "description": "经纪商、基础设施和流动性关系"
+    }
+  ],
+  "globalStatement": "全球基础设施。国际生态系统。",
+  "formTitle": "我们能提供什么帮助？",
+  "formDescription": "填写表单并选择您希望联系 Elleva 团队的方式。",
+  "fields": {
+    "name": "姓名",
+    "namePlaceholder": "您的姓名",
+    "email": "电子邮件",
+    "emailPlaceholder": "name@company.com",
+    "company": "公司",
+    "optional": "可选",
+    "companyPlaceholder": "公司名称",
+    "topic": "我们能提供什么帮助？",
+    "topicPlaceholder": "选择主题",
+    "message": "消息",
+    "messagePlaceholder": "告诉我们我们能提供什么帮助..."
+  },
+  "topics": [
+    {
+      "value": "general",
+      "label": "一般咨询"
+    },
+    {
+      "value": "support",
+      "label": "平台支持"
+    },
+    {
+      "value": "account",
+      "label": "账户与访问"
+    },
+    {
+      "value": "business",
+      "label": "业务与合作"
+    },
+    {
+      "value": "institutional",
+      "label": "机构"
+    },
+    {
+      "value": "privacy",
+      "label": "隐私与法律"
+    }
+  ],
+  "actions": {
+    "email": "通过电子邮件发送",
+    "whatsapp": "通过 WhatsApp 发送"
+  },
+  "consent": "通过联系我们，您同意 Elleva 可以处理所提供的信息以回应您的请求。",
+  "contactMethods": [
+    {
+      "title": "电子邮件",
+      "description": "通过您首选的电子邮件应用程序直接发送结构化咨询。"
+    },
+    {
+      "title": "WhatsApp",
+      "description": "使用 WhatsApp 直接联系 Elleva 团队。"
+    },
+    {
+      "title": "全球",
+      "description": "Elleva 正在构建一个国际技术和资本基础设施生态系统。"
+    }
+  ],
+  "emailSubject": "Elleva 联系",
+  "emailBodyTitle": "ELLEVA — 联系请求",
+  "emailBody": {
+    "name": "姓名",
+    "email": "电子邮件",
+    "company": "公司",
+    "companyNotProvided": "未提供",
+    "topic": "主题",
+    "message": "消息"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "lastUpdated": "Ngày 9 tháng 10 năm 2026",
+  "heroTitleLine1": "Dữ liệu của bạn.",
+  "heroTitleLine2": "Quyền riêng tư của bạn.",
+  "heroDescription": "Chính sách Bảo mật này giải thích cách Elleva có thể thu thập, sử dụng, bảo vệ, lưu giữ và xử lý thông tin theo cách khác trong toàn bộ hệ sinh thái công nghệ của mình.",
+  "lastUpdatedLabel": "Cập nhật lần cuối: {{date}}",
+  "designTitle": "Quyền riêng tư thông qua thiết kế có trách nhiệm",
+  "designDescription": "Elleva tìm cách chỉ xử lý thông tin khi thực sự cần thiết để vận hành, bảo vệ, duy trì và cải thiện cơ sở hạ tầng của mình cũng như cung cấp các dịch vụ hiện hành.",
+  "pillars": [
+    { "title": "Thu thập", "subtitle": "Thông tin cần thiết để vận hành" },
+    { "title": "Bảo vệ", "subtitle": "Bảo mật và kiểm soát truy cập" },
+    {
+      "title": "Xử lý",
+      "subtitle": "Vận hành nền tảng và cơ sở hạ tầng"
+    },
+    {
+      "title": "Kiểm soát",
+      "subtitle": "Tính minh bạch và các quyền hiện hành của người dùng"
+    }
+  ],
+  "informationEyebrow": "01 / Thông tin",
+  "informationTitle": "Thông tin chúng tôi có thể xử lý",
+  "informationDescription": "Thông tin được Elleva xử lý phụ thuộc vào cách bạn tương tác với nền tảng, những tính năng bạn sử dụng và những dịch vụ hoặc cơ sở hạ tầng của bên thứ ba có liên quan.",
+  "informationSections": [
+    {
+      "title": "Thông tin bạn cung cấp",
+      "text": "Chúng tôi có thể thu thập thông tin bạn cung cấp khi tạo, xác minh, sử dụng hoặc quản lý tài khoản Elleva.",
+      "items": [
+        "Tên và thông tin tài khoản",
+        "Thông tin liên hệ",
+        "Quốc gia hoặc khu vực",
+        "Tùy chọn tài khoản và hồ sơ",
+        "Thông tin danh tính hoặc xác minh khi được yêu cầu",
+        "Thông tin gửi đến bộ phận hỗ trợ khách hàng",
+        "Thông tin được cung cấp liên quan đến các chương trình hiện hành"
+      ]
+    },
+    {
+      "title": "Thông tin kỹ thuật và bảo mật",
+      "text": "Thông tin có thể được tạo tự động khi bạn truy cập hoặc tương tác với cơ sở hạ tầng của Elleva.",
+      "items": [
+        "Địa chỉ IP",
+        "Thông tin trình duyệt và thiết bị",
+        "Hệ điều hành",
+        "Dấu thời gian đăng nhập và xác thực",
+        "Thông tin phiên",
+        "Hoạt động của ứng dụng và nền tảng",
+        "Nhật ký bảo mật và chẩn đoán",
+        "Chỉ số gian lận và lạm dụng"
+      ]
+    },
+    {
+      "title": "Thông tin tài chính, ví và giao dịch",
+      "text": "Khi được áp dụng, Elleva có thể xử lý thông tin cần thiết để hiển thị, giám sát hoặc tạo điều kiện cho hoạt động của nền tảng.",
+      "items": [
+        "Thông tin nạp và rút tiền khi được yêu cầu",
+        "Mã định danh giao dịch khi được yêu cầu",
+        "Địa chỉ ví",
+        "Thông tin mạng blockchain",
+        "Số dư tài khoản và hoạt động tài khoản",
+        "Hồ sơ vận hành và hiệu suất",
+        "Hoạt động liên quan đến chương trình"
+      ]
+    }
+  ],
+  "purposeEyebrow": "02 / Mục đích",
+  "purposeTitle": "Tại sao Elleva xử lý thông tin",
+  "purposeDescription": "Thông tin có thể được xử lý cho các mục đích vận hành, hợp đồng, bảo mật, công nghệ và pháp lý hợp pháp liên quan đến hệ sinh thái Elleva.",
+  "purposes": [
+    "Tạo và quản lý tài khoản người dùng",
+    "Xác thực người dùng và bảo vệ quyền truy cập tài khoản",
+    "Cung cấp bảng điều khiển, giao diện và chức năng nền tảng",
+    "Xử lý và giám sát các giao dịch hiện hành",
+    "Kết nối Elleva với cơ sở hạ tầng tài chính và công nghệ của bên thứ ba",
+    "Hỗ trợ bảo mật, phòng chống gian lận và phát hiện lạm dụng",
+    "Cung cấp hỗ trợ kỹ thuật và khách hàng",
+    "Duy trì hồ sơ vận hành, bảo mật và kiểm toán",
+    "Cải thiện cơ sở hạ tầng, chức năng và trải nghiệm người dùng",
+    "Vận hành các chương trình và dịch vụ hiện hành của Elleva",
+    "Đáp ứng các nghĩa vụ pháp lý, hợp đồng, tuân thủ hoặc quy định hiện hành"
+  ],
+  "sections": {
+    "dataController": {
+      "title": "Đơn vị kiểm soát dữ liệu",
+      "paragraphs": [
+        "Elleva hoạt động thông qua pháp nhân hoặc các pháp nhân chịu trách nhiệm về dịch vụ hiện hành. Danh tính và thông tin liên hệ của đơn vị ký kết hoặc kiểm soát dữ liệu liên quan phải được cung cấp trong tài khoản, thỏa thuận hoặc thông tin liên hệ chính thức hiện hành.",
+        "Chính sách này áp dụng cho thông tin cá nhân được xử lý liên quan đến các dịch vụ của Elleva, tùy thuộc vào luật bảo vệ dữ liệu hiện hành."
+      ]
+    },
+    "legalBases": {
+      "title": "Cơ sở pháp lý",
+      "paragraphs": [
+        "Tùy thuộc vào thẩm quyền và hoàn cảnh, Elleva có thể xử lý thông tin dựa trên sự cần thiết của hợp đồng, lợi ích hợp pháp, sự đồng ý, nghĩa vụ pháp lý, yêu cầu bảo mật hoặc các cơ sở hợp pháp khác có sẵn theo luật hiện hành.",
+        "Khi cần có sự đồng ý, Elleva sẽ tìm kiếm sự đồng ý theo cách thức mà luật hiện hành yêu cầu và sẽ cung cấp các cơ chế hiện có để rút lại."
+      ]
+    },
+    "internationalProcessing": {
+      "title": "Xử lý quốc tế",
+      "paragraphs": [
+        "Elleva hoạt động thông qua cơ sở hạ tầng kỹ thuật số và có thể sử dụng các nhà cung cấp dịch vụ đặt tại các quốc gia khác nhau.",
+        "Do đó, thông tin có thể được xử lý hoặc lưu trữ bên ngoài quốc gia nơi người dùng cư trú, tùy thuộc vào các yêu cầu pháp lý hiện hành và các biện pháp bảo vệ theo hợp đồng hoặc kỹ thuật."
+      ]
+    },
+    "thirdPartyInfrastructure": {
+      "title": "Cơ sở hạ tầng của bên thứ ba",
+      "paragraphs": [
+        "Elleva có thể chia sẻ thông tin với các nhà cung cấp dịch vụ khi thực sự cần thiết để cung cấp dịch vụ lưu trữ, xác thực, bảo mật, phân tích, liên lạc, xử lý giao dịch, hỗ trợ hoặc cơ sở hạ tầng khác.",
+        "Tùy thuộc vào dịch vụ được sử dụng, cơ sở hạ tầng của bên thứ ba có thể bao gồm tổ chức tài chính, nhà môi giới, nhà cung cấp thanh toán, nhà cung cấp thanh khoản, cơ sở hạ tầng ví, mạng blockchain, nhà cung cấp đám mây và đối tác công nghệ.",
+        "Bên thứ ba có thể xử lý thông tin theo các điều khoản và chính sách bảo mật của riêng họ khi được áp dụng.",
+        "Elleva không bán thông tin cá nhân cho các nhà quảng cáo."
+      ]
+    },
+    "blockchainInformation": {
+      "title": "Thông tin blockchain",
+      "paragraphs": [
+        "Khi cơ sở hạ tầng blockchain được sử dụng, địa chỉ ví, mã định danh giao dịch và thông tin mạng liên quan có thể được Elleva xử lý hoặc hiển thị trên blockchain công khai hiện hành.",
+        "Hồ sơ blockchain có thể công khai, bất biến hoặc khó sửa đổi. Elleva không thể đảm bảo rằng thông tin được ghi trên blockchain công khai sau đó có thể bị xóa hoặc thay đổi."
+      ]
+    },
+    "security": {
+      "title": "Bảo mật",
+      "paragraphs": [
+        "Elleva có thể sử dụng các biện pháp bảo mật kỹ thuật và tổ chức như kiểm soát xác thực, liên lạc được mã hóa, hạn chế truy cập, nhật ký kiểm toán, giám sát và thực tiễn bảo mật cơ sở hạ tầng.",
+        "Không hệ thống kỹ thuật số nào có thể được đảm bảo hoàn toàn miễn nhiễm với các cuộc tấn công mạng, lỗi kỹ thuật, truy cập trái phép hoặc các sự cố bảo mật khác."
+      ]
+    },
+    "dataRetention": {
+      "title": "Lưu giữ dữ liệu",
+      "paragraphs": [
+        "Thông tin có thể được lưu giữ trong thời gian thực sự cần thiết để cung cấp dịch vụ, duy trì hồ sơ tài khoản và giao dịch, bảo vệ bảo mật, ngăn chặn gian lận, giải quyết tranh chấp và đáp ứng các yêu cầu hợp đồng hoặc pháp lý.",
+        "Do đó, thời gian lưu giữ có thể khác nhau tùy theo loại thông tin và mục đích xử lý."
+      ]
+    },
+    "yourRights": {
+      "title": "Quyền của bạn",
+      "paragraphs": [
+        "Tùy thuộc vào luật bảo vệ dữ liệu hiện hành, người dùng có thể có quyền yêu cầu truy cập, chỉnh sửa, xóa, hạn chế, phản đối, chuyển dữ liệu hoặc các hình thức kiểm soát khác đối với một số thông tin cá nhân nhất định.",
+        "Các quyền này có thể phải tuân theo các giới hạn pháp lý, bao gồm nghĩa vụ lưu giữ thông tin vì mục đích bảo mật, phòng chống gian lận, hồ sơ giao dịch, nghĩa vụ hợp đồng hoặc tuân thủ pháp luật."
+      ]
+    },
+    "automatedProcessing": {
+      "title": "Xử lý tự động và AI",
+      "paragraphs": [
+        "Elleva có thể sử dụng hệ thống tự động, thuật toán và trí tuệ nhân tạo để xử lý thông tin, giám sát cơ sở hạ tầng, xác định điều kiện vận hành, cải thiện bảo mật, hỗ trợ phân tích hoặc cung cấp chức năng nền tảng.",
+        "Xử lý tự động không nhất thiết có nghĩa là các quyết định được đưa ra hoàn toàn bằng phương tiện tự động. Khi luật hiện hành quy định các quyền liên quan đến việc ra quyết định hoàn toàn tự động, các quyền đó sẽ được áp dụng theo yêu cầu của pháp luật."
+      ]
+    },
+    "cookiesAnalytics": {
+      "title": "Cookie và phân tích",
+      "paragraphs": [
+        "Elleva có thể sử dụng cookie, bộ nhớ cục bộ và các công nghệ tương tự để xác thực, tùy chọn, bảo mật, phân tích và hiệu suất nền tảng.",
+        "Các công nghệ thực sự được sử dụng có thể thay đổi khi trang web và cơ sở hạ tầng của Elleva phát triển."
+      ]
+    },
+    "children": {
+      "title": "Trẻ em",
+      "paragraphs": [
+        "Các dịch vụ của Elleva không dành cho những cá nhân không thể tự mình giao kết các thỏa thuận hiện hành một cách hợp pháp. Elleva không cố ý thu thập thông tin cá nhân từ trẻ em vi phạm luật hiện hành."
+      ]
+    },
+    "policyUpdates": {
+      "title": "Cập nhật chính sách",
+      "paragraphs": [
+        "Chính sách Bảo mật này có thể được cập nhật khi cơ sở hạ tầng, dịch vụ, công nghệ hoặc nghĩa vụ pháp lý của Elleva phát triển. Các thay đổi quan trọng có thể được thông báo qua trang web, nền tảng hoặc các kênh phù hợp khác."
+      ]
+    }
+  },
+  "links": {
+    "terms": "Đọc Điều khoản Sử dụng →",
+    "programRules": "Quy tắc Chương trình & Công bố Rủi ro →"
+  },
+  "brandTitle": "Cơ sở hạ tầng vốn tự chủ",
+  "brandDescription": "Nghiên cứu → Quyết định → Thực thi → Giám sát."
+}

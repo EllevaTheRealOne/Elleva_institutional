@@ -1,0 +1,174 @@
+{
+  "lastUpdated": "9 de outubro de 2026",
+  "heroTitleLine1": "Seus dados.",
+  "heroTitleLine2": "Sua privacidade.",
+  "heroDescription": "Esta Política de Privacidade explica como a Elleva pode coletar, usar, proteger, reter e, de outra forma, processar informações em todo o seu ecossistema tecnológico.",
+  "lastUpdatedLabel": "Última atualização: {{date}}",
+  "designTitle": "Privacidade por design responsável",
+  "designDescription": "A Elleva procura processar informações apenas quando razoavelmente necessário para operar, proteger, manter e melhorar sua infraestrutura e fornecer os serviços aplicáveis.",
+  "pillars": [
+    { "title": "Coletar", "subtitle": "Informações necessárias para operar" },
+    { "title": "Proteger", "subtitle": "Segurança e controles de acesso" },
+    {
+      "title": "Processar",
+      "subtitle": "Operações de plataforma e infraestrutura"
+    },
+    {
+      "title": "Controlar",
+      "subtitle": "Transparência e direitos aplicáveis do usuário"
+    }
+  ],
+  "informationEyebrow": "01 / Informações",
+  "informationTitle": "Informações que podemos processar",
+  "informationDescription": "As informações processadas pela Elleva dependem de como você interage com a plataforma, quais recursos utiliza e quais serviços ou infraestrutura de terceiros estão envolvidos.",
+  "informationSections": [
+    {
+      "title": "Informações que você fornece",
+      "text": "Podemos coletar informações que você fornece ao criar, verificar, usar ou gerenciar uma conta Elleva.",
+      "items": [
+        "Nome e informações da conta",
+        "Informações de contato",
+        "País ou região",
+        "Preferências de conta e perfil",
+        "Informações de identidade ou verificação quando exigidas",
+        "Informações enviadas ao suporte ao cliente",
+        "Informações fornecidas em conexão com programas aplicáveis"
+      ]
+    },
+    {
+      "title": "Informações técnicas e de segurança",
+      "text": "Informações podem ser geradas automaticamente quando você acessa ou interage com a infraestrutura da Elleva.",
+      "items": [
+        "Endereço IP",
+        "Informações de navegador e dispositivo",
+        "Sistema operacional",
+        "Registros de data e hora de login e autenticação",
+        "Informações de sessão",
+        "Atividade do aplicativo e da plataforma",
+        "Logs de segurança e diagnóstico",
+        "Indicadores de fraude e abuso"
+      ]
+    },
+    {
+      "title": "Informações financeiras, de carteira e de transações",
+      "text": "Quando aplicável, a Elleva pode processar informações necessárias para exibir, monitorar ou facilitar a atividade da plataforma.",
+      "items": [
+        "Informações de depósito e saque quando exigidas",
+        "Identificadores de transação quando exigidos",
+        "Endereços de carteira",
+        "Informações da rede blockchain",
+        "Saldos de conta e atividade da conta",
+        "Registros operacionais e de desempenho",
+        "Atividade relacionada a programas"
+      ]
+    }
+  ],
+  "purposeEyebrow": "02 / Finalidade",
+  "purposeTitle": "Por que a Elleva processa informações",
+  "purposeDescription": "As informações podem ser processadas para fins legítimos operacionais, contratuais, de segurança, tecnológicos e legais relacionados ao ecossistema Elleva.",
+  "purposes": [
+    "Criar e administrar contas de usuário",
+    "Autenticar usuários e proteger o acesso à conta",
+    "Fornecer painéis, interfaces e funcionalidades da plataforma",
+    "Processar e monitorar transações aplicáveis",
+    "Conectar a Elleva à infraestrutura financeira e tecnológica de terceiros",
+    "Apoiar segurança, prevenção de fraude e detecção de abuso",
+    "Fornecer suporte técnico e ao cliente",
+    "Manter registros operacionais, de segurança e de auditoria",
+    "Melhorar infraestrutura, funcionalidade e experiência do usuário",
+    "Operar programas e serviços aplicáveis da Elleva",
+    "Cumprir obrigações legais, contratuais, de conformidade ou regulatórias aplicáveis"
+  ],
+  "sections": {
+    "dataController": {
+      "title": "Controlador de Dados",
+      "paragraphs": [
+        "A Elleva atua por meio da entidade ou entidades legais responsáveis pelo serviço aplicável. A identidade e os dados de contato da entidade contratante ou controladora de dados relevante devem ser fornecidos na conta aplicável, no contrato ou nas informações de contato oficiais.",
+        "Esta Política se aplica a informações pessoais processadas em conexão com os serviços da Elleva, sujeitas à lei de proteção de dados aplicável."
+      ]
+    },
+    "legalBases": {
+      "title": "Bases Legais",
+      "paragraphs": [
+        "Dependendo da jurisdição e das circunstâncias, a Elleva pode processar informações com base em necessidade contratual, interesses legítimos, consentimento, obrigações legais, requisitos de segurança ou outras bases legais disponíveis sob a lei aplicável.",
+        "Quando o consentimento for exigido, a Elleva o solicitará da maneira exigida pela lei aplicável e fornecerá mecanismos disponíveis para retirada."
+      ]
+    },
+    "internationalProcessing": {
+      "title": "Processamento Internacional",
+      "paragraphs": [
+        "A Elleva opera por meio de infraestrutura digital e pode usar provedores de serviços localizados em diferentes países.",
+        "Portanto, as informações podem ser processadas ou armazenadas fora do país onde um usuário reside, sujeitas aos requisitos legais aplicáveis e a salvaguardas contratuais ou técnicas."
+      ]
+    },
+    "thirdPartyInfrastructure": {
+      "title": "Infraestrutura de Terceiros",
+      "paragraphs": [
+        "A Elleva pode compartilhar informações com provedores de serviços quando razoavelmente necessário para fornecer hospedagem, autenticação, segurança, análise, comunicação, processamento de transações, suporte ou outra infraestrutura.",
+        "Dependendo do serviço utilizado, a infraestrutura de terceiros pode incluir instituições financeiras, corretoras, provedores de pagamento, provedores de liquidez, infraestrutura de carteira, redes blockchain, provedores de nuvem e parceiros de tecnologia.",
+        "Terceiros podem processar informações sob seus próprios termos e políticas de privacidade quando aplicável.",
+        "A Elleva não vende informações pessoais a anunciantes."
+      ]
+    },
+    "blockchainInformation": {
+      "title": "Informações de Blockchain",
+      "paragraphs": [
+        "Quando a infraestrutura blockchain é usada, endereços de carteira, identificadores de transação e informações relacionadas à rede podem ser processados pela Elleva ou visíveis na blockchain pública aplicável.",
+        "Os registros de blockchain podem ser públicos, imutáveis ou difíceis de modificar. A Elleva não pode garantir que informações registradas em uma blockchain pública possam ser posteriormente excluídas ou alteradas."
+      ]
+    },
+    "security": {
+      "title": "Segurança",
+      "paragraphs": [
+        "A Elleva pode usar medidas de segurança técnicas e organizacionais, como controles de autenticação, comunicações criptografadas, restrições de acesso, logs de auditoria, monitoramento e práticas de segurança de infraestrutura.",
+        "Nenhum sistema digital pode ser garantido como completamente imune a ataques cibernéticos, falhas técnicas, acesso não autorizado ou outros incidentes de segurança."
+      ]
+    },
+    "dataRetention": {
+      "title": "Retenção de Dados",
+      "paragraphs": [
+        "As informações podem ser retidas pelo tempo razoavelmente necessário para fornecer serviços, manter registros de conta e transações, proteger a segurança, prevenir fraudes, resolver disputas e satisfazer requisitos contratuais ou legais.",
+        "Portanto, os períodos de retenção podem variar de acordo com o tipo de informação e a finalidade para a qual é processada."
+      ]
+    },
+    "yourRights": {
+      "title": "Seus Direitos",
+      "paragraphs": [
+        "Dependendo da lei de proteção de dados aplicável, os usuários podem ter direitos de solicitar acesso, correção, exclusão, restrição, oposição, portabilidade ou outras formas de controle sobre certas informações pessoais.",
+        "Esses direitos podem estar sujeitos a limitações legais, incluindo obrigações de reter informações para segurança, prevenção de fraude, registros de transações, obrigações contratuais ou conformidade legal."
+      ]
+    },
+    "automatedProcessing": {
+      "title": "Processamento Automatizado e IA",
+      "paragraphs": [
+        "A Elleva pode usar sistemas automatizados, algoritmos e inteligência artificial para processar informações, monitorar infraestrutura, identificar condições operacionais, melhorar a segurança, apoiar análises ou fornecer funcionalidades da plataforma.",
+        "O processamento automatizado não significa necessariamente que as decisões sejam tomadas exclusivamente por meios automatizados. Quando a lei aplicável prevê direitos relativos à tomada de decisão exclusivamente automatizada, esses direitos serão aplicados conforme exigido por lei."
+      ]
+    },
+    "cookiesAnalytics": {
+      "title": "Cookies e Análise",
+      "paragraphs": [
+        "A Elleva pode usar cookies, armazenamento local e tecnologias similares para autenticação, preferências, segurança, análise e desempenho da plataforma.",
+        "As tecnologias efetivamente utilizadas podem variar à medida que o site e a infraestrutura da Elleva evoluem."
+      ]
+    },
+    "children": {
+      "title": "Crianças",
+      "paragraphs": [
+        "Os serviços da Elleva não se destinam a indivíduos que não podem legalmente celebrar os contratos aplicáveis. A Elleva não busca conscientemente coletar informações pessoais de crianças em violação da lei aplicável."
+      ]
+    },
+    "policyUpdates": {
+      "title": "Atualizações da Política",
+      "paragraphs": [
+        "Esta Política de Privacidade pode ser atualizada à medida que a infraestrutura, os serviços, a tecnologia ou as obrigações legais da Elleva evoluem. Alterações materiais podem ser comunicadas por meio do site, da plataforma ou de outros canais apropriados."
+      ]
+    }
+  },
+  "links": {
+    "terms": "Ler Termos de Uso →",
+    "programRules": "Regras do Programa e Divulgação de Riscos →"
+  },
+  "brandTitle": "Infraestrutura de Capital Autônoma",
+  "brandDescription": "Pesquisar → Decidir → Executar → Monitorar."
+}

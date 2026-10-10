@@ -12,10 +12,11 @@ import { HomeView } from "./pages/Home";
 import { BusinessPlanView } from "./pages/BusinessPlan";
 import { PATH_PAGE } from "./constants/routes/routes.constants";
 import NotFoundView from "./pages/NotFound";
-import PrivacyPolicyView from "./pages/privacyPolicy";
 import TermsOfUseView from "./pages/termsOfUse";
 import ProgramRulesView from "./pages/ProgramRules";
 import RiskDisclosureView from "./pages/RiskDisclosure";
+import PrivacyPolicyView from "./pages/privacyPolicy";
+import ContactView from "./pages/contact";
 
 const Root = () => {
   useSyncHtmlLang();
@@ -29,6 +30,7 @@ const mainChildRoutes = [
   { path: PATH_PAGE.termsofuse.slice(1), element: <TermsOfUseView /> },
   { path: PATH_PAGE.programrules.slice(1), element: <ProgramRulesView /> },
   { path: PATH_PAGE.riskdisclosure.slice(1), element: <RiskDisclosureView /> },
+  { path: PATH_PAGE.contact.slice(1), element: <ContactView /> },
 ];
 const buildRoutesForPrefix = (prefix?: string) => {
   const layoutPath = prefix || "/";

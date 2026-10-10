@@ -1,0 +1,128 @@
+{
+  "lastUpdated": "Ngày 9 tháng 10 năm 2026",
+  "heroTitleLine1": "Chương trình & Rủi ro",
+  "heroTitleLine2": "Công bố",
+  "heroDescription": "Khuôn khổ điều chỉnh các chương trình được chọn của hệ sinh thái Elleva, các điều kiện vận hành và các rủi ro liên quan.",
+  "lastUpdatedLabel": "Cập nhật lần cuối: {{date}}",
+  "programs": [
+    {
+      "title": "ProfitShare",
+      "description": "Các phân phối biến đổi của hệ sinh thái."
+    },
+    {
+      "title": "Elleva Direct",
+      "description": "Chương trình phát triển hệ sinh thái."
+    },
+    {
+      "title": "Elleva Pool",
+      "description": "Sự tham gia gắn với kết quả hiện hành của công ty."
+    },
+    {
+      "title": "Rủi ro",
+      "description": "Không có kết quả được đảm bảo."
+    }
+  ],
+  "importantDisclosure": {
+    "title": "Công bố quan trọng",
+    "description": "Các chương trình của Elleva có liên quan đến rủi ro vận hành, thị trường, công nghệ và các rủi ro khác. Không chương trình nào được mô tả ở đây đảm bảo thu nhập, lợi nhuận, lợi tức hoặc bảo toàn vốn."
+  },
+  "sections": [
+    {
+      "number": "01",
+      "title": "Mục đích của tài liệu này",
+      "paragraphs": [
+        "Tài liệu này mô tả khuôn khổ chung áp dụng cho một số chương trình và cơ chế vận hành của hệ sinh thái Elleva.",
+        "Các quy tắc này nên được đọc cùng với Điều khoản Sử dụng và Chính sách Bảo mật của Elleva.",
+        "Các điều kiện của chương trình có thể khác nhau tùy theo sản phẩm, tài khoản, thẩm quyền, yêu cầu đủ điều kiện và điều kiện vận hành hiện hành."
+      ]
+    },
+    {
+      "number": "02",
+      "title": "ProfitShare",
+      "paragraphs": [
+        "ProfitShare là một cơ chế của hệ sinh thái Elleva mà qua đó người dùng đủ điều kiện có thể tham gia vào các phân phối biến đổi gắn với kết quả vận hành và kinh tế hiện hành.",
+        "ProfitShare là biến đổi. Đây không phải là khoản thanh toán lãi cố định và không cấu thành sự đảm bảo về lợi nhuận, lợi tức hoặc bảo toàn vốn.",
+        "Các phân phối hiện hành có thể phụ thuộc vào kết quả vận hành, điều kiện đủ điều kiện, điều kiện tài khoản, quy tắc chương trình và các yếu tố khác áp dụng tại thời điểm đó.",
+        "Các phân phối trong quá khứ không tạo ra lời hứa, dự báo hoặc đảm bảo về các phân phối trong tương lai."
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Elleva Direct",
+      "paragraphs": [
+        "Elleva Direct là một chương trình phát triển hệ sinh thái mà qua đó những người tham gia đủ điều kiện có thể nhận được lợi ích hoặc phân phối gắn với hoạt động đủ điều kiện trong cấu trúc hệ sinh thái đủ điều kiện của họ.",
+        "Cấu trúc chương trình hiện tại có thể bao gồm các phân phối dựa trên cấp độ theo quy tắc chính thức của Elleva Direct.",
+        "Việc tham gia không đảm bảo thu nhập, lợi nhuận, kết quả tài chính hoặc thăng tiến lên bất kỳ cấp độ công nhận nào.",
+        "Người tham gia không được đưa ra các tuyên bố không được phép, gây hiểu lầm hoặc được đảm bảo về Elleva, các chương trình của Elleva hoặc kết quả tiềm năng."
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Elleva Pool",
+      "paragraphs": [
+        "Elleva Pool là một cơ chế nội bộ của hệ sinh thái gắn với hiệu quả kinh tế của công ty và các tiêu chí đủ điều kiện hiện hành của người tham gia.",
+        "Theo cấu trúc chương trình hiện hành, Pool có thể phân bổ một phần xác định lợi nhuận gộp của công ty cho những người tham gia đủ điều kiện.",
+        "Việc tham gia phụ thuộc vào các quy tắc đủ điều kiện hiện hành và không tạo ra sự đảm bảo về bất kỳ phân phối cụ thể nào."
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Điều kiện vận hành",
+      "paragraphs": [
+        "Các mức tối thiểu, tối đa, phí, điều kiện rút tiền, thời gian xử lý, yêu cầu đủ điều kiện và các tham số vận hành khác hiện hành có thể được hiển thị trên nền tảng Elleva hoặc tài liệu chương trình hiện hành.",
+        "Các tham số vận hành hiện tại có thể được cập nhật khi cơ sở hạ tầng, chương trình, nhà cung cấp bên thứ ba hoặc các yêu cầu hiện hành phát triển.",
+        "Khi một giao dịch hoặc chương trình cụ thể trình bày các điều kiện hiện hành trước khi hoàn thành, các điều kiện đó điều chỉnh hoạt động liên quan."
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Rủi ro",
+      "paragraphs": [
+        "Việc tham gia vào các chương trình của Elleva có thể liên quan đến rủi ro tài chính, vận hành, công nghệ và thị trường.",
+        "Những rủi ro này có thể bao gồm:"
+      ],
+      "riskItems": [
+        "Biến động thị trường",
+        "Rủi ro thanh khoản",
+        "Rủi ro thực thi",
+        "Rủi ro blockchain và tài sản kỹ thuật số",
+        "Sự cố công nghệ và cơ sở hạ tầng",
+        "Sự cố an ninh mạng",
+        "Gián đoạn dịch vụ của bên thứ ba",
+        "Thay đổi quy định hoặc pháp lý",
+        "Chậm trễ vận hành",
+        "Khả năng mất vốn"
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Không có kết quả được đảm bảo",
+      "paragraphs": [
+        "Không chương trình nào của Elleva nên được trình bày như một cơ hội thu nhập được đảm bảo, lợi tức được đảm bảo hoặc không có rủi ro.",
+        "Người tham gia không được trình bày kết quả trong quá khứ, ví dụ, tỷ lệ phần trăm hoặc phân phối như những lời hứa về hiệu suất trong tương lai."
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Thay đổi chương trình",
+      "paragraphs": [
+        "Elleva có thể sửa đổi, tạm ngừng hoặc chấm dứt một chương trình của hệ sinh thái hoặc cơ chế vận hành khi thực sự cần thiết do các cân nhắc về vận hành, công nghệ, bảo mật, tuân thủ, pháp lý hoặc kinh doanh.",
+        "Các thay đổi có thể được thông báo qua nền tảng, tài liệu chính thức hoặc các kênh phù hợp khác."
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Hành vi của người tham gia",
+      "paragraphs": [
+        "Người tham gia có trách nhiệm truyền đạt thông tin chính xác về Elleva và các chương trình của Elleva.",
+        "Người tham gia không được hứa hẹn kết quả tài chính, bịa đặt hiệu suất, mạo danh Elleva, thay đổi các điều kiện chương trình chính thức hoặc đưa ra các tuyên bố không nhất quán với tài liệu chính thức của Elleva."
+      ]
+    }
+  ],
+  "links": {
+    "terms": "Điều khoản Sử dụng",
+    "privacy": "Chính sách Bảo mật"
+  },
+  "brandTitle": "Cơ sở hạ tầng vốn tự chủ",
+  "brandDescription": "Nghiên cứu → Quyết định → Thực thi → Giám sát."
+}

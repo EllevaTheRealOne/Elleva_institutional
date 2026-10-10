@@ -1,0 +1,128 @@
+{
+  "lastUpdated": "October 9, 2026",
+  "heroTitleLine1": "Program & Risk",
+  "heroTitleLine2": "Disclosure",
+  "heroDescription": "The framework governing selected Elleva ecosystem programs, operational conditions and associated risks.",
+  "lastUpdatedLabel": "Last updated: {{date}}",
+  "programs": [
+    {
+      "title": "ProfitShare",
+      "description": "Variable ecosystem distributions."
+    },
+    {
+      "title": "Elleva Direct",
+      "description": "Ecosystem development program."
+    },
+    {
+      "title": "Elleva Pool",
+      "description": "Participation linked to applicable company results."
+    },
+    {
+      "title": "Risk",
+      "description": "No guaranteed outcome."
+    }
+  ],
+  "importantDisclosure": {
+    "title": "Important disclosure",
+    "description": "Elleva programs involve operational, market, technology and other risks. No program described here guarantees income, profits, returns or preservation of capital."
+  },
+  "sections": [
+    {
+      "number": "01",
+      "title": "Purpose of this document",
+      "paragraphs": [
+        "This document describes the general framework applicable to certain Elleva ecosystem programs and operational mechanisms.",
+        "These rules should be read together with the Elleva Terms of Use and Privacy Policy.",
+        "Program conditions may vary according to the applicable product, account, jurisdiction, eligibility requirements and operational conditions."
+      ]
+    },
+    {
+      "number": "02",
+      "title": "ProfitShare",
+      "paragraphs": [
+        "ProfitShare is an Elleva ecosystem mechanism through which eligible users may participate in variable distributions associated with applicable operational and economic results.",
+        "ProfitShare is variable. It is not a fixed interest payment and does not constitute a guarantee of profit, return or preservation of capital.",
+        "Applicable distributions may depend on operational results, eligibility, account conditions, program rules and other factors applicable at the time.",
+        "Historical distributions do not establish a promise, forecast or guarantee of future distributions."
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Elleva Direct",
+      "paragraphs": [
+        "Elleva Direct is an ecosystem development program through which eligible participants may receive benefits or distributions associated with qualifying activity within their eligible ecosystem structure.",
+        "The current program structure may include level-based distributions according to the official Elleva Direct rules.",
+        "Participation does not guarantee income, profits, financial results or advancement to any recognition level.",
+        "Participants may not make unauthorized, misleading or guaranteed claims regarding Elleva, its programs or potential results."
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Elleva Pool",
+      "paragraphs": [
+        "Elleva Pool is an internal ecosystem mechanism connected to the economic performance of the company and applicable participant qualification criteria.",
+        "Under the applicable program structure, the Pool may allocate a defined portion of company gross profit to qualified participants.",
+        "Participation is subject to the applicable qualification rules and does not create a guarantee of any particular distribution."
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Operational conditions",
+      "paragraphs": [
+        "Applicable minimums, maximums, fees, withdrawal conditions, processing periods, qualification requirements and other operational parameters may be displayed in the Elleva platform or applicable program documentation.",
+        "Current operational parameters may be updated as the infrastructure, programs, third-party providers or applicable requirements evolve.",
+        "Where a specific transaction or program presents applicable conditions before completion, those conditions govern the relevant activity."
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Risk",
+      "paragraphs": [
+        "Participation in Elleva programs may involve financial, operational, technological and market risks.",
+        "These may include:"
+      ],
+      "riskItems": [
+        "Market volatility",
+        "Liquidity risk",
+        "Execution risk",
+        "Blockchain and digital-asset risk",
+        "Technology and infrastructure failures",
+        "Cybersecurity incidents",
+        "Third-party service interruptions",
+        "Regulatory or legal changes",
+        "Operational delays",
+        "Potential loss of capital"
+      ]
+    },
+    {
+      "number": "07",
+      "title": "No guaranteed outcome",
+      "paragraphs": [
+        "No Elleva program should be represented as a guaranteed income, guaranteed return or risk-free opportunity.",
+        "Participants must not represent historical results, examples, percentages or distributions as promises of future performance."
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Program changes",
+      "paragraphs": [
+        "Elleva may modify, suspend or discontinue an ecosystem program or operational mechanism when reasonably necessary due to operational, technological, security, compliance, legal or business considerations.",
+        "Changes may be communicated through the platform, official documentation or other appropriate channels."
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Participant conduct",
+      "paragraphs": [
+        "Participants are responsible for communicating accurate information about Elleva and its programs.",
+        "Participants must not promise financial results, fabricate performance, impersonate Elleva, alter official program conditions or make representations inconsistent with official Elleva materials."
+      ]
+    }
+  ],
+  "links": {
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy"
+  },
+  "brandTitle": "Autonomous Capital Infrastructure",
+  "brandDescription": "Research → Decide → Execute → Monitor."
+}

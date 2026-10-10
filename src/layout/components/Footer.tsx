@@ -150,7 +150,7 @@ export const Footer = () => {
         },
         {
           label: t("common:footer.contact") || "Contact",
-          href: "https://app.elleva.me/root",
+          href: PATH_PAGE.contact,
           external: true,
         },
       ],

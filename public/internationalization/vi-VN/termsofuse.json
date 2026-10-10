@@ -1,0 +1,267 @@
+{
+  "lastUpdated": "Ngày 9 tháng 10 năm 2026",
+  "heroTitle": "Điều khoản Sử dụng",
+  "heroDescription": "Các điều kiện điều chỉnh quyền truy cập vào công nghệ, cơ sở hạ tầng và hệ sinh thái kỹ thuật số của Elleva.",
+  "lastUpdatedLabel": "Cập nhật lần cuối: {{date}}",
+  "featureCards": [
+    {
+      "title": "Khuôn khổ rõ ràng",
+      "description": "Các quy tắc truy cập và sử dụng hệ sinh thái Elleva."
+    },
+    {
+      "title": "Cơ sở hạ tầng tự chủ",
+      "description": "AI, tự động hóa, dữ liệu và cơ sở hạ tầng thực thi."
+    },
+    {
+      "title": "Trách nhiệm của người dùng",
+      "description": "Người dùng vẫn chịu trách nhiệm về tài khoản và giao dịch của mình."
+    },
+    {
+      "title": "Kết nối bên thứ ba",
+      "description": "Elleva có thể kết nối với cơ sở hạ tầng tài chính và công nghệ độc lập."
+    }
+  ],
+  "riskNotice": {
+    "title": "Thông báo rủi ro quan trọng",
+    "description": "Thị trường tài chính, tài sản kỹ thuật số, giao dịch blockchain và hệ thống tự động đều có rủi ro. Elleva không đảm bảo lợi nhuận, hiệu suất hoặc bảo toàn vốn. Người dùng nên hiểu các rủi ro hiện hành trước khi sử dụng nền tảng hoặc tham gia chương trình Elleva."
+  },
+  "sections": [
+    {
+      "number": "01",
+      "title": "Chấp nhận Điều khoản",
+      "paragraphs": [
+        "Các Điều khoản Sử dụng này điều chỉnh quyền truy cập và sử dụng của bạn đối với trang web, nền tảng, ứng dụng, bảng điều khiển, công nghệ, cơ sở hạ tầng, công cụ, nội dung, chương trình và các dịch vụ kỹ thuật số liên quan của Elleva.",
+        "Bằng việc tạo tài khoản, truy cập nền tảng hoặc sử dụng bất kỳ chức năng nào của Elleva, bạn xác nhận rằng bạn đã đọc, hiểu và đồng ý với các Điều khoản này.",
+        "Nếu bạn không đồng ý với các Điều khoản này, bạn không nên truy cập hoặc sử dụng các dịch vụ Elleva hiện hành."
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Giới thiệu về Elleva",
+      "paragraphs": [
+        "Elleva là một Cơ sở hạ tầng Vốn Tự chủ được thiết kế để kết nối vốn, trí tuệ, dữ liệu, cơ sở hạ tầng tài chính và thực thi thông qua công nghệ.",
+        "Kiến trúc của nó có thể kết hợp nghiên cứu, thông tin thị trường, hệ thống ra quyết định, tự động hóa, giám sát, cơ sở hạ tầng blockchain và kết nối với các nhà cung cấp tài chính và công nghệ bên thứ ba.",
+        "Elleva hoạt động theo mô hình cơ sở hạ tầng liên tục:",
+        "Nghiên cứu → Quyết định → Thực thi → Giám sát."
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Bản chất và Phạm vi của Cơ sở hạ tầng",
+      "paragraphs": [
+        "Elleva cung cấp cơ sở hạ tầng công nghệ và các dịch vụ kỹ thuật số liên quan. Tùy thuộc vào dịch vụ liên quan, cơ sở hạ tầng có thể kết nối người dùng hoặc tài khoản với các nhà cung cấp bên thứ ba độc lập.",
+        "Trừ khi được quy định rõ ràng trong một thỏa thuận riêng, Elleva không hoạt động như ngân hàng, nhà môi giới, sàn giao dịch, quỹ đầu tư truyền thống, đơn vị lưu ký hoặc cố vấn tài chính chỉ bằng việc cung cấp quyền truy cập vào công nghệ của mình.",
+        "Các dịch vụ tài chính, thanh toán, lưu ký, thanh khoản, môi giới hoặc các dịch vụ được quản lý khác có thể được thực hiện bởi các nhà cung cấp bên thứ ba độc lập khi được áp dụng."
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Cơ sở hạ tầng Nghiên cứu, Quyết định và Thực thi",
+      "paragraphs": [
+        "Công nghệ của Elleva có thể bao gồm hệ thống nghiên cứu, dữ liệu thị trường, xử lý tự động, hệ thống hỗ trợ quyết định, cơ sở hạ tầng thực thi và giám sát liên tục.",
+        "Trí tuệ nhân tạo, thuật toán và hệ thống tự động có thể được sử dụng để xử lý thông tin, giám sát điều kiện, xác định cơ hội vận hành hoặc hỗ trợ quyết định và thực thi.",
+        "Công nghệ tự động không thể loại bỏ rủi ro thị trường, rủi ro thanh khoản, rủi ro thực thi, rủi ro công nghệ hoặc các điều kiện thị trường bất ngờ."
+      ]
+    },
+    {
+      "number": "05",
+      "title": "Không Đảm bảo Kết quả Tài chính",
+      "paragraphs": [
+        "Thị trường tài chính và tài sản kỹ thuật số có rủi ro. Hiệu suất trong quá khứ, mô phỏng, dự báo, ví dụ, mục tiêu hoặc kết quả trước đây không đảm bảo hiệu suất trong tương lai.",
+        "Không thông tin nào được Elleva hiển thị nên được hiểu là đảm bảo lợi nhuận, bảo toàn vốn hoặc kết quả tài chính cố định.",
+        "Người dùng vẫn chịu trách nhiệm xác định liệu việc sử dụng nền tảng và bất kỳ phân bổ vốn hiện hành nào có phù hợp với hoàn cảnh của chính họ hay không."
+      ]
+    },
+    {
+      "number": "06",
+      "title": "Điều kiện Đủ điều kiện và Truy cập Hạn chế",
+      "paragraphs": [
+        "Bạn chỉ có thể sử dụng Elleva nếu bạn có năng lực pháp lý để giao kết các thỏa thuận ràng buộc và việc bạn sử dụng dịch vụ hiện hành được pháp luật áp dụng cho bạn cho phép.",
+        "Elleva có thể hạn chế, tạm ngừng hoặc từ chối quyền truy cập vào các dịch vụ, tính năng, chương trình hoặc thẩm quyền cụ thể khi thực sự cần thiết vì lý do pháp lý, tuân thủ, bảo mật, vận hành hoặc kinh doanh."
+      ]
+    },
+    {
+      "number": "07",
+      "title": "Đăng ký Tài khoản và Bảo mật",
+      "paragraphs": [
+        "Bạn chịu trách nhiệm cung cấp thông tin chính xác và hiện tại khi đăng ký và duy trì thông tin tài khoản của mình được cập nhật.",
+        "Bạn chịu trách nhiệm duy trì tính bảo mật của thông tin đăng nhập, phương thức xác thực và thiết bị được sử dụng để truy cập nền tảng.",
+        "Bạn nên thông báo ngay cho Elleva nếu bạn tin rằng tài khoản của mình đã bị xâm phạm hoặc bị truy cập trái phép."
+      ]
+    },
+    {
+      "number": "08",
+      "title": "Xác minh và Tuân thủ",
+      "paragraphs": [
+        "Elleva hoặc các đối tác cơ sở hạ tầng hiện hành của mình có thể yêu cầu thông tin về danh tính, tài khoản, giao dịch hoặc thông tin khác cho mục đích bảo mật, phòng chống gian lận, tuân thủ, pháp lý hoặc vận hành.",
+        "Việc không cung cấp thông tin được yêu cầu một cách hợp lý cho việc xác minh có thể dẫn đến việc hạn chế quyền truy cập vào một số dịch vụ hoặc giao dịch nhất định.",
+        "Elleva có thể trì hoãn, từ chối, hạn chế hoặc tạm ngừng hoạt động khi thực sự cần thiết để giải quyết các lo ngại về bảo mật, gian lận, tuân thủ hoặc pháp lý."
+      ]
+    },
+    {
+      "number": "09",
+      "title": "Ví và Giao dịch Blockchain",
+      "paragraphs": [
+        "Một số dịch vụ của Elleva có thể tương tác với ví kỹ thuật số của bên thứ ba hoặc mạng blockchain.",
+        "Các giao dịch blockchain có thể không thể đảo ngược sau khi được xác nhận. Elleva có thể không thể hủy, thu hồi hoặc đảo ngược tài sản được gửi đến địa chỉ không chính xác, mạng không được hỗ trợ hoặc tài sản không tương thích.",
+        "Người dùng chịu trách nhiệm xác minh địa chỉ ví, mạng, tài sản được hỗ trợ và thông tin giao dịch trước khi xác nhận chuyển khoản.",
+        "Trừ khi được quy định rõ ràng khác, quyền truy cập công nghệ vào chức năng ví hoặc blockchain tự nó không có nghĩa là Elleva đảm nhận việc lưu ký tài sản kỹ thuật số của người dùng."
+      ]
+    },
+    {
+      "number": "10",
+      "title": "Cơ sở hạ tầng Bên thứ ba",
+      "paragraphs": [
+        "Elleva có thể tích hợp với hoặc phụ thuộc vào các nhà cung cấp bên thứ ba, bao gồm tổ chức tài chính, nhà môi giới, cơ sở hạ tầng ngân hàng, nhà cung cấp thanh khoản, mạng blockchain, cơ sở hạ tầng ví, nhà cung cấp thanh toán, dịch vụ đám mây và nhà cung cấp dữ liệu thị trường.",
+        "Các dịch vụ của bên thứ ba có thể được điều chỉnh bởi các thỏa thuận, công bố và chính sách bảo mật riêng.",
+        "Elleva không chịu trách nhiệm về các lỗi, hạn chế, chậm trễ hoặc gián đoạn do các hệ thống bên thứ ba độc lập hoặc các sự kiện nằm ngoài tầm kiểm soát hợp lý của Elleva gây ra."
+      ]
+    },
+    {
+      "number": "11",
+      "title": "ProfitShare",
+      "paragraphs": [
+        "Khi được cung cấp, ProfitShare là một cơ chế của hệ sinh thái Elleva mà các phân phối hiện hành có thể phụ thuộc vào hiệu quả vận hành và kinh tế cũng như các quy tắc của chương trình hiện hành.",
+        "Các phân phối ProfitShare là biến đổi và không được đảm bảo. Chúng không nên được hiểu là lãi suất cố định, lợi tức được đảm bảo hoặc lời hứa về lợi nhuận.",
+        "Các điều kiện, giới hạn, điều kiện đủ điều kiện và quy tắc vận hành hiện hành của ProfitShare được mô tả riêng trong tài liệu chương trình hiện hành."
+      ]
+    },
+    {
+      "number": "12",
+      "title": "Elleva Direct và các Chương trình Hệ sinh thái",
+      "paragraphs": [
+        "Elleva có thể cung cấp các chương trình phát triển hệ sinh thái, đối tác, giới thiệu hoặc cộng đồng, bao gồm Elleva Direct.",
+        "Điều kiện đủ điều kiện, tiêu chí đủ điều kiện, phân phối, cấp độ công nhận và các điều kiện khác có thể được định nghĩa riêng trong các quy tắc chương trình hiện hành.",
+        "Việc tham gia vào bất kỳ chương trình Elleva nào không đảm bảo thu nhập, lợi nhuận hoặc một kết quả tài chính cụ thể.",
+        "Người tham gia không được đưa ra các tuyên bố tài chính sai lệch, gây hiểu lầm, không được phép hoặc được đảm bảo về Elleva."
+      ]
+    },
+    {
+      "number": "13",
+      "title": "Phí và Điều kiện Vận hành",
+      "paragraphs": [
+        "Một số giao dịch, rút tiền, dịch vụ hoặc hoạt động trên nền tảng có thể phải chịu phí hoặc giới hạn vận hành.",
+        "Các khoản phí, mức tối thiểu, mức tối đa, thời gian xử lý và điều kiện chương trình hiện hành có thể được trình bày thông qua giao diện liên quan, xác nhận giao dịch hoặc quy tắc chương trình hiện hành.",
+        "Mạng blockchain và cơ sở hạ tầng bên thứ ba có thể áp đặt các khoản phí bổ sung ngoài tầm kiểm soát của Elleva."
+      ]
+    },
+    {
+      "number": "14",
+      "title": "Trách nhiệm của Người dùng",
+      "paragraphs": ["Bạn đồng ý:"],
+      "items": [
+        "cung cấp thông tin chính xác và hiện tại",
+        "duy trì bảo mật tài khoản phù hợp",
+        "tuân thủ luật và quy định hiện hành",
+        "xác minh thông tin giao dịch và ví",
+        "chỉ sử dụng nền tảng cho các mục đích hợp pháp",
+        "tuân theo các quy tắc chương trình hiện hành",
+        "tránh các tuyên bố không được phép hoặc gây hiểu lầm về Elleva"
+      ]
+    },
+    {
+      "number": "15",
+      "title": "Hành vi Bị cấm",
+      "paragraphs": ["Bạn không được sử dụng Elleva để:"],
+      "items": [
+        "thực hiện các hoạt động gian lận hoặc bất hợp pháp",
+        "cung cấp thông tin sai lệch hoặc gây hiểu lầm",
+        "cố gắng truy cập trái phép vào hệ thống hoặc tài khoản",
+        "can thiệp vào bảo mật hoặc cơ sở hạ tầng của nền tảng",
+        "mạo danh Elleva hoặc người khác",
+        "lạm dụng các chương trình giới thiệu hoặc hệ sinh thái",
+        "thao túng giao dịch hoặc dữ liệu nền tảng",
+        "vi phạm quyền sở hữu trí tuệ",
+        "vượt qua các thủ tục bảo mật hoặc tuân thủ"
+      ]
+    },
+    {
+      "number": "16",
+      "title": "Tạm ngừng và Chấm dứt",
+      "paragraphs": [
+        "Elleva có thể hạn chế, tạm ngừng hoặc chấm dứt quyền truy cập khi thực sự cần thiết để bảo vệ người dùng, điều tra hoạt động đáng ngờ, tuân thủ nghĩa vụ pháp lý, bảo vệ cơ sở hạ tầng hoặc thực thi các Điều khoản này.",
+        "Khi thích hợp, Elleva có thể yêu cầu thông tin bổ sung hoặc xác minh trước khi khôi phục quyền truy cập."
+      ]
+    },
+    {
+      "number": "17",
+      "title": "Tính Khả dụng của Nền tảng",
+      "paragraphs": [
+        "Elleva tìm cách duy trì cơ sở hạ tầng đáng tin cậy nhưng không đảm bảo tính khả dụng không bị gián đoạn hoặc không có lỗi.",
+        "Quyền truy cập có thể tạm thời không khả dụng do bảo trì, nâng cấp, sự cố an ninh mạng, tắc nghẽn blockchain, gián đoạn của bên thứ ba, điều kiện thị trường hoặc các sự kiện nằm ngoài tầm kiểm soát hợp lý của Elleva."
+      ]
+    },
+    {
+      "number": "18",
+      "title": "Sở hữu Trí tuệ",
+      "paragraphs": [
+        "Tên, thương hiệu, giao diện, phần mềm, bản sắc hình ảnh, tài liệu, nội dung, công nghệ và sở hữu trí tuệ liên quan của Elleva được bảo vệ bởi luật sở hữu trí tuệ hiện hành.",
+        "Không có quyền sở hữu nào được chuyển giao cho người dùng chỉ vì họ truy cập hoặc sử dụng nền tảng."
+      ]
+    },
+    {
+      "number": "19",
+      "title": "Công bố Rủi ro",
+      "paragraphs": [
+        "Hoạt động trên thị trường tài chính, tài sản kỹ thuật số, giao dịch blockchain, thực thi tự động và cơ sở hạ tầng công nghệ đều có rủi ro trọng yếu.",
+        "Rủi ro có thể bao gồm biến động thị trường, hạn chế thanh khoản, thất bại thực thi, thất bại công nghệ, sự cố an ninh mạng, gián đoạn của bên thứ ba, tắc nghẽn blockchain, thay đổi quy định và mất vốn.",
+        "Mô tả chi tiết hơn về các rủi ro vận hành và chương trình hiện hành được cung cấp trong Công bố Chương trình & Rủi ro của Elleva."
+      ]
+    },
+    {
+      "number": "20",
+      "title": "Giới hạn Trách nhiệm",
+      "paragraphs": [
+        "Trong phạm vi tối đa được pháp luật hiện hành cho phép, Elleva sẽ không chịu trách nhiệm về các tổn thất gián tiếp, ngẫu nhiên, do hậu quả hoặc đặc biệt phát sinh từ các hoàn cảnh nằm ngoài tầm kiểm soát hợp lý của mình.",
+        "Không có nội dung nào trong các Điều khoản này loại trừ hoặc giới hạn trách nhiệm không thể bị loại trừ hoặc giới hạn một cách hợp pháp."
+      ]
+    },
+    {
+      "number": "21",
+      "title": "Bồi thường",
+      "paragraphs": [
+        "Trong phạm vi pháp luật hiện hành cho phép, bạn có thể chịu trách nhiệm về các tổn thất, khiếu nại, trách nhiệm pháp lý hoặc chi phí hợp lý phát sinh từ việc bạn sử dụng nền tảng một cách bất hợp pháp, vi phạm các Điều khoản này hoặc xâm phạm quyền của Elleva hoặc bên thứ ba."
+      ]
+    },
+    {
+      "number": "22",
+      "title": "Thay đổi đối với Nền tảng hoặc Điều khoản",
+      "paragraphs": [
+        "Elleva có thể cập nhật nền tảng, sản phẩm, chức năng, chương trình hoặc các Điều khoản này khi công nghệ, mô hình kinh doanh, yêu cầu vận hành hoặc nghĩa vụ pháp lý của mình phát triển.",
+        "Các thay đổi quan trọng có thể được thông báo qua nền tảng, trang web hoặc các kênh phù hợp khác."
+      ]
+    },
+    {
+      "number": "23",
+      "title": "Quyền riêng tư",
+      "paragraphs": [
+        "Thông tin cá nhân được xử lý theo Chính sách Bảo mật của Elleva và các yêu cầu bảo vệ dữ liệu hiện hành."
+      ],
+      "link": {
+        "label": "Đọc Chính sách Bảo mật →",
+        "target": "privacy"
+      }
+    },
+    {
+      "number": "24",
+      "title": "Luật Áp dụng và Giải quyết Tranh chấp",
+      "paragraphs": [
+        "Luật áp dụng, thực thể ký kết và cơ chế giải quyết tranh chấp áp dụng cho mối quan hệ của người dùng với Elleva phải được xác định trong tài liệu hợp đồng hiện hành và tuân theo luật bắt buộc.",
+        "Không có nội dung nào trong các Điều khoản này nhằm loại bỏ hoặc hạn chế các quyền không thể bị loại trừ một cách hợp pháp theo luật áp dụng cho người dùng."
+      ]
+    },
+    {
+      "number": "25",
+      "title": "Liên hệ",
+      "paragraphs": [
+        "Các câu hỏi về các Điều khoản này, Chính sách Bảo mật hoặc các chương trình Elleva hiện hành có thể được gửi qua các kênh liên hệ chính thức của Elleva."
+      ],
+      "link": {
+        "label": "Liên hệ Elleva →",
+        "target": "contact"
+      }
+    }
+  ],
+  "brandTitle": "Cơ sở hạ tầng vốn tự chủ",
+  "brandDescription": "Nghiên cứu → Quyết định → Thực thi → Giám sát."
+}
