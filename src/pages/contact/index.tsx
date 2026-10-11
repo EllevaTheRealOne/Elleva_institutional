@@ -3,9 +3,12 @@ import { useTranslation } from "react-i18next";
 import {
   ArrowUpRight,
   Building2,
+  CheckCircle2,
   ChevronDown,
+  CircleAlert,
   Globe2,
   Headphones,
+  LoaderCircle,
   Mail,
   MessageCircle,
   MessageSquareText,
@@ -13,8 +16,19 @@ import {
   Users,
 } from "lucide-react";
 
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
+
 const WHATSAPP_NUMBER = "19402388149";
 const CONTACT_EMAIL_API_URL = "https://elleva.me/api/contact/email";
+
 const ALLOWED_TOPICS = [
   "general",
   "business",
@@ -44,6 +58,15 @@ type ContactFormData = {
   message: string;
 };
 
+type FeedbackType = "success" | "error";
+
+type FeedbackState = {
+  open: boolean;
+  type: FeedbackType;
+  title: string;
+  description: string;
+};
+
 const INITIAL_FORM: ContactFormData = {
   name: "",
   email: "",
@@ -52,12 +75,22 @@ const INITIAL_FORM: ContactFormData = {
   message: "",
 };
 
+const INITIAL_FEEDBACK: FeedbackState = {
+  open: false,
+  type: "error",
+  title: "",
+  description: "",
+};
+
 export default function ContactView() {
   const { t } = useTranslation(["contact"]);
 
   const [formData, setFormData] = useState<ContactFormData>(INITIAL_FORM);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const [feedback, setFeedback] = useState<FeedbackState>(INITIAL_FEEDBACK);
+
   const websiteRef = useRef<HTMLInputElement>(null);
 
   const topics = t("topics", {
@@ -80,6 +113,19 @@ export default function ContactView() {
   const selectedTopic =
     topics.find((topic) => topic.value === formData.topic)?.label ||
     formData.topic;
+
+  const showFeedback = (
+    type: FeedbackType,
+    title: string,
+    description: string,
+  ) => {
+    setFeedback({
+      open: true,
+      type,
+      title,
+      description,
+    });
+  };
 
   const handleChange = (
     event:
@@ -134,13 +180,16 @@ export default function ContactView() {
     if (isSubmitting) return;
 
     if (!validateForm()) {
-      alert(
-        "Verifique os campos. O nome deve ter entre 2 e 100 caracteres, a mensagem entre 5 e 5000 caracteres e o assunto deve ser válido.",
+      showFeedback(
+        "error",
+        "Verifique os campos",
+        "Confira o nome, o e-mail, o assunto e a mensagem. O nome deve ter entre 2 e 100 caracteres, o e-mail deve ser válido e a mensagem deve ter entre 5 e 5000 caracteres.",
       );
       return;
     }
 
-    // Honeypot: se estiver preenchido, não envia a requisição.
+    // Honeypot antispam: não envia a requisição
+    // quando o campo oculto está preenchido.
     if (websiteRef.current?.value.trim()) {
       setFormData({ ...INITIAL_FORM });
       return;
@@ -186,18 +235,25 @@ export default function ContactView() {
         websiteRef.current.value = "";
       }
 
-      alert(result.message || "Mensagem enviada com sucesso!");
+      showFeedback(
+        "success",
+        "Mensagem enviada",
+        result.message ||
+          "Sua mensagem foi enviada com sucesso. Nossa equipe recebeu sua solicitação.",
+      );
     } catch (error) {
       console.error("Erro ao enviar contato:", error);
 
       const isConnectionError = error instanceof TypeError;
 
-      alert(
+      showFeedback(
+        "error",
+        isConnectionError ? "Falha na conexão" : "Não foi possível enviar",
         isConnectionError
-          ? "Não foi possível conectar à API. Verifique se o Laravel está ativo, se a URL está correta e se o CORS permite a origem do frontend."
+          ? "Não foi possível conectar à API. Verifique a disponibilidade do servidor, a URL da API e a configuração de CORS."
           : error instanceof Error
             ? error.message
-            : "Erro ao enviar a mensagem. Tente novamente.",
+            : "Ocorreu um erro inesperado. Tente novamente.",
       );
     } finally {
       setIsSubmitting(false);
@@ -205,9 +261,13 @@ export default function ContactView() {
   };
 
   const handleWhatsApp = () => {
+    if (isSubmitting) return;
+
     if (!validateForm()) {
-      alert(
-        "Preencha corretamente o nome, e-mail, assunto e mensagem antes de continuar.",
+      showFeedback(
+        "error",
+        "Verifique os campos",
+        "Preencha corretamente o nome, o e-mail, o assunto e a mensagem antes de continuar para o WhatsApp.",
       );
       return;
     }
@@ -221,13 +281,16 @@ export default function ContactView() {
 
   return (
     <main className="min-h-screen bg-[#050909] text-white">
+      {/* Background */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
         <div className="absolute left-[10%] top-[15%] h-[400px] w-[400px] rounded-full bg-[#00d9c5]/10 blur-[150px]" />
         <div className="absolute bottom-[-200px] right-[-100px] h-[500px] w-[500px] rounded-full bg-[#00d9c5]/5 blur-[170px]" />
       </div>
 
+      {/* Main content */}
       <section className="relative mx-auto max-w-7xl px-6 pb-20 pt-20 lg:px-8">
         <div className="mt-16 grid gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24">
+          {/* Introduction */}
           <div>
             <h1 className="mt-5 max-w-xl text-5xl font-medium tracking-[-0.05em] sm:text-6xl lg:text-7xl">
               {t("heroTitle")}
@@ -272,6 +335,7 @@ export default function ContactView() {
             </div>
           </div>
 
+          {/* Contact form */}
           <div className="relative">
             <div className="absolute -inset-[1px] rounded-[28px] bg-gradient-to-br from-[#21ead8]/30 via-white/5 to-transparent" />
 
@@ -289,7 +353,7 @@ export default function ContactView() {
               </div>
 
               <form onSubmit={handleEmail} className="mt-9 space-y-5">
-                {/* Honeypot antispam: invisível para usuários. */}
+                {/* Honeypot antispam */}
                 <div
                   aria-hidden="true"
                   className="absolute -left-[10000px] h-px w-px overflow-hidden"
@@ -436,6 +500,7 @@ export default function ContactView() {
                   />
                 </div>
 
+                {/* Action buttons */}
                 <div className="grid gap-3 sm:grid-cols-2">
                   <button
                     type="submit"
@@ -443,8 +508,14 @@ export default function ContactView() {
                     className="group flex h-12 w-full items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.05] px-6 text-sm font-semibold text-white transition hover:border-[#21ead8]/30 hover:bg-[#21ead8]/10 disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     <Mail className="h-4 w-4 text-[#21ead8]" />
+
                     {isSubmitting ? "Enviando..." : t("actions.email")}
-                    <Send className="h-3.5 w-3.5 text-white/30 transition-transform group-hover:translate-x-0.5" />
+
+                    {isSubmitting ? (
+                      <LoaderCircle className="h-4 w-4 animate-spin text-[#21ead8]" />
+                    ) : (
+                      <Send className="h-3.5 w-3.5 text-white/30 transition-transform group-hover:translate-x-0.5" />
+                    )}
                   </button>
 
                   <button
@@ -454,7 +525,9 @@ export default function ContactView() {
                     className="group flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#21ead8] px-6 text-sm font-semibold text-[#03100f] transition hover:bg-[#45f3e2] disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     <MessageCircle className="h-4 w-4" />
+
                     {t("actions.whatsapp")}
+
                     <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </button>
                 </div>
@@ -468,6 +541,7 @@ export default function ContactView() {
         </div>
       </section>
 
+      {/* Contact methods */}
       <section className="relative border-t border-white/10">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 py-12 md:grid-cols-3 lg:px-8">
           {contactMethods.map((item, index) => {
@@ -489,6 +563,57 @@ export default function ContactView() {
           })}
         </div>
       </section>
+
+      {/* Feedback modal: success and error */}
+      <AlertDialog
+        open={feedback.open}
+        onOpenChange={(open) =>
+          setFeedback((current) => ({
+            ...current,
+            open,
+          }))
+        }
+      >
+        <AlertDialogContent className="border border-white/10 bg-[#080d0d] text-white sm:max-w-md">
+          <AlertDialogHeader>
+            <div
+              className={`mb-2 flex h-12 w-12 items-center justify-center rounded-full ${
+                feedback.type === "success"
+                  ? "bg-[#21ead8]/10 text-[#21ead8]"
+                  : "bg-red-500/10 text-red-400"
+              }`}
+            >
+              {feedback.type === "success" ? (
+                <CheckCircle2 className="h-6 w-6" />
+              ) : (
+                <CircleAlert className="h-6 w-6" />
+              )}
+            </div>
+
+            <AlertDialogTitle className="text-lg font-medium text-white">
+              {feedback.title}
+            </AlertDialogTitle>
+
+            <AlertDialogDescription className="whitespace-pre-line text-sm leading-6 text-white/60">
+              {feedback.description}
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+
+          <AlertDialogFooter>
+            <AlertDialogAction
+              className="bg-[#21ead8] text-[#03100f] hover:bg-[#45f3e2] focus:ring-[#21ead8]"
+              onClick={() =>
+                setFeedback((current) => ({
+                  ...current,
+                  open: false,
+                }))
+              }
+            >
+              Entendi
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </main>
   );
 }
