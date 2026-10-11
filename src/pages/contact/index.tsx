@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 const WHATSAPP_NUMBER = "19402388149";
-
+const CONTACT_EMAIL_API_URL = "https://elleva.me/api/contact/email";
 const ALLOWED_TOPICS = [
   "general",
   "business",
@@ -148,10 +148,8 @@ export default function ContactView() {
 
     setIsSubmitting(true);
 
-    const VITE_CONTACT_API_URL = "http://127.0.0.1:8000/api/v3/contact/email";
-
     try {
-      const response = await fetch(import.meta.env.VITE_CONTACT_API_URL, {
+      const response = await fetch(CONTACT_EMAIL_API_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
