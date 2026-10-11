@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Prevent direct access to sensitive files and folders
+    RewriteRule ^(\.env|\.git|composer\.(json|lock)|artisan|storage/.*|bootstrap/cache/.*) - [F,L,NC]
+
+    # Forward all traffic to public/
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Fallback index
+DirectoryIndex public/index.php index.php
+
+# Security: Block sensitive files if mod_rewrite is disabled
+<FilesMatch "^\.env|composer\.(json|lock)|artisan">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+Options -Indexes

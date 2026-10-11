@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
   ArrowUpRight,
@@ -14,10 +14,20 @@ import {
 } from "lucide-react";
 
 const WHATSAPP_NUMBER = "19402388149";
-const CONTACT_EMAIL = "contact@elleva.me";
+
+const ALLOWED_TOPICS = [
+  "general",
+  "business",
+  "institutional",
+  "privacy",
+  "support",
+  "account",
+] as const;
+
+type ContactTopicValue = (typeof ALLOWED_TOPICS)[number];
 
 type ContactTopic = {
-  value: string;
+  value: ContactTopicValue;
   label: string;
 };
 
@@ -30,24 +40,34 @@ type ContactFormData = {
   name: string;
   email: string;
   company: string;
-  topic: string;
+  topic: ContactTopicValue | "";
   message: string;
+};
+
+const INITIAL_FORM: ContactFormData = {
+  name: "",
+  email: "",
+  company: "",
+  topic: "",
+  message: "",
 };
 
 export default function ContactView() {
   const { t } = useTranslation(["contact"]);
-  const [formData, setFormData] = useState<ContactFormData>({
-    name: "",
-    email: "",
-    company: "",
-    topic: "",
-    message: "",
-  });
 
-  const topics = t("topics", { returnObjects: true }) as ContactTopic[];
+  const [formData, setFormData] = useState<ContactFormData>(INITIAL_FORM);
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const websiteRef = useRef<HTMLInputElement>(null);
+
+  const topics = t("topics", {
+    returnObjects: true,
+  }) as ContactTopic[];
+
   const contactTypes = t("contactTypes", {
     returnObjects: true,
   }) as ContactCard[];
+
   const contactMethods = t("contactMethods", {
     returnObjects: true,
   }) as ContactCard[];
@@ -68,49 +88,136 @@ export default function ContactView() {
       | React.ChangeEvent<HTMLSelectElement>,
   ) => {
     const { name, value } = event.target;
-    setFormData((current) => ({ ...current, [name]: value }));
+
+    setFormData((current) => ({
+      ...current,
+      [name]: value,
+    }));
   };
 
-  const validateForm = () =>
-    Boolean(
-      formData.name.trim() &&
-        formData.email.trim() &&
-        formData.topic &&
-        formData.message.trim(),
-    );
+  const validateForm = (): boolean => {
+    const name = formData.name.trim();
+    const email = formData.email.trim();
+    const message = formData.message.trim();
 
-  const buildMessage = () =>
+    return (
+      name.length >= 2 &&
+      name.length <= 100 &&
+      !/[\r\n]/.test(name) &&
+      email.length > 0 &&
+      email.length <= 254 &&
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) &&
+      ALLOWED_TOPICS.includes(formData.topic as ContactTopicValue) &&
+      message.length >= 5 &&
+      message.length <= 5000
+    );
+  };
+
+  const buildMessage = (): string =>
     [
       t("emailBodyTitle"),
       "",
-      `${t("emailBody.name")}: ${formData.name}`,
-      `${t("emailBody.email")}: ${formData.email}`,
-      `${t("emailBody.company")}: ${formData.company || t("emailBody.companyNotProvided")}`,
+      `${t("emailBody.name")}: ${formData.name.trim()}`,
+      `${t("emailBody.email")}: ${formData.email.trim()}`,
+      `${t("emailBody.company")}: ${
+        formData.company.trim() || t("emailBody.companyNotProvided")
+      }`,
       `${t("emailBody.topic")}: ${selectedTopic}`,
       "",
       `${t("emailBody.message")}:`,
-      formData.message,
+      formData.message.trim(),
     ].join("\n");
 
-  const handleEmail = (event: FormEvent<HTMLFormElement>) => {
+  const handleEmail = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (!validateForm()) return;
 
-    const subject = `${t("emailSubject")} — ${selectedTopic}`;
-    const body = buildMessage();
-    const emailUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(body)}`;
+    if (isSubmitting) return;
 
-    window.location.href = emailUrl;
+    if (!validateForm()) {
+      alert(
+        "Verifique os campos. O nome deve ter entre 2 e 100 caracteres, a mensagem entre 5 e 5000 caracteres e o assunto deve ser válido.",
+      );
+      return;
+    }
+
+    // Honeypot: se estiver preenchido, não envia a requisição.
+    if (websiteRef.current?.value.trim()) {
+      setFormData({ ...INITIAL_FORM });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    const VITE_CONTACT_API_URL = "http://127.0.0.1:8000/api/v3/contact/email";
+
+    try {
+      const response = await fetch(import.meta.env.VITE_CONTACT_API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          topic: formData.topic,
+          message: formData.message.trim(),
+          website: websiteRef.current?.value ?? "",
+        }),
+      });
+
+      const result = await response.json().catch(() => null);
+
+      if (!response.ok || result?.success !== true) {
+        const validationErrors = result?.errors
+          ? Object.values(result.errors as Record<string, string[]>)
+              .flat()
+              .join("\n")
+          : "";
+
+        throw new Error(
+          validationErrors ||
+            result?.message ||
+            "Não foi possível enviar sua mensagem. Tente novamente.",
+        );
+      }
+
+      setFormData({ ...INITIAL_FORM });
+
+      if (websiteRef.current) {
+        websiteRef.current.value = "";
+      }
+
+      alert(result.message || "Mensagem enviada com sucesso!");
+    } catch (error) {
+      console.error("Erro ao enviar contato:", error);
+
+      const isConnectionError = error instanceof TypeError;
+
+      alert(
+        isConnectionError
+          ? "Não foi possível conectar à API. Verifique se o Laravel está ativo, se a URL está correta e se o CORS permite a origem do frontend."
+          : error instanceof Error
+            ? error.message
+            : "Erro ao enviar a mensagem. Tente novamente.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleWhatsApp = () => {
-    if (!validateForm()) return;
+    if (!validateForm()) {
+      alert(
+        "Preencha corretamente o nome, e-mail, assunto e mensagem antes de continuar.",
+      );
+      return;
+    }
 
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
       buildMessage(),
     )}`;
+
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   };
 
@@ -134,7 +241,9 @@ export default function ContactView() {
 
             <div className="mt-12 space-y-3">
               {contactTypes.map((item, index) => {
-                const Icon = [Headphones, Users, Building2][index] ?? Headphones;
+                const Icon =
+                  [Headphones, Users, Building2][index] ?? Headphones;
+
                 return (
                   <div
                     key={item.title}
@@ -144,6 +253,7 @@ export default function ContactView() {
                       <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#21ead8]/10">
                         <Icon className="h-5 w-5 text-[#21ead8]" />
                       </div>
+
                       <div>
                         <p className="text-sm font-medium">{item.title}</p>
                         <p className="mt-1 text-xs text-white/35">
@@ -151,6 +261,7 @@ export default function ContactView() {
                         </p>
                       </div>
                     </div>
+
                     <ArrowUpRight className="h-4 w-4 text-white/30 transition group-hover:text-[#21ead8]" />
                   </div>
                 );
@@ -165,18 +276,38 @@ export default function ContactView() {
 
           <div className="relative">
             <div className="absolute -inset-[1px] rounded-[28px] bg-gradient-to-br from-[#21ead8]/30 via-white/5 to-transparent" />
+
             <div className="relative rounded-[27px] bg-[#080d0d] p-6 sm:p-8 lg:p-10">
               <div>
                 <MessageSquareText className="h-6 w-6 text-[#21ead8]" />
+
                 <h2 className="mt-5 text-2xl font-medium tracking-[-0.03em]">
                   {t("formTitle")}
                 </h2>
+
                 <p className="mt-2 text-sm text-white/40">
                   {t("formDescription")}
                 </p>
               </div>
 
               <form onSubmit={handleEmail} className="mt-9 space-y-5">
+                {/* Honeypot antispam: invisível para usuários. */}
+                <div
+                  aria-hidden="true"
+                  className="absolute -left-[10000px] h-px w-px overflow-hidden"
+                >
+                  <label htmlFor="website">Website</label>
+                  <input
+                    ref={websiteRef}
+                    id="website"
+                    name="website"
+                    type="text"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    defaultValue=""
+                  />
+                </div>
+
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
                     <label
@@ -185,9 +316,14 @@ export default function ContactView() {
                     >
                       {t("fields.name")}
                     </label>
+
                     <input
                       id="name"
                       name="name"
+                      type="text"
+                      autoComplete="name"
+                      minLength={2}
+                      maxLength={100}
                       required
                       value={formData.name}
                       onChange={handleChange}
@@ -203,10 +339,13 @@ export default function ContactView() {
                     >
                       {t("fields.email")}
                     </label>
+
                     <input
                       id="email"
                       name="email"
                       type="email"
+                      autoComplete="email"
+                      maxLength={254}
                       required
                       value={formData.email}
                       onChange={handleChange}
@@ -226,9 +365,12 @@ export default function ContactView() {
                       {t("fields.optional")}
                     </span>
                   </label>
+
                   <input
                     id="company"
                     name="company"
+                    type="text"
+                    autoComplete="organization"
                     value={formData.company}
                     onChange={handleChange}
                     placeholder={t("fields.companyPlaceholder")}
@@ -243,6 +385,7 @@ export default function ContactView() {
                   >
                     {t("fields.topic")}
                   </label>
+
                   <div className="relative">
                     <select
                       id="topic"
@@ -255,16 +398,20 @@ export default function ContactView() {
                       <option value="" disabled className="bg-[#080d0d]">
                         {t("fields.topicPlaceholder")}
                       </option>
-                      {topics.map((topic) => (
-                        <option
-                          key={topic.value}
-                          value={topic.value}
-                          className="bg-[#080d0d]"
-                        >
-                          {topic.label}
-                        </option>
-                      ))}
+
+                      {topics
+                        .filter((topic) => ALLOWED_TOPICS.includes(topic.value))
+                        .map((topic) => (
+                          <option
+                            key={topic.value}
+                            value={topic.value}
+                            className="bg-[#080d0d]"
+                          >
+                            {topic.label}
+                          </option>
+                        ))}
                     </select>
+
                     <ChevronDown className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-white/30" />
                   </div>
                 </div>
@@ -276,10 +423,13 @@ export default function ContactView() {
                   >
                     {t("fields.message")}
                   </label>
+
                   <textarea
                     id="message"
                     name="message"
                     required
+                    minLength={5}
+                    maxLength={5000}
                     rows={6}
                     value={formData.message}
                     onChange={handleChange}
@@ -291,17 +441,19 @@ export default function ContactView() {
                 <div className="grid gap-3 sm:grid-cols-2">
                   <button
                     type="submit"
-                    className="group flex h-12 w-full items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.05] px-6 text-sm font-semibold text-white transition hover:border-[#21ead8]/30 hover:bg-[#21ead8]/10"
+                    disabled={isSubmitting}
+                    className="group flex h-12 w-full items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.05] px-6 text-sm font-semibold text-white transition hover:border-[#21ead8]/30 hover:bg-[#21ead8]/10 disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     <Mail className="h-4 w-4 text-[#21ead8]" />
-                    {t("actions.email")}
+                    {isSubmitting ? "Enviando..." : t("actions.email")}
                     <Send className="h-3.5 w-3.5 text-white/30 transition-transform group-hover:translate-x-0.5" />
                   </button>
 
                   <button
                     type="button"
                     onClick={handleWhatsApp}
-                    className="group flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#21ead8] px-6 text-sm font-semibold text-[#03100f] transition hover:bg-[#45f3e2]"
+                    disabled={isSubmitting}
+                    className="group flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#21ead8] px-6 text-sm font-semibold text-[#03100f] transition hover:bg-[#45f3e2] disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     <MessageCircle className="h-4 w-4" />
                     {t("actions.whatsapp")}
@@ -322,11 +474,14 @@ export default function ContactView() {
         <div className="mx-auto grid max-w-7xl gap-8 px-6 py-12 md:grid-cols-3 lg:px-8">
           {contactMethods.map((item, index) => {
             const Icon = [Mail, MessageCircle, Globe2][index] ?? Globe2;
+
             return (
               <div key={item.title} className="flex gap-4">
                 <Icon className="mt-0.5 h-5 w-5 text-[#21ead8]" />
+
                 <div>
                   <p className="text-sm font-medium">{item.title}</p>
+
                   <p className="mt-1 text-xs leading-5 text-white/35">
                     {item.description}
                   </p>
