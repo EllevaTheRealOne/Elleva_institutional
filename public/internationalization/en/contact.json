@@ -60,7 +60,9 @@
   ],
   "actions": {
     "email": "Send by Email",
-    "whatsapp": "Send by WhatsApp"
+    "whatsapp": "Send by WhatsApp",
+    "sending": "Sending...",
+    "confirm": "Got it"
   },
   "consent": "By contacting us, you agree that Elleva may process the information provided to respond to your request.",
   "contactMethods": [
@@ -86,5 +88,17 @@
     "companyNotProvided": "Not provided",
     "topic": "Topic",
     "message": "Message"
+  },
+  "feedback": {
+    "validationTitle": "Check your information",
+    "validationEmail": "Check the name, email, topic and message. The name must contain 2–100 characters, the email must be valid, and the message must contain 5–5000 characters.",
+    "validationWhatsapp": "Complete the name, email, topic and message correctly before continuing to WhatsApp.",
+    "successTitle": "Message sent",
+    "successDescription": "Your message was sent successfully. Our team has received your request.",
+    "connectionTitle": "Connection failed",
+    "connectionDescription": "Unable to connect to the API. Check server availability, the API URL and the CORS configuration.",
+    "errorTitle": "Unable to send message",
+    "errorDescription": "We could not send your message. Please try again.",
+    "unexpectedError": "An unexpected error occurred. Please try again."
   }
 }

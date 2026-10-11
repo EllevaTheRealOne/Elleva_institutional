@@ -60,7 +60,9 @@
   ],
   "actions": {
     "email": "Enviar por e-mail",
-    "whatsapp": "Enviar por WhatsApp"
+    "whatsapp": "Enviar por WhatsApp",
+    "sending": "Enviando...",
+    "confirm": "Entendi"
   },
   "consent": "Ao entrar em contato, você concorda que a Elleva pode processar as informações fornecidas para responder à sua solicitação.",
   "contactMethods": [
@@ -86,5 +88,17 @@
     "companyNotProvided": "Não informado",
     "topic": "Tópico",
     "message": "Mensagem"
+  },
+  "feedback": {
+    "validationTitle": "Verifique suas informações",
+    "validationEmail": "Verifique o nome, o e-mail, o tópico e a mensagem. O nome deve conter de 2 a 100 caracteres, o e-mail deve ser válido e a mensagem deve conter de 5 a 5000 caracteres.",
+    "validationWhatsapp": "Preencha corretamente o nome, o e-mail, o tópico e a mensagem antes de continuar para o WhatsApp.",
+    "successTitle": "Mensagem enviada",
+    "successDescription": "Sua mensagem foi enviada com sucesso. Nossa equipe recebeu sua solicitação.",
+    "connectionTitle": "Falha na conexão",
+    "connectionDescription": "Não foi possível conectar à API. Verifique a disponibilidade do servidor, a URL da API e a configuração de CORS.",
+    "errorTitle": "Não foi possível enviar a mensagem",
+    "errorDescription": "Não conseguimos enviar sua mensagem. Tente novamente.",
+    "unexpectedError": "Ocorreu um erro inesperado. Tente novamente."
   }
 }

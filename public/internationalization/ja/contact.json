@@ -60,7 +60,9 @@
   ],
   "actions": {
     "email": "メールで送信",
-    "whatsapp": "WhatsAppで送信"
+    "whatsapp": "WhatsAppで送信",
+    "sending": "送信中...",
+    "confirm": "了解しました"
   },
   "consent": "お問い合わせいただくことにより、お客様のリクエストに対応するためにEllevaが提供情報を処理することに同意したものとみなされます。",
   "contactMethods": [
@@ -86,5 +88,17 @@
     "companyNotProvided": "未提供",
     "topic": "トピック",
     "message": "メッセージ"
+  },
+  "feedback": {
+    "validationTitle": "入力内容をご確認ください",
+    "validationEmail": "お名前、メールアドレス、トピック、メッセージをご確認ください。お名前は2〜100文字、メールアドレスは有効である必要があり、メッセージは5〜5000文字である必要があります。",
+    "validationWhatsapp": "WhatsAppに進む前に、お名前、メールアドレス、トピック、メッセージを正しく入力してください。",
+    "successTitle": "メッセージを送信しました",
+    "successDescription": "メッセージが正常に送信されました。チームがお客様のリクエストを受け取りました。",
+    "connectionTitle": "接続に失敗しました",
+    "connectionDescription": "APIに接続できませんでした。サーバーの可用性、APIのURL、CORS設定をご確認ください。",
+    "errorTitle": "メッセージを送信できませんでした",
+    "errorDescription": "メッセージを送信できませんでした。もう一度お試しください。",
+    "unexpectedError": "予期しないエラーが発生しました。もう一度お試しください。"
   }
 }
