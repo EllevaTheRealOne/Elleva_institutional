@@ -54,6 +54,11 @@ const ACCENTS: [text: string, fragment: string][] = [
   ["participation.subline", "participation.term"],
 ];
 
+// The headlines whose lit fragment is set on a line of its own: the slide
+// lights the second line, so the fragment must close the sentence in every
+// language, or a lone word is left plain under it.
+const SECOND_LINE = ["problem", "market", "participation"];
+
 describe("business-plan.json", () => {
   it("exists in every supported locale", () => {
     expect(locales).toHaveLength(8);
@@ -75,6 +80,17 @@ describe("business-plan.json", () => {
     for (const l of locales) {
       for (const [text, fragment] of ACCENTS) {
         expect(get(plan(l), text), `${l}: ${text}`).toContain(get(plan(l), fragment) as string);
+      }
+    }
+  });
+
+  it("lights the second line of each two-line headline", () => {
+    for (const l of locales) {
+      for (const section of SECOND_LINE) {
+        const title = get(plan(l), `${section}.title`) as string;
+        const accent = get(plan(l), `${section}.titleAccent`) as string;
+        expect(title.endsWith(accent), `${l}: ${section}.titleAccent`).toBe(true);
+        expect(title.length, `${l}: ${section}.title`).toBeGreaterThan(accent.length);
       }
     }
   });
