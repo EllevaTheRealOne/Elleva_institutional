@@ -4,7 +4,7 @@
     "description": "Elleva 사업 계획: 금융 시장을 위한 자율 AI 인프라, 고객 백오피스, Elleva Partners 프로그램, E1–E5 Partner Framework 및 계약 가속(Contract Acceleration)."
   },
   "hero": {
-    "eyebrow": "사업 계획 · 버전 1.0",
+    "eyebrow": "사업 계획 · 버전 1.1",
     "title": "Elleva",
     "scrollCue": "스크롤하여 살펴보기"
   },
@@ -31,39 +31,44 @@
     "loop": ["연구", "결정", "실행", "모니터링"]
   },
   "problem": {
-    "eyebrow": "문제",
-    "title": "시장은 끊임없이 변화합니다.",
+    "eyebrow": "Elleva는 왜 탄생했을까요?",
+    "title": "금융 시장은 복잡해 보입니다. 하지만 경험까지 복잡할 필요는 없습니다.",
+    "titleAccent": "하지만 경험까지 복잡할 필요는 없습니다.",
+    "lead": "Elleva는 기술을 통해 금융 시장에 대한 접근을 단순하게 만들기 위해 탄생했습니다.",
     "cards": [
       {
         "index": "/01",
-        "title": "시장은 끊임없이 움직입니다",
-        "text": "가격이 변하고, 뉴스가 쏟아지며, 기회가 나타납니다."
+        "title": "많은 이들에게는 복잡한 시장",
+        "text": "많은 사람에게 금융 시장은 여전히 멀고, 혼란스러우며, 소수를 위한 것처럼 보입니다."
       },
       {
         "index": "/02",
-        "title": "타이밍이 차이를 만듭니다",
-        "text": "지금 눈앞에 있는 기회도 순식간에 사라질 수 있습니다."
+        "title": "사용하는 사람에게는 단순한 경험",
+        "text": "진정한 정교함은 그 이면의 구조 전체를 이해하도록 요구하지 않으면서, 단순한 경험을 만드는 데 있습니다."
       },
       {
         "index": "/03",
-        "title": "결정에는 명확성이 필요합니다",
-        "text": "분석 없는 정보는 의심과 잘못된 결정으로 이어질 수 있습니다."
+        "title": "이것이 Elleva의 존재 이유",
+        "text": "더 명확하고, 더 실용적이며, 더 접근하기 쉬운 방식으로 사람과 금융 시장을 가깝게 연결합니다."
       }
     ]
   },
   "market": {
-    "eyebrow": "시장의 진화",
-    "title": "더 많은 자본은 더 많은 기술을 요구합니다",
-    "titleAccent": "더 많은 기술",
-    "lead": "자본과 글로벌 금융 시스템 사이의 자율 레이어.",
-    "text": "Elleva는 브로커도, 펀드도, 시그널 플랫폼도 아닙니다. 이미 존재하는 금융 기관 위에서 데이터, 위임, 컴플라이언스, 실행을 연결하는 AI 인프라입니다.",
+    "eyebrow": "시장",
+    "title": "시장은 끊임없이 진화하고 있습니다.",
+    "titleAccent": "끊임없이 진화하고 있습니다.",
+    "lead": "자산 운용 시장은 계속 성장하고 있습니다.",
+    "subLead": "그리고 기술은 이 변화의 일부입니다.",
+    "text": "AUM으로 알려진 전 세계 운용자산의 성장은, 점점 더 많은 자금이 움직이고 끊임없이 현대화되는 시장의 진화를 보여줍니다.",
+    "callout": "바로 이 성장과 혁신의 무대에서 Elleva는 자신의 자리를 만들어 가고 있습니다.",
+    "calloutAccent": "Elleva",
     "chart": {
-      "title": "글로벌 AUM의 구조적 성장",
-      "subtitle": "미국 달러(US$) 조 단위",
-      "calloutValue": "US$ 200조",
-      "calloutLabel": "2030년 전망치",
-      "series": "글로벌 AUM",
-      "unit": "조"
+      "title": "글로벌 AUM 성장",
+      "value": "US$ {{value}}",
+      "unit": "조",
+      "projection": "(전망)",
+      "sourceLabel": "출처:",
+      "source": "출처: PwC — Global Asset & Wealth Management Report 2025."
     }
   },
   "howItWorks": {
@@ -98,6 +103,45 @@
       "line2": "Club Cienciano · 페루",
       "line2Sub": "2022/23 시즌 공식 스폰서"
     }
+  },
+  "participation": {
+    "eyebrow": "어떻게 참여하시나요?",
+    "title": "이 자금 조달 모델은 회사의 성과와 연결되어 있습니다.",
+    "titleAccent": "회사의 성과와 연결되어 있습니다.",
+    "subline": "참여는 Revenue-Based Financing 계약을 통해 이루어집니다",
+    "term": "Revenue-Based Financing",
+    "steps": [
+      {
+        "index": "/01",
+        "title": "귀하가 자본을 제공합니다",
+        "text": "귀하의 참여는 Elleva와의 계약으로 공식화됩니다."
+      },
+      {
+        "index": "/02",
+        "title": "Elleva가 그 자본을 활용합니다",
+        "text": "자금은 회사의 운영 구조 안에서 활용됩니다."
+      },
+      {
+        "index": "/03",
+        "title": "계약에 따라 수령합니다",
+        "text": "지급액은 회사의 매출과 연동되며, 기간에 따라 달라질 수 있습니다."
+      }
+    ],
+    "objective": {
+      "label": "계약의 경제적 목표",
+      "value": "4.0x",
+      "caption": "최초 출자 자본 대비"
+    },
+    "conditions": [
+      {
+        "title": "고정된 월 수익률은 없습니다.",
+        "text": "결과는 어떤 기간에는 더 높고, 어떤 기간에는 더 낮을 수 있습니다."
+      },
+      {
+        "title": "목표 달성 기한은 정해져 있지 않습니다.",
+        "text": "계약은 4.0x의 목표를 정하고 있지만, 이를 달성하기 위한 표준 기한은 없습니다."
+      }
+    ]
   },
   "backOffice": {
     "eyebrow": "고객 백오피스",

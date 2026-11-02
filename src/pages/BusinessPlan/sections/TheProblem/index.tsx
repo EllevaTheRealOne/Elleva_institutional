@@ -2,10 +2,14 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Slide, SlideHeader } from "../../components/Slide";
 import { Reveal } from "../../components/Reveal";
+import { Accent } from "../../components/Accent";
 
 type ProblemCard = { index: string; title: string; text: string };
 
-/** Slide 3 — the problem, as three black cards on the turquoise ground. */
+/**
+ * Slide 3 — why Elleva came to be, as three black cards on the turquoise
+ * ground. The second sentence of the headline is lit white, on its own line.
+ */
 export const TheProblem: React.FC = () => {
   const { t } = useTranslation("business-plan");
   const cards = t("problem.cards", { returnObjects: true }) as ProblemCard[];
@@ -15,10 +19,18 @@ export const TheProblem: React.FC = () => {
       <Reveal>
         <SlideHeader
           eyebrow={t("problem.eyebrow")}
-          title={t("problem.title")}
+          title={
+            <Accent
+              text={t("problem.title")}
+              accent={t("problem.titleAccent")}
+              className="block text-[var(--bp-white)]"
+            />
+          }
           align="center"
-          className="mx-auto max-w-3xl"
-        />
+          className="mx-auto max-w-5xl [&_h2]:text-balance"
+        >
+          <p className="bp-lead mt-2 !font-semibold">{t("problem.lead")}</p>
+        </SlideHeader>
       </Reveal>
 
       <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">

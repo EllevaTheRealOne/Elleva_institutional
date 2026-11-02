@@ -4,7 +4,7 @@
     "description": "El plan de negocios de Elleva: infraestructura de IA autónoma para el mercado financiero, el back office del cliente, el programa Elleva Partners, el framework de partners E1–E5 y la aceleración de contrato."
   },
   "hero": {
-    "eyebrow": "Plan de Negocios · Versión 1.0",
+    "eyebrow": "Plan de Negocios · Versión 1.1",
     "title": "Elleva",
     "scrollCue": "Desplácese para explorar"
   },
@@ -31,39 +31,44 @@
     "loop": ["Investigar", "Decidir", "Ejecutar", "Monitorear"]
   },
   "problem": {
-    "eyebrow": "El problema",
-    "title": "El mercado cambia todo el tiempo.",
+    "eyebrow": "¿Por qué surgió Elleva?",
+    "title": "El mercado financiero parece complejo. La experiencia no tiene por qué serlo.",
+    "titleAccent": "La experiencia no tiene por qué serlo.",
+    "lead": "Elleva nació para simplificar el acceso al mercado financiero por medio de la tecnología.",
     "cards": [
       {
         "index": "/01",
-        "title": "El mercado se mueve todo el tiempo",
-        "text": "Los precios cambian, surgen noticias y aparecen oportunidades."
+        "title": "Complejo para muchos",
+        "text": "Para muchas personas, el mercado financiero todavía parece distante, confuso y hecho para pocos."
       },
       {
         "index": "/02",
-        "title": "El momento oportuno marca la diferencia",
-        "text": "Una oportunidad disponible ahora puede desaparecer rápidamente."
+        "title": "Simple para quien lo utiliza",
+        "text": "La verdadera sofisticación está en crear una experiencia simple, sin exigir que la persona entienda toda la estructura que hay detrás."
       },
       {
         "index": "/03",
-        "title": "Decidir exige claridad",
-        "text": "La información sin análisis puede generar dudas y malas decisiones."
+        "title": "Esa es la razón de Elleva",
+        "text": "Acercar a las personas y al mercado financiero con más claridad, practicidad y accesibilidad."
       }
     ]
   },
   "market": {
-    "eyebrow": "Progresión del mercado",
-    "title": "Más capital exige más tecnología",
-    "titleAccent": "más tecnología",
-    "lead": "La capa autónoma entre el capital y el sistema financiero global.",
-    "text": "Elleva no es un corredor, ni un fondo, ni una plataforma de señales. Es la infraestructura de IA que conecta datos, mandatos, cumplimiento y ejecución sobre instituciones financieras que ya existen.",
+    "eyebrow": "El mercado",
+    "title": "Un mercado en constante evolución.",
+    "titleAccent": "constante evolución.",
+    "lead": "El mercado de gestión de capital sigue creciendo.",
+    "subLead": "Y la tecnología forma parte de esta transformación.",
+    "text": "El crecimiento de los activos bajo gestión en el mundo, conocido como AUM, muestra la evolución de un mercado que moviliza cada vez más recursos y se moderniza constantemente.",
+    "callout": "Es en este escenario de crecimiento e innovación donde Elleva está construyendo su espacio.",
+    "calloutAccent": "Elleva",
     "chart": {
-      "title": "Crecimiento estructural del AUM global",
-      "subtitle": "En billones de dólares estadounidenses (US$)",
-      "calloutValue": "US$ 200 billones",
-      "calloutLabel": "proyectados para 2030",
-      "series": "AUM global",
-      "unit": "B"
+      "title": "Crecimiento global del AUM",
+      "value": "US$ {{value}}",
+      "unit": "billones",
+      "projection": "(proyección)",
+      "sourceLabel": "Fuente:",
+      "source": "Fuente: PwC — Global Asset & Wealth Management Report 2025."
     }
   },
   "howItWorks": {
@@ -98,6 +103,45 @@
       "line2": "Club Cienciano · Perú",
       "line2Sub": "Patrocinador oficial en la temporada 2022/23"
     }
+  },
+  "participation": {
+    "eyebrow": "¿Cómo participa usted?",
+    "title": "Un modelo de financiamiento conectado al desempeño de la compañía.",
+    "titleAccent": "conectado al desempeño de la compañía.",
+    "subline": "La participación se realiza a través de un contrato de Revenue-Based Financing",
+    "term": "Revenue-Based Financing",
+    "steps": [
+      {
+        "index": "/01",
+        "title": "Usted aporta el capital",
+        "text": "Su participación se formaliza mediante un contrato con Elleva."
+      },
+      {
+        "index": "/02",
+        "title": "Elleva utiliza ese capital",
+        "text": "Los recursos se aplican dentro de la estructura operativa de la compañía."
+      },
+      {
+        "index": "/03",
+        "title": "Usted recibe según el contrato",
+        "text": "Los pagos están vinculados a los ingresos de la compañía y pueden variar de un período a otro."
+      }
+    ],
+    "objective": {
+      "label": "Objetivo económico del contrato",
+      "value": "4.0x",
+      "caption": "del capital aportado originalmente"
+    },
+    "conditions": [
+      {
+        "title": "Sin rentabilidad mensual fija.",
+        "text": "Los resultados pueden ser mayores en algunos períodos y menores en otros."
+      },
+      {
+        "title": "Sin plazo definido para alcanzar el objetivo.",
+        "text": "El contrato establece un objetivo de 4.0x, sin un plazo estándar para alcanzarlo."
+      }
+    ]
   },
   "backOffice": {
     "eyebrow": "Back office del cliente",

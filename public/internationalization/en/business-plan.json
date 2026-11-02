@@ -4,7 +4,7 @@
     "description": "The Elleva business plan: autonomous AI infrastructure for the financial market, the client back office, the Elleva Partners program, the E1–E5 partner framework and contract acceleration."
   },
   "hero": {
-    "eyebrow": "Business Plan · Version 1.0",
+    "eyebrow": "Business Plan · Version 1.1",
     "title": "Elleva",
     "scrollCue": "Scroll to explore"
   },
@@ -31,39 +31,44 @@
     "loop": ["Research", "Decide", "Execute", "Monitor"]
   },
   "problem": {
-    "eyebrow": "The problem",
-    "title": "The market changes all the time.",
+    "eyebrow": "Why was Elleva created?",
+    "title": "The financial market seems complex. The experience doesn't have to be.",
+    "titleAccent": "The experience doesn't have to be.",
+    "lead": "Elleva was created to simplify access to the financial market through technology.",
     "cards": [
       {
         "index": "/01",
-        "title": "The market moves all the time",
-        "text": "Prices change, news breaks and opportunities appear."
+        "title": "Complex for many",
+        "text": "For many people, the financial market still seems distant, confusing and made for the few."
       },
       {
         "index": "/02",
-        "title": "Timing makes the difference",
-        "text": "An opportunity available now can disappear quickly."
+        "title": "Simple for those who use it",
+        "text": "True sophistication lies in creating a simple experience, without requiring people to understand the whole structure behind it."
       },
       {
         "index": "/03",
-        "title": "Deciding demands clarity",
-        "text": "Information without analysis can create doubt and poor decisions."
+        "title": "This is why Elleva exists",
+        "text": "Bringing people and the financial market closer, with more clarity, convenience and accessibility."
       }
     ]
   },
   "market": {
-    "eyebrow": "Market progression",
-    "title": "More capital demands more technology",
-    "titleAccent": "more technology",
-    "lead": "The autonomous layer between capital and the global financial system.",
-    "text": "Elleva is not a broker, nor a fund, nor a signals platform. It is the AI infrastructure that connects data, mandates, compliance and execution on top of financial institutions that already exist.",
+    "eyebrow": "The market",
+    "title": "A market in constant evolution.",
+    "titleAccent": "constant evolution.",
+    "lead": "The asset management market keeps growing.",
+    "subLead": "And technology is part of this transformation.",
+    "text": "The growth of assets under management worldwide, known as AUM, shows the evolution of a market that moves ever more capital and keeps modernizing.",
+    "callout": "It is in this landscape of growth and innovation that Elleva is building its place.",
+    "calloutAccent": "Elleva",
     "chart": {
-      "title": "Structural growth of global AUM",
-      "subtitle": "In trillions of US dollars (US$)",
-      "calloutValue": "US$ 200 T",
-      "calloutLabel": "projected for 2030",
-      "series": "Global AUM",
-      "unit": "T"
+      "title": "Global AUM growth",
+      "value": "US$ {{value}}",
+      "unit": "trillion",
+      "projection": "(projected)",
+      "sourceLabel": "Source:",
+      "source": "Source: PwC — Global Asset & Wealth Management Report 2025."
     }
   },
   "howItWorks": {
@@ -98,6 +103,45 @@
       "line2": "Club Cienciano · Peru",
       "line2Sub": "Official sponsor in the 2022/23 season"
     }
+  },
+  "participation": {
+    "eyebrow": "How do you take part?",
+    "title": "A financing model connected to the company's performance.",
+    "titleAccent": "connected to the company's performance.",
+    "subline": "Participation takes place through a Revenue-Based Financing contract",
+    "term": "Revenue-Based Financing",
+    "steps": [
+      {
+        "index": "/01",
+        "title": "You provide the capital",
+        "text": "Your participation is formalized through a contract with Elleva."
+      },
+      {
+        "index": "/02",
+        "title": "Elleva uses this capital",
+        "text": "The funds are applied within the company's operating structure."
+      },
+      {
+        "index": "/03",
+        "title": "You receive according to the contract",
+        "text": "Payments are linked to the company's revenue and may vary from one period to another."
+      }
+    ],
+    "objective": {
+      "label": "Economic objective of the contract",
+      "value": "4.0x",
+      "caption": "of the capital originally contributed"
+    },
+    "conditions": [
+      {
+        "title": "No fixed monthly return.",
+        "text": "Results may be higher in some periods and lower in others."
+      },
+      {
+        "title": "No set term to reach the objective.",
+        "text": "The contract sets an objective of 4.0x, with no standard term to reach it."
+      }
+    ]
   },
   "backOffice": {
     "eyebrow": "Client back office",

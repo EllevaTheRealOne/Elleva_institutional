@@ -191,12 +191,12 @@ const businessPlanSections: NavSubItem[] = [
     key: "categories.businessPlan.items.overview",
   },
   {
-    label: "The Problem",
+    label: "Why Elleva",
     href: "#problem",
     key: "categories.businessPlan.items.problem",
   },
   {
-    label: "Market Progression",
+    label: "The Market",
     href: "#market",
     key: "categories.businessPlan.items.market",
   },
@@ -209,6 +209,11 @@ const businessPlanSections: NavSubItem[] = [
     label: "Brokers",
     href: "#brokers",
     key: "categories.businessPlan.items.brokers",
+  },
+  {
+    label: "How You Take Part",
+    href: "#participation",
+    key: "categories.businessPlan.items.participation",
   },
   {
     label: "Client Back Office",

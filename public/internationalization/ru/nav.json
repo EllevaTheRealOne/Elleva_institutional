@@ -101,10 +101,11 @@
       "label": "Бизнес-план",
       "items": {
         "overview": "Что такое Elleva",
-        "problem": "Проблема",
-        "market": "Развитие рынка",
+        "problem": "Почему Elleva",
+        "market": "Рынок",
         "howItWorks": "Как это работает",
         "brokers": "Брокеры",
+        "participation": "Как участвовать",
         "backOffice": "Клиентский бэк-офис",
         "purpose": "Наша миссия",
         "partners": "Elleva Partners",

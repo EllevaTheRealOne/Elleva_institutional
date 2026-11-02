@@ -101,10 +101,11 @@
       "label": "Plano de Negócios",
       "items": {
         "overview": "O que é a Elleva",
-        "problem": "O Problema",
-        "market": "Progressão do Mercado",
+        "problem": "Por que a Elleva",
+        "market": "O Mercado",
         "howItWorks": "Como Funciona",
         "brokers": "Corretoras",
+        "participation": "Como Você Participa",
         "backOffice": "Back Office do Cliente",
         "purpose": "Nosso Propósito",
         "partners": "Elleva Partners",

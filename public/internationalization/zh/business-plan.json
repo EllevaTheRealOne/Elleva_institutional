@@ -4,7 +4,7 @@
     "description": "Elleva 商业计划：面向金融市场的自主 AI 基础设施、客户后台、Elleva Partners 计划、E1–E5 Partner Framework 以及合约加速机制（Contract Acceleration）。"
   },
   "hero": {
-    "eyebrow": "商业计划 · 1.0 版",
+    "eyebrow": "商业计划 · 1.1 版",
     "title": "Elleva",
     "scrollCue": "滚动浏览"
   },
@@ -31,39 +31,44 @@
     "loop": ["研究", "决策", "执行", "监控"]
   },
   "problem": {
-    "eyebrow": "问题所在",
-    "title": "市场时刻在变化。",
+    "eyebrow": "Elleva 为何诞生？",
+    "title": "金融市场看似复杂。体验却无需复杂。",
+    "titleAccent": "体验却无需复杂。",
+    "lead": "Elleva 的诞生，是为了借助科技简化进入金融市场的方式。",
     "cards": [
       {
         "index": "/01",
-        "title": "市场时刻在变动",
-        "text": "价格变化，新闻涌现，机会随之出现。"
+        "title": "对许多人而言很复杂",
+        "text": "对许多人来说，金融市场仍显得遥远、令人困惑，且只为少数人而设。"
       },
       {
         "index": "/02",
-        "title": "时机至关重要",
-        "text": "此刻可得的机会，可能转瞬即逝。"
+        "title": "对使用者而言很简单",
+        "text": "真正的精妙在于打造简单的体验，而无需使用者理解背后的全部结构。"
       },
       {
         "index": "/03",
-        "title": "决策需要清晰",
-        "text": "缺乏分析的信息可能带来疑虑与错误决策。"
+        "title": "这正是 Elleva 存在的理由",
+        "text": "以更清晰、更便捷、更易获取的方式，拉近人们与金融市场的距离。"
       }
     ]
   },
   "market": {
-    "eyebrow": "市场演进",
-    "title": "更多资本需要更多技术",
-    "titleAccent": "更多技术",
-    "lead": "介于资本与全球金融体系之间的自主层。",
-    "text": "Elleva 不是经纪商，不是基金，也不是信号平台。它是一套 AI 基础设施，在既有金融机构之上连接数据、委托、合规与执行。",
+    "eyebrow": "市场",
+    "title": "一个持续演进的市场。",
+    "titleAccent": "持续演进的市场。",
+    "lead": "资产管理市场持续增长。",
+    "subLead": "而科技正是这场变革的一部分。",
+    "text": "全球资产管理规模（即 AUM）的增长，展现了一个资金流动日益增多、并不断现代化的市场的演进。",
+    "callout": "正是在这样一个增长与创新的环境中，Elleva 正在开拓自己的空间。",
+    "calloutAccent": "Elleva",
     "chart": {
-      "title": "全球 AUM 的结构性增长",
-      "subtitle": "单位：万亿美元（US$）",
-      "calloutValue": "US$ 200 万亿",
-      "calloutLabel": "2030 年预测值",
-      "series": "全球 AUM",
-      "unit": "万亿"
+      "title": "全球 AUM 增长",
+      "value": "US$ {{value}}",
+      "unit": "万亿",
+      "projection": "（预测）",
+      "sourceLabel": "来源：",
+      "source": "来源：PwC — Global Asset & Wealth Management Report 2025"
     }
   },
   "howItWorks": {
@@ -98,6 +103,45 @@
       "line2": "Club Cienciano · 秘鲁",
       "line2Sub": "2022/23 赛季官方赞助商"
     }
+  },
+  "participation": {
+    "eyebrow": "您如何参与？",
+    "title": "一种融资模式，与公司业绩相挂钩。",
+    "titleAccent": "与公司业绩相挂钩。",
+    "subline": "参与通过一份 Revenue-Based Financing 合同实现",
+    "term": "Revenue-Based Financing",
+    "steps": [
+      {
+        "index": "/01",
+        "title": "您提供资本",
+        "text": "您的参与通过与 Elleva 签订的合同正式确立。"
+      },
+      {
+        "index": "/02",
+        "title": "Elleva 运用这笔资本",
+        "text": "资金在公司的运营架构内进行运用。"
+      },
+      {
+        "index": "/03",
+        "title": "您按合同获得回款",
+        "text": "付款与公司收入挂钩，且可能因期间不同而有所变化。"
+      }
+    ],
+    "objective": {
+      "label": "合同的经济目标",
+      "value": "4.0x",
+      "caption": "相对于最初投入的资本"
+    },
+    "conditions": [
+      {
+        "title": "没有固定的月度收益。",
+        "text": "在某些期间结果可能更高，在其他期间则可能更低。"
+      },
+      {
+        "title": "没有达成目标的既定期限。",
+        "text": "合同设定了 4.0x 的目标，但没有达成该目标的标准期限。"
+      }
+    ]
   },
   "backOffice": {
     "eyebrow": "客户后台",

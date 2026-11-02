@@ -101,10 +101,11 @@
       "label": "Kế hoạch Kinh doanh",
       "items": {
         "overview": "Elleva là gì",
-        "problem": "Vấn đề",
-        "market": "Tiến trình Thị trường",
+        "problem": "Vì sao có Elleva",
+        "market": "Thị trường",
         "howItWorks": "Cách thức Vận hành",
         "brokers": "Nhà môi giới",
+        "participation": "Cách thức Tham gia",
         "backOffice": "Back office Khách hàng",
         "purpose": "Sứ mệnh của Chúng tôi",
         "partners": "Elleva Partners",

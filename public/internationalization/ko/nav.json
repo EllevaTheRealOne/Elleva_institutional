@@ -101,10 +101,11 @@
       "label": "사업 계획",
       "items": {
         "overview": "Elleva란",
-        "problem": "문제",
-        "market": "시장의 진화",
+        "problem": "Elleva의 탄생 배경",
+        "market": "시장",
         "howItWorks": "작동 방식",
         "brokers": "브로커",
+        "participation": "참여 방법",
         "backOffice": "고객 백오피스",
         "purpose": "우리의 목적",
         "partners": "Elleva Partners",

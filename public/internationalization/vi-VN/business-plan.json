@@ -4,7 +4,7 @@
     "description": "Kế hoạch kinh doanh của Elleva: hạ tầng AI tự chủ cho thị trường tài chính, back office của khách hàng, chương trình Elleva Partners, khung phát triển Partner E1–E5 và cơ chế tăng tốc hợp đồng."
   },
   "hero": {
-    "eyebrow": "Kế hoạch Kinh doanh · Phiên bản 1.0",
+    "eyebrow": "Kế hoạch Kinh doanh · Phiên bản 1.1",
     "title": "Elleva",
     "scrollCue": "Cuộn để khám phá"
   },
@@ -54,39 +54,44 @@
     ]
   },
   "problem": {
-    "eyebrow": "Vấn đề",
-    "title": "Thị trường thay đổi không ngừng.",
+    "eyebrow": "Vì sao Elleva ra đời?",
+    "title": "Thị trường tài chính có vẻ phức tạp. Trải nghiệm thì không cần phải như vậy.",
+    "titleAccent": "Trải nghiệm thì không cần phải như vậy.",
+    "lead": "Elleva ra đời để đơn giản hóa việc tiếp cận thị trường tài chính bằng công nghệ.",
     "cards": [
       {
         "index": "/01",
-        "title": "Thị trường luôn vận động",
-        "text": "Giá cả thay đổi, tin tức xuất hiện và cơ hội mở ra."
+        "title": "Phức tạp với nhiều người",
+        "text": "Với nhiều người, thị trường tài chính vẫn có vẻ xa vời, khó hiểu và chỉ dành cho số ít."
       },
       {
         "index": "/02",
-        "title": "Thời điểm tạo nên sự khác biệt",
-        "text": "Một cơ hội đang có lúc này có thể biến mất nhanh chóng."
+        "title": "Đơn giản với người sử dụng",
+        "text": "Sự tinh tế thực sự nằm ở việc tạo ra một trải nghiệm đơn giản, mà không đòi hỏi người dùng phải hiểu toàn bộ cấu trúc phía sau."
       },
       {
         "index": "/03",
-        "title": "Quyết định đòi hỏi sự sáng suốt",
-        "text": "Thông tin thiếu phân tích có thể gây hoài nghi và dẫn đến quyết định sai lầm."
+        "title": "Đó là lý do Elleva tồn tại",
+        "text": "Đưa con người và thị trường tài chính đến gần nhau hơn, với sự rõ ràng, tiện lợi và dễ tiếp cận hơn."
       }
     ]
   },
   "market": {
-    "eyebrow": "Tiến trình của thị trường",
-    "title": "Nhiều vốn hơn đòi hỏi nhiều công nghệ hơn",
-    "titleAccent": "nhiều công nghệ hơn",
-    "lead": "Lớp tự chủ nằm giữa nguồn vốn và hệ thống tài chính toàn cầu.",
-    "text": "Elleva không phải là nhà môi giới, không phải quỹ đầu tư, cũng không phải nền tảng tín hiệu. Đây là hạ tầng AI kết nối dữ liệu, ủy thác, tuân thủ và thực thi trên nền các tổ chức tài chính đã hiện hữu.",
+    "eyebrow": "Thị trường",
+    "title": "Một thị trường không ngừng phát triển.",
+    "titleAccent": "không ngừng phát triển.",
+    "lead": "Thị trường quản lý vốn tiếp tục tăng trưởng.",
+    "subLead": "Và công nghệ là một phần của sự chuyển đổi này.",
+    "text": "Sự tăng trưởng của tài sản được quản lý trên toàn thế giới, được gọi là AUM, cho thấy sự phát triển của một thị trường ngày càng luân chuyển nhiều nguồn lực hơn và không ngừng hiện đại hóa.",
+    "callout": "Chính trong bối cảnh tăng trưởng và đổi mới này, Elleva đang xây dựng vị thế của mình.",
+    "calloutAccent": "Elleva",
     "chart": {
-      "title": "Tăng trưởng cơ cấu của AUM toàn cầu",
-      "subtitle": "Tính bằng nghìn tỷ đô la Mỹ (US$)",
-      "calloutValue": "US$ 200 nghìn tỷ",
-      "calloutLabel": "dự phóng cho năm 2030",
-      "series": "AUM toàn cầu",
-      "unit": "nghìn tỷ"
+      "title": "Tăng trưởng AUM toàn cầu",
+      "value": "US$ {{value}}",
+      "unit": "nghìn tỷ",
+      "projection": "(dự phóng)",
+      "sourceLabel": "Nguồn:",
+      "source": "Nguồn: PwC — Global Asset & Wealth Management Report 2025."
     }
   },
   "howItWorks": {
@@ -137,6 +142,45 @@
       "line2": "Club Cienciano · Peru",
       "line2Sub": "Nhà tài trợ chính thức mùa giải 2022/23"
     }
+  },
+  "participation": {
+    "eyebrow": "Bạn tham gia như thế nào?",
+    "title": "Một mô hình tài trợ gắn với hiệu quả hoạt động của công ty.",
+    "titleAccent": "gắn với hiệu quả hoạt động của công ty.",
+    "subline": "Việc tham gia được thực hiện thông qua hợp đồng Revenue-Based Financing",
+    "term": "Revenue-Based Financing",
+    "steps": [
+      {
+        "index": "/01",
+        "title": "Bạn cung cấp nguồn vốn",
+        "text": "Sự tham gia của bạn được chính thức hóa bằng một hợp đồng với Elleva."
+      },
+      {
+        "index": "/02",
+        "title": "Elleva sử dụng nguồn vốn đó",
+        "text": "Nguồn vốn được sử dụng trong cơ cấu vận hành của công ty."
+      },
+      {
+        "index": "/03",
+        "title": "Bạn nhận thanh toán theo hợp đồng",
+        "text": "Các khoản thanh toán gắn với doanh thu của công ty và có thể thay đổi giữa các kỳ."
+      }
+    ],
+    "objective": {
+      "label": "Mục tiêu kinh tế của hợp đồng",
+      "value": "4.0x",
+      "caption": "trên số vốn góp ban đầu"
+    },
+    "conditions": [
+      {
+        "title": "Không có lợi suất cố định hằng tháng.",
+        "text": "Kết quả có thể cao hơn ở một số kỳ và thấp hơn ở những kỳ khác."
+      },
+      {
+        "title": "Không có thời hạn xác định để đạt mục tiêu.",
+        "text": "Hợp đồng đặt ra mục tiêu 4.0x, không có thời hạn tiêu chuẩn để đạt được."
+      }
+    ]
   },
   "backOffice": {
     "eyebrow": "Back office của khách hàng",
