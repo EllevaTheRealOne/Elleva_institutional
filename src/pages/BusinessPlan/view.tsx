@@ -24,7 +24,7 @@ import { Closing } from "./sections/Closing";
 import { BackToTop } from "./components/BackToTop";
 
 /**
- * The Business Plan, one section per slide of the "ELLEVA versão 1.0" deck,
+ * The Business Plan, one section per slide of the "ELLEVA versão 1.1" deck,
  * in the deck's order and in the deck's art direction (see business-plan.css).
  */
 export const BusinessPlanView: React.FC = () => {
