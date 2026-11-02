@@ -191,12 +191,12 @@ const businessPlanSections: NavSubItem[] = [
     key: "categories.businessPlan.items.overview",
   },
   {
-    label: "The Problem",
+    label: "Why Elleva",
     href: "#problem",
     key: "categories.businessPlan.items.problem",
   },
   {
-    label: "Market Progression",
+    label: "The Market",
     href: "#market",
     key: "categories.businessPlan.items.market",
   },
