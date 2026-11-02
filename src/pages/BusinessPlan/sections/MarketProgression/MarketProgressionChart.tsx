@@ -8,21 +8,19 @@ type AumPoint = { year: string; value: number; projected?: boolean };
  * Global assets under management, in US$ trillion, as the deck quotes them
  * from PwC's Global Asset & Wealth Management Report 2025: the 2024 figure
  * and the projection for 2030. The source line is drawn with the chart.
+ * Exactly two points, from and to, with the arrow between them: the slide's
+ * form, so the type allows no third.
  */
-const AUM: AumPoint[] = [
+const AUM: readonly [from: AumPoint, to: AumPoint] = [
   { year: "2024", value: 139 },
   { year: "2030", value: 200, projected: true },
 ];
 
 const PEAK = Math.max(...AUM.map((point) => point.value));
 
-// Grid placement per column, so each year's value and label stay together in
-// the DOM (and are read together) while the plot and the labels sit on their
-// own rows around the baseline.
-const PLACE = [
-  { plot: "col-start-1 row-start-1", label: "col-start-1 row-start-3" },
-  { plot: "col-start-3 row-start-1", label: "col-start-3 row-start-3" },
-];
+// The arrow climbs from just under the top of the first column to above it,
+// so it follows the values rather than a hand-tuned position.
+const RISE_FROM = AUM[0].value / PEAK;
 
 /**
  * The two AUM columns, from one baseline, heights in proportion to the values,
@@ -39,8 +37,14 @@ export const MarketProgressionChart: React.FC = () => {
 
       <div className="mt-8 grid grid-cols-[1fr_auto_1fr] items-end sm:mt-10">
         {AUM.map((point, i) => (
+          // Each year's value and label stay together in the DOM (and are read
+          // together); the grid sets the plot and the labels on their own rows
+          // around the baseline, the arrow in the middle column.
           <React.Fragment key={point.year}>
-            <div className={`${PLACE[i].plot} flex flex-col items-center justify-end`}>
+            <div
+              className="flex flex-col items-center justify-end"
+              style={{ gridColumn: i * 2 + 1, gridRow: 1 }}
+            >
               <span
                 className={`bp-aum-value whitespace-nowrap ${
                   point.projected ? "text-[var(--bp-cyan)]" : "text-[var(--bp-white)]"
@@ -56,7 +60,10 @@ export const MarketProgressionChart: React.FC = () => {
               />
             </div>
 
-            <div className={`${PLACE[i].label} flex flex-col items-center self-start pt-3 text-center`}>
+            <div
+              className="flex flex-col items-center self-start pt-3 text-center"
+              style={{ gridColumn: i * 2 + 1, gridRow: 3 }}
+            >
               <span className="bp-aum-year">{point.year}</span>
               {point.projected && <span className="bp-aum-note">{t("market.chart.projection")}</span>}
             </div>
@@ -65,7 +72,11 @@ export const MarketProgressionChart: React.FC = () => {
 
         <svg
           viewBox="0 0 64 64"
-          className="col-start-2 row-start-1 mb-[calc(var(--bp-aum-plot)*0.62)] h-[calc(var(--bp-aum-plot)*0.42)] w-9 sm:w-14"
+          className="col-start-2 row-start-1 w-9 sm:w-14"
+          style={{
+            marginBottom: `calc(var(--bp-aum-plot) * ${RISE_FROM - 0.08})`,
+            height: `calc(var(--bp-aum-plot) * ${1.12 - RISE_FROM})`,
+          }}
           fill="none"
           stroke="var(--bp-cyan)"
           strokeWidth={3}
