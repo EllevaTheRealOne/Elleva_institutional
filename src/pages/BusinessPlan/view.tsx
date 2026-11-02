@@ -9,6 +9,7 @@ import { TheProblem } from "./sections/TheProblem";
 import { MarketProgression } from "./sections/MarketProgression";
 import { HowItWorks } from "./sections/HowItWorks";
 import { Brokers } from "./sections/Brokers";
+import { Participation } from "./sections/Participation";
 import { BackOffice } from "./sections/BackOffice";
 import { Purpose } from "./sections/Purpose";
 import { Partners } from "./sections/Partners";
@@ -43,6 +44,7 @@ export const BusinessPlanView: React.FC = () => {
       <MarketProgression />
       <HowItWorks />
       <Brokers />
+      <Participation />
       <BackOffice />
       <Purpose />
       <Partners />

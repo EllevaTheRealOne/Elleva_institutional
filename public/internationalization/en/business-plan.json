@@ -104,6 +104,45 @@
       "line2Sub": "Official sponsor in the 2022/23 season"
     }
   },
+  "participation": {
+    "eyebrow": "How do you take part?",
+    "title": "A financing model connected to the company's performance.",
+    "titleAccent": "connected to the company's performance.",
+    "subline": "Participation takes place through a Revenue-Based Financing contract",
+    "term": "Revenue-Based Financing",
+    "steps": [
+      {
+        "index": "/01",
+        "title": "You provide the capital",
+        "text": "Your participation is formalized through a contract with Elleva."
+      },
+      {
+        "index": "/02",
+        "title": "Elleva uses this capital",
+        "text": "The funds are applied within the company's operating structure."
+      },
+      {
+        "index": "/03",
+        "title": "You receive according to the contract",
+        "text": "Payments are linked to the company's revenue and may vary from one period to another."
+      }
+    ],
+    "objective": {
+      "label": "Economic objective of the contract",
+      "value": "4.0x",
+      "caption": "of the capital originally contributed"
+    },
+    "conditions": [
+      {
+        "title": "No fixed monthly return.",
+        "text": "Results may be higher in some periods and lower in others."
+      },
+      {
+        "title": "No set term to reach the objective.",
+        "text": "The contract sets an objective of 4.0x, with no standard term to reach it."
+      }
+    ]
+  },
   "backOffice": {
     "eyebrow": "Client back office",
     "title": "The client follows the evolution of the result.",

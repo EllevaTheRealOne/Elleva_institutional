@@ -211,6 +211,11 @@ const businessPlanSections: NavSubItem[] = [
     key: "categories.businessPlan.items.brokers",
   },
   {
+    label: "How You Take Part",
+    href: "#participation",
+    key: "categories.businessPlan.items.participation",
+  },
+  {
     label: "Client Back Office",
     href: "#back-office",
     key: "categories.businessPlan.items.backOffice",

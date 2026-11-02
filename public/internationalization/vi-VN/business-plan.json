@@ -143,6 +143,45 @@
       "line2Sub": "Nhà tài trợ chính thức mùa giải 2022/23"
     }
   },
+  "participation": {
+    "eyebrow": "Bạn tham gia như thế nào?",
+    "title": "Một mô hình tài trợ gắn với hiệu quả hoạt động của công ty.",
+    "titleAccent": "gắn với hiệu quả hoạt động của công ty.",
+    "subline": "Việc tham gia được thực hiện thông qua hợp đồng Revenue-Based Financing",
+    "term": "Revenue-Based Financing",
+    "steps": [
+      {
+        "index": "/01",
+        "title": "Bạn cung cấp nguồn vốn",
+        "text": "Sự tham gia của bạn được chính thức hóa bằng một hợp đồng với Elleva."
+      },
+      {
+        "index": "/02",
+        "title": "Elleva sử dụng nguồn vốn đó",
+        "text": "Nguồn vốn được sử dụng trong cơ cấu vận hành của công ty."
+      },
+      {
+        "index": "/03",
+        "title": "Bạn nhận thanh toán theo hợp đồng",
+        "text": "Các khoản thanh toán gắn với doanh thu của công ty và có thể thay đổi giữa các kỳ."
+      }
+    ],
+    "objective": {
+      "label": "Mục tiêu kinh tế của hợp đồng",
+      "value": "4.0x",
+      "caption": "trên số vốn góp ban đầu"
+    },
+    "conditions": [
+      {
+        "title": "Không có lợi suất cố định hằng tháng.",
+        "text": "Kết quả có thể cao hơn ở một số kỳ và thấp hơn ở những kỳ khác."
+      },
+      {
+        "title": "Không có thời hạn xác định để đạt mục tiêu.",
+        "text": "Hợp đồng đặt ra mục tiêu 4.0x, không có thời hạn tiêu chuẩn để đạt được."
+      }
+    ]
+  },
   "backOffice": {
     "eyebrow": "Back office của khách hàng",
     "title": "Khách hàng theo dõi sự tiến triển của kết quả.",

@@ -104,6 +104,45 @@
       "line2Sub": "Patrocinadora oficial na temporada 2022/23"
     }
   },
+  "participation": {
+    "eyebrow": "Como você participa?",
+    "title": "Um modelo de financiamento conectado à performance da companhia.",
+    "titleAccent": "conectado à performance da companhia.",
+    "subline": "A participação acontece através de um contrato de Revenue-Based Financing",
+    "term": "Revenue-Based Financing",
+    "steps": [
+      {
+        "index": "/01",
+        "title": "Você disponibiliza o capital",
+        "text": "Sua participação é formalizada por um contrato com a Elleva."
+      },
+      {
+        "index": "/02",
+        "title": "A Elleva utiliza esse capital",
+        "text": "O recurso é aplicado dentro da estrutura operacional da companhia."
+      },
+      {
+        "index": "/03",
+        "title": "Você recebe conforme o contrato",
+        "text": "Os pagamentos são ligados às receitas da companhia e podem variar de um período para outro."
+      }
+    ],
+    "objective": {
+      "label": "Objetivo econômico do contrato",
+      "value": "4.0x",
+      "caption": "do capital originalmente aportado"
+    },
+    "conditions": [
+      {
+        "title": "Sem rentabilidade mensal fixa.",
+        "text": "Os resultados podem ser maiores em alguns períodos e menores em outros."
+      },
+      {
+        "title": "Sem prazo definido para atingir o objetivo.",
+        "text": "O contrato estabelece um objetivo de 4.0x, sem um prazo padrão para alcançá-lo."
+      }
+    ]
+  },
   "backOffice": {
     "eyebrow": "Back office do cliente",
     "title": "O cliente acompanha a evolução do resultado.",

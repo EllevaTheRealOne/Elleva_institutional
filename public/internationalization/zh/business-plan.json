@@ -104,6 +104,45 @@
       "line2Sub": "2022/23 赛季官方赞助商"
     }
   },
+  "participation": {
+    "eyebrow": "您如何参与？",
+    "title": "一种融资模式，与公司业绩相挂钩。",
+    "titleAccent": "与公司业绩相挂钩。",
+    "subline": "参与通过一份 Revenue-Based Financing 合同实现",
+    "term": "Revenue-Based Financing",
+    "steps": [
+      {
+        "index": "/01",
+        "title": "您提供资本",
+        "text": "您的参与通过与 Elleva 签订的合同正式确立。"
+      },
+      {
+        "index": "/02",
+        "title": "Elleva 运用这笔资本",
+        "text": "资金在公司的运营架构内进行运用。"
+      },
+      {
+        "index": "/03",
+        "title": "您按合同获得回款",
+        "text": "付款与公司收入挂钩，且可能因期间不同而有所变化。"
+      }
+    ],
+    "objective": {
+      "label": "合同的经济目标",
+      "value": "4.0x",
+      "caption": "相对于最初投入的资本"
+    },
+    "conditions": [
+      {
+        "title": "没有固定的月度收益。",
+        "text": "在某些期间结果可能更高，在其他期间则可能更低。"
+      },
+      {
+        "title": "没有达成目标的既定期限。",
+        "text": "合同设定了 4.0x 的目标，但没有达成该目标的标准期限。"
+      }
+    ]
+  },
   "backOffice": {
     "eyebrow": "客户后台",
     "title": "客户全程跟踪成果的演进。",
