@@ -54,7 +54,7 @@ export const Participation: React.FC = () => {
               className="bp-accent block"
             />
           }
-          className="max-w-5xl"
+          className="max-w-5xl [&_h2]:text-balance"
         >
           <p className="bp-lead mt-1 !font-medium">
             <Accent

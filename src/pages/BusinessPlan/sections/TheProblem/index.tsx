@@ -27,7 +27,7 @@ export const TheProblem: React.FC = () => {
             />
           }
           align="center"
-          className="mx-auto max-w-5xl"
+          className="mx-auto max-w-5xl [&_h2]:text-balance"
         >
           <p className="bp-lead mt-2 !font-semibold">{t("problem.lead")}</p>
         </SlideHeader>
