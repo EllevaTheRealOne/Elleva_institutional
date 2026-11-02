@@ -349,6 +349,88 @@
     0 0 48px -6px rgba(26, 230, 214, 0.65);
 }
 
+/* ---------- AUM columns (Market) ---------- */
+
+/* The plot height every column is measured against; labels sit above it. */
+.bp-aum {
+  --bp-aum-plot: 9.5rem;
+}
+
+@media (min-width: 640px) {
+  .bp-aum {
+    --bp-aum-plot: 12rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bp-aum {
+    --bp-aum-plot: 13.5rem;
+  }
+}
+
+.bp-aum-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.7rem, 0.3vw + 0.6rem, 0.85rem);
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--bp-dark-text);
+}
+
+/* A standalone figure: proportional digits, not the tabular ones of .bp-num. */
+.bp-aum-value {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.35rem, 1.6vw + 0.95rem, 2.25rem);
+  line-height: 1.1;
+}
+
+.bp-aum-unit {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.85rem, 0.4vw + 0.75rem, 1.1rem);
+  color: var(--bp-dark-text);
+}
+
+/* The column: square on the baseline, 4px rounded at the data end, lit along
+   its top edge the way the deck's glass blocks catch the light. */
+.bp-aum-bar {
+  display: block;
+  width: min(100%, 6rem);
+  border-radius: 4px 4px 0 0;
+  background: var(--bp-cyan-dark);
+  box-shadow:
+    inset 0 3px 0 var(--bp-cyan),
+    0 0 40px -12px rgba(26, 230, 214, 0.7);
+}
+
+.bp-aum-year {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: clamp(0.95rem, 0.4vw + 0.85rem, 1.2rem);
+  letter-spacing: 0.3em;
+  /* letter-spacing trails the last digit; pull it back so it centres */
+  margin-right: -0.3em;
+  color: var(--bp-dark-text);
+}
+
+.bp-aum-note {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(0.8rem, 0.2vw + 0.75rem, 0.95rem);
+  color: var(--bp-dark-muted);
+}
+
+/* ---------- Outlined callout (Market) ---------- */
+
+.bp-callout {
+  border: 1px solid rgba(26, 230, 214, 0.55);
+  border-radius: 1rem;
+  background: rgba(0, 196, 184, 0.06);
+  box-shadow: 0 0 32px -12px rgba(26, 230, 214, 0.45);
+}
+
 /* ---------- Radial diagrams ---------- */
 
 .bp-ring {

@@ -54,18 +54,21 @@
     ]
   },
   "market": {
-    "eyebrow": "市場の進展",
-    "title": "より多くの資本には、より高度なテクノロジーが求められます",
-    "titleAccent": "より高度なテクノロジー",
-    "lead": "資本とグローバル金融システムの間にある自律レイヤー。",
-    "text": "Elleva はブローカーでも、ファンドでも、シグナル配信プラットフォームでもありません。既存の金融機関の上で、データ、マンデート、コンプライアンス、執行を接続するAIインフラストラクチャです。",
+    "eyebrow": "市場",
+    "title": "絶えず進化し続ける市場。",
+    "titleAccent": "絶えず進化し続ける",
+    "lead": "資産運用市場は成長を続けています。",
+    "subLead": "そして、テクノロジーはこの変革の一部です。",
+    "text": "AUM（運用資産残高）として知られる世界の運用資産の成長は、ますます多くの資金が動き、絶えず近代化を続ける市場の進化を示しています。",
+    "callout": "この成長とイノベーションの舞台で、Elleva は自らの居場所を築いています。",
+    "calloutAccent": "Elleva",
     "chart": {
-      "title": "グローバルAUMの構造的成長",
-      "subtitle": "単位：兆米ドル（US$）",
-      "calloutValue": "US$ 200兆",
-      "calloutLabel": "2030年の予測値",
-      "series": "グローバルAUM",
-      "unit": "兆"
+      "title": "グローバルAUMの成長",
+      "value": "US$ {{value}}",
+      "unit": "兆",
+      "projection": "（予測）",
+      "sourceLabel": "出典：",
+      "source": "出典：PwC — Global Asset & Wealth Management Report 2025"
     }
   },
   "howItWorks": {

@@ -54,18 +54,21 @@
     ]
   },
   "market": {
-    "eyebrow": "시장의 진화",
-    "title": "더 많은 자본은 더 많은 기술을 요구합니다",
-    "titleAccent": "더 많은 기술",
-    "lead": "자본과 글로벌 금융 시스템 사이의 자율 레이어.",
-    "text": "Elleva는 브로커도, 펀드도, 시그널 플랫폼도 아닙니다. 이미 존재하는 금융 기관 위에서 데이터, 위임, 컴플라이언스, 실행을 연결하는 AI 인프라입니다.",
+    "eyebrow": "시장",
+    "title": "끊임없이 진화하는 시장.",
+    "titleAccent": "끊임없이 진화하는",
+    "lead": "자산 운용 시장은 계속 성장하고 있습니다.",
+    "subLead": "그리고 기술은 이 변화의 일부입니다.",
+    "text": "AUM으로 알려진 전 세계 운용자산의 성장은, 점점 더 많은 자금이 움직이고 끊임없이 현대화되는 시장의 진화를 보여줍니다.",
+    "callout": "바로 이 성장과 혁신의 무대에서 Elleva는 자신의 자리를 만들어 가고 있습니다.",
+    "calloutAccent": "Elleva",
     "chart": {
-      "title": "글로벌 AUM의 구조적 성장",
-      "subtitle": "미국 달러(US$) 조 단위",
-      "calloutValue": "US$ 200조",
-      "calloutLabel": "2030년 전망치",
-      "series": "글로벌 AUM",
-      "unit": "조"
+      "title": "글로벌 AUM 성장",
+      "value": "US$ {{value}}",
+      "unit": "조",
+      "projection": "(전망)",
+      "sourceLabel": "출처:",
+      "source": "출처: PwC — Global Asset & Wealth Management Report 2025."
     }
   },
   "howItWorks": {

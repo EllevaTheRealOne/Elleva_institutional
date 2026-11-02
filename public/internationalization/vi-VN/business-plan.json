@@ -77,18 +77,21 @@
     ]
   },
   "market": {
-    "eyebrow": "Tiến trình của thị trường",
-    "title": "Nhiều vốn hơn đòi hỏi nhiều công nghệ hơn",
-    "titleAccent": "nhiều công nghệ hơn",
-    "lead": "Lớp tự chủ nằm giữa nguồn vốn và hệ thống tài chính toàn cầu.",
-    "text": "Elleva không phải là nhà môi giới, không phải quỹ đầu tư, cũng không phải nền tảng tín hiệu. Đây là hạ tầng AI kết nối dữ liệu, ủy thác, tuân thủ và thực thi trên nền các tổ chức tài chính đã hiện hữu.",
+    "eyebrow": "Thị trường",
+    "title": "Một thị trường không ngừng phát triển.",
+    "titleAccent": "không ngừng phát triển.",
+    "lead": "Thị trường quản lý vốn tiếp tục tăng trưởng.",
+    "subLead": "Và công nghệ là một phần của sự chuyển đổi này.",
+    "text": "Sự tăng trưởng của tài sản được quản lý trên toàn thế giới, được gọi là AUM, cho thấy sự phát triển của một thị trường ngày càng luân chuyển nhiều nguồn lực hơn và không ngừng hiện đại hóa.",
+    "callout": "Chính trong bối cảnh tăng trưởng và đổi mới này, Elleva đang xây dựng vị thế của mình.",
+    "calloutAccent": "Elleva",
     "chart": {
-      "title": "Tăng trưởng cơ cấu của AUM toàn cầu",
-      "subtitle": "Tính bằng nghìn tỷ đô la Mỹ (US$)",
-      "calloutValue": "US$ 200 nghìn tỷ",
-      "calloutLabel": "dự phóng cho năm 2030",
-      "series": "AUM toàn cầu",
-      "unit": "nghìn tỷ"
+      "title": "Tăng trưởng AUM toàn cầu",
+      "value": "US$ {{value}}",
+      "unit": "nghìn tỷ",
+      "projection": "(dự phóng)",
+      "sourceLabel": "Nguồn:",
+      "source": "Nguồn: PwC — Global Asset & Wealth Management Report 2025."
     }
   },
   "howItWorks": {

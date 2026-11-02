@@ -54,18 +54,21 @@
     ]
   },
   "market": {
-    "eyebrow": "Progressão do mercado",
-    "title": "Mais capital exige mais tecnologia",
-    "titleAccent": "mais tecnologia",
-    "lead": "A camada autônoma entre o capital e o sistema financeiro global.",
-    "text": "A Elleva não é corretora, nem fundo, nem plataforma de sinais. É a infraestrutura de IA que conecta dados, mandatos, compliance e execução sobre instituições financeiras que já existem.",
+    "eyebrow": "O mercado",
+    "title": "Um mercado em constante evolução.",
+    "titleAccent": "constante evolução.",
+    "lead": "O mercado de gestão de capital continua crescendo.",
+    "subLead": "E a tecnologia faz parte dessa transformação.",
+    "text": "O crescimento dos ativos sob gestão no mundo, conhecido como AUM, mostra a evolução de um mercado que movimenta cada vez mais recursos e se moderniza constantemente.",
+    "callout": "É nesse cenário de crescimento e inovação que a Elleva está construindo seu espaço.",
+    "calloutAccent": "Elleva",
     "chart": {
-      "title": "Crescimento estrutural do AUM global",
-      "subtitle": "Em trilhões de dólares (US$)",
-      "calloutValue": "US$ 200 tri",
-      "calloutLabel": "projetados para 2030",
-      "series": "AUM global",
-      "unit": "tri"
+      "title": "Crescimento global do AUM",
+      "value": "US$ {{value}}",
+      "unit": "trilhões",
+      "projection": "(projeção)",
+      "sourceLabel": "Fonte:",
+      "source": "Fonte: PwC — Global Asset & Wealth Management Report 2025."
     }
   },
   "howItWorks": {
