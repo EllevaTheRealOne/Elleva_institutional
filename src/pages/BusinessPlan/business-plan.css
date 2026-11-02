@@ -479,6 +479,15 @@
   line-height: 1.05;
 }
 
+/* Korean spaces its words, so it wraps at the spaces, never inside a word
+   ("연 / 결되어"); scoped to the slides rewritten for v1.1. */
+#problem:lang(ko),
+#market:lang(ko),
+#participation:lang(ko) {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
 /* ---------- Radial diagrams ---------- */
 
 .bp-ring {
