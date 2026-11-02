@@ -31,23 +31,25 @@
     "loop": ["Pesquisar", "Decidir", "Executar", "Monitorar"]
   },
   "problem": {
-    "eyebrow": "O problema",
-    "title": "O mercado muda o tempo todo.",
+    "eyebrow": "Por que a Elleva surgiu?",
+    "title": "O mercado financeiro parece complexo. A experiência não precisa ser.",
+    "titleAccent": "A experiência não precisa ser.",
+    "lead": "A Elleva nasceu para simplificar o acesso ao mercado financeiro por meio da tecnologia.",
     "cards": [
       {
         "index": "/01",
-        "title": "O mercado se move o tempo todo",
-        "text": "Preços mudam, notícias surgem e oportunidades aparecem."
+        "title": "Complexo para muitos",
+        "text": "Para muitas pessoas, o mercado financeiro ainda parece distante, confuso e feito para poucos."
       },
       {
         "index": "/02",
-        "title": "O timing faz a diferença",
-        "text": "Uma oportunidade disponível agora pode desaparecer rapidamente."
+        "title": "Simples para quem utiliza",
+        "text": "A verdadeira sofisticação está em criar uma experiência simples, sem exigir que a pessoa entenda toda a estrutura por trás."
       },
       {
         "index": "/03",
-        "title": "Decidir exige clareza",
-        "text": "Informação sem análise pode gerar dúvida e decisões ruins."
+        "title": "Essa é a razão da Elleva",
+        "text": "Aproximar pessoas e mercado financeiro com mais clareza, praticidade e acessibilidade."
       }
     ]
   },

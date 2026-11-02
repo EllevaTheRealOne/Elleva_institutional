@@ -31,23 +31,25 @@
     "loop": ["Research", "Decide", "Execute", "Monitor"]
   },
   "problem": {
-    "eyebrow": "The problem",
-    "title": "The market changes all the time.",
+    "eyebrow": "Why was Elleva created?",
+    "title": "The financial market seems complex. The experience doesn't have to be.",
+    "titleAccent": "The experience doesn't have to be.",
+    "lead": "Elleva was created to simplify access to the financial market through technology.",
     "cards": [
       {
         "index": "/01",
-        "title": "The market moves all the time",
-        "text": "Prices change, news breaks and opportunities appear."
+        "title": "Complex for many",
+        "text": "For many people, the financial market still seems distant, confusing and made for the few."
       },
       {
         "index": "/02",
-        "title": "Timing makes the difference",
-        "text": "An opportunity available now can disappear quickly."
+        "title": "Simple for those who use it",
+        "text": "True sophistication lies in creating a simple experience, without requiring people to understand the whole structure behind it."
       },
       {
         "index": "/03",
-        "title": "Deciding demands clarity",
-        "text": "Information without analysis can create doubt and poor decisions."
+        "title": "This is why Elleva exists",
+        "text": "Bringing people and the financial market closer, with more clarity, convenience and accessibility."
       }
     ]
   },

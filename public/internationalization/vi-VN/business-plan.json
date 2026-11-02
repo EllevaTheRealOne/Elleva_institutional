@@ -54,23 +54,25 @@
     ]
   },
   "problem": {
-    "eyebrow": "Vấn đề",
-    "title": "Thị trường thay đổi không ngừng.",
+    "eyebrow": "Vì sao Elleva ra đời?",
+    "title": "Thị trường tài chính có vẻ phức tạp. Trải nghiệm thì không cần phải như vậy.",
+    "titleAccent": "Trải nghiệm thì không cần phải như vậy.",
+    "lead": "Elleva ra đời để đơn giản hóa việc tiếp cận thị trường tài chính bằng công nghệ.",
     "cards": [
       {
         "index": "/01",
-        "title": "Thị trường luôn vận động",
-        "text": "Giá cả thay đổi, tin tức xuất hiện và cơ hội mở ra."
+        "title": "Phức tạp với nhiều người",
+        "text": "Với nhiều người, thị trường tài chính vẫn có vẻ xa vời, khó hiểu và chỉ dành cho số ít."
       },
       {
         "index": "/02",
-        "title": "Thời điểm tạo nên sự khác biệt",
-        "text": "Một cơ hội đang có lúc này có thể biến mất nhanh chóng."
+        "title": "Đơn giản với người sử dụng",
+        "text": "Sự tinh tế thực sự nằm ở việc tạo ra một trải nghiệm đơn giản, mà không đòi hỏi người dùng phải hiểu toàn bộ cấu trúc phía sau."
       },
       {
         "index": "/03",
-        "title": "Quyết định đòi hỏi sự sáng suốt",
-        "text": "Thông tin thiếu phân tích có thể gây hoài nghi và dẫn đến quyết định sai lầm."
+        "title": "Đó là lý do Elleva tồn tại",
+        "text": "Đưa con người và thị trường tài chính đến gần nhau hơn, với sự rõ ràng, tiện lợi và dễ tiếp cận hơn."
       }
     ]
   },
