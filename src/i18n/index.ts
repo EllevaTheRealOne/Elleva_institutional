@@ -42,7 +42,7 @@ export const i18nReady = i18n.isInitialized
           escapeValue: false,
         },
         backend: {
-          loadPath: "/internationalization/{{lng}}/{{ns}}.json",
+          loadPath: `/internationalization/{{lng}}/{{ns}}.json?v=${__BUILD_ID__}`,
         },
         react: {
           useSuspense: false,
