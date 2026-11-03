@@ -12,3 +12,6 @@ interface ImportMetaEnv {
 interface ImportMeta {
   readonly env: ImportMetaEnv;
 }
+
+/** Build stamp injected by vite.config.ts (`define`); busts the locale JSON cache. */
+declare const __BUILD_ID__: string;

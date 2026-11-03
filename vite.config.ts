@@ -6,6 +6,11 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   return {
     plugins: [react(), tailwindcss()],
+    // Stamped into the locale JSON URLs so a new build never reads a cached
+    // translation file (the host sends no Cache-Control on /internationalization).
+    define: {
+      __BUILD_ID__: JSON.stringify(Date.now().toString(36)),
+    },
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
