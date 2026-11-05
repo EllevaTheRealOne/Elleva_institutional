@@ -32,24 +32,24 @@
   },
   "problem": {
     "eyebrow": "¿Por qué surgió Elleva?",
-    "title": "El mercado financiero parece complejo. La experiencia no tiene por qué serlo.",
-    "titleAccent": "La experiencia no tiene por qué serlo.",
-    "lead": "Elleva nació para simplificar el acceso al mercado financiero por medio de la tecnología.",
+    "title": "Elleva surgió para simplificar el acceso al mercado financiero.",
+    "titleAccent": "simplificar el acceso al mercado financiero.",
+    "lead": "Creemos que la tecnología debe hacer que la experiencia sea más clara, práctica y accesible para las personas.",
     "cards": [
       {
         "index": "/01",
-        "title": "Complejo para muchos",
-        "text": "Para muchas personas, el mercado financiero todavía parece distante, confuso y hecho para pocos."
+        "title": "Simplificar",
+        "text": "Transformar el acceso al mercado en algo más fácil de entender y utilizar."
       },
       {
         "index": "/02",
-        "title": "Simple para quien lo utiliza",
-        "text": "La verdadera sofisticación está en crear una experiencia simple, sin exigir que la persona entienda toda la estructura que hay detrás."
+        "title": "Organizar",
+        "text": "Usar tecnología para aportar más claridad, practicidad y una mejor experiencia."
       },
       {
         "index": "/03",
-        "title": "Esa es la razón de Elleva",
-        "text": "Acercar a las personas y al mercado financiero con más claridad, practicidad y accesibilidad."
+        "title": "Acercar",
+        "text": "Conectar a las personas con el mercado financiero de una forma más accesible."
       }
     ]
   },
