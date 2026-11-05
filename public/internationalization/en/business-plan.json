@@ -32,24 +32,24 @@
   },
   "problem": {
     "eyebrow": "Why was Elleva created?",
-    "title": "The financial market seems complex. The experience doesn't have to be.",
-    "titleAccent": "The experience doesn't have to be.",
-    "lead": "Elleva was created to simplify access to the financial market through technology.",
+    "title": "Elleva was created to simplify access to the financial market.",
+    "titleAccent": "simplify access to the financial market.",
+    "lead": "We believe technology should make the experience clearer, more practical and more accessible for people.",
     "cards": [
       {
         "index": "/01",
-        "title": "Complex for many",
-        "text": "For many people, the financial market still seems distant, confusing and made for the few."
+        "title": "Simplify",
+        "text": "Turning access to the market into something easier to understand and use."
       },
       {
         "index": "/02",
-        "title": "Simple for those who use it",
-        "text": "True sophistication lies in creating a simple experience, without requiring people to understand the whole structure behind it."
+        "title": "Organize",
+        "text": "Using technology to bring more clarity, convenience and a better experience."
       },
       {
         "index": "/03",
-        "title": "This is why Elleva exists",
-        "text": "Bringing people and the financial market closer, with more clarity, convenience and accessibility."
+        "title": "Bring closer",
+        "text": "Connecting people to the financial market in a more accessible way."
       }
     ]
   },
