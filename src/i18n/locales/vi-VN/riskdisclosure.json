@@ -1,0 +1,51 @@
+{
+  "heading": "Hiểu rõ rủi ro.",
+  "subheading": "Đưa ra quyết định có thông tin.",
+  "intro": "Tài liệu mô tả các rủi ro chính của thị trường tài chính, tài sản số và công nghệ tự động. Hãy đọc trước khi sử dụng dịch vụ.",
+  "noticeTitle": "Thông báo quan trọng",
+  "notice": "Bạn có thể mất một phần hoặc toàn bộ vốn. Không có kết quả tài chính nào được đảm bảo.",
+  "updated": "Cập nhật lần cuối: 9 tháng 10 năm 2026",
+  "footer": "Đọc cùng Điều khoản sử dụng, Chính sách quyền riêng tư và Quy tắc chương trình.",
+  "sections": [
+    {
+      "title": "Rủi ro thị trường tài chính",
+      "content": "Giá có thể biến động mạnh và bạn có thể mất một phần hoặc toàn bộ vốn. Thành tích quá khứ, mô phỏng và dự báo không dự đoán kết quả tương lai."
+    },
+    {
+      "title": "Tài sản số và blockchain",
+      "content": "Giao dịch blockchain có thể không thể đảo ngược. Sai địa chỉ hoặc mạng, mất khóa và sự cố bảo mật có thể gây mất tài sản vĩnh viễn; mạng bên ngoài có thể gián đoạn."
+    },
+    {
+      "title": "Trí tuệ nhân tạo và tự động hóa",
+      "content": "Hệ thống AI có thể sử dụng dữ liệu sai hoặc chậm, đánh giá sai thị trường hoặc thực hiện hành động ngoài dự kiến. Tự động hóa không loại bỏ rủi ro và không đảm bảo lợi nhuận."
+    },
+    {
+      "title": "Không đảm bảo kết quả",
+      "content": "Elleva không cam kết lợi nhuận, bảo toàn vốn, mức sinh lời cụ thể hoặc hoạt động liên tục. Mục tiêu và ví dụ không phải là bảo đảm."
+    },
+    {
+      "title": "Hạ tầng bên thứ ba",
+      "content": "Sàn giao dịch, nhà cung cấp ví, dữ liệu và mạng blockchain có thể gián đoạn hoặc ngừng hoạt động. Elleva không kiểm soát tính sẵn có của họ."
+    },
+    {
+      "title": "An ninh mạng và vận hành",
+      "content": "Hệ thống có thể bị tấn công, lỗi phần mềm, gián đoạn hoặc sai sót con người. Hãy bảo vệ thông tin đăng nhập và cụm từ khôi phục; không hệ thống nào an toàn tuyệt đối."
+    },
+    {
+      "title": "Quy định và thuế",
+      "content": "Quy định khác nhau theo quốc gia và có thể thay đổi. Hãy kiểm tra tính hợp pháp tại địa phương, thực hiện nghĩa vụ thuế và báo cáo, tham vấn chuyên gia."
+    },
+    {
+      "title": "Trách nhiệm của người dùng",
+      "content": "Đánh giá hoàn cảnh và hiểu rủi ro trước khi quyết định. Không sử dụng số tiền không thể chấp nhận mất và không chỉ dựa vào quảng cáo hay phân tích tự động."
+    },
+    {
+      "title": "Không phải tư vấn chuyên môn",
+      "content": "Thông tin hỗ trợ nghiên cứu và quyết định, không thay thế tư vấn độc lập về tài chính, pháp lý hoặc thuế."
+    },
+    {
+      "title": "Cập nhật công bố",
+      "content": "Nội dung có thể thay đổi theo dịch vụ, công nghệ và quy định. Xem phiên bản mới nhất trên trang chính thức của Elleva."
+    }
+  ]
+}

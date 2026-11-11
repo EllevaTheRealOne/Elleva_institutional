@@ -324,11 +324,6 @@ export default function ContactView() {
                 );
               })}
             </div>
-
-            <div className="mt-10 flex items-center gap-3 text-sm text-white/35">
-              <Globe2 className="h-4 w-4 text-[#21ead8]" />
-              {t("globalStatement")}
-            </div>
           </div>
 
           <div className="relative">

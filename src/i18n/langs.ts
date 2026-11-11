@@ -90,7 +90,9 @@ export const defaultLang: IAllLangs = allLangs[0];
 /**
  * Match candidate language string against supported languages with exact & fallback logic
  */
-export function matchSupportedLanguage(candidate?: string | null): string | null {
+export function matchSupportedLanguage(
+  candidate?: string | null,
+): string | null {
   if (!candidate || typeof candidate !== "string") return null;
   const clean = candidate.trim().toLowerCase();
   if (!clean) return null;
@@ -194,4 +196,28 @@ export function getCurrencySymbol(langValue?: string): string {
 export function getNativeLabel(langValue?: string): string {
   const config = getLanguageConfig(langValue);
   return config.nativeLabel || config.label;
+}
+
+export function findSupportedLanguage(raw?: string | null): string | null {
+  if (!raw) return null;
+  const candidate = raw.trim().replace(/_/g, "-").toLowerCase();
+  const exact = allLangs.find(({ value }) => value.toLowerCase() === candidate);
+  if (exact) return exact.value;
+  const primary = candidate.split("-")[0];
+  if (primary === "pt") return "pt-BR";
+  if (primary === "vi") return "vi-VN";
+  return (
+    allLangs.find(({ value }) => value.toLowerCase().split("-")[0] === primary)
+      ?.value ?? null
+  );
+}
+
+/** Used only when the consumer needs a guaranteed supported locale. */
+export function normalizeLanguage(raw?: string | null): string {
+  return findSupportedLanguage(raw) ?? defaultLang.value;
+}
+
+/** The detector must preserve unknown values so later detectors can run. */
+export function normalizeDetectedLanguage(raw: string): string {
+  return findSupportedLanguage(raw) ?? raw;
 }

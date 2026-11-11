@@ -1,0 +1,51 @@
+{
+  "heading": "Comprenda los riesgos.",
+  "subheading": "Tome decisiones informadas.",
+  "intro": "Este aviso describe riesgos de los mercados financieros, activos digitales y sistemas automatizados. Léalo antes de usar los servicios.",
+  "noticeTitle": "Aviso importante",
+  "notice": "Puede perder parte o todo su capital. No se garantiza ningún resultado financiero.",
+  "updated": "Última actualización: 9 de octubre de 2026",
+  "footer": "Lea este aviso junto con los Términos de uso, la Política de privacidad y las Reglas del programa.",
+  "sections": [
+    {
+      "title": "Riesgos de los mercados financieros",
+      "content": "Los precios pueden ser muy volátiles y puede perder parte o todo el capital invertido. Los resultados pasados y las proyecciones no predicen resultados futuros."
+    },
+    {
+      "title": "Activos digitales y blockchain",
+      "content": "Las transacciones blockchain pueden ser irreversibles. Direcciones erróneas, claves perdidas e incidentes de seguridad pueden causar pérdidas permanentes; las redes externas pueden fallar."
+    },
+    {
+      "title": "Inteligencia artificial y automatización",
+      "content": "Los sistemas automatizados pueden utilizar datos incorrectos o tardíos, evaluar mal el mercado o realizar acciones inesperadas. No eliminan el riesgo ni garantizan beneficios."
+    },
+    {
+      "title": "Sin garantía de resultados",
+      "content": "Elleva no promete ganancias, protección del capital, rentabilidades específicas ni funcionamiento ininterrumpido. Las metas y ejemplos no son garantías."
+    },
+    {
+      "title": "Infraestructura de terceros",
+      "content": "Las bolsas, billeteras, fuentes de datos y redes blockchain pueden interrumpirse o dejar de operar. Elleva no controla su disponibilidad."
+    },
+    {
+      "title": "Ciberseguridad y operaciones",
+      "content": "Los sistemas están expuestos a ataques, fallos técnicos y errores humanos. Proteja sus contraseñas y frases de recuperación; ningún sistema es totalmente seguro."
+    },
+    {
+      "title": "Regulación e impuestos",
+      "content": "Las normas cambian según la jurisdicción. Verifique la legalidad local y cumpla sus obligaciones fiscales y de información; consulte asesores cualificados."
+    },
+    {
+      "title": "Responsabilidad del usuario",
+      "content": "Evalúe sus circunstancias y comprenda los riesgos. No invierta fondos que no pueda perder ni dependa solamente de materiales promocionales o información automatizada."
+    },
+    {
+      "title": "Sin asesoramiento profesional",
+      "content": "La información apoya el análisis y las decisiones, pero no reemplaza el asesoramiento financiero, legal o fiscal independiente."
+    },
+    {
+      "title": "Actualizaciones",
+      "content": "Este aviso puede cambiar según evolucionen los servicios, la tecnología o la normativa. Consulte la versión más reciente en el sitio oficial de Elleva."
+    }
+  ]
+}

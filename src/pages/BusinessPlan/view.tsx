@@ -37,7 +37,7 @@ export const BusinessPlanView: React.FC = () => {
   });
 
   return (
-    <div className="bp">
+    <div className="bp" id="business-plan">
       <Hero />
       <WhatIsElleva />
       <TheProblem />

@@ -1,0 +1,30 @@
+{
+  "file": {
+    "title": "文件",
+    "intro": "查看目前公开的官方文件。",
+    "read": "阅读文件",
+    "terms": "使用条款",
+    "privacy": "隐私政策",
+    "risk": "风险披露",
+    "rules": "计划规则"
+  },
+  "tutorials": {
+    "title": "教程",
+    "intro": "了解使用 Elleva 平台的主要步骤。视频发布后将在此展示。",
+    "wallet": "设置钱包",
+    "register": "注册",
+    "activate": "激活账户",
+    "withdraw": "申请提现",
+    "upgrade": "升级账户",
+    "secure": "保护账户",
+    "pending": "详细教程正在准备中，目前尚未发布视频。"
+  },
+  "calculator": {
+    "title": "示例计算器",
+    "intro": "计算假设情景，并非收益预测。",
+    "amount": "初始金额",
+    "rate": "假设变动",
+    "result": "示例数值",
+    "disclaimer": "此计算不代表对收益率或投资结果的承诺。"
+  }
+}

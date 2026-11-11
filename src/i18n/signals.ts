@@ -1,7 +1,5 @@
 import { useSyncExternalStore, useRef } from "react";
 import {
-  allLangs,
-  defaultLang,
   detectInitialLanguage,
   getLanguageConfig,
   getLocale,

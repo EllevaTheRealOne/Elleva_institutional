@@ -5,21 +5,10 @@ import {
   setLanguage as setLangAction,
   getLanguageConfig,
   getLocale,
-  getCurrency,
   getCurrencySymbol,
 } from "./signals";
-import i18n from "./index";
+import i18n from ".";
 
-/**
- * Core Reactive Translation & Internationalization Hook (Sections 106 - 129)
- *
- * Guarantees:
- * 1. 100% reactive to languageSignal
- * 2. Instantaneous in-memory translation resolution with 0ms network latency
- * 3. Automatic re-render across every subscribing component upon language change
- * 4. Fallback to English if key missing
- * 5. Full support for interpolation, currency formatting, and numeric localization
- */
 export function useI18n() {
   const currentLang = useSyncExternalStore(
     languageSignal.subscribe,

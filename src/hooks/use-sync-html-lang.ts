@@ -45,10 +45,7 @@ export function useSyncHtmlLang() {
       const link = document.createElement("link");
       link.rel = "alternate";
       link.hreflang = lang.value;
-      const targetPath =
-        lang.value === defaultLang.value
-          ? `${origin}${pathWithoutLng || "/"}`
-          : `${origin}/${lang.value}${pathWithoutLng}`;
+      const targetPath = `${origin}/${lang.value}${pathWithoutLng || "/"}`;
       link.href = targetPath;
       document.head.appendChild(link);
     });

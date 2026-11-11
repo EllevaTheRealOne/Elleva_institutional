@@ -1,0 +1,30 @@
+{
+  "file": {
+    "title": "Tài liệu",
+    "intro": "Xem các tài liệu chính thức hiện có.",
+    "read": "Đọc tài liệu",
+    "terms": "Điều khoản sử dụng",
+    "privacy": "Chính sách quyền riêng tư",
+    "risk": "Công bố rủi ro",
+    "rules": "Quy tắc chương trình"
+  },
+  "tutorials": {
+    "title": "Hướng dẫn",
+    "intro": "Tìm hiểu những bước chính để sử dụng nền tảng Elleva. Video sẽ được đăng khi phát hành.",
+    "wallet": "Thiết lập ví",
+    "register": "Đăng ký",
+    "activate": "Kích hoạt tài khoản",
+    "withdraw": "Yêu cầu rút tiền",
+    "upgrade": "Nâng cấp tài khoản",
+    "secure": "Bảo vệ tài khoản",
+    "pending": "Tài liệu chi tiết đang được chuẩn bị; chưa có video được công bố."
+  },
+  "calculator": {
+    "title": "Máy tính minh họa",
+    "intro": "Mô phỏng tình huống toán học, không phải dự báo lợi nhuận.",
+    "amount": "Số tiền ban đầu",
+    "rate": "Thay đổi giả định",
+    "result": "Giá trị minh họa",
+    "disclaimer": "Phép tính này không đảm bảo lợi suất hoặc kết quả đầu tư."
+  }
+}

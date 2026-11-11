@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Suspense, lazy, useState } from 'react';
 import {
   Eye,
   Layers,
@@ -12,16 +12,16 @@ import {
   CheckCircle2,
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { OverviewView } from './views/OverviewView';
-import { PositionsView } from './views/PositionsView';
-import { AllocationView } from './views/AllocationView';
-import { PerformanceView } from './views/PerformanceView';
-import { RiskView } from './views/RiskView';
-import { LiquidityView } from './views/LiquidityView';
-import { MarketIntelligenceView } from './views/MarketIntelligenceView';
-import { AttributionView } from './views/AttributionView';
-import { AlertsView } from './views/AlertsView';
-import { ComplianceView } from './views/ComplianceView';
+const OverviewView = lazy(() => import('./views/OverviewView').then(m => ({ default: m.OverviewView })));
+const PositionsView = lazy(() => import('./views/PositionsView').then(m => ({ default: m.PositionsView })));
+const AllocationView = lazy(() => import('./views/AllocationView').then(m => ({ default: m.AllocationView })));
+const PerformanceView = lazy(() => import('./views/PerformanceView').then(m => ({ default: m.PerformanceView })));
+const RiskView = lazy(() => import('./views/RiskView').then(m => ({ default: m.RiskView })));
+const LiquidityView = lazy(() => import('./views/LiquidityView').then(m => ({ default: m.LiquidityView })));
+const MarketIntelligenceView = lazy(() => import('./views/MarketIntelligenceView').then(m => ({ default: m.MarketIntelligenceView })));
+const AttributionView = lazy(() => import('./views/AttributionView').then(m => ({ default: m.AttributionView })));
+const AlertsView = lazy(() => import('./views/AlertsView').then(m => ({ default: m.AlertsView })));
+const ComplianceView = lazy(() => import('./views/ComplianceView').then(m => ({ default: m.ComplianceView })));
 
 interface InvestmentExperienceProps {
   isDark?: boolean;
@@ -132,7 +132,7 @@ export const InvestmentExperience: React.FC<InvestmentExperienceProps> = ({
 
           {/* Institutional Dashboard Interior */}
           <div className="p-4 sm:p-8">
-            {renderActiveView()}
+            <Suspense fallback={<div className="min-h-64 animate-pulse rounded-xl bg-white/5" aria-label="Loading panel" />} >{renderActiveView()}</Suspense>
           </div>
         </div>
       </div>

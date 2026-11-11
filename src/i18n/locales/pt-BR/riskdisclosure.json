@@ -1,0 +1,51 @@
+{
+  "heading": "Compreenda os riscos.",
+  "subheading": "Tome decisões informadas.",
+  "intro": "Este aviso apresenta riscos relevantes dos mercados financeiros, ativos digitais e tecnologias automatizadas. Leia antes de utilizar os serviços.",
+  "noticeTitle": "Aviso importante",
+  "notice": "Você pode perder parte ou todo o capital. Nenhum resultado financeiro é garantido.",
+  "updated": "Última atualização: 9 de outubro de 2026",
+  "footer": "Leia este aviso juntamente com os Termos de Uso, Política de Privacidade e Regras do Programa.",
+  "sections": [
+    {
+      "title": "Riscos dos mercados financeiros",
+      "content": "Os preços podem sofrer alta volatilidade e você pode perder parte ou todo o capital aplicado. Desempenho passado, simulações e projeções não preveem resultados futuros."
+    },
+    {
+      "title": "Ativos digitais e blockchain",
+      "content": "Transações em blockchain podem ser irreversíveis. Endereços ou redes incorretos, perda de chaves e incidentes de segurança podem causar perdas permanentes. Redes externas podem falhar ou ficar congestionadas."
+    },
+    {
+      "title": "Inteligência artificial e automação",
+      "content": "Sistemas automatizados e de IA podem usar dados incorretos ou atrasados, avaliar mal o mercado ou executar ações não previstas. Automação não elimina riscos nem garante lucros."
+    },
+    {
+      "title": "Ausência de garantia de resultados",
+      "content": "A Elleva não promete lucros, proteção do capital, retorno específico ou operação ininterrupta. Metas e exemplos não constituem garantias."
+    },
+    {
+      "title": "Infraestrutura de terceiros",
+      "content": "Corretoras, provedores de carteiras, fornecedores de dados e redes blockchain podem sofrer interrupções ou encerrar serviços. A Elleva não controla sua disponibilidade."
+    },
+    {
+      "title": "Segurança cibernética e operação",
+      "content": "Os sistemas estão sujeitos a ataques, falhas de software, indisponibilidade e erros humanos. Proteja credenciais e frases de recuperação; nenhum sistema é completamente seguro."
+    },
+    {
+      "title": "Aspectos regulatórios e tributários",
+      "content": "As regras variam por jurisdição e podem mudar. Avalie a legalidade local e cumpra obrigações fiscais e de reporte; consulte profissionais habilitados."
+    },
+    {
+      "title": "Responsabilidade do usuário",
+      "content": "Avalie sua situação e compreenda os riscos antes de decidir. Não comprometa valores que não pode perder nem dependa apenas de materiais promocionais ou sistemas automatizados."
+    },
+    {
+      "title": "Ausência de aconselhamento profissional",
+      "content": "As informações apoiam pesquisas e decisões com tecnologia, mas não substituem orientação financeira, jurídica ou tributária independente."
+    },
+    {
+      "title": "Atualizações deste aviso",
+      "content": "Este documento pode mudar conforme os serviços, a tecnologia e as regras aplicáveis evoluam. Consulte a versão mais recente no site oficial da Elleva."
+    }
+  ]
+}

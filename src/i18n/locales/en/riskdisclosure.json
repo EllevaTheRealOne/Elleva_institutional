@@ -1,0 +1,51 @@
+{
+  "heading": "Understand the risks.",
+  "subheading": "Make informed decisions.",
+  "intro": "This disclosure describes material risks of financial markets, digital assets and automated technology. Read before using the services.",
+  "noticeTitle": "Important notice",
+  "notice": "You may lose some or all of your capital. No financial result is guaranteed.",
+  "updated": "Last updated: October 9, 2026",
+  "footer": "Read this disclosure alongside the Terms of Use, Privacy Policy and Program Rules.",
+  "sections": [
+    {
+      "title": "Financial market risks",
+      "content": "Prices can be highly volatile and you may lose some or all invested capital. Past performance, simulations and projections do not predict future results."
+    },
+    {
+      "title": "Digital assets and blockchain",
+      "content": "Blockchain transactions may be irreversible. Wrong addresses or networks, lost keys and security incidents can cause permanent losses. External networks may fail or become congested."
+    },
+    {
+      "title": "Artificial intelligence and automation",
+      "content": "AI and automated systems may use inaccurate or delayed data, misjudge market conditions or produce unintended actions. Automation cannot eliminate risk or guarantee profit."
+    },
+    {
+      "title": "No guarantee of results",
+      "content": "Elleva does not promise profits, capital protection, specific returns or uninterrupted performance. Targets and examples are not guarantees."
+    },
+    {
+      "title": "Third-party infrastructure",
+      "content": "Exchanges, wallet providers, data vendors and blockchain networks can be disrupted or discontinued. Elleva does not control their continued availability."
+    },
+    {
+      "title": "Cybersecurity and operations",
+      "content": "Systems may be affected by cyberattacks, bugs, outages and human error. Protect your credentials and recovery phrases; no system is entirely secure."
+    },
+    {
+      "title": "Regulation and taxes",
+      "content": "Rules differ by jurisdiction and may change. You must evaluate local legality and comply with tax and reporting obligations; consult qualified advisers."
+    },
+    {
+      "title": "User responsibility",
+      "content": "Assess your circumstances and understand the risks before making decisions. Never commit money you cannot afford to lose or rely solely on promotional or automated information."
+    },
+    {
+      "title": "No professional advice",
+      "content": "Information is for technology-enabled research and decision support. It is not a substitute for independent financial, legal or tax advice."
+    },
+    {
+      "title": "Updates to this disclosure",
+      "content": "This disclosure may change as services, technology and applicable rules evolve. Check the official Elleva website for the latest version."
+    }
+  ]
+}

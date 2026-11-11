@@ -23,7 +23,9 @@ function setMeta(selector: string, attribute: string, value: string) {
  */
 export function usePageMeta({ title, description, path }: PageMeta) {
   useEffect(() => {
-    const url = `${SITE_URL}${path === "/" ? "/" : path}`;
+    const first = window.location.pathname.split("/").filter(Boolean)[0] ?? "";
+    const locale = ["en", "zh", "es", "ja", "ko", "pt-br", "ru", "vi-vn", "en-us", "zh-cn", "es-es", "ja-jp", "ko-kr", "ru-ru"].includes(first.toLowerCase()) ? first : "";
+    const url = `${SITE_URL}${locale ? `/${locale}` : ""}${path === "/" ? "/" : path}`;
 
     document.title = title;
     setMeta('meta[name="description"]', "content", description);

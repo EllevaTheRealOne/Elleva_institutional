@@ -10,6 +10,10 @@ export const PATH_PAGE = {
   contact: "/contact",
   programrules: "/program-rules",
   riskdisclosure: "/risk-disclosure",
+  faq: "/faq",
+  documents: "/documents",
+  tutorials: "/tutorials",
+  calculator: "/calculator",
 } as const;
 
 /**

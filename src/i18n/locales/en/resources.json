@@ -1,0 +1,30 @@
+{
+  "file": {
+    "title": "Documents",
+    "intro": "Consult the official public documents currently available.",
+    "read": "Read document",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy",
+    "risk": "Risk Disclosure",
+    "rules": "Program Rules"
+  },
+  "tutorials": {
+    "title": "Tutorials",
+    "intro": "Explore the main steps in using the Elleva platform. Videos and detailed lessons will appear here after publication.",
+    "wallet": "Prepare your wallet",
+    "register": "Register",
+    "activate": "Activate your account",
+    "withdraw": "Request a withdrawal",
+    "upgrade": "Upgrade your account",
+    "secure": "Secure your account",
+    "pending": "Step-by-step material is being prepared; no video has been published here yet."
+  },
+  "calculator": {
+    "title": "Illustrative calculator",
+    "intro": "Simulate a mathematical scenario. This is not a projection of returns.",
+    "amount": "Initial amount",
+    "rate": "Hypothetical change",
+    "result": "Illustrative value",
+    "disclaimer": "This calculation does not represent a promised rate or investment outcome."
+  }
+}

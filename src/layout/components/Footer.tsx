@@ -73,13 +73,13 @@ export const Footer = () => {
         },
         {
           label: t("nav:categories.markets.items.marketData") || "Market Data",
-          href: "/#market-data",
+          href: "/#global-markets",
         },
         {
           label:
             t("nav:categories.markets.items.portfolioIntelligence") ||
             "Portfolio Intelligence",
-          href: "/#portfolio-overview",
+          href: "/#investment-experience",
         },
       ],
     },
@@ -94,15 +94,11 @@ export const Footer = () => {
         },
         {
           label: t("common:footer.security") || "Security",
-          href: "/#security",
+          href: "/#trust",
         },
         {
           label: t("common:footer.executionEngine") || "Execution Engine",
-          href: "/#execution-engine",
-        },
-        {
-          label: t("common:footer.apiData") || "API & Data",
-          href: "/#api-data",
+          href: "/#elleva-loop",
         },
       ],
     },
@@ -112,19 +108,11 @@ export const Footer = () => {
       links: [
         {
           label: t("common:footer.documentation") || "Documentation",
-          href: "/file",
-        },
-        {
-          label: t("nav:tutorials") || "Tutorials",
-          href: "/tutorials",
-        },
-        {
-          label: t("nav:calculator") || "Calculator",
-          href: "/calculator",
+          href: PATH_PAGE.documents,
         },
         {
           label: t("nav:categories.company.items.faq") || "FAQ",
-          href: "/#faq",
+          href: PATH_PAGE.faq,
         },
       ],
     },
@@ -138,15 +126,15 @@ export const Footer = () => {
         },
         {
           label: t("common:footer.aboutElleva") || "About Elleva",
-          href: "/#what-is-elleva",
+          href: "/#new-category",
         },
         {
           label: t("common:footer.journey") || "Journey",
-          href: "/#journey",
+          href: "/business-plan#journey",
         },
         {
           label: t("nav:governance") || "Governance",
-          href: "/#governance",
+          href: "/#trust",
         },
         {
           label: t("common:footer.contact") || "Contact",
@@ -203,7 +191,7 @@ export const Footer = () => {
             </p>
 
             {/* Social */}
-            <div className="flex items-center gap-3 pt-6">
+            {/* <div className="flex items-center gap-3 pt-6">
               <a
                 href="https://twitter.com"
                 target="_blank"
@@ -253,7 +241,7 @@ export const Footer = () => {
               >
                 <Globe className="size-3.5" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Navigation */}

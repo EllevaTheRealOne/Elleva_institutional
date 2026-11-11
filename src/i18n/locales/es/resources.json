@@ -1,0 +1,30 @@
+{
+  "file": {
+    "title": "Documentos",
+    "intro": "Consulte los documentos públicos oficiales disponibles.",
+    "read": "Leer documento",
+    "terms": "Términos de uso",
+    "privacy": "Política de privacidad",
+    "risk": "Divulgación de riesgos",
+    "rules": "Reglas del programa"
+  },
+  "tutorials": {
+    "title": "Tutoriales",
+    "intro": "Conozca los pasos principales para utilizar la plataforma Elleva. Los videos se publicarán cuando estén disponibles.",
+    "wallet": "Configure su billetera",
+    "register": "Regístrese",
+    "activate": "Active su cuenta",
+    "withdraw": "Solicite un retiro",
+    "upgrade": "Actualice su cuenta",
+    "secure": "Proteja su cuenta",
+    "pending": "Material detallado en preparación; todavía no se han publicado videos."
+  },
+  "calculator": {
+    "title": "Calculadora ilustrativa",
+    "intro": "Simule un escenario matemático. No es una proyección de rentabilidad.",
+    "amount": "Importe inicial",
+    "rate": "Cambio hipotético",
+    "result": "Valor ilustrativo",
+    "disclaimer": "Este cálculo no garantiza ninguna tasa ni resultado de inversión."
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "eyebrow": "Central de ajuda",
+  "title": "Perguntas frequentes.",
+  "description": "Informações sobre a Elleva, sua tecnologia, o funcionamento da plataforma, as condições operacionais e os programas disponíveis.",
+  "searchPlaceholder": "Buscar uma pergunta...",
+  "searchLabel": "Buscar perguntas frequentes",
+  "searchHint": "Pesquise por assunto, funcionalidade ou termo.",
+  "categoriesTitle": "Explorar por assunto",
+  "emptyTitle": "Nenhuma pergunta encontrada.",
+  "emptyDescription": "Tente outro termo ou limpe a busca para ver todas as perguntas.",
+  "clearSearch": "Limpar busca",
+  "contactTitle": "Ainda tem dúvidas?",
+  "contactDescription": "Entre em contato com a equipe Elleva para esclarecer questões sobre acesso, funcionamento da plataforma ou condições aplicáveis à sua conta.",
+  "contactButton": "Falar com a Elleva",
+  "categories": [
+    {
+      "id": "about",
+      "title": "Sobre a Elleva",
+      "description": "Conheça a proposta e o posicionamento da Elleva.",
+      "items": [
+        {
+          "question": "O que é a Elleva?",
+          "answer": "A Elleva se posiciona como uma infraestrutura tecnológica de agentes autônomos de inteligência artificial para o mercado financeiro. Sua proposta é conectar pesquisa, análise, processos de decisão, execução e monitoramento em uma estrutura operacional integrada."
+        },
+        {
+          "question": "Qual é a proposta da Elleva?",
+          "answer": "A proposta é utilizar tecnologia e inteligência artificial para estruturar processos relacionados ao mercado financeiro, com foco em análise, execução e acompanhamento operacional. Os recursos efetivamente disponíveis dependem dos produtos e serviços habilitados para cada cliente."
+        },
+        {
+          "question": "A Elleva é uma corretora ou um fundo de investimento?",
+          "answer": "A Elleva se apresenta como uma infraestrutura tecnológica, e não como uma corretora ou um fundo de investimento. A natureza jurídica dos serviços, as entidades envolvidas e as condições contratuais aplicáveis devem ser verificadas nos documentos oficiais da empresa."
+        },
+        {
+          "question": "Quem pode conhecer a Elleva?",
+          "answer": "Pessoas interessadas em conhecer a tecnologia, a plataforma e os serviços disponibilizados podem consultar os canais oficiais da Elleva. A disponibilidade de produtos e a elegibilidade para participar podem depender da jurisdição e das condições aplicáveis."
+        }
+      ]
+    },
+    {
+      "id": "platform",
+      "title": "Plataforma e tecnologia",
+      "description": "Entenda os conceitos por trás da infraestrutura tecnológica.",
+      "items": [
+        {
+          "question": "Como funciona a tecnologia da Elleva?",
+          "answer": "O modelo tecnológico apresentado pela Elleva é organizado em quatro etapas: pesquisar informações relevantes, apoiar decisões conforme parâmetros definidos, executar processos autorizados e monitorar os resultados e eventos operacionais."
+        },
+        {
+          "question": "O que são agentes autônomos de inteligência artificial?",
+          "answer": "São sistemas de software concebidos para executar tarefas específicas com diferentes graus de autonomia, utilizando dados, instruções e regras predefinidas. Sua atuação depende da arquitetura, das permissões, dos controles e dos recursos efetivamente implementados."
+        },
+        {
+          "question": "A inteligência artificial elimina os riscos do mercado?",
+          "answer": "Não. A inteligência artificial pode auxiliar na análise e na execução de processos, mas não elimina riscos de mercado, falhas técnicas, problemas de liquidez ou outros eventos adversos. Nenhuma tecnologia deve ser interpretada como garantia de resultado."
+        },
+        {
+          "question": "Como posso acessar a plataforma?",
+          "answer": "Utilize os canais oficiais da Elleva e a opção de acesso disponível no site. Os recursos da conta dependem do cadastro, da habilitação do serviço e das condições aplicáveis ao usuário."
+        }
+      ]
+    },
+    {
+      "id": "profitShare",
+      "title": "ProfitShare e condições operacionais",
+      "description": "Informações gerais sobre participação nos resultados, aportes e saques.",
+      "items": [
+        {
+          "question": "O que é o ProfitShare?",
+          "answer": "ProfitShare é o nome utilizado pela Elleva para o modelo de participação nos resultados associado ao produto disponibilizado na plataforma. A forma de cálculo, a apuração, a distribuição e as demais condições devem seguir o contrato e as regras oficiais vigentes."
+        },
+        {
+          "question": "O ProfitShare garante ganhos?",
+          "answer": "Não. Qualquer referência a resultados, estimativas ou desempenho anterior não constitui garantia de ganhos futuros. Os resultados podem variar e existe a possibilidade de perdas, conforme os riscos e as condições do produto contratado."
+        },
+        {
+          "question": "Quando os resultados do ProfitShare são apurados?",
+          "answer": "As regras operacionais atualmente informadas preveem apuração de segunda a sexta-feira. A apuração não significa que haverá resultado positivo em todos os dias. Consulte a plataforma e os documentos contratuais para verificar o funcionamento aplicável à sua conta."
+        },
+        {
+          "question": "Existe um limite de evolução do contrato?",
+          "answer": "As regras operacionais informadas preveem um limite de evolução de até 400% do valor de referência do contrato. A base de cálculo, os efeitos desse limite e as condições de encerramento devem ser confirmados nas regras vigentes do produto."
+        },
+        {
+          "question": "Qual é o valor mínimo para começar?",
+          "answer": "O valor mínimo de aporte atualmente informado é de US$ 10. O limite máximo informado é de US$ 50.000. A disponibilidade, a conversão, os meios de pagamento e eventuais restrições devem ser confirmados na plataforma antes de realizar uma operação."
+        },
+        {
+          "question": "Quais são os meios de pagamento disponíveis?",
+          "answer": "Os meios de pagamento informados incluem USDT e Pix. A disponibilidade do Pix depende das condições de acesso ao serviço, e a rede, o endereço e as instruções de pagamento devem ser conferidos antes de concluir uma transação."
+        },
+        {
+          "question": "Qual é o valor mínimo para saque?",
+          "answer": "O valor mínimo de saque atualmente informado é de US$ 10, sujeito às condições operacionais, à moeda ou ao ativo utilizado e às regras vigentes na plataforma."
+        },
+        {
+          "question": "Existe taxa de saque?",
+          "answer": "A taxa de saque atualmente informada é de 5%. Antes de solicitar uma retirada, confirme na plataforma a taxa aplicável, o valor líquido estimado e eventuais custos adicionais do meio de pagamento ou da rede utilizada."
+        },
+        {
+          "question": "Quanto tempo demora um saque?",
+          "answer": "O prazo operacional informado é de até 24 horas. Esse prazo não deve ser interpretado como garantia de liquidação em qualquer circunstância: verificações adicionais, feriados, condições de rede ou outros fatores operacionais podem afetar o processamento."
+        }
+      ]
+    },
+    {
+      "id": "partners",
+      "title": "Programas comerciais",
+      "description": "Informações sobre as iniciativas de relacionamento e desenvolvimento comercial.",
+      "items": [
+        {
+          "question": "O que é o Elleva Direct?",
+          "answer": "Elleva Direct é a denominação utilizada para o programa de relacionamento comercial associado à indicação de clientes elegíveis. As condições de participação, os critérios de elegibilidade, os níveis e os cálculos devem ser consultados nas regras oficiais vigentes."
+        },
+        {
+          "question": "O que é o Elleva Pool?",
+          "answer": "Elleva Pool é a denominação utilizada para um mecanismo de participação relacionado aos resultados da companhia. A base de cálculo, a elegibilidade, a distribuição e as condições aplicáveis devem ser confirmadas na documentação oficial do programa."
+        },
+        {
+          "question": "Preciso participar de um programa comercial para utilizar a Elleva?",
+          "answer": "O acesso a um produto e a participação em um programa comercial são condições distintas. A elegibilidade e os requisitos de cada modalidade devem ser verificados nos termos e nas regras aplicáveis."
+        },
+        {
+          "question": "Onde posso consultar as regras dos programas?",
+          "answer": "Consulte as Regras do Programa e os documentos disponíveis no site oficial. Em caso de divergência entre materiais informativos, comunicações promocionais e condições contratuais, solicite esclarecimento pelos canais oficiais antes de tomar uma decisão."
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Segurança e riscos",
+      "description": "Cuidados importantes antes de utilizar a plataforma.",
+      "items": [
+        {
+          "question": "Quais riscos devo considerar?",
+          "answer": "A utilização de serviços relacionados ao mercado financeiro e a ativos digitais pode envolver volatilidade, perdas financeiras, riscos de liquidez, falhas tecnológicas, atrasos operacionais, riscos de contraparte e alterações regulatórias. Leia a Divulgação de Riscos e os documentos contratuais antes de utilizar qualquer produto."
+        },
+        {
+          "question": "A Elleva garante a devolução do capital?",
+          "answer": "Não se deve presumir uma garantia de devolução do capital. As condições de retirada, os direitos do cliente, os riscos de perda e as situações excepcionais devem ser avaliados com base no contrato e na documentação oficial aplicável."
+        },
+        {
+          "question": "Como posso proteger minha conta?",
+          "answer": "Utilize apenas os canais oficiais, mantenha suas credenciais em sigilo, adote autenticação adicional quando disponível e confira cuidadosamente os endereços de destino antes de realizar transações com ativos digitais. Nunca compartilhe senhas ou frases de recuperação de carteiras."
+        },
+        {
+          "question": "Onde encontro os documentos legais da Elleva?",
+          "answer": "Os documentos disponíveis incluem os Termos de Uso, as Regras do Programa, a Política de Privacidade e a Divulgação de Riscos. Leia a versão correspondente à sua jurisdição e confirme se houve atualizações antes de aderir a um serviço."
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Conta e suporte",
+      "description": "Saiba como buscar ajuda e resolver questões operacionais.",
+      "items": [
+        {
+          "question": "Como entro em contato com o suporte?",
+          "answer": "Acesse a página de Contato no site oficial da Elleva e utilize os canais disponibilizados. Ao relatar um problema, forneça informações suficientes para identificar a situação, mas nunca envie senhas, chaves privadas ou frases de recuperação."
+        },
+        {
+          "question": "O que devo fazer se um pagamento ou saque estiver pendente?",
+          "answer": "Verifique o histórico da conta, os dados da transação e eventuais avisos da plataforma. Se a situação não for esclarecida, entre em contato com o suporte oficial e informe o identificador da transação, quando disponível. Não repita o pagamento sem confirmar o estado da operação."
+        },
+        {
+          "question": "Onde posso consultar as condições mais recentes?",
+          "answer": "Consulte a plataforma e os documentos oficiais publicados pela Elleva. Valores, taxas, limites, prazos e critérios de elegibilidade podem ser atualizados e devem ser confirmados antes de qualquer operação."
+        }
+      ]
+    }
+  ]
+}

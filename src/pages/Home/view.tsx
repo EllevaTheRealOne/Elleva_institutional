@@ -1,21 +1,21 @@
-import React from "react";
+import React, { Suspense, lazy, useEffect, useRef, useState } from "react";
 import { Hero } from "./sections/Hero";
 import { TheProblem } from "./sections/TheProblem";
 import { SectionBackdrop } from "@/components/backdrop/SectionBackdrop";
 import { NewCategory } from "./sections/NewCategory";
 import { MarketOpportunity } from "./sections/MarketOpportunity";
 import { TheProduct } from "./sections/TheProduct";
-import { InvestmentIntelligence } from "./sections/InvestmentIntelligence";
-import { Architecture } from "./sections/Architecture";
-import { InvestmentExperience } from "./sections/InvestmentExperience";
-import { GlobalMarkets } from "./sections/GlobalMarkets";
-import { TheNewSoftware } from "./sections/TheNewSoftware";
+const InvestmentIntelligence = lazy(() => import("./sections/InvestmentIntelligence").then(m => ({ default: m.InvestmentIntelligence })));
+const Architecture = lazy(() => import("./sections/Architecture").then(m => ({ default: m.Architecture })));
+const InvestmentExperience = lazy(() => import("./sections/InvestmentExperience").then(m => ({ default: m.InvestmentExperience })));
+const GlobalMarkets = lazy(() => import("./sections/GlobalMarkets").then(m => ({ default: m.GlobalMarkets })));
+const TheNewSoftware = lazy(() => import("./sections/TheNewSoftware").then(m => ({ default: m.TheNewSoftware })));
 import { BusinessModel } from "./sections/BusinessModel";
-import { EllevaLoop } from "./sections/EllevaLoop";
+const EllevaLoop = lazy(() => import("./sections/EllevaLoop").then(m => ({ default: m.EllevaLoop })));
 import { Defensibility } from "./sections/Defensibility";
 import { StrategicPillars } from "./sections/StrategicPillars";
 import { Technology } from "./sections/Technology";
-import { ModernFinancialInfrastructure } from "./sections/ModernFinancialInfrastructure";
+const ModernFinancialInfrastructure = lazy(() => import("./sections/ModernFinancialInfrastructure").then(m => ({ default: m.ModernFinancialInfrastructure })));
 import { OperationalAdvantage } from "./sections/OperationalAdvantage";
 import { Trust } from "./sections/Trust";
 import { GlobalPresence } from "./sections/GlobalPresence";
@@ -24,6 +24,24 @@ import { FAQ } from "./sections/FAQ";
 import { FinalCTA } from "./sections/FinalCTA";
 import { usePageMeta } from "@/hooks/use-page-meta";
 import { PATH_PAGE } from "@/constants/routes/routes.constants";
+
+// Defers below-the-fold modules until close to the viewport; keeps the section placeholder stable.
+function DeferredSection({ children, minHeight = 500 }: { children: React.ReactNode; minHeight?: number }) {
+ const ref = useRef<HTMLDivElement>(null);
+ const [ready, setReady] = useState(false);
+ useEffect(() => {
+  if (ready || !ref.current) return;
+  if (!("IntersectionObserver" in window)) { setReady(true); return; }
+  const observer = new IntersectionObserver(entries => {
+    if (entries.some(entry => entry.isIntersecting)) { setReady(true); observer.disconnect(); }
+  }, { rootMargin: "700px 0px" });
+  observer.observe(ref.current);
+  return () => observer.disconnect();
+ }, [ready]);
+ return <div ref={ref} style={!ready ? { minHeight } : undefined}>
+  {ready && <Suspense fallback={<div style={{ minHeight }} aria-label="Loading section" />} >{children}</Suspense>}
+ </div>;
+}
 
 export const HomeView: React.FC = () => {
   usePageMeta({
@@ -66,27 +84,27 @@ export const HomeView: React.FC = () => {
 
       {/* 06 Investment Intelligence */}
       <SectionBackdrop index={6}>
-        <InvestmentIntelligence isDark={getSectionDark(6)} />
+        <DeferredSection><InvestmentIntelligence isDark={getSectionDark(6)} /></DeferredSection>
       </SectionBackdrop>
 
       {/* 07 Architecture */}
       <SectionBackdrop index={7}>
-        <Architecture isDark={getSectionDark(7)} />
+        <DeferredSection><Architecture isDark={getSectionDark(7)} /></DeferredSection>
       </SectionBackdrop>
 
       {/* 08 Investment Experience */}
       <SectionBackdrop index={8}>
-        <InvestmentExperience isDark={getSectionDark(8)} />
+        <DeferredSection><InvestmentExperience isDark={getSectionDark(8)} /></DeferredSection>
       </SectionBackdrop>
 
       {/* 09 Global Markets */}
       <SectionBackdrop index={9}>
-        <GlobalMarkets isDark={getSectionDark(9)} />
+        <DeferredSection><GlobalMarkets isDark={getSectionDark(9)} /></DeferredSection>
       </SectionBackdrop>
 
       {/* 10 The New Software */}
       <SectionBackdrop index={10}>
-        <TheNewSoftware isDark={getSectionDark(10)} />
+        <DeferredSection><TheNewSoftware isDark={getSectionDark(10)} /></DeferredSection>
       </SectionBackdrop>
 
       {/* 11 Business Model */}
@@ -96,7 +114,7 @@ export const HomeView: React.FC = () => {
 
       {/* 12 Elleva Loop */}
       <SectionBackdrop index={12}>
-        <EllevaLoop isDark={getSectionDark(12)} />
+        <DeferredSection><EllevaLoop isDark={getSectionDark(12)} /></DeferredSection>
       </SectionBackdrop>
 
       {/* 13 Defensibility */}
@@ -116,7 +134,7 @@ export const HomeView: React.FC = () => {
 
       {/* 16 Modern Financial Infrastructure */}
       <SectionBackdrop index={16}>
-        <ModernFinancialInfrastructure isDark={getSectionDark(16)} />
+        <DeferredSection><ModernFinancialInfrastructure isDark={getSectionDark(16)} /></DeferredSection>
       </SectionBackdrop>
 
       {/* 17 Operational Advantage */}

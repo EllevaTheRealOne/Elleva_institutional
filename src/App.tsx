@@ -5,18 +5,24 @@ import { ThemeProvider } from "@/context/theme";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Layout from "./layout";
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
 import { allLangs } from "./i18n/langs";
 import { useSyncHtmlLang } from "./hooks/use-sync-html-lang";
-import { HomeView } from "./pages/Home";
-import { BusinessPlanView } from "./pages/BusinessPlan";
+const HomeView = lazy(() =>
+  import("./pages/Home").then((m) => ({ default: m.HomeView })),
+);
+const BusinessPlanView = lazy(() =>
+  import("./pages/BusinessPlan").then((m) => ({ default: m.BusinessPlanView })),
+);
 import { PATH_PAGE } from "./constants/routes/routes.constants";
-import NotFoundView from "./pages/NotFound";
-import TermsOfUseView from "./pages/termsOfUse";
-import ProgramRulesView from "./pages/ProgramRules";
-import RiskDisclosureView from "./pages/RiskDisclosure";
-import PrivacyPolicyView from "./pages/privacyPolicy";
-import ContactView from "./pages/contact";
+const NotFoundView = lazy(() => import("./pages/NotFound"));
+const TermsOfUseView = lazy(() => import("./pages/termsOfUse"));
+const ProgramRulesView = lazy(() => import("./pages/ProgramRules"));
+const RiskDisclosureView = lazy(() => import("./pages/RiskDisclosure"));
+const PrivacyPolicyView = lazy(() => import("./pages/privacyPolicy"));
+const ContactView = lazy(() => import("./pages/contact"));
+const FaqView = lazy(() => import("./pages/faq"));
+const DocumentsView = lazy(() => import("./pages/Documents"));
 
 const Root = () => {
   useSyncHtmlLang();
@@ -31,6 +37,8 @@ const mainChildRoutes = [
   { path: PATH_PAGE.programrules.slice(1), element: <ProgramRulesView /> },
   { path: PATH_PAGE.riskdisclosure.slice(1), element: <RiskDisclosureView /> },
   { path: PATH_PAGE.contact.slice(1), element: <ContactView /> },
+  { path: PATH_PAGE.faq.slice(1), element: <FaqView /> },
+  { path: PATH_PAGE.documents.slice(1), element: <DocumentsView /> },
 ];
 const buildRoutesForPrefix = (prefix?: string) => {
   const layoutPath = prefix || "/";
