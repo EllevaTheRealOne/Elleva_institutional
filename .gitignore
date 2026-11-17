@@ -9,3 +9,5 @@ coverage/
 skip/*
 *.md
 agents/
+.agents/*
+skills-lock.json
